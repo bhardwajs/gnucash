@@ -271,7 +271,8 @@
   (gnc:html-chart-get chart '(type)))
 
 (define (gnc:html-chart-set-type! chart type)
-  (gnc:html-chart-set! chart '(type) type))
+  (gnc:html-chart-set! chart '(type) type)
+  (gnc:html-chart-set! chart '(options tooltips intersect) (equal? type 'pie)))
 
 (define (gnc:html-chart-title chart)
   (gnc:html-chart-get chart '(options title text)))
