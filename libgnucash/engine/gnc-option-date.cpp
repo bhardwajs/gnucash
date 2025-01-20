@@ -527,7 +527,7 @@ gnc_relative_date_to_time64(RelativeDatePeriod period)
         {
             auto delta = (now.tm_mon >= acct_per.tm_mon ?
                           ( now.tm_mon - acct_per.tm_mon) % 3 :
-                          3 - ((acct_per.tm_mon - now.tm_mon) % 3));
+                          (3 - acct_per.tm_mon - now.tm_mon) % 3);
             now.tm_mon = now.tm_mon - delta;
         }
             [[fallthrough]];
