@@ -1406,9 +1406,9 @@ typedef enum
     const char * xaccAccountGetTaxUSPayerNameSource (const Account *account);
     /** DOCUMENT ME! */
     void xaccAccountSetTaxUSPayerNameSource (Account *account, const char *source);
-    /** DOCUMENT ME! */
+    /** Returns copy_number stored in KVP; if KVP doesn't exist or copy_number is zero, returns 1 */
     gint64 xaccAccountGetTaxUSCopyNumber (const Account *account);
-    /** DOCUMENT ME! */
+    /** Saves copy_number in KVP if it is greater than 1; if copy_number is zero, deletes KVP */
     void xaccAccountSetTaxUSCopyNumber (Account *account, gint64 copy_number);
     /** @} */
 

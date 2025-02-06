@@ -4006,13 +4006,17 @@ gint64
 xaccAccountGetTaxUSCopyNumber (const Account *acc)
 {
     auto copy_number = get_kvp_int64_path (acc, {"tax-US", "copy-number"});
-    return copy_number ? *copy_number : 1;
+    return (copy_number && (*copy_number != 0)) ? *copy_number : 1;
 }
 
 void
 xaccAccountSetTaxUSCopyNumber (Account *acc, gint64 copy_number)
 {
-    set_kvp_int64_path (acc, {"tax-US", "copy-number"}, copy_number);
+    if (copy_number != 0)
+        set_kvp_int64_path (acc, {"tax-US", "copy-number"}, copy_number);
+    else
+        /* deletes KVP if it exists */
+        set_kvp_int64_path (acc, {"tax-US", "copy-number"}, std::nullopt);
 }
 
 /*********************************************************************\
