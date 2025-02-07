@@ -2,14 +2,15 @@
 # Copyright (C) 2014, C-DAC, GIST, Pune, India.
 # Shanmugam R. <shanfaace@yahoo.co.in>, 2014.
 # தமிழ்நேரம் <anishprabu.t@gmail.com>, 2024.
+# John Ralls <jralls@ceridwen.us>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2024-12-29 13:00+0000\n"
-"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"PO-Revision-Date: 2025-02-07 23:57+0000\n"
+"Last-Translator: John Ralls <jralls@ceridwen.us>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/gnucash/gnucash/ta/"
 ">\n"
 "Language: ta\n"
@@ -24007,7 +24008,7 @@ msgstr "கால எண்."
 #: gnucash/report/reports/standard/budget-flow.scm:296
 #, scheme-format
 msgid "~a: ~a - ~a"
-msgstr "~ a: ~ a - ~ a"
+msgstr "~a: ~a - ~a"
 
 #: gnucash/report/reports/standard/budget-income-statement.scm:56
 #: gnucash/report/reports/standard/budget.scm:70
@@ -24568,7 +24569,7 @@ msgstr "விற்பனை"
 #: gnucash/report/reports/standard/customer-summary.scm:254
 #, scheme-format
 msgid "~a ~a - ~a"
-msgstr "~ a ~ a - ~ a"
+msgstr "~a ~a - ~a"
 
 #: gnucash/report/reports/standard/customer-summary.scm:274
 msgid "No valid customer found."
@@ -25844,7 +25845,7 @@ msgstr ""
 #: gnucash/report/reports/standard/invoice.scm:789
 #, scheme-format
 msgid "~a #~a"
-msgstr "~ A #~ a"
+msgstr "~a #~a"
 
 #: gnucash/report/reports/standard/lot-viewer.scm:56
 msgid "The account to search for lots."
@@ -31364,12 +31365,12 @@ msgstr "கணக்கில் வணிகப் பிளவுகளைச�
 #: libgnucash/engine/Scrub.cpp:146
 #, c-format
 msgid "Looking for orphans in transaction: %u of %zu"
-msgstr "பரிவர்த்தனையில் அனாதைகளைத் தேடுவது: %u இன் %ZU"
+msgstr "பரிவர்த்தனையில் அனாதைகளைத் தேடுவது: %u இன் %zu"
 
 #: libgnucash/engine/Scrub.cpp:357
 #, c-format
 msgid "Looking for imbalances in transaction date %s: %u of %zu"
-msgstr "பரிவர்த்தனை தேதி %s: %u %ZU இல் ஏற்றத்தாழ்வுகளைத் தேடுகிறது"
+msgstr "பரிவர்த்தனை தேதி %s: %u %zu இல் ஏற்றத்தாழ்வுகளைத் தேடுகிறது"
 
 #: libgnucash/engine/Split.cpp:1644
 msgctxt ""
