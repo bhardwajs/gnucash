@@ -9,14 +9,14 @@
 # Vik <k3kelm4vw@mozmail.com>, 2022.
 # Muhammadyusuf Kurbonov <muhammadyusuf.kurbonov2002@gmail.com>, 2023.
 # hades <dev@hades.name>, 2023.
-# gfbdrgng <hnaofegnp@hldrive.com>, 2024.
+# gfbdrgng <hnaofegnp@hldrive.com>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.6\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug."
-"cgi?product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-06-22 06:24+0200\n"
-"PO-Revision-Date: 2024-07-26 15:09+0000\n"
+"PO-Revision-Date: 2025-01-14 07:00+0000\n"
 "Last-Translator: gfbdrgng <hnaofegnp@hldrive.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gnucash/glossary/"
 "ru/>\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #. "English Definition (Dear translators: This file will never be visible to normal users! It should only serve as a tool for translators. E.g. matching terms from this file are displayed in Weblate's Translation pages of other GnuCash components like the program.)"
 msgid "Term"
@@ -658,13 +658,12 @@ msgid "Profit & Loss"
 msgstr "Прибыль и убытки"
 
 #. "-"
-#, fuzzy
 msgid "quick-fill"
 msgstr "быстрое заполнение"
 
 #. "-"
 msgid "rebalance, to (a transaction)"
-msgstr ""
+msgstr "восстанавливать равновесие, совершать (операцию)"
 
 #. "reconcile an account, a reconciled split. To find a way to make the bank's account statement agree with the user's recorded transactions in an account."
 msgid "reconcile, to"
@@ -683,9 +682,8 @@ msgid "register entry: split transaction"
 msgstr "register entry: сложная проводка"
 
 #. "-"
-#, fuzzy
 msgid "register entry: stock split"
-msgstr "дробление акций"
+msgstr "запись в реестре: дробление акций"
 
 #. "one form of register"
 msgid "register: auto-split ledger"
@@ -697,7 +695,7 @@ msgstr "register: стандартный журнал"
 
 #. "another form of register"
 msgid "register: general ledger"
-msgstr ""
+msgstr "регистр: главная книга"
 
 #. "another form of register"
 msgid "register: transaction journal"
@@ -708,13 +706,12 @@ msgid "reload, to"
 msgstr "перезагрузить"
 
 #. "aka 'two-sided form' is in Europe often used for the balance sheet. Complement: report form: Vertical Form"
-#, fuzzy
 msgid "report form: T Account Form"
-msgstr "Форма \"самолётик\" (Т-форма)"
+msgstr "форма отчета: Форма Т-аккаунта"
 
 #. "aka 'running form' is in english speaking countries usually used for the balance sheet in one column. Complement: report form: T Account Form"
 msgid "report form: Vertical Form"
-msgstr ""
+msgstr "форма отчета: Вертикальная форма"
 
 #. "name of an equity account (?); to be distinguished from the opening balance."
 msgid "Retained Earnings"
@@ -738,7 +735,7 @@ msgstr "Плановая проводка"
 
 #. "DEPRECATED. To repair unbalanced transactions and orphan splits in an account tree. Any transactions that have debits != credits will get a balancing split added (pointing to a special new account called 'Imbalance'). Any splits that do not have accounts are put into another special account called 'Orphan'. Deprecated - use the term 'to check and repair' now."
 msgid "scrub, to"
-msgstr ""
+msgstr "скрести, чтобы"
 
 #. "A document or certificate showing who owns shares"
 msgid "security"
@@ -746,11 +743,11 @@ msgstr "ценная бумага"
 
 #. "Selling borrowed units in the hope that when you buy them back later it will be at a lower price."
 msgid "Sell short"
-msgstr ""
+msgstr "Продавать коротко"
 
 #. "-"
 msgid "Share Balance (register)"
-msgstr ""
+msgstr "Общий баланс (регистр)"
 
 #. "Any of the equal parts into which the money of a business company is divided, giving the holder a right to a portion of the profits"
 msgid "shares"
@@ -769,10 +766,8 @@ msgid "stocks"
 msgstr "акции"
 
 #. "Sometimes one old share gets replaced by multiple new like 1 OLD @100¤ by 2 NEW @50¤"
-#, fuzzy
-#| msgid "split"
 msgid "stock split"
-msgstr "Дробление акций"
+msgstr "фондовый раскол"
 
 #. "This sets the particular design or shape of a report."
 msgid "style sheet"
@@ -783,14 +778,12 @@ msgid "subtotal"
 msgstr "предварительный итог"
 
 #. "On the government's tax forms, the tax code identifies the given line or place on the form where certain amounts must be specified according to the current country's legislation"
-#, fuzzy
 msgid "tax code"
-msgstr "ИНН (налоговый номер)"
+msgstr "налоговый кодекс"
 
 #. "field of an account"
-#, fuzzy
 msgid "tax info"
-msgstr "информация о налоге"
+msgstr "налоговая информация"
 
 #. "Amost everybody has to declare and probably pay it. See https://en.wikipedia.org/wiki/Income_tax"
 msgid "tax type: income tax"
@@ -798,11 +791,11 @@ msgstr "Подоходный налог"
 
 #. "Usually only business users have to handle it, see https://en.wikipedia.org/wiki/Sales_tax."
 msgid "tax type: sales tax"
-msgstr ""
+msgstr "тип налога: налог с продаж"
 
 #. "'Goods and Service Tax' is one form of sales tax."
 msgid "tax type: GST"
-msgstr ""
+msgstr "тип налога: GST"
 
 #. "'Value Added Tax' is the other form of sales tax."
 msgid "tax type: VAT"
@@ -849,9 +842,8 @@ msgid "transfer (noun)"
 msgstr "перевод"
 
 #. "The account where an amount is transferred to"
-#, fuzzy
 msgid "transfer account"
-msgstr "жиросчет"
+msgstr "переводной аккаунт"
 
 #. "To move money from one account to another. Will create a transaction."
 msgid "transfer, to (register toolbar)"
@@ -870,8 +862,9 @@ msgid "units"
 msgstr "единицы"
 
 #. "Uniform Resource Locator, https://en.wikipedia.org/wiki/URL"
+#, fuzzy
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #. "The worth of sth in terms of money or other commodities for which it can be exchanged"
 msgid "value (in a split)"
