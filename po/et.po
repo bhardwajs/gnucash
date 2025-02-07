@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the GnuCash package.
 # Siim Sellis <siim.sellis@gmail.com>, 2020.
 # Rauno Ots <rots00@gmail.com>, 2023.
+# Priit Jõerüüt <hwlate@joeruut.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2023-06-08 18:50+0000\n"
-"Last-Translator: Rauno Ots <rots00@gmail.com>\n"
+"PO-Revision-Date: 2025-01-06 10:58+0000\n"
+"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "et/>\n"
 "Language: et\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -704,21 +705,18 @@ msgid ""
 "community. For announcements of new releases, user groups etc. see the table "
 "at https://wiki.gnucash.org/wiki/Mailing_Lists"
 msgstr ""
+"Postiloendid on GnuCashi kogukonna eelistatuim suhtlusviis ning ülevaatliku "
+"loendi leiad lehelt https://wiki.gnucash.org/wiki/Mailing_Lists"
 
 #: doc/tip_of_the_day.list.c:11
-#, fuzzy
-#| msgid ""
-#| "The GnuCash developers are easy to contact. As well as several mailing "
-#| "lists, you can chat to them live on IRC! Join them on #gnucash at irc."
-#| "gnome.org"
 msgid ""
 "The GnuCash developers are easy to contact. As well as several mailing "
 "lists, you can chat to them live on IRC! Join them on #gnucash at irc.gimp."
 "net"
 msgstr ""
 "GnuCash arendajatega on lihtne ühendust võtta. Lisaks mitmetele "
-"meililistidele saate nendega otse IRCs vestelda! Liituge nendega #gnucash "
-"serveris irc.gnome.org"
+"postiloenditele saad nendega otse IRCs vestelda! Liitu seltskonnaga #gnucash "
+"kanalil irc.gimp.net serveris"
 
 #: doc/tip_of_the_day.list.c:15
 msgid ""
@@ -1259,7 +1257,7 @@ msgstr "Sümbol"
 #: gnucash/report/trep-engine.scm:926 gnucash/report/trep-engine.scm:1178
 #: gnucash/report/trep-engine.scm:2242
 msgid "Shares"
-msgstr ""
+msgstr "Aktsiad"
 
 #: gnucash/gnome/assistant-stock-split.c:787
 msgid "You don't have any stock accounts with balances!"
@@ -1268,10 +1266,8 @@ msgstr ""
 #. Translators: this is a stock transaction describing an
 #. Initial stock long purchase
 #: gnucash/gnome/assistant-stock-transaction.cpp:160
-#, fuzzy
-#| msgid "Open"
 msgid "Open buy"
-msgstr "Avatud"
+msgstr "Avatud ost"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:161
 msgid "Initial stock long purchase."
@@ -1597,10 +1593,8 @@ msgid "N/A"
 msgstr ""
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:863
-#, fuzzy
-#| msgid "Account for %s is missing."
 msgid "Amount for stock value is missing."
-msgstr "Konto %s jaoks puudub."
+msgstr "Aktsiate kogus puudub."
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:875
 msgid "Invalid stock new balance."
@@ -1627,11 +1621,9 @@ msgid "Cannot cover buy more units than owed."
 msgstr ""
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:1129
-#, fuzzy
-#| msgid "Stock Value"
 msgctxt "Stock Assistant: Page name"
 msgid "Stock"
-msgstr "Aktsia väärtus"
+msgstr "Aktsia"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:1131
 msgctxt "Stock Assistant: Page name"
@@ -1644,11 +1636,9 @@ msgid "Fees"
 msgstr ""
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:1135
-#, fuzzy
-#| msgid "Find Account"
 msgctxt "Stock Assistant: Page name"
 msgid "Dividend"
-msgstr "Leia Konto"
+msgstr "Dividend"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:1137
 #, fuzzy

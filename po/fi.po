@@ -7,14 +7,15 @@
 # Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi>, 2021.
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2021.
 # Sampo Harjula <sahtor.weblate@sahtor.net>, 2022.
+# Ricky Tigg <ricky.tigg@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2023-10-30 13:04+0000\n"
-"Last-Translator: Marko Kohtala <marko.kohtala@gmail.com>\n"
+"PO-Revision-Date: 2025-01-16 13:00+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "fi/>\n"
 "Language: fi\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 "X-Poedit-Bookmarks: -1,-1,2060,-1,-1,-1,-1,-1,-1,-1\n"
 
 #: bindings/guile/date-utilities.scm:173
@@ -2842,10 +2843,8 @@ msgid "Total Cash:"
 msgstr ""
 
 #: gnucash/gnome/dialog-invoice.c:1598
-#, fuzzy
-#| msgid "Total Entries"
 msgid "Total Charge:"
-msgstr "Yhteensä tietueita"
+msgstr "Kokonaisveloitus:"
 
 #: gnucash/gnome/dialog-invoice.c:2071 gnucash/gnome/dialog-payment.c:1358
 #: gnucash/gtkbuilder/dialog-invoice.glade:976
@@ -3219,12 +3218,11 @@ msgstr "Tili"
 #. Translators: %d is the number of bills/credit notes due. This is a
 #. ngettext(3) message.
 #: gnucash/gnome/dialog-invoice.c:3897
-#, fuzzy, c-format
-#| msgid "The following errors must be fixed:"
+#, c-format
 msgid "The following vendor document is due:"
 msgid_plural "The following %d vendor documents are due:"
-msgstr[0] "Seuraavat virheet on korjattava:"
-msgstr[1] "Seuraavat virheet on korjattava:"
+msgstr[0] "Seuraava toimittajan asiakirja erääntyy:"
+msgstr[1] "Seuraavat %d toimittajan asiakirjat erääntyvät:"
 
 #: gnucash/gnome/dialog-invoice.c:3901
 msgid "Due Bills Reminder"
@@ -3233,12 +3231,11 @@ msgstr ""
 #. Translators: %d is the number of invoices/credit notes due. This is a
 #. ngettext(3) message.
 #: gnucash/gnome/dialog-invoice.c:3908
-#, fuzzy, c-format
-#| msgid "The following errors must be fixed:"
+#, c-format
 msgid "The following customer document is due:"
 msgid_plural "The following %d customer documents are due:"
-msgstr[0] "Seuraavat virheet on korjattava:"
-msgstr[1] "Seuraavat virheet on korjattava:"
+msgstr[0] "Seuraava asiakkaan asiakirja erääntyy:"
+msgstr[1] "Seuraavat asiakkaan %d asiakirjat erääntyvät:"
 
 #: gnucash/gnome/dialog-invoice.c:3912
 msgid "Due Invoices Reminder"
@@ -3362,10 +3359,9 @@ msgid "Gain/Loss"
 msgstr ""
 
 #: gnucash/gnome/dialog-lot-viewer.c:1091
-#, fuzzy, c-format
-#| msgid "Find Account"
+#, c-format
 msgid "Lots in Account %s"
-msgstr "Etsi tili"
+msgstr "Erät tilillä %s"
 
 #: gnucash/gnome/dialog-order.c:170
 msgid "The Order must be given an ID."
@@ -3583,12 +3579,11 @@ msgstr ""
 
 #. Translators: %d is the number of prices. This is a ngettext(3) message.
 #: gnucash/gnome/dialog-price-edit-db.cpp:201
-#, fuzzy, c-format
-#| msgid "Are you sure you want to delete the selected commodity?"
+#, c-format
 msgid "Are you sure you want to delete the selected price?"
 msgid_plural "Are you sure you want to delete the %d selected prices?"
-msgstr[0] "Oletko varma että haluat poistaa valitun hyödykkeen?"
-msgstr[1] "Oletko varma että haluat poistaa valitun hyödykkeen?"
+msgstr[0] "Oletko varma, että haluat poistaa valitun hinnan?"
+msgstr[1] "Oletko varma, että haluat poistaa %d valittua hintaa?"
 
 #: gnucash/gnome/dialog-price-edit-db.cpp:209
 msgid "Delete prices?"
@@ -4204,10 +4199,9 @@ msgid "(no name)"
 msgstr ""
 
 #: gnucash/gnome/gnc-plugin-page-account-tree.cpp:1406
-#, fuzzy, c-format
-#| msgid "existing account"
+#, c-format
 msgid "Deleting account %s"
-msgstr "olemassa oleva tili"
+msgstr "Poistetaan tiliä %s"
 
 #: gnucash/gnome/gnc-plugin-page-account-tree.cpp:1526
 msgid ""
@@ -4312,10 +4306,9 @@ msgid "Unnamed Budget"
 msgstr ""
 
 #: gnucash/gnome/gnc-plugin-page-budget.cpp:937
-#, fuzzy, c-format
-#| msgid "_Delete"
+#, c-format
 msgid "Delete %s?"
-msgstr "_Poista"
+msgstr "Poistetaanko %s?"
 
 #: gnucash/gnome/gnc-plugin-page-budget.cpp:1037
 #, fuzzy
@@ -5095,10 +5088,8 @@ msgid "Show previous number of days:"
 msgstr ""
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:3234
-#, fuzzy
-#| msgid "Date"
 msgid "End Date:"
-msgstr "Päiväys"
+msgstr "Päättymispäivä:"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:3244
 #: gnucash/report/trep-engine.scm:157
@@ -5639,20 +5630,16 @@ msgid "Cleared:"
 msgstr ""
 
 #: gnucash/gnome/gnc-split-reg.c:2312
-#, fuzzy
-#| msgid "Reconcile"
 msgid "Reconciled:"
-msgstr "Tarkista"
+msgstr "Täsmennetty:"
 
 #: gnucash/gnome/gnc-split-reg.c:2313
 msgid "Projected Minimum:"
 msgstr ""
 
 #: gnucash/gnome/gnc-split-reg.c:2317
-#, fuzzy
-#| msgid "Shares"
 msgid "Shares:"
-msgstr "Osuuksia"
+msgstr "Osuudet:"
 
 #: gnucash/gnome/gnc-split-reg.c:2318
 msgid "Current Value:"
@@ -5823,16 +5810,14 @@ msgid "is not"
 msgstr ""
 
 #: gnucash/gnome/top-level.c:103
-#, fuzzy, c-format
-#| msgid "File Not Found"
+#, c-format
 msgid "Entity Not Found: %s"
-msgstr "Tiedostoa ei löytynyt"
+msgstr "Entiteettiä ei löytynyt: %s"
 
 #: gnucash/gnome/top-level.c:164
-#, fuzzy, c-format
-#| msgid "Transaction Document Links"
+#, c-format
 msgid "Transaction with no Accounts: %s"
-msgstr "Tositteen asiakirjalinkit"
+msgstr "Tapahtuma ilman tilejä: %s"
 
 #: gnucash/gnome/top-level.c:207
 #, c-format
@@ -6499,10 +6484,9 @@ msgid "Edit Account"
 msgstr "Etsi tili"
 
 #: gnucash/gnome-utils/dialog-account.c:1778
-#, fuzzy, c-format
-#| msgid "All Accounts"
+#, c-format
 msgid "(%d) New Accounts"
-msgstr "Kaikki tilit"
+msgstr "(%d) Uudet tilit"
 
 #: gnucash/gnome-utils/dialog-account.c:1786
 #: gnucash/gtkbuilder/dialog-account.glade:1104
@@ -7990,10 +7974,9 @@ msgstr ""
 #. Translators: %s is a currency mnemonic.
 #: gnucash/gnome-utils/gnc-tree-view-account.c:1791
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:897
-#, fuzzy, c-format
-#| msgid "Balance Zero"
+#, c-format
 msgid "Balance (%s)"
-msgstr "Saldo nolla"
+msgstr "Saldo (%s)"
 
 #. Translators: %s is a currency mnemonic.
 #: gnucash/gnome-utils/gnc-tree-view-account.c:1794
@@ -8003,10 +7986,9 @@ msgstr ""
 
 #. Translators: %s is a currency mnemonic.
 #: gnucash/gnome-utils/gnc-tree-view-account.c:1797
-#, fuzzy, c-format
-#| msgid "Reconcile"
+#, c-format
 msgid "Reconciled (%s)"
-msgstr "Tarkista"
+msgstr "Täsmennetty (%s)"
 
 #. Translators: %s is a currency mnemonic.
 #: gnucash/gnome-utils/gnc-tree-view-account.c:1800
@@ -8016,10 +7998,9 @@ msgstr ""
 
 #. Translators: %s is a currency mnemonic.
 #: gnucash/gnome-utils/gnc-tree-view-account.c:1803
-#, fuzzy, c-format
-#| msgid "Total Entries"
+#, c-format
 msgid "Total (%s)"
-msgstr "Yhteensä tietueita"
+msgstr "Yhteensä (%s)"
 
 #. Translators: The %s is the name of the plugin page
 #: gnucash/gnome-utils/gnc-tree-view-account.c:2298
@@ -10737,10 +10718,8 @@ msgstr ""
 
 #: gnucash/gtkbuilder/assistant-csv-export.glade:320
 #: gnucash/gtkbuilder/dialog-tax-info.glade:376
-#, fuzzy
-#| msgid "Selected"
 msgid "Accounts Selected:"
-msgstr "Valittu"
+msgstr "Valitut tilit:"
 
 #: gnucash/gtkbuilder/assistant-csv-export.glade:367
 #: gnucash/gtkbuilder/dialog-tax-info.glade:422
@@ -11838,10 +11817,8 @@ msgid ""
 msgstr ""
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:915
-#, fuzzy
-#| msgid "Please choose the currency to use for new accounts."
 msgid "_Select the currency to use for all imported transactions:"
-msgstr "Valitse luotaville tileille käytettävä valuutta."
+msgstr "_Valitse kaikissa tuoduissa tapahtumissa käytettävä valuutta:"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:958
 msgid ""
@@ -17700,10 +17677,9 @@ msgstr ""
 "toinen nimi."
 
 #: gnucash/import-export/aqb/dialog-ab-trans.c:1164
-#, fuzzy, c-format
-#| msgid "Are you sure you want to delete the selected commodity?"
+#, c-format
 msgid "Do you really want to delete the template with the name \"%s\"?"
-msgstr "Oletko varma että haluat poistaa valitun hyödykkeen?"
+msgstr "Haluatko todella poistaa mallin nimellä \"%s\"?"
 
 #: gnucash/import-export/aqb/gnc-ab-getbalance.c:73
 #: gnucash/import-export/aqb/gnc-ab-gettrans.c:124
@@ -18531,12 +18507,11 @@ msgstr ""
 
 #. Translators: This is a ngettext(3) message, %d is the number of prices added
 #: gnucash/import-export/csv-imp/assistant-csv-price-import.cpp:1924
-#, fuzzy, c-format
-#| msgid "Error adding price."
+#, c-format
 msgid "%d added price"
 msgid_plural "%d added prices"
-msgstr[0] "Virhe lisättäessä hintaa."
-msgstr[1] "Virhe lisättäessä hintaa."
+msgstr[0] "%d lisätty hinta"
+msgstr[1] "%d lisättyä hintaa"
 
 #. Translators: This is a ngettext(3) message, %d is the number of duplicate prices
 #: gnucash/import-export/csv-imp/assistant-csv-price-import.cpp:1929
@@ -19169,10 +19144,8 @@ msgstr ""
 
 #: gnucash/import-export/import-main-matcher.cpp:2095
 #: gnucash/import-export/import-main-matcher.cpp:2124
-#, fuzzy
-#| msgid "missing"
 msgid "Match missing!"
-msgstr "puuttuu"
+msgstr "Täsmäävä puuttuu!"
 
 #: gnucash/import-export/import-main-matcher.cpp:2110
 #, c-format
@@ -20595,10 +20568,9 @@ msgid "Credit Formula"
 msgstr "Kredit"
 
 #: gnucash/register/ledger-core/split-register-model.c:532
-#, fuzzy, c-format
-#| msgid "Reconcile"
+#, c-format
 msgid "Reconciled on %s"
-msgstr "Tarkista"
+msgstr "Täsmäytys %s"
 
 #: gnucash/register/ledger-core/split-register-model.c:1013
 msgid "Scheduled"
@@ -23188,10 +23160,8 @@ msgid "Barchart"
 msgstr ""
 
 #: gnucash/report/reports/standard/balsheet-pnl.scm:1156
-#, fuzzy
-#| msgid "~a to ~a"
 msgid " to "
-msgstr "~a → ~a"
+msgstr " tähän "
 
 #: gnucash/report/reports/standard/balsheet-pnl.scm:1215
 #: gnucash/report/reports/standard/customer-summary.scm:110
@@ -26372,10 +26342,8 @@ msgid "CSS color."
 msgstr ""
 
 #: gnucash/report/reports/standard/taxinvoice.scm:205
-#, fuzzy
-#| msgid "Invoice"
 msgid "Invoice number:"
-msgstr "Myyntilasku"
+msgstr "Laskunumero:"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:208
 msgid "To:"
@@ -29988,10 +29956,8 @@ msgstr ""
 
 #. Translators: this refers to a directory name.
 #: libgnucash/core-utils/gnc-filepath-utils.cpp:682
-#, fuzzy
-#| msgid "New Book Options"
 msgid "New location:"
-msgstr "Uuden kirjanpidon asetukset"
+msgstr "Uusi sijainti:"
 
 #. Translators {1} will be replaced with the package name (typically Gnucash) at runtime
 #: libgnucash/core-utils/gnc-filepath-utils.cpp:684
@@ -30499,10 +30465,8 @@ msgid "Generated from an invoice. Try unposting the invoice."
 msgstr ""
 
 #: libgnucash/engine/gncInvoice.c:2197
-#, fuzzy
-#| msgid "Date Posted"
 msgid " (posted)"
-msgstr "Vientipäivä"
+msgstr " (lähetetty)"
 
 #: libgnucash/engine/gnc-option-date.cpp:88
 msgid "One Week Ago"

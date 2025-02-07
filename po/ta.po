@@ -2,14 +2,15 @@
 # Copyright (C) 2014, C-DAC, GIST, Pune, India.
 # Shanmugam R. <shanfaace@yahoo.co.in>, 2014.
 # தமிழ்நேரம் <anishprabu.t@gmail.com>, 2024.
+# John Ralls <jralls@ceridwen.us>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2024-06-04 16:09+0000\n"
-"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"PO-Revision-Date: 2025-02-07 23:57+0000\n"
+"Last-Translator: John Ralls <jralls@ceridwen.us>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/gnucash/gnucash/ta/"
 ">\n"
 "Language: ta\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -707,18 +708,14 @@ msgstr ""
 "https://wiki.gnucash.org/wiki/Mailing_Lists"
 
 #: doc/tip_of_the_day.list.c:11
-#, fuzzy
-#| msgid ""
-#| "The GnuCash developers are easy to contact. As well as several mailing "
-#| "lists, you can chat to them live on IRC! Join them on #gnucash at irc."
-#| "gnome.org"
 msgid ""
 "The GnuCash developers are easy to contact. As well as several mailing "
 "lists, you can chat to them live on IRC! Join them on #gnucash at irc.gimp."
 "net"
 msgstr ""
-"GnuCash வல்லுநர்களயும் பல அஞ்சல் குழுக்களையும் எளிதாக தொடர்பு கொள்ளலாம். IRC இல் நீங்கள் "
-"லைவ்வாக அரட்டை செய்யலாம். irc.gnome.org #gnucash-இல் எங்களுடன் இணையவும்"
+"க்னுகாச் உருவாக்குபவர்கள் தொடர்பு கொள்ள எளிதானது. பல அஞ்சல் பட்டியல்களிலும், நீங்கள் அவற்றில் "
+"ஐ.ஆர்.சி.யில் நேரலையில் அரட்டையடிக்கலாம்! Irc.gimp.net இல் #gnucash இல் அவர்களுடன் "
+"சேருங்கள்"
 
 #: doc/tip_of_the_day.list.c:15
 msgid ""
@@ -1187,7 +1184,7 @@ msgstr "காப்பீடு கட்டணம்"
 #. Translators: PMI stands for Private Mortgage Insurance.
 #: gnucash/gnome/assistant-loan.cpp:129
 msgid "PMI"
-msgstr "PMI"
+msgstr "பி.எம்.ஐ."
 
 #: gnucash/gnome/assistant-loan.cpp:129
 msgid "PMI Payment"
@@ -1423,20 +1420,15 @@ msgid "Sell"
 msgstr "விற்றல்"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:198
-#, fuzzy
-#| msgid ""
-#| "Selling stock long, and record capital gain/loss.\n"
-#| "\n"
-#| "If you are unable to calculate capital gains you can enter aplaceholder "
-#| "amount and correct it in the transaction later."
 msgid ""
 "Selling stock long, and record capital gain/loss.\n"
 "\n"
 "If you are unable to calculate capital gains you can enter a placeholder "
 "amount and correct it in the transaction later."
 msgstr ""
-"பங்குகளை நீண்ட விற்பனை செய்தல், மற்றும் மூலதன ஆதாயம்/இழப்பு ஆகியவற்றை பதிவு செய்தல்\n"
-" மூலதன ஆதாயங்களை நீங்கள் கணக்கிட முடியாவிட்டால், நீங்கள் அப்லேச்ஓல்டர் தொகையை உள்ளிட்டு "
+"பங்குகளை நீண்ட விற்பனை செய்தல், மற்றும் மூலதன ஆதாயம்/இழப்பு ஆகியவற்றை பதிவு செய்தல்.\n"
+"\n"
+" மூலதன ஆதாயங்களை நீங்கள் கணக்கிட முடியாவிட்டால், நீங்கள் ஒரு ஒதுக்கிடத் தொகையை உள்ளிட்டு "
 "பின்னர் பரிவர்த்தனையில் சரிசெய்யலாம்."
 
 #. Translators: this is a stock transaction describing
@@ -2090,16 +2082,11 @@ msgstr ""
 "தேர்ந்தெடுக்கவும்."
 
 #: gnucash/gnome/dialog-commodities.cpp:183
-#, fuzzy
-#| msgid ""
-#| "That commodity is currently used by at least one of your accounts. You "
-#| "may not delete it."
 msgid ""
 "This commodity is currently used by the following accounts. You may not "
 "delete it.\n"
 msgstr ""
-"அந்த சரக்கு நடப்பில் உங்கள் கணக்கில் வருடத்திற்கு ஒரு முறையாவது பயன்படுத்தப்படுகிறது. "
-"நீங்கள் அதை அழிக்க கூடாது."
+"இந்த பொருள் தற்போது பின்வரும் கணக்குகளால் பயன்படுத்தப்படுகிறது. நீங்கள் அதை நீக்கக்கூடாது.\n"
 
 #: gnucash/gnome/dialog-commodities.cpp:201
 msgid ""
@@ -2323,7 +2310,7 @@ msgstr "நிறுவனம்"
 #: gnucash/gnome/dialog-job.c:585 gnucash/gnome/dialog-vendor.c:705
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:333
 msgid "ID #"
-msgstr "ID #"
+msgstr "ஐடி #"
 
 #: gnucash/gnome/dialog-customer.c:928
 msgid "Find Customer"
@@ -5271,7 +5258,7 @@ msgstr "அறிக்கை கட்டமைப்பை சேமி இப
 #: gnucash/gnome/gnc-plugin-page-report.cpp:1552
 #: gnucash/gnome/gnc-plugin-page-report.cpp:1585
 msgid "HTML"
-msgstr "HTML"
+msgstr "உஉகுமொ"
 
 #: gnucash/gnome/gnc-plugin-page-report.cpp:1555
 msgid "Choose export format"
@@ -5657,7 +5644,7 @@ msgstr ""
 #: gnucash/gnome/gnucash.appdata.xml.in.in:5
 #: gnucash/gnome/gnucash.desktop.in.in:6
 msgid "GnuCash"
-msgstr "GnuCash"
+msgstr "க்னுகாச்"
 
 #: gnucash/gnome/gnucash.appdata.xml.in.in:6
 #: gnucash/gnome/gnucash.desktop.in.in:8
@@ -7982,7 +7969,7 @@ msgstr "தனிப்பட்ட பெயர்"
 #. National Securities Identifying Number.
 #: gnucash/gnome-utils/gnc-tree-view-commodity.c:382
 msgid "ISIN/CUSIP"
-msgstr "ISIN/CUSIP"
+msgstr "Isin/cusip"
 
 #: gnucash/gnome-utils/gnc-tree-view-commodity.c:388
 msgid "Fraction"
@@ -9367,17 +9354,13 @@ msgstr "பயனருக்கு எத்தனை நாட்களுக�
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.sxs.gschema.xml.in:59
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.sxs.gschema.xml.in:60
-#, fuzzy
-#| msgid "The number of payments cannot be zero."
 msgid "The number of months to be shown in editor."
-msgstr "கட்டணங்களின் எண்ணிக்கை பூச்சியமாக இருக்காது."
+msgstr "எடிட்டரில் காட்டப்பட வேண்டிய மாதங்களின் எண்ணிக்கை."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.sxs.gschema.xml.in:64
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.sxs.gschema.xml.in:65
-#, fuzzy
-#| msgid "Position of the vertical pane divider."
 msgid "The horizontal position of the editor divider."
-msgstr "நெடுதள பலகத்தின் பிரிப்பின் நிலை."
+msgstr "எடிட்டர் டிவைடரின் கிடைமட்ட நிலை."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.sxs.gschema.xml.in:76
 msgid "Set the \"notify\" flag by default"
@@ -9430,11 +9413,14 @@ msgid ""
 "by registering for a free account at the Alpha Vantage website, https://www."
 "alphavantage.co/support/#api-key."
 msgstr ""
+"ஆல்பா வான்டேசுக்கு அவர்களின் சேவையைப் பயன்படுத்த பநிஇ விசை தேவைப்படுகிறது. ஆல்பா வான்டேச்"
+" வலைத்தளமான https://www.alphavange.co/support/#api-key இல் இலவச கணக்கிற்கு பதிவு "
+"செய்வதன் மூலம் நீங்கள் ஒரு விசையைப் பெறலாம்."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.general.finance-quote.gschema.xml.in:10
 #: gnucash/gtkbuilder/dialog-preferences.glade:3687
 msgid "YH Finance (FinanceAPI) API key"
-msgstr ""
+msgstr "YH FINANCE (FinanceApi) பநிஇ விசை"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.general.finance-quote.gschema.xml.in:11
 #: gnucash/gtkbuilder/dialog-preferences.glade:3686
@@ -9444,6 +9430,9 @@ msgid ""
 "obtain a key by registering for a free account at the YH Finance website, "
 "https://financeapi.net/pricing."
 msgstr ""
+"YH நிதிக்கு அவர்களின் பொருள் சேவையைப் பயன்படுத்த பநிஇ விசை தேவைப்படுகிறது. YH பொருள் "
+"வலைத்தளமான https://financeapi.net/pricing இல் இலவச கணக்கிற்கு பதிவு செய்வதன் மூலம் "
+"நீங்கள் ஒரு விசையைப் பெறலாம்."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:10
 msgid "The version of these settings"
@@ -11436,33 +11425,6 @@ msgid "CSV Transaction Import"
 msgstr "காபிம பரிமாற்ற இறக்குமதி"
 
 #: gnucash/gtkbuilder/assistant-csv-trans-import.glade:44
-#, fuzzy
-#| msgid ""
-#| "This assistant will help you import a delimited file containing a list of "
-#| "transactions. It supports both token separated files (such as comma "
-#| "separated or semi-colon separated) and fixed width data.\n"
-#| "\n"
-#| "For a successful import three columns have to be available in the import "
-#| "data:\n"
-#| "• a Date column\n"
-#| "• a Description column\n"
-#| "• a Deposit or Withdrawal column\n"
-#| "\n"
-#| "If there is no Account data available, a base account can be selected to "
-#| "which all data will be imported.\n"
-#| "\n"
-#| "Apart from a choice of delimiter, there are several options to tweak the "
-#| "importer. For example a number of lines can be skipped at the start or "
-#| "the end of the data, as well as odd rows. Several date and number formats "
-#| "are supported. The file encoding can be defined.\n"
-#| "\n"
-#| "The importer can handle files where transactions are split over multiple "
-#| "lines, with each line representing one split.\n"
-#| "\n"
-#| "Lastly, for repeated imports the preview page has buttons to Load and "
-#| "Save the settings. You can save your adjusted settings to reuse them on "
-#| "later imports. After loading your settings you can also tweak them again "
-#| "for similar imports and save them under another name."
 msgid ""
 "This assistant will help you import a delimited file containing a list of "
 "transactions. It supports both token separated files (such as comma "
@@ -11495,19 +11457,28 @@ msgid ""
 msgstr ""
 "பரிவர்த்தனைகளின் பட்டியலைக் கொண்ட பிரிக்கப்பட்ட கோப்பை இறக்குமதி செய்ய இந்த உதவியாளர் "
 "உங்களுக்கு உதவுவார். இது கிள்ளாக்கு பிரிக்கப்பட்ட கோப்புகள் (கமா பிரிக்கப்பட்ட அல்லது அரை "
-"காலோன் பிரிக்கப்பட்ட) மற்றும் நிலையான அகல தரவு ஆகிய இரண்டையும் ஆதரிக்கிறது\n"
-" வெற்றிகரமாக இறக்குமதி செய்ய மூன்று நெடுவரிசைகள் இறக்குமதி தரவுகளில் கிடைக்க வேண்டும\n"
-" Tate தேதி நெடுவரி\n"
-" Prodection விளக்க நெடுவரி\n"
-" Tepset ஒரு வைப்பு அல்லது திரும்பப் பெறுதல் நெடுவரிச\n"
+"காலோன் பிரிக்கப்பட்ட) மற்றும் நிலையான அகல தரவு ஆகிய இரண்டையும் ஆதரிக்கிறது.\n"
+"\n"
+" வெற்றிகரமாக இறக்குமதி செய்ய மூன்று நெடுவரிசைகள் இறக்குமதி தரவுகளில் கிடைக்க வேண்டும்:"
+"\n"
+" Tate தேதி நெடுவரிசை\n"
+" Prodection விளக்க நெடுவரிசை\n"
+" • ஒரு தொகை அல்லது தொகை (மறுக்கப்பட்ட) நெடுவரிசை\n"
+"\n"
 " கணக்கு தரவு எதுவும் கிடைக்கவில்லை என்றால், அனைத்து தரவுகளும் இறக்குமதி செய்யப்படும் ஒரு "
-"அடிப்படை கணக்கைத் தேர்ந்தெடுக்கலாம்\n"
-" டிலிமிட்டரின் தேர்வு தவிர, இறக்குமதியாளரை மாற்ற பல விருப்பங்கள் உள்ளன. "
-"எடுத்துக்காட்டாக, தரவின் தொடக்கத்திலோ அல்லது முடிவிலோ பல வரிகளைத் தவிர்க்கலாம், அதே போல் "
-"ஒற்றைப்படை வரிசைகள். பல தேதி மற்றும் எண் வடிவங்கள் ஆதரிக்கப்படுகின்றன. கோப்பு குறியாக்கம் "
-"வரையறுக்கப்படலாம்\n"
+"அடிப்படை கணக்கைத் தேர்ந்தெடுக்கலாம்.\n"
+"\n"
+" டிலிமிட்டரின் தேர்வு தவிர, இறக்குமதியாளரை மாற்ற பல விருப்பங்கள் உள்ளன. எடுத்துக்காட்டா"
+"க, தரவின் தொடக்கத்திலோ அல்லது முடிவிலோ பல வரிகளைத் தவிர்க்கலாம், அதே போல் ஒற்றைப்படை "
+"வரிசைகள். பல தேதி மற்றும் எண் வடிவங்கள் ஆதரிக்கப்படுகின்றன. கோப்பு குறியாக்கம் "
+"வரையறுக்கப்படலாம்.\n"
+"\n"
 " இறக்குமதியாளர் பல வரிகளில் பரிவர்த்தனைகள் பிரிக்கப்பட்ட கோப்புகளை கையாள முடியும், "
-"ஒவ்வொரு வரியும் ஒரு பிளவைக் குறிக்கும்\n"
+"ஒவ்வொரு வரியும் ஒரு பிளவைக் குறிக்கும். ஒவ்வொரு முறையும் பரிவர்த்தனை தொடர்பான "
+"நெடுவரிசைகளின் மதிப்பு முந்தைய, காலியாக இல்லாத ஒன்றிலிருந்து வேறுபடும்போது ஒவ்வொரு "
+"முறையும் ஒரு புதிய பரிவர்த்தனை தொடங்கப்படுகிறது. அந்த நெடுவரிசைகள் பரிவர்த்தனை ஐடி, "
+"தேதி, எண், விளக்கம், குறிப்புகள், பரிவர்த்தனை பொருட்கள் மற்றும் வெற்றிட காரணம்.\n"
+"\n"
 " கடைசியாக, மீண்டும் மீண்டும் இறக்குமதிக்கு முன்னோட்டப் பக்கத்தில் அமைப்புகளை ஏற்றவும் "
 "சேமிக்கவும் பொத்தான்கள் உள்ளன. உங்கள் சரிசெய்யப்பட்ட அமைப்புகளை பின்னர் இறக்குமதியில் மீண்டும் "
 "பயன்படுத்த நீங்கள் சேமிக்கலாம். உங்கள் அமைப்புகளை ஏற்றிய பிறகு, ஒத்த இறக்குமதிக்காக அவற்றை "
@@ -13312,11 +13283,9 @@ msgid "<b>Initial Balance Transfer</b>"
 msgstr "<b>ஆரம்ப இருப்பு இடமாற்றம்</b>"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1837
-#, fuzzy
-#| msgid "_Balance"
 msgctxt "field label"
 msgid "_Balance"
-msgstr "மீதி (_B)"
+msgstr "_ நிலை"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1862
 msgid "_Use equity 'Opening Balances' account"
@@ -14467,7 +14436,7 @@ msgstr "<b>செயல்கள்</b>"
 
 #: gnucash/gtkbuilder/dialog-import.glade:648
 msgid "\"A\""
-msgstr "\"A\""
+msgstr "\"ஒரு\""
 
 #: gnucash/gtkbuilder/dialog-import.glade:659
 msgid "\"U+C\""
@@ -14875,12 +14844,12 @@ msgstr "கணக்கை இடமாற்று"
 #. Date format label for 07/31/2013
 #: gnucash/gtkbuilder/dialog-preferences.glade:50
 msgid "US"
-msgstr "US"
+msgstr "எங்களுக்கு"
 
 #. Date format label for 31/07/2013
 #: gnucash/gtkbuilder/dialog-preferences.glade:54
 msgid "UK"
-msgstr "UK"
+msgstr "யுகே"
 
 #. Date format label for 31.07.2013
 #: gnucash/gtkbuilder/dialog-preferences.glade:58
@@ -14890,7 +14859,7 @@ msgstr "ஐரோப்பா"
 #. Date format label for 2013-07-31
 #: gnucash/gtkbuilder/dialog-preferences.glade:62
 msgid "ISO"
-msgstr "ISO"
+msgstr "ஐசோ"
 
 #. Label for locale settings of formats, …
 #: gnucash/gtkbuilder/dialog-preferences.glade:66
@@ -16641,11 +16610,11 @@ msgstr ""
 
 #: gnucash/gtkbuilder/gnc-date-format.glade:12
 msgid "US (12/31/2001)"
-msgstr "US (12/31/2001)"
+msgstr "யு.எச் (12/31/2001)"
 
 #: gnucash/gtkbuilder/gnc-date-format.glade:15
 msgid "UK (31/12/2001)"
-msgstr "UK (31/12/2001)"
+msgstr "யுகே (31/12/2001)"
 
 #: gnucash/gtkbuilder/gnc-date-format.glade:18
 msgid "Europe (31.12.2001)"
@@ -16653,7 +16622,7 @@ msgstr "ஐரோப்பா (31.12.2001)"
 
 #: gnucash/gtkbuilder/gnc-date-format.glade:21
 msgid "ISO (2001-12-31)"
-msgstr "ISO (2001-12-31)"
+msgstr "ஐஎச்ஓ (2001-12-31)"
 
 #: gnucash/gtkbuilder/gnc-date-format.glade:27
 msgid "UTC - Coordinated Universal Time"
@@ -17733,8 +17702,7 @@ msgid ""
 "<a href=\"https://aquamaniac.de/rdm/projects/aqbanking/wiki/Bugreports/"
 "\">https://aquamaniac.de/rdm/projects/aqbanking/wiki/Bugreports/</a>"
 msgstr ""
-"<a href=\"https://aquamaniac.de/rdm/projects/aqbanking/wiki/Bugreports/"
-"\">https://aquamaniac.de/rdm/projects/aqbanking/wiki/Bugreports/</a>"
+"<a href = \"https://aquamaniac.de/rdm/projects/aqbanking/wiki/bugreports/\">"
 
 #: gnucash/import-export/aqb/assistant-ab-initial.glade:157
 msgid ""
@@ -19574,7 +19542,7 @@ msgstr "பரிமாற்ற தொகை"
 
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:78
 msgid "Transfer Amount (Negated)"
-msgstr "Transfer Amount (Negated)"
+msgstr "பரிமாற்ற தொகை (மறுக்கப்பட்டது)"
 
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:79
 msgid "Transfer Memo"
@@ -19652,16 +19620,12 @@ msgstr ""
 "(negated) மதிப்பு நெடுவரிசை is missing or invalid."
 
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:666
-#, fuzzy
-#| msgid ""
-#| "Choice of account makes this a multi-currency transaction but price, "
-#| "(negated) value or (negated) transfer column is missing or invalid."
 msgid ""
 "Choice of accounts makes this a multi-currency transaction but price, "
 "(negated) value or (negated) transfer amount column is missing or invalid."
 msgstr ""
-"கணக்கின் தேர்வு இதை பல நாணய பரிவர்த்தனையாக மாற்றுகிறது, ஆனால் விலை, (மறுக்கப்பட்ட) "
-"மதிப்பு அல்லது (மறுக்கப்பட்ட) பரிமாற்ற நெடுவரிசை இல்லை அல்லது தவறானது."
+"கணக்குகளின் தேர்வு இதை பல நாணய பரிவர்த்தனையாக மாற்றுகிறது, ஆனால் விலை, (மறுக்கப்பட்ட) "
+"மதிப்பு அல்லது (மறுக்கப்பட்ட) பரிமாற்ற தொகை நெடுவரிசை இல்லை அல்லது தவறானது."
 
 #: gnucash/import-export/csv-imp/gnc-imp-settings-csv.cpp:46
 msgid "No Settings"
@@ -19745,8 +19709,8 @@ msgid ""
 "The account '%s' is a placeholder account and does not allow transactions. "
 "Please choose a different account."
 msgstr ""
-"The account '%s' is a placeholder account and does not allow transactions. "
-"Please choose a different account."
+"'%s' கணக்கு ஒரு ஒதுக்கிடக் கணக்கு மற்றும் பரிவர்த்தனைகளை அனுமதிக்காது. வேறு கணக்கைத் "
+"தேர்வுசெய்க."
 
 #: gnucash/import-export/import-account-matcher.cpp:419
 msgid "(Full account ID: "
@@ -19977,10 +19941,8 @@ msgid "Unknown OFX investment account"
 msgstr "தெரியாத OFX முதலீடு கணக்கு"
 
 #: gnucash/import-export/ofx/gnc-ofx-import.cpp:1308
-#, fuzzy
-#| msgid "Finding duplicate transactions"
 msgid "Removing duplicate transactions…"
-msgstr "நகலான பரிமாற்றங்களை தேடுகிறது"
+msgstr "நகல் பரிவர்த்தனைகளை நீக்குதல்…"
 
 #: gnucash/import-export/ofx/gnc-ofx-import.cpp:1362
 #, c-format
@@ -20725,7 +20687,7 @@ msgstr "உள்ளீட்டின் வகையை உள்ளிடு"
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:577
 #: gnucash/register/ledger-core/split-register-model.c:1002
 msgid "%A %d %B %Y"
-msgstr "%A %d %B %Y"
+msgstr "%A %d %b %y"
 
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:587
 msgid "Enter the Entry Description"
@@ -20969,11 +20931,11 @@ msgstr "குறைத்தல்"
 
 #: gnucash/register/ledger-core/split-register.c:2572
 msgid "POS"
-msgstr "POS"
+msgstr "போச்"
 
 #: gnucash/register/ledger-core/split-register.c:2576
 msgid "AutoDep"
-msgstr "AutoDep"
+msgstr "ஆட்டோடெப்"
 
 #: gnucash/register/ledger-core/split-register.c:2577
 msgid "Wire"
@@ -20996,7 +20958,7 @@ msgstr "தள்ளுபடி"
 
 #: gnucash/register/ledger-core/split-register.c:2626
 msgid "Paycheck"
-msgstr "Paycheck"
+msgstr "சம்பள காசோலை"
 
 #: gnucash/register/ledger-core/split-register.c:2652
 msgid "LTCG"
@@ -21015,6 +20977,8 @@ msgid ""
 "This transaction cannot be balanced: The imbalance is a fraction smaller "
 "than the commodity allows."
 msgstr ""
+"இந்த பரிவர்த்தனையை சமப்படுத்த முடியாது: ஏற்றத்தாழ்வு என்பது பண்டத்தை விட சிறிய "
+"பகுதியாகும்."
 
 #: gnucash/register/ledger-core/split-register-control.cpp:93
 msgid "Rebalance Transaction"
@@ -21814,7 +21778,7 @@ msgstr "வரிகள் (_T)"
 
 #: gnucash/report/report-core.scm:158
 msgid "E_xamples"
-msgstr "E_xamples"
+msgstr "எடுத்துக்காட்டுகள்"
 
 #: gnucash/report/report-core.scm:159
 msgid "_Experimental"
@@ -22573,7 +22537,7 @@ msgstr ""
 
 #: gnucash/report/reports/locale-specific/de_DE/taxtxf.scm:848
 msgid "XML"
-msgstr "XML"
+msgstr "நீகுமொ"
 
 #: gnucash/report/reports/locale-specific/de_DE/taxtxf.scm:852
 msgid "This page shows your Taxable Income and Deductible Expenses."
@@ -23079,8 +23043,8 @@ msgstr "கணக்குகளை தவிர்"
 #: gnucash/report/reports/standard/trial-balance.scm:374
 msgid "${company-name} ${report-title} For Period Covering ${start} to ${end}"
 msgstr ""
-"$ {தொடக்க} முதல் $ {முடிவு} வரை உள்ளடக்கிய காலத்திற்கு $ {நிறுவன-பெயர்} $ {அறிக்கை-"
-"தலைப்பு}"
+"$ {start} முதல் $ {end} வரை உள்ளடக்கிய காலத்திற்கு $ {நிறுவன-பெயர்} $ "
+"{அறிக்கை-தலைப்பு}"
 
 #: gnucash/report/reports/standard/account-summary.scm:381
 msgid "Account title"
@@ -25839,7 +25803,7 @@ msgstr "கட்டணம், நன்றி!"
 #. Translators: This "T" is displayed in the taxable column, if this entry contains tax
 #: gnucash/report/reports/standard/invoice.scm:656
 msgid "T"
-msgstr "T"
+msgstr "டி"
 
 #: gnucash/report/reports/standard/invoice.scm:703
 #: gnucash/report/reports/standard/receipt.scm:57
@@ -27064,7 +27028,7 @@ msgstr "உள்ளீடுகளை சரிசெய்கிறது"
 
 #: gnucash/report/reports/standard/trial-balance.scm:370
 msgid "${company-name} ${report-title} ${date}"
-msgstr "$ {நிறுவன-பெயர்} $ {அறிக்கை-தலைப்பு} $ {தேதி}"
+msgstr "$ {நிறுவன-பெயர்} $ {அறிக்கை-தலைப்பு} $ {date}"
 
 #: gnucash/report/reports/standard/trial-balance.scm:533
 msgid "Adjustments"
@@ -27079,26 +27043,20 @@ msgid "Net Loss"
 msgstr "நிகர இழப்பு"
 
 #: gnucash/report/reports/standard/txn-columns.scm:33
-#, fuzzy
-#| msgid "Transaction Report"
 msgid "Transaction Breakdown Report"
-msgstr "பரிமாற்ற அறிக்கை"
+msgstr "பரிவர்த்தனை முறிவு அறிக்கை"
 
 #: gnucash/report/reports/standard/txn-columns.scm:37
-#, fuzzy
-#| msgid "Number of columns"
 msgid "Limit for number of columns"
-msgstr "நிரல்களின் எண்ணிக்கை"
+msgstr "நெடுவரிசைகளின் எண்ணிக்கையின் வரம்பு"
 
 #: gnucash/report/reports/standard/txn-columns.scm:38
 msgid "Set the upper limit for number of columns"
-msgstr ""
+msgstr "நெடுவரிசைகளின் எண்ணிக்கையில் மேல் வரம்பை அமைக்கவும்"
 
 #: gnucash/report/reports/standard/txn-columns.scm:154
-#, fuzzy
-#| msgid "Income summary accounts"
 msgid "Too many accounts"
-msgstr "வருமான சுருக்க கணக்குகள்"
+msgstr "பல கணக்குகள்"
 
 #: gnucash/report/reports/standard/txn-columns.scm:155
 msgid ""
@@ -27106,6 +27064,9 @@ msgid ""
 "Select a different subset of transactions, or increase the limit in the "
 "options."
 msgstr ""
+"காணப்படும் பரிவர்த்தனைகளால் இணைக்கப்பட்ட கணக்குகளின் எண்ணிக்கை வரம்பை மீறுகிறது. "
+"பரிவர்த்தனைகளின் வேறுபட்ட துணைக்குழுவைத் தேர்ந்தெடுக்கவும் அல்லது விருப்பங்களில் வரம்பை "
+"அதிகரிக்கவும்."
 
 #: gnucash/report/reports/standard/view-column.scm:45
 #: gnucash/report/reports/standard/view-column.scm:56
@@ -29720,7 +29681,7 @@ msgstr "தற்போதைய பரிவர்த்தனைக்கா�
 #: gnucash/ui/gnc-plugin-page-register.ui:544
 #: gnucash/ui/gnc-plugin-page-register.ui:847
 msgid "Sche_dule…"
-msgstr "Sche_dule…"
+msgstr "Sche_dule …"
 
 #: gnucash/ui/gnc-plugin-page-register.ui:297
 #: gnucash/ui/gnc-plugin-page-register.ui:434
@@ -29894,11 +29855,11 @@ msgstr "அறிக்கையை ஏற்றவும் (_R)"
 
 #: gnucash/ui/gnc-plugin-page-sx-list.ui:37
 msgid "_Save layout as default"
-msgstr ""
+msgstr "_சேவ் தளவமைப்பு இயல்புநிலையாக"
 
 #: gnucash/ui/gnc-plugin-page-sx-list.ui:39
 msgid "Save current layout as default"
-msgstr ""
+msgstr "தற்போதைய தளவமைப்பை இயல்புநிலையாக சேமிக்கவும்"
 
 #: gnucash/ui/gnc-plugin-page-sx-list.ui:55
 #: gnucash/ui/gnc-plugin-page-sx-list.ui:155
@@ -29957,11 +29918,9 @@ msgstr "கணக்கினை திற (_O)"
 
 #: gnucash/ui/gnc-reconcile-window.ui:58 gnucash/ui/gnc-reconcile-window.ui:98
 #: gnucash/ui/gnc-reconcile-window.ui:129
-#, fuzzy
-#| msgid "_Balance"
 msgctxt "reconcile menu"
 msgid "_Balance"
-msgstr "மீதி (_B)"
+msgstr "_ நிலை"
 
 #: gnucash/ui/gnc-reconcile-window.ui:68 gnucash/ui/gnc-reconcile-window.ui:106
 msgid "_Reconcile Selection"
@@ -30458,343 +30417,329 @@ msgstr ""
 "பதிவுசெய்யப்படவில்லை."
 
 #: libgnucash/engine/gnc-commodity.cpp:191
-#, fuzzy
-#| msgid "Alpha Vantage API key"
 msgctxt "FQ Source"
 msgid "Alphavantage"
-msgstr "ஆல்பா வான்டேச் பநிஇ விசை"
+msgstr "அகரவரிசை"
 
 #: libgnucash/engine/gnc-commodity.cpp:192
 msgctxt "FQ Source"
 msgid "Amsterdam Euronext eXchange, NL"
-msgstr ""
+msgstr "ஆம்ச்டர்டாம் யூரோநெக்ச்ட் எக்ச்சேஞ்ச், என்.எல்"
 
 #: libgnucash/engine/gnc-commodity.cpp:193
 msgctxt "FQ Source"
 msgid "Association of Mutual Funds in India"
-msgstr ""
+msgstr "இந்தியாவில் பரச்பர நிதிகளின் சங்கம்"
 
 #: libgnucash/engine/gnc-commodity.cpp:194
 msgctxt "FQ Source"
 msgid "Athens Exchange Group, GR"
-msgstr ""
+msgstr "ஏதென்ச் எக்ச்சேஞ்ச் குழு, சி.ஆர்"
 
 #: libgnucash/engine/gnc-commodity.cpp:195
 msgctxt "FQ Source"
 msgid "Australian Stock Exchange, AU"
-msgstr ""
+msgstr "ஆச்திரேலிய பங்குச் சந்தை, அயு"
 
 #: libgnucash/engine/gnc-commodity.cpp:196
-#, fuzzy
-#| msgid "Bill number"
 msgctxt "FQ Source"
 msgid "Bloomberg"
-msgstr "பில் எண்"
+msgstr "ப்ளூம்பெர்க்"
 
 #: libgnucash/engine/gnc-commodity.cpp:197
 msgctxt "FQ Source"
 msgid "Italian Stock Exchange, IT"
-msgstr ""
+msgstr "இத்தாலிய பங்குச் சந்தை, அது"
 
 #: libgnucash/engine/gnc-commodity.cpp:198
 msgctxt "FQ Source"
 msgid "BSE India, IN"
-msgstr ""
+msgstr "பிஎச்இ இந்தியா, ஐ.என்"
 
 #: libgnucash/engine/gnc-commodity.cpp:199
 msgctxt "FQ Source"
 msgid "Bucharest Stock Exchange, RO"
-msgstr ""
+msgstr "புக்கரெச்ட் பங்குச் சந்தை, ரோ"
 
 #: libgnucash/engine/gnc-commodity.cpp:200
 msgctxt "FQ Source"
 msgid "Colombo Stock Exchange, LK"
-msgstr ""
+msgstr "கொழும்பு பங்குச் சந்தை, எல்.கே."
 
 #: libgnucash/engine/gnc-commodity.cpp:201
 msgctxt "FQ Source"
 msgid "comdirect, DE"
-msgstr ""
+msgstr "comdirect, தி"
 
 #: libgnucash/engine/gnc-commodity.cpp:202
 msgctxt "FQ Source"
 msgid "Consors Bank, DE"
-msgstr ""
+msgstr "கோர்சர்ச் வங்கி, டி"
 
 #: libgnucash/engine/gnc-commodity.cpp:203
-#, fuzzy
-#| msgid "Investments"
 msgctxt "FQ Source"
 msgid "Deka Investments, DE"
-msgstr "முதலீடுகள்"
+msgstr "டெகா இன்வெச்ட்மென்ட்ச், டெக்கா"
 
 #: libgnucash/engine/gnc-commodity.cpp:204
 msgctxt "FQ Source"
 msgid "DWS, DE"
-msgstr ""
+msgstr "டி.டபிள்யூ.எச்,"
 
 #: libgnucash/engine/gnc-commodity.cpp:205
 msgctxt "FQ Source"
 msgid "Financial Times Funds service, GB"
-msgstr ""
+msgstr "ஃபைனான்சியல் டைம்ச் பொருள் பணி, சிபி"
 
 #: libgnucash/engine/gnc-commodity.cpp:206
 msgctxt "FQ Source"
 msgid "Finanzpartner, DE"
-msgstr ""
+msgstr "பொருள் பங்குதாரர், தி"
 
 #: libgnucash/engine/gnc-commodity.cpp:207
 msgctxt "FQ Source"
 msgid "FondsWeb, DE"
-msgstr ""
+msgstr "பொருள் வலை, டி"
 
 #: libgnucash/engine/gnc-commodity.cpp:208
 msgctxt "FQ Source"
 msgid "GoldMoney precious metals"
-msgstr ""
+msgstr "கோல்ட்மனி விலைமதிப்பற்ற உலோகங்கள்"
 
 #: libgnucash/engine/gnc-commodity.cpp:209
 msgctxt "FQ Source"
 msgid "Google Web, US Stocks"
-msgstr ""
+msgstr "கூகிள் வலை, அமெரிக்க பங்குகள்"
 
 #: libgnucash/engine/gnc-commodity.cpp:210
 msgctxt "FQ Source"
 msgid "IEX (Investors Exchange), US"
-msgstr ""
+msgstr "IEX (முதலீட்டாளர்கள் பரிமாற்றம்), அமெரிக்கா"
 
 #: libgnucash/engine/gnc-commodity.cpp:211
 msgctxt "FQ Source"
 msgid "Market Watch"
-msgstr ""
+msgstr "சந்தை கண்காணிப்பு"
 
 #: libgnucash/engine/gnc-commodity.cpp:212
 msgctxt "FQ Source"
 msgid "Morningstar, AU"
-msgstr ""
+msgstr "மார்னிங்ச்டார், அ"
 
 #: libgnucash/engine/gnc-commodity.cpp:213
 msgctxt "FQ Source"
 msgid "Morningstar, CH"
-msgstr ""
+msgstr "மார்னிங்ச்டார், ச"
 
 #: libgnucash/engine/gnc-commodity.cpp:214
 msgctxt "FQ Source"
 msgid "Morningstar, GB"
-msgstr ""
+msgstr "மார்னிங்ச்டார், சிபி"
 
 #: libgnucash/engine/gnc-commodity.cpp:215
 msgctxt "FQ Source"
 msgid "Morningstar, JP"
-msgstr ""
+msgstr "மார்னிங்ச்டார், சே.பி."
 
 #: libgnucash/engine/gnc-commodity.cpp:216
 msgctxt "FQ Source"
 msgid "Motley Fool"
-msgstr ""
+msgstr "மோட்லி முட்டாள்"
 
 #: libgnucash/engine/gnc-commodity.cpp:217
 msgctxt "FQ Source"
 msgid "New Zealand stock eXchange, NZ"
-msgstr ""
+msgstr "நியூசிலாந்து பங்குச் சந்தை, NZ"
 
 #: libgnucash/engine/gnc-commodity.cpp:218
 msgctxt "FQ Source"
 msgid "NSE (National Stock Exchange), IN"
-msgstr ""
+msgstr "NSE (தேசிய பங்குச் சந்தை), IN"
 
 #: libgnucash/engine/gnc-commodity.cpp:219
 msgctxt "FQ Source"
 msgid "OnVista, DE"
-msgstr ""
+msgstr "Onvista, இருந்து"
 
 #: libgnucash/engine/gnc-commodity.cpp:220
 msgctxt "FQ Source"
 msgid "Paris Stock Exchange/Boursorama, FR"
-msgstr ""
+msgstr "பாரிச் பங்குச் சந்தை/போர்சோராமா, Fr"
 
 #: libgnucash/engine/gnc-commodity.cpp:221
 msgctxt "FQ Source"
 msgid "S-Investor, DE"
-msgstr ""
+msgstr "எச்-முதலாளி, இருந்து"
 
 #: libgnucash/engine/gnc-commodity.cpp:222
 msgctxt "FQ Source"
 msgid "Sharenet, ZA"
-msgstr ""
+msgstr "சரேனெட், வில்"
 
 #: libgnucash/engine/gnc-commodity.cpp:223
-#, fuzzy
-#| msgid "Show Exchange Rates"
 msgctxt "FQ Source"
 msgid "SIX Swiss Exchange shares, CH"
-msgstr "பரிமாற்ற விலைகளை காட்டு"
+msgstr "ஆறு சுவிச் பரிமாற்ற பங்குகள், ச"
 
 #: libgnucash/engine/gnc-commodity.cpp:224
 msgctxt "FQ Source"
 msgid "Skandinaviska Enskilda Banken, SE"
-msgstr ""
+msgstr "ச்காண்டிநேவிய தனிநபர் வங்கி, பார்க்க"
 
 #: libgnucash/engine/gnc-commodity.cpp:225
-#, fuzzy
-#| msgid "Stock"
 msgctxt "FQ Source"
 msgid "StockData"
-msgstr "பங்குசந்தை"
+msgstr "ச்டாக் டேட்டா"
 
 #: libgnucash/engine/gnc-commodity.cpp:226
 msgctxt "FQ Source"
 msgid "Stooq, PL"
-msgstr ""
+msgstr "ச்டூக், பி.எல்"
 
 #: libgnucash/engine/gnc-commodity.cpp:227
 msgctxt "FQ Source"
 msgid "T. Rowe Price, US"
-msgstr ""
+msgstr "டி. ரோவ் விலை, யு.எச்"
 
 #: libgnucash/engine/gnc-commodity.cpp:228
 msgctxt "FQ Source"
 msgid "Tesouro Direto bonds, BR"
-msgstr ""
+msgstr "கருவூல நேரடி பத்திரங்கள், br"
 
 #: libgnucash/engine/gnc-commodity.cpp:229
 msgctxt "FQ Source"
 msgid "TIAA-CREF, US"
-msgstr ""
+msgstr "தியா-கிரெஃப், யு.எச்"
 
 #: libgnucash/engine/gnc-commodity.cpp:230
 msgctxt "FQ Source"
 msgid "Toronto Stock eXchange, CA"
-msgstr ""
+msgstr "டொராண்டோ பங்குச் சந்தை, சி.ஏ."
 
 #: libgnucash/engine/gnc-commodity.cpp:231
 msgctxt "FQ Source"
 msgid "Tradegate, DE"
-msgstr ""
+msgstr "டிரேட் கேட், மூலம்"
 
 #: libgnucash/engine/gnc-commodity.cpp:232
 msgctxt "FQ Source"
 msgid "Treasury Direct bonds, US"
-msgstr ""
+msgstr "கருவூல நேரடி பத்திரங்கள், அமெரிக்கா"
 
 #: libgnucash/engine/gnc-commodity.cpp:233
 msgctxt "FQ Source"
 msgid "Twelve Data"
-msgstr ""
+msgstr "பன்னிரண்டு தரவு"
 
 #: libgnucash/engine/gnc-commodity.cpp:234
-#, fuzzy
-#| msgid "Investments"
 msgctxt "FQ Source"
 msgid "Union Investment, DE"
-msgstr "முதலீடுகள்"
+msgstr "யூனியன் முதலீடு, டி"
 
 #: libgnucash/engine/gnc-commodity.cpp:235
 msgctxt "FQ Source"
 msgid "US Govt. Thrift Savings Plan"
-msgstr ""
+msgstr "அமெரிக்க அரசு சிக்கன சேமிப்பு திட்டம்"
 
 #: libgnucash/engine/gnc-commodity.cpp:236
 msgctxt "FQ Source"
 msgid "XETRA, DE"
-msgstr ""
+msgstr "Xiver, of"
 
 #: libgnucash/engine/gnc-commodity.cpp:237
 msgctxt "FQ Source"
 msgid "Yahoo as JSON"
-msgstr ""
+msgstr "சாதொபொகு ஆக யாகூ"
 
 #: libgnucash/engine/gnc-commodity.cpp:238
 msgctxt "FQ Source"
 msgid "Yahoo Web"
-msgstr ""
+msgstr "யாகூ வலை"
 
 #: libgnucash/engine/gnc-commodity.cpp:239
 msgctxt "FQ Source"
 msgid "YH Finance (FinanceAPI)"
-msgstr ""
+msgstr "YH பொருள் (நிதியுதவி)"
 
 #: libgnucash/engine/gnc-commodity.cpp:244
-#, fuzzy
-#| msgid "Australia BAS"
 msgctxt "FQ Source"
 msgid "Australia (ASX)"
-msgstr "ஆச்திரேலியா பாச்"
+msgstr "ஆச்திரேலியா (ASX)"
 
 #: libgnucash/engine/gnc-commodity.cpp:245
 msgctxt "FQ Source"
 msgid "Australia Funds (MorningstarAU)"
-msgstr ""
+msgstr "ஆச்திரேலியா நிதிகள் (மார்னிங்ச்டாராவ்)"
 
 #: libgnucash/engine/gnc-commodity.cpp:246
 msgctxt "FQ Source"
 msgid "Canada (Alphavantage, TMX)"
-msgstr ""
+msgstr "கனடா (ஆல்பாவேண்டேச், டி.எம்.எக்ச்)"
 
 #: libgnucash/engine/gnc-commodity.cpp:247
 msgctxt "FQ Source"
 msgid "Dutch (AEX)"
-msgstr ""
+msgstr "டச்சு (ஈக்ச்)"
 
 #: libgnucash/engine/gnc-commodity.cpp:248
 msgctxt "FQ Source"
 msgid "Europe (ASEGR, Bourso, …)"
-msgstr ""
+msgstr "ஐரோப்பா (ASGER, BOURSO, ...)"
 
 #: libgnucash/engine/gnc-commodity.cpp:249
 msgctxt "FQ Source"
 msgid "France (Bourso)"
-msgstr ""
+msgstr "பிரான்ச் (போர்லோ)"
 
 #: libgnucash/engine/gnc-commodity.cpp:250
 msgctxt "FQ Source"
 msgid "Greece (ASEGR)"
-msgstr ""
+msgstr "கிரீச் (ASGER)"
 
 #: libgnucash/engine/gnc-commodity.cpp:251
 msgctxt "FQ Source"
 msgid "India (BSEIndia, NSEIndia)"
-msgstr ""
+msgstr "இந்தியா (BSEINDIA, NSEINDIA)"
 
 #: libgnucash/engine/gnc-commodity.cpp:252
 msgctxt "FQ Source"
 msgid "India Mutual (AMFI)"
-msgstr ""
+msgstr "இந்தியா பரச்பர (AMFI)"
 
 #: libgnucash/engine/gnc-commodity.cpp:253
 msgctxt "FQ Source"
 msgid "Nasdaq (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "நாச்டாக் (ஆல்பாவேண்டேச், ஃபைனான்சீப்,…)"
 
 #: libgnucash/engine/gnc-commodity.cpp:254
 msgctxt "FQ Source"
 msgid "NYSE (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "NYSE (ஆல்பாவேண்டேச், ஃபைனிட்டிஏபி,…)"
 
 #: libgnucash/engine/gnc-commodity.cpp:255
 msgctxt "FQ Source"
 msgid "Poland (Stooq)"
-msgstr ""
+msgstr "போலந்து (ச்டோக்)"
 
 #: libgnucash/engine/gnc-commodity.cpp:256
 msgctxt "FQ Source"
 msgid "Romania (BVB)"
-msgstr ""
+msgstr "ருமேனியா (பி.வி.பி)"
 
 #: libgnucash/engine/gnc-commodity.cpp:257
 msgctxt "FQ Source"
 msgid "South Africa (Sharenet)"
-msgstr ""
+msgstr "தென்னாப்பிரிக்கா (சரேனெட்)"
 
 #: libgnucash/engine/gnc-commodity.cpp:258
 msgctxt "FQ Source"
 msgid "U.K. Funds (FTfunds, MorningstarUK)"
-msgstr ""
+msgstr "யு.கே. நிதிகள் (நிதிகள், மார்னிங்ச்டார் யுகே)"
 
 #: libgnucash/engine/gnc-commodity.cpp:259
 msgctxt "FQ Source"
 msgid "USA (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "பயன்படுத்தவும் (ஆல்பா அட்வாண்டேச், பொருள் API,…)"
 
 #: libgnucash/engine/gnc-commodity.h:110
 msgctxt "Commodity Type"
@@ -30808,12 +30753,12 @@ msgstr "நாணயங்கள்"
 
 #: libgnucash/engine/gnc-date.cpp:76
 msgid "%B %#d, %Y"
-msgstr "%B %#d, %Y"
+msgstr "%B %#d, %y"
 
 #. Translators: call "man strftime" for possible values.
 #: libgnucash/engine/gnc-date.cpp:80
 msgid "%B %e, %Y"
-msgstr "%B %e, %Y"
+msgstr "%B %e, %y"
 
 #: libgnucash/engine/gnc-datetime.cpp:95
 msgid "y-m-d"
@@ -31418,16 +31363,14 @@ msgid "Checking business splits in account %s: %u of %u"
 msgstr "கணக்கில் வணிகப் பிளவுகளைச் சரிபார்க்கிறது %s: %u இல் %u"
 
 #: libgnucash/engine/Scrub.cpp:146
-#, fuzzy, c-format
-#| msgid "Looking for orphans in transaction: %u of %u"
+#, c-format
 msgid "Looking for orphans in transaction: %u of %zu"
-msgstr "பரிவர்த்தனையில் அனாதைகளைத் தேடுவது: %u இல் %u"
+msgstr "பரிவர்த்தனையில் அனாதைகளைத் தேடுவது: %u இன் %zu"
 
 #: libgnucash/engine/Scrub.cpp:357
-#, fuzzy, c-format
-#| msgid "Looking for imbalances in transaction date %s: %u of %u"
+#, c-format
 msgid "Looking for imbalances in transaction date %s: %u of %zu"
-msgstr "பரிவர்த்தனை தேதி %s: %u இல் %u"
+msgstr "பரிவர்த்தனை தேதி %s: %u %zu இல் ஏற்றத்தாழ்வுகளைத் தேடுகிறது"
 
 #: libgnucash/engine/Split.cpp:1644
 msgctxt ""

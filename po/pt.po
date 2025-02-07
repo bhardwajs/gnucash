@@ -1,16 +1,16 @@
 # Portuguese (Portugal) translation for Gnucash-4.3
 # Copyright (C) 2020
 # This file is distributed under the same license as the Gnucash package.
-# Pedro Albuquerque <pmra@protonmail.com>, 2015-2021, 2024.
+# Pedro Albuquerque <pmra@protonmail.com>, 2015-2021, 2024, 2025.
 # Pedro Albuquerque <pmra@gmx.com>, 2021, 2022, 2023, 2024.
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug."
-"cgi?product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2024-12-09 07:00+0000\n"
+"PO-Revision-Date: 2025-02-01 04:48+0000\n"
 "Last-Translator: Pedro Albuquerque <pmra@protonmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/gnucash/"
 "gnucash/pt/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 
 #: bindings/guile/date-utilities.scm:173
@@ -7708,8 +7708,7 @@ msgstr "Contabilidade de finanças pessoais e micro empresas."
 #. contributors.
 #: gnucash/gnome-utils/gnc-main-window.cpp:5282
 msgid "translator-credits"
-msgstr ""
-"Copyright: 2020"
+msgstr "Pedro Albuquerque: 2025"
 
 #: gnucash/gnome-utils/gnc-main-window.cpp:5285
 msgid "Visit the GnuCash website."

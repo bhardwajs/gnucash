@@ -36,17 +36,18 @@
 # aleksej0R <omolice@hotmail.fr>, 2024.
 # Over_score <wablate@lorang.net>, 2024.
 # Martin LORANG <wablate@lorang.net>, 2024.
+# Anastasios Ikonomou <anastasios.ikonomou@gmail.com>, 2024.
 #
 # Please follow the guidelines you'll find here: https://wiki.gnucash.org/wiki/Translation
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2024-10-21 15:15+0000\n"
-"Last-Translator: Martin LORANG <wablate@lorang.net>\n"
+"PO-Revision-Date: 2024-12-30 23:00+0000\n"
+"Last-Translator: Anastasios Ikonomou <anastasios.ikonomou@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "fr/>\n"
 "Language: fr\n"
@@ -54,7 +55,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.8-rc\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -79,7 +80,7 @@ msgid ""
 "saved by a later version of GnuCash. Defaulting to today."
 msgstr ""
 "Aucune valeur possible pour le symbole de date « ~a ». Ce rapport à "
-"certainement du être enregistré avec une ancienne version de GnuCash. La "
+"certainement du être enregistré avec une version plus récente de GnuCash. La "
 "date d'aujourd'hui sera donc utilisée."
 
 #: bindings/guile/date-utilities.scm:715
@@ -262,7 +263,7 @@ msgstr "La date actuelle."
 #: bindings/guile/options.scm:388 gnucash/gnome/top-level.c:462
 #: libgnucash/engine/gnc-optiondb.cpp:1201 libgnucash/engine/qofbookslots.h:72
 msgid "Business"
-msgstr "Affaires"
+msgstr "Entreprise"
 
 #: bindings/guile/options.scm:389 gnucash/gnome/dialog-customer.c:892
 #: gnucash/gnome/dialog-invoice.c:3573 gnucash/gnome/dialog-invoice.c:3607
@@ -328,7 +329,7 @@ msgstr "Taxe"
 # po/guile_strings.txt:173
 #: bindings/guile/options.scm:400 libgnucash/engine/gnc-optiondb.cpp:1354
 msgid "Tax Number"
-msgstr "Numéro de taxe"
+msgstr "Numéro fiscal"
 
 #: borrowed/goffice/go-charmap-sel.c:70
 msgid "Arabic"
@@ -824,9 +825,9 @@ msgid ""
 "Just locate the triangle at the far right of the column headings, and click "
 "it to see the different columns available."
 msgstr ""
-"Il est possible de changer les colonnes qui s'affichent dans le tableau des "
-"comptes. Trouvez le triangle à l'extrême droite des titres, et cliquez pour "
-"sélectionner les colonnes disponibles."
+"Il est possible de changer les colonnes qui s'affichent dans le plan "
+"comptable. Trouvez le triangle à l'extrême droite des titres, et cliquez "
+"pour sélectionner les colonnes disponibles."
 
 #: doc/tip_of_the_day.list.c:33
 msgid ""
@@ -850,8 +851,8 @@ msgstr ""
 "Créez un nouveau compte en cliquant sur le bouton Nouveau dans la barre "
 "d'outils de la fenêtre principale. Cela fera apparaître une boîte de "
 "dialogue où vous pourrez saisir les détails du compte. Pour plus "
-"d'informations sur le choix d'un type de compte ou le paramétrage d'un "
-"tableau de comptes, consultez le manuel en ligne de GnuCash."
+"d'informations sur le choix d'un type de compte ou le paramétrage d'un plan "
+"comptable, consultez le manuel en ligne de GnuCash."
 
 #: doc/tip_of_the_day.list.c:44
 msgid ""
@@ -33982,12 +33983,12 @@ msgstr ""
 #: libgnucash/engine/gnc-commodity.cpp:193
 msgctxt "FQ Source"
 msgid "Association of Mutual Funds in India"
-msgstr ""
+msgstr "Association of Mutual Funds in India"
 
 #: libgnucash/engine/gnc-commodity.cpp:194
 msgctxt "FQ Source"
 msgid "Athens Exchange Group, GR"
-msgstr ""
+msgstr "Athens Exchange Group, GR"
 
 #: libgnucash/engine/gnc-commodity.cpp:195
 msgctxt "FQ Source"

@@ -30,6 +30,7 @@
 # Steffen Möller <steffen_moeller@gmx.de>, 2022.
 # Carsten Hütter <Carsten.Huetter@gmx.de>, 2023.
 # "Frank H. Ellenberger" <frank.h.ellenberger@gmail.com>, 2024.
+# Alois Levermann <alois@levermann.xyz>, 2025.
 #
 # Konventionen/Tastenkürzel:
 # »Zitate«: [altgr]+[Y]/[X]
@@ -38,11 +39,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug."
-"cgi?product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2024-12-13 20:34+0000\n"
-"Last-Translator: Christian Wehling <christian.wehling@web.de>\n"
+"PO-Revision-Date: 2025-02-05 12:02+0000\n"
+"Last-Translator: Alois Levermann <alois@levermann.xyz>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "de/>\n"
 "Language: de\n"
@@ -50,7 +51,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-rc\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -753,7 +754,7 @@ msgstr ""
 "Die Entwickler von GnuCash können auf einfache Weise erreicht werden. Es "
 "gibt einige E-Mailing-Listen, aber Sie können genauso gut einen Live-Chat im "
 "IRC (Internet Relay Chat) ausprobieren. Die Entwickler sind im Kanal #"
-"gnucash auf irc.gimp.net zu finden."
+"gnucash auf irc.gimp.net zu finden"
 
 #: doc/tip_of_the_day.list.c:15
 msgid ""
@@ -2039,7 +2040,7 @@ msgstr "Lieferantenrechnung"
 #: gnucash/gnome/dialog-invoice.c:2809 gnucash/gnome/dialog-invoice.c:3035
 #: gnucash/gnome/dialog-invoice.c:3036
 msgid "Voucher"
-msgstr "Auslagenerstattung"
+msgstr "Gutschein"
 
 #: gnucash/gnome/business-gnome-utils.c:357 gnucash/gnome/dialog-doclink.c:821
 #: gnucash/gnome/dialog-invoice.c:3764
@@ -3220,7 +3221,7 @@ msgstr "Duplizieren"
 #: gnucash/gnome/dialog-invoice.c:3538
 #: gnucash/gnome/gnc-plugin-page-invoice.cpp:289
 msgid "Post"
-msgstr "Buchen"
+msgstr "Buchung"
 
 #: gnucash/gnome/dialog-invoice.c:3519 gnucash/gnome/dialog-invoice.c:3528
 #: gnucash/gnome/dialog-invoice.c:3539
@@ -4925,7 +4926,7 @@ msgstr "Buchung löschen"
 
 #: gnucash/gnome/gnc-plugin-page-invoice.cpp:291
 msgid "Pay"
-msgstr "Zahlung"
+msgstr "Bezahlung"
 
 #: gnucash/gnome/gnc-plugin-page-owner-tree.cpp:227
 msgid "New Voucher"
@@ -30363,7 +30364,7 @@ msgstr "Aktuelle Buchung abbrechen."
 
 #: gnucash/ui/gnc-plugin-page-register.ui:184
 msgid "_Void Transaction"
-msgstr "Buchung _ungültig machen"
+msgstr "Annullierte Buchung"
 
 #: gnucash/ui/gnc-plugin-page-register.ui:186
 msgid "Void the current transaction."

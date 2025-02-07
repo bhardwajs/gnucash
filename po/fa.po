@@ -4,22 +4,24 @@
 # Seyed Ali Akbar Najafia <s.ali.najafian@chmail.ir>, 2012, 2013.
 # Hedayat Vatankhah <hedayat.fwd@gmail.com>, 2017.
 # Hamidreza Jafari <hamidrjafari@gmail.com>, 2018, 2019.
+# Mehrdad Vosoughi <mohsen.vosoughi@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2019-05-01 06:11+0330\n"
-"Last-Translator: Hamidreza Jafari <hamidrjafari@gmail.com>\n"
-"Language-Team: Persian <translation-team-fa@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2025-01-11 05:00+0000\n"
+"Last-Translator: Mehrdad Vosoughi <mohsen.vosoughi@gmail.com>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/gnucash/gnucash/"
+"fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -35,7 +37,7 @@ msgstr ""
 #: gnucash/report/reports/standard/price-scatter.scm:186
 #, scheme-format
 msgid "~a to ~a"
-msgstr ""
+msgstr "~a به ~a"
 
 #: bindings/guile/date-utilities.scm:519
 #, scheme-format
@@ -43,6 +45,8 @@ msgid ""
 "Tried to look up an undefined date symbol '~a'. This report was probably "
 "saved by a later version of GnuCash. Defaulting to today."
 msgstr ""
+"سعی شد نماد تاریخ نامشخص '~a' را جستجو کند. این گزارش احتمالاً توسط نسخه بعدی "
+"GnuCash ذخیره شده است. پیش‌فرض به امروز"
 
 #: bindings/guile/date-utilities.scm:715
 #: gnucash/gnome-utils/gnc-period-select.c:70
@@ -100,7 +104,7 @@ msgstr "آغاز دوره‌ی زمانی حسابداری"
 #: bindings/guile/date-utilities.scm:746
 #: libgnucash/engine/gnc-option-date.cpp:313
 msgid "First day of the accounting period, as set in the global preferences."
-msgstr ""
+msgstr "روز اول دوره حسابداری، همانطور که در اولویت های جهانی تعیین شده است."
 
 #: bindings/guile/date-utilities.scm:750
 #: libgnucash/engine/gnc-option-date.cpp:320
@@ -110,7 +114,7 @@ msgstr "پایان دوره‌ی زمانی حسابداری"
 #: bindings/guile/date-utilities.scm:753
 #: libgnucash/engine/gnc-option-date.cpp:321
 msgid "Last day of the accounting period, as set in the global preferences."
-msgstr ""
+msgstr "آخرین روز دوره حسابداری، همانطور که در اولویت‌های جهانی تعیین شده است."
 
 #: bindings/guile/date-utilities.scm:757
 #: gnucash/gnome-utils/gnc-period-select.c:66
@@ -262,13 +266,13 @@ msgstr "آدرس رایانامه شرکت"
 
 #: bindings/guile/options.scm:396 libgnucash/engine/gnc-optiondb.cpp:1308
 msgid "Company Contact Person"
-msgstr ""
+msgstr "شخص تماس با شرکت"
 
 #: bindings/guile/options.scm:397
 #: gnucash/gtkbuilder/dialog-preferences.glade:1021
 #: libgnucash/engine/gnc-optiondb.cpp:1348
 msgid "Fancy Date Format"
-msgstr ""
+msgstr "فرمت تاریخ فانتزی"
 
 #: bindings/guile/options.scm:398
 #, fuzzy
