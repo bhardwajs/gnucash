@@ -14,14 +14,15 @@
 # aleksej0R <omolice@hotmail.fr>, 2022, 2023.
 # Vincent Dawans <dawansv@gmail.com>, 2023.
 # Laurent Aufrere <lecture@cbol.org>, 2024.
+# Anastasios Ikonomou <anastasios.ikonomou@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.6\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-06-22 06:24+0200\n"
-"PO-Revision-Date: 2024-02-05 17:01+0000\n"
-"Last-Translator: Laurent Aufrere <lecture@cbol.org>\n"
+"PO-Revision-Date: 2024-12-30 19:00+0000\n"
+"Last-Translator: Anastasios Ikonomou <anastasios.ikonomou@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnucash/glossary/"
 "fr/>\n"
 "Language: fr\n"
@@ -29,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #. "English Definition (Dear translators: This file will never be visible to normal users! It should only serve as a tool for translators. E.g. matching terms from this file are displayed in Weblate's Translation pages of other GnuCash components like the program.)"
 msgid "Term"
@@ -105,7 +106,7 @@ msgstr "type de compte : passif"
 
 #. "Group of accounts tracking your success, complement of 'Assets & Liabilities'"
 msgid "account type: Profit & Loss"
-msgstr "type de compte : profits et pertes"
+msgstr "type de compte : compte de résultat"
 
 #. "1. (US) any type of account that earns interest 2. (Brit) any type of bank account that earns a higher level of interest than a current account or deposit account"
 msgid "account type: saving"
@@ -189,7 +190,7 @@ msgstr "action : rabais"
 
 #. "-"
 msgid "action: sell"
-msgstr "action : accord"
+msgstr "action : vendre"
 
 #. "-"
 msgid "action: Teller"
@@ -213,7 +214,7 @@ msgstr "vieillissement"
 
 #. "A sum of money"
 msgid "amount"
-msgstr "montant brut, montant"
+msgstr "montant"
 
 #. "The amount finally to pay, respecting discounts, billing terms…"
 msgid "amount due"
@@ -225,23 +226,23 @@ msgstr "moyenne"
 
 #. "The amount of money that is in one's account"
 msgid "balance (noun)"
-msgstr "bilan"
+msgstr "solde"
 
 #. "Balance brought forward - usually the first entry of an account statement containing the 'balance c/f' of the previous billing period or page"
 msgid "balance b/f"
-msgstr "équilibre b / f"
+msgstr "report"
 
 #. "Balance carried forward - usually the last entry of an account statement to be used as 'balance b/f' on the next billing period or page"
 msgid "balance c/f"
-msgstr "équilibre b / f"
+msgstr "total à reporter"
 
 #. "A written record of money received and paid out, showing the difference between the two total amounts"
 msgid "balance sheet"
-msgstr "bilan graphique"
+msgstr "bilan"
 
 #. "To arrange for income and spending to be equal"
 msgid "balance, to"
-msgstr "bilan, pour"
+msgstr "équilibrer"
 
 #. "-"
 msgid "bank"
@@ -257,7 +258,7 @@ msgstr "émetteur de la facture"
 
 #. "Conditions on paying a bill. Both an invoice and a bill have billing terms. For example, you can have 'terms' of 'Net-30', where the bill is due in full in 30 days."
 msgid "billing terms"
-msgstr "conditions de facturation"
+msgstr "conditions de paiement"
 
 #. "The dataset that encapsulates all the collections of entities (accounts etc.) in gnucash. The written records of the financial affairs of a business."
 msgid "Book"
@@ -273,15 +274,15 @@ msgstr "Budget"
 
 #. "-"
 msgid "business (adjective)"
-msgstr "société"
+msgstr "commercial"
 
 #. "as Menu Item: Headline for features that are related to small business accounting"
 msgid "business (noun)"
-msgstr "entrepreneur"
+msgstr "entreprise"
 
 #. "Profits made from the sale of investments or property"
 msgid "capital gains"
-msgstr "gains de capital"
+msgstr "plus-value"
 
 #. "Distinguishing the uppercase and lowercase letters"
 msgid "case sensitive"
@@ -297,11 +298,11 @@ msgstr "chèque"
 
 #. "To repair unbalanced transactions and orphan splits in an account tree. Any transactions that have debits != credits will get a balancing split added (pointing to a special new account called 'Imbalance'). Any splits that do not have accounts are put into another special account called 'Orphan'. Formerly known as 'to scrub'."
 msgid "check and repair, to"
-msgstr "vérifier et réparer, pour"
+msgstr "vérifier et réparer"
 
 #. "To end an application's relationship with an open file so that the application will no longer be able to access the file without opening it again. "
 msgid "close, to"
-msgstr "fermer, pour"
+msgstr "fermer"
 
 #. "An article that is bought and sold. The most general term of what an account keeps track of, e.g. a currency or a stock."
 msgid "commodity"
@@ -309,7 +310,7 @@ msgstr "produit, bien"
 
 #. "e.g. NASDAQ"
 msgid "commodity listing"
-msgstr "Liste de produit, bien"
+msgstr "cotation"
 
 #. "the smallest amount of a commodity that's traded (e.g. 1/100 for USD, 1 for most stocks)"
 msgid "commodity option: fraction"
@@ -393,7 +394,7 @@ msgstr "escompte"
 
 #. "Important Buzzword :)"
 msgid "double entry"
-msgstr "entrée double"
+msgstr "partie double"
 
 #. "Transactions or bills/invoices can contain a document link which links either to some file on the local disk or to some arbitrary URL."
 msgid "document link"
@@ -421,7 +422,7 @@ msgstr "relevé des capitaux propres"
 
 #. "A trusted third party that holds a payment or deposit until a transaction is completed. In the US, many mortgage companies set up an escrow account when you get a mortgage.  You pay into the account every month and they disburse amounts out of the escrow to pay for hazard insurance and property taxes. So they are holding funds 'in escrow' to complete the transactions (paying insurance and taxes)."
 msgid "escrow (account)"
-msgstr "séquestre (compte en)"
+msgstr "séquestre (compte)"
 
 #. "The relation in value between the money used in different countries"
 msgid "exchange rate"
@@ -469,7 +470,7 @@ msgstr "importer"
 
 #. "Report that ... FIXME: add description. This report used to be called the 'Profit & Loss', but it was renamed on 2004-07-13."
 msgid "income statement"
-msgstr "relevé des revenus"
+msgstr "compte de résultat"
 
 #. "Money charged for borrowing money, or paid to somebody who invests money"
 msgid "interest"
@@ -489,7 +490,7 @@ msgstr "livre"
 
 #. "The heading for the right side of the balance sheet. See also: Equity."
 msgid "liabilities/equity"
-msgstr "dettes, passifs/capitaux propres"
+msgstr "passif/capitaux propres"
 
 #. "A sum of money that is lent (by a bank), see also: financial calculator, Mortgage"
 msgid "loan"
@@ -497,7 +498,7 @@ msgstr "prêt"
 
 #. "Annual Percentage Rate, includes in contrast to the Nominal Rate some of the various costs to obtain a loan."
 msgid "loan: APR"
-msgstr "prêt : APR"
+msgstr "prêt : TEG"
 
 #. "The money lost in business activity"
 msgid "loss"
@@ -513,7 +514,7 @@ msgstr "Lot"
 
 #. "Combine two books into one (see book)."
 msgid "merge, to"
-msgstr "fusion, pour"
+msgstr "fusionner"
 
 #. "The thing that the scatter plot uses to mark each data point"
 msgid "marker"
@@ -533,15 +534,15 @@ msgstr "Mémo"
 
 #. "(a) An agreement by which money is lent by a bank for buying a house or other property, the property being the security. (b) A sum of money lent in this way."
 msgid "Mortgage"
-msgstr "Hypothèque"
+msgstr "prêt hypothécaire"
 
 #. "Adjustable Rate Mortgage"
 msgid "mortgage: ARM"
-msgstr "hypothèque : ARM"
+msgstr "prêt hypothécaire à taux variable"
 
 #. "Fixed Rate Mortgage"
 msgid "mortgage: FRM"
-msgstr "hypothèque : FRM"
+msgstr "prêt hypothécaire à taux fixe"
 
 #. "e.g. USD, EUR, see Currency."
 msgid "national currency"
@@ -573,7 +574,7 @@ msgstr "N° (colonne dans le registe)"
 
 #. "to make accessible"
 msgid "open, to"
-msgstr "ouvrir, pour"
+msgstr "ouvrir"
 
 #. "If an account starts with a non-zero balance, then this amount is called the opening balance."
 msgid "opening balance"
@@ -597,7 +598,7 @@ msgstr "propriétaire (de la facture, facture ou bon de dépense)"
 
 #. "A secret phrase that one needs to know in order to get access to a user account "
 msgid "passphrase"
-msgstr "mot de code"
+msgstr "mot de passe"
 
 #. "An amount that must be paid / An amount for which money has not yet been received"
 msgid "Payables/Receivables"
@@ -625,7 +626,7 @@ msgstr "portefeuille"
 
 #. "Register invoice, voucher in account register"
 msgid "post, to"
-msgstr "publier, dans"
+msgstr "émettre"
 
 #. "A menu choice in many graphical user interface applications that allows the user to specify how the application will act each time it is used. "
 msgid "preferences"
@@ -661,19 +662,19 @@ msgstr "Compte de résultat"
 
 #. "-"
 msgid "quick-fill"
-msgstr "adition rapide"
+msgstr "remplissage automatique"
 
 #. "-"
 msgid "rebalance, to (a transaction)"
-msgstr "relancer, pour (une transaction)"
+msgstr "rééquilibrer (une transaction)"
 
 #. "reconcile an account, a reconciled split. To find a way to make the bank's account statement agree with the user's recorded transactions in an account."
 msgid "reconcile, to"
-msgstr "rapprocher, pour"
+msgstr "rapprocher"
 
 #. "-"
 msgid "record keeping"
-msgstr "enregistrement conservé"
+msgstr "conservation des documents"
 
 #. "A list of items; a book containing such a list"
 msgid "register"
@@ -705,7 +706,7 @@ msgstr "registre : journal de transaction"
 
 #. "reload the current document"
 msgid "reload, to"
-msgstr "recharger, pour"
+msgstr "recharger"
 
 #. "aka 'two-sided form' is in Europe often used for the balance sheet. Complement: report form: Vertical Form"
 msgid "report form: T Account Form"
@@ -717,11 +718,11 @@ msgstr "formulaire de rapport : formulaire vertical"
 
 #. "name of an equity account (?); to be distinguished from the opening balance."
 msgid "Retained Earnings"
-msgstr "Des bénéfices non répartis"
+msgstr "Report à Nouveau"
 
 #. "Create a new transaction that is the inverse of the old one.  When you add the two together they completely cancel out.  Accounts use this instead of voiding transactions, usually because the prior month has been closed and can no longer be changed, or the entire accounting system is 'write only'."
 msgid "reverse transaction, to (Action in the register)"
-msgstr "transaction inversée, pour (action du registre)"
+msgstr "contrepasser (action du registre)"
 
 #. "(In the customer summary report) The total amount of money received because something was sold."
 msgid "sales"
@@ -729,7 +730,7 @@ msgstr "ventes"
 
 #. "To write data (typically a file) to a storage medium, such as a disk or tape."
 msgid "save, to (to a file)"
-msgstr "enregistrement, pour (un fichier)"
+msgstr "sauvegarder (un fichier)"
 
 #. "A transaction or reminder of a transaction that can be automatically executed at a specific time. It can be executed either once, or several times at regular intervals."
 msgid "Scheduled Transaction"
@@ -745,7 +746,7 @@ msgstr "titre"
 
 #. "Selling borrowed units in the hope that when you buy them back later it will be at a lower price."
 msgid "Sell short"
-msgstr ""
+msgstr "Vendre à découvert"
 
 #. "-"
 msgid "Share Balance (register)"
@@ -753,7 +754,7 @@ msgstr "Bilan partagé (registre)"
 
 #. "Any of the equal parts into which the money of a business company is divided, giving the holder a right to a portion of the profits"
 msgid "shares"
-msgstr "titres"
+msgstr "actions"
 
 #. "(often: of a quote) A place from which something comes or is obtained."
 msgid "source"
@@ -765,7 +766,7 @@ msgstr "répartition"
 
 #. "Alias of 'shares'"
 msgid "stocks"
-msgstr "actions"
+msgstr "Actions"
 
 #. "Sometimes one old share gets replaced by multiple new like 1 OLD @100¤ by 2 NEW @50¤"
 msgid "stock split"
@@ -825,7 +826,7 @@ msgstr "transaction"
 
 #. "A transaction whose amount has actually been moved. The word comes from checks: a check is issued, but several steps have to be done until the amount is actually retrieved from the bank account, which is the point in time where that transaction (check) gets cleared."
 msgid "transaction state: cleared"
-msgstr "relevé de transaction : pointé"
+msgstr "relevé de transaction : encaissé"
 
 #. "-"
 msgid "transaction state: frozen"
@@ -833,7 +834,7 @@ msgstr "relevé de transaction : gelé"
 
 #. "A transaction that was reconciled with the bank's statement."
 msgid "transaction state: reconciled"
-msgstr "relevé de transaction : pointé"
+msgstr "relevé de transaction : reconcilié"
 
 #. "A transaction that is void i.e. not valid (anymore)."
 msgid "transaction state: voided"
@@ -849,11 +850,11 @@ msgstr "compte viré"
 
 #. "To move money from one account to another. Will create a transaction."
 msgid "transfer, to (register toolbar)"
-msgstr "virer, vers (barre d'outils du registre)"
+msgstr "virer (barre d'outils du registre)"
 
 #. "The trial balance is a worksheet on which you list all your general ledger accounts and their debit or credit balance. It is a tool that is used to alert you to errors in your books. The total debits must equal the total credits. If they don't equal, you know you have an error that must be tracked down."
 msgid "trial balance (report)"
-msgstr "bilan comptable (rapport)"
+msgstr "balance comptable (rapport)"
 
 #. "A class or things that have characteristics in common; type of an account, of a commodity etc."
 msgid "type"
@@ -877,7 +878,7 @@ msgstr "fournisseur"
 
 #. "The terms 'Voucher' and 'Expense Voucher' are used interchangeably in gnucash. The 'Expense Voucher' is also a bit of a misnomer -- it's more like an 'Expense Report' in gnucash.  The phrase is meant to be a list of expenses incurred by an employee for which the company will reminburse them."
 msgid "voucher"
-msgstr "bon (commande), pièce justificative"
+msgstr "note de frais"
 
 #. "see debit"
 msgid "withdraw (in the reconcile dialog)"
