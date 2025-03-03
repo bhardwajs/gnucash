@@ -941,6 +941,51 @@ TEST(GncOptionDate, test_not_using_32bit_time_t_in_2038)
     EXPECT_FALSE(sizeof (time_t) == 4 && time(nullptr) <= 0) << "Time to upgrade 32bit time_t!";
 }
 
+// The relative current quarter start date is the date provided.
+static void
+set_current_quarter_start(GDate *date)
+{
+}
+
+static GDateDay
+get_last_day_of_month(GDate *date)
+{
+    return gnc_date_get_last_mday(g_date_get_month(date) - G_DATE_JANUARY, g_date_get_year(date));
+}
+
+static void
+set_current_quarter_end(GDate *date)
+{
+    bool is_last_of_month = g_date_is_last_of_month(date);
+    GDateDay day = g_date_get_day(date);
+    GDateDay last_day_of_month;
+
+    g_date_set_day(date, 1);
+    g_date_add_months(date, 3);
+    last_day_of_month = get_last_day_of_month(date);
+    g_date_set_day(date, is_last_of_month || day > last_day_of_month ? last_day_of_month : day);
+    g_date_subtract_days(date, 1);
+}
+
+static void
+set_previous_quarter_start(GDate *date)
+{
+    bool is_last_of_month = g_date_is_last_of_month(date);
+    GDateDay day = g_date_get_day(date);
+    GDateDay last_day_of_month;
+
+    g_date_set_day(date, 1);
+    g_date_subtract_months(date, 3);
+    last_day_of_month = get_last_day_of_month(date);
+    g_date_set_day(date, is_last_of_month || day > last_day_of_month ? last_day_of_month : day);
+}
+
+static void
+set_previous_quarter_end(GDate *date)
+{
+    g_date_subtract_days(date, 1);
+}
+
 TEST(GncOptionDate, test_gnc_relative_date_to_time64)
 {
     GDate date;
@@ -967,25 +1012,25 @@ TEST(GncOptionDate, test_gnc_relative_date_to_time64)
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::END_PREV_MONTH));
     g_date_set_time_t(&date, time(nullptr));
-    gnc_gdate_set_quarter_start(&date);
+    set_current_quarter_start(&date);
     time1 = time64_from_gdate(&date, DayPart::start);
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::START_CURRENT_QUARTER));
 
     g_date_set_time_t(&date, time(nullptr));
-    gnc_gdate_set_quarter_end(&date);
+    set_current_quarter_end(&date);
     time1 = time64_from_gdate(&date, DayPart::end);
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::END_CURRENT_QUARTER));
 
     g_date_set_time_t(&date, time(nullptr));
-    gnc_gdate_set_prev_quarter_start(&date);
+    set_previous_quarter_start(&date);
     time1 = time64_from_gdate(&date, DayPart::start);
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::START_PREV_QUARTER));
 
     g_date_set_time_t(&date, time(nullptr));
-    gnc_gdate_set_prev_quarter_end(&date);
+    set_previous_quarter_end(&date);
     time1 = time64_from_gdate(&date, DayPart::end);
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::END_PREV_QUARTER));
@@ -1225,7 +1270,7 @@ TEST_F(GncDateOption, test_stream_in_quarter_start)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
-    gnc_gdate_set_quarter_start(&date);
+    set_current_quarter_start(&date);
     time64 time1{time64_from_gdate(&date, DayPart::start)};
     std::istringstream iss{"relative . start-current-quarter"};
     iss >> m_option;
@@ -1236,7 +1281,7 @@ TEST_F(GncDateOption, test_stream_in_quarter_end)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
-    gnc_gdate_set_quarter_end(&date);
+    set_current_quarter_end(&date);
     time64 time1{time64_from_gdate(&date, DayPart::end)};
     std::istringstream iss{"relative . end-current-quarter"};
     iss >> m_option;
@@ -1247,7 +1292,7 @@ TEST_F(GncDateOption, test_stream_in_prev_quarter_start)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
-    gnc_gdate_set_prev_quarter_start(&date);
+    set_previous_quarter_start(&date);
     time64 time1{time64_from_gdate(&date, DayPart::start)};
     std::istringstream iss{"relative . start-prev-quarter"};
     iss >> m_option;
@@ -1258,7 +1303,7 @@ TEST_F(GncDateOption, test_stream_in_prev_quarter_end)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
-    gnc_gdate_set_prev_quarter_end(&date);
+    set_previous_quarter_end(&date);
     time64 time1{time64_from_gdate(&date, DayPart::end)};
     std::istringstream iss{"relative . end-prev-quarter"};
     iss >> m_option;
