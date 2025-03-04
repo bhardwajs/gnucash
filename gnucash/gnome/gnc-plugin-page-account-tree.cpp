@@ -1314,6 +1314,7 @@ commodity_mismatch_dialog (const Account* account, GtkWindow* parent)
     response = gtk_dialog_run (GTK_DIALOG (error_dialog));
     gtk_widget_destroy (error_dialog);
     g_free (message);
+    g_free (account_name);
     return response;
 }
 
@@ -1529,6 +1530,7 @@ gnc_plugin_page_account_tree_cmd_delete_account (GSimpleAction *simple,
         g_list_free(list);
         return;
     }
+    g_list_free (list);
 
     window = gnc_plugin_page_get_window(GNC_PLUGIN_PAGE(page));
     acct_name = gnc_account_get_full_name(account);
@@ -1542,6 +1544,7 @@ gnc_plugin_page_account_tree_cmd_delete_account (GSimpleAction *simple,
         g_free(acct_name);
         return;
     }
+    g_free (acct_name);
 
     // If no transaction or children just delete it.
     if (xaccAccountGetSplits (account).empty() && gnc_account_n_children (account) == 0)
