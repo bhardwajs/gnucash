@@ -210,6 +210,10 @@ typedef enum
      *    (by calling xaccAccountBeginEdit()) before calling this routine.*/
     void xaccAccountDestroy (Account *account);
 
+    /** Destroy all of the transactions that parent splits in an account.
+     */
+    void xaccAccountDestroyAllTransactions(Account *acc);
+
     /** Compare two accounts for equality - this is a deep compare. */
     gboolean xaccAccountEqual(const Account *a, const Account* b,
                               gboolean check_guids);

@@ -49,6 +49,7 @@
 #include <numeric>
 #include <map>
 #include <unordered_set>
+#include <algorithm>
 
 static QofLogModule log_module = GNC_MOD_ACCOUNT;
 
@@ -1594,6 +1595,18 @@ xaccAccountDestroy (Account *acc)
     qof_instance_set_destroying(acc, TRUE);
 
     xaccAccountCommitEdit (acc);
+}
+
+void
+xaccAccountDestroyAllTransactions(Account *acc)
+{
+    auto priv = GET_PRIVATE(acc);
+    std::vector<Transaction*> transactions;
+    std::transform(priv->splits.begin(), priv->splits.end(),
+                   back_inserter(transactions),
+                   [](auto split) { return split->parent; });
+    std::for_each(transactions.rbegin(), transactions.rend(),
+                  [](auto trans) { xaccTransDestroy (trans); });
 }
 
 /********************************************************************\

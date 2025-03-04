@@ -1694,10 +1694,21 @@ do_delete_account (Account* account, Account* saa, Account* sta, Account* ta)
                                        (AccountCb)xaccAccountMoveAllSplits,
                                        sta);
     }
+    else
+    {
+        gnc_account_foreach_descendant (account,
+                                        [](auto acc, [[maybe_unused]] auto data)
+                                        { xaccAccountDestroyAllTransactions(acc); },
+                                        nullptr);
+    }
     if (ta)
     {
         /* Move the splits of the account to be deleted. */
         xaccAccountMoveAllSplits (account, ta);
+    }
+    else
+    {
+        xaccAccountDestroyAllTransactions (account);
     }
     xaccAccountCommitEdit (account);
 
