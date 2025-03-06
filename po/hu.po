@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2025-01-26 15:01+0000\n"
+"PO-Revision-Date: 2025-02-20 02:11+0000\n"
 "Last-Translator: Szia Tomi <sziatomi01@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gnucash/"
 "gnucash/hu/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -3839,6 +3839,14 @@ msgid ""
 "Please correct this manually by editing the transaction directly and then "
 "try again."
 msgstr ""
+"Ennek a tranzakciónak a felosztásai több üzleti számlát érintenek:\n"
+"\n"
+"%s\n"
+"A GnuCash csak olyan tranzakciókat tud kezelni, amelyeket egyetlen számlára "
+"könyvelnek.\n"
+"\n"
+"Kérjük, javítsa ki ezt a tranzakció közvetlen szerkesztésével, majd próbálja "
+"újra."
 
 #. Translators: %d is the number of prices. This is a ngettext(3) message.
 #: gnucash/gnome/dialog-price-edit-db.cpp:201
@@ -4117,7 +4125,7 @@ msgid ""
 "Cannot create a Scheduled Transaction from a Transaction currently being "
 "edited. Please Enter the Transaction before Scheduling."
 msgstr ""
-"Nem lehet ütemezett tranzakciót létrehozni a jelenleg szerkesztés alatt levő "
+"Nem lehet ütemezett tranzakciót létrehozni a jelenleg szerkesztés alatt álló "
 "tranzakcióból. Előbb fejezze be a tranzakció szerkesztését."
 
 #: gnucash/gnome/dialog-sx-since-last-run.c:369
