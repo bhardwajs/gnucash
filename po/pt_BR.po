@@ -14,14 +14,15 @@
 # Wellington Terumi Uemura <wellingtonuemura@gmail.com>, 2021, 2022, 2023, 2024.
 # Daniel Conrado <dbconrado@gmail.com>, 2024.
 # Jose Delvani <jsdelvani@users.noreply.hosted.weblate.org>, 2024.
+# leyakid803 <leyakid803@minduls.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2024-10-18 08:15+0000\n"
-"Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
+"PO-Revision-Date: 2025-02-26 12:08+0000\n"
+"Last-Translator: leyakid803 <leyakid803@minduls.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnucash/gnucash/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -29,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.8-rc\n"
+"X-Generator: Weblate 5.10.2-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -722,19 +723,14 @@ msgstr ""
 "consulte a tabela em https://wiki.gnucash.org/wiki/Mailing_Lists"
 
 #: doc/tip_of_the_day.list.c:11
-#, fuzzy
-#| msgid ""
-#| "The GnuCash developers are easy to contact. As well as several mailing "
-#| "lists, you can chat to them live on IRC! Join them on #gnucash at irc."
-#| "gnome.org"
 msgid ""
 "The GnuCash developers are easy to contact. As well as several mailing "
 "lists, you can chat to them live on IRC! Join them on #gnucash at irc.gimp."
 "net"
 msgstr ""
 "Os desenvolvedores do GnuCash são acessíveis. Além de várias listas de "
-"discussão, é possível conversar com eles ao vivo no IRC! Participe do canal "
-"#gnucash no irc.gnome.org"
+"discussão, é possível conversar com eles ao vivo no IRC! Participe do canal #"
+"gnucash no irc.gimp.net"
 
 #: doc/tip_of_the_day.list.c:15
 msgid ""
@@ -13603,8 +13599,6 @@ msgid "<b>Initial Balance Transfer</b>"
 msgstr "<b>Transferência do saldo inicial</b>"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1837
-#, fuzzy
-#| msgid "_Balance"
 msgctxt "field label"
 msgid "_Balance"
 msgstr "_Saldo"
@@ -30475,8 +30469,6 @@ msgstr "Abrir c_onta"
 
 #: gnucash/ui/gnc-reconcile-window.ui:58 gnucash/ui/gnc-reconcile-window.ui:98
 #: gnucash/ui/gnc-reconcile-window.ui:129
-#, fuzzy
-#| msgid "_Balance"
 msgctxt "reconcile menu"
 msgid "_Balance"
 msgstr "_Saldo"
@@ -30985,345 +30977,329 @@ msgstr ""
 "não foram registrados em outro lugar."
 
 #: libgnucash/engine/gnc-commodity.cpp:191
-#, fuzzy
-#| msgid "Alpha Vantage API key"
 msgctxt "FQ Source"
 msgid "Alphavantage"
-msgstr "Chave do API Alpha Vantage"
+msgstr "Alphavantage"
 
 #: libgnucash/engine/gnc-commodity.cpp:192
 msgctxt "FQ Source"
 msgid "Amsterdam Euronext eXchange, NL"
-msgstr ""
+msgstr "Amsterdam Euronext eXchange, NL"
 
 #: libgnucash/engine/gnc-commodity.cpp:193
 msgctxt "FQ Source"
 msgid "Association of Mutual Funds in India"
-msgstr ""
+msgstr "Association of Mutual Funds na Índia"
 
 #: libgnucash/engine/gnc-commodity.cpp:194
 msgctxt "FQ Source"
 msgid "Athens Exchange Group, GR"
-msgstr ""
+msgstr "Athens Exchange Group, GR"
 
 #: libgnucash/engine/gnc-commodity.cpp:195
 msgctxt "FQ Source"
 msgid "Australian Stock Exchange, AU"
-msgstr ""
+msgstr "Australian Stock Exchange, AU"
 
 #: libgnucash/engine/gnc-commodity.cpp:196
-#, fuzzy
-#| msgid "Bill number"
 msgctxt "FQ Source"
 msgid "Bloomberg"
-msgstr "Número do título"
+msgstr "Bloomberg"
 
 #: libgnucash/engine/gnc-commodity.cpp:197
 msgctxt "FQ Source"
 msgid "Italian Stock Exchange, IT"
-msgstr ""
+msgstr "Italian Stock Exchange, IT"
 
 #: libgnucash/engine/gnc-commodity.cpp:198
 msgctxt "FQ Source"
 msgid "BSE India, IN"
-msgstr ""
+msgstr "BSE India, IN"
 
 #: libgnucash/engine/gnc-commodity.cpp:199
 msgctxt "FQ Source"
 msgid "Bucharest Stock Exchange, RO"
-msgstr ""
+msgstr "Bucharest Stock Exchange, RO"
 
 #: libgnucash/engine/gnc-commodity.cpp:200
 msgctxt "FQ Source"
 msgid "Colombo Stock Exchange, LK"
-msgstr ""
+msgstr "Colombo Stock Exchange, LK"
 
 #: libgnucash/engine/gnc-commodity.cpp:201
 msgctxt "FQ Source"
 msgid "comdirect, DE"
-msgstr ""
+msgstr "comdirect, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:202
 msgctxt "FQ Source"
 msgid "Consors Bank, DE"
-msgstr ""
+msgstr "Consors Bank, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:203
-#, fuzzy
-#| msgid "Investments"
 msgctxt "FQ Source"
 msgid "Deka Investments, DE"
-msgstr "Investimentos"
+msgstr "Deka Investments, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:204
 msgctxt "FQ Source"
 msgid "DWS, DE"
-msgstr ""
+msgstr "DWS, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:205
 msgctxt "FQ Source"
 msgid "Financial Times Funds service, GB"
-msgstr ""
+msgstr "Financial Times Funds service, GB"
 
 #: libgnucash/engine/gnc-commodity.cpp:206
 msgctxt "FQ Source"
 msgid "Finanzpartner, DE"
-msgstr ""
+msgstr "Finanzpartner, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:207
 msgctxt "FQ Source"
 msgid "FondsWeb, DE"
-msgstr ""
+msgstr "FondsWeb, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:208
 msgctxt "FQ Source"
 msgid "GoldMoney precious metals"
-msgstr ""
+msgstr "GoldMoney Metais Preciosos"
 
 #: libgnucash/engine/gnc-commodity.cpp:209
 msgctxt "FQ Source"
 msgid "Google Web, US Stocks"
-msgstr ""
+msgstr "Google Web, US Stocks"
 
 #: libgnucash/engine/gnc-commodity.cpp:210
 msgctxt "FQ Source"
 msgid "IEX (Investors Exchange), US"
-msgstr ""
+msgstr "IEX (Investors Exchange), US"
 
 #: libgnucash/engine/gnc-commodity.cpp:211
 msgctxt "FQ Source"
 msgid "Market Watch"
-msgstr ""
+msgstr "Market Watch"
 
 #: libgnucash/engine/gnc-commodity.cpp:212
 msgctxt "FQ Source"
 msgid "Morningstar, AU"
-msgstr ""
+msgstr "Morningstar, AU"
 
 #: libgnucash/engine/gnc-commodity.cpp:213
 msgctxt "FQ Source"
 msgid "Morningstar, CH"
-msgstr ""
+msgstr "Morningstar, CH"
 
 #: libgnucash/engine/gnc-commodity.cpp:214
 msgctxt "FQ Source"
 msgid "Morningstar, GB"
-msgstr ""
+msgstr "Morningstar, GB"
 
 #: libgnucash/engine/gnc-commodity.cpp:215
 msgctxt "FQ Source"
 msgid "Morningstar, JP"
-msgstr ""
+msgstr "Morningstar, JP"
 
 #: libgnucash/engine/gnc-commodity.cpp:216
 msgctxt "FQ Source"
 msgid "Motley Fool"
-msgstr ""
+msgstr "Motley Fool"
 
 #: libgnucash/engine/gnc-commodity.cpp:217
 msgctxt "FQ Source"
 msgid "New Zealand stock eXchange, NZ"
-msgstr ""
+msgstr "New Zealand stock eXchange, NZ"
 
 #: libgnucash/engine/gnc-commodity.cpp:218
 msgctxt "FQ Source"
 msgid "NSE (National Stock Exchange), IN"
-msgstr ""
+msgstr "NSE (National Stock Exchange), IN"
 
 #: libgnucash/engine/gnc-commodity.cpp:219
 msgctxt "FQ Source"
 msgid "OnVista, DE"
-msgstr ""
+msgstr "OnVista, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:220
 msgctxt "FQ Source"
 msgid "Paris Stock Exchange/Boursorama, FR"
-msgstr ""
+msgstr "Paris Stock Exchange/Boursorama, FR"
 
 #: libgnucash/engine/gnc-commodity.cpp:221
 msgctxt "FQ Source"
 msgid "S-Investor, DE"
-msgstr ""
+msgstr "S-Investor, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:222
 msgctxt "FQ Source"
 msgid "Sharenet, ZA"
-msgstr ""
+msgstr "Sharenet, ZA"
 
 #: libgnucash/engine/gnc-commodity.cpp:223
-#, fuzzy
-#| msgid "Show Exchange Rates"
 msgctxt "FQ Source"
 msgid "SIX Swiss Exchange shares, CH"
-msgstr "Mostre as taxas de câmbio"
+msgstr "SIX Swiss Exchange shares, CH"
 
 #: libgnucash/engine/gnc-commodity.cpp:224
 msgctxt "FQ Source"
 msgid "Skandinaviska Enskilda Banken, SE"
-msgstr ""
+msgstr "Skandinaviska Enskilda Banken, SE"
 
 #: libgnucash/engine/gnc-commodity.cpp:225
-#, fuzzy
-#| msgid "Stock"
 msgctxt "FQ Source"
 msgid "StockData"
-msgstr "Ação"
+msgstr "StockData"
 
 #: libgnucash/engine/gnc-commodity.cpp:226
 msgctxt "FQ Source"
 msgid "Stooq, PL"
-msgstr ""
+msgstr "Stooq, PL"
 
 #: libgnucash/engine/gnc-commodity.cpp:227
 msgctxt "FQ Source"
 msgid "T. Rowe Price, US"
-msgstr ""
+msgstr "T. Rowe Price, US"
 
 #: libgnucash/engine/gnc-commodity.cpp:228
 msgctxt "FQ Source"
 msgid "Tesouro Direto bonds, BR"
-msgstr ""
+msgstr "Tesouro Direto bonds, BR"
 
 #: libgnucash/engine/gnc-commodity.cpp:229
 msgctxt "FQ Source"
 msgid "TIAA-CREF, US"
-msgstr ""
+msgstr "TIAA-CREF, US"
 
 #: libgnucash/engine/gnc-commodity.cpp:230
 msgctxt "FQ Source"
 msgid "Toronto Stock eXchange, CA"
-msgstr ""
+msgstr "Toronto Stock eXchange, CA"
 
 #: libgnucash/engine/gnc-commodity.cpp:231
 msgctxt "FQ Source"
 msgid "Tradegate, DE"
-msgstr ""
+msgstr "Tradegate, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:232
 msgctxt "FQ Source"
 msgid "Treasury Direct bonds, US"
-msgstr ""
+msgstr "Treasury Direct bonds, US"
 
 #: libgnucash/engine/gnc-commodity.cpp:233
 msgctxt "FQ Source"
 msgid "Twelve Data"
-msgstr ""
+msgstr "Twelve Data"
 
 #: libgnucash/engine/gnc-commodity.cpp:234
-#, fuzzy
-#| msgid "Investments"
 msgctxt "FQ Source"
 msgid "Union Investment, DE"
-msgstr "Investimentos"
+msgstr "Union Investment, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:235
 msgctxt "FQ Source"
 msgid "US Govt. Thrift Savings Plan"
-msgstr ""
+msgstr "US Govt. Thrift Savings Plan"
 
 #: libgnucash/engine/gnc-commodity.cpp:236
 msgctxt "FQ Source"
 msgid "XETRA, DE"
-msgstr ""
+msgstr "XETRA, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:237
 msgctxt "FQ Source"
 msgid "Yahoo as JSON"
-msgstr ""
+msgstr "Yahoo como JSON"
 
 #: libgnucash/engine/gnc-commodity.cpp:238
 msgctxt "FQ Source"
 msgid "Yahoo Web"
-msgstr ""
+msgstr "Yahoo Web"
 
 #: libgnucash/engine/gnc-commodity.cpp:239
-#, fuzzy
-#| msgid "YH Finance (FinanceAPI) API key"
 msgctxt "FQ Source"
 msgid "YH Finance (FinanceAPI)"
-msgstr "Chave da API YH Finance (FinanceAPI)"
+msgstr "YH Finance (FinanceAPI)"
 
 #: libgnucash/engine/gnc-commodity.cpp:244
-#, fuzzy
-#| msgid "Australia BAS"
 msgctxt "FQ Source"
 msgid "Australia (ASX)"
-msgstr "BAS Australiano"
+msgstr "Austrália (ASX)"
 
 #: libgnucash/engine/gnc-commodity.cpp:245
 msgctxt "FQ Source"
 msgid "Australia Funds (MorningstarAU)"
-msgstr ""
+msgstr "Australia Funds (MorningstarAU)"
 
 #: libgnucash/engine/gnc-commodity.cpp:246
 msgctxt "FQ Source"
 msgid "Canada (Alphavantage, TMX)"
-msgstr ""
+msgstr "Canadá (Alphavantage, TMX)"
 
 #: libgnucash/engine/gnc-commodity.cpp:247
 msgctxt "FQ Source"
 msgid "Dutch (AEX)"
-msgstr ""
+msgstr "Dutch (AEX)"
 
 #: libgnucash/engine/gnc-commodity.cpp:248
 msgctxt "FQ Source"
 msgid "Europe (ASEGR, Bourso, …)"
-msgstr ""
+msgstr "Europa (ASEGR, Bourso, …)"
 
 #: libgnucash/engine/gnc-commodity.cpp:249
 msgctxt "FQ Source"
 msgid "France (Bourso)"
-msgstr ""
+msgstr "França (Bourso)"
 
 #: libgnucash/engine/gnc-commodity.cpp:250
 msgctxt "FQ Source"
 msgid "Greece (ASEGR)"
-msgstr ""
+msgstr "Grécia (ASEGR)"
 
 #: libgnucash/engine/gnc-commodity.cpp:251
 msgctxt "FQ Source"
 msgid "India (BSEIndia, NSEIndia)"
-msgstr ""
+msgstr "Índia (BSEIndia, NSEIndia)"
 
 #: libgnucash/engine/gnc-commodity.cpp:252
 msgctxt "FQ Source"
 msgid "India Mutual (AMFI)"
-msgstr ""
+msgstr "India Mutual (AMFI)"
 
 #: libgnucash/engine/gnc-commodity.cpp:253
 msgctxt "FQ Source"
 msgid "Nasdaq (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "Nasdaq (Alphavantage, FinanceAPI, …)"
 
 #: libgnucash/engine/gnc-commodity.cpp:254
 msgctxt "FQ Source"
 msgid "NYSE (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "NYSE (Alphavantage, FinanceAPI, …)"
 
 #: libgnucash/engine/gnc-commodity.cpp:255
 msgctxt "FQ Source"
 msgid "Poland (Stooq)"
-msgstr ""
+msgstr "Polônia (Stooq)"
 
 #: libgnucash/engine/gnc-commodity.cpp:256
 msgctxt "FQ Source"
 msgid "Romania (BVB)"
-msgstr ""
+msgstr "Romênia (BVB)"
 
 #: libgnucash/engine/gnc-commodity.cpp:257
 msgctxt "FQ Source"
 msgid "South Africa (Sharenet)"
-msgstr ""
+msgstr "África do Sul (Sharenet)"
 
 #: libgnucash/engine/gnc-commodity.cpp:258
 msgctxt "FQ Source"
 msgid "U.K. Funds (FTfunds, MorningstarUK)"
-msgstr ""
+msgstr "U.K. Funds (FTfunds, MorningstarUK)"
 
 #: libgnucash/engine/gnc-commodity.cpp:259
 msgctxt "FQ Source"
 msgid "USA (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "EUA (Alphavantage, FinanceAPI, …)"
 
 #: libgnucash/engine/gnc-commodity.h:110
 msgctxt "Commodity Type"
