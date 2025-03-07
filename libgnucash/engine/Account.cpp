@@ -4621,7 +4621,7 @@ xaccAccountSetReconcilePostponeBalance (Account *acc, gnc_numeric balance)
 void
 xaccAccountClearReconcilePostpone (Account *acc)
 {
-    set_kvp_gnc_numeric_path (acc, {KEY_RECONCILE_INFO, KEY_POSTPONE, "balance"}, {});
+    set_kvp_gnc_numeric_path (acc, {KEY_RECONCILE_INFO, KEY_POSTPONE}, {});
 }
 
 /********************************************************************\
