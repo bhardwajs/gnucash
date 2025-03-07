@@ -42,6 +42,7 @@
 #include "gnc-glib-utils.h"
 #include "gnc-lot.h"
 #include "gnc-pricedb.h"
+#include "qofevent.h"
 #include "qofinstance-p.h"
 #include "gnc-features.h"
 #include "guid.hpp"
@@ -1602,11 +1603,17 @@ xaccAccountDestroyAllTransactions(Account *acc)
 {
     auto priv = GET_PRIVATE(acc);
     std::vector<Transaction*> transactions;
+    transactions.reserve(priv->splits.size());
     std::transform(priv->splits.begin(), priv->splits.end(),
                    back_inserter(transactions),
                    [](auto split) { return split->parent; });
+    std::stable_sort(transactions.begin(), transactions.end());
+    transactions.erase(std::unique(transactions.begin(), transactions.end()),
+                       transactions.end());
+    qof_event_suspend();
     std::for_each(transactions.rbegin(), transactions.rend(),
                   [](auto trans) { xaccTransDestroy (trans); });
+    qof_event_resume();
 }
 
 /********************************************************************\
@@ -4621,7 +4628,7 @@ xaccAccountSetReconcilePostponeBalance (Account *acc, gnc_numeric balance)
 void
 xaccAccountClearReconcilePostpone (Account *acc)
 {
-    set_kvp_gnc_numeric_path (acc, {KEY_RECONCILE_INFO, KEY_POSTPONE}, {});
+    set_kvp_gnc_numeric_path (acc, {KEY_RECONCILE_INFO, KEY_POSTPONE, "balance"}, {});
 }
 
 /********************************************************************\
