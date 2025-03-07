@@ -141,6 +141,10 @@ TEST(gncnumeric_constructors, test_string_constructor)
     GncNumeric neg_simple_decimal("-123.456");
     EXPECT_EQ(-123456, neg_simple_decimal.num());
     EXPECT_EQ(1000, neg_simple_decimal.denom());
+    ASSERT_NO_THROW(GncNumeric thousep_decimal("123,456,789.123"));
+    GncNumeric thousep_decimal("123,456,789.123");
+    EXPECT_EQ(123456789123, thousep_decimal.num());
+    EXPECT_EQ(1000, thousep_decimal.denom());
     ASSERT_NO_THROW(GncNumeric continental_decimal("123,456"));
     GncNumeric continental_decimal("123,456");
     EXPECT_EQ(123456, continental_decimal.num());
@@ -149,6 +153,10 @@ TEST(gncnumeric_constructors, test_string_constructor)
     GncNumeric neg_continental_decimal("-123,456");
     EXPECT_EQ(-123456, neg_continental_decimal.num());
     EXPECT_EQ(1000, neg_continental_decimal.denom());
+    ASSERT_NO_THROW(GncNumeric swiss_thousep_decimal("123 456 789,123"));
+    GncNumeric swiss_thousep_decimal("123 456 789,123");
+    EXPECT_EQ(123456789123, swiss_thousep_decimal.num());
+    EXPECT_EQ(1000, swiss_thousep_decimal.denom());
     GncNumeric from_scientific("1.234e4");
     EXPECT_EQ(12340, from_scientific.num());
     EXPECT_EQ(1, from_scientific.denom());

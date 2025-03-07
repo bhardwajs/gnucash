@@ -242,24 +242,37 @@ fast_numeral_rational (const char* str)
 }
 
 GncNumeric::GncNumeric(const std::string &str, bool autoround) {
+    static const std::string begin("^[^-.0-9]*");
+    static const std::string end("[^0-9]*$");
+    static const std::string begin_group("(?:");
+    static const std::string end_group(")");
+    static const std::string or_op("|");
     static const std::string maybe_sign ("(-?)");
     static const std::string opt_signed_int("(-?[0-9]*)");
+    static const std::string opt_signed_separated_int("(-?[0-9]{1,3})");
     static const std::string unsigned_int("([0-9]+)");
+    static const std::string eu_separated_int("(?:[\\s'.]([0-9]{3}))?");
+    static const std::string en_separated_int("(?:\\,([0-9]{3}))?");
+    static const std::string eu_decimal_part("(?:\\,([0-9]+))?");
+    static const std::string en_decimal_part("(?:\\.([0-9]+))?");
     static const std::string hex_frag("(0[xX][A-Fa-f0-9]+)");
     static const std::string slash("[ \\t]*/[ \\t]*");
     static const std::string whitespace("[ \\t]+");
+    static const std::string eu_sep_decimal(begin_group + opt_signed_separated_int + eu_separated_int + eu_separated_int + eu_separated_int + eu_separated_int + eu_decimal_part + end_group);
+    static const std::string en_sep_decimal(begin_group + opt_signed_separated_int + en_separated_int + en_separated_int + en_separated_int + en_separated_int + en_decimal_part + end_group);
     /* The llvm standard C++ library refused to recognize the - in the
      * opt_signed_int pattern with the default ECMAScript syntax so we use the
      * awk syntax.
      */
-    static const regex numeral(opt_signed_int);
-    static const regex hex(hex_frag);
-    static const regex numeral_rational(opt_signed_int + slash + unsigned_int);
-    static const regex integer_and_fraction(maybe_sign + unsigned_int + whitespace + unsigned_int + slash + unsigned_int);
-    static const regex hex_rational(hex_frag + slash + hex_frag);
-    static const regex hex_over_num(hex_frag + slash + unsigned_int);
-    static const regex num_over_hex(opt_signed_int + slash + hex_frag);
-    static const regex decimal(opt_signed_int + "[.,]" + unsigned_int);
+    static const regex numeral(begin + opt_signed_int + end);
+    static const regex hex(begin + hex_frag + end);
+    static const regex numeral_rational(begin + opt_signed_int + slash + unsigned_int + end);
+    static const regex integer_and_fraction(begin + maybe_sign + unsigned_int + whitespace + unsigned_int + slash + unsigned_int + end);
+    static const regex hex_rational(begin + hex_frag + slash + hex_frag + end);
+    static const regex hex_over_num(begin + hex_frag + slash + unsigned_int + end);
+    static const regex num_over_hex(begin + opt_signed_int + slash + hex_frag + end);
+    static const regex decimal(begin + opt_signed_int + "[.,]" + unsigned_int + end);
+    static const regex sep_decimal(begin + begin_group + eu_sep_decimal + or_op + en_sep_decimal + end_group + end);
     static const regex scientific("(?:(-?[0-9]+[.,]?)|(-?[0-9]*)[.,]([0-9]+))[Ee](-?[0-9]+)");
     static const regex has_hex_prefix(".*0[xX]$");
     smatch m, x;
@@ -327,6 +340,37 @@ GncNumeric::GncNumeric(const std::string &str, bool autoround) {
     {
         std::string integer{m[1].matched ? m[1].str() : ""};
         std::string decimal{m[2].matched ? m[2].str() : ""};
+        auto [num, denom] = reduce_number_pair(numeric_from_decimal_match(integer, decimal), str, autoround);
+        m_num = num;
+        m_den = denom;
+        return;
+    }
+    if (regex_search(str, m, sep_decimal))
+    {
+        /* There's a bit of magic here because of the complexity of
+         * the regex. It supports two formats, one for locales that
+         * use space, apostrophe, or dot for thousands separator and
+         * comma for decimal separator and the other for locales that
+         * use comma for thousands and dot for decimal. For each
+         * format there are 5 captures for thousands-groups (allowing
+         * up to 10^16 - 1) and one for decimal, hence the loops from
+         * 1 - 5 and 7 - 11 with the decimal being either capture 6 or
+         * capture 12.
+         */
+        std::string integer(""), decimal("");
+        for (auto i{1}; i < 6; ++i)
+            if (m[i].matched)
+                integer += m[i].str();
+        if (m[6].matched)
+            decimal += m[6].str();
+        if (integer.empty() && decimal.empty())
+        {
+            for (auto i{7}; i <12; ++i)
+                if (m[i].matched)
+                integer += m[i].str();
+        if (m[12].matched)
+            decimal += m[12].str();
+        }
         auto [num, denom] =
             reduce_number_pair(numeric_from_decimal_match(integer, decimal),
                                str, autoround);
