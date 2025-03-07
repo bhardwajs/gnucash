@@ -12,15 +12,15 @@
 # Jan Willem Harmanny <jwharmanny@zeelandnet.nl>, 2002.
 # Geert Janssens <info@kobaltwit.be>, 2021.
 # Frank H. Ellenberger <frank.h.ellenberger@gmail.com>, 2022.
-# Stephan Paternotte <stephan@paternottes.net>, 2023, 2024.
+# Stephan Paternotte <stephan@paternottes.net>, 2023, 2024, 2025.
 # Rene Lambers <jbh.lambers@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug."
-"cgi?product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2024-12-09 10:46+0000\n"
+"PO-Revision-Date: 2025-03-05 15:02+0000\n"
 "Last-Translator: Stephan Paternotte <stephan@paternottes.net>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gnucash/gnucash/nl/"
 ">\n"
@@ -29,9 +29,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
-"X-Bugs: Report translation errors to https://bugs.gnucash.org/enter_bug."
-"cgi?product=GnuCash&component=Translations\n"
+"X-Generator: Weblate 5.10.3-dev\n"
+"X-Bugs: Report translation errors to https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -3357,8 +3357,8 @@ msgstr "Bedrag"
 #, c-format
 msgid "The following vendor document is due:"
 msgid_plural "The following %d vendor documents are due:"
-msgstr[0] "De volgende verkoopfactuur/creditnota is verschuldigd:"
-msgstr[1] "De volgende %d verkoopfacturen/creditnota's zijn verschuldigd:"
+msgstr[0] "Het volgende leveranciersdocument is verschuldigd:"
+msgstr[1] "De volgende %d leveranciersdocumenten zijn verschuldigd:"
 
 #: gnucash/gnome/dialog-invoice.c:3901
 msgid "Due Bills Reminder"
@@ -5411,7 +5411,7 @@ msgstr "Afdrukbare factuur"
 #: gnucash/report/reports/standard/taxinvoice.scm:315
 #: gnucash/report/reports/support/taxinvoice.eguile.scm:423
 msgid "Tax Invoice"
-msgstr "Belastingfactuur"
+msgstr "Verkoopfactuur incl. BTW"
 
 #: gnucash/gnome/gnc-plugin-page-report.cpp:1914
 #: gnucash/report/reports/standard/invoice.scm:887
@@ -7125,8 +7125,8 @@ msgstr "_Nee, nu niet"
 #: gnucash/gnome-utils/gnc-cell-view.c:74
 msgid "Use Shift combined with Return or Keypad Enter to finish editing"
 msgstr ""
-"Gebruik \"Hoofdletter\"+\"Return\" of \"Enter (numeriek klavier\" om "
-"bewerking af te ronden"
+"Gebruik Shift in combinatie met Return of Keypad Enter om de bewerking te "
+"voltooien"
 
 #: gnucash/gnome-utils/gnc-date-edit.c:842
 msgid "Calendar"
@@ -7779,13 +7779,20 @@ msgstr "Boekhoudsoftware voor thuis en voor kleine ondernemingen."
 #. The string can have multiple rows, so you can also add a list of
 #. contributors.
 #: gnucash/gnome-utils/gnc-main-window.cpp:5282
+#, fuzzy
 msgid "translator-credits"
 msgstr ""
-"Benno Schulenberg: 2007, 2010; Erwin Poeze: 2009"
-"Frank H. Ellenberger: 2022; Geert Janssens: 2020, 2021, 2021"
-"Hendrik-Jan Heins: 2003; Jan Willem Harmanny: 2002"
-"Jeroen ten Berge: 2004; Mark Haanen: 2009-2017; Rene Lambers: 2023"
-"Stephan Paternotte: 2023, 2024; Tom van Braeckel: 2010"
+"Stephan Paternotte: 2023-2025;\n"
+"Rene Lambers: 2023;\n"
+"Frank H. Ellenberger: 2022;\n"
+"Geert Janssens: 2020-2021;\n"
+"Mark Haanen: 2009-2017;\n"
+"Tom van Braeckel: 2010\n"
+"Benno Schulenberg: 2007, 2010;\n"
+"Erwin Poeze: 2009;\n"
+"Jeroen ten Berge: 2004;\n"
+"Hendrik-Jan Heins: 2003;\n"
+"Jan Willem Harmanny: 2002;"
 
 #: gnucash/gnome-utils/gnc-main-window.cpp:5285
 msgid "Visit the GnuCash website."
@@ -9787,10 +9794,9 @@ msgid ""
 "decimals instead of displaying the exact fraction if the fractional part "
 "cannot be exactly represented as a decimal."
 msgstr ""
-"Door activering van deze optie zal GnuCash desgevallend koersen afronden om "
-"ze altijd als decimaal getal in plaats van als exacte breuk weer te geven. "
-"Deze afronding is van toepassing als de breuk niet exact als decimaal getal "
-"kan weergegeven worden."
+"Indien actief, zal GnuCash de prijzen indien nodig afronden om ze als "
+"decimalen weer te geven in plaats van de exacte breuk als het fractionele "
+"deel niet precies als decimaal kan worden weergegeven."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:75
 #: gnucash/gtkbuilder/dialog-preferences.glade:1743
@@ -11158,7 +11164,7 @@ msgstr "Periode afsluiten"
 
 #: gnucash/gtkbuilder/assistant-acct-period.glade:210
 msgid "Account Period Finish"
-msgstr "Einde verslagperiode"
+msgstr "Afsluiting van de boekhoudperiode"
 
 #: gnucash/gtkbuilder/assistant-acct-period.glade:237
 msgid "Press 'Close' to Exit."
@@ -12043,7 +12049,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/assistant-hierarchy.glade:582
 msgid "Finish Account Setup"
-msgstr "Instellen rekeningschema afronden"
+msgstr "Instellen rekeningschema voltooien"
 
 #: gnucash/gtkbuilder/assistant-loan.glade:12
 #: gnucash/gtkbuilder/gnc-date-format.glade:170
@@ -12470,11 +12476,11 @@ msgid ""
 "Click \"Next\" to finish loading files and move to the next step of the QIF "
 "import process."
 msgstr ""
-"Klik op [Nog een bestand laden] als u meer gegevens wilt importeren, "
+"Klik op \"Nog een bestand laden\" als u meer gegevens wilt importeren, "
 "bijvoorbeeld omdat u uw rekeningen in afzonderlijke QIF-bestanden hebt "
 "opgeslagen.\n"
 "\n"
-"Klik op [Volgende] om het laden van bestanden af te ronden en naar de "
+"Klik op \"Volgende\" om het laden van bestanden te voltooien en naar de "
 "volgende stap van het importeren van QIF-bestanden te gaan."
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:458
@@ -12901,14 +12907,14 @@ msgid ""
 "may also press \"Back\" to review your choices, or \"Cancel\" to quit "
 "without making any changes."
 msgstr ""
-"Klik op [Toepassen] wanneer u klaar bent met het invoeren van de "
-"beleggingsdeling of -samenvoeging. U kunt ook op [Terug] klikken om uw "
-"keuzes te herzien of op [Annuleren] klikken om te stoppen zonder wijzigingen "
-"aan te brengen."
+"Klik op \"Toepassen\" wanneer u klaar bent met het invoeren van de "
+"beleggingsdeling of -samenvoeging. U kunt ook op \"Terug\" klikken om uw "
+"keuzes te herzien of op \"Annuleren\" klikken om te stoppen zonder "
+"wijzigingen aan te brengen."
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:418
 msgid "Stock Split Finish"
-msgstr "Beleggingsdeling afronden"
+msgstr "Beleggingsdeling voltooien"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:9
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:27
@@ -13073,7 +13079,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:956
 msgid "Finish"
-msgstr "Afronden"
+msgstr "Voltooien"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:16
 msgid "Introduction placeholder"
@@ -13097,11 +13103,11 @@ msgstr "Bestand converteren"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:145
 msgid "finish placeholder"
-msgstr "aggregatie beëindigen"
+msgstr "aggregatie voltooien"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:150
 msgid "Finish GnuCash Datafile Import"
-msgstr "Importeren GnuCash-bestand afronden"
+msgstr "Importeren GnuCash-bestand voltooien"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:163
 msgid "Edit the list of encodings"
@@ -18156,7 +18162,7 @@ msgstr ""
 "Wanneer u een andere bank, gebruiker of rekening wilt toevoegen, kunt u deze "
 "assistent op elk moment opnieuw oproepen.\n"
 "\n"
-"Klik op [Toepassen] om verder te gaan."
+"Klik vervolgens op \"Toepassen\"."
 
 #: gnucash/import-export/aqb/assistant-ab-initial.glade:296
 msgid "Online Banking Setup Finished"
@@ -18189,7 +18195,7 @@ msgstr "<b>_Logmeldingen</b>"
 
 #: gnucash/import-export/aqb/dialog-ab.glade:254
 msgid "Close when _finished"
-msgstr "Na afloop _sluiten"
+msgstr "Sluiten wanneer _voltooid"
 
 #: gnucash/import-export/aqb/dialog-ab.glade:287
 msgid "Get Transactions Online"
@@ -18450,7 +18456,7 @@ msgstr "Online bankieren"
 
 #: gnucash/import-export/aqb/dialog-ab-pref.glade:34
 msgid "_Close log window when finished"
-msgstr "Voortgangsvenster na afloop _sluiten"
+msgstr "Voortgangsvenster _sluiten na voltooiing"
 
 #: gnucash/import-export/aqb/dialog-ab-pref.glade:40
 #: gnucash/import-export/aqb/gschemas/org.gnucash.GnuCash.dialogs.import.hbci.gschema.xml.in:16
@@ -18996,7 +19002,7 @@ msgstr ""
 
 #: gnucash/import-export/aqb/gschemas/org.gnucash.GnuCash.dialogs.import.hbci.gschema.xml.in:15
 msgid "Close window when finished"
-msgstr "Dit venster na afloop sluiten"
+msgstr "Venster sluiten wanneer klaar"
 
 #: gnucash/import-export/aqb/gschemas/org.gnucash.GnuCash.dialogs.import.hbci.gschema.xml.in:20
 msgid "Remember the PIN in memory"
@@ -27480,7 +27486,7 @@ msgstr "Opdracht: "
 #: gnucash/report/reports/standard/taxinvoice.scm:328
 #: gnucash/report/reports/standard/taxinvoice.scm:330
 msgid "Australian Tax Invoice"
-msgstr "Australische belastingfactuur"
+msgstr "Australische verkoopfactuur incl. BTW"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:331
 msgid ""
@@ -29006,7 +29012,7 @@ msgstr "Het huidige GnuCash-bestand opslaan"
 #: gnucash/ui/gnc-plugin-page-report.ui:147
 #: gnucash/ui/gnc-plugin-page-sx-list.ui:130
 msgid "Open the New Invoice dialog"
-msgstr "Het venster ‘Nieuwe verkoopfactuur’ openen"
+msgstr "Dialoogvenster ‘Nieuwe verkoopfactuur’ openen"
 
 #: gnucash/ui/gnc-main-window.ui:588 gnucash/ui/gnc-plugin-business.ui:24
 #: gnucash/ui/gnc-plugin-page-account-tree.ui:347
@@ -29286,7 +29292,7 @@ msgstr "Verkoopfactuur _zoeken…"
 
 #: gnucash/ui/gnc-plugin-business.ui:31
 msgid "Open the Find Invoice dialog"
-msgstr "Het venster ‘Verkoopfactuur zoeken’ openen"
+msgstr "Dialoogvenster ‘Verkoopfactuur zoeken’ openen"
 
 #: gnucash/ui/gnc-plugin-business.ui:34 gnucash/ui/gnc-plugin-business.ui:83
 msgid "New _Job…"
@@ -30501,7 +30507,7 @@ msgstr "_Afstemmingsgegevens…"
 
 #: gnucash/ui/gnc-reconcile-window.ui:14 gnucash/ui/gnc-reconcile-window.ui:247
 msgid "_Finish"
-msgstr "_Afronden"
+msgstr "_Voltooien"
 
 #: gnucash/ui/gnc-reconcile-window.ui:19 gnucash/ui/gnc-reconcile-window.ui:263
 msgid "_Postpone"
@@ -30560,7 +30566,7 @@ msgstr "De rekening openen"
 
 #: gnucash/ui/gnc-reconcile-window.ui:245
 msgid "Finish the reconciliation of this account"
-msgstr "De afstemming voor deze rekening afronden"
+msgstr "De afstemming voor deze rekening voltooien"
 
 #: gnucash/ui/gnc-reconcile-window.ui:261
 msgid "Postpone the reconciliation of this account"
