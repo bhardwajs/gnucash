@@ -156,8 +156,8 @@ TEST(gncnumeric_constructors, test_string_constructor)
     GncNumeric neg_continental_decimal("-123,456");
     EXPECT_EQ(-123456, neg_continental_decimal.num());
     EXPECT_EQ(1000, neg_continental_decimal.denom());
-    ASSERT_NO_THROW(GncNumeric swiss_thousep_decimal("123 456 789,123"));
-    GncNumeric swiss_thousep_decimal("123 456 789,123");
+    ASSERT_NO_THROW(GncNumeric swiss_thousep_decimal("123""\xe2\x80\xaf""456""\xe2\x80\xaf""789,123"));
+    GncNumeric swiss_thousep_decimal("123""\xe2\x80\xaf""456""\xe2\x80\xaf""789,123");
     EXPECT_EQ(123456789123, swiss_thousep_decimal.num());
     EXPECT_EQ(1000, swiss_thousep_decimal.denom());
     GncNumeric from_scientific("1.234e4");

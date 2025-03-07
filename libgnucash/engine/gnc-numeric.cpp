@@ -31,6 +31,7 @@
 #include <cstdint>
 #include <sstream>
 #include <boost/regex.hpp>
+#include <boost/regex/icu.hpp>
 #include <boost/locale/encoding_utf.hpp>
 
 #include <config.h>
@@ -118,7 +119,9 @@ GncNumeric::GncNumeric(double d) : m_num(0), m_den(1)
 }
 
 using boost::regex;
+using boost::u32regex;
 using boost::regex_search;
+using boost::u32regex_search;
 using boost::smatch;
 
 
@@ -251,7 +254,7 @@ GncNumeric::GncNumeric(const std::string &str, bool autoround) {
     static const std::string opt_signed_int("(-?[0-9]*)");
     static const std::string opt_signed_separated_int("(-?[0-9]{1,3})");
     static const std::string unsigned_int("([0-9]+)");
-    static const std::string eu_separated_int("(?:[\\s'.]([0-9]{3}))?");
+    static const std::string eu_separated_int("(?:[[:space:]'.]([0-9]{3}))?");
     static const std::string en_separated_int("(?:\\,([0-9]{3}))?");
     static const std::string eu_decimal_part("(?:\\,([0-9]+))?");
     static const std::string en_decimal_part("(?:\\.([0-9]+))?");
@@ -272,7 +275,8 @@ GncNumeric::GncNumeric(const std::string &str, bool autoround) {
     static const regex hex_over_num(begin + hex_frag + slash + unsigned_int + end);
     static const regex num_over_hex(begin + opt_signed_int + slash + hex_frag + end);
     static const regex decimal(begin + opt_signed_int + "[.,]" + unsigned_int + end);
-    static const regex sep_decimal(begin + begin_group + eu_sep_decimal + or_op + en_sep_decimal + end_group + end);
+    static const u32regex sep_decimal =
+        boost::make_u32regex(begin + begin_group + eu_sep_decimal + or_op + en_sep_decimal + end_group + end);
     static const regex scientific("(?:(-?[0-9]+[.,]?)|(-?[0-9]*)[.,]([0-9]+))[Ee](-?[0-9]+)");
     static const regex has_hex_prefix(".*0[xX]$");
     smatch m, x;
@@ -345,7 +349,7 @@ GncNumeric::GncNumeric(const std::string &str, bool autoround) {
         m_den = denom;
         return;
     }
-    if (regex_search(str, m, sep_decimal))
+    if (u32regex_search(str, m, sep_decimal))
     {
         /* There's a bit of magic here because of the complexity of
          * the regex. It supports two formats, one for locales that
