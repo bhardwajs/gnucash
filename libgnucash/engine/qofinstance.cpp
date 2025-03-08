@@ -1343,7 +1343,7 @@ struct wrap_param
 static void
 wrap_gvalue_function (const char* key, KvpValue *val, wrap_param & param)
 {
-    GValue gv;
+    GValue gv = G_VALUE_INIT;
     if (val->get_type() != KvpValue::Type::FRAME)
         gvalue_from_kvp_value(val, &gv);
     else
