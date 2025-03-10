@@ -1284,7 +1284,7 @@ inline SCM return_scm_value(ValueType value)
                 if constexpr (is_QofQueryValue_v<decltype(option)>)
                 {
                     QofQuery* value{const_cast<QofQuery*>(option.get_value())};
-                    return scm_simple_format(SCM_BOOL_F, ticked_format_str,
+                    return scm_simple_format(SCM_BOOL_F, list_format_str,
                                              scm_list_1(gnc_query2scm(value)));
                 }
                 if constexpr (is_same_decayed_v<decltype(option),
