@@ -498,7 +498,7 @@ veritatis et quasi architecto beatae vitae dicta sunt, explicabo.")
 (let ((option (gnc:lookup-option options
                                  \"__reg\"
                                  \"query\")))
-  ((lambda (o) (if o (gnc:option-set-value o '~a))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '~s))) option))
 
 " value))
  
