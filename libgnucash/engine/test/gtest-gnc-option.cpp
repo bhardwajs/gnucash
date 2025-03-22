@@ -29,6 +29,9 @@
 #include <config.h>
 #include "qof.h"
 #include "Account.h"
+#include <gnc-accounting-period.h>
+#include <gnc-prefs.h>
+#include <gnc-prefs-p.h>
 #include "gnc-budget.h"
 #include "gnc-commodity.h"
 #include "gnc-date.h"
@@ -941,52 +944,91 @@ TEST(GncOptionDate, test_not_using_32bit_time_t_in_2038)
     EXPECT_FALSE(sizeof (time_t) == 4 && time(nullptr) <= 0) << "Time to upgrade 32bit time_t!";
 }
 
-// The relative current quarter start date is the date provided.
-static void
-set_current_quarter_start(GDate *date)
+class FakePrefsBackend
 {
+    int m_startabs = 0;
+    int m_endabs = 0;
+    int m_startperiod = GNC_ACCOUNTING_PERIOD_CYEAR;
+    int m_endperiod = GNC_ACCOUNTING_PERIOD_CYEAR;
+public:
+    int get_bool([[maybe_unused]] const char* group, const char* setting)
+    {
+        if (strcmp (setting, GNC_PREF_START_CHOICE_ABS) == 0)
+            return m_startabs;
+        if (strcmp (setting, GNC_PREF_END_CHOICE_ABS) == 0)
+            return m_endabs;
+        return -1;
+    }
+
+    void set_bool([[maybe_unused]] const char* group, const char* setting, int value)
+    {
+        if (strcmp (setting, GNC_PREF_START_CHOICE_ABS) == 0)
+            m_startabs = value;
+        if (strcmp (setting, GNC_PREF_END_CHOICE_ABS) == 0)
+            m_endabs = value;
+    }
+
+    int get_int([[maybe_unused]] const char* group, const char* setting)
+    {
+        if (strcmp (setting, GNC_PREF_START_PERIOD) == 0)
+            return m_startperiod;
+        if (strcmp (setting, GNC_PREF_END_PERIOD) == 0)
+            return m_endperiod;
+        return -1;
+    }
+
+    void set_int([[maybe_unused]] const char* group, const char* setting, int value)
+    {
+        if (strcmp (setting, GNC_PREF_START_PERIOD) == 0)
+            m_startperiod = value;
+        if (strcmp (setting, GNC_PREF_END_PERIOD) == 0)
+            m_endperiod = value;
+    }
+};
+
+FakePrefsBackend fpb;
+
+static int get_bool(const char* group, const char* setting)
+{
+    return fpb.get_bool(group, setting);
 }
 
-static GDateDay
-get_last_day_of_month(GDate *date)
+static int set_bool(const char* group, const char* setting, int value)
 {
-    return gnc_date_get_last_mday(g_date_get_month(date) - G_DATE_JANUARY, g_date_get_year(date));
+    fpb.set_bool(group, setting, value);
+    return 1;
 }
 
-static void
-set_current_quarter_end(GDate *date)
+static int get_int(const char* group, const char* setting)
 {
-    bool is_last_of_month = g_date_is_last_of_month(date);
-    GDateDay day = g_date_get_day(date);
-    GDateDay last_day_of_month;
-
-    g_date_set_day(date, 1);
-    g_date_add_months(date, 3);
-    last_day_of_month = get_last_day_of_month(date);
-    g_date_set_day(date, is_last_of_month || day > last_day_of_month ? last_day_of_month : day);
-    g_date_subtract_days(date, 1);
+    return fpb.get_int(group, setting);
 }
 
-static void
-set_previous_quarter_start(GDate *date)
+static int set_int(const char* group, const char* setting, int value)
 {
-    bool is_last_of_month = g_date_is_last_of_month(date);
-    GDateDay day = g_date_get_day(date);
-    GDateDay last_day_of_month;
-
-    g_date_set_day(date, 1);
-    g_date_subtract_months(date, 3);
-    last_day_of_month = get_last_day_of_month(date);
-    g_date_set_day(date, is_last_of_month || day > last_day_of_month ? last_day_of_month : day);
+    fpb.set_int(group, setting, value);
+    return 1;
 }
 
-static void
-set_previous_quarter_end(GDate *date)
+class GncOptionDateTest : public ::testing::Test
 {
-    g_date_subtract_days(date, 1);
-}
+protected:
+    GncOptionDateTest()
+    {
+        prefsbackend = g_new0(PrefsBackend, 1);
+        prefsbackend->get_bool = get_bool;
+        prefsbackend->set_bool = set_bool;
+        prefsbackend->get_int = get_int;
+        prefsbackend->set_int = set_int;
+    }
+    ~GncOptionDateTest()
+    {
+        g_free(prefsbackend);
+        gnc_clear_current_session();
+    }
+};
 
-TEST(GncOptionDate, test_gnc_relative_date_to_time64)
+TEST_F(GncOptionDateTest, test_gnc_relative_date_to_time64)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
@@ -1012,25 +1054,25 @@ TEST(GncOptionDate, test_gnc_relative_date_to_time64)
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::END_PREV_MONTH));
     g_date_set_time_t(&date, time(nullptr));
-    set_current_quarter_start(&date);
+    gnc_gdate_set_quarter_start(&date);
     time1 = time64_from_gdate(&date, DayPart::start);
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::START_CURRENT_QUARTER));
 
     g_date_set_time_t(&date, time(nullptr));
-    set_current_quarter_end(&date);
+    gnc_gdate_set_quarter_end(&date);
     time1 = time64_from_gdate(&date, DayPart::end);
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::END_CURRENT_QUARTER));
 
     g_date_set_time_t(&date, time(nullptr));
-    set_previous_quarter_start(&date);
+    gnc_gdate_set_prev_quarter_start(&date);
     time1 = time64_from_gdate(&date, DayPart::start);
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::START_PREV_QUARTER));
 
     g_date_set_time_t(&date, time(nullptr));
-    set_previous_quarter_end(&date);
+    gnc_gdate_set_prev_quarter_end(&date);
     time1 = time64_from_gdate(&date, DayPart::end);
     EXPECT_EQ(time1,
               gnc_relative_date_to_time64(RelativeDatePeriod::END_PREV_QUARTER));
@@ -1062,7 +1104,19 @@ class GncOptionDateOptionTest : public ::testing::Test
 protected:
     GncOptionDateOptionTest() :
         m_option{GncOptionDateValue{"foo", "bar", "a", "Phony Date Option",
-                                    GncOptionUIType::DATE_BOTH}} {}
+                                    GncOptionUIType::DATE_BOTH}}
+    {
+        prefsbackend = g_new0(PrefsBackend, 1);
+        prefsbackend->get_bool = get_bool;
+        prefsbackend->set_bool = set_bool;
+        prefsbackend->get_int = get_int;
+        prefsbackend->set_int = set_int;
+    }
+    ~GncOptionDateOptionTest()
+    {
+        g_free(prefsbackend);
+    }
+
     GncOption m_option;
 };
 
@@ -1270,7 +1324,7 @@ TEST_F(GncDateOption, test_stream_in_quarter_start)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
-    set_current_quarter_start(&date);
+    gnc_gdate_set_quarter_start(&date);
     time64 time1{time64_from_gdate(&date, DayPart::start)};
     std::istringstream iss{"relative . start-current-quarter"};
     iss >> m_option;
@@ -1281,7 +1335,7 @@ TEST_F(GncDateOption, test_stream_in_quarter_end)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
-    set_current_quarter_end(&date);
+    gnc_gdate_set_quarter_end(&date);
     time64 time1{time64_from_gdate(&date, DayPart::end)};
     std::istringstream iss{"relative . end-current-quarter"};
     iss >> m_option;
@@ -1292,7 +1346,7 @@ TEST_F(GncDateOption, test_stream_in_prev_quarter_start)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
-    set_previous_quarter_start(&date);
+    gnc_gdate_set_prev_quarter_start(&date);
     time64 time1{time64_from_gdate(&date, DayPart::start)};
     std::istringstream iss{"relative . start-prev-quarter"};
     iss >> m_option;
@@ -1303,7 +1357,7 @@ TEST_F(GncDateOption, test_stream_in_prev_quarter_end)
 {
     GDate date;
     g_date_set_time_t(&date, time(nullptr));
-    set_previous_quarter_end(&date);
+    gnc_gdate_set_prev_quarter_end(&date);
     time64 time1{time64_from_gdate(&date, DayPart::end)};
     std::istringstream iss{"relative . end-prev-quarter"};
     iss >> m_option;
