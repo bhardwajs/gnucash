@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2025-03-23 21:12+0000\n"
+"PO-Revision-Date: 2025-03-23 22:46+0000\n"
 "Last-Translator: Szia Tomi <sziatomi01@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gnucash/"
 "gnucash/hu/>\n"
@@ -16480,9 +16480,8 @@ msgid "Number of Occurrences"
 msgstr "Előfordulások száma"
 
 #: gnucash/gtkbuilder/dialog-sx.glade:508
-#, fuzzy
 msgid "<b>Since Last Run</b>"
-msgstr "<b>'Utolsó futás óta'-ablak </b>"
+msgstr "<b>Legutóbbi futás óta</b>"
 
 #: gnucash/gtkbuilder/dialog-sx.glade:531
 msgid "<b>Transaction Editor Defaults</b>"
@@ -16494,7 +16493,7 @@ msgstr "Futtatás adatfájl megnyitásako_r"
 
 #: gnucash/gtkbuilder/dialog-sx.glade:545
 msgid "Run the \"since last run\" process when a file is opened."
-msgstr ""
+msgstr "Lefuttatja a „legutóbbi futás óta” folyamatot egy fájl megnyitásakor."
 
 #: gnucash/gtkbuilder/dialog-sx.glade:558
 msgid "_Show notification window"
@@ -16505,6 +16504,8 @@ msgid ""
 "Show the notification window for the \"since last run\" process when a file "
 "is opened."
 msgstr ""
+"A „legutóbbi futás óta” folyamat értesítési ablakának megjelenítése egy fájl "
+"megnyitásakor."
 
 #: gnucash/gtkbuilder/dialog-sx.glade:575
 msgid "_Auto-create new transactions"
@@ -26884,43 +26885,36 @@ msgid "Logo width"
 msgstr "Logó szélesség"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:126
-#, fuzzy
 msgid "Display the Tax Rate?"
-msgstr "Dátum megjelenítése?"
+msgstr "Adó mértékének megjelenítése?"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:128
-#, fuzzy
 msgid "Display the Units?"
-msgstr "Összesítések megjelenítése?"
+msgstr "Az egységek megjelenítése?"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:130
-#, fuzzy
 msgid "Display the contact?"
-msgstr "Számla megjelenítése?"
+msgstr "Kapcsolat megjelenítése?"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:132
-#, fuzzy
 msgid "Display the address?"
-msgstr "Dátum megjelenítése?"
+msgstr "Cím megjelenítése?"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:134
-#, fuzzy
 msgid "Display the Invoice Number?"
-msgstr "Csekkszám megjelenítése?"
+msgstr "Számlaszám megjelenítése?"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:136
-#, fuzzy
 msgid "Display the Company Name?"
-msgstr "Számlanév megjelenítése?"
+msgstr "Cégnév megjelenítése?"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:138
 msgid "Invoice Number next to title?"
 msgstr "Számlaszám a cím mellett?"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:140
-#, fuzzy
 msgid "Display Job name?"
-msgstr "Számlanév megjelenítése?"
+msgstr "Megbízás nevének megjelenítése?"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:142
 msgid "Invoice Job number?"
@@ -27568,7 +27562,7 @@ msgstr "Különleges"
 
 #: gnucash/report/stylesheets/footer.scm:397
 msgid "Technicolor"
-msgstr ""
+msgstr "Sokszínű"
 
 #: gnucash/report/stylesheets/head-or-tail.scm:65
 msgid "Show receiver info"
@@ -27579,9 +27573,8 @@ msgid "Name of organization or company the report is prepared for."
 msgstr "A szervezet vagy cég neve, amely számára a jelentés készült."
 
 #: gnucash/report/stylesheets/head-or-tail.scm:70
-#, fuzzy
 msgid "Show date"
-msgstr "Táblázat megjelenítése"
+msgstr "Dátum megjelenítése"
 
 #: gnucash/report/stylesheets/head-or-tail.scm:71
 msgid "The creation date for this report."
@@ -28048,7 +28041,7 @@ msgstr "Csekkszám megjelenítése?"
 
 #: gnucash/report/trep-engine.scm:951
 msgid "Display the account name?"
-msgstr "Számlanév megjelenítése?"
+msgstr "Számla nevének megjelenítése?"
 
 #: gnucash/report/trep-engine.scm:959
 msgid ""
