@@ -31,6 +31,7 @@
 # Carsten Hütter <Carsten.Huetter@gmx.de>, 2023.
 # "Frank H. Ellenberger" <frank.h.ellenberger@gmail.com>, 2024.
 # Alois Levermann <alois@levermann.xyz>, 2025.
+# Thomas Kriegel <thomasMapper@bin-wieder-da.de>, 2025.
 #
 # Konventionen/Tastenkürzel:
 # »Zitate«: [altgr]+[Y]/[X]
@@ -42,7 +43,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2025-02-05 12:02+0000\n"
+"PO-Revision-Date: 2025-03-23 19:01+0000\n"
 "Last-Translator: Alois Levermann <alois@levermann.xyz>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "de/>\n"
@@ -51,7 +52,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -13186,7 +13187,7 @@ msgstr "Kapitalertragskonto"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:891
 msgid "Capital Gains"
-msgstr "Kapitalertäge"
+msgstr "Kapitalerträge"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:908
 msgid ""
@@ -13749,8 +13750,6 @@ msgid "<b>Initial Balance Transfer</b>"
 msgstr "<b>Buchung Anfangssaldo</b>"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1837
-#, fuzzy
-#| msgid "_Balance"
 msgctxt "field label"
 msgid "_Balance"
 msgstr "_Saldo"
@@ -21616,7 +21615,7 @@ msgstr "Gehalt"
 
 #: gnucash/register/ledger-core/split-register.c:2652
 msgid "LTCG"
-msgstr "Zinsen aus langfristigen Kapitalanlagen"
+msgstr "Langfristige Kapitalerträge"
 
 #: gnucash/register/ledger-core/split-register.c:2654
 msgid "STCG"
@@ -25191,7 +25190,7 @@ msgstr "Keine exportierbaren Daten"
 #: gnucash/report/reports/standard/customer-summary.scm:51
 msgid "The income accounts where the sales and income was recorded."
 msgstr ""
-"Wählen Sie hier die Ertagskonten, wo der Umsatz und die Erträge gebucht "
+"Wählen Sie hier die Ertragskonten, wo der Umsatz und die Erträge gebucht "
 "wurden."
 
 #: gnucash/report/reports/standard/customer-summary.scm:61
