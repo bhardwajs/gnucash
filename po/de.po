@@ -44,7 +44,7 @@ msgstr ""
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
 "PO-Revision-Date: 2025-03-23 19:01+0000\n"
-"Last-Translator: Thomas Kriegel <thomasMapper@bin-wieder-da.de>\n"
+"Last-Translator: Alois Levermann <alois@levermann.xyz>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "de/>\n"
 "Language: de\n"
@@ -13750,8 +13750,6 @@ msgid "<b>Initial Balance Transfer</b>"
 msgstr "<b>Buchung Anfangssaldo</b>"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1837
-#, fuzzy
-#| msgid "_Balance"
 msgctxt "field label"
 msgid "_Balance"
 msgstr "_Saldo"
