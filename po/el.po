@@ -37,14 +37,15 @@
 # Gregory-K <lifeturn@gmail.com>, 2022.
 # ΑΓΡΟΤΙΚΟΣ ΣΥΝΕΤΑΙΡΙΣΜΟΣ ΤΥΛΙΣΟΥ <astilisos209@gmail.com>, 2023.
 # Dimitris Mandalidis <dimitris.mandalidis@gmail.com>, 2023.
+# George Petsagourakis <petsagouris@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.10\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-12-08 11:07-0800\n"
-"PO-Revision-Date: 2023-08-23 16:54+0000\n"
-"Last-Translator: Dimitris Mandalidis <dimitris.mandalidis@gmail.com>\n"
+"PO-Revision-Date: 2025-03-16 09:53+0000\n"
+"Last-Translator: George Petsagourakis <petsagouris@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnucash/gnucash/el/"
 ">\n"
 "Language: el\n"
@@ -52,7 +53,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -1057,6 +1058,9 @@ msgid ""
 "You can assign or modify keyboard shortcuts for many GnuCash actions. See "
 "https://wiki.gnucash.org/wiki/Keyboard_Shortcuts."
 msgstr ""
+"Μπορείτε να αντιστοιχίσετε ή να τροποποιήσετε τις συντομεύσεις πληκτρολογίου "
+"για πολλές ενέργειες του GnuCash. Δείτε Matewiki.gnucash.org/wiki/"
+"Keyboard_Shortcuts."
 
 #: doc/tip_of_the_day.list.c:132
 msgid ""
@@ -1850,8 +1854,9 @@ msgstr "Συμπερίληψη υπολογαριασμών όλων των επ
 
 #. Translators: "N/A" here means that a commodity doesn't have a valid price.
 #: gnucash/gnome/assistant-stock-transaction.cpp:771
+#, fuzzy
 msgid "N/A"
-msgstr ""
+msgstr "Μ/Δ"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:863
 msgid "Amount for stock value is missing."
@@ -1899,7 +1904,7 @@ msgstr "Μετρητά"
 #: gnucash/gnome/assistant-stock-transaction.cpp:1133
 msgctxt "Stock Assistant: Page name"
 msgid "Fees"
-msgstr ""
+msgstr "Αμοιβές"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:1135
 #, fuzzy
@@ -3115,6 +3120,9 @@ msgid ""
 "One or more of the entries are for accounts different from the invoice/bill "
 "currency. You will be asked to enter a conversion rate for each."
 msgstr ""
+"Μία ή περισσότερες από τις εγγραφές είναι για λογαριασμούς με διαφορετικό "
+"από το νόμισμα από αυτό του παραστατικού. Θα σας ζητηθεί να εισάγετε ένα "
+"ποσοστό μετατροπής για το καθένα."
 
 #: gnucash/gnome/dialog-invoice.c:1301
 msgid "The post action was canceled because not all exchange rates were given."
@@ -3154,7 +3162,7 @@ msgstr "ΠΛΗΡΩΜΕΝΟ"
 #: gnucash/gnome/dialog-invoice.c:2269
 #: gnucash/report/reports/standard/new-owner-report.scm:570
 msgid "UNPAID"
-msgstr ""
+msgstr "ΑΝΕΞΟΦΛΗΤΟ"
 
 #: gnucash/gnome/dialog-invoice.c:2317 gnucash/gnome/dialog-invoice.c:2336
 #: gnucash/gnome/dialog-invoice.c:2355
@@ -3246,6 +3254,8 @@ msgid ""
 "One or more selected invoices have already been posted.\n"
 "Re-check your selection."
 msgstr ""
+"Ένα ή περισσότερα επιλεγμένα παραστατικά έχουν ήδη αποσταλεί.\n"
+"Ελέγξτε την επιλογή σας."
 
 #: gnucash/gnome/dialog-invoice.c:3427
 #, fuzzy
