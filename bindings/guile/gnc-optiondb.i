@@ -591,6 +591,10 @@ gnc_option_test_book_destroy(QofBook* book)
       $1 = rdp;
 }
 
+%typecheck(SWIG_TYPECHECK_INTEGER) RelativeDatePeriod {
+    $1 = scm_is_integer($input) || scm_is_symbol($input) ? 1 : 0;
+}
+
 %typemap(in) RelativeDatePeriodVec& (RelativeDatePeriodVec period_set)
 {
     for (SCM node = $input; !scm_is_null (node); node = scm_cdr (node))

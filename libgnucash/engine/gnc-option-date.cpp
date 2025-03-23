@@ -516,7 +516,7 @@ reldate_set_day_and_time(
 };
 
 time64
-gnc_relative_date_to_time64(RelativeDatePeriod period)
+gnc_relative_date_to_time64(RelativeDatePeriod period, time64 now_t)
 {
     if (period == RelativeDatePeriod::TODAY)
         return static_cast<time64>(GncDateTime());
@@ -525,10 +525,9 @@ gnc_relative_date_to_time64(RelativeDatePeriod period)
     if (period == RelativeDatePeriod::END_ACCOUNTING_PERIOD)
         return gnc_accounting_period_fiscal_end();
 
-    GncDateTime now_t;
     if (period == RelativeDatePeriod::TODAY)
-        return static_cast<time64>(now_t);
-    auto now{static_cast<tm>(now_t)};
+        return now_t;
+    auto now{static_cast<tm>(GncDateTime(now_t))};
     struct tm acct_per =
         static_cast<tm>(GncDateTime(gnc_accounting_period_fiscal_start()));
     auto offset = reldate_offset(period);
