@@ -4,7 +4,7 @@
 # The last version has some new strings translated and some mistakes fixed.
 # Yuri Syrota <rasta@renome.rovno.ua>, 2000.
 # Maxim V. Dziumanenko <dziumanenko@gmail.com>, 2007.
-# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
 # Maksym Kobieliev <maximaximums@gmail.com>, 2013.
 # Artem <artem@molotov.work>, 2022.
 # Dan <denqwerta@gmail.com>, 2023.
@@ -16,8 +16,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-03-24 06:53+0000\n"
-"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"PO-Revision-Date: 2025-03-24 08:01+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gnucash/"
 "gnucash/uk/>\n"
 "Language: uk\n"
@@ -4066,7 +4066,7 @@ msgstr "зараз"
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:401
 #, c-format
 msgid "Accounts Selected: %d"
-msgstr "Облікові записи вибрано: %d"
+msgstr "Вибрані рахунки: %d"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
@@ -5272,23 +5272,23 @@ msgstr "Перейти до дати"
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5060
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5089
 msgid "Unable to jump to other account"
-msgstr "Неможливо перейти до іншого облікового запису"
+msgstr "Неможливо перейти до іншого рахунку"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5063
 msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
 msgstr ""
-"Ця транзакція стосується кількох інших облікових записів. Виберіть певний "
-"розділ, щоб перейти до цього облікового запису."
+"Ця транзакція стосується кількох інших рахунків. Виберіть певне дроблення, "
+"щоб перейти до відповідного рахунку."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
 "This transaction only involves the current account so there is no other "
 "account to jump to."
 msgstr ""
-"Ця транзакція стосується лише поточного рахунку, тому немає іншого "
-"облікового запису, до якого можна переходити."
+"Ця транзакція стосується лише поточного рахунку, тому немає іншого рахунку, "
+"до якого можна переходити."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5246
 #, c-format
@@ -10309,7 +10309,7 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:267
 msgid "\"Jump\" behaviour when there are multiple splits"
-msgstr "\"Jump\" поведінка, коли є кілька поділів"
+msgstr "Поведінка переходу, коли є кілька дроблень"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:268
 msgid ""
@@ -10317,7 +10317,7 @@ msgid ""
 "multiple splits."
 msgstr ""
 "Виберіть, як має поводитися операція «Перехід», коли транзакція має кілька "
-"поділів."
+"дроблень."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:272
 msgid "Create a new window for each new register"
@@ -11040,7 +11040,7 @@ msgstr ""
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:129
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:262
 msgid "Jump when there are multiple other accounts"
-msgstr "Перейти, коли є кілька інших облікових записів"
+msgstr "Перейти, коли є кілька інших рахунків"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:130
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:263
@@ -11049,14 +11049,14 @@ msgid ""
 "because it has splits for multiple other accounts. A specific split must be "
 "selected to jump to the other account."
 msgstr ""
-"Це діалогове вікно відображається, коли ви не можете перейти до транзакції, "
-"оскільки вона розділена на кілька інших облікових записів. Щоб перейти до "
-"іншого облікового запису, потрібно вибрати певний розділ."
+"Це діалогове вікно буде показано, коли ви не можете перейти до транзакції, "
+"оскільки її роздроблено на кілька інших рахунків. Щоб перейти до іншого "
+"рахунку, потрібно вибрати певне дроблення."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:134
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:267
 msgid "Jump when there are no other accounts"
-msgstr "Перейти, коли немає інших облікових записів"
+msgstr "Перейти, коли немає інших рахунків"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:135
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:268
@@ -11064,8 +11064,8 @@ msgid ""
 "This dialog is presented when you are unable to jump on a transaction "
 "because it only has splits for the current account."
 msgstr ""
-"Це діалогове вікно відображається, коли ви не можете перейти до транзакції, "
-"оскільки вона має розділення лише для поточного рахунку."
+"Це діалогове вікно буде показано, коли ви не можете перейти до транзакції, "
+"оскільки вона має дроблення лише для поточного рахунку."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:5
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:6
@@ -15909,15 +15909,15 @@ msgstr "Перейти до поля переказу після автозап�
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2581
 msgid "<b>Jump action for multiple splits</b>"
-msgstr "<b>Дія стрибка для кількох поділів</b>"
+msgstr "<b>Дія переходу для декількох дроблень</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2583
 msgid "Transaction jump action when there are more than two splits."
-msgstr "Дія стрибка транзакції, коли є більше двох поділів."
+msgstr "Дія переходу транзакції, коли є більше двох дроблень."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
-msgstr "Нічого не робити"
+msgstr "_Нічого не робити"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2599
 msgid "Do nothing."
@@ -15925,18 +15925,18 @@ msgstr "Нічого не робити."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2612
 msgid "Go to the first split with the _largest value"
-msgstr "Перейдіть до першого розбиття з _найбільшим значенням"
+msgstr "Перейти до першого дроблення з _найбільшим значенням"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2618
 msgid ""
 "Use the first split with the largest value to determine the other account."
 msgstr ""
-"Використовуйте перше розділення з найбільшим значенням, щоб визначити інший "
+"Використати перше дроблення з найбільшим значенням, щоб визначити інший "
 "рахунок."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
 msgid "Go to the first split with the _smallest value"
-msgstr "Перейти до першого розбиття з _smallest значенням"
+msgstr "Перейти до першого дроблення із _найменшим значенням"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2638
 msgid ""
