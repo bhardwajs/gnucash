@@ -519,14 +519,12 @@ time64
 gnc_relative_date_to_time64(RelativeDatePeriod period, time64 now_t)
 {
     if (period == RelativeDatePeriod::TODAY)
-        return static_cast<time64>(GncDateTime());
+        return now_t;
     if (period == RelativeDatePeriod::START_ACCOUNTING_PERIOD)
         return gnc_accounting_period_fiscal_start();
     if (period == RelativeDatePeriod::END_ACCOUNTING_PERIOD)
         return gnc_accounting_period_fiscal_end();
 
-    if (period == RelativeDatePeriod::TODAY)
-        return now_t;
     auto now{static_cast<tm>(GncDateTime(now_t))};
     struct tm acct_per =
         static_cast<tm>(GncDateTime(gnc_accounting_period_fiscal_start()));
