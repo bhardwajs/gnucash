@@ -12,10 +12,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-03-23 21:12+0000\n"
+"PO-Revision-Date: 2025-03-24 01:01+0000\n"
 "Last-Translator: Szia Tomi <sziatomi01@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gnucash/"
 "gnucash/hu/>\n"
@@ -4222,10 +4222,9 @@ msgstr "most"
 
 #: gnucash/gnome/dialog-tax-info.c:871
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:401
-#, fuzzy, c-format
-#| msgid "Accounts Selected:"
+#, c-format
 msgid "Accounts Selected: %d"
-msgstr "kiválasztott számla:"
+msgstr "Kiválasztott számlák: %d"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
@@ -5788,10 +5787,10 @@ msgid ""
 "from this window, or you may navigate to a register that shows another side "
 "of this same transaction and delete the split from that register."
 msgstr ""
-"Ez a felosztás köti a tranzakciót ehhez a regiszterhez, ezért ebben a "
-"regiszterben nem törölheti ebből az ablakból. Helyette törölheti az egész "
-"tranzakciót, vagy átugorhat a tranzakció másik lábát mutató regiszterbe, és "
-"ott már törölheti ezt a felosztást."
+"Ez a felosztás köti a tranzakciót ehez a regiszterhez, ezért nem törölheti "
+"ebből a regiszterablakból. Helyette törölheti az egész tranzakciót, vagy "
+"átugorhat a tranzakció másik lábát mutató regiszterbe, és ott már törölheti "
+"ezt a felosztást."
 
 #: gnucash/gnome/gnc-split-reg.c:1483
 msgid "Delete the current transaction?"
