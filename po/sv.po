@@ -9,16 +9,16 @@
 # Christian Rose <menthos@menthos.com>, 2001, 2002.
 # Jonas Norling <norling@lysator.liu.se>, 2004, 2006.
 # Erik Johansson <erik@ejohansson.se>, 2014, 2016.
-# Arve Eriksson <031299870@telia.com>, 2021, 2022, 2023, 2024.
+# Arve Eriksson <031299870@telia.com>, 2021, 2022, 2023, 2024, 2025.
 # Luna Jernberg <droidbittin@gmail.com>, 2022, 2023.
 # bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2024-12-09 04:00+0000\n"
+"PO-Revision-Date: 2025-03-24 03:01+0000\n"
 "Last-Translator: Arve Eriksson <031299870@telia.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "sv/>\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 
 #: bindings/guile/date-utilities.scm:173
@@ -4036,10 +4036,9 @@ msgstr "nu"
 
 #: gnucash/gnome/dialog-tax-info.c:871
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:401
-#, fuzzy, c-format
-#| msgid "Accounts Selected:"
+#, c-format
 msgid "Accounts Selected: %d"
-msgstr "Valda konton:"
+msgstr "Valda konton: %d"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
@@ -5232,22 +5231,24 @@ msgstr "Gå till datum"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5060
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5089
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Unable to jump to other account"
-msgstr "_Hoppa till det andra kontot"
+msgstr "Kunde inte hoppa till det andra kontot"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5063
 msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
 msgstr ""
+"Transaktionen involverar fler än ett ytterligare konto. Välj en specifik "
+"split för att hoppa till det kontot."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
 "This transaction only involves the current account so there is no other "
 "account to jump to."
 msgstr ""
+"Transaktionen involverar endast nuvarande konto, så det finns inget annat "
+"konto att hoppa till."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5246
 #, c-format
@@ -10180,13 +10181,14 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:267
 msgid "\"Jump\" behaviour when there are multiple splits"
-msgstr ""
+msgstr "Beteende för ”Hopp” när det finns flera splitar"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:268
 msgid ""
 "Select how the \"Jump\" operation should behave when a transaction has "
 "multiple splits."
 msgstr ""
+"Välj hur ”Hopp”-åtgärden ska bete sig när en transaktion har flera splitar."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:272
 msgid "Create a new window for each new register"
@@ -10890,10 +10892,8 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:129
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:262
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are multiple other accounts"
-msgstr "_Hoppa till det andra kontot"
+msgstr "Hoppa till där det finns flera andra konton"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:130
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:263
@@ -10902,27 +10902,23 @@ msgid ""
 "because it has splits for multiple other accounts. A specific split must be "
 "selected to jump to the other account."
 msgstr ""
+"Den här dialogrutan visas när du inte kan hoppa vid en transaktion eftersom "
+"den har splitar för flera andra konton. An specifik split måste markeras för "
+"att hoppa till det andra kontot."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:134
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:267
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are no other accounts"
-msgstr "_Hoppa till det andra kontot"
+msgstr "Hoppa när det inte finns andra konton"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:135
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:268
-#, fuzzy
-#| msgid ""
-#| "This dialog is presented when you attempt to duplicate a modified "
-#| "transaction. The changed data must be saved or the duplication canceled."
 msgid ""
 "This dialog is presented when you are unable to jump on a transaction "
 "because it only has splits for the current account."
 msgstr ""
-"Den här dialogrutan visas när du försöker att duplicera en ändrad "
-"transaktion. Antingen måste den ändrade datan sparas eller dupliceringen "
-"avbrytas."
+"Den här dialogrutan visas när du inte kan hoppa vid en transaktion på grund "
+"av att den endast har splitar för nuvarande konto."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:5
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:6
@@ -11885,7 +11881,7 @@ msgstr "<b>Kategorier</b>"
 
 #: gnucash/gtkbuilder/assistant-hierarchy.glade:272
 msgid "C_lear All"
-msgstr "_Avmarkera alla"
+msgstr "Avmarkera a_lla"
 
 #: gnucash/gtkbuilder/assistant-hierarchy.glade:310
 msgid "<b>Category Description</b>"
@@ -13291,10 +13287,8 @@ msgstr "Filtrera efter…"
 
 #: gnucash/gtkbuilder/dialog-account.glade:906
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:498
-#, fuzzy
-#| msgid "Clear All"
 msgid "Clear _All"
-msgstr "Avmarkera alla"
+msgstr "_Avmarkera alla"
 
 #: gnucash/gtkbuilder/dialog-account.glade:922
 msgid "_Default"
@@ -15714,41 +15708,39 @@ msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2581
 msgid "<b>Jump action for multiple splits</b>"
-msgstr ""
+msgstr "<b>Hoppåtgärd fler flera splitar</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2583
 msgid "Transaction jump action when there are more than two splits."
-msgstr ""
+msgstr "Hoppåtgärd för transaktion när det finns fler än två splitar."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
-msgstr ""
+msgstr "Gör i_nget"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2599
-#, fuzzy
-#| msgid "Do not show"
 msgid "Do nothing."
-msgstr "Visa inte"
+msgstr "Gör ingenting."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2612
 msgid "Go to the first split with the _largest value"
-msgstr ""
+msgstr "Gå till den första sp_liten med högst värde"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2618
 msgid ""
 "Use the first split with the largest value to determine the other account."
 msgstr ""
+"Använd den första spliten med högst värde för att bestämma det andra kontot."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
-#, fuzzy
-#| msgid "Move to the split at the specified date."
 msgid "Go to the first split with the _smallest value"
-msgstr "Gå till delningen på angivet datum."
+msgstr "Gå till den första spliten med min_st värde"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2638
 msgid ""
 "Use the first split with the smallest value to determine the other account."
 msgstr ""
+"Använd den första spliten med minst värde för att bestämma det andra kontot."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2665
 msgid "<b>Reconciling</b>"
@@ -16493,7 +16485,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/dialog-reset-warnings.glade:120
 msgid "_Unselect All"
-msgstr "_Avmarkera alla"
+msgstr "A_vmarkera alla"
 
 #: gnucash/gtkbuilder/dialog-reset-warnings.glade:146
 msgid "No warnings to reset."
