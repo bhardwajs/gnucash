@@ -86,7 +86,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-03-25 22:02+0000\n"
+"PO-Revision-Date: 2025-03-28 09:01+0000\n"
 "Last-Translator: Guille Lopez <willelopz@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "es/>\n"
@@ -16093,7 +16093,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
 msgid "Go to the first split with the _smallest value"
-msgstr "Ir al primer desglose con el valor más pequeño"
+msgstr "Ir al primer desglose con el valor más _pequeño"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2638
 msgid ""
