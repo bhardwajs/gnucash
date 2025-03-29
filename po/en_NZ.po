@@ -7,14 +7,14 @@
 # Neil Williams <linux@codehelp.co.uk>, 2006.
 # Adithya K <adithyak04@gmail.com>, 2021.
 # Simon Arlott <weblate.simon@arlott.org>, 2022, 2023, 2024.
-# Simon Arlott <nomis@users.noreply.hosted.weblate.org>, 2024.
+# Simon Arlott <nomis@users.noreply.hosted.weblate.org>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2024-12-11 22:00+0000\n"
+"PO-Revision-Date: 2025-03-24 09:45+0000\n"
 "Last-Translator: Simon Arlott <nomis@users.noreply.hosted.weblate.org>\n"
 "Language-Team: English (New Zealand) <https://hosted.weblate.org/projects/"
 "gnucash/gnucash/en_NZ/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -4029,10 +4029,9 @@ msgstr "now"
 
 #: gnucash/gnome/dialog-tax-info.c:871
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:401
-#, fuzzy, c-format
-#| msgid "Accounts Selected:"
+#, c-format
 msgid "Accounts Selected: %d"
-msgstr "Accounts Selected:"
+msgstr "Accounts Selected: %d"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
@@ -5222,22 +5221,24 @@ msgstr "Go to Date"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5060
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5089
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Unable to jump to other account"
-msgstr "_Jump to the other account"
+msgstr "Unable to jump to other account"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5063
 msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
 msgstr ""
+"This transaction involves more than one other account. Select a specific "
+"split to jump to that account."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
 "This transaction only involves the current account so there is no other "
 "account to jump to."
 msgstr ""
+"This transaction only involves the current account so there is no other "
+"account to jump to."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5246
 #, c-format
@@ -10137,13 +10138,15 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:267
 msgid "\"Jump\" behaviour when there are multiple splits"
-msgstr ""
+msgstr "\"Jump\" behaviour when there are multiple splits"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:268
 msgid ""
 "Select how the \"Jump\" operation should behave when a transaction has "
 "multiple splits."
 msgstr ""
+"Select how the \"Jump\" operation should behave when a transaction has "
+"multiple splits."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:272
 msgid "Create a new window for each new register"
@@ -10848,10 +10851,8 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:129
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:262
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are multiple other accounts"
-msgstr "_Jump to the other account"
+msgstr "Jump when there are multiple other accounts"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:130
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:263
@@ -10860,26 +10861,23 @@ msgid ""
 "because it has splits for multiple other accounts. A specific split must be "
 "selected to jump to the other account."
 msgstr ""
+"This dialogue is presented when you are unable to jump on a transaction "
+"because it has splits for multiple other accounts. A specific split must be "
+"selected to jump to the other account."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:134
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:267
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are no other accounts"
-msgstr "_Jump to the other account"
+msgstr "Jump when there are no other accounts"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:135
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:268
-#, fuzzy
-#| msgid ""
-#| "This dialog is presented when you attempt to duplicate a modified "
-#| "transaction. The changed data must be saved or the duplication canceled."
 msgid ""
 "This dialog is presented when you are unable to jump on a transaction "
 "because it only has splits for the current account."
 msgstr ""
-"This dialogue is presented when you attempt to duplicate a modified "
-"transaction. The changed data must be saved or the duplication cancelled."
+"This dialogue is presented when you are unable to jump on a transaction "
+"because it only has splits for the current account."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:5
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:6
@@ -13226,10 +13224,8 @@ msgstr "Filter By…"
 
 #: gnucash/gtkbuilder/dialog-account.glade:906
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:498
-#, fuzzy
-#| msgid "Clear All"
 msgid "Clear _All"
-msgstr "Clear All"
+msgstr "Clear _All"
 
 #: gnucash/gtkbuilder/dialog-account.glade:922
 msgid "_Default"
@@ -15644,41 +15640,39 @@ msgstr "Move to Transfer field when memorised transaction auto filled."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2581
 msgid "<b>Jump action for multiple splits</b>"
-msgstr ""
+msgstr "<b>Jump action for multiple splits</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2583
 msgid "Transaction jump action when there are more than two splits."
-msgstr ""
+msgstr "Transaction jump action when there are more than two splits."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
-msgstr ""
+msgstr "Do _nothing"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2599
-#, fuzzy
-#| msgid "Do not show"
 msgid "Do nothing."
-msgstr "Do not show"
+msgstr "Do nothing."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2612
 msgid "Go to the first split with the _largest value"
-msgstr ""
+msgstr "Go to the first split with the _largest value"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2618
 msgid ""
 "Use the first split with the largest value to determine the other account."
 msgstr ""
+"Use the first split with the largest value to determine the other account."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
-#, fuzzy
-#| msgid "Move to the split at the specified date."
 msgid "Go to the first split with the _smallest value"
-msgstr "Move to the split at the specified date."
+msgstr "Go to the first split with the _smallest value"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2638
 msgid ""
 "Use the first split with the smallest value to determine the other account."
 msgstr ""
+"Use the first split with the smallest value to determine the other account."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2665
 msgid "<b>Reconciling</b>"
