@@ -476,41 +476,9 @@
           (nosplit->elt #f)
           (split->date #f)
           (split->elt xaccSplitGetBalance))
-  (define to-date (or split->date (compose xaccTransGetDate xaccSplitGetParent)))
-  (define (less? a b) (< (to-date a) (to-date b)))
-
-  (let lp ((splits (if split->date
-                       (sort (xaccAccountGetSplits acc) less?)
-                       (xaccAccountGetSplits acc)))
-           (dates (sort dates <))
-           (result '())
-           (last-result nosplit->elt))
-    (match dates
-
-      ;; end of dates. job done!
-      (() (reverse result))
-
-      ((date . rest)
-       (define (before-date? s) (<= (to-date s) date))
-       (define (after-date? s) (< date (to-date s)))
-       (cond
-
-        ;; end of splits, but still has dates. pad with last-result
-        ;; until end of dates.
-        ((null? splits) (lp '() rest (cons last-result result) last-result))
-
-        ;; the next split is still before date.
-        ((and (pair? (cdr splits)) (before-date? (cadr splits)))
-         (lp (cdr splits) dates result (split->elt (car splits))))
-
-        ;; head split after date, accumulate previous result
-        ((after-date? (car splits))
-         (lp splits rest (cons last-result result) last-result))
-
-        ;; head split before date, next split after date, or end.
-        (else
-         (let ((head-result (split->elt (car splits))))
-           (lp (cdr splits) rest (cons head-result result) head-result))))))))
+  (if split->date
+      (gnc-account-accumulate-to-dates acc dates split->elt nosplit->elt split->date)
+      (gnc-account-accumulate-to-dates acc dates split->elt nosplit->elt)))
 
 ;; This works similar as above but returns a commodity-collector,
 ;; thus takes care of children accounts with different currencies.
