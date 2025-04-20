@@ -1781,6 +1781,13 @@ gnc_book_to_scm (const QofBook *book)
     return gnc_generic_to_scm (book, stype);
 }
 
+SCM
+gnc_split_to_scm (const Split *split)
+{
+    static auto stype = get_swig_type ("_p_Split");
+    return gnc_generic_to_scm (split, stype);
+}
+
 GncAccountValue * gnc_scm_to_account_value_ptr (SCM valuearg)
 {
     GncAccountValue *res;
