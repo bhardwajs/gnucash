@@ -29,17 +29,17 @@
 # Zhaoquan Huang <zhaoquan2008@hotmail.com>, 2023, 2024.
 # yu0A <yuhongbo@member.fsf.org>, 2023.
 # yuht <yuht@qq.com>, 2023.
-# Ral Hole <ral-hole@outlook.com>, 2023.
+# Ral Hole <ral-hole@outlook.com>, 2023, 2025.
 # derxi <happycxin@163.com>, 2023.
 # fleefar <825272947@qq.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2024-12-30 05:00+0000\n"
-"Last-Translator: Zhaoquan Huang <zhaoquan2008@hotmail.com>\n"
+"PO-Revision-Date: 2025-04-26 02:10+0000\n"
+"Last-Translator: Ral Hole <ral-hole@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/gnucash/gnucash/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -47,7 +47,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 
 #: bindings/guile/date-utilities.scm:173
@@ -2010,14 +2010,10 @@ msgid ""
 msgstr "此交易需要指定一个供应商，请于下方选择。"
 
 #: gnucash/gnome/dialog-commodities.cpp:183
-#, fuzzy
-#| msgid ""
-#| "That commodity is currently used by at least one of your accounts. You "
-#| "may not delete it."
 msgid ""
 "This commodity is currently used by the following accounts. You may not "
 "delete it.\n"
-msgstr "至少有一个科目正在使用该货币，无法删除。"
+msgstr "该币种目前由以下账户使用。你不能删除它。\n"
 
 #: gnucash/gnome/dialog-commodities.cpp:201
 msgid ""
@@ -3850,7 +3846,7 @@ msgstr[0] "此时没有输入的计划交易。(自动创建了 %d 笔交易事�
 
 #: gnucash/gnome/dialog-sx-since-last-run.c:1266
 msgid "Highlight a date first to sort by occurrence date."
-msgstr ""
+msgstr "首先突出显示日期以按发生日期排序。"
 
 #: gnucash/gnome/dialog-sx-since-last-run.c:1267
 msgid "Highlight a schedule first to sort by schedule name."
