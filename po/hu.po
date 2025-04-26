@@ -6,7 +6,7 @@
 # Kornel Tako <takokornel@gmail.com>, 2007.
 # Kárász Attila <cult.edie@gmail.com>, 2022, 2023.
 # Szia Tomi <sziatomi01@gmail.com>, 2022, 2023, 2024, 2025.
-# mocsa <csaba@feltoltve.hu>, 2022, 2023, 2024.
+# mocsa <csaba@feltoltve.hu>, 2022, 2023, 2024, 2025.
 # ovari <ovari123@zoho.com>, 2022, 2023.
 # Geza Kiss <geza.openstreetmap@reallymymail.com>, 2023.
 msgid ""
@@ -15,8 +15,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-03-30 14:09+0000\n"
-"Last-Translator: Szia Tomi <sziatomi01@gmail.com>\n"
+"PO-Revision-Date: 2025-04-01 09:45+0000\n"
+"Last-Translator: mocsa <csaba@feltoltve.hu>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gnucash/"
 "gnucash/hu/>\n"
 "Language: hu\n"
@@ -4224,7 +4224,7 @@ msgstr "most"
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:401
 #, c-format
 msgid "Accounts Selected: %d"
-msgstr "Kiválasztott számlák: %d"
+msgstr "Kiválasztva %d számla"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
