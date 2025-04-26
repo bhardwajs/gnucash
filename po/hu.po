@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-03-24 01:01+0000\n"
+"PO-Revision-Date: 2025-03-30 14:09+0000\n"
 "Last-Translator: Szia Tomi <sziatomi01@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gnucash/"
 "gnucash/hu/>\n"
@@ -5741,6 +5741,9 @@ msgid ""
 "The date of this transaction is older than the \"Read-Only Threshold\" set "
 "for this book. This setting can be changed in File->Properties->Accounts."
 msgstr ""
+"A tranzakció dátuma régebbi, mint a könyvhöz beállított tranzakció-"
+"írásvédettségi küszöbérték. Ez az érték a „Könyv beállításai” ablakban (Fájl "
+"–> Tulajdonságok) a Számlák menüpontban módosítható."
 
 #: gnucash/gnome/gnc-split-reg.c:1172
 msgid "Remove the splits from this transaction?"
@@ -13103,7 +13106,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/business-prefs.glade:84
 msgid "_Accumulate splits on post"
-msgstr "Felosztások összesítése könyveléskor"
+msgstr "Felosztások _összesítése könyveléskor"
 
 #: gnucash/gtkbuilder/business-prefs.glade:90
 msgid ""
@@ -15721,21 +15724,19 @@ msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2581
 msgid "<b>Jump action for multiple splits</b>"
-msgstr ""
+msgstr "<b>Ugrási művelet kettőnél több felosztás esetén</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2583
 msgid "Transaction jump action when there are more than two splits."
-msgstr ""
+msgstr "Tranzakciós ugrási művelet kettőnél több felosztás esetén."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
-msgstr ""
+msgstr "_Ne csináljon semmit"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2599
-#, fuzzy
-#| msgid "Do not show"
 msgid "Do nothing."
-msgstr "Elrejtés"
+msgstr "Ne csináljon semmit."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2612
 msgid "Go to the first split with the _largest value"
@@ -28826,7 +28827,7 @@ msgstr "A nap tippjének megtekintése"
 
 #: gnucash/ui/gnc-plugin-bi-import.ui:6
 msgid "Import Bills & _Invoices…"
-msgstr "Bejövő- és kimenőszámlák importálása…"
+msgstr "Bejövő- és kimenőszámlák _importálása…"
 
 #: gnucash/ui/gnc-plugin-bi-import.ui:8
 msgid "Import bills and invoices from a CSV text file"
