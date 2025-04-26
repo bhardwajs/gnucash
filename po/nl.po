@@ -14,14 +14,15 @@
 # Frank H. Ellenberger <frank.h.ellenberger@gmail.com>, 2022.
 # Stephan Paternotte <stephan@paternottes.net>, 2023, 2024, 2025.
 # Rene Lambers <jbh.lambers@gmail.com>, 2023.
+# Leo Moons <Leo.Moons@proximus.be>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-03-05 15:02+0000\n"
-"Last-Translator: Stephan Paternotte <stephan@paternottes.net>\n"
+"PO-Revision-Date: 2025-04-09 22:40+0000\n"
+"Last-Translator: Leo Moons <Leo.Moons@proximus.be>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gnucash/gnucash/nl/"
 ">\n"
 "Language: nl\n"
@@ -29,9 +30,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.3-dev\n"
-"X-Bugs: Report translation errors to https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"X-Generator: Weblate 5.11-dev\n"
+"X-Bugs: Report translation errors to https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -4072,10 +4073,9 @@ msgstr "nu"
 
 #: gnucash/gnome/dialog-tax-info.c:871
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:401
-#, fuzzy, c-format
-#| msgid "Accounts Selected:"
+#, c-format
 msgid "Accounts Selected: %d"
-msgstr "Geselecteerde rekeningen:"
+msgstr "Geselecteerde rekeningen:%d"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
@@ -5285,10 +5285,8 @@ msgstr "Naar datum gaan"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5060
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5089
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Unable to jump to other account"
-msgstr "Naar andere rekening _gaan"
+msgstr "Onmogelijk om naar andere rekening te gaan"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5063
 msgid ""
@@ -7807,7 +7805,6 @@ msgstr "Boekhoudsoftware voor thuis en voor kleine ondernemingen."
 #. The string can have multiple rows, so you can also add a list of
 #. contributors.
 #: gnucash/gnome-utils/gnc-main-window.cpp:5366
-#, fuzzy
 msgid "translator-credits"
 msgstr ""
 "Stephan Paternotte: 2023-2025;\n"
@@ -7820,7 +7817,8 @@ msgstr ""
 "Erwin Poeze: 2009;\n"
 "Jeroen ten Berge: 2004;\n"
 "Hendrik-Jan Heins: 2003;\n"
-"Jan Willem Harmanny: 2002;"
+"Jan Willem Harmanny: 2002;\n"
+"Leo Moons 2025"
 
 #: gnucash/gnome-utils/gnc-main-window.cpp:5369
 msgid "Visit the GnuCash website."
