@@ -86,8 +86,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-03-28 09:01+0000\n"
-"Last-Translator: Guille Lopez <willelopz@gmail.com>\n"
+"PO-Revision-Date: 2025-04-25 16:01+0000\n"
+"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "es/>\n"
 "Language: es\n"
@@ -95,7 +95,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: <b>;</b>;<span weight=\"bold\" size=\"larger\""
@@ -1512,7 +1512,7 @@ msgstr "Acciones"
 
 #: gnucash/gnome/assistant-stock-split.c:787
 msgid "You don't have any stock accounts with balances!"
-msgstr "¡No tiene ninguna cuenta de provisión con balances!"
+msgstr "¡No tiene ninguna cuenta de albarán con balances!"
 
 #. Translators: this is a stock transaction describing an
 #. Initial stock long purchase
@@ -1522,7 +1522,7 @@ msgstr "Abrir compra"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:161
 msgid "Initial stock long purchase."
-msgstr "Compra inicial de acciones a largo."
+msgstr "Compra inicial de albarán a largo."
 
 #. Translators: this is a stock transaction describing an
 #. initial stock short sale
@@ -1532,7 +1532,7 @@ msgstr "Abrir en corto"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:172
 msgid "Initial stock short sale."
-msgstr "Venta inicial de acciones a corto."
+msgstr "Venta inicial de albarán a corto."
 
 #. Translators: this is a stock transaction describing
 #. new purchase of stock.
@@ -1552,7 +1552,7 @@ msgstr "Compra"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:187
 msgid "Buying stock long."
-msgstr "Compra de valor a largo."
+msgstr "Compra de albarán a largo."
 
 #. Translators: this is a stock transaction describing new
 #. sale of stock, and recording capital gain/loss
@@ -1577,7 +1577,7 @@ msgid ""
 "If you are unable to calculate capital gains you can enter a placeholder "
 "amount and correct it in the transaction later."
 msgstr ""
-"Venta de acciones a largo, y registro de la ganancia/pérdida del capital.\n"
+"Venta de albarán a largo, y registro de la ganancia/pérdida del capital.\n"
 "\n"
 "Si no puedes calcular las ganancias del capital, puedes ingresar una "
 "cantidad para indicar la transacción y corregirlo más tarde."
@@ -1598,10 +1598,10 @@ msgid ""
 "Any dividend being reinvested must be subsequently recorded as a regular "
 "stock purchase."
 msgstr ""
-"Empresa emite dividendos en efectivo al titular.\n"
+"La sociedad emite dividendos en efectivo al titular.\n"
 "\n"
 "Cualquier dividendo que sea reinvertido deberá ser introducido después como "
-"una compra de acciones usual."
+"una compra de albarán usual."
 
 #. Translators: this is a stock transaction describing return
 #. of capital
@@ -1670,7 +1670,7 @@ msgstr ""
 #: gnucash/gnome/assistant-stock-transaction.cpp:270
 #: gnucash/gnome/assistant-stock-transaction.cpp:396
 msgid "Stock split"
-msgstr "Desglosar acciones"
+msgstr "Desglosar albarán"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:271
 msgid ""
@@ -1681,13 +1681,13 @@ msgid ""
 "If the split results in a cash in lieu for remainder units, please record "
 "the sale using the Stock Transaction Assistant first, then record the split."
 msgstr ""
-"La empresa emite participaciones adicionales, reduciendo así el precio de "
-"las acciones en un divisor , manteniendo constante el valor total de la "
-"inversión global.\n"
+"La sociedad emite participaciones adicionales, reduciendo así el precio de "
+"albarán en un divisor, manteniendo constante el valor total de la inversión "
+"global.\n"
 "\n"
 "Si el desglose da lugar a una abonación en efectivo por las participaciones "
 "restantes, registra primero la venta utilizando el Asistente de Transacción "
-"de Participaciones y, a continuación, registra el desglose."
+"de Albarán y, a continuación, registra el desglose."
 
 #. Translators: this is a stock transaction describing a reverse split
 #. Translators: this is a stock transaction describing a
@@ -1706,13 +1706,13 @@ msgid ""
 "record the sale using the Stock Transaction Assistant first, then record the "
 "reverse split."
 msgstr ""
-"Compañía redime participaciones, incrementado de esta forma el precio de la "
-"acción por un múltiplo, manteniendo constante el valor monetario de la "
+"La sociedad redime participaciones, incrementado de esta forma el precio de "
+"albarán por un múltiplo, manteniendo constante el valor monetario de la "
 "inversión total.\n"
 "\n"
 "Si el desglose inverso resulta en un efectivo por las participaciones "
 "restantes, primero registre la venta usando el Asistente de Transacción de "
-"Acciones, y después el desglose revertido."
+"Albarán, y después el desglose revertido."
 
 #. Translators: this is a stock transaction describing
 #. shorting of stock.
@@ -1722,7 +1722,7 @@ msgstr "Venta a corto"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:302
 msgid "Selling stock short."
-msgstr "Venda de valor a corto."
+msgstr "Venta de albarán a corto."
 
 #. Translators: this is a stock transaction describing cover
 #. buying stock, and recording capital gain/loss
@@ -1737,11 +1737,11 @@ msgid ""
 "If you are unable to calculate capital gains you can enter a placeholder "
 "amount and correct it in the transaction later."
 msgstr ""
-"Recompra acciones para cubrir las posiciones a corto plazo, y registra la "
+"Recompra albarán para cubrir las posiciones a corto plazo, y registra la "
 "plusvalía/minusvalía del capital.\n"
 "\n"
 "Si no es capaz de calcular las plusvalías puede introducir un importe de "
-"reserva y corregirlo posteriormente en la transacción."
+"reserva y corregirlo en la transacción posteriormente."
 
 #. Translators: this is a stock transaction describing
 #. dividends retrieved from holder when shorting stock
@@ -1754,8 +1754,8 @@ msgid ""
 "Company issues dividends, and the short stock holder must make a "
 "compensatory payment for the dividend."
 msgstr ""
-"Compañía emite dividendos, y el titular de la acción a corto debe hacer una "
-"abonación compensatoria por el dividendo."
+"La sociedad emite dividendos, y el titular del albarán a corto debe hacer "
+"una abonación compensatoria por el dividendo."
 
 #. Translators: this is a stock transaction describing return
 #. of capital retrieved from holder when shorting stock
@@ -1769,9 +1769,9 @@ msgid ""
 "payment for the returned capital. This reduces the cost basis (less "
 "negative, towards 0.00 value) without affecting # units."
 msgstr ""
-"Empresa devuelve capital, y el titular de la acción a corto debe hacer una "
-"remuneración compensatoria por el capital devuelto. Esto reduce la base de "
-"coste (menos negativa, hacia el valor 0'00) sin afectar al nº "
+"La sociedad devuelve capital, y el titular del albarán a corto debe hacer "
+"una remuneración compensatoria por el capital devuelto. Esto reduce la base "
+"de coste (menos negativa, hacia el valor 0'00) sin afectar al nº de "
 "participaciones."
 
 #. Translators: this is a stock transaction describing
@@ -1789,12 +1789,12 @@ msgid ""
 "previously recorded as a compensatory dividend is reclassified to "
 "compensatory return of capital,often due to end-of-year tax information."
 msgstr ""
-"La empresa devuelve capital, y el titular de las provisiones debe realizar "
+"La sociedad devuelve capital, y el titular del albarán a corto debe realizar "
 "una remuneración compensatoria por el capital devuelto. Esto reduce la base "
 "de coste (menos negativa, hacia el valor 0'00) sin afectar al número de "
 "participaciones. Una distribución previamente registrada como dividendo "
-"compensatorio se reclasifica a devolución compensatoria de capital, a menudo "
-"debido a la información fiscal de final-de-año."
+"compensatorio es reclasificado a devolución compensatoria de capital, a "
+"menudo debido a la información fiscal de final-de-año."
 
 #. Translators: this is a stock transaction describing a
 #. notional distribution recorded as dividend when shorting
@@ -1804,16 +1804,15 @@ msgid "Compensatory notional distribution (dividend)"
 msgstr "Distribución especulativa compensatoria (dividendo)"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:368
-#, fuzzy
 msgid ""
 "Company issues a notional distribution, and the short stock holder must make "
 "a compensatory payment for the notional distribution. This is recorded as a "
 "loss/negative dividend income amount, and increases the cost basis (more "
 "negative, away from 0.00 value) without affecting # units."
 msgstr ""
-"La sociedad emite una distribución hipotética y el titular de la acción a "
+"La sociedad emite una distribución especulativa, y el titular del albarán en "
 "corto debe de hacer una remuneración compensatoria por la distribución "
-"hipotética. Esto se registra como una pérdida o ingreso negativo por "
+"especulativa. Esto se registra como una pérdida o ingreso negativo por "
 "dividendo, e incrementa la base de coste (más negativa, alejándose del valor "
 "0'00) sin afectar al número de participaciones."
 
@@ -1831,8 +1830,8 @@ msgid ""
 "capital loss amount, and increases the cost basis (more negative, away from "
 "0.00 value) without affecting # units."
 msgstr ""
-"La empresa emite una distribución especulativa, y el titular de acciones "
-"cortas debe realizar una remuneración compensatoria por la distribución "
+"La sociedad emite una distribución especulativa, y el titular de albarán en "
+"corto debe realizar una remuneración compensatoria por la distribución "
 "especulativa. Esto se registra como un importe de minusvalía, y aumenta la "
 "base de coste (más negativo, lejos del valor 0'00) sin afectar a número de "
 "participaciones."
@@ -1847,13 +1846,13 @@ msgid ""
 "the cover buy using the Stock Transaction Assistant first, then record the "
 "split."
 msgstr ""
-"La empresa emite participaciones adicionales, reduciendo así el precio de "
-"las acciones en un divisor, pero manteniendo constante el valor monetario "
-"total de la inversión global.\n"
+"La sociedad emite participaciones adicionales, reduciendo así el precio del "
+"albarán por un divisor, pero manteniendo constante el valor monetario total "
+"de la inversión global.\n"
 "\n"
 "Si el desglose da lugar a una remuneración en efectivo por las "
 "participaciones restantes, registra primero la compra cubierta utilizando el "
-"Asistente para Mercancías de Transacciones y, a continuación, registre el "
+"Asistente para Albarán de Transacción y, a continuación, registre el "
 "desglose."
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:411
@@ -1865,14 +1864,13 @@ msgid ""
 "record the cover buy using the Stock Transaction Assistant first, then "
 "record the reverse split."
 msgstr ""
-"Sociedad redime o rescata participaciones, incrementado de esta forma el "
-"precio de la acción por un múltiplo, manteniendo constante el valor "
-"monetario de la inversión total.\n"
+"La sociedad amortiza participaciones, incrementado de esta forma el precio "
+"del albarán por un múltiplo, manteniendo constante el valor monetario de la "
+"inversión total.\n"
 "\n"
 "Si el desglose inverso resulta en un efectivo por las participaciones "
-"restantes, registre primero esta compra de cobertura usando antes el "
-"Asistente de Transacciones de Mercancías, y registre después el desglose "
-"inverso."
+"restantes, registre primero esta compra de cobertura usando primero el "
+"Asistente de Transacción de Albarán, y registre después el desglose inverso."
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:503
 msgid "No errors found. Click Apply to create transaction."
@@ -1923,11 +1921,11 @@ msgstr "N/D"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:863
 msgid "Amount for stock value is missing."
-msgstr "Falta la cantidad del valor de acciones."
+msgstr "Falta la cantidad del valor de albaranes."
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:875
 msgid "Invalid stock new balance."
-msgstr "El nuevo balance de la provisión no es válido."
+msgstr "El nuevo balance de albarán no es válido."
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:877
 msgid "New balance must be higher than old balance."
@@ -1939,7 +1937,7 @@ msgstr "El balance nuevo debe ser inferior al balance anterior."
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:886
 msgid "Stock amount must be positive."
-msgstr "La cantidad de acciones tiene que ser positiva."
+msgstr "La cantidad de albarán debe ser positiva."
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:890
 msgid "Cannot sell more units than owned."
@@ -2029,7 +2027,7 @@ msgstr "Siguiente balance"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:1929
 msgid "Enter the new balance of shares after the stock split."
-msgstr "Introduzca el balance nuevo de acciones tras el desglose mercantil."
+msgstr "Introduzca el balance nuevo de acciones tras el desglose de albarán."
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:1930
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:212
@@ -5207,7 +5205,7 @@ msgstr "Auto-puntear"
 #: gnucash/ui/gnc-plugin-page-register.ui:250
 #: gnucash/ui/gnc-plugin-page-register.ui:904
 msgid "Stock Assistant"
-msgstr "Asistente de Acciones"
+msgstr "Asistente de Albarán"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:657
 #: gnucash/gnome/gnc-plugin-page-register.cpp:1940
@@ -5419,22 +5417,24 @@ msgstr "Ir a fecha"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5060
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5089
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Unable to jump to other account"
-msgstr "_Ir a la otra cuenta"
+msgstr "Incapaz de ir a otra cuenta"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5063
 msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
 msgstr ""
+"Esta transacción involucra más de una otra cuenta. Seleccione un desglose "
+"específico para ir a esa cuenta."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
 "This transaction only involves the current account so there is no other "
 "account to jump to."
 msgstr ""
+"Esta transacción solo involucra la cuenta actual por tanto no hay otra "
+"cuenta a la que ir."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5246
 #, c-format
@@ -5920,7 +5920,7 @@ msgid ""
 "accurate reports."
 msgstr ""
 "Diseñado para ser fácil de emplear, pero potente y flexible, GnuCash permite "
-"rastrear cuentas bancarias, provisiones, ingresos y gastos. Tan rápido e "
+"rastrear cuentas bancarias, albaranes, ingresos y gastos. Tan rápido e "
 "intuitivo para emplear como un registro de comprobación, está basado en los "
 "principios profesionales de contabilidad como apunte-doble para asegurar los "
 "balances de libros y boletines detallados."
@@ -5939,7 +5939,7 @@ msgstr "Conservar seguimiento diario de ingresos y gastos personales"
 #: gnucash/gnome/gnucash.appdata.xml.in.in:18
 msgid "Manage your stock, bond and mutual fund accounts with ease"
 msgstr ""
-"Gestiona sus cuentas de provisión, depósitos y fondos de inversión con "
+"Gestiona sus cuentas de albaranes, depósitos y fondos de inversión con "
 "facilidad"
 
 #: gnucash/gnome/gnucash.appdata.xml.in.in:19
@@ -8479,9 +8479,9 @@ msgstr ""
 "  info: →    Muestra la versión de Finance::Quote y expone las fuentes de "
 "cotización.\n"
 "   get:→     Obtiene las cotizaciones actuales para todas las monedas "
-"extranjeras y acciones en el archivo de datos de GnuCash proporcionado.\n"
-"  dump:→ Obtiene las cotizaciones actuales para las monedas o acciones de un "
-"espacio de nombres solicitado e imprime los resultados en la consola.\n"
+"extranjeras y albaranes en el archivo de datos de GnuCash proporcionado.\n"
+"  dump:→ Obtiene las cotizaciones actuales para las monedas o albaranes de "
+"un espacio de nombres solicitado e imprime los resultados en la consola.\n"
 "        \t→ Esto debe de estar seguido de una fuente y uno o más símbolos, a "
 "no ser que la fuente sea «moneda», en cuyo caso debe de seguirse de dos o "
 "más símbolos, el primero de los cuales es la moneda de referencia de las "
@@ -10446,13 +10446,15 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:267
 msgid "\"Jump\" behaviour when there are multiple splits"
-msgstr ""
+msgstr "Comportamiento «Ir» cuando hay múltiples desgloses"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:268
 msgid ""
 "Select how the \"Jump\" operation should behave when a transaction has "
 "multiple splits."
 msgstr ""
+"Seleccione como la operación «Ir» se comportaría cuando una transacción "
+"tiene múltiples desgloses."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:272
 msgid "Create a new window for each new register"
@@ -11170,10 +11172,8 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:129
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:262
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are multiple other accounts"
-msgstr "_Ir a la otra cuenta"
+msgstr "Ir cuando hay otras múltiples cuentas"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:130
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:263
@@ -11182,26 +11182,23 @@ msgid ""
 "because it has splits for multiple other accounts. A specific split must be "
 "selected to jump to the other account."
 msgstr ""
+"Este diálogo está presentado cunado sea imposible ir a una transacción "
+"porque tiene desgloses para múltiples de otras cuentas. Debe ser "
+"seleccionado un desglose específico para ir a la otra cuenta."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:134
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:267
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are no other accounts"
-msgstr "_Ir a la otra cuenta"
+msgstr "Ir cuando no hay otras cuentas"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:135
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:268
-#, fuzzy
-#| msgid ""
-#| "This dialog is presented when you attempt to duplicate a modified "
-#| "transaction. The changed data must be saved or the duplication canceled."
 msgid ""
 "This dialog is presented when you are unable to jump on a transaction "
 "because it only has splits for the current account."
 msgstr ""
-"Este diálogo se presenta al intentar duplicar una transacción modificada. "
-"Los datos modificados deben ser guardados o la duplicación cancelada."
+"Este diálogo se presenta cuando con es capaz de ir a una transacción porque "
+"solo tiene desgloses para la cuanta actual."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:5
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:6
@@ -11220,7 +11217,7 @@ msgid ""
 "If active, non currency commodities (stocks) will be shown. Otherwise they "
 "will be hidden."
 msgstr ""
-"Si se activa, se mostrarán los acciones no-monetarias (reservas). En otro "
+"Si se activa, se mostrarán los acciones no-monetarias (albaranes). En otro "
 "caso se ocultarán."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:15
@@ -12728,7 +12725,7 @@ msgid ""
 "page so you can change them if you want to, but it is safe to leave them "
 "alone.\n"
 msgstr ""
-"En la página siguiente, las cuentas en sus ficheros QIF y cualquier reserva "
+"En la página siguiente, las cuentas en sus ficheros QIF y cualquier albarán "
 "o fondos de inversión que posea serán cotejado con cuentas GnuCash. Si ya "
 "existe una cuenta GnuCash con el mismo nombre, o nombre similar y tipo "
 "compatible, esa cuenta se usara como cotejar; si no, GnuCash creará una "
@@ -12737,11 +12734,11 @@ msgstr ""
 "\n"
 "Tenga en cuenta que GnuCash creará varias cuentas que no existían su otro "
 "programa de finanzas personales, incluyendo una cuenta separada para cada "
-"acción propia, cuentas separadas para comisiones por intermediación, cuentas "
-"de «Patrimonio» especiales (subcuentas de Ingresos Retenidos, por omisión) "
-"que son la fuente de sus saldos de apertura, etc. Todas esas cuentas "
-"aparecerán en la siguiente página así que puede cambiarlos si así lo quiere, "
-"pero es seguro dejarlos tal como están.\n"
+"albarán propio, cuentas separadas para comisiones por intermediación, "
+"cuentas de «Patrimonio» especiales (subcuentas de Ingresos Retenidos, por "
+"omisión) que son la fuente de sus saldos de apertura, etc. Todas esas "
+"cuentas aparecerán en la siguiente página así que puede cambiarlos si así lo "
+"quiere, pero es seguro dejarlos tal como están.\n"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:524
 msgid "Accounts and stock holdings"
@@ -12877,17 +12874,17 @@ msgid ""
 "If you don't see your exchange listed, or none of the available choices are "
 "appropriate, you can enter a new one."
 msgstr ""
-"Debajo se le preguntará para proporcionar información acerca de reservas, "
+"Debajo se le preguntará para proporcionar información acerca de albaranes, "
 "fondos de inversión, y otras inversiones que aparecen en el/los fichero(s) "
 "QIF que está importando. GnuCash necesita algunos detalles adicionales "
 "acerca de estas inversiones que el formato QIF no proporciona.\n"
 "\n"
-"Cada acción, fondo de inversión, u otra inversión debe tener un nombre y una "
-"abreviatura, como un símbolo de acciones. Debido a que algunas inversiones "
-"no relacionadas tienen la misma abreviatura, también es necesario indicar "
-"qué tipo de abreviatura ha introducido. Por ejemplo, podría seleccionar el "
-"intercambio que les asignó el símbolo (NASDAQ, NYSE, etc), o seleccione un "
-"tipo de inversión.\n"
+"Cada albarán, fondo de inversión, u otra inversión debe tener un nombre y "
+"una abreviatura, como un símbolo de albarán. Debido a que algunas "
+"inversiones no relacionadas tienen la misma abreviatura, también es "
+"necesario indicar qué tipo de abreviatura ha introducido. Por ejemplo, "
+"podría seleccionar el intercambio que les asignó el símbolo (NASDAQ, NYSE, "
+"etc), o seleccione un tipo de inversión.\n"
 "\n"
 "Si no ve su listado de intercambio, o ninguna de las elecciones disponible "
 "es apropiada, puede introducir una nueva."
@@ -13002,23 +12999,22 @@ msgstr "Importación de Totales QIF"
 #: gnucash/gtkbuilder/assistant-stock-split.glade:9
 #: gnucash/gtkbuilder/assistant-stock-split.glade:28
 msgid "Stock Split Assistant"
-msgstr "Asistencia de División de Acción"
+msgstr "Asistencia de Desglose de Albarán"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:22
 msgid "This assistant will help you record a stock split or stock merger.\n"
-msgstr ""
-"Este asistente le ayudará a registrar una división o unión de acciones.\n"
+msgstr "Este asistente le ayudará a registrar un desglose o unión de albarán.\n"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:44
 msgid ""
 "Select the account for which you want to record a stock split or merger."
 msgstr ""
-"Seleccione la cuenta para la cual quiere registrar una división o unión de "
-"acciones."
+"Seleccione la cuenta para la cual quiere registrar un desglose o unión de "
+"albarán."
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:77
 msgid "Stock Split Account"
-msgstr "Cuenta de División de Acciones"
+msgstr "Cuenta de Desglose de Albarán"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:92
 msgid ""
@@ -13028,9 +13024,9 @@ msgid ""
 "transaction, or accept the default one."
 msgstr ""
 "Introduzca la fecha y el número de acciones que ha ganado o perdido por el "
-"desglose de acciones. Para fusiones (desglose negativo), utilice un valor "
-"negativo para la distribución de mercado. También puede introducir una "
-"descripción de la transación o aceptar el valor por omisión."
+"desglose de albaranes. Para fusiones de albarán (desglose negativo), utilice "
+"un valor negativo para la distribución de mercado. También puede introducir "
+"una descripción de la transacción o aceptar el valor por omisión."
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:115
 #: gnucash/gtkbuilder/dialog-account.glade:1851
@@ -13048,14 +13044,14 @@ msgstr "Desc_ripción"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:158
 msgid "Stock Split"
-msgstr "División de Acciones"
+msgstr "División de Albarán"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:181
 msgid ""
 "If you want to record a stock price for the split, enter it below. You may "
 "safely leave it blank."
 msgstr ""
-"Si quiere registra un precio reservado para los desgloses, introdúzcalo "
+"Si quiere registra un precio de albarán para el desglose, introdúzcalo "
 "debajo. Puede dejarlo en blanco con seguridad."
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:197
@@ -13068,15 +13064,15 @@ msgstr "M_oneda"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:241
 msgid "Stock Split Details"
-msgstr "Detalles de División de Acciones"
+msgstr "Detalles de Desglose de Albarán"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:257
 msgid ""
 "If you received a cash disbursement as a result of the stock split, enter "
 "the details of that payment here. Otherwise, just click \"Next\"."
 msgstr ""
-"Si ha recibido un desembolso en efectivo como un resultado de división de "
-"acciones, introduzca los detalles de esa remuneración aquí. En otro caso, "
+"Si ha recibido un desembolso en efectivo como un resultado de desglose de "
+"albarán, introduzca los detalles de esa remuneración aquí. En otro caso, "
 "pulse «Siguiente»."
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:279
@@ -13124,18 +13120,18 @@ msgid ""
 "may also press \"Back\" to review your choices, or \"Cancel\" to quit "
 "without making any changes."
 msgstr ""
-"Si ha terminado de crear el división o unión de acciones, pulse «Aplicar». "
+"Si ha terminado de crear el división o unión de albaranes, pulse «Aplicar». "
 "También puede pulsar «Atrás» para revisar sus elecciones, o «Cancelar» para "
 "salir sin hacer ningún cambio."
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:418
 msgid "Stock Split Finish"
-msgstr "Final de División de Acciones"
+msgstr "Final de Desglose de Albarán"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:9
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:27
 msgid "Stock Transaction Assistant"
-msgstr "Asistente de transacción de acciones"
+msgstr "Asistente de Transacción de Albarán"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:22
 msgid ""
@@ -13147,12 +13143,12 @@ msgid ""
 "transaction currency will be offered for cash, capital gains, dividends, and "
 "fees."
 msgstr ""
-"Este asistente te ayudará a registrar una transacción con acciones. El tipo "
+"Este asistente te ayudará a registrar una transacción con albarán. El tipo "
 "de transacción (compra, venta, dividendo, distribución, devolución de "
-"capital, división de acciones) determinará las divisiones de la transacción "
+"capital, desglose de albaranes) determinará desgloses de transacción "
 "implicadas en la operación. Ten en cuenta que la moneda de la transacción "
-"será la de la cuenta de las acciones y que no se admiten transacciones "
-"multidivisa: Sólo se ofrecerán cuentas en la divisa de la transacción para "
+"será la de la cuenta de los albaranes y que no se admiten transacciones "
+"multi-divisa: sólo se ofrecerán cuentas en la divisa de la transacción para "
 "efectivo, plusvalías, dividendos y comisiones."
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:45
@@ -13173,7 +13169,7 @@ msgid ""
 msgstr ""
 "Seleccione el tipo de evento de valores que desea registrar. Los tipos "
 "disponibles dependen de si el balance actual del valor es positivo, nulo o "
-"negativo (e.g.: al ponerse en corto). El tipo de evento determinará los "
+"negativo (p.ej.: al ponerse en corto). El tipo de evento determinará los "
 "desgloses de componentes."
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:195
@@ -13250,7 +13246,7 @@ msgstr "Comisión del Corretaje"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:641
 msgid "Capitalize brokerage fees into stock account?"
-msgstr "Capitalizar las comisiones de corretaje en la cuenta de valor?"
+msgstr "¿Capitalizar las comisiones de corretaje en la cuenta de valor?"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:682
 msgid "In this page, input any dividend income received in this transaction."
@@ -13601,10 +13597,8 @@ msgstr "Filtrar por…"
 
 #: gnucash/gtkbuilder/dialog-account.glade:906
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:498
-#, fuzzy
-#| msgid "Clear All"
 msgid "Clear _All"
-msgstr "Desmarcar Todo"
+msgstr "Desmarcar _todo"
 
 #: gnucash/gtkbuilder/dialog-account.glade:922
 msgid "_Default"
@@ -16068,11 +16062,11 @@ msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2581
 msgid "<b>Jump action for multiple splits</b>"
-msgstr ""
+msgstr "<b>Operación Ir para múltiples desgloses</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2583
 msgid "Transaction jump action when there are more than two splits."
-msgstr ""
+msgstr "Operación de ir a transacción cuando hay más de dos desgloses."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
@@ -16084,12 +16078,14 @@ msgstr "No hacer nada."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2612
 msgid "Go to the first split with the _largest value"
-msgstr ""
+msgstr "Ir al primer desglose con el valor más grande"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2618
 msgid ""
 "Use the first split with the largest value to determine the other account."
 msgstr ""
+"Utilizar el primer desglose con el valor más grande para determinar la otra "
+"cuenta."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
 msgid "Go to the first split with the _smallest value"
@@ -16099,6 +16095,8 @@ msgstr "Ir al primer desglose con el valor más _pequeño"
 msgid ""
 "Use the first split with the smallest value to determine the other account."
 msgstr ""
+"Utilizar el primer desglose con el valor más pequeño para determinar la otra "
+"cuenta."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2665
 msgid "<b>Reconciling</b>"
@@ -31345,22 +31343,22 @@ msgstr "Alphavantage"
 #: libgnucash/engine/gnc-commodity.cpp:192
 msgctxt "FQ Source"
 msgid "Amsterdam Euronext eXchange, NL"
-msgstr ""
+msgstr "Amsterdam Euronext eXchange, NL"
 
 #: libgnucash/engine/gnc-commodity.cpp:193
 msgctxt "FQ Source"
 msgid "Association of Mutual Funds in India"
-msgstr ""
+msgstr "Asociación de Fondos Mutuos en India"
 
 #: libgnucash/engine/gnc-commodity.cpp:194
 msgctxt "FQ Source"
 msgid "Athens Exchange Group, GR"
-msgstr ""
+msgstr "Athens Exchange Group, GR"
 
 #: libgnucash/engine/gnc-commodity.cpp:195
 msgctxt "FQ Source"
 msgid "Australian Stock Exchange, AU"
-msgstr ""
+msgstr "Australian Stock Exchange, AU"
 
 #: libgnucash/engine/gnc-commodity.cpp:196
 msgctxt "FQ Source"
@@ -31370,132 +31368,133 @@ msgstr "Bloomberg"
 #: libgnucash/engine/gnc-commodity.cpp:197
 msgctxt "FQ Source"
 msgid "Italian Stock Exchange, IT"
-msgstr ""
+msgstr "Italian Stock Exchange, IT"
 
 #: libgnucash/engine/gnc-commodity.cpp:198
 msgctxt "FQ Source"
 msgid "BSE India, IN"
-msgstr ""
+msgstr "BSE India, IN"
 
 #: libgnucash/engine/gnc-commodity.cpp:199
 msgctxt "FQ Source"
 msgid "Bucharest Stock Exchange, RO"
-msgstr ""
+msgstr "Bucharest Stock Exchange, RO"
 
 #: libgnucash/engine/gnc-commodity.cpp:200
 msgctxt "FQ Source"
 msgid "Colombo Stock Exchange, LK"
-msgstr ""
+msgstr "Colombo Stock Exchange, LK"
 
 #: libgnucash/engine/gnc-commodity.cpp:201
 msgctxt "FQ Source"
 msgid "comdirect, DE"
-msgstr ""
+msgstr "comdirect, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:202
 msgctxt "FQ Source"
 msgid "Consors Bank, DE"
-msgstr ""
+msgstr "Consors Bank, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:203
 msgctxt "FQ Source"
 msgid "Deka Investments, DE"
-msgstr ""
+msgstr "Deka Investments, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:204
+#, fuzzy
 msgctxt "FQ Source"
 msgid "DWS, DE"
-msgstr ""
+msgstr "DWS, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:205
 msgctxt "FQ Source"
 msgid "Financial Times Funds service, GB"
-msgstr ""
+msgstr "Financial Times Funds service, GB"
 
 #: libgnucash/engine/gnc-commodity.cpp:206
 msgctxt "FQ Source"
 msgid "Finanzpartner, DE"
-msgstr ""
+msgstr "Finanzpartner, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:207
 msgctxt "FQ Source"
 msgid "FondsWeb, DE"
-msgstr ""
+msgstr "FondsWeb, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:208
 msgctxt "FQ Source"
 msgid "GoldMoney precious metals"
-msgstr ""
+msgstr "Metales preciosos de GoldMoney"
 
 #: libgnucash/engine/gnc-commodity.cpp:209
 msgctxt "FQ Source"
 msgid "Google Web, US Stocks"
-msgstr ""
+msgstr "Google Web, US Stocks"
 
 #: libgnucash/engine/gnc-commodity.cpp:210
 msgctxt "FQ Source"
 msgid "IEX (Investors Exchange), US"
-msgstr ""
+msgstr "IEX (Investors Exchange), US"
 
 #: libgnucash/engine/gnc-commodity.cpp:211
 msgctxt "FQ Source"
 msgid "Market Watch"
-msgstr "Vigía del Mercado"
+msgstr "Market Watch"
 
 #: libgnucash/engine/gnc-commodity.cpp:212
 msgctxt "FQ Source"
 msgid "Morningstar, AU"
-msgstr ""
+msgstr "Morningstar, AU"
 
 #: libgnucash/engine/gnc-commodity.cpp:213
 msgctxt "FQ Source"
 msgid "Morningstar, CH"
-msgstr ""
+msgstr "Morningstar, CH"
 
 #: libgnucash/engine/gnc-commodity.cpp:214
 msgctxt "FQ Source"
 msgid "Morningstar, GB"
-msgstr ""
+msgstr "Morningstar, GB"
 
 #: libgnucash/engine/gnc-commodity.cpp:215
 msgctxt "FQ Source"
 msgid "Morningstar, JP"
-msgstr ""
+msgstr "Morningstar, JP"
 
 #: libgnucash/engine/gnc-commodity.cpp:216
 msgctxt "FQ Source"
 msgid "Motley Fool"
-msgstr ""
+msgstr "Motley Fool"
 
 #: libgnucash/engine/gnc-commodity.cpp:217
 msgctxt "FQ Source"
 msgid "New Zealand stock eXchange, NZ"
-msgstr ""
+msgstr "New Zealand stock eXchange, NZ"
 
 #: libgnucash/engine/gnc-commodity.cpp:218
 msgctxt "FQ Source"
 msgid "NSE (National Stock Exchange), IN"
-msgstr ""
+msgstr "NSE (National Stock Exchange), IN"
 
 #: libgnucash/engine/gnc-commodity.cpp:219
 msgctxt "FQ Source"
 msgid "OnVista, DE"
-msgstr ""
+msgstr "OnVista, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:220
 msgctxt "FQ Source"
 msgid "Paris Stock Exchange/Boursorama, FR"
-msgstr ""
+msgstr "Paris Stock Exchange/Boursorama, FR"
 
 #: libgnucash/engine/gnc-commodity.cpp:221
 msgctxt "FQ Source"
 msgid "S-Investor, DE"
-msgstr ""
+msgstr "S-Investor, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:222
 msgctxt "FQ Source"
 msgid "Sharenet, ZA"
-msgstr ""
+msgstr "Sharenet, ZA"
 
 #: libgnucash/engine/gnc-commodity.cpp:223
 msgctxt "FQ Source"
@@ -31505,11 +31504,9 @@ msgstr "Acciones SIX Swiss Exchange, CH"
 #: libgnucash/engine/gnc-commodity.cpp:224
 msgctxt "FQ Source"
 msgid "Skandinaviska Enskilda Banken, SE"
-msgstr ""
+msgstr "Skandinaviska Enskilda Banken, SE"
 
 #: libgnucash/engine/gnc-commodity.cpp:225
-#, fuzzy
-#| msgid "Stock"
 msgctxt "FQ Source"
 msgid "StockData"
 msgstr "Provisión"
@@ -31517,76 +31514,74 @@ msgstr "Provisión"
 #: libgnucash/engine/gnc-commodity.cpp:226
 msgctxt "FQ Source"
 msgid "Stooq, PL"
-msgstr ""
+msgstr "Stooq, PL"
 
 #: libgnucash/engine/gnc-commodity.cpp:227
 msgctxt "FQ Source"
 msgid "T. Rowe Price, US"
-msgstr ""
+msgstr "T. Rowe Price, US"
 
 #: libgnucash/engine/gnc-commodity.cpp:228
 msgctxt "FQ Source"
 msgid "Tesouro Direto bonds, BR"
-msgstr ""
+msgstr "Tesouro Direto bonds, BR"
 
 #: libgnucash/engine/gnc-commodity.cpp:229
 msgctxt "FQ Source"
 msgid "TIAA-CREF, US"
-msgstr ""
+msgstr "TIAA-CREF, US"
 
 #: libgnucash/engine/gnc-commodity.cpp:230
 msgctxt "FQ Source"
 msgid "Toronto Stock eXchange, CA"
-msgstr ""
+msgstr "Toronto Stock eXchange, CA"
 
 #: libgnucash/engine/gnc-commodity.cpp:231
 msgctxt "FQ Source"
 msgid "Tradegate, DE"
-msgstr ""
+msgstr "Tradegate, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:232
 msgctxt "FQ Source"
 msgid "Treasury Direct bonds, US"
-msgstr ""
+msgstr "Treasury Direct bonds, US"
 
 #: libgnucash/engine/gnc-commodity.cpp:233
 msgctxt "FQ Source"
 msgid "Twelve Data"
-msgstr ""
+msgstr "Twelve Data"
 
 #: libgnucash/engine/gnc-commodity.cpp:234
 msgctxt "FQ Source"
 msgid "Union Investment, DE"
-msgstr ""
+msgstr "Union Investment, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:235
 msgctxt "FQ Source"
 msgid "US Govt. Thrift Savings Plan"
-msgstr ""
+msgstr "US Govt. Thrift Savings Plan"
 
 #: libgnucash/engine/gnc-commodity.cpp:236
 msgctxt "FQ Source"
 msgid "XETRA, DE"
-msgstr ""
+msgstr "XETRA, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:237
 msgctxt "FQ Source"
 msgid "Yahoo as JSON"
-msgstr ""
+msgstr "Yahoo as JSON"
 
 #: libgnucash/engine/gnc-commodity.cpp:238
 msgctxt "FQ Source"
 msgid "Yahoo Web"
-msgstr ""
+msgstr "Yahoo Web"
 
 #: libgnucash/engine/gnc-commodity.cpp:239
 msgctxt "FQ Source"
 msgid "YH Finance (FinanceAPI)"
-msgstr ""
+msgstr "YH Finance (FinanceAPI)"
 
 #: libgnucash/engine/gnc-commodity.cpp:244
-#, fuzzy
-#| msgid "Australia BAS"
 msgctxt "FQ Source"
 msgid "Australia (ASX)"
 msgstr "Australia (ASX)"
@@ -31599,22 +31594,22 @@ msgstr "Fondos de Australia (MorningstarAU)"
 #: libgnucash/engine/gnc-commodity.cpp:246
 msgctxt "FQ Source"
 msgid "Canada (Alphavantage, TMX)"
-msgstr ""
+msgstr "Canada (Alphavantage, TMX)"
 
 #: libgnucash/engine/gnc-commodity.cpp:247
 msgctxt "FQ Source"
 msgid "Dutch (AEX)"
-msgstr ""
+msgstr "Dutch (AEX)"
 
 #: libgnucash/engine/gnc-commodity.cpp:248
 msgctxt "FQ Source"
 msgid "Europe (ASEGR, Bourso, …)"
-msgstr ""
+msgstr "Europe (ASEGR, Bourso, …)"
 
 #: libgnucash/engine/gnc-commodity.cpp:249
 msgctxt "FQ Source"
 msgid "France (Bourso)"
-msgstr ""
+msgstr "Francia (Bourso)"
 
 #: libgnucash/engine/gnc-commodity.cpp:250
 msgctxt "FQ Source"
@@ -31624,22 +31619,22 @@ msgstr "Grecia (ASEGR)"
 #: libgnucash/engine/gnc-commodity.cpp:251
 msgctxt "FQ Source"
 msgid "India (BSEIndia, NSEIndia)"
-msgstr ""
+msgstr "India (BSEIndia, NSEIndia)"
 
 #: libgnucash/engine/gnc-commodity.cpp:252
 msgctxt "FQ Source"
 msgid "India Mutual (AMFI)"
-msgstr ""
+msgstr "India Mutual (AMFI)"
 
 #: libgnucash/engine/gnc-commodity.cpp:253
 msgctxt "FQ Source"
 msgid "Nasdaq (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "Nasdaq (Alphavantage, FinanceAPI, …)"
 
 #: libgnucash/engine/gnc-commodity.cpp:254
 msgctxt "FQ Source"
 msgid "NYSE (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "NYSE (Alphavantage, FinanceAPI, …)"
 
 #: libgnucash/engine/gnc-commodity.cpp:255
 msgctxt "FQ Source"
@@ -31659,12 +31654,12 @@ msgstr "Sur África (Sharenet)"
 #: libgnucash/engine/gnc-commodity.cpp:258
 msgctxt "FQ Source"
 msgid "U.K. Funds (FTfunds, MorningstarUK)"
-msgstr ""
+msgstr "U.K. Funds (FTfunds, MorningstarUK)"
 
 #: libgnucash/engine/gnc-commodity.cpp:259
 msgctxt "FQ Source"
 msgid "USA (Alphavantage, FinanceAPI, …)"
-msgstr ""
+msgstr "USA (Alphavantage, FinanceAPI, …)"
 
 #: libgnucash/engine/gnc-commodity.h:110
 msgctxt "Commodity Type"
