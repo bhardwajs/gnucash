@@ -8,14 +8,14 @@
 # Ömer Faruk Çakmak <omerfarukckmk@protonmail.com>, 2021.
 # udo pton <udopton@gmail.com>, 2021.
 # Bora <boratici@gmail.com>, 2021, 2022.
-# Bora Atıcı <boratici.acc@gmail.com>, 2023, 2024.
+# Bora Atıcı <boratici.acc@gmail.com>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2024-08-08 21:09+0000\n"
+"PO-Revision-Date: 2025-04-16 05:42+0000\n"
 "Last-Translator: Bora Atıcı <boratici.acc@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "tr/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "X-POOTLE-MTIME: 1497808015.000000\n"
 
@@ -2075,14 +2075,12 @@ msgid ""
 msgstr "Bu işlem bir satıcıya atanmalıdır. Lütfen aşağıda satıcıyı seçin."
 
 #: gnucash/gnome/dialog-commodities.cpp:183
-#, fuzzy
-#| msgid ""
-#| "That commodity is currently used by at least one of your accounts. You "
-#| "may not delete it."
 msgid ""
 "This commodity is currently used by the following accounts. You may not "
 "delete it.\n"
-msgstr "Bu kıymet en az bir hesabınızda kullanılıyor. Silemezsiniz."
+msgstr ""
+"Bu emtia şu anda aşağıdaki hesaplar tarafından kullanılmaktadır. "
+"Silmeyebilirsiniz.\n"
 
 #: gnucash/gnome/dialog-commodities.cpp:201
 msgid ""
@@ -4662,7 +4660,7 @@ msgstr "Baskıya uygun alındı oluştur"
 
 #: gnucash/gnome/gnc-plugin-page-invoice.cpp:241
 msgid "_Edit Voucher"
-msgstr "Alındı Düzenle"
+msgstr "Alı_ndı Düzenle"
 
 #: gnucash/gnome/gnc-plugin-page-invoice.cpp:241
 msgid "Edit this voucher"
