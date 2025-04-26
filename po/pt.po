@@ -4,14 +4,15 @@
 # Pedro Albuquerque <pmra@protonmail.com>, 2015-2021, 2024, 2025.
 # Pedro Albuquerque <pmra@gmx.com>, 2021, 2022, 2023, 2024.
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2023.
+# Hiago Fontoura <HIAGOFMENDONCA@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-02-01 04:48+0000\n"
-"Last-Translator: Pedro Albuquerque <pmra@protonmail.com>\n"
+"PO-Revision-Date: 2025-04-13 20:01+0000\n"
+"Last-Translator: Hiago Fontoura <HIAGOFMENDONCA@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/gnucash/"
 "gnucash/pt/>\n"
 "Language: pt\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 
 #: bindings/guile/date-utilities.scm:173
@@ -4039,10 +4040,9 @@ msgstr "agora"
 
 #: gnucash/gnome/dialog-tax-info.c:871
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:401
-#, fuzzy, c-format
-#| msgid "Accounts Selected:"
+#, c-format
 msgid "Accounts Selected: %d"
-msgstr "Contas seleccionadas:"
+msgstr "Contas selecionadas:"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
@@ -5236,22 +5236,24 @@ msgstr "Ir para data"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5060
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5089
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Unable to jump to other account"
-msgstr "Ir para a o_utra conta"
+msgstr "Ir para a outra conta"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5063
 msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
 msgstr ""
+"Esta transação envolve mais de uma outra conta. Selecione uma divisão "
+"específica para pular para essa conta."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
 "This transaction only involves the current account so there is no other "
 "account to jump to."
 msgstr ""
+"Esta transação envolve apenas a conta corrente, portanto não há outra conta "
+"para pular."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5246
 #, c-format
