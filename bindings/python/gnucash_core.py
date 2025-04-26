@@ -822,9 +822,9 @@ class Transaction(GnuCashCoreClass):
         return self.GetSplitList().pop(n)
 
     def GetInvoiceFromTxn(self):
-        from gnucash.gnucash_business import Transaction
+        from gnucash.gnucash_business import Invoice
         return self.do_lookup_create_oo_instance(
-            gncInvoiceGetInvoiceFromTxn, Transaction )
+            gncInvoiceGetInvoiceFromTxn, Invoice )
 
     def __eq__(self, other):
         return self.Equal(other, True, False, False, False)
