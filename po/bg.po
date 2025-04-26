@@ -6,20 +6,23 @@
 # Alexander Shopov
 # Mila Petrova
 # Kamen Naydenov
+# Ivan Kostov <jiveq1@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2011-10-25 13:27+0200\n"
-"Last-Translator: Rosi Dimova <pocu@bk.ru>\n"
-"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"PO-Revision-Date: 2025-04-21 20:05+0000\n"
+"Last-Translator: Ivan Kostov <jiveq1@gmail.com>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/gnucash/"
+"gnucash/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -241,7 +244,7 @@ msgstr "Бизнес"
 #: gnucash/report/reports/support/taxinvoice.eguile.scm:149
 #: libgnucash/engine/gnc-optiondb.cpp:1301
 msgid "Company Name"
-msgstr "Име на фирма"
+msgstr "Наименование на фирмата"
 
 #: bindings/guile/options.scm:390 libgnucash/engine/gnc-optiondb.cpp:1304
 msgid "Company Address"
@@ -3616,7 +3619,7 @@ msgstr ""
 #: gnucash/gnome-utils/gnc-tree-view-account.c:858
 #: gnucash/report/trep-engine.scm:158
 msgid "Cleared"
-msgstr "Изплатена"
+msgstr "Премахнат"
 
 #: gnucash/gnome/dialog-payment.c:1595
 #: gnucash/gnome/gnc-plugin-page-register.cpp:3300
@@ -23743,7 +23746,7 @@ msgstr "Показване на бележките на сметка"
 #: gnucash/report/reports/standard/income-statement.scm:101
 #: gnucash/report/reports/standard/trial-balance.scm:122
 msgid "Commodities"
-msgstr "Инвестиционни стоки"
+msgstr "Стоки"
 
 #: gnucash/report/reports/standard/account-summary.scm:126
 #: gnucash/report/reports/standard/balance-sheet.scm:132
