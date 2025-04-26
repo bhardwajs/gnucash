@@ -13,14 +13,15 @@
 # Sherif ElGamal <selgamal0@gmail.com>, 2022.
 # BL <ghostzeko@gmail.com>, 2023.
 # Abdulla Alhosani <ama1029@nyu.edu>, 2024.
+# Abdulsalam Alshilash <ashalash@msn.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2024-05-12 22:06+0000\n"
-"Last-Translator: Abdulla Alhosani <ama1029@nyu.edu>\n"
+"PO-Revision-Date: 2025-04-16 15:01+0000\n"
+"Last-Translator: Abdulsalam Alshilash <ashalash@msn.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "ar/>\n"
 "Language: ar\n"
@@ -29,7 +30,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.5.4\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 
 #: bindings/guile/date-utilities.scm:173
@@ -54,8 +55,8 @@ msgid ""
 "Tried to look up an undefined date symbol '~a'. This report was probably "
 "saved by a later version of GnuCash. Defaulting to today."
 msgstr ""
-"حاول البحث عن رمز تاريخ غير محدد '~a'. ربما تم حفظ هذا التقرير بواسطة إصدار "
-"أحدث من GnuCash. التخلف عن السداد إلى اليوم."
+"تم محاولة البحث عن رمز تاريخ غير معرف '~a'. من المحتمل أن يكون هذا التقرير "
+"قد تم حفظه بواسطة نسخة أحدث من GnuCash. سيتم استخدام تاريخ اليوم كافتراضي."
 
 #: bindings/guile/date-utilities.scm:715
 #: gnucash/gnome-utils/gnc-period-select.c:70
@@ -108,8 +109,9 @@ msgstr "بداية الفترة المحاسبية"
 
 #: bindings/guile/date-utilities.scm:746
 #: libgnucash/engine/gnc-option-date.cpp:313
+#, fuzzy
 msgid "First day of the accounting period, as set in the global preferences."
-msgstr "اليوم الأول من فترة المحاسبية، كما حدد في التفضيلات العالمية."
+msgstr "اليوم الأول للفترة المحاسبية، حسب ما تم تحديده في التفضيلات العامة."
 
 #: bindings/guile/date-utilities.scm:750
 #: libgnucash/engine/gnc-option-date.cpp:320
@@ -118,8 +120,9 @@ msgstr "نهاية الفترة المحاسبية"
 
 #: bindings/guile/date-utilities.scm:753
 #: libgnucash/engine/gnc-option-date.cpp:321
+#, fuzzy
 msgid "Last day of the accounting period, as set in the global preferences."
-msgstr "اليوم الأخير من فترة المحاسبية، كما حدد في التفضيلات العالمية."
+msgstr "آخر يوم للفترة المحاسبية، حسب ما تم تحديده في التفضيلات العامة."
 
 #: bindings/guile/date-utilities.scm:757
 #: gnucash/gnome-utils/gnc-period-select.c:66
@@ -167,8 +170,9 @@ msgstr "اليوم الأخير من الشهر السابق."
 
 #: bindings/guile/date-utilities.scm:785
 #: libgnucash/engine/gnc-option-date.cpp:216
+#, fuzzy
 msgid "Start of current quarter"
-msgstr "بداية ربع الحالي"
+msgstr "بداية الربع الحالي"
 
 #: bindings/guile/date-utilities.scm:788
 #: libgnucash/engine/gnc-option-date.cpp:217
@@ -177,8 +181,9 @@ msgstr "اليوم الأول من الفترة المحاسبية الفصلي�
 
 #: bindings/guile/date-utilities.scm:792
 #: libgnucash/engine/gnc-option-date.cpp:224
+#, fuzzy
 msgid "End of current quarter"
-msgstr "نهاية ربع السنة الحالي"
+msgstr "نهاية الربع الحالي"
 
 #: bindings/guile/date-utilities.scm:795
 #: libgnucash/engine/gnc-option-date.cpp:225
@@ -216,8 +221,9 @@ msgstr "اليوم"
 
 #: bindings/guile/date-utilities.scm:815
 #: libgnucash/engine/gnc-option-date.cpp:81
+#, fuzzy
 msgid "The current date."
-msgstr "التاريخ الحالي"
+msgstr "التاريخ الحالي."
 
 #: bindings/guile/options.scm:388 gnucash/gnome/top-level.c:462
 #: libgnucash/engine/gnc-optiondb.cpp:1201 libgnucash/engine/qofbookslots.h:72
@@ -241,8 +247,9 @@ msgid "Company Address"
 msgstr "عنوان الشركة"
 
 #: bindings/guile/options.scm:391 libgnucash/engine/gnc-optiondb.cpp:1327
+#, fuzzy
 msgid "Company ID"
-msgstr "رمز الشركة"
+msgstr "معرف الشركة"
 
 #: bindings/guile/options.scm:392 libgnucash/engine/gnc-optiondb.cpp:1312
 msgid "Company Phone Number"
@@ -1497,10 +1504,8 @@ msgstr ""
 #. Translators: this is a stock transaction describing a
 #. notional distribution recorded as dividend
 #: gnucash/gnome/assistant-stock-transaction.cpp:246
-#, fuzzy
-#| msgid "No description provided."
 msgid "Notional distribution (dividend)"
-msgstr "لا يوجد وصف."
+msgstr "توزيع اسمي (أرباح)"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:247
 msgid ""
@@ -1512,7 +1517,7 @@ msgstr ""
 #. notional distribution recorded as capital gain
 #: gnucash/gnome/assistant-stock-transaction.cpp:258
 msgid "Notional distribution (capital gain)"
-msgstr ""
+msgstr "توزيع اسمي (ربح رأسمالي)"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:259
 msgid ""
@@ -1571,7 +1576,7 @@ msgstr "ترتيب الفرز"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:302
 msgid "Selling stock short."
-msgstr ""
+msgstr "بيع الأسهم على المكشوف."
 
 #. Translators: this is a stock transaction describing cover
 #. buying stock, and recording capital gain/loss
@@ -1591,7 +1596,7 @@ msgstr ""
 #. dividends retrieved from holder when shorting stock
 #: gnucash/gnome/assistant-stock-transaction.cpp:325
 msgid "Compensatory dividend"
-msgstr ""
+msgstr "توزيعات أرباح تعويضية"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:326
 msgid ""
@@ -1617,7 +1622,7 @@ msgstr ""
 #. return of capital when shorting stock
 #: gnucash/gnome/assistant-stock-transaction.cpp:351
 msgid "Compensatory return of capital (reclassification)"
-msgstr ""
+msgstr "استرداد رأس المال التعويضي (إعادة التصنيف)"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:352
 msgid ""
@@ -3105,12 +3110,13 @@ msgid "Date of duplicated entries"
 msgstr "تاريخ الإدخالات المكررة"
 
 #: gnucash/gnome/dialog-invoice.c:3426
+#, fuzzy
 msgid ""
 "One or more selected invoices have already been posted.\n"
 "Re-check your selection."
 msgstr ""
 "يوجد فاتورة واحدة أو أكثر قد تم ترحيلها إلى الأستاذ العام.\n"
-"أعد تحديد خياراتك."
+"يرجى إعادة التحقق من اختيارك."
 
 #: gnucash/gnome/dialog-invoice.c:3430
 msgid "Do you really want to post these invoices?"
@@ -3767,8 +3773,9 @@ msgstr "المستخدم"
 #: gnucash/gtkbuilder/dialog-print-check.glade:270
 #: gnucash/gtkbuilder/dialog-print-check.glade:290
 #: gnucash/gtkbuilder/gnc-date-format.glade:30
+#, fuzzy
 msgid "Custom"
-msgstr "مُعدل"
+msgstr "مخصص"
 
 #: gnucash/gnome/dialog-print-check.c:2645
 #: gnucash/gtkbuilder/dialog-preferences.glade:3544
@@ -9407,8 +9414,9 @@ msgstr ""
 "مطابقة."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.import.qif.gschema.xml.in:32
+#, fuzzy
 msgid "Show documentation"
-msgstr "مشاهدة الوثائق"
+msgstr "عرض الوثائق"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.import.qif.gschema.xml.in:33
 #: gnucash/gtkbuilder/dialog-account-picker.glade:40
@@ -12929,7 +12937,7 @@ msgstr "رسوم الوساطة"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:641
 msgid "Capitalize brokerage fees into stock account?"
-msgstr ""
+msgstr "رسملة رسوم الوساطة ضمن حساب الأسهم؟"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:682
 msgid "In this page, input any dividend income received in this transaction."
@@ -17648,7 +17656,7 @@ msgstr "اختر التاريخ"
 #. Filter By Dialog, State Tab
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:390
 msgid "_Unreconciled"
-msgstr "لم يتم تسويته"
+msgstr "_لم يتم تسويته"
 
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:422
 msgid "C_leared"
@@ -17660,7 +17668,7 @@ msgstr "_ملغاة"
 
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:454
 msgid "_Frozen"
-msgstr "مجمد"
+msgstr "_مجمد"
 
 #. Filter By Dialog, below tabs
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:548
@@ -20950,8 +20958,9 @@ msgid ""
 msgstr "إدخال غير صالح: تحتاج إلى توفير حساب في العملة الصحيحة لهذا المكان."
 
 #: gnucash/register/ledger-core/gncEntryLedgerControl.c:184
+#, fuzzy
 msgid "This account should usually be of type income."
-msgstr "عادة يجب أن يكون هذا الحساب من نوع الدخل."
+msgstr "يجب عادةً أن يكون هذا الحساب من نوع الدخل."
 
 #: gnucash/register/ledger-core/gncEntryLedgerControl.c:192
 msgid "This account should usually be of type expense or asset."
@@ -21045,7 +21054,7 @@ msgstr "عينة: مصروفات : السيارات: البنزين"
 #, fuzzy
 msgctxt "sample for 'Taxable'"
 msgid "T?"
-msgstr "T"
+msgstr "T?"
 
 #. Translators: Abbreviation sample for Tax Included
 #: gnucash/register/ledger-core/gncEntryLedgerLayout.c:137
@@ -24822,6 +24831,8 @@ msgid ""
 "Include in report further periods as single collapsed column (one for all "
 "periods after ending and to the end of budget range)"
 msgstr ""
+"إدراج الفترات اللاحقة في التقرير ضمن عمود واحد مختصر (عمود واحد يشمل جميع "
+"الفترات من تاريخ الانتهاء وحتى نهاية فترة الميزانية)"
 
 #. Translators: Abbreviation for "Budget" amount
 #: gnucash/report/reports/standard/budget.scm:492
@@ -27869,12 +27880,14 @@ msgstr "حسابات حقوق الملكية"
 
 #: gnucash/report/reports/support/balsheet-eg.eguile.scm:182
 #: gnucash/report/report-utilities.scm:214
+#, fuzzy
 msgid "Trading Accounts"
-msgstr "حسابات المتاجرة"
+msgstr "حسابات التداول"
 
 #: gnucash/report/reports/support/balsheet-eg.eguile.scm:241
+#, fuzzy
 msgid "Total Equity, Trading, and Liabilities"
-msgstr "مجموع حقوق الملكية، و المتاجرة، و الإلتزامات"
+msgstr "إجمالي حقوق الملكية، وحسابات التداول، والالتزامات."
 
 #: gnucash/report/reports/support/balsheet-eg.eguile.scm:250
 msgid "Imbalance Amount"
@@ -31116,7 +31129,7 @@ msgstr ""
 #, fuzzy
 #| msgid "There was an error accessing %s."
 msgid "The quote has no error set."
-msgstr "حدث خطأ أثناء الوصول إلى %s."
+msgstr "هذا الاقتباس لا يحتوي على أي خطأ محدد."
 
 #: libgnucash/app-utils/gnc-quotes.cpp:404
 msgid "Quotes for the following commodities were unavailable or unusable:\n"
@@ -31124,7 +31137,7 @@ msgstr ""
 
 #: libgnucash/app-utils/gnc-quotes.cpp:490
 msgid "Currency quotes requires at least two currencies"
-msgstr ""
+msgstr "أسعار العملات تتطلب وجود عملتين على الأقل."
 
 #: libgnucash/app-utils/gnc-quotes.cpp:758
 #: libgnucash/app-utils/gnc-quotes.cpp:768
