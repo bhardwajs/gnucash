@@ -95,6 +95,8 @@ typedef char gchar;
     SCM zone = SCM_SIMPLE_VECTOR_REF(tm, 10);
     tzone = SCM_UNBNDP(zone) ? NULL : scm_to_locale_string(zone);
     t.tm_zone = tzone;
+%#else
+    (void)tzone;
 %#endif
     $1 = &t;
  }
