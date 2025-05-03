@@ -37,7 +37,7 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/version.hpp>
-#if BOOST_VERSION < 108800
+#if BOOST_VERSION < 108600
 #include <boost/process.hpp>
 #ifdef BOOST_WINDOWS_API
 #include <boost/process/windows.hpp>
