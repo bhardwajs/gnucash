@@ -169,6 +169,7 @@ typedef enum
     GNC_IRATE_APR_WEEKLY,
     GNC_IRATE_APR_MONTHLY,
     GNC_IRATE_APR_QUARTERLY,
+    GNC_IRATE_APR_SEMIANNUALLY,
     GNC_IRATE_APR_ANNUALLY
 } IRateType;
 
@@ -367,7 +368,7 @@ static void loan_rev_hash_free_date_keys( gpointer key, gpointer val, gpointer u
 static void loan_get_pmt_formula( LoanAssistantData *ldd, GString *gstr );
 static void loan_get_ppmt_formula( LoanAssistantData *ldd, GString *gstr );
 static void loan_get_ipmt_formula( LoanAssistantData *ldd, GString *gstr );
-static float loan_apr_to_simple_formula (float rate, float compounding_periods);
+static float loan_apr_to_simple_formula (float rate, float pmt_periods, float comp_periods);
 
 static void loan_create_sxes( LoanAssistantData *ldd );
 static void loan_create_sx_from_tcSX( LoanAssistantData *ldd, toCreateSX *tcSX );
@@ -2307,14 +2308,23 @@ loan_rev_update_view( LoanAssistantData *ldd, GDate *start, GDate *end )
 
 /************************* Worker functions *****************************/
 
-/* convert APR rate to simple rate based on formula r=q((1+i)^(1/q)-1) (r=interest rate, i=apr, q=compounding periods) */
+/* From https://bugs.gnucash.org/show_bug.cgi?id=799582#c0:
+ * INPUTS
+ * n = number of payments per year (pmt_periods)
+ * i = stated annual interest rate
+ * m = number of compounding periods per year (comp_periods)
+ *
+ * OUTPUT
+ * r = effective interest rate per payment
+ * r = { [ 1 + (i / m) ] ^ (m / n) } - 1
+ */
 
-gfloat loan_apr_to_simple_formula (gfloat rate, gfloat compounding_periods)
+gfloat loan_apr_to_simple_formula (gfloat rate, gfloat pmt_periods, gfloat comp_periods)
 {
     /* float percent_to_frac; - redundant */
     gfloat simple_rate;
     /* percent_to_frac= compounding_periods/100; - redundant */
-    simple_rate = compounding_periods * ((pow((1 + rate), (1 / compounding_periods))) - 1);
+    simple_rate = pow(1 + (rate / comp_periods), comp_periods / pmt_periods) - 1;
     return (simple_rate);
 }
 
@@ -2403,19 +2413,22 @@ loan_get_formula_internal( LoanAssistantData *ldd, GString *gstr, const gchar *t
         period_rate = pass_thru_rate;
         break;
     case GNC_IRATE_APR_DAILY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 365);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 365);
         break;
     case GNC_IRATE_APR_WEEKLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 52);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 52);
         break;
     case GNC_IRATE_APR_MONTHLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 12);
         break;
     case GNC_IRATE_APR_QUARTERLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 4);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 4);
+        break;
+    case GNC_IRATE_APR_SEMIANNUALLY:
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 2);
         break;
     case GNC_IRATE_APR_ANNUALLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 1);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 1);
         break;
     default:
         period_rate = ldd->ld.interestRate / 100;
