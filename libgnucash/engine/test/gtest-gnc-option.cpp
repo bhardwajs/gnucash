@@ -21,7 +21,11 @@
  *                                                                  *
  *******************************************************************/
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wcpp"
 #include <gtest/gtest.h>
+#pragma GCC diagnostic pop
+
 #include "gnc-option.hpp"
 #include "gnc-option-impl.hpp"
 #include "gnc-option-ui.hpp"
