@@ -1151,7 +1151,7 @@ test_qof_scan_date (void)
     time64 now = gnc_time(NULL);
     gchar buff[MAX_DATE_LENGTH];
     struct tm tm = { 0, 0, 0, 0, 0, 0, 0, 0, 0
-#ifndef G_OS_WIN32
+#ifdef HAVE_STRUCT_TM_GMTOFF
         , 0, 0
 #endif
     };
