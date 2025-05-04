@@ -2413,22 +2413,22 @@ loan_get_formula_internal( LoanAssistantData *ldd, GString *gstr, const gchar *t
         period_rate = pass_thru_rate;
         break;
     case GNC_IRATE_APR_DAILY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 365);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 365);
         break;
     case GNC_IRATE_APR_WEEKLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 52);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 52);
         break;
     case GNC_IRATE_APR_MONTHLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 12);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 12);
         break;
     case GNC_IRATE_APR_QUARTERLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 4);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 4);
         break;
     case GNC_IRATE_APR_SEMIANNUALLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 2);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 2);
         break;
     case GNC_IRATE_APR_ANNUALLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, periods, 1);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 1);
         break;
     default:
         period_rate = ldd->ld.interestRate / 100;
