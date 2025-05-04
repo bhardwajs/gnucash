@@ -368,7 +368,7 @@ static void loan_rev_hash_free_date_keys( gpointer key, gpointer val, gpointer u
 static void loan_get_pmt_formula( LoanAssistantData *ldd, GString *gstr );
 static void loan_get_ppmt_formula( LoanAssistantData *ldd, GString *gstr );
 static void loan_get_ipmt_formula( LoanAssistantData *ldd, GString *gstr );
-static float loan_apr_to_simple_formula (float rate, float pmt_periods, float comp_periods);
+static float loan_apr_to_simple_formula (double rate, double pmt_periods, double comp_periods);
 
 static void loan_create_sxes( LoanAssistantData *ldd );
 static void loan_create_sx_from_tcSX( LoanAssistantData *ldd, toCreateSX *tcSX );
@@ -2319,7 +2319,7 @@ loan_rev_update_view( LoanAssistantData *ldd, GDate *start, GDate *end )
  * r = { [ 1 + (i / m) ] ^ (m / n) } - 1
  */
 
-gfloat loan_apr_to_simple_formula (gfloat rate, gfloat pmt_periods, gfloat comp_periods)
+gfloat loan_apr_to_simple_formula (double rate, double pmt_periods, double comp_periods)
 {
     /* float percent_to_frac; - redundant */
     gfloat simple_rate;
@@ -2394,6 +2394,46 @@ std::string to_str_with_prec (const gdouble val)
 #endif
 }
 
+static constexpr std::tuple<double, double>
+periods_per_year( LoanAssistantData *ldd)
+{
+    double ppy = 0.0, periods = 1.0;
+    auto recurrences = ldd->ld.repayment_schedule;
+    for (auto node = recurrences; node; node = g_list_next(node))
+    {
+        auto recurrence = static_cast<Recurrence*>(node->data);
+        auto period_type = recurrenceGetPeriodType(recurrence);
+        auto multiplier = recurrenceGetMultiplier(recurrence);
+        if (multiplier < 1)
+            multiplier = 1;
+
+        switch(period_type)
+        {
+            case PERIOD_YEAR:
+                ppy += 1.0 / multiplier;
+                break;
+            case PERIOD_WEEK:
+                ppy += 52.0 / multiplier;
+                break;
+            case PERIOD_MONTH:
+            case PERIOD_END_OF_MONTH:
+            case PERIOD_NTH_WEEKDAY:
+            case PERIOD_LAST_WEEKDAY:
+                ppy += 12.0 / multiplier;
+                break;
+            case PERIOD_ONCE:
+            default:
+                break;
+        }
+    }
+
+    auto months = (ldd->ld.numPer * (ldd->ld.perSize == GNC_MONTHS ? 1 : 12));
+    if ((int)(months * ppy / 12) > 1)
+        periods = (int)(months * ppy / 12) * 1.0;
+
+    return {ppy, periods};
+}
+
 static
 void
 loan_get_formula_internal( LoanAssistantData *ldd, GString *gstr, const gchar *tpl )
@@ -2401,8 +2441,8 @@ loan_get_formula_internal( LoanAssistantData *ldd, GString *gstr, const gchar *t
     g_assert( ldd != NULL );
     g_assert( gstr != NULL );
 
+    auto [ppy, periods] = periods_per_year(ldd);
     gdouble pass_thru_rate = ldd->ld.interestRate / 100.0;
-    gdouble periods = (ldd->ld.numPer * (ldd->ld.perSize == GNC_MONTHS ? 1 : 12)) * 1.;
     auto principal = gnc_numeric_to_double(ldd->ld.principal);
 
     gdouble period_rate;
@@ -2413,29 +2453,29 @@ loan_get_formula_internal( LoanAssistantData *ldd, GString *gstr, const gchar *t
         period_rate = pass_thru_rate;
         break;
     case GNC_IRATE_APR_DAILY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 365);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, ppy, 365);
         break;
     case GNC_IRATE_APR_WEEKLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 52);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, ppy, 52);
         break;
     case GNC_IRATE_APR_MONTHLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 12);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, ppy, 12);
         break;
     case GNC_IRATE_APR_QUARTERLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 4);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, ppy, 4);
         break;
     case GNC_IRATE_APR_SEMIANNUALLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 2);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, ppy, 2);
         break;
     case GNC_IRATE_APR_ANNUALLY:
-        period_rate = loan_apr_to_simple_formula (pass_thru_rate, 12, 1);
+        period_rate = loan_apr_to_simple_formula (pass_thru_rate, ppy, 1);
         break;
     default:
         period_rate = ldd->ld.interestRate / 100;
         break;
     }
     auto period_rate_str = to_str_with_prec<5> (period_rate);
-    auto period_base_str = to_str_with_prec<2> (12.0);
+    auto period_base_str = to_str_with_prec<2> (ppy);
     auto periods_str = to_str_with_prec<2> (periods);
     auto principal_str = to_str_with_prec<2> (principal);
 
