@@ -2447,8 +2447,12 @@ loan_get_formula_internal( LoanAssistantData *ldd, GString *gstr, const gchar *t
     // So instead of bl::format we could also have used boost::format.
     // However at the time of this writing that sublibrary is not yet a requirement
     // for gnucash. So I stuck with bl::format, which is.
-    auto formula = (bl::format (tpl) % period_rate_str %
-                    period_base_str % periods_str % principal_str).str();
+    std::string formula;
+    if (rate_case == GNC_IRATE_SIMPLE)
+        formula = (bl::format (tpl) % period_rate_str %
+                   period_base_str % periods_str % principal_str).str();
+    else
+        formula = (bl::format (tpl) % period_rate_str % periods_str % principal_str).str();
     g_string_append (gstr, formula.c_str());
 }
 
@@ -2456,7 +2460,10 @@ static
 void
 loan_get_pmt_formula( LoanAssistantData *ldd, GString *gstr )
 {
-    loan_get_formula_internal (ldd, gstr, "pmt( {1} / {2} : {3} : {4} : 0 : 0 )");
+    if (ldd->ld.rateType == GNC_IRATE_SIMPLE)
+        loan_get_formula_internal (ldd, gstr, "pmt( {1} / {2} : {3} : {4} : 0 : 0 )");
+    else
+        loan_get_formula_internal (ldd, gstr, "pmt( {1} : {2} : {3} : 0 : 0 )");
 }
 
 
@@ -2464,7 +2471,10 @@ static
 void
 loan_get_ppmt_formula( LoanAssistantData *ldd, GString *gstr )
 {
-    loan_get_formula_internal (ldd, gstr, "ppmt( {1} / {2} : i : {3} : {4} : 0 : 0 )");
+    if (ldd->ld.rateType == GNC_IRATE_SIMPLE)
+        loan_get_formula_internal (ldd, gstr, "ppmt( {1} / {2} : i : {3} : {4} : 0 : 0 )");
+    else
+        loan_get_formula_internal (ldd, gstr, "ppmt( {1} : i : {2} : {3} : 0 : 0 )");
 }
 
 
@@ -2472,7 +2482,10 @@ static
 void
 loan_get_ipmt_formula( LoanAssistantData *ldd, GString *gstr )
 {
-    loan_get_formula_internal (ldd, gstr, "ipmt( {1} / {2} : i : {3} : {4} : 0 : 0 )");
+    if (ldd->ld.rateType == GNC_IRATE_SIMPLE)
+        loan_get_formula_internal (ldd, gstr, "ipmt( {1} / {2} : i : {3} : {4} : 0 : 0 )");
+    else
+        loan_get_formula_internal (ldd, gstr, "ipmt( {1} : i : {2} : {3} : 0 : 0 )");
 }
 
 /******************* Scheduled Transaction Functions ********************/
