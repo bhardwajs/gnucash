@@ -788,7 +788,13 @@ set (_ALL_SOURCE 1)
 set (_GNU_SOURCE 1)
 set (_POSIX_PTHREAD_SEMANTICS 1)
 set (_TANDEM_SOURCE 1)
-set (__EXTENSIONS__ 1)
+endif()
+
+# Solaris header files limit the visibility of non-standard extensions
+# unless __EXTENSIONS__ is defined.  We need some of those
+# non-standard interfaces.
+if (CMAKE_SYSTEM_NAME MATCHES "SunOS")
+add_compile_definitions(__EXTENSIONS__=1)
 endif()
 
 check_struct_has_member("struct tm" tm_gmtoff time.h have_struct_tm_gmtoff)
