@@ -1319,8 +1319,23 @@ loan_opt_page_complete( GtkAssistant *assistant, gpointer user_data )
 
 /************************************************************************/
 
-static
-void
+static void
+update_repayment_formula_cb(GtkWidget *widget, gpointer user_data)
+{
+    LoanAssistantData *ldd = static_cast<LoanAssistantData*> (user_data);
+
+    recurrenceListFree(&ldd->ld.repayment_schedule);
+    gnc_frequency_save_to_recurrence(ldd->repGncFreq,
+                                     &ldd->ld.repayment_schedule,
+                                     ldd->ld.repStartDate);
+
+    ldd->ld.repAmount = loan_get_pmt_formula(ldd);
+    if (!ldd->ld.repAmount.empty() )
+        gtk_entry_set_text(ldd->repAmtEntry, ldd->ld.repAmount.c_str());
+
+}
+
+static void
 loan_rep_prep( GtkAssistant *assistant, gpointer user_data )
 {
     LoanAssistantData *ldd = static_cast<LoanAssistantData*> (user_data);
@@ -1339,7 +1354,10 @@ loan_rep_prep( GtkAssistant *assistant, gpointer user_data )
 
     g_signal_handlers_block_by_func( ldd->repGncFreq,
                                      (gpointer) loan_rep_page_valid_cb, ldd );
-    gnc_frequency_setup_recurrence(ldd->repGncFreq, ldd->ld.repayment_schedule, ldd->ld.repStartDate);
+    gnc_frequency_setup_recurrence(ldd->repGncFreq, ldd->ld.repayment_schedule,
+                                   ldd->ld.repStartDate);
+    g_signal_connect (ldd->repGncFreq, "changed",
+                      G_CALLBACK (update_repayment_formula_cb), ldd);
     g_signal_handlers_unblock_by_func( ldd->repGncFreq,
                                        (gpointer) loan_rep_page_valid_cb, ldd );
 
@@ -1423,11 +1441,6 @@ loan_rep_page_save( GtkAssistant *assistant, gpointer user_data )
 
     ldd->ld.repIntAcct =
         gnc_account_sel_get_account( ldd->repIntToGAS );
-
-    recurrenceListFree(&ldd->ld.repayment_schedule);
-    gnc_frequency_save_to_recurrence(ldd->repGncFreq,
-                                     &ldd->ld.repayment_schedule,
-                                     ldd->ld.repStartDate);
 }
 
 /************************************************************************/
