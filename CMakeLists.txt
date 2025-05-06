@@ -50,6 +50,7 @@ include (GncGenerateGResources)
 include (MakeDistFiles)
 include (GNUInstallDirs)
 include (TestBigEndian)
+include (CheckStructHasMember)
 
 # ############################################################
 # These options are settable from the CMake command line. For example, to disable
@@ -790,6 +791,11 @@ set (_TANDEM_SOURCE 1)
 set (__EXTENSIONS__ 1)
 endif()
 
+check_struct_has_member("struct tm" tm_gmtoff time.h have_struct_tm_gmtoff)
+if (have_struct_tm_gmtoff)
+    set(HAVE_STRUCT_TM_GMTOFF 1)
+endif()
+
 if (UNIX)
 set (HAVE_CHOWN 1)
 set (HAVE_DLERROR 1)
@@ -809,7 +815,6 @@ set (HAVE_PTHREAD_PRIO_INHERIT 1)
 set (HAVE_SETENV 1)
 set (HAVE_STPCPY 1)
 set (HAVE_STRPTIME 1)
-set (HAVE_STRUCT_TM_GMTOFF 1)
 set (HAVE_TIMEGM 1)
 set (HAVE_TOWUPPER 1)
 set (GNC_PLATFORM_POSIX 1)
