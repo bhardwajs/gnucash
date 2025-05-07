@@ -106,20 +106,24 @@
 (export gnc:dump-lot)
 
 (define (list-ref-safe list elt)
-  (and (> (length list) elt)
-       (list-ref list elt)))
+  (and (pair? list)
+       (if (<= elt 0)
+           (car list)
+           (list-ref-safe (cdr list) (1- elt)))))
 
 (define (list-set-safe! l elt val)
-  (unless (list? l)
-    (set! l '()))
-  (if (> (length l) elt)
-      (list-set! l elt val)
-      (let loop ((filler (list val))
-                 (i (length l)))
-        (if (< i elt)
-            (loop (cons #f filler) (1+ i))
-            (set! l (append! l filler)))))
-  l)
+  (define (extend-tail i)
+    (if (>= i elt)
+        (list val)
+        (cons #f (extend-tail (1+ i)))))
+  (if (null? l)
+      (extend-tail 0)
+      (let loop ((i 0) (curr l))
+        (cond
+         ((not (pair? curr)) (error "list-set-safe: improper list"))
+         ((>= i elt)         (set-car! curr val) l)
+         ((null? (cdr curr)) (set-cdr! curr (extend-tail (1+ i))) l)
+         (else               (loop (1+ i) (cdr curr)))))))
 
 ;; Just for convenience. But in reports you should rather stick to the
 ;; style-info mechanism and simple plug the <gnc-monetary> into the
