@@ -86,7 +86,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-04-25 16:01+0000\n"
+"PO-Revision-Date: 2025-05-10 19:01+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "es/>\n"
@@ -6804,7 +6804,7 @@ msgstr "Seleccionar moneda"
 #: gnucash/gnome-utils/dialog-commodity.cpp:288
 #: gnucash/gtkbuilder/dialog-price.glade:168
 msgid "Cu_rrency"
-msgstr "_Moneda"
+msgstr "M_oneda"
 
 #: gnucash/gnome-utils/dialog-commodity.cpp:765
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:394
@@ -7183,7 +7183,7 @@ msgstr "No recordarme otra vez esta _sesión."
 
 #: gnucash/gnome-utils/gnc-account-sel.c:521
 msgid "Hide _Placeholder Accounts"
-msgstr "Ocultar cuentas _contenedoras"
+msgstr "_Ocultar cuentas contenedoras"
 
 #: gnucash/gnome-utils/gnc-account-sel.c:523
 msgid "Hide _Hidden Accounts"
@@ -9592,7 +9592,7 @@ msgstr ""
 "Antes de conciliar una cuenta la cual carga o remunera intereses, solicite "
 "al usuario que introduzca una transacción para la comisión de interés o "
 "remuneración. Actualmente solo se habilita para cuentas de Banca, Crédito, "
-"Fondo, Activo, Facturaciones Pendientes, Liquidables y Pasivo."
+"Fondo, Activo, Facturaciones Pendientes, Acreedor y Pasivo."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.reconcile.gschema.xml.in:15
 msgid "Prompt for credit card payment"
@@ -10004,8 +10004,8 @@ msgstr ""
 #: gnucash/gtkbuilder/dialog-preferences.glade:1761
 msgid "Delete old log/backup files after this many days (0 = never)."
 msgstr ""
-"Borrar archivos antiguos de bitácora/respaldo después de los días indicados "
-"(0 = nunca)."
+"Borra archivos de bitácora/respaldo antiguos tras la cantidad de días "
+"indicados (0 = nunca)."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:85
 #: gnucash/gtkbuilder/dialog-preferences.glade:1779
@@ -10015,21 +10015,21 @@ msgstr "No borrar archivos de bitácora/respaldo."
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:90
 msgid "Delete old log/backup files after this many days (0 = never)"
 msgstr ""
-"Borrar archivos antiguos de bitácora/respaldo después de los días indicados "
-"(0 = nunca)"
+"Borrar archivos de bitácora/respaldo antiguos tras los días indicados (0 = "
+"nunca)"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:91
 msgid ""
 "This setting specifies the number of days after which old log/backup files "
 "will be deleted (0 = never)."
 msgstr ""
-"Este parámetro especifica qué cantidad de días tras cuales archivos de "
-"bitácora/respaldo antiguos serán borrados (0 = nunca)."
+"Este parámetro especifica qué cantidad de días tras los cuales los archivos "
+"de bitácora/respaldo antiguos serán borrados (0 = nunca)."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:95
 #: gnucash/gtkbuilder/dialog-preferences.glade:656
 msgid "Don't sign reverse any accounts."
-msgstr "No invertir el signo de ninguna cuenta."
+msgstr "No revertir el signo de ninguna cuenta."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:96
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:101
@@ -10055,8 +10055,8 @@ msgid ""
 "Sign reverse balances on the following: Credit Card, Payable, Liability, "
 "Equity, and Income."
 msgstr ""
-"Invertir el signo de balances de las siguientes: Tarjeta Crediticia, "
-"Liquidable, Pasivo, Patrimonio e Ingresos."
+"Signo de balances inversos de lo siguiente: Tarjeta Crediticia, Acreedor, "
+"Pasivo, Patrimonio e Ingresos."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:105
 #: gnucash/gtkbuilder/dialog-preferences.glade:694
@@ -10322,7 +10322,7 @@ msgstr "Representa las lengüetas de anotaciones al suelo de la ventana."
 #: gnucash/gtkbuilder/dialog-preferences.glade:3499
 msgid "Display the notebook tabs at the left of the window."
 msgstr ""
-"Representa las lengüetas de anotaciones en la parte izquierda de la ventana."
+"Exhibe las lengüetas de anotaciones en la parte izquierda de la ventana."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:210
 #: gnucash/gtkbuilder/dialog-preferences.glade:3518
@@ -10426,7 +10426,7 @@ msgstr ""
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:257
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:258
 msgid "Automatically raise the list of accounts or actions during input"
-msgstr "Auto-Elevar el listado de cuentas u operaciones durante entrada"
+msgstr "Auto-elevar el listado de cuentas u operaciones durante entrada"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:262
 msgid "Move to Transfer field when memorised transaction auto filled"
@@ -10945,7 +10945,7 @@ msgstr ""
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:49
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:182
 msgid "Edit account payable/accounts receivable register"
-msgstr "Edita registro de cuenta liquidable / cuentas ingresable"
+msgstr "Edita registro de cuenta acreedor / cuentas ingresable"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:50
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:183
@@ -10954,9 +10954,9 @@ msgid ""
 "accounts receivable account. These account types are reserved for the "
 "business features and should rarely be manipulated manually."
 msgstr ""
-"Este diálogo se presenta antes de permitirle editar una cuenta liquidable/"
-"ingreso pendientes. Estos tipos de cuenta están reservados para "
-"características de negocio y raramente deberían modificarse manualmente."
+"Este diálogo se presenta antes de permitirle editar una cuenta acreedor/"
+"ingreso futuro. Estos tipos de cuenta están reservados para características "
+"de negocio y raramente deberían modificarse manualmente."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:54
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:187
@@ -11332,8 +11332,8 @@ msgid ""
 "This setting controls whether the given column will be visible in the view. "
 "TRUE means visible, FALSE means hidden."
 msgstr ""
-"Este parámetro controla si la columna dada no será visible en la vista. "
-"CIERTO significa visible, FALSO significa oculto."
+"Este parámetro controla si la columna dada será visible en la vista. CIERTO "
+"significa visible, FALSO significa oculto."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.gschema.xml.in:10
 msgid "Width of this column"
@@ -11877,7 +11877,7 @@ msgstr "<b>Miscelánea</b>"
 
 #: gnucash/gtkbuilder/assistant-csv-price-import.glade:841
 msgid "<b>Commodity From</b>"
-msgstr "<b>Materia Prima</b>"
+msgstr "<b>Materia Prima Origen</b>"
 
 #: gnucash/gtkbuilder/assistant-csv-price-import.glade:886
 #: gnucash/import-export/csv-imp/gnc-imp-props-price.cpp:56
@@ -12805,7 +12805,7 @@ msgid ""
 "these transactions are assigned to the 'Unspecified' account in GnuCash. If "
 "you select a different account, it will be remembered for future QIF files."
 msgstr ""
-"Ficheros QIF descargados desde bancos y otras entidades financieras tal vez "
+"Archivos QIF descargados desde bancos y otras entidades financieras tal vez "
 "no tengan información acerca de Cuentas y Categorías que las permitiría ser "
 "asignadas correctamente a cuentas GnuCash.\n"
 "\n"
@@ -12899,7 +12899,7 @@ msgstr "Todos los campos deben ser completados para continuar…"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:1051
 msgid "Tradable commodities"
-msgstr "Accións comerciables"
+msgstr "Materias primas comerciables"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:1127
 msgid "_Start Import"
@@ -13060,7 +13060,7 @@ msgstr "Nuevo _precio"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:211
 msgid "Currenc_y"
-msgstr "M_oneda"
+msgstr "_Moneda"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:241
 msgid "Stock Split Details"
@@ -13112,7 +13112,7 @@ msgstr "<b>Cuenta de _Activos</b>"
 #. Dialog title for the remains of a stock split
 #: gnucash/gtkbuilder/assistant-stock-split.glade:403
 msgid "Cash In Lieu"
-msgstr "Remanente de División de Acción"
+msgstr "Efectivo Remanente"
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:413
 msgid ""
@@ -13174,7 +13174,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:195
 msgid "Transaction Type"
-msgstr "Tipo de transacción"
+msgstr "Tipo de Transacción"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:248
 msgid "Previous Balance"
@@ -13182,7 +13182,7 @@ msgstr "Balance previo"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:312
 msgid "Stock Amount"
-msgstr "Cantidad de acciones"
+msgstr "Cantidad de mercancía"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:329
 msgid "Enter the value of the shares."
@@ -13190,11 +13190,11 @@ msgstr "Introduzca el valor de las acciones."
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:404
 msgid "_Stock Value"
-msgstr "_Valor de la acción"
+msgstr "_Valor de mercancía"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:425
 msgid "Stock Value"
-msgstr "Valor de la acción"
+msgstr "Valor de mercancía"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:442
 msgid ""
@@ -13203,8 +13203,8 @@ msgid ""
 "brokerage fees associated with this transaction."
 msgstr ""
 "En esta página, introduzca la cuenta del activo, y la cantidad monetaria "
-"recibida/gastada. Puede ser diferente de valor de las acciones de la página "
-"anterior, si hay comisiones de corretaje asociadas a esta transacción."
+"recibida/gastada. Puede ser diferente de valor de las mercancías de la "
+"página anterior, si hay comisiones de corretaje asociadas a esta transacción."
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:493
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:538
@@ -13242,7 +13242,7 @@ msgstr "Comisiones"
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:629
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1065
 msgid "Brokerage Fees"
-msgstr "Comisión del Corretaje"
+msgstr "Comisiones del Corretaje"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:641
 msgid "Capitalize brokerage fees into stock account?"
@@ -13256,7 +13256,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:756
 msgid "Dividend Account"
-msgstr "Cuenta de dividendos"
+msgstr "Cuenta de dividendo"
 
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:795
 msgid ""
@@ -13312,7 +13312,7 @@ msgstr "Codificación predeterminada"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:136
 msgid "Convert the file"
-msgstr "Convertir el fichero"
+msgstr "Convertir el archivo"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:145
 msgid "finish placeholder"
@@ -13320,7 +13320,7 @@ msgstr "final de marcador"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:150
 msgid "Finish GnuCash Datafile Import"
-msgstr "Finalizar la importación de fichero de datos GnuCash"
+msgstr "Finalizar la importación de archivo de datos GnuCash"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:163
 msgid "Edit the list of encodings"
@@ -13336,7 +13336,7 @@ msgstr "<b>_Codificaciones personales</b>"
 
 #: gnucash/gtkbuilder/assistant-xml-encoding.glade:408
 msgid "<b>_Selected encodings</b>"
-msgstr "<b>_Codificaciones seleccionadas</b>"
+msgstr "<b>Codificaciones _seleccionadas</b>"
 
 #: gnucash/gtkbuilder/business-prefs.glade:22
 #: gnucash/gtkbuilder/dialog-account-picker.glade:8
@@ -13419,7 +13419,7 @@ msgstr "<b>Facturas</b>"
 
 #: gnucash/gtkbuilder/business-prefs.glade:125
 msgid "Not_ify when due"
-msgstr "_Notificar cuando venza"
+msgstr "Not_ificar cuando venza"
 
 #: gnucash/gtkbuilder/business-prefs.glade:131
 #: gnucash/gtkbuilder/business-prefs.glade:208
@@ -13478,8 +13478,7 @@ msgstr "Cuantos días de antelación para avisar sobre Cargos que van a vencer."
 
 #: gnucash/gtkbuilder/business-prefs.glade:288
 msgid "How many days in the future to warn about Invoices coming due."
-msgstr ""
-"Cuantos días de antelación para avisar sobre Facturas que van a vencer."
+msgstr "Cuantos días de antelación para avisar sobre Facturas que van a vencer."
 
 #: gnucash/gtkbuilder/business-prefs.glade:300
 msgid "_Days in advance"
@@ -13607,7 +13606,7 @@ msgstr "_Predeterminado"
 #: gnucash/gtkbuilder/dialog-account.glade:954
 #: gnucash/report/reports/standard/account-summary.scm:116
 msgid "Account Type"
-msgstr "Familia de Cuenta"
+msgstr "Tipo de Cuenta"
 
 #: gnucash/gtkbuilder/dialog-account.glade:968
 msgid "Show _hidden accounts"
@@ -13632,7 +13631,7 @@ msgstr "Muestra cuentas que tengan un valor total a cero."
 # clase
 #: gnucash/gtkbuilder/dialog-account.glade:1067
 msgid "Use Commodity Value"
-msgstr "Emplear Valor Mercantil"
+msgstr "Emplear Valor de Producto"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1121
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:23
@@ -13759,7 +13758,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/dialog-account.glade:1577
 msgid "Ta_x related"
-msgstr "Imposición _específico"
+msgstr "Imposición _específica"
 
 #. Translators: use the same words here as in 'Ta_x Report Options'.
 #: gnucash/gtkbuilder/dialog-account.glade:1582
@@ -13809,11 +13808,11 @@ msgstr ""
 "Si un valor está presente, un indicador puede ser mostrado en la lista de "
 "cuentas cuando el balance a día de hoy sea menor que este valor.\n"
 "\n"
-"e.g.\n"
+"p.e.\n"
 "Un balance hoy de -100 mostrará el icono si el límite se establece en -90\n"
 "Un balance hoy de 90 mostrará el icono si el límite se establece en 100\n"
 "\n"
-"Deje el campo vacío para no tener ningún aviso."
+"Deje el apunte vacío para no tener ningún aviso."
 
 #: gnucash/gtkbuilder/dialog-account.glade:1692
 msgid "_Lower Balance Limit"
@@ -13821,11 +13820,11 @@ msgstr "_Límite inferior de saldo"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1718
 msgid "_Include sub accounts"
-msgstr "_Incluir Subcuentas"
+msgstr "_Incluir subcuentas"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1755
 msgid "More Properties"
-msgstr "Más p_ropiedades"
+msgstr "Más propiedades"
 
 #: gnucash/gtkbuilder/dialog-account.glade:1781
 msgid "<b>Balance Information</b>"
@@ -13879,7 +13878,7 @@ msgid ""
 "generated code"
 msgstr ""
 "Esto remplazará el campo de código de cuenta de cada subcuenta con un código "
-"generado"
+"nuevamente generado"
 
 #: gnucash/gtkbuilder/dialog-account-picker.glade:34
 msgid "_Show documentation"
@@ -13899,7 +13898,7 @@ msgid ""
 "When the status is not specified in a QIF file, the transactions are marked "
 "as cleared."
 msgstr ""
-"Cuando el estado no está especificado dentro de un fichero QIF, las "
+"Cuando el estado no está especificado dentro de un archivo QIF, las "
 "transacciones están marcadas como punteado."
 
 #: gnucash/gtkbuilder/dialog-account-picker.glade:91
@@ -13911,7 +13910,7 @@ msgid ""
 "When the status is not specified in a QIF file, the transactions are marked "
 "as not cleared."
 msgstr ""
-"Cuando el estado no sea especificado en un fichero QIF, las transacciones se "
+"Cuando el estado no sea especificado en un archivo QIF, las transacciones se "
 "marcan como no punteadas."
 
 #: gnucash/gtkbuilder/dialog-account-picker.glade:113
@@ -13919,7 +13918,7 @@ msgid ""
 "Default transaction status (overridden by the status given by the QIF file)"
 msgstr ""
 "Estado de transacción predeterminada (invalidado por el estado dado por el "
-"fichero QIF)"
+"archivo QIF)"
 
 #: gnucash/gtkbuilder/dialog-account-picker.glade:159
 #: gnucash/gtkbuilder/dialog-import.glade:12
@@ -13932,7 +13931,7 @@ msgstr "_Seleccionar o añadir una cuenta:"
 
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:7
 msgid "Import transactions from text file"
-msgstr "Importar transacciones desde el fichero de texto"
+msgstr "Importar transacciones desde el archivo de texto"
 
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:123
 #: gnucash/gtkbuilder/dialog-customer-import-gui.glade:126
@@ -13983,7 +13982,7 @@ msgstr "4. Vista previa"
 
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:374
 msgid "Open imported documents in tabs"
-msgstr "Abre documentos importados en casillas"
+msgstr "Abre documentos importados en pestañas"
 
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:392
 msgid "Open not yet posted documents in tabs"
@@ -14030,8 +14029,7 @@ msgstr ""
 # post -> límite
 #: gnucash/gtkbuilder/dialog-billterms.glade:155
 msgid "The number of days to pay the bill after the post date."
-msgstr ""
-"El número de días para liquidar el cargo posterior de la fecha vencida."
+msgstr "El número de días para liquidar el cargo posterior de la fecha vencida."
 
 #: gnucash/gtkbuilder/dialog-billterms.glade:212
 msgid "Due Day"
@@ -14039,11 +14037,11 @@ msgstr "Día de vencimiento"
 
 #: gnucash/gtkbuilder/dialog-billterms.glade:225
 msgid "Discount Day"
-msgstr "Día de Descuento"
+msgstr "Día de descuento"
 
 #: gnucash/gtkbuilder/dialog-billterms.glade:251
 msgid "Cutoff Day"
-msgstr "Día Límite"
+msgstr "Día límite"
 
 #: gnucash/gtkbuilder/dialog-billterms.glade:265
 msgid ""
@@ -14150,7 +14148,7 @@ msgstr "Cierra esta ventana"
 #: gnucash/gtkbuilder/dialog-billterms.glade:797
 #: gnucash/gtkbuilder/dialog-billterms.glade:975
 msgid "Cancel your changes"
-msgstr "Cancelar los cambios"
+msgstr "Cancelar sus cambios"
 
 #: gnucash/gtkbuilder/dialog-billterms.glade:815
 #: gnucash/gtkbuilder/dialog-billterms.glade:993
@@ -14163,7 +14161,7 @@ msgstr "El nombre interno de las Condiciones de Cargo Pendiente."
 
 #: gnucash/gtkbuilder/dialog-billterms.glade:1072
 msgid "<b>New Billing Term</b>"
-msgstr "<b>Creación de Condición de Cargo</b>"
+msgstr "<b>Creación de Cargo Pendiente</b>"
 
 #: gnucash/gtkbuilder/dialog-billterms.glade:1120
 #: gnucash/gtkbuilder/dialog-report.glade:780
@@ -14173,7 +14171,7 @@ msgstr "_Nombre"
 
 #: gnucash/gtkbuilder/dialog-book-close.glade:98
 msgid "Income Total"
-msgstr "Ingreso Total"
+msgstr "Ingreso total"
 
 #: gnucash/gtkbuilder/dialog-book-close.glade:110
 msgid "Expense Total"
@@ -14181,7 +14179,7 @@ msgstr "Gasto total"
 
 #: gnucash/gtkbuilder/dialog-choose-owner.glade:7
 msgid "Choose Owner Dialog"
-msgstr "Escoja Diálogo del Titular"
+msgstr "Escoger Diálogo del Titular"
 
 #: gnucash/gtkbuilder/dialog-commodities.glade:8
 #: gnucash/gtkbuilder/dialog-commodities.glade:27
@@ -14195,7 +14193,7 @@ msgstr "Mostrar Monedas Nacionales"
 
 #: gnucash/gtkbuilder/dialog-commodities.glade:126
 msgid "Add a new commodity."
-msgstr "Agregar una materia prima nueva."
+msgstr "Agrega una materia prima nueva."
 
 #: gnucash/gtkbuilder/dialog-commodities.glade:144
 msgid "Remove the current commodity."
@@ -14210,8 +14208,8 @@ msgid ""
 "Enter the full name of the commodity. Example: Cisco Systems Inc., or Apple "
 "Computer, Inc."
 msgstr ""
-"Introduzca el nombre de las acciones. Ejemplo: Cisco Sytems Inc., o Apple "
-"Computer Inc."
+"Introduzca el nombre de las materias primas. Ejemplo: Cisco Sytems Inc., o "
+"Apple Computer Inc."
 
 #: gnucash/gtkbuilder/dialog-commodity.glade:138
 msgid ""
@@ -14221,8 +14219,8 @@ msgid ""
 msgstr ""
 "Introduzca el símbolo etiquetado para la materia prima (p.e. CSCO o AAPL). "
 "Si está obteniendo las cotizaciones por conexión, este campo debe cotejar "
-"exactamente al símbolo abreviado empleado por el origen de la cotización "
-"(incluyendo mayúsculas/minúsculas)."
+"exactamente al símbolo abreviado empleado por el origen de la cotización ("
+"incluyendo mayúsculas/minúsculas)."
 
 #: gnucash/gtkbuilder/dialog-commodity.glade:156
 msgid ""
@@ -14259,21 +14257,21 @@ msgid ""
 "Enter a display symbol. This can safely be left blank, in which case the "
 "ticker symbol or the currency ISO code will be used."
 msgstr ""
-"Introduzca un símbolo para ver. Esto con seguridad puede dejarse en blanco, "
-"en cuyo caso el símbolo del cuenta o el código ISO de la moneda serán "
-"utilizados."
+"Introduzca un símbolo para exhibir. Esto con seguridad puede dejarse en "
+"blanco, en cuyo caso el símbolo del cuenta o el código ISO de la moneda "
+"serán utilizados."
 
 #: gnucash/gtkbuilder/dialog-commodity.glade:335
 msgid "Type of quote source"
-msgstr "Tecleo de cotización origen"
+msgstr "Tipo de cotización origen"
 
 #: gnucash/gtkbuilder/dialog-commodity.glade:348
 msgid "_Display symbol"
-msgstr "_Representar símbolo"
+msgstr "E_xhibir símbolo"
 
 #: gnucash/gtkbuilder/dialog-commodity.glade:363
 msgid "Time_zone"
-msgstr "Zona_horaria"
+msgstr "_Zona horaria"
 
 #: gnucash/gtkbuilder/dialog-commodity.glade:374
 msgid "_Unknown"
@@ -19391,8 +19389,7 @@ msgstr "Fila %d, factura %s/%u: cuenta %s no existe.\n"
 #, c-format
 msgid "Row %d, invoice %s/%u: account %s is not of type Accounts Payable.\n"
 msgstr ""
-"Fila %d, factura %s/%u: cuenta %s no es de tipo Cuentas Liquidables "
-"Futuras.\n"
+"Fila %d, factura %s/%u: cuenta %s no es de tipo de Cuentas Acreedoras.\n"
 
 #: gnucash/import-export/bi-import/dialog-bi-import.c:426
 #, c-format
@@ -21696,7 +21693,7 @@ msgstr "Comisión"
 #: gnucash/register/ledger-core/split-register.c:2625
 #: libgnucash/engine/Account.cpp:179
 msgid "Rebate"
-msgstr "Descuento"
+msgstr "Rebaja"
 
 #: gnucash/register/ledger-core/split-register.c:2626
 msgid "Paycheck"
@@ -25621,12 +25618,12 @@ msgid ""
 "liability, A/Payable or A/Receivable accounts, a split to a tax account, e."
 "g. Income:Sales -$1000, A/Receivable $1100, Liability:GST on Sales -$100."
 msgstr ""
-"Este boletín es útil para calcular imposiciones periódicas de negocios "
-"futuras de liquidaciones / recibos desde autoridades. Desde «Opciones de "
-"edición de boletín», elija sus cuentas de negocios para cuentas de ventas y "
-"compras. Cada transacción puede contener, en adición a las cuentas abonables/"
-"ingresables o cuentas bancarias, un desglose a una cuenta imponible, p. e. "
-"Ingreso:Venta -1000€, Pasivo:TIV en Ventas -100€."
+"Este boletín es útil para calcular imposiciones periódicas acreedoras / "
+"futuras de negocios desde autoridades. Desde «Opciones de edición de boletín»"
+", elija sus cuentas de negocios para cuentas de ventas y compras. Cada "
+"transacción puede contener, en adición a las cuentas acreedoras/ingresables "
+"o cuentas bancarias, un desglose a una cuenta imponible, p. e. Ingreso:Venta "
+"-1000€, Pasivo:TIV en Ventas -100€."
 
 #: gnucash/report/reports/standard/income-gst-statement.scm:60
 msgid ""
@@ -25719,12 +25716,12 @@ msgstr ""
 #: gnucash/report/reports/standard/income-gst-statement.scm:121
 #: gnucash/report/reports/standard/income-gst-statement.scm:360
 msgid "Tax payable"
-msgstr "Liquidación impositiva"
+msgstr "Acreedora impositiva"
 
 #: gnucash/report/reports/standard/income-gst-statement.scm:122
 msgid "Display the tax payable (tax on sales - tax on purchases)"
 msgstr ""
-"Representar la imposición liquidable (imposiciones sobre ventas - "
+"Representar la imposición acreedora (imposiciones sobre ventas - "
 "adquisiciones)"
 
 #: gnucash/report/reports/standard/income-gst-statement.scm:136
@@ -26493,11 +26490,11 @@ msgstr "¿Representar los subtotales?"
 
 #: gnucash/report/reports/standard/invoice.scm:454
 msgid "Payable to"
-msgstr "Liquidable a nombre de"
+msgstr "Acreedora a nombre de"
 
 #: gnucash/report/reports/standard/invoice.scm:455
 msgid "Display the Payable to: information."
-msgstr "Representa Liquidable a: de la información."
+msgstr "Representa información de Acreedor a:."
 
 #: gnucash/report/reports/standard/invoice.scm:461
 msgid "Payable to string"
@@ -26511,7 +26508,7 @@ msgstr ""
 
 #: gnucash/report/reports/standard/invoice.scm:463
 msgid "Please make all checks payable to"
-msgstr "Cree todos los cheques liquidable a"
+msgstr "Cree todos los cheques acreedores a"
 
 #: gnucash/report/reports/standard/invoice.scm:466
 msgid "Company contact"
@@ -26839,15 +26836,14 @@ msgid ""
 "No valid A/Payable or A/Receivable account found. Please ensure valid AP/AR "
 "account exists."
 msgstr ""
-"Ninguna cuenta válida C/Abonable o C/Recibo Futuro encontrada. Asegúrese que "
+"Ninguna cuenta válida C/Acreedor o C/Recibo Futuro encontrada. Asegúrese que "
 "exista una cuenta CA/CR."
 
 #: gnucash/report/reports/standard/new-aging.scm:64
 msgid ""
 "A/Payable or A/Receivable accounts exist but have no suitable transactions."
 msgstr ""
-"Existen Cuentas C/Liquidable o C/Por Cobrar pero no hay transacciones "
-"apropiadas."
+"Existen Cuentas C/Acreedor o C/Futuro pero no hay transacciones apropiadas."
 
 #: gnucash/report/reports/standard/new-aging.scm:89
 msgid "Sort companies by."
@@ -26942,7 +26938,7 @@ msgstr "Dirección de transporte"
 
 #: gnucash/report/reports/standard/new-aging.scm:410
 msgid "Payable Aging"
-msgstr "Previsión de Liquidación Pendiente"
+msgstr "Previsión de Acreedor"
 
 #: gnucash/report/reports/standard/new-aging.scm:419
 msgid "Receivable Aging"
@@ -28049,7 +28045,7 @@ msgstr "Cuentas Cobrables"
 
 #: gnucash/report/report-utilities.scm:212
 msgid "Accounts Payable"
-msgstr "Cuentas Abonables"
+msgstr "Cuentas Acreedor"
 
 #: gnucash/report/report-utilities.scm:213
 msgid "Credit Lines"
@@ -31312,7 +31308,7 @@ msgstr "C/Por cobrar"
 # Cuenta / Account → C / A
 #: libgnucash/engine/Account.cpp:4300
 msgid "A/Payable"
-msgstr "C/Liquidable"
+msgstr "C/Acreedor"
 
 #: libgnucash/engine/Account.cpp:4301
 msgid "Root"
