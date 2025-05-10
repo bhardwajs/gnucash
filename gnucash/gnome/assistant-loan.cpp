@@ -1339,6 +1339,13 @@ static void
 loan_rep_prep( GtkAssistant *assistant, gpointer user_data )
 {
     LoanAssistantData *ldd = static_cast<LoanAssistantData*> (user_data);
+    static gulong date_changed_handler_id = 0;
+
+    if (date_changed_handler_id)
+    {
+        g_signal_handler_disconnect(ldd->repGncFreq, date_changed_handler_id);
+        date_changed_handler_id = 0;
+    }
 
     ldd->ld.repAmount = loan_get_pmt_formula(ldd);
 
@@ -1356,8 +1363,8 @@ loan_rep_prep( GtkAssistant *assistant, gpointer user_data )
                                      (gpointer) loan_rep_page_valid_cb, ldd );
     gnc_frequency_setup_recurrence(ldd->repGncFreq, ldd->ld.repayment_schedule,
                                    ldd->ld.repStartDate);
-    g_signal_connect (ldd->repGncFreq, "changed",
-                      G_CALLBACK (update_repayment_formula_cb), ldd);
+    date_changed_handler_id = g_signal_connect (ldd->repGncFreq, "changed",
+                                                G_CALLBACK (update_repayment_formula_cb), ldd);
     g_signal_handlers_unblock_by_func( ldd->repGncFreq,
                                        (gpointer) loan_rep_page_valid_cb, ldd );
 
