@@ -22,8 +22,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-05-05 12:13+0000\n"
-"Last-Translator: Leo Moons <Leo.Moons@proximus.be>\n"
+"PO-Revision-Date: 2025-05-05 14:01+0000\n"
+"Last-Translator: BlueRains <lu@schoevaars.eu>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gnucash/gnucash/nl/"
 ">\n"
 "Language: nl\n"
@@ -10303,7 +10303,7 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:267
 msgid "\"Jump\" behaviour when there are multiple splits"
-msgstr "\"Spring\" gedrag als er meerere boekregels zijn"
+msgstr "\"Spring\" gedrag wanneer er meerere boekregels zijn"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:268
 msgid ""
@@ -15943,15 +15943,19 @@ msgstr ""
 msgid ""
 "Use the first split with the largest value to determine the other account."
 msgstr ""
+"Gebruik de eerste boekregel met de grootste waarde om de andere rekening te "
+"bepalen."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
 msgid "Go to the first split with the _smallest value"
-msgstr "Naar boekregel met de _kleinste waarde"
+msgstr "Naar eerste boekregel met de _kleinste waarde"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2638
 msgid ""
 "Use the first split with the smallest value to determine the other account."
 msgstr ""
+"Gebruik de eerste boekregel met de kleinste waarde om de andere rekening te "
+"bepalen."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2665
 msgid "<b>Reconciling</b>"
