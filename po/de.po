@@ -18,7 +18,7 @@
 # K. Herbert <herbert.ka@mailo.com>, 2020.
 # Milo Ivir <mail@milotype.de>, 2020.
 # Alois Spitzbart <spitz234@hotmail.com>, 2020, 2021.
-# Christian Wehling <christian.wehling@web.de>, 2020-2024.
+# Christian Wehling <christian.wehling@web.de>, 2020-2024, 2025.
 # Marco Zietzling <marco.zietzling@gmail.com>, 2020-2021.
 # Christian Stimming <christian@cstimming.de>, 2021, 2023.
 # Julian Heinzel <jeinzi@gmx.de>, 2021.
@@ -40,11 +40,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-03-23 19:01+0000\n"
-"Last-Translator: Alois Levermann <alois@levermann.xyz>\n"
+"PO-Revision-Date: 2025-05-05 20:01+0000\n"
+"Last-Translator: Christian Wehling <christian.wehling@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "de/>\n"
 "Language: de\n"
@@ -52,7 +52,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -4133,10 +4133,9 @@ msgstr "Jetzt"
 
 #: gnucash/gnome/dialog-tax-info.c:871
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:401
-#, fuzzy, c-format
-#| msgid "Accounts Selected:"
+#, c-format
 msgid "Accounts Selected: %d"
-msgstr "Gewählte Konten:"
+msgstr "Gewählte Konten: %d"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
@@ -16062,17 +16061,15 @@ msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
-msgstr ""
+msgstr "_Nicht springen"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2599
-#, fuzzy
-#| msgid "Do not show"
 msgid "Do nothing."
-msgstr "Nicht anzeigen"
+msgstr "Nicht springen."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2612
 msgid "Go to the first split with the _largest value"
-msgstr ""
+msgstr "Geh zum ersten Buchungsteil mit dem _größten Wert"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2618
 msgid ""
@@ -16080,10 +16077,8 @@ msgid ""
 msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
-#, fuzzy
-#| msgid "Move to the split at the specified date."
 msgid "Go to the first split with the _smallest value"
-msgstr "Geht zum Buchungsteil mit dem gewählten Datum."
+msgstr "Geh zum ersten Buchungsteil mit dem _kleinsten Wert"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2638
 msgid ""
