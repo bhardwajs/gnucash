@@ -15,14 +15,15 @@
 # Stephan Paternotte <stephan@paternottes.net>, 2023, 2024, 2025.
 # Rene Lambers <jbh.lambers@gmail.com>, 2023.
 # Leo Moons <Leo.Moons@proximus.be>, 2025.
+# BlueRains <lu@schoevaars.eu>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-04-09 22:40+0000\n"
-"Last-Translator: Leo Moons <Leo.Moons@proximus.be>\n"
+"PO-Revision-Date: 2025-05-05 12:13+0000\n"
+"Last-Translator: BlueRains <lu@schoevaars.eu>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gnucash/gnucash/nl/"
 ">\n"
 "Language: nl\n"
@@ -30,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "X-Bugs: Report translation errors to https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 
@@ -5293,12 +5294,16 @@ msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
 msgstr ""
+"Deze boeking gaat over meer dan één andere rekeningen. Selecteer een "
+"specifieke boekregel om naar die rekening te springen."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
 "This transaction only involves the current account so there is no other "
 "account to jump to."
 msgstr ""
+"Deze boeking gaat alleen over de huidige rekening, dus er is geen andere "
+"rekening om naartoe te gaan."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5246
 #, c-format
@@ -10298,13 +10303,15 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:267
 msgid "\"Jump\" behaviour when there are multiple splits"
-msgstr ""
+msgstr "\"Spring\" gedrag als er meerere boekregels zijn"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:268
 msgid ""
 "Select how the \"Jump\" operation should behave when a transaction has "
 "multiple splits."
 msgstr ""
+"Selecteer hoe de \"Spring\" actie zich moet gedragen als een boeking "
+"meerdere boekregels heeft."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:272
 msgid "Create a new window for each new register"
@@ -11031,10 +11038,8 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:129
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:262
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are multiple other accounts"
-msgstr "Naar andere rekening _gaan"
+msgstr "Spring als er meerdere andere rekeningen zijn"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:130
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:263
@@ -11046,10 +11051,8 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:134
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:267
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are no other accounts"
-msgstr "Naar andere rekening _gaan"
+msgstr "Spring wanneer er geen andere rekeningen zijn"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:135
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:268
@@ -13459,10 +13462,8 @@ msgstr "Filteren op…"
 
 #: gnucash/gtkbuilder/dialog-account.glade:906
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:498
-#, fuzzy
-#| msgid "Clear All"
 msgid "Clear _All"
-msgstr "Selectie opheffen"
+msgstr "_Selectie opheffen"
 
 #: gnucash/gtkbuilder/dialog-account.glade:922
 msgid "_Default"
@@ -15920,21 +15921,19 @@ msgstr "Na auto-aanvullen naar veld Tegenrekening springen."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2581
 msgid "<b>Jump action for multiple splits</b>"
-msgstr ""
+msgstr "<b>Spring actie voor meerdere boekregels</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2583
 msgid "Transaction jump action when there are more than two splits."
-msgstr ""
+msgstr "Rekening spring actie als er meer dan twee boekregels zijn."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
 msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2599
-#, fuzzy
-#| msgid "Do not show"
 msgid "Do nothing."
-msgstr "Niet weergeven"
+msgstr "Doe niets."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2612
 msgid "Go to the first split with the _largest value"
@@ -15946,10 +15945,8 @@ msgid ""
 msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
-#, fuzzy
-#| msgid "Move to the split at the specified date."
 msgid "Go to the first split with the _smallest value"
-msgstr "Naar boekregel op de aangegeven datum gaan."
+msgstr "Naar boekregel met de _kleinste waarde"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2638
 msgid ""
@@ -26076,7 +26073,7 @@ msgstr "Prijs niet gevonden"
 
 #: gnucash/report/reports/standard/investment-lots.scm:1230
 msgid "split"
-msgstr "deling"
+msgstr "boekregel"
 
 #: gnucash/report/reports/standard/investment-lots.scm:1351
 #, scheme-format
