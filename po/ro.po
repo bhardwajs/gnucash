@@ -8,14 +8,15 @@
 # Daniel Șerbănescu <daniel@serbanescu.dk>, 2020.
 # Dan Purice <dan.purice@outlook.com>, 2021.
 # Andrea Andre <andrea.tsg19@slmail.me>, 2023.
+# TheRealOne78 <bajcsielias78@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2023-11-22 11:04+0000\n"
-"Last-Translator: Andrea Andre <andrea.tsg19@slmail.me>\n"
+"PO-Revision-Date: 2025-04-27 13:01+0000\n"
+"Last-Translator: TheRealOne78 <bajcsielias78@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "ro/>\n"
 "Language: ro\n"
@@ -24,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2\n"
+"X-Generator: Weblate 5.12-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -50,6 +51,9 @@ msgid ""
 "Tried to look up an undefined date symbol '~a'. This report was probably "
 "saved by a later version of GnuCash. Defaulting to today."
 msgstr ""
+"S-a încercat căutarea unui simbol de dată nedefinit '~a'. Acest raport a "
+"fost probabil salvat de o versiune mai nouă de GnuCash. Se utilizează data "
+"de astăzi ca valoare implicită."
 
 #: bindings/guile/date-utilities.scm:715
 #: gnucash/gnome-utils/gnc-period-select.c:70
@@ -3571,7 +3575,7 @@ msgstr ""
 #: gnucash/report/reports/standard/new-owner-report.scm:305
 #: gnucash/report/reports/standard/new-owner-report.scm:699
 msgid "Pre-Payment"
-msgstr "Avans"
+msgstr "Plată în avans"
 
 #: gnucash/gnome/dialog-payment.c:1004
 msgid ""
@@ -3630,7 +3634,7 @@ msgstr ""
 #: gnucash/gnome-utils/gnc-tree-view-account.c:858
 #: gnucash/report/trep-engine.scm:158
 msgid "Cleared"
-msgstr "Decontate"
+msgstr "Liber"
 
 #: gnucash/gnome/dialog-payment.c:1595
 #: gnucash/gnome/gnc-plugin-page-register.cpp:3300
@@ -4882,10 +4886,8 @@ msgid "Unpost"
 msgstr "Depostează"
 
 #: gnucash/gnome/gnc-plugin-page-invoice.cpp:291
-#, fuzzy
-#| msgid "Day"
 msgid "Pay"
-msgstr "Zi"
+msgstr "Plată"
 
 #: gnucash/gnome/gnc-plugin-page-owner-tree.cpp:227
 msgid "New Voucher"
@@ -5904,7 +5906,7 @@ msgstr "Nu ai selectat un proprietar"
 #: gnucash/report/reports/standard/new-owner-report.scm:99
 #: libgnucash/engine/gncOwner.c:218
 msgid "Job"
-msgstr "Funcție"
+msgstr "Lucrare"
 
 #: gnucash/gnome/search-owner.c:216
 #: gnucash/gnome-search/search-reconciled.c:175
@@ -6077,9 +6079,8 @@ msgid "_Remove"
 msgstr ""
 
 #: gnucash/gnome-search/dialog-search.c:1101
-#, fuzzy
 msgid "Order"
-msgstr "ID comandă"
+msgstr "Comandă"
 
 #: gnucash/gnome-search/dialog-search.c:1103
 #: gnucash/gtkbuilder/dialog-order.glade:421
@@ -6760,10 +6761,8 @@ msgid "Path head not set, using '%s' for relative paths"
 msgstr ""
 
 #: gnucash/gnome-utils/dialog-doclink-utils.c:425
-#, fuzzy
-#| msgid "Use Existing"
 msgid "Existing"
-msgstr "Folosește existent"
+msgstr "Existent"
 
 #: gnucash/gnome-utils/dialog-dup-trans.c:149
 msgid "You can type '+' or '-' to increment or decrement the number."
@@ -31048,7 +31047,7 @@ msgstr "Abandonează tranzacția curentă"
 
 #: gnucash/ui/gnc-plugin-page-register.ui:184
 msgid "_Void Transaction"
-msgstr ""
+msgstr "_Anulează Tranzacție"
 
 #: gnucash/ui/gnc-plugin-page-register.ui:186
 #, fuzzy
