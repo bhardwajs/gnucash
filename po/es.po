@@ -15,7 +15,7 @@
 # Luis D. Lafaurie <luis.lafaurie@tecnativa.com>, 2022.
 # Guille Lopez <willelopz@gmail.com>, 2022, 2023, 2024, 2025.
 # gallegonovato <fran-carro@hotmail.es>, 2023, 2024.
-# Jaime Marquínez Ferrándiz <jaime.marquinez.ferrandiz@fastmail.net>, 2023.
+# Jaime Marquínez Ferrándiz <jaime.marquinez.ferrandiz@fastmail.net>, 2023, 2025.
 # Francisco <fhiegom@outlook.es>, 2023.
 #
 #
@@ -87,7 +87,8 @@ msgstr ""
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
 "PO-Revision-Date: 2025-05-10 19:01+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
+"Last-Translator: Jaime Marquínez Ferrándiz "
+"<jaime.marquinez.ferrandiz@fastmail.net>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "es/>\n"
 "Language: es\n"
@@ -31397,7 +31398,6 @@ msgid "Deka Investments, DE"
 msgstr "Deka Investments, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:204
-#, fuzzy
 msgctxt "FQ Source"
 msgid "DWS, DE"
 msgstr "DWS, DE"
