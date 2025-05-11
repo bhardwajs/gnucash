@@ -693,7 +693,8 @@ endif()
 gnc_gtest_configure()
 
 # There are targets that need to build before tests will run
-add_custom_target(check
+add_custom_target(testbuild)
+add_custom_target(check DEPENDS testbuild
   COMMAND ${CMAKE_CTEST_COMMAND}
 )
 
