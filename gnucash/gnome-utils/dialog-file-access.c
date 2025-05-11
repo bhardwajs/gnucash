@@ -40,7 +40,10 @@
 
 static QofLogModule log_module = GNC_MOD_GUI;
 
-#define DEFAULT_HOST "localhost"
+/* Flatpak build blocks access to the resolver so it can't retrieve
+ * localhost's IP address.
+ */
+#define DEFAULT_HOST "127.0.0.1"
 #define DEFAULT_DATABASE PROJECT_NAME
 #define FILE_ACCESS_OPEN    0
 #define FILE_ACCESS_SAVE_AS 1
