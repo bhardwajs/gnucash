@@ -2411,6 +2411,9 @@ periods_per_year( LoanAssistantData *ldd)
             case PERIOD_YEAR:
                 ppy += 1.0 / multiplier;
                 break;
+            case PERIOD_DAY:
+                ppy = 365 / multiplier;
+                break;
             case PERIOD_WEEK:
                 ppy += 52.0 / multiplier;
                 break;
