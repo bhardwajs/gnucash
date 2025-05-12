@@ -40,8 +40,9 @@
 
 static QofLogModule log_module = GNC_MOD_GUI;
 
-/* Flatpak build blocks access to the resolver so it can't retrieve
- * localhost's IP address.
+/* MariaDB/MySQL/Postgres optimize localhost to a unix socket but
+ * flatpak won't connect to unix sockets without gymnastics default to
+ * the localhost IP to force a network connection.
  */
 #define DEFAULT_HOST "127.0.0.1"
 #define DEFAULT_DATABASE PROJECT_NAME
