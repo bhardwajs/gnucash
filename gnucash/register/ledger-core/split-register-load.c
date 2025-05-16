@@ -272,6 +272,10 @@ add_quickfill_completions (TableLayout* layout, Transaction* trans,
     for (GList *n = xaccTransGetSplitList (trans); n; n = n->next)
     {
         Split *s = n->data;
+
+        if (!xaccTransStillHasSplit (trans, s))
+            continue;
+
         gnc_quickfill_cell_add_completion (
             (QuickFillCell*) gnc_table_layout_get_cell (layout, MEMO_CELL),
             xaccSplitGetMemo (s));
