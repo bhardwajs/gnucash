@@ -342,6 +342,7 @@ Gnucash::check_finance_quote (void)
 int
 Gnucash::add_quotes (const bo_str& uri)
 {
+    int rv{};
     gnc_prefs_init ();
     qof_event_suspend();
 
@@ -365,7 +366,10 @@ Gnucash::add_quotes (const bo_str& uri)
         gnc_quote_source_set_fq_installed (quotes.version().c_str(), quote_sources);
         quotes.fetch(qof_session_get_book(session));
         if (quotes.had_failures())
+        {
             std::cerr << quotes.report_failures() << std::endl;
+            rv = 2;
+        }
     }
     catch (const GncQuoteException& err)
     {
@@ -377,7 +381,7 @@ Gnucash::add_quotes (const bo_str& uri)
 
     qof_session_destroy(session);
     qof_event_resume();
-    return 0;
+    return rv;
 }
 
 int

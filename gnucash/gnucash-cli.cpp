@@ -232,7 +232,5 @@ main(int argc, char **argv)
     boost::nowide::args a(argc, argv); // Fix arguments - make them UTF-8
 #endif
     application.parse_command_line (argc, argv);
-    application.start (argc, argv);
-
-    return 0;
+    return application.start (argc, argv);
 }
