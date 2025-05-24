@@ -107,8 +107,7 @@
       ((head . tail)
        (let ((pair (assq head nested-lst)))
          (cond
-          ((not pair) (list-cdr-set! nested-lst (1- (length nested-lst))
-                                     (path->nested-alist path newval)))
+          ((not pair) (set-cdr! (last-pair nested-lst) (path->nested-alist path newval)))
           ((null? tail) (set-cdr! pair newval))
           (else (loop (cdr pair) tail))))))))
 
