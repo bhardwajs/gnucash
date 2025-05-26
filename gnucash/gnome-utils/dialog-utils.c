@@ -770,6 +770,8 @@ gnc_dialog_run (GtkDialog *dialog, const gchar *pref_name)
     g_signal_connect(perm, "clicked", G_CALLBACK(gnc_perm_button_cb), temp);
 
     /* OK. Present the dialog. */
+    GtkWidget *button_cancel = gtk_dialog_get_widget_for_response(GTK_DIALOG(dialog), GTK_RESPONSE_CANCEL);
+    gtk_widget_grab_focus(button_cancel);
     response = gtk_dialog_run(dialog);
     if ((response == GTK_RESPONSE_NONE) || (response == GTK_RESPONSE_DELETE_EVENT))
     {
