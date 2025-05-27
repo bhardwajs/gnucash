@@ -174,8 +174,8 @@
           <td align="left"><?scm:d (qof-print-date (gncEntryGetDate entry)) ?></td>
           <td align="left" ><?scm:d (gncEntryGetDescription entry) ?></td>
           <td align="right"><?scm:d (fmtnumeric qty) ?></td>
-          <td align="right"><?scm:d (format #f "~4,2,,,'0f" (gnc-numeric-to-double each)) ?></td>
-          <td align="right" nowrap><?scm:d (format #f "~4,2,,,'0f" (gnc-numeric-to-double rval)) ?>
+          <td align="right"><?scm:d (gnc:default-price-renderer currency each) ?></td>
+          <td align="right" nowrap><?scm:d (fmtmoney currency rval) ?>
               <?scm (if tax? (begin ?>
                 &nbsp;T
               <?scm ) (begin ?>

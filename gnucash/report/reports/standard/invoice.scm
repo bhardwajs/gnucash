@@ -632,7 +632,7 @@ for styling the invoice. Please see the exported report for the CSS class names.
           (addif (price-col used-columns)
                  (gnc:make-html-table-cell/markup
                   "number-cell"
-                  (gnc:make-gnc-monetary
+                  (gnc:default-price-renderer
                    currency (if cust-doc?
                                 (gncEntryGetInvPrice entry)
                                 (gncEntryGetBillPrice entry)))))
