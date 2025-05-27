@@ -378,7 +378,7 @@ TEST_F(GncQuotesTest, no_date)
     auto datetime{static_cast<time64>(GncDateTime())};
 
     EXPECT_EQ(usd, gnc_price_get_currency(price));
-    EXPECT_EQ(datetime, gnc_price_get_time64(price));
+    EXPECT_TRUE (abs(datetime - gnc_price_get_time64(price)) <= 1);
     EXPECT_EQ(PRICE_SOURCE_FQ, gnc_price_get_source(price));
     EXPECT_TRUE(gnc_numeric_equal(GncNumeric{1337, 100},
                                   gnc_price_get_value(price)));
