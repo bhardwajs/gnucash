@@ -235,7 +235,7 @@ static QuoteSourceList single_quote_sources =
     { false, SOURCE_SINGLE, NC_("FQ Source", "YH Finance (FinanceAPI)"), "financeapi" },
 };
 
-// Finance::Quote calls these failover sources
+// Finance::Quote defines these as failover methods
 static QuoteSourceList multiple_quote_sources =
 {
     { false, SOURCE_MULTI, NC_("FQ Source", "Canada (Alphavantage, TMX)"), "canada" },
