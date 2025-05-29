@@ -201,15 +201,12 @@ static QuoteSourceList single_quote_sources =
     { false, SOURCE_SINGLE, NC_("FQ Source", "comdirect, DE"), "comdirect" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Consors Bank, DE"), "consorsbank" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Deka Investments, DE"), "deka" },
-    { false, SOURCE_SINGLE, NC_("FQ Source", "DWS, DE"), "dwsfunds" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Financial Times Funds service, GB"), "ftfunds" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Finanzpartner, DE"), "finanzpartner" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "FondsWeb, DE"), "fondsweb" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "GoldMoney precious metals"), "goldmoney" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Google Web, US Stocks"), "googleweb" },
-    { false, SOURCE_SINGLE, NC_("FQ Source", "IEX (Investors Exchange), US"), "iexcloud" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Market Watch"), "marketwatch" },
-    { false, SOURCE_SINGLE, NC_("FQ Source", "Morningstar, AU"), "morningstarau" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Morningstar, CH"), "morningstarch" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Morningstar, GB"), "morningstaruk" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Morningstar, JP"), "morningstarjp" },
@@ -221,7 +218,6 @@ static QuoteSourceList single_quote_sources =
     { false, SOURCE_SINGLE, NC_("FQ Source", "S-Investor, DE"), "sinvestor"},
     { false, SOURCE_SINGLE, NC_("FQ Source", "Sharenet, ZA"), "za" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "SIX Swiss Exchange shares, CH"), "six" },
-    { false, SOURCE_SINGLE, NC_("FQ Source", "Skandinaviska Enskilda Banken, SE"), "seb_funds" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "StockData"), "stockdata" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Stooq, PL"), "stooq" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "T. Rowe Price, US"), "troweprice" },
@@ -239,22 +235,14 @@ static QuoteSourceList single_quote_sources =
     { false, SOURCE_SINGLE, NC_("FQ Source", "YH Finance (FinanceAPI)"), "financeapi" },
 };
 
+// Finance::Quote calls these failover sources
 static QuoteSourceList multiple_quote_sources =
 {
-    { false, SOURCE_MULTI, NC_("FQ Source", "Australia (ASX)"), "australia" },
-    { false, SOURCE_MULTI, NC_("FQ Source", "Australia Funds (MorningstarAU)"), "aufunds" },
     { false, SOURCE_MULTI, NC_("FQ Source", "Canada (Alphavantage, TMX)"), "canada" },
-    { false, SOURCE_MULTI, NC_("FQ Source", "Dutch (AEX)"), "dutch" },
     { false, SOURCE_MULTI, NC_("FQ Source", "Europe (ASEGR, Bourso, …)"), "europe" },
-    { false, SOURCE_MULTI, NC_("FQ Source", "France (Bourso)"), "france" },
-    { false, SOURCE_MULTI, NC_("FQ Source", "Greece (ASEGR)"), "greece" },
     { false, SOURCE_MULTI, NC_("FQ Source", "India (BSEIndia, NSEIndia)"), "india"},
-    { false, SOURCE_MULTI, NC_("FQ Source", "India Mutual (AMFI)"), "indiamutual" },
     { false, SOURCE_MULTI, NC_("FQ Source", "Nasdaq (Alphavantage, FinanceAPI, …)"), "nasdaq" },
     { false, SOURCE_MULTI, NC_("FQ Source", "NYSE (Alphavantage, FinanceAPI, …)"), "nyse" },
-    { false, SOURCE_MULTI, NC_("FQ Source", "Poland (Stooq)"), "poland" },
-    { false, SOURCE_MULTI, NC_("FQ Source", "Romania (BVB)"), "romania" },
-    { false, SOURCE_MULTI, NC_("FQ Source", "South Africa (Sharenet)"), "za" },
     { false, SOURCE_MULTI, NC_("FQ Source", "U.K. Funds (FTfunds, MorningstarUK)"), "ukfunds" },
     { false, SOURCE_MULTI, NC_("FQ Source", "USA (Alphavantage, FinanceAPI, …)"), "usa" },
 };
