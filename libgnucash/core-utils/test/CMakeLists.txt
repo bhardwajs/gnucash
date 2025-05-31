@@ -49,6 +49,22 @@ set(test_gnc_path_util_SOURCES
 gnc_add_test(test-gnc-path-util "${test_gnc_path_util_SOURCES}"
   gtest_core_utils_INCLUDES gtest_core_utils_LIBS "GNC_UNINSTALLED=yes")
 
+set(gtest_icu_locale_INCLUDES
+  ${CMAKE_BINARY_DIR}/common
+  ${MODULEPATH})
+
+set(gtest_icu_locale_LIBS
+  ${Boost_LIBRARIES}
+  ICU::uc
+  ICU::i18n
+  PkgConfig::GLIB2
+  gtest)
+
+gnc_add_test(test-gnc-unicode
+  "${MODULEPATH}/gnc-unicode.cpp;${MODULEPATH}/gnc-locale-utils.c;gtest-gnc-unicode.cpp"
+  gtest_icu_locale_INCLUDES
+  gtest_icu_locale_LIBS)
+
 set_dist_list(test_core_utils_DIST CMakeLists.txt
   test-gnc-glib-utils.c test-resolve-file-path.c test-userdata-dir.c
-  test-userdata-dir-invalid-home.c gtest-path-utilities.cpp)
+  test-userdata-dir-invalid-home.c gtest-gnc-unicode.cpp gtest-path-utilities.cpp)

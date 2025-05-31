@@ -11,6 +11,7 @@ set (core_utils_SOURCES
   gnc-filepath-utils.cpp
   gnc-gkeyfile-utils.c
   gnc-glib-utils.c
+  gnc-unicode.cpp
   gnc-locale-utils.c
   gnc-locale-utils.cpp
   gnc-path.c
@@ -28,6 +29,7 @@ set(core_utils_noinst_HEADERS
   gnc-filepath-utils.h
   gnc-gkeyfile-utils.h
   gnc-glib-utils.h
+  gnc-unicode.h
   gnc-locale-utils.h
   gnc-locale-utils.hpp
   gnc-path.h
@@ -54,6 +56,7 @@ target_link_libraries(gnc-core-utils
         ${Boost_LIBRARIES}
         ${GOBJECT_LDFLAGS}
         ${GTK_MAC_LDFLAGS}
+        ${ICU_LIBRARIES}
         "$<$<BOOL:${MAC_INTEGRATION}>:${OSX_EXTRA_LIBRARIES}>")
 
 target_compile_definitions(gnc-core-utils
