@@ -1020,8 +1020,8 @@
       (set-option! options "Sorting" "Secondary Subtotal for Date Key" 'monthly)
 
       (let* ((template (gnc:find-report-template trep-uuid))
-             (constructor (record-constructor <report>))
-             (report (constructor trep-uuid "bar" options #t #t #f #f ""))
+             (report-id (gnc:make-report trep-uuid options))
+             (report (gnc-report-find report-id))
              (renderer (gnc:report-template-renderer template))
              (document (renderer report #:export-type 'csv)))
         (test-assert "csv output has no export error"

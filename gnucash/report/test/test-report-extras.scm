@@ -41,8 +41,8 @@
 
   (let* ((template (or (gnc:find-report-template uuid)
                        (error "report not found:" uuid)))
-         (constructor (record-constructor <report>))
-         (report (constructor uuid "bar" options #t #t #f #f ""))
+         (report-id (gnc:make-report uuid options))
+         (report (gnc-report-find report-id))
          (renderer (gnc:report-template-renderer template))
          (document (renderer report))
          (sanitize-char (lambda (c)

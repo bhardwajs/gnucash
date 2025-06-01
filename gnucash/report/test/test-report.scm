@@ -177,9 +177,9 @@
                (let ((options (gnc:report-options obj)))
                  "return-string")))
   (let* ((template (gnc:find-report-template test-uuid))
-         (constructor (record-constructor <report>))
          (options (gnc:make-report-options test-uuid))
-         (report (constructor test-uuid "bar" options #t #t #f #f "")))
+         (report-id (gnc:make-report test-uuid options))
+         (report (gnc-report-find report-id)))
     (test-equal "render works"
       "return-string"
       ((gnc:report-template-renderer template) report))
