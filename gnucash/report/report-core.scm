@@ -35,6 +35,7 @@
 (use-modules (srfi srfi-2))
 (use-modules (srfi srfi-9))
 (use-modules (srfi srfi-26))
+(use-modules ((srfi srfi-69) #:prefix ht:))            ;for O(1) hash-table-size
 (use-modules (gnucash report report-register-hooks))
 (use-modules (gnucash report html-style-sheet))
 (use-modules (gnucash report html-document))
@@ -75,6 +76,7 @@
 (export gnc:report-embedded-list)
 (export gnc:report-export-thunk)
 (export gnc:report-export-types)
+(export gnc:report-get-anchor)          ;return anchor by key
 (export gnc:report-id)
 (export gnc:report-is-invoice-report?)
 (export gnc:report-menu-name)
@@ -84,6 +86,7 @@
 (export gnc:report-render-html)
 (export gnc:render-report)
 (export gnc:report-serialize)
+(export gnc:report-add-anchor!)         ;add anchor, returns the integer key
 (export gnc:report-set-ctext!)
 (export gnc:report-set-dirty?!)
 (export gnc:report-set-editor-widget!)
@@ -324,7 +327,7 @@ not found.")))
 
 ;; A <report> represents an instantiation of a particular report type.
 (define-record-type <report>
-  (make-report type id options dirty? needs-save? editor-widget ctext custom-template)
+  (make-report type id options dirty? needs-save? editor-widget ctext custom-template anchors)
   report?
   (type report-type report-set-type!)
   (id report-id report-set-id!)
@@ -333,6 +336,7 @@ not found.")))
   (needs-save? report-needs-save? report-set-needs-save?!)
   (editor-widget report-editor-widget report-set-editor-widget!)
   (ctext report-ctext report-set-ctext!)
+  (anchors report-get-anchors report-set-anchors!)
   (custom-template report-custom-template report-set-custom-template!))
 
 (define gnc:report-type report-type)
@@ -351,6 +355,18 @@ not found.")))
 (define gnc:report-set-ctext! report-set-ctext!)
 (define gnc:report-custom-template report-custom-template)
 (define gnc:report-set-custom-template! report-set-custom-template!)
+
+;; add an anchor to the report instance list of anchors. return the
+;; integer key to the anchor.
+(define (gnc:report-add-anchor! report anchor)
+  (let* ((hash (report-get-anchors report))
+         (size (ht:hash-table-size hash)))
+    (ht:hash-table-set! hash size anchor)
+    size))
+
+;; retrieve the anchor from the report instance list of anchors.
+(define (gnc:report-get-anchor report id)
+  (ht:hash-table-ref (report-get-anchors report) id))
 
 (define (gnc:report-set-dirty?! report val)
   (gnc:report-set-dirty?-internal! report val)
@@ -377,6 +393,7 @@ not found.")))
              #f              ;; editor-widget
              #f              ;; ctext
              custom-template ;; custom-template
+             (ht:make-hash-table)
              ))
          (id (gnc-report-add r)))       ;returns an integer
     (gnc:report-set-id! r id)
@@ -385,7 +402,8 @@ not found.")))
 (define (gnc:restore-report-by-guid-with-custom-template
          id template-id template-name custom-template-id options)
   (if options
-      (let* ((r (make-report template-id id options #t #t #f #f custom-template-id))
+      (let* ((r (make-report template-id id options #t #t #f #f custom-template-id
+                             (ht:make-hash-table)))
              (report-id (gnc-report-add r)))
         (if (number? report-id)
             (gnc:report-set-id! r report-id))
