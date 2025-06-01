@@ -257,12 +257,29 @@ gnc_report_name( SCM report )
     return gnc_scm_call_1_to_string(get_name, report);
 }
 
+gint
+gnc_report_id_string_to_report_id (const char *id_string)
+{
+    g_return_val_if_fail (id_string, -1);
+
+    char *end_ptr;
+    uint rpt_id = std::strtoul (id_string, &end_ptr, 10);
+    if (end_ptr == id_string) return -1;
+    if (*end_ptr == '\0') return rpt_id;
+    if (*end_ptr != '|') return -1;
+
+    auto anchor_str = end_ptr + 1;
+    uint anchor_id = std::strtoul (anchor_str, &end_ptr, 10);
+    if (end_ptr == anchor_str || *end_ptr != '\0') return -1;
+
+    const SCM get_linked = scm_c_eval_string ("gnc:report-get-linked-report");
+    return scm_to_uint (scm_call_2 (get_linked, scm_from_uint (rpt_id), scm_from_uint (anchor_id)));
+}
+
 gboolean
 gnc_run_report_id_string_with_error_handling (const char * id_string, char **data,
                                               gchar **errmsg)
 {
-    gint report_id;
-
     g_return_val_if_fail (id_string, FALSE);
     g_return_val_if_fail (data, FALSE);
     *data = NULL;
@@ -270,7 +287,8 @@ gnc_run_report_id_string_with_error_handling (const char * id_string, char **dat
     if (strncmp ("id=", id_string, 3) != 0)
         return FALSE;
 
-    if (sscanf (id_string + 3, "%d", &report_id) != 1)
+    gint report_id = gnc_report_id_string_to_report_id (id_string + 3);
+    if (report_id < 0)
         return FALSE;
 
     return gnc_run_report_with_error_handling (report_id, data, errmsg);

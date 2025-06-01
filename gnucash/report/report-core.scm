@@ -760,6 +760,7 @@ not found.")))
         (and template
              (let* ((renderer (gnc:report-template-renderer template))
                     (stylesheet (gnc:report-stylesheet report))
+                    (_ (report-set-anchors! report (ht:make-hash-table)))
                     (doc (renderer report))
                     (html (cond
                            ((string? doc) doc)

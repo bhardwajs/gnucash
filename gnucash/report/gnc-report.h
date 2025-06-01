@@ -41,6 +41,7 @@ extern "C"
  */
 void gnc_report_init(void);
 
+gint gnc_report_id_string_to_report_id (const char *id_string);
 
 gboolean gnc_run_report_with_error_handling(gint report_id,
                                             gchar** data,

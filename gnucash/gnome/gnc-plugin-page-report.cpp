@@ -674,7 +674,12 @@ gnc_plugin_page_report_load_cb (GncHtml * html, URLType type,
             && (strlen(location) > 3)
             && !strncmp("id=", location, 3))
     {
-        report_id = atoi(location + 3);
+        report_id = gnc_report_id_string_to_report_id (location + 3);
+        if (report_id < 0)
+        {
+            LEAVE ("id_string error %s", location);
+            return;
+        }
         DEBUG( "parsed id=%d", report_id );
     }
     else if (!g_strcmp0( type, URL_TYPE_OPTIONS)

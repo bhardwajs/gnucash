@@ -167,19 +167,22 @@
 ;; section, name, and value of the function.
 (define (gnc:make-report-anchor reportname src-report
                                 optionlist)
-  (let ((src-options (gnc:report-options src-report))
-        (options (gnc:make-report-options reportname)))
-    (if options
-        (begin
-          (gnc:options-copy-values src-options options)
-          (for-each
-           (lambda (l)
-             (gnc-set-option (gnc:optiondb options) (car l) (cadr l) (caddr l)))
-           optionlist)
-          (let ((id (gnc:make-report reportname options)))
-            (gnc:report-anchor-text id)))
-        (warn "gnc:make-report-anchor: No such report: " reportname))))
+  (let ((anchor-id (gnc:report-add-anchor!
+                    src-report (list reportname (gnc:report-options src-report) optionlist))))
+    (gnc-build-url URL-TYPE-REPORT (format #f "id=~a|~a" (gnc:report-id src-report) anchor-id) "")))
 
+(define-public (gnc:report-get-linked-report src-id id)
+  (match (gnc:report-get-anchor (gnc-report-find src-id) id)
+    ((reportname src-options optionlist)
+     (let* ((options (gnc:make-report-options reportname))
+            (db (gnc:optiondb options)))
+       (gnc:options-copy-values src-options options)
+       (for-each
+        (lambda (l)
+          (gnc-set-option db (car l) (cadr l) (caddr l)))
+        optionlist)
+       (gnc:make-report reportname options)))
+    (_ (gnc:error "invalid id " id))))
 
 ;; returns the account name as html-text and anchor to the register.
 (define (gnc:html-account-anchor acct)
