@@ -44,7 +44,6 @@
                    (sw_engine)
                    (gnucash options))
 
-(export <report>)
 (export gnc:all-report-template-guids)
 (export gnc:custom-report-template-guids)
 (export gnc:custom-report-invoice-template-guids)
