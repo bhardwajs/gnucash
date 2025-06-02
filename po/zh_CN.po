@@ -32,14 +32,15 @@
 # Ral Hole <ral-hole@outlook.com>, 2023, 2025.
 # derxi <happycxin@163.com>, 2023.
 # fleefar <825272947@qq.com>, 2024.
+# "Cheng R.Zhu" <zcr@users.noreply.hosted.weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-04-29 16:03+0000\n"
-"Last-Translator: Zhaoquan Huang <zhaoquan2008@hotmail.com>\n"
+"PO-Revision-Date: 2025-05-29 04:01+0000\n"
+"Last-Translator: \"Cheng R.Zhu\" <zcr@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/gnucash/gnucash/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -3888,7 +3889,7 @@ msgstr "现在"
 #, fuzzy, c-format
 #| msgid "Accounts Selected:"
 msgid "Accounts Selected: %d"
-msgstr "已选科目："
+msgstr "已选账户：%d"
 
 #: gnucash/gnome/dialog-tax-info.c:1184
 #: gnucash/gtkbuilder/dialog-tax-info.glade:89
@@ -5059,7 +5060,7 @@ msgstr "入账日期"
 #, fuzzy
 #| msgid "_Jump to the other account"
 msgid "Unable to jump to other account"
-msgstr "跳转(_J)"
+msgstr "无法跳转到其他账户"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5063
 msgid ""
