@@ -8,7 +8,7 @@
 # Andreas Hentze <pictarus@gmx.de>, 2019
 # Joachim Wetzig <jo.wetzig@web.de>, 2019, 2022.
 # Dmitriy Mangul <dimang.freetime@gmail.com>, 2017-2018
-# Mechtilde Stehmann <ooo@mechtilde.de>, 2014-2018.
+# Mechtilde Stehmann <ooo@mechtilde.de>, 2014-2018, 2025.
 # quazgar <quazgar@posteo.de> 2017.
 # Rolf Leggewie, 2008.
 # Herbert Thoma <tma@iis.fhg.de>, 2001.
@@ -43,8 +43,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-05-05 20:01+0000\n"
-"Last-Translator: Christian Wehling <christian.wehling@web.de>\n"
+"PO-Revision-Date: 2025-05-29 14:01+0000\n"
+"Last-Translator: Mechtilde <ooo@mechtilde.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "de/>\n"
 "Language: de\n"
@@ -5352,22 +5352,24 @@ msgstr "Zu Datum gehen"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5060
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5089
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Unable to jump to other account"
-msgstr "Zum _Gegenkonto springen"
+msgstr "Zum Gegenkonto springen"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5063
 msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
 msgstr ""
+"Diese Transaktion betrifft mehr als ein anderes Konto. Wählen Sie einen "
+"bestimmten Split, um zu diesem Konto zu springen."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
 "This transaction only involves the current account so there is no other "
 "account to jump to."
 msgstr ""
+"Diese Transaktion betrifft nur das Girokonto, so dass es kein anderes Konto "
+"gibt, zu dem man springen muss."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5246
 #, c-format
@@ -10393,13 +10395,15 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:267
 msgid "\"Jump\" behaviour when there are multiple splits"
-msgstr ""
+msgstr "„Sprung“-Verhalten bei mehreren Splits"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:268
 msgid ""
 "Select how the \"Jump\" operation should behave when a transaction has "
 "multiple splits."
 msgstr ""
+"Wählen Sie aus, wie sich die Operation „Springen“ verhalten soll, wenn eine "
+"Transaktion mehrere Splits hat."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:272
 msgid "Create a new window for each new register"
@@ -11115,10 +11119,8 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:129
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:262
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are multiple other accounts"
-msgstr "Zum _Gegenkonto springen"
+msgstr "Springen, wenn es mehrere andere Konten gibt"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:130
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:263
@@ -11127,27 +11129,24 @@ msgid ""
 "because it has splits for multiple other accounts. A specific split must be "
 "selected to jump to the other account."
 msgstr ""
+"Dieses Dialogfeld wird angezeigt, wenn Sie eine Transaktion nicht anspringen "
+"können, weil sie Aufteilungen für mehrere andere Konten enthält. Eine "
+"bestimmte Aufteilung muss ausgewählt werden, um zu dem anderen Konto zu "
+"springen."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:134
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:267
-#, fuzzy
-#| msgid "_Jump to the other account"
 msgid "Jump when there are no other accounts"
-msgstr "Zum _Gegenkonto springen"
+msgstr "Springen, wenn es keine anderen Konten gibt"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:135
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:268
-#, fuzzy
-#| msgid ""
-#| "This dialog is presented when you attempt to duplicate a modified "
-#| "transaction. The changed data must be saved or the duplication canceled."
 msgid ""
 "This dialog is presented when you are unable to jump on a transaction "
 "because it only has splits for the current account."
 msgstr ""
-"Diese Rückfrage wird angezeigt, wenn Sie eine geänderte Buchung duplizieren "
-"möchten. Die geänderte Buchung muss abgespeichert werden oder das "
-"Duplizieren abgebrochen werden."
+"Dieser Dialog wird angezeigt, wenn Sie eine Transaktion nicht anspringen "
+"können, weil sie nur Splits für das aktuelle Konto enthält."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:5
 #: gnucash/gschemas/org.gnucash.GnuCash.window.pages.account.tree.gschema.xml.in:6
@@ -11865,33 +11864,6 @@ msgid "CSV Transaction Import"
 msgstr "CSV-Buchungen-Import"
 
 #: gnucash/gtkbuilder/assistant-csv-trans-import.glade:44
-#, fuzzy
-#| msgid ""
-#| "This assistant will help you import a delimited file containing a list of "
-#| "transactions. It supports both token separated files (such as comma "
-#| "separated or semi-colon separated) and fixed width data.\n"
-#| "\n"
-#| "For a successful import three columns have to be available in the import "
-#| "data:\n"
-#| "• a Date column\n"
-#| "• a Description column\n"
-#| "• a Deposit or Withdrawal column\n"
-#| "\n"
-#| "If there is no Account data available, a base account can be selected to "
-#| "which all data will be imported.\n"
-#| "\n"
-#| "Apart from a choice of delimiter, there are several options to tweak the "
-#| "importer. For example a number of lines can be skipped at the start or "
-#| "the end of the data, as well as odd rows. Several date and number formats "
-#| "are supported. The file encoding can be defined.\n"
-#| "\n"
-#| "The importer can handle files where transactions are split over multiple "
-#| "lines, with each line representing one split.\n"
-#| "\n"
-#| "Lastly, for repeated imports the preview page has buttons to Load and "
-#| "Save the settings. You can save your adjusted settings to reuse them on "
-#| "later imports. After loading your settings you can also tweak them again "
-#| "for similar imports and save them under another name."
 msgid ""
 "This assistant will help you import a delimited file containing a list of "
 "transactions. It supports both token separated files (such as comma "
@@ -11942,7 +11914,11 @@ msgstr ""
 "definiert werden.\n"
 "\n"
 "Der Importer kann Dateien verarbeiten, in denen Buchungen über mehrere "
-"Zeilen aufgeteilt sind, wobei jede Zeile einen Buchungsteil darstellt.\n"
+"Zeilen aufgeteilt sind, wobei jede Zeile einen Buchungsteil darstellt. Eine "
+"neue Transaktion wird jedes Mal gestartet, wenn sich der Wert einer der "
+"transaktionsbezogenen Spalten von dem einer vorherigen, nicht leeren Spalte "
+"unterscheidet. Diese Spalten sind Transaktions-ID, Datum, Nummer, "
+"Beschreibung, Anmerkungen, Transaktionsware und Ungültigkeitsgrund.\n"
 "\n"
 "Schließlich verfügt die Vorschauseite über Schaltflächen zum Laden und "
 "Speichern der Voreinstellungen für wiederkehrende Importe. Sie können Ihre "
@@ -13585,10 +13561,8 @@ msgstr "Filtern nach…"
 
 #: gnucash/gtkbuilder/dialog-account.glade:906
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:498
-#, fuzzy
-#| msgid "Clear All"
 msgid "Clear _All"
-msgstr "Keine auswählen"
+msgstr "_Alle Löschen"
 
 #: gnucash/gtkbuilder/dialog-account.glade:922
 msgid "_Default"
@@ -16053,11 +16027,11 @@ msgstr "Bei Auto-Vervollständigen zum Gegenkonto-Feld weitergehen."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2581
 msgid "<b>Jump action for multiple splits</b>"
-msgstr ""
+msgstr "<b>Sprungaktion für mehrere Splits</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2583
 msgid "Transaction jump action when there are more than two splits."
-msgstr ""
+msgstr "Transaktionssprungaktion, wenn es mehr als zwei Splits gibt."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
@@ -16075,6 +16049,8 @@ msgstr "Geh zum ersten Buchungsteil mit dem _größten Wert"
 msgid ""
 "Use the first split with the largest value to determine the other account."
 msgstr ""
+"Verwenden Sie den ersten Split mit dem größten Wert, um das andere Konto zu "
+"bestimmen."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
 msgid "Go to the first split with the _smallest value"
@@ -16084,6 +16060,8 @@ msgstr "Geh zum ersten Buchungsteil mit dem _kleinsten Wert"
 msgid ""
 "Use the first split with the smallest value to determine the other account."
 msgstr ""
+"Verwenden Sie den ersten Split mit dem kleinsten Wert, um das andere Konto "
+"zu bestimmen."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2665
 msgid "<b>Reconciling</b>"
@@ -21745,6 +21723,8 @@ msgid ""
 "This transaction cannot be balanced: The imbalance is a fraction smaller "
 "than the commodity allows."
 msgstr ""
+"Diese Transaktion kann nicht ausgeglichen werden: Das Ungleichgewicht ist um "
+"einen Bruchteil kleiner, als die Aktie erlaubt."
 
 #: gnucash/register/ledger-core/split-register-control.cpp:93
 msgid "Rebalance Transaction"
@@ -30837,11 +30817,9 @@ msgstr "_Konto öffnen"
 
 #: gnucash/ui/gnc-reconcile-window.ui:58 gnucash/ui/gnc-reconcile-window.ui:98
 #: gnucash/ui/gnc-reconcile-window.ui:129
-#, fuzzy
-#| msgid "_Balance"
 msgctxt "reconcile menu"
 msgid "_Balance"
-msgstr "_Saldo"
+msgstr "_Bilanz"
 
 #: gnucash/ui/gnc-reconcile-window.ui:68 gnucash/ui/gnc-reconcile-window.ui:106
 msgid "_Reconcile Selection"
