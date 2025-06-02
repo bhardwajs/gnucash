@@ -33,14 +33,15 @@
 # derxi <happycxin@163.com>, 2023.
 # fleefar <825272947@qq.com>, 2024.
 # "Cheng R.Zhu" <zcr@users.noreply.hosted.weblate.org>, 2025.
+# fliukka <weblate@fliukka.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-05-29 04:01+0000\n"
-"Last-Translator: \"Cheng R.Zhu\" <zcr@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-05-30 18:05+0000\n"
+"Last-Translator: fliukka <weblate@fliukka.net>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/gnucash/gnucash/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -5066,7 +5067,7 @@ msgstr "无法跳转到其他账户"
 msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
-msgstr ""
+msgstr "此交易涉及多个其他科目。请选择特定的分账选项以跳转至该科目。"
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
