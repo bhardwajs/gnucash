@@ -15,14 +15,15 @@
 # Abdulla Alhosani <ama1029@nyu.edu>, 2024.
 # Abdulsalam Alshilash <ashalash@msn.com>, 2025.
 # Usama Khalil <usamafoad@gmail.com>, 2025.
+# Ebrahim Nasser <ebranas314@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-05-21 12:03+0000\n"
-"Last-Translator: Usama Khalil <usamafoad@gmail.com>\n"
+"PO-Revision-Date: 2025-06-02 17:06+0000\n"
+"Last-Translator: Ebrahim Nasser <ebranas314@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "ar/>\n"
 "Language: ar\n"
@@ -110,7 +111,6 @@ msgstr "بداية الفترة المحاسبية"
 
 #: bindings/guile/date-utilities.scm:746
 #: libgnucash/engine/gnc-option-date.cpp:313
-#, fuzzy
 msgid "First day of the accounting period, as set in the global preferences."
 msgstr "اليوم الأول للفترة المحاسبية، حسب ما تم تحديده في التفضيلات العامة."
 
@@ -121,7 +121,6 @@ msgstr "نهاية الفترة المحاسبية"
 
 #: bindings/guile/date-utilities.scm:753
 #: libgnucash/engine/gnc-option-date.cpp:321
-#, fuzzy
 msgid "Last day of the accounting period, as set in the global preferences."
 msgstr "آخر يوم للفترة المحاسبية، حسب ما تم تحديده في التفضيلات العامة."
 
