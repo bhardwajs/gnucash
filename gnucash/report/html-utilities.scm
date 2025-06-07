@@ -176,13 +176,13 @@
     ((reportname src-options optionlist)
      (let* ((options (gnc:make-report-options reportname))
             (db (gnc:optiondb options)))
-       (gnc:options-copy-values src-options options)
-       (for-each
-        (lambda (l)
-          (gnc-set-option db (car l) (cadr l) (caddr l)))
-        optionlist)
-       (gnc:make-report reportname options)))
-    (_ (gnc:error "invalid id " id))))
+       (cond
+        (options
+         (gnc:options-copy-values src-options options)
+         (for-each (lambda (l) (apply gnc-set-option db l)) optionlist)
+         (gnc:make-report reportname options))
+        (else (gnc:error "cannot find temport template " reportname) #f))))
+    (_ (gnc:error "invalid src-id " src-id " id " id) #f)))
 
 ;; returns the account name as html-text and anchor to the register.
 (define (gnc:html-account-anchor acct)

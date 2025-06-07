@@ -273,7 +273,9 @@ gnc_report_id_string_to_report_id (const char *id_string)
     if (end_ptr == anchor_str || *end_ptr != '\0') return -1;
 
     const SCM get_linked = scm_c_eval_string ("gnc:report-get-linked-report");
-    return scm_to_uint (scm_call_2 (get_linked, scm_from_uint (rpt_id), scm_from_uint (anchor_id)));
+
+    auto id = scm_call_2 (get_linked, scm_from_uint (rpt_id), scm_from_uint (anchor_id));
+    return scm_is_number (id) ? scm_to_int (id) : -1;
 }
 
 gboolean
