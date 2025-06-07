@@ -737,9 +737,10 @@ also show overall period profit & loss."))
            accounts-cols-data))
 
          ;; generate an exchange-fn
-         (exchange-fn (gnc:case-exchange-time-fn price-source common-currency
-                                                 (gnc:accounts-get-commodities accounts #f)
-                                                 #f #f #f))
+         (exchange-fn (and common-currency
+                           (gnc:case-exchange-time-fn price-source common-currency
+                                                      (gnc:accounts-get-commodities accounts #f)
+                                                      #f #f #f)))
 
          ;; from col-idx, find effective date to retrieve pricedb
          ;; entry or to limit transactions to calculate average-cost
