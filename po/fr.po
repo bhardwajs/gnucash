@@ -37,17 +37,18 @@
 # Over_score <wablate@lorang.net>, 2024.
 # Martin LORANG <wablate@lorang.net>, 2024.
 # Anastasios Ikonomou <anastasios.ikonomou@gmail.com>, 2024.
+# Frédéric Mergey <fmergey@yahoo.com>, 2025.
 #
 # Please follow the guidelines you'll find here: https://wiki.gnucash.org/wiki/Translation
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2024-12-30 23:00+0000\n"
-"Last-Translator: Anastasios Ikonomou <anastasios.ikonomou@gmail.com>\n"
+"PO-Revision-Date: 2025-05-31 09:45+0000\n"
+"Last-Translator: Frédéric Mergey <fmergey@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "fr/>\n"
 "Language: fr\n"
@@ -55,7 +56,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -5797,12 +5798,16 @@ msgid ""
 "This transaction involves more than one other account. Select a specific "
 "split to jump to that account."
 msgstr ""
+"Cette transaction concerne plus d'un autre compte. Sélectionnez une "
+"répartition spécifique pour passer à ce compte."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5092
 msgid ""
 "This transaction only involves the current account so there is no other "
 "account to jump to."
 msgstr ""
+"Cette transaction ne concerne que le compte actuel, il n'y a donc pas "
+"d'autre compte vers lequel basculer."
 
 #: gnucash/gnome/gnc-plugin-page-register.cpp:5246
 #, c-format
@@ -11167,13 +11172,15 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:267
 msgid "\"Jump\" behaviour when there are multiple splits"
-msgstr ""
+msgstr "Comportement de « saut » en cas de répartitions multiples"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:268
 msgid ""
 "Select how the \"Jump\" operation should behave when a transaction has "
 "multiple splits."
 msgstr ""
+"Sélectionnez le comportement de l'opération « Renvoi » lorsqu'une "
+"transaction comporte plusieurs répartitions."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:272
 msgid "Create a new window for each new register"
@@ -11958,6 +11965,10 @@ msgid ""
 "because it has splits for multiple other accounts. A specific split must be "
 "selected to jump to the other account."
 msgstr ""
+"Cette boîte de dialogue s'affiche lorsque vous ne pouvez pas passer à une "
+"transaction parce qu'elle comporte des répartitions pour plusieurs autres "
+"comptes. Une répartition spécifique doit être sélectionnée pour passer à "
+"l'autre compte."
 
 # messages-i18n.c:96
 #: gnucash/gschemas/org.gnucash.GnuCash.warnings.gschema.xml.in:134
@@ -13005,7 +13016,7 @@ msgid ""
 "that you foresee you will use GnuCash. Each category you select will cause "
 "several accounts to be created."
 msgstr ""
-"Sélectionnez la langue et le région pour les catégories suivant la façon "
+"Sélectionnez la langue et la région pour les catégories suivant la façon "
 "dont vous prévoyez d'utiliser GnuCash. Chaque catégorie que vous "
 "sélectionnerez créera plusieurs nouveaux comptes."
 
@@ -17243,11 +17254,11 @@ msgstr ""
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2581
 msgid "<b>Jump action for multiple splits</b>"
-msgstr ""
+msgstr "<b>Action de saut pour les répartitions multiples</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2583
 msgid "Transaction jump action when there are more than two splits."
-msgstr ""
+msgstr "Action de saut de transaction lorsqu'il y a plus de deux répartitions."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:2593
 msgid "Do _nothing"
@@ -17267,6 +17278,8 @@ msgstr ""
 msgid ""
 "Use the first split with the largest value to determine the other account."
 msgstr ""
+"Utilisez la première répartition dont la valeur est la plus élevée pour "
+"déterminer l'autre compte."
 
 # po/guile_strings.txt:153
 #: gnucash/gtkbuilder/dialog-preferences.glade:2632
@@ -17279,6 +17292,8 @@ msgstr "Aller à la répartition à la date renseignée."
 msgid ""
 "Use the first split with the smallest value to determine the other account."
 msgstr ""
+"Utilisez la première répartition avec la valeur la plus faible pour "
+"déterminer l'autre compte."
 
 # messages-i18n.c:238
 #: gnucash/gtkbuilder/dialog-preferences.glade:2665
@@ -34102,7 +34117,7 @@ msgstr "Clé de l'API Alpha Vantage"
 #: libgnucash/engine/gnc-commodity.cpp:192
 msgctxt "FQ Source"
 msgid "Amsterdam Euronext eXchange, NL"
-msgstr ""
+msgstr "Amsterdam Euronext eXchange, NL"
 
 #: libgnucash/engine/gnc-commodity.cpp:193
 msgctxt "FQ Source"
@@ -34117,7 +34132,7 @@ msgstr "Athens Exchange Group, GR"
 #: libgnucash/engine/gnc-commodity.cpp:195
 msgctxt "FQ Source"
 msgid "Australian Stock Exchange, AU"
-msgstr ""
+msgstr "Australian Stock Exchange, AU"
 
 # messages-i18n.c:294 po/guile_strings.txt:205
 # src/gnome/glade-gnc-dialogs.c:644
@@ -34325,11 +34340,9 @@ msgstr ""
 
 # messages-i18n.c:227
 #: libgnucash/engine/gnc-commodity.cpp:234
-#, fuzzy
-#| msgid "Investments"
 msgctxt "FQ Source"
 msgid "Union Investment, DE"
-msgstr "Investissements"
+msgstr "Union Investment, DE"
 
 #: libgnucash/engine/gnc-commodity.cpp:235
 msgctxt "FQ Source"

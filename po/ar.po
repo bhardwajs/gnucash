@@ -14,14 +14,16 @@
 # BL <ghostzeko@gmail.com>, 2023.
 # Abdulla Alhosani <ama1029@nyu.edu>, 2024.
 # Abdulsalam Alshilash <ashalash@msn.com>, 2025.
+# Usama Khalil <usamafoad@gmail.com>, 2025.
+# Ebrahim Nasser <ebranas314@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.11\n"
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-03-23 15:35-0700\n"
-"PO-Revision-Date: 2025-04-16 15:01+0000\n"
-"Last-Translator: Abdulsalam Alshilash <ashalash@msn.com>\n"
+"PO-Revision-Date: 2025-06-02 17:06+0000\n"
+"Last-Translator: Ebrahim Nasser <ebranas314@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "ar/>\n"
 "Language: ar\n"
@@ -30,7 +32,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 
 #: bindings/guile/date-utilities.scm:173
@@ -47,7 +49,7 @@ msgstr ""
 #: gnucash/report/reports/standard/price-scatter.scm:186
 #, scheme-format
 msgid "~a to ~a"
-msgstr ""
+msgstr "~a إلى ~a"
 
 #: bindings/guile/date-utilities.scm:519
 #, fuzzy, scheme-format
@@ -109,7 +111,6 @@ msgstr "بداية الفترة المحاسبية"
 
 #: bindings/guile/date-utilities.scm:746
 #: libgnucash/engine/gnc-option-date.cpp:313
-#, fuzzy
 msgid "First day of the accounting period, as set in the global preferences."
 msgstr "اليوم الأول للفترة المحاسبية، حسب ما تم تحديده في التفضيلات العامة."
 
@@ -120,7 +121,6 @@ msgstr "نهاية الفترة المحاسبية"
 
 #: bindings/guile/date-utilities.scm:753
 #: libgnucash/engine/gnc-option-date.cpp:321
-#, fuzzy
 msgid "Last day of the accounting period, as set in the global preferences."
 msgstr "آخر يوم للفترة المحاسبية، حسب ما تم تحديده في التفضيلات العامة."
 
@@ -11143,23 +11143,15 @@ msgid "Setup Account Period"
 msgstr "إعداد فترة حساب"
 
 #: gnucash/gtkbuilder/assistant-acct-period.glade:38
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Select an accounting period and the closing date which must not be in the "
-#| "future and is greater than the closing date of the previous book.\n"
-#| "\n"
-#| "Books will be closed at midnight on the selected date."
 msgid ""
 "Select an accounting period and a closing date that is between the date of "
 "the previous close and today.\n"
 "\n"
 "Books will be closed at midnight on the selected date."
 msgstr ""
+"اختر فترة محاسبية وتاريخ إغلاق يقع بين تاريخ الإغلاق السابق واليوم.\n"
 "\n"
-"حدد فترة المحاسبة والموعد النهائي الذي يجب أن لا يكون في المستقبل وأكبر من "
-"تاريخ اختتام الدفتر السابق.\n"
-"\"الدفتر\" سيتم إغلاقه عند منتصف الليل في التاريخ المحدد."
+"سيتم إغلاق الدفاتر عند منتصف ليل التاريخ المحدد."
 
 #: gnucash/gtkbuilder/assistant-acct-period.glade:81
 msgid "Book Closing Dates"
@@ -26114,10 +26106,8 @@ msgid "No price found"
 msgstr "لم يتم العثور على"
 
 #: gnucash/report/reports/standard/investment-lots.scm:1230
-#, fuzzy
-#| msgid "(split)"
 msgid "split"
-msgstr "(تقسيم)"
+msgstr "تقسيم"
 
 #: gnucash/report/reports/standard/investment-lots.scm:1351
 #, scheme-format
