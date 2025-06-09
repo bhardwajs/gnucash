@@ -263,13 +263,13 @@ gnc_report_id_string_to_report_id (const char *id_string)
     g_return_val_if_fail (id_string, -1);
 
     char *end_ptr;
-    uint rpt_id = std::strtoul (id_string, &end_ptr, 10);
+    guint rpt_id = std::strtoul (id_string, &end_ptr, 10);
     if (end_ptr == id_string) return -1;
     if (*end_ptr == '\0') return rpt_id;
     if (*end_ptr != '|') return -1;
 
     auto anchor_str = end_ptr + 1;
-    uint anchor_id = std::strtoul (anchor_str, &end_ptr, 10);
+    guint anchor_id = std::strtoul (anchor_str, &end_ptr, 10);
     if (end_ptr == anchor_str || *end_ptr != '\0') return -1;
 
     const SCM get_linked = scm_c_eval_string ("gnc:report-get-linked-report");
