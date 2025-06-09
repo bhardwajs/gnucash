@@ -197,6 +197,7 @@ static QuoteSourceList single_quote_sources =
     { false, SOURCE_SINGLE, NC_("FQ Source", "Italian Stock Exchange, IT"), "borsa_italiana" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "BSE India, IN"), "bseindia" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Bucharest Stock Exchange, RO"), "bvb" },
+    { false, SOURCE_SINGLE, NC_("FQ Source", "China Merchants Bank, CN"), "cmbchina" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Colombo Stock Exchange, LK"), "cse" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "comdirect, DE"), "comdirect" },
     { false, SOURCE_SINGLE, NC_("FQ Source", "Consors Bank, DE"), "consorsbank" },
