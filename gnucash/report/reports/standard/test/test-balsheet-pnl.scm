@@ -243,7 +243,7 @@
         (list "$2,000.00")
         (sxml->table-row-col sxml 1 11 4))
       (test-equal "multilevel. funds = $14,424.52"
-        (list "30 FUNDS" "$14,424.52" "$14,424.52")
+        (list "30. FUNDS" "$14,424.52" "$14,424.52")
         (sxml->table-row-col sxml 1 12 3))
       (test-equal "multilevel. total broker = $16,424.52"
         (list "$16,424.52")
@@ -275,10 +275,10 @@
     (set-option! balance-sheet-options "Display" "Parent account subtotals" 'f)
     (let ((sxml (options->sxml balance-sheet-uuid balance-sheet-options "balsheet-recursive")))
       (test-equal "recursive. root = $760+14424.52+106709"
-        '("#200.00" "$340.00" "30 FUNDS" "$14,424.52" "$106,709.00" "$106,709.00")
+        '("#200.00" "$340.00" "30. FUNDS" "$14,424.52" "$106,709.00" "$106,709.00")
         (sxml->table-row-col sxml 1 3 6))
       (test-equal "recursive. assets = $760+14424.52+106709"
-        '("#200.00" "$340.00" "30 FUNDS" "$14,424.52" "$106,709.00" "$106,709.00")
+        '("#200.00" "$340.00" "30. FUNDS" "$14,424.52" "$106,709.00" "$106,709.00")
         (sxml->table-row-col sxml 1 4 5))
       (test-equal "recursive. bank1 = $4,709.00"
         (list "$4,709.00")
@@ -296,10 +296,10 @@
         (list "$100.00")
         (sxml->table-row-col sxml 1 9 3))
       (test-equal "recursive. broker = $14424.52+$2000.00"
-        '("30 FUNDS" "$14,424.52" "$2,000.00" "$2,000.00")
+        '("30. FUNDS" "$14,424.52" "$2,000.00" "$2,000.00")
         (sxml->table-row-col sxml 1 10 4))
       (test-equal "recursive. funds = $14424.52"
-        '("30 FUNDS" "$14,424.52" "$14,424.52")
+        '("30. FUNDS" "$14,424.52" "$14,424.52")
         (sxml->table-row-col sxml 1 11 3))
       (test-equal "recursive. foreign = $340.00"
         (list "#200.00" "$340.00")
@@ -328,10 +328,10 @@
     (set-option! balance-sheet-options "Commodities" "Show Exchange Rates" #t)
     (let ((sxml (options->sxml balance-sheet-uuid balance-sheet-options "balsheet-enable show-fcur show-rates")))
       (test-equal "show-fcur enabled"
-        '("#200.00" "$340.00" "30 FUNDS" "$14,424.52" "$106,709.00" "$106,709.00")
+        '("#200.00" "$340.00" "30. FUNDS" "$14,424.52" "$106,709.00" "$106,709.00")
         (sxml->table-row-col sxml 1 3 6))
       (test-equal "show-rates enabled"
-        '("1 FUNDS" "$480 + 85/104" "#1.00" "$1.7000")
+        '("1. FUNDS" "$480 + 85/104" "#1.00" "$1.7000")
         (sxml->table-row-col sxml 2 #f #f)))
 
     ;;make-multilevel
@@ -503,10 +503,10 @@
         "Retained Earnings" "Total For Equity" "Total For Liability and Equity")
       (sxml->table-row-col sxml 1 #f 1))
     (test-equal "default balances"
-      '("#200.00" "$106,709.00" "30 FUNDS" "#200.00" "$106,709.00" "30 FUNDS"
+      '("#200.00" "$106,709.00" "30. FUNDS" "#200.00" "$106,709.00" "30. FUNDS"
         "$4,709.00" "$2,000.00" "$2,609.00" "$0.00" "$100.00" "$2,000.00"
-        "30 FUNDS" "$2,000.00" "30 FUNDS" "#200.00" "#200.00" "$100,000.00"
-        "30 FUNDS" "#200.00" "$106,709.00" "$9,500.00" "$9,500.00" "$500.00"
+        "30. FUNDS" "$2,000.00" "30. FUNDS" "#200.00" "#200.00" "$100,000.00"
+        "30. FUNDS" "#200.00" "$106,709.00" "$9,500.00" "$9,500.00" "$500.00"
         "$9,000.00" "$9,500.00" "$103,600.00" "$0.00" "#0.00" "$103,600.00"
         "#0.00" "$113,100.00" "#0.00")
       (sxml->table-row-col sxml 1 #f 2))
@@ -521,26 +521,26 @@
       (test-equal "bal-1/1/70"
         '("01/01/70" "$113,100.00" "$113,100.00" "$8,970.00" "$2,000.00"
           "$6,870.00" "$0.00" "$100.00" "$4,000.00" "$2,000.00" "$2,000.00"
-          "10 FUNDS " "$130.00" "$130.00" "#100.00 " "$100,000.00" "$113,100.00"
+          "10. FUNDS " "$130.00" "$130.00" "#100.00 " "$100,000.00" "$113,100.00"
           "$9,500.00" "$9,500.00" "$500.00" "$9,000.00" "$9,500.00" "$103,600.00"
           "$0.00" "$0.00" "$103,600.00" "$113,100.00" "#1.00 $1.3000"
-          "1 FUNDS $200.0000")
+          "1. FUNDS $200.0000")
         (sxml->table-row-col sxml 1 #f 2))
       (test-equal "bal-1/1/71"
         '("01/01/71" "$116,006.33" "$116,006.33" "$4,709.00" "$2,000.00"
           "$2,609.00" "$0.00" "$100.00" "$11,000.30" "$2,000.00" "$9,000.30"
-          "30 FUNDS " "$297.03" "$297.03" "#200.00 " "$100,000.00" "$116,006.33"
+          "30. FUNDS " "$297.03" "$297.03" "#200.00 " "$100,000.00" "$116,006.33"
           "$9,500.00" "$9,500.00" "$500.00" "$9,000.00" "$9,500.00" "$103,600.00"
           "$2,906.33" "$0.00" "$106,506.33" "$116,006.33" "#1.00 $1 + 49/101"
-          "1 FUNDS $300.0100")
+          "1. FUNDS $300.0100")
         (sxml->table-row-col sxml 1 #f 3))
       (test-equal "bal-1/1/72"
         '("01/01/72" "$117,437.00" "$117,437.00" "$4,709.00" "$2,000.00"
           "$2,609.00" "$0.00" "$100.00" "$12,396.63" "$2,000.00" "$10,396.63"
-          "30 FUNDS " "$331.37" "$331.37" "#200.00 " "$100,000.00" "$117,437.00"
+          "30. FUNDS " "$331.37" "$331.37" "#200.00 " "$100,000.00" "$117,437.00"
           "$9,500.00" "$9,500.00" "$500.00" "$9,000.00" "$9,500.00" "$103,600.00"
           "$4,337.00" "$0.00" "$107,937.00" "$117,437.00" "#1.00 $1 + 67/102"
-          "1 FUNDS $346 + 56/101")
+          "1. FUNDS $346 + 56/101")
         (sxml->table-row-col sxml 1 #f 4)))
 
     (set-option! multi-bs-options "General" "Period order is most recent first" #t)
@@ -560,11 +560,11 @@
                                "multicol-balsheet-retained")))
       (test-equal "bal-1/3/80"
         '("$122,743.52" "$122,743.52" "$5,129.00" "$2,000.00" "$3,029.00"
-          "$0.00" "$100.00" "$16,424.52" "$2,000.00" "$14,424.52" "30 FUNDS "
+          "$0.00" "$100.00" "$16,424.52" "$2,000.00" "$14,424.52" "30. FUNDS "
           "$1,190.00" "$1,190.00" "#700.00 " "$100,000.00" "$122,743.52"
           "$9,500.00" "$9,500.00" "$500.00" "$9,000.00" "$9,500.00"
           "$103,600.00" "$8,373.52" "$1,270.00" "$113,243.52" "$122,743.52"
-          "#1.00 $1.7000" "1 FUNDS $480 + 85/104")
+          "#1.00 $1.7000" "1. FUNDS $480 + 85/104")
         (sxml->table-row-col sxml 1 #f 2)))))
 
 (define (multicol-pnl-tests)
@@ -624,26 +624,26 @@
     (let ((sxml (options->sxml multicol-balsheet-uuid multi-bs-options
                                "multicol pnl weighted-average")))
       (test-equal "weighted average exchange-rate"
-        '("#1.00 $1.4990" "1 FUNDS $235 + 3/7")
+        '("#1.00 $1.4990" "1. FUNDS $235 + 3/7")
         (sxml->table-row-col sxml 1 -2 -1)))
 
     (set-option! multi-bs-options "Commodities" "Price Source" 'average-cost)
     (let ((sxml (options->sxml multicol-balsheet-uuid multi-bs-options
                                "multicol pnl average-cost")))
       (test-equal "average-cost exchange-rate"
-        '("#1.00 $1.4550" "1 FUNDS $203 + 1/3")
+        '("#1.00 $1.4550" "1. FUNDS $203 + 1/3")
         (sxml->table-row-col sxml 1 -2 -1)))
 
     (set-option! multi-bs-options "Commodities" "Price Source" 'pricedb-nearest)
     (let ((sxml (options->sxml multicol-balsheet-uuid multi-bs-options
                                "multicol pnl pricedb-nearest")))
       (test-equal "pricedb-nearest exchange-rate"
-        '("#1.00 $1.7000" "1 FUNDS $480 + 85/104")
+        '("#1.00 $1.7000" "1. FUNDS $480 + 85/104")
         (sxml->table-row-col sxml 1 -2 -1)))
 
     (set-option! multi-bs-options "Commodities" "Price Source" 'pricedb-latest)
     (let ((sxml (options->sxml multicol-balsheet-uuid multi-bs-options
                                "multicol pnl pricedb-latest")))
       (test-equal "pricedb-latest exchange-rate"
-        '("#1.00 $1.7000" "1 FUNDS $480 + 85/104")
+        '("#1.00 $1.7000" "1. FUNDS $480 + 85/104")
         (sxml->table-row-col sxml 1 -2 -1)))))

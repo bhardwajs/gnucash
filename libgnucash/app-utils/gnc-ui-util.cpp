@@ -1290,8 +1290,7 @@ PrintAmountInternal(char* buf, gnc_numeric val, const GNCPrintAmountInfo *info)
                    info->max_decimal_places, buf, temp_buf);
         }
 
-        if (num_decimal_places > 0)
-            strcat (buf, temp_buf);
+        strcat (buf, temp_buf);
     }
 
     return strlen(buf);
