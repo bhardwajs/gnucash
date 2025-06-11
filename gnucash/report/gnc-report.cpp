@@ -42,6 +42,7 @@
 #include <gnc-guile-utils.h>
 #include <gnc-engine.h>
 #include "gnc-report.h"
+#include <charconv>
 
 extern "C" SCM scm_init_sw_report_module(void);
 
@@ -262,19 +263,20 @@ gnc_report_id_string_to_report_id (const char *id_string)
 {
     g_return_val_if_fail (id_string, -1);
 
-    char *end_ptr;
-    guint rpt_id = std::strtoul (id_string, &end_ptr, 10);
-    if (end_ptr == id_string) return -1;
-    if (*end_ptr == '\0') return rpt_id;
-    if (*end_ptr != '|') return -1;
+    const char *end_ptr = id_string + std::strlen (id_string);
+    gint rpt_id;
+    auto res = std::from_chars (id_string, end_ptr, rpt_id);
+    if (res.ec != std::errc() || rpt_id < 0) return -1;
+    if (res.ptr == end_ptr) return rpt_id;
+    if (*res.ptr != '|') return -1;
 
-    auto anchor_str = end_ptr + 1;
-    guint anchor_id = std::strtoul (anchor_str, &end_ptr, 10);
-    if (end_ptr == anchor_str || *end_ptr != '\0') return -1;
+    gint anchor_id;
+    res = std::from_chars (res.ptr + 1, end_ptr, anchor_id);
+    if (res.ec != std::errc() || *res.ptr != '\0' || anchor_id < 0) return -1;
 
     const SCM get_linked = scm_c_eval_string ("gnc:report-get-linked-report");
 
-    auto id = scm_call_2 (get_linked, scm_from_uint (rpt_id), scm_from_uint (anchor_id));
+    auto id = scm_call_2 (get_linked, scm_from_int (rpt_id), scm_from_int (anchor_id));
     return scm_is_number (id) ? scm_to_int (id) : -1;
 }
 
