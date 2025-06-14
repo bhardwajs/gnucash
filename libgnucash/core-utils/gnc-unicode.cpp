@@ -169,7 +169,6 @@ unicode_compare_internal(const char* one, const char* two,
     auto locale{gnc_locale_name()};
     std::unique_ptr<icu::Collator> coll(
         icu::Collator::createInstance(icu::Locale(locale), status));
-    g_free(locale);
 
     if (U_SUCCESS(status))
         collator_set_strength(coll.get(), strength);
@@ -179,6 +178,7 @@ unicode_compare_internal(const char* one, const char* two,
         g_log(logdomain, G_LOG_LEVEL_ERROR,
               "Failed to create collator for locale %s: %s",
               locale, u_errorName(status));
+        g_free(locale);
         return -99;
     }
 
@@ -189,9 +189,11 @@ unicode_compare_internal(const char* one, const char* two,
         g_log(logdomain, G_LOG_LEVEL_ERROR,
               "Comparison of %s and %s in locale %s failed: %s",
               one, two, locale, u_errorName(status));
+        g_free(locale);
         return -99;
     }
 
+    g_free(locale);
     return result == UCOL_LESS ? -1 : UCOL_EQUAL ? 0 : 1;
 }
 
