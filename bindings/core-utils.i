@@ -29,6 +29,7 @@
 #include <gnc-locale-utils.h>
 #include <glib.h>
 #include <glib/gi18n.h>
+#include <gnc-unicode.h>
 #include <gnc-version.h>
 #include <libintl.h>
 
@@ -49,6 +50,7 @@ PyObject* SWIG_init (void);
 
 %include <gnc-environment.h>
 %include <gnc-prefs.h>
+%include <gnc-unicode.h>
 %include <gnc-version.h>
 
 %newobject gnc_path_get_bindir;
