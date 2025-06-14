@@ -151,7 +151,7 @@ gnc_unicode_has_substring_identical(const char* needle,
                                     int* position,
                                     int* length)
 {
-    auto location = strstr(needle, haystack);
+    auto location = strstr(haystack, needle);
     if (location && location != haystack)
     {
         *position = static_cast<int>(location - haystack);
@@ -218,5 +218,6 @@ gnc_unicode_compare_accented_case_sensitive(const char* one, const char* two)
 int
 gnc_unicode_compare_identical(const char* one, const char* two)
 {
-    return strcmp(one, two);
+    return unicode_compare_internal(one, two, CompareStrength::IDENTICAL);
+
 }
