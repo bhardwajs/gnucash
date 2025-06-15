@@ -194,7 +194,7 @@ unicode_compare_internal(const char* one, const char* two,
     }
 
     g_free(locale);
-    return result == UCOL_LESS ? -1 : UCOL_EQUAL ? 0 : 1;
+    return result == UCOL_LESS ? -1 : result == UCOL_EQUAL ? 0 : 1;
 }
 
 int

@@ -133,3 +133,10 @@ TEST(GncUnicode, test_german_ss_decorated_accented_nocap)
     EXPECT_EQ(0, pos);
     EXPECT_EQ(0, len);
 }
+
+TEST (GncUnicode, test_simple_identical)
+{
+    EXPECT_EQ (gnc_unicode_compare_identical ("alice", "alice"), 0);
+    EXPECT_EQ (gnc_unicode_compare_identical ("alice", "bob"), -1);
+    EXPECT_EQ (gnc_unicode_compare_identical ("bob", "alice"), 1);
+}
