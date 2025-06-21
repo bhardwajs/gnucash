@@ -628,9 +628,16 @@ GncDbiSqlConnection::merge_tables(const std::string& table,
     auto stmt = create_statement_from_sql(sql);
     if (execute_nonselect_statement(stmt) < 0)
         return false;
-    if (!drop_table(table))
+    sql = std::string("DELETE FROM ") + table;
+    stmt = create_statement_from_sql(sql);
+    if (execute_nonselect_statement(stmt) < 0)
         return false;
-    if (!rename_table(merge_table, table))
+    sql = std::string("INSERT INTO ") + table +
+        " SELECT * FROM " + merge_table;
+    stmt = create_statement_from_sql(sql);
+    if (execute_nonselect_statement(stmt) < 0)
+        return false;
+    if (!drop_table(merge_table))
         return false;
     return drop_table(other);
 }
