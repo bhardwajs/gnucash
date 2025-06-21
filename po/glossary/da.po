@@ -4,14 +4,15 @@
 # Christian Rose <menthos@menthos.com>, 2001.
 # Joe Hansen <joedalton2@yahoo.dk>, 2009.
 # Aputsiak Niels Janussen <aj@isit.gl>, 2021.
+# Allan Olsen <allan@hamann-olsen.dk>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.6\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-06-22 06:24+0200\n"
-"PO-Revision-Date: 2022-01-02 22:54+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-06-20 15:01+0000\n"
+"Last-Translator: Allan Olsen <allan@hamann-olsen.dk>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/gnucash/glossary/"
 "da/>\n"
 "Language: da\n"
@@ -19,19 +20,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. "English Definition (Dear translators: This file will never be visible to normal users! It should only serve as a tool for translators. E.g. matching terms from this file are displayed in Weblate's Translation pages of other GnuCash components like the program.)"
 msgid "Term"
-msgstr ""
+msgstr "Term"
 
 #. "Opening and closing quote symbols and optionally their key combos like [altgr]+[Y]/[X]. Define the preferred style of quotation, see https://en.wikipedia.org/wiki/Quotation_mark#Summary_table"
 msgid "\"\""
-msgstr ""
+msgstr "\"\""
 
 #. "A detailed record of money spent and received"
 msgid "account"
-msgstr "konto"
+msgstr "Konto"
 
 #. "An alphanumerical code applied to accounts for sorting. Some jurisdictions mandate codes and some GnuCash book templates include codes as part of the tree structure. Account codes can be set and changed in the Edit Account dialog."
 msgid "account code"
@@ -46,7 +47,6 @@ msgid "account name"
 msgstr "kontonavn"
 
 #. "The grouping of accounts whose balance increases with a debit (left side of the balance sheet in T account form). Complement: Passive. See also: Report Form"
-#, fuzzy
 msgid "account type: Active"
 msgstr "kontotype: Aktiv"
 
@@ -55,9 +55,8 @@ msgid "account type: Asset"
 msgstr "kontotype: Aktiv"
 
 #. "in fact: 'Active & Passive', group aka 'Balance Sheet accounts'; complement of 'Profit & Loss'"
-#, fuzzy
 msgid "account type: Assets & Liabilities"
-msgstr "kontotype: Gæld"
+msgstr "kontotype: Aktiver og passiver"
 
 # src/prefs.c:210
 #. "(esp. US) (Brit = current account) a bank account from which money can be withdrawn without previous notice"
@@ -93,14 +92,12 @@ msgid "account type: Mutual fund"
 msgstr "kontotype: aktiefond"
 
 #. "The right side of the balance sheet in T account form shows the source of funds and contains equity & liability. While not common in english, most languages would translate 'equity & liability' with 'passive'. Complement: Active. See also: Report Form Implementation: https://bugs.gnucash.org/show_bug.cgi?id=421766"
-#, fuzzy
 msgid "account type: Passive"
-msgstr "kontotype: Aktiv"
+msgstr "kontotype: Passiver"
 
 #. "Group of accounts tracking your success, complement of 'Assets & Liabilities'"
-#, fuzzy
 msgid "account type: Profit & Loss"
-msgstr "kontotype: Aktiv"
+msgstr "kontotype: Fortjeneste og Tab"
 
 #. "1. (US) any type of account that earns interest 2. (Brit) any type of bank account that earns a higher level of interest than a current account or deposit account"
 msgid "account type: saving"
@@ -111,9 +108,8 @@ msgid "account type: Stock"
 msgstr "kontotype: aktie"
 
 #. "This account type is used when exchanging or trading amounts from one currency into another"
-#, fuzzy
 msgid "account type: trading"
-msgstr "kontotype: opsparing"
+msgstr "kontotype: Valutakurs"
 
 #. "-"
 msgid "account: parent account"
@@ -205,17 +201,15 @@ msgstr "hændelse: hævning"
 
 #. "As in: payable aging, or: receivable aging. The aging report categorizes payables or receivables based on time buckets. This gives an overview of which bills or invoices are overdue at which time in the future. "
 msgid "aging"
-msgstr ""
+msgstr "forfald"
 
 #. "A sum of money"
 msgid "amount"
 msgstr "beløb"
 
 #. "The amount finally to pay, respecting discounts, billing terms…"
-#, fuzzy
-#| msgid "amount"
 msgid "amount due"
-msgstr "beløb"
+msgstr "skyldigt beløb"
 
 #. "The result of adding several amounts together and then dividing this total by the number of amounts"
 msgid "average"
@@ -226,12 +220,10 @@ msgid "balance (noun)"
 msgstr "saldo (navneord)"
 
 #. "Balance brought forward - usually the first entry of an account statement containing the 'balance c/f' of the previous billing period or page"
-#, fuzzy
 msgid "balance b/f"
 msgstr "afstemme, at"
 
 #. "Balance carried forward - usually the last entry of an account statement to be used as 'balance b/f' on the next billing period or page"
-#, fuzzy
 msgid "balance c/f"
 msgstr "afstemme, at"
 
@@ -249,12 +241,11 @@ msgstr "bank"
 
 #. "A written statement of money owed for goods or services supplied. In Gnucash, a 'bill' is a statement that we received (from a vendor), whereas an 'invoice' is one that we sent out (to a customer)."
 msgid "bill"
-msgstr "regning"
+msgstr "købs faktura"
 
 #. "see invoice owner"
-#, fuzzy
 msgid "bill owner"
-msgstr "betalingsbetingelser"
+msgstr "ejer af regning"
 
 #. "Conditions on paying a bill. Both an invoice and a bill have billing terms. For example, you can have 'terms' of 'Net-30', where the bill is due in full in 30 days."
 msgid "billing terms"
@@ -338,9 +329,8 @@ msgid "credit transfer"
 msgstr "overførsel"
 
 #. "A document that you give to a client that says you owe money to the client, i.e. the opposite of an invoice"
-#, fuzzy
 msgid "credit note"
-msgstr "overførsel"
+msgstr "kreditnota"
 
 #. "The system of money used in a country"
 msgid "currency"
@@ -352,7 +342,7 @@ msgstr "Tilpasset"
 
 #. "Compact, well-structured presentation of informations. See https://en.wikipedia.org/wiki/Dashboard_(business)"
 msgid "dashboard"
-msgstr ""
+msgstr "kontrolpanel"
 
 #. "The backend where the data is stored."
 msgid "database"
@@ -391,9 +381,8 @@ msgid "Description (column in register)"
 msgstr "Beskrivelse (kolonne i kassekladde)"
 
 #. "Reductions to a basic price of goods or services. Your language might distinguish between discounts dealing with payments (billing terms) and others (invoice)."
-#, fuzzy
 msgid "discount"
-msgstr "konto"
+msgstr "rabat"
 
 #. "Important Buzzword :)"
 msgid "double entry"
@@ -401,15 +390,15 @@ msgstr "dobbelt bogholderi"
 
 #. "Transactions or bills/invoices can contain a document link which links either to some file on the local disk or to some arbitrary URL."
 msgid "document link"
-msgstr ""
+msgstr "dokument link"
 
 #. "The last day to pay an invoice in time."
 msgid "due date"
-msgstr ""
+msgstr "forfaldsdato"
 
 #. "Electronic mail. Some languages allow different writings, but each team should use only one. https://en.wikipedia.org/wiki/Email"
 msgid "email"
-msgstr ""
+msgstr "e-mail"
 
 #. "a person who works for somebody or a company in return for wages"
 msgid "employee"
@@ -421,7 +410,7 @@ msgstr "egenkapital"
 
 #. "Report that ... FIXME: Add description."
 msgid "equity statement"
-msgstr ""
+msgstr "egenkapitalopgørelse"
 
 #. "A trusted third party that holds a payment or deposit until a transaction is completed. In the US, many mortgage companies set up an escrow account when you get a mortgage.  You pay into the account every month and they disburse amounts out of the escrow to pay for hazard insurance and property taxes. So they are holding funds 'in escrow' to complete the transactions (paying insurance and taxes)."
 msgid "escrow (account)"
@@ -452,9 +441,8 @@ msgid "financial calculator: payments"
 msgstr "finansiel lommeregner: betalinger"
 
 #. "formal records of the financial activities and position of a business, person, or other entity. See https://en.wikipedia.org/wiki/Financial_statement for a list."
-#, fuzzy
 msgid "financial statement"
-msgstr "hændelse: betaling"
+msgstr "Kontoudtog"
 
 #. "Free software is a matter of liberty, not price … see https://en.wikipedia.org/wiki/Free_software"
 msgid "free software"
@@ -482,7 +470,7 @@ msgstr "rente"
 
 #. "A list of goods sold or services provided together with the prices charged; see also: a bill. In Gnucash, an 'invoice' is a statement that we sent out (to a customer), whereas a 'bill' is one that we received (from a vendor)."
 msgid "invoice"
-msgstr "faktura"
+msgstr "Salgs faktura"
 
 #. "In business accounting: Jobs are a mechanism by which you can group multiple invoices or bills that belong to the same customer or vendor. The job describes a (larger) piece of work or a task undertaken on order, for which one or many invoices or bills will be issued."
 msgid "job"
@@ -527,9 +515,8 @@ msgid "marker"
 msgstr "markering"
 
 #. "1. Some text annotation, but this meaning is rarely used inside gnucash. 2. In the Customer summary report: The ratio of profit vs. sales, i.e. the profit amount divided by the sales amount, shown in percent."
-#, fuzzy
 msgid "markup"
-msgstr "markering"
+msgstr "marginal"
 
 #. "The way how more than one window is displayed in GnuCash at the same time. MDI = Multiple Document Interface."
 msgid "MDI modus"
@@ -544,16 +531,12 @@ msgid "Mortgage"
 msgstr "Huslån"
 
 #. "Adjustable Rate Mortgage"
-#, fuzzy
-#| msgid "Mortgage"
 msgid "mortgage: ARM"
-msgstr "Huslån"
+msgstr "huslån: Variabel rente"
 
 #. "Fixed Rate Mortgage"
-#, fuzzy
-#| msgid "Mortgage"
 msgid "mortgage: FRM"
-msgstr "Huslån"
+msgstr "Huslån: Fast rente"
 
 #. "e.g. USD, EUR, see Currency."
 msgid "national currency"
@@ -606,7 +589,7 @@ msgstr "forældreløs"
 
 #. "The customer to (or employee or vendor from) which this invoice is sent - or short your business partner."
 msgid "owner (of bill, invoice or expense voucher)"
-msgstr ""
+msgstr "ejer (af regning, faktura eller udgiftsbilag)"
 
 #. "A secret phrase that one needs to know in order to get access to a user account "
 msgid "passphrase"
@@ -637,18 +620,16 @@ msgid "portfolio"
 msgstr "portefølge"
 
 #. "Register invoice, voucher in account register"
-#, fuzzy
 msgid "post, to"
-msgstr "lukke, at"
+msgstr "poster, til"
 
 #. "A menu choice in many graphical user interface applications that allows the user to specify how the application will act each time it is used. "
 msgid "preferences"
 msgstr "indstillinger"
 
 #. "Loan repayment calculator: your payments are split in interests payment and principal payment"
-#, fuzzy
 msgid "principal payment"
-msgstr "hændelse: betaling"
+msgstr "Hovedstol"
 
 #. "An amount of money for which sth may be bought or sold"
 msgid "price (in a split)"
@@ -672,7 +653,7 @@ msgstr "gevinst"
 
 #. "OBSOLETE. This report was renamed to 'income statement' on 2004-07-13. Old definition: A list that shows the amount of money spent compared with the amount earned by a business in a particular period"
 msgid "Profit & Loss"
-msgstr "Resultatopgørelse"
+msgstr "Indtjening og tab"
 
 #. "-"
 msgid "quick-fill"
@@ -724,24 +705,23 @@ msgstr "genindlæse, at"
 
 #. "aka 'two-sided form' is in Europe often used for the balance sheet. Complement: report form: Vertical Form"
 msgid "report form: T Account Form"
-msgstr ""
+msgstr "Rapport form: T-Konto Form"
 
 #. "aka 'running form' is in english speaking countries usually used for the balance sheet in one column. Complement: report form: T Account Form"
 msgid "report form: Vertical Form"
-msgstr ""
+msgstr "Rapport form: Vertikal Konto Form"
 
 #. "name of an equity account (?); to be distinguished from the opening balance."
 msgid "Retained Earnings"
 msgstr "Overført resultat"
 
 #. "Create a new transaction that is the inverse of the old one.  When you add the two together they completely cancel out.  Accounts use this instead of voiding transactions, usually because the prior month has been closed and can no longer be changed, or the entire accounting system is 'write only'."
-#, fuzzy
 msgid "reverse transaction, to (Action in the register)"
-msgstr "Beskrivelse (kolonne i kassekladde)"
+msgstr "omvendt transaktion (annuller tidligere transaktion)"
 
 #. "(In the customer summary report) The total amount of money received because something was sold."
 msgid "sales"
-msgstr ""
+msgstr "salg"
 
 #. "To write data (typically a file) to a storage medium, such as a disk or tape."
 msgid "save, to (to a file)"
@@ -762,7 +742,7 @@ msgstr "værdipapir"
 
 #. "Selling borrowed units in the hope that when you buy them back later it will be at a lower price."
 msgid "Sell short"
-msgstr ""
+msgstr "Sælg \"Short\""
 
 #. "-"
 msgid "Share Balance (register)"
@@ -782,13 +762,11 @@ msgstr "del"
 
 #. "Alias of 'shares'"
 msgid "stocks"
-msgstr ""
+msgstr "aktie"
 
 #. "Sometimes one old share gets replaced by multiple new like 1 OLD @100¤ by 2 NEW @50¤"
-#, fuzzy
-#| msgid "split"
 msgid "stock split"
-msgstr "del"
+msgstr "aktieopdeling"
 
 #. "This sets the particular design or shape of a report."
 msgid "style sheet"
@@ -808,22 +786,20 @@ msgid "tax info"
 msgstr "skatteinformation"
 
 #. "Amost everybody has to declare and probably pay it. See https://en.wikipedia.org/wiki/Income_tax"
-#, fuzzy
-#| msgid "account type: Income"
 msgid "tax type: income tax"
-msgstr "kontotype: Salg"
+msgstr "skattetype: Indkomstskat"
 
 #. "Usually only business users have to handle it, see https://en.wikipedia.org/wiki/Sales_tax."
 msgid "tax type: sales tax"
-msgstr ""
+msgstr "skattetype: Merværdiafgift"
 
 #. "'Goods and Service Tax' is one form of sales tax."
 msgid "tax type: GST"
-msgstr ""
+msgstr "Skattetype: GST (Gods & Service moms)"
 
 #. "'Value Added Tax' is the other form of sales tax."
 msgid "tax type: VAT"
-msgstr ""
+msgstr "skattetype: Moms"
 
 #. "If you create a new e.g. style sheet, you can start from a template."
 msgid "template"
@@ -875,9 +851,8 @@ msgid "transfer, to (register toolbar)"
 msgstr "overføre, at (kassekladdeværktøjslinje)"
 
 #. "The trial balance is a worksheet on which you list all your general ledger accounts and their debit or credit balance. It is a tool that is used to alert you to errors in your books. The total debits must equal the total credits. If they don't equal, you know you have an error that must be tracked down."
-#, fuzzy
 msgid "trial balance (report)"
-msgstr "saldo (navneord)"
+msgstr "råbalance (Rapport)"
 
 #. "A class or things that have characteristics in common; type of an account, of a commodity etc."
 msgid "type"
@@ -900,9 +875,8 @@ msgid "vendor"
 msgstr "leverandør"
 
 #. "The terms 'Voucher' and 'Expense Voucher' are used interchangeably in gnucash. The 'Expense Voucher' is also a bit of a misnomer -- it's more like an 'Expense Report' in gnucash.  The phrase is meant to be a list of expenses incurred by an employee for which the company will reminburse them."
-#, fuzzy
 msgid "voucher"
-msgstr "kilde"
+msgstr "Udgiftsbillag"
 
 #. "see debit"
 msgid "withdraw (in the reconcile dialog)"
