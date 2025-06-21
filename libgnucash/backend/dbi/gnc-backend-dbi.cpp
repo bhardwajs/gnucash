@@ -976,8 +976,8 @@ GncDbiBackend<Type>::safe_sync (QofBook* book)
         LEAVE ("Failed to create new database tables");
         return;
     }
-    conn->table_operation (TableOpType::drop_backup);
     conn->commit_transaction();
+    conn->table_operation (TableOpType::drop_backup);
     LEAVE ("book=%p", m_book);
 }
 /* MySQL commits the transaction and all savepoints after the first CREATE
