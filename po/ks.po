@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: GnuCash 5.11\n"
+"Project-Id-Version: GnuCash 5.12\n"
 "Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
 "product=GnuCash&component=Translations\n"
-"POT-Creation-Date: 2025-03-23 15:35-0700\n"
+"POT-Creation-Date: 2025-06-22 12:27-0700\n"
 "PO-Revision-Date: 2014-06-24 09:34+0530\n"
 "Last-Translator: Neha Aphale <kulkarnineha1208@gmail.com>\n"
 "Language-Team: NONE\n"
@@ -20,8 +20,8 @@ msgstr ""
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
 #: gnucash/report/reports/standard/account-piecharts.scm:514
-#: gnucash/report/reports/standard/balance-forecast.scm:274
-#: gnucash/report/reports/standard/balsheet-pnl.scm:862
+#: gnucash/report/reports/standard/balance-forecast.scm:277
+#: gnucash/report/reports/standard/balsheet-pnl.scm:863
 #: gnucash/report/reports/standard/budget.scm:468
 #: gnucash/report/reports/standard/cashflow-barchart.scm:259
 #: gnucash/report/reports/standard/cash-flow.scm:183
@@ -336,7 +336,7 @@ msgid "Western"
 msgstr "रजसटर"
 
 #: borrowed/goffice/go-charmap-sel.c:84
-#: gnucash/gtkbuilder/assistant-loan.glade:964
+#: gnucash/gtkbuilder/assistant-loan.glade:967
 #: gnucash/gtkbuilder/dialog-account.glade:1029
 #: gnucash/report/reports/standard/account-piecharts.scm:457
 #: gnucash/report/reports/standard/category-barchart.scm:547
@@ -1079,8 +1079,8 @@ msgstr ""
 
 #: gnucash/gnome/assistant-acct-period.c:594
 #: gnucash/gtkbuilder/dialog-fincalc.glade:650
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1200
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1205
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1201
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1206
 #: gnucash/report/reports/standard/budget-flow.scm:44
 msgid "Period"
 msgstr "पिरड"
@@ -1163,7 +1163,7 @@ msgstr ""
 
 #: gnucash/gnome/assistant-hierarchy.cpp:1531
 #: gnucash/gnome/assistant-hierarchy.cpp:1550
-#: gnucash/gnome-utils/dialog-utils.c:804
+#: gnucash/gnome-utils/dialog-utils.c:806
 msgid "New Book Options"
 msgstr "नॊव बोक ऊपशन"
 
@@ -1202,28 +1202,28 @@ msgstr "रलो मेलो पिमींट"
 
 #. Translators: %s is "Taxes",
 #. "Insurance", or similar.
-#: gnucash/gnome/assistant-loan.cpp:766
+#: gnucash/gnome/assistant-loan.cpp:764
 #, fuzzy, c-format
 #| msgid "... pay \"%s\"?"
 msgid "… pay \"%s\"?"
 msgstr "… करवाह पि \"%s\"?"
 
-#: gnucash/gnome/assistant-loan.cpp:778
+#: gnucash/gnome/assistant-loan.cpp:776
 msgid "via Escrow account?"
 msgstr "एिसकरू एिकावुंट ज़ॊरयो?"
 
-#: gnucash/gnome/assistant-loan.cpp:925
-#: gnucash/register/ledger-core/split-register.c:2606
+#: gnucash/gnome/assistant-loan.cpp:923
+#: gnucash/register/ledger-core/split-register.c:2608
 msgid "Loan"
 msgstr "लून"
 
 #. Translators: %s is "Taxes", or "Insurance", or similar
-#: gnucash/gnome/assistant-loan.cpp:1475
+#: gnucash/gnome/assistant-loan.cpp:1483
 #, c-format
 msgid "Loan Repayment Option: \"%s\""
 msgstr "लोन रिपेमेनट ऊपशन: \"%s\""
 
-#: gnucash/gnome/assistant-loan.cpp:1877 gnucash/gnome/dialog-lot-viewer.c:985
+#: gnucash/gnome/assistant-loan.cpp:1885 gnucash/gnome/dialog-lot-viewer.c:985
 #: gnucash/gnome/gnc-split-reg.c:654 gnucash/gnome/reconcile-view.c:453
 #: gnucash/gnome-utils/gnc-tree-view-price.c:398
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:67
@@ -1237,17 +1237,17 @@ msgstr "लोन रिपेमेनट ऊपशन: \"%s\""
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:379
 #: gnucash/import-export/csv-imp/gnc-imp-props-price.cpp:52
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:59
-#: gnucash/import-export/import-main-matcher.cpp:1591
+#: gnucash/import-export/import-main-matcher.cpp:1596
 #: gnucash/import-export/import-match-picker.cpp:313
 #: gnucash/import-export/import-match-picker.cpp:353
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3823
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3874
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:62
-#: gnucash/register/ledger-core/split-register-model.c:233
+#: gnucash/register/ledger-core/split-register-model.c:237
 #: gnucash/report/reports/standard/account-summary.scm:77
 #: gnucash/report/reports/standard/advanced-portfolio.scm:68
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1033
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1038
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1034
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1039
 #: gnucash/report/reports/standard/cashflow-barchart.scm:319
 #: gnucash/report/reports/standard/category-barchart.scm:646
 #: gnucash/report/reports/standard/category-barchart.scm:666
@@ -1270,14 +1270,14 @@ msgstr "लोन रिपेमेनट ऊपशन: \"%s\""
 msgid "Date"
 msgstr "तॊरिख"
 
-#: gnucash/gnome/assistant-loan.cpp:1883 gnucash/gnome/assistant-loan.cpp:2813
-#: gnucash/gnome/assistant-loan.cpp:2873 gnucash/gnome/assistant-loan.cpp:2885
+#: gnucash/gnome/assistant-loan.cpp:1891 gnucash/gnome/assistant-loan.cpp:2875
+#: gnucash/gnome/assistant-loan.cpp:2932 gnucash/gnome/assistant-loan.cpp:2944
 #: gnucash/gtkbuilder/dialog-payment.glade:445
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:132
-#: gnucash/register/ledger-core/split-register.c:2567
-#: gnucash/register/ledger-core/split-register.c:2608
-#: gnucash/register/ledger-core/split-register.c:2613
-#: gnucash/register/ledger-core/split-register.c:2624
+#: gnucash/register/ledger-core/split-register.c:2569
+#: gnucash/register/ledger-core/split-register.c:2610
+#: gnucash/register/ledger-core/split-register.c:2615
+#: gnucash/register/ledger-core/split-register.c:2626
 #: gnucash/report/reports/standard/new-owner-report.scm:282
 #: libgnucash/engine/Account.cpp:152 libgnucash/engine/Account.cpp:160
 #: libgnucash/engine/Account.cpp:181 libgnucash/engine/gncOwner.c:836
@@ -1285,27 +1285,27 @@ msgstr "तॊरिख"
 msgid "Payment"
 msgstr "पिमींट"
 
-#: gnucash/gnome/assistant-loan.cpp:1889 gnucash/gnome/assistant-loan.cpp:2905
+#: gnucash/gnome/assistant-loan.cpp:1897 gnucash/gnome/assistant-loan.cpp:2960
 msgid "Principal"
 msgstr "परोनोसपील"
 
-#: gnucash/gnome/assistant-loan.cpp:1895 gnucash/gnome/assistant-loan.cpp:2925
+#: gnucash/gnome/assistant-loan.cpp:1903 gnucash/gnome/assistant-loan.cpp:2976
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:77
-#: gnucash/register/ledger-core/split-register.c:2562
-#: gnucash/register/ledger-core/split-register.c:2599
-#: gnucash/register/ledger-core/split-register.c:2607
-#: gnucash/register/ledger-core/split-register.c:2614
-#: gnucash/register/ledger-core/split-register.c:2623
-#: gnucash/register/ledger-core/split-register.c:2650
+#: gnucash/register/ledger-core/split-register.c:2564
+#: gnucash/register/ledger-core/split-register.c:2601
+#: gnucash/register/ledger-core/split-register.c:2609
+#: gnucash/register/ledger-core/split-register.c:2616
+#: gnucash/register/ledger-core/split-register.c:2625
+#: gnucash/register/ledger-core/split-register.c:2652
 msgid "Interest"
 msgstr "ईनटरसट"
 
-#: gnucash/gnome/assistant-loan.cpp:2814
+#: gnucash/gnome/assistant-loan.cpp:2876
 msgid "Escrow Payment"
 msgstr "एिसकरु पिमींट"
 
 #: gnucash/gnome/assistant-stock-split.c:391
-#: gnucash/register/ledger-core/split-register.c:2658
+#: gnucash/register/ledger-core/split-register.c:2660
 #, fuzzy
 msgctxt "Action Column"
 msgid "Split"
@@ -1321,10 +1321,10 @@ msgstr "परायीस जमाह करनस मंज़ एिरर"
 #: gnucash/import-export/aqb/gnc-ab-utils.c:476
 #: gnucash/import-export/bi-import/dialog-bi-import-gui.c:147
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:66
-#: gnucash/import-export/import-main-matcher.cpp:1592
+#: gnucash/import-export/import-main-matcher.cpp:1597
 #: gnucash/import-export/import-match-picker.cpp:312
 #: gnucash/import-export/qif-imp/dialog-account-picker.c:433
-#: gnucash/register/ledger-core/split-register-model.c:346
+#: gnucash/register/ledger-core/split-register-model.c:350
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1026
 #: gnucash/report/reports/standard/budget-flow.scm:41
 #: gnucash/report/reports/standard/budget.scm:49
@@ -1351,7 +1351,7 @@ msgstr "अलामत"
 #. Translators: The number of units of any kind of investment (shares, fonds, bonds, …)
 #: gnucash/gnome/assistant-stock-split.c:594
 #: gnucash/gnome/dialog-find-transactions.c:122
-#: gnucash/register/ledger-core/split-register-model.c:424
+#: gnucash/register/ledger-core/split-register-model.c:428
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1046
 #: gnucash/report/reports/standard/general-journal.scm:98
 #: gnucash/report/reports/standard/general-ledger.scm:78
@@ -1394,14 +1394,14 @@ msgstr ""
 #. Translators: this is a stock transaction describing
 #. new purchase of stock.
 #: gnucash/gnome/assistant-stock-transaction.cpp:186
-#: gnucash/register/ledger-core/split-register.c:2585
-#: gnucash/register/ledger-core/split-register.c:2589
-#: gnucash/register/ledger-core/split-register.c:2596
-#: gnucash/register/ledger-core/split-register.c:2604
-#: gnucash/register/ledger-core/split-register.c:2621
-#: gnucash/register/ledger-core/split-register.c:2632
-#: gnucash/register/ledger-core/split-register.c:2637
-#: gnucash/register/ledger-core/split-register.c:2664
+#: gnucash/register/ledger-core/split-register.c:2587
+#: gnucash/register/ledger-core/split-register.c:2591
+#: gnucash/register/ledger-core/split-register.c:2598
+#: gnucash/register/ledger-core/split-register.c:2606
+#: gnucash/register/ledger-core/split-register.c:2623
+#: gnucash/register/ledger-core/split-register.c:2634
+#: gnucash/register/ledger-core/split-register.c:2639
+#: gnucash/register/ledger-core/split-register.c:2666
 #: libgnucash/engine/Account.cpp:155 libgnucash/engine/Account.cpp:156
 #: libgnucash/engine/Account.cpp:157
 msgid "Buy"
@@ -1414,14 +1414,14 @@ msgstr ""
 #. Translators: this is a stock transaction describing new
 #. sale of stock, and recording capital gain/loss
 #: gnucash/gnome/assistant-stock-transaction.cpp:197
-#: gnucash/register/ledger-core/split-register.c:2586
-#: gnucash/register/ledger-core/split-register.c:2590
-#: gnucash/register/ledger-core/split-register.c:2601
-#: gnucash/register/ledger-core/split-register.c:2605
-#: gnucash/register/ledger-core/split-register.c:2622
-#: gnucash/register/ledger-core/split-register.c:2633
-#: gnucash/register/ledger-core/split-register.c:2638
-#: gnucash/register/ledger-core/split-register.c:2665
+#: gnucash/register/ledger-core/split-register.c:2588
+#: gnucash/register/ledger-core/split-register.c:2592
+#: gnucash/register/ledger-core/split-register.c:2603
+#: gnucash/register/ledger-core/split-register.c:2607
+#: gnucash/register/ledger-core/split-register.c:2624
+#: gnucash/register/ledger-core/split-register.c:2635
+#: gnucash/register/ledger-core/split-register.c:2640
+#: gnucash/register/ledger-core/split-register.c:2667
 #: libgnucash/engine/Account.cpp:175 libgnucash/engine/Account.cpp:176
 #: libgnucash/engine/Account.cpp:177
 msgid "Sell"
@@ -1438,9 +1438,9 @@ msgstr ""
 #. Translators: this is a stock transaction describing
 #. dividends issued to holder
 #: gnucash/gnome/assistant-stock-transaction.cpp:210
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:733
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:778
-#: gnucash/register/ledger-core/split-register.c:2649
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:730
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:775
+#: gnucash/register/ledger-core/split-register.c:2651
 msgid "Dividend"
 msgstr "डीवोडींड"
 
@@ -1681,7 +1681,7 @@ msgstr "यि बिल छॊ डयूःकुनुयः"
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:655
 #: gnucash/gnome/assistant-stock-transaction.cpp:716
-#: gnucash/report/reports/standard/balsheet-pnl.scm:799
+#: gnucash/report/reports/standard/balsheet-pnl.scm:800
 #, fuzzy
 msgid "missing"
 msgstr "कमीशन"
@@ -1816,8 +1816,8 @@ msgstr "बिलनोस कॊरीव हॊसील."
 #: gnucash/gnome/assistant-stock-transaction.cpp:1922
 #: gnucash/gtkbuilder/assistant-stock-split.glade:129
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:234
-#: gnucash/register/ledger-core/split-register.c:2110
-#: gnucash/register/ledger-core/split-register.c:2113
+#: gnucash/register/ledger-core/split-register.c:2112
+#: gnucash/register/ledger-core/split-register.c:2115
 msgid "_Shares"
 msgstr "शीयर"
 
@@ -1853,10 +1853,10 @@ msgstr "दॊखील कॊरीव एिनमोतयन तॊ की�
 #: gnucash/gtkbuilder/dialog-transfer.glade:205
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:387
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:72
-#: gnucash/import-export/import-main-matcher.cpp:1596
+#: gnucash/import-export/import-main-matcher.cpp:1601
 #: gnucash/import-export/import-match-picker.cpp:316
 #: gnucash/import-export/import-match-picker.cpp:356
-#: gnucash/register/ledger-core/split-register-model.c:360
+#: gnucash/register/ledger-core/split-register-model.c:364
 #: gnucash/report/reports/standard/general-ledger.scm:71
 #: gnucash/report/reports/standard/general-ledger.scm:91
 #: gnucash/report/reports/standard/register.scm:139
@@ -1870,7 +1870,7 @@ msgstr "मीमू"
 #: gnucash/gnome/assistant-stock-transaction.cpp:2339
 #: gnucash/gnome/gnc-plugin-page-register.cpp:3462
 #: gnucash/gtkbuilder/dialog-payment.glade:300
-#: gnucash/register/ledger-core/split-register.c:2460
+#: gnucash/register/ledger-core/split-register.c:2462
 #: gnucash/report/reports/standard/general-journal.scm:82
 #: gnucash/report/reports/standard/register.scm:336
 #: gnucash/report/reports/standard/trial-balance.scm:555
@@ -1882,10 +1882,10 @@ msgstr "डीबिट"
 #: gnucash/gnome/assistant-stock-transaction.cpp:2346
 #: gnucash/gnome/gnc-plugin-page-register.cpp:3458
 #: gnucash/gtkbuilder/dialog-payment.glade:316
-#: gnucash/register/ledger-core/split-register.c:2483
-#: gnucash/register/ledger-core/split-register.c:2578
-#: gnucash/register/ledger-core/split-register.c:2597
-#: gnucash/register/ledger-core/split-register.c:2615
+#: gnucash/register/ledger-core/split-register.c:2485
+#: gnucash/register/ledger-core/split-register.c:2580
+#: gnucash/register/ledger-core/split-register.c:2599
+#: gnucash/register/ledger-core/split-register.c:2617
 #: gnucash/report/reports/standard/general-journal.scm:83
 #: gnucash/report/reports/standard/register.scm:338
 #: gnucash/report/reports/standard/trial-balance.scm:558
@@ -1939,14 +1939,14 @@ msgstr "वूचर"
 #: gnucash/gnome/dialog-invoice.c:3767
 #: gnucash/gnome/gnc-plugin-page-invoice.cpp:397
 #: gnucash/gnome/gnc-plugin-page-register.cpp:407
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1920
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1925
 #: gnucash/gnome-search/dialog-search.c:1093
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:167
 #: gnucash/gtkbuilder/dialog-invoice.glade:8
 #: gnucash/gtkbuilder/dialog-invoice.glade:195
 #: gnucash/gtkbuilder/dialog-invoice.glade:935
 #: gnucash/gtkbuilder/dialog-invoice.glade:959
-#: gnucash/register/ledger-core/split-register.c:2612
+#: gnucash/register/ledger-core/split-register.c:2614
 #: gnucash/report/reports/standard/invoice.scm:765
 #: gnucash/report/reports/standard/invoice.scm:782
 #: gnucash/report/reports/standard/receipt.scm:112
@@ -2179,7 +2179,7 @@ msgstr "कामूडीटी करवाह डीलिट?"
 #: gnucash/import-export/csv-imp/assistant-csv-trans-import.cpp:2102
 #: gnucash/register/ledger-core/gncEntryLedger.c:921
 #: gnucash/register/ledger-core/gncEntryLedgerControl.c:896
-#: gnucash/register/ledger-core/split-register-control.cpp:1578
+#: gnucash/register/ledger-core/split-register-control.cpp:1588
 #: gnucash/ui/gnc-plugin-page-invoice.ui:141
 #: gnucash/ui/gnc-plugin-page-invoice.ui:230
 #: gnucash/ui/gnc-plugin-page-invoice.ui:422
@@ -2517,13 +2517,13 @@ msgstr "टरानज़ेकशन तफसील"
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:382
 #: gnucash/import-export/csv-exp/csv-tree-export.cpp:61
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:61
-#: gnucash/import-export/import-main-matcher.cpp:1595
+#: gnucash/import-export/import-main-matcher.cpp:1600
 #: gnucash/import-export/import-match-picker.cpp:315
 #: gnucash/import-export/import-match-picker.cpp:355
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3833
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3884
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:67
-#: gnucash/register/ledger-core/split-register-model.c:300
+#: gnucash/register/ledger-core/split-register-model.c:304
 #: gnucash/report/reports/standard/account-summary.scm:380
 #: gnucash/report/reports/standard/general-journal.scm:96
 #: gnucash/report/reports/standard/general-ledger.scm:70
@@ -2602,8 +2602,8 @@ msgstr "यूज़र नाव"
 #: gnucash/gnome-utils/gnc-tree-view-commodity.c:357
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:332
 #: gnucash/gnome-utils/gnc-tree-view-sx-list.c:117
-#: gnucash/gtkbuilder/assistant-loan.glade:597
-#: gnucash/gtkbuilder/assistant-loan.glade:785
+#: gnucash/gtkbuilder/assistant-loan.glade:600
+#: gnucash/gtkbuilder/assistant-loan.glade:788
 #: gnucash/gtkbuilder/dialog-customer.glade:237
 #: gnucash/gtkbuilder/dialog-customer.glade:744
 #: gnucash/gtkbuilder/dialog-employee.glade:221
@@ -2708,7 +2708,7 @@ msgstr "बंद करनॊच एिनटरीयो"
 
 #: gnucash/gnome/dialog-find-transactions.c:118
 #: gnucash/gnome/gnc-plugin-page-register.cpp:403
-#: gnucash/gnome/window-reconcile.cpp:1450
+#: gnucash/gnome/window-reconcile.cpp:1453
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:369
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:394
 msgid "Reconcile"
@@ -2771,7 +2771,7 @@ msgstr "नमबर/एकशन"
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:386
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:65
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:57
-#: gnucash/register/ledger-core/split-register-model.c:332
+#: gnucash/register/ledger-core/split-register-model.c:336
 #: gnucash/report/reports/standard/invoice.scm:91
 #: gnucash/report/reports/standard/invoice.scm:418
 msgid "Action"
@@ -2829,7 +2829,7 @@ msgstr "वज़ाहत /नोट/मेमो"
 #: gnucash/import-export/csv-exp/csv-tree-export.cpp:62
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:62
 #: gnucash/import-export/customer-import/dialog-customer-import-gui.c:133
-#: gnucash/register/ledger-core/split-register-model.c:496
+#: gnucash/register/ledger-core/split-register-model.c:500
 #: gnucash/report/reports/standard/account-summary.scm:408
 #: gnucash/report/reports/standard/balsheet-eg.scm:188
 #: gnucash/report/reports/standard/receipt.scm:38
@@ -2928,7 +2928,7 @@ msgstr ""
 #: gnucash/gnome/dialog-invoice.c:1038 gnucash/gnome/dialog-invoice.c:3573
 #: gnucash/gnome/dialog-invoice.c:3607 gnucash/gnome/dialog-invoice.c:3641
 #: gnucash/import-export/bi-import/dialog-bi-import-gui.c:158
-#: gnucash/register/ledger-core/split-register-model.c:240
+#: gnucash/register/ledger-core/split-register-model.c:244
 #: gnucash/report/reports/standard/invoice.scm:251
 #: gnucash/report/reports/standard/invoice.scm:446
 #: gnucash/report/reports/standard/new-aging.scm:112
@@ -3205,7 +3205,7 @@ msgstr "वूचर नूट"
 #: gnucash/gnome-utils/gnc-tree-view-account.c:794
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:383
 #: gnucash/gnome-utils/gnc-tree-view-price.c:410
-#: gnucash/gtkbuilder/assistant-loan.glade:275
+#: gnucash/gtkbuilder/assistant-loan.glade:278
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:148
 #: gnucash/gtkbuilder/dialog-doclink.glade:665
 #: gnucash/gtkbuilder/dialog-fincalc.glade:742
@@ -3215,7 +3215,7 @@ msgstr "वूचर नूट"
 #: gnucash/gtkbuilder/dialog-tax-info.glade:129
 #: gnucash/import-export/csv-exp/csv-tree-export.cpp:60
 #: gnucash/import-export/csv-imp/csv-account-import.c:154
-#: gnucash/register/ledger-core/split-register-model.c:367
+#: gnucash/register/ledger-core/split-register-model.c:371
 #: gnucash/report/reports/standard/account-summary.scm:379
 #: gnucash/report/reports/standard/new-owner-report.scm:52
 #: gnucash/report/reports/standard/new-owner-report.scm:227
@@ -3223,7 +3223,7 @@ msgid "Type"
 msgstr "कॆसीम"
 
 #: gnucash/gnome/dialog-invoice.c:3659
-#: gnucash/register/ledger-core/split-register-model.c:314
+#: gnucash/register/ledger-core/split-register-model.c:318
 #: gnucash/report/reports/standard/new-owner-report.scm:808
 msgid "Paid"
 msgstr "बुरमुत"
@@ -3247,8 +3247,8 @@ msgstr "खूलमुत"
 #: gnucash/gnome/reconcile-view.c:449
 #: gnucash/gtkbuilder/dialog-payment.glade:482
 #: gnucash/gtkbuilder/dialog-transfer.glade:155
-#: gnucash/register/ledger-core/split-register-model.c:260
-#: gnucash/register/ledger-core/split-register-model.c:280
+#: gnucash/register/ledger-core/split-register-model.c:264
+#: gnucash/register/ledger-core/split-register-model.c:284
 #: gnucash/report/reports/standard/general-journal.scm:95
 #: gnucash/report/reports/standard/general-ledger.scm:89
 #: gnucash/report/reports/standard/register.scm:135
@@ -3278,14 +3278,14 @@ msgstr "ईनवायीस लॊबीव"
 
 #: gnucash/gnome/dialog-invoice.c:3814 gnucash/gnome/dialog-lot-viewer.c:1015
 #: gnucash/gnome/gnc-split-reg.c:666 gnucash/gnome/reconcile-view.c:437
-#: gnucash/gtkbuilder/assistant-loan.glade:191
-#: gnucash/gtkbuilder/assistant-loan.glade:610
-#: gnucash/gtkbuilder/assistant-loan.glade:759
+#: gnucash/gtkbuilder/assistant-loan.glade:194
+#: gnucash/gtkbuilder/assistant-loan.glade:613
+#: gnucash/gtkbuilder/assistant-loan.glade:762
 #: gnucash/gtkbuilder/dialog-payment.glade:418
 #: gnucash/gtkbuilder/dialog-transfer.glade:102
 #: gnucash/import-export/csv-imp/gnc-imp-props-price.cpp:53
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:67
-#: gnucash/import-export/import-main-matcher.cpp:1594
+#: gnucash/import-export/import-main-matcher.cpp:1599
 #: gnucash/import-export/import-match-picker.cpp:314
 #: gnucash/import-export/import-match-picker.cpp:354
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3844
@@ -3369,7 +3369,7 @@ msgstr "सॊरीफ एिकटीव"
 
 #: gnucash/gnome/dialog-job.c:566 gnucash/gnome/dialog-job.c:579
 #: gnucash/gtkbuilder/dialog-job.glade:206
-#: gnucash/register/ledger-core/split-register-model.c:374
+#: gnucash/register/ledger-core/split-register-model.c:378
 msgid "Rate"
 msgstr "रेट"
 
@@ -3416,10 +3416,10 @@ msgstr "ऊनवान"
 #: gnucash/gnome-utils/gnc-tree-view-account.c:837
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:439
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:447
-#: gnucash/register/ledger-core/split-register-model.c:325
-#: gnucash/register/ledger-core/split-register-model.c:489
+#: gnucash/register/ledger-core/split-register-model.c:329
+#: gnucash/register/ledger-core/split-register-model.c:493
 #: gnucash/report/reports/standard/account-summary.scm:393
-#: gnucash/report/reports/standard/balance-forecast.scm:246
+#: gnucash/report/reports/standard/balance-forecast.scm:249
 #: gnucash/report/reports/standard/new-owner-report.scm:58
 #: gnucash/report/reports/standard/new-owner-report.scm:551
 #: gnucash/report/reports/standard/register.scm:163
@@ -3539,7 +3539,7 @@ msgstr ""
 #: gnucash/gtkbuilder/dialog-invoice.glade:473
 #: gnucash/gtkbuilder/dialog-invoice.glade:1179
 #: gnucash/gtkbuilder/dialog-payment.glade:40
-#: gnucash/register/ledger-core/split-register-model.c:296
+#: gnucash/register/ledger-core/split-register-model.c:300
 #: gnucash/report/reports/standard/customer-summary.scm:248
 #: gnucash/report/reports/standard/customer-summary.scm:281
 #: gnucash/report/reports/standard/new-owner-report.scm:89
@@ -3552,7 +3552,7 @@ msgstr "कसटमर"
 #: gnucash/gtkbuilder/dialog-customer-import-gui.glade:170
 #: gnucash/gtkbuilder/dialog-payment.glade:44
 #: gnucash/gtkbuilder/dialog-vendor.glade:469
-#: gnucash/register/ledger-core/split-register-model.c:298
+#: gnucash/register/ledger-core/split-register-model.c:302
 #: gnucash/report/reports/standard/new-owner-report.scm:104
 #: libgnucash/engine/gncOwner.c:220
 msgid "Vendor"
@@ -4090,12 +4090,12 @@ msgstr "वींडर छ़ॊंडीव"
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:91
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:97
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:103
-#: gnucash/register/ledger-core/split-register.c:2655
+#: gnucash/register/ledger-core/split-register.c:2657
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1062
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1211
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1212
 #: gnucash/report/reports/standard/net-charts.scm:332
 #: gnucash/report/reports/standard/net-charts.scm:401
-#: gnucash/report/report-utilities.scm:205 libgnucash/engine/Account.cpp:178
+#: gnucash/report/report-utilities.scm:209 libgnucash/engine/Account.cpp:178
 #: libgnucash/engine/Account.cpp:4296
 msgid "Income"
 msgstr "ईनकम"
@@ -4105,15 +4105,15 @@ msgstr "ईनकम"
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:122
 #: gnucash/report/reports/standard/budget-income-statement.scm:492
 #: gnucash/report/reports/standard/income-statement.scm:469
-#: gnucash/report/report-utilities.scm:206
+#: gnucash/report/report-utilities.scm:210
 msgid "Expenses"
 msgstr "खरचो"
 
 #: gnucash/gnome/gnc-budget-view.c:506
 #: gnucash/gnome/gnc-plugin-page-register.cpp:392
-#: gnucash/register/ledger-core/split-register.c:2580
+#: gnucash/register/ledger-core/split-register.c:2582
 #: gnucash/register/ledger-core/split-register-layout.c:721
-#: gnucash/register/ledger-core/split-register-model.c:353
+#: gnucash/register/ledger-core/split-register-model.c:357
 #: gnucash/report/reports/standard/register.scm:143
 msgid "Transfer"
 msgstr "टरांसफर"
@@ -4123,7 +4123,7 @@ msgstr "टरांसफर"
 msgid "Remaining to Budget"
 msgstr "अख मूजूद बजट खूलोव"
 
-#: gnucash/gnome/gnc-budget-view.c:1598 gnucash/gnome/window-reconcile.cpp:1172
+#: gnucash/gnome/gnc-budget-view.c:1598 gnucash/gnome/window-reconcile.cpp:1175
 #: gnucash/gnome-utils/gnc-tree-view-account.c:906
 #: gnucash/report/html-acct-table.scm:789
 #: gnucash/report/reports/locale-specific/de_DE/taxtxf.scm:279
@@ -4208,7 +4208,7 @@ msgstr ""
 #: gnucash/gnome/gnc-plugin-page-account-tree.cpp:406
 #: gnucash/gtkbuilder/assistant-csv-export.glade:270
 #: gnucash/gtkbuilder/dialog-preferences.glade:1002
-#: gnucash/report/report-core.scm:163
+#: gnucash/report/report-core.scm:165
 #: gnucash/report/reports/example/average-balance.scm:85
 #: gnucash/report/reports/example/average-balance.scm:282
 #: gnucash/report/reports/example/daily-reports.scm:57
@@ -5312,7 +5312,7 @@ msgid "Print"
 msgstr "परींट"
 
 #: gnucash/gnome/gnc-plugin-page-report.cpp:235
-#: gnucash/gnome-utils/dialog-file-access.c:339
+#: gnucash/gnome-utils/dialog-file-access.c:342
 #: gnucash/gnome-utils/gnc-file.c:111 gnucash/gnome-utils/gnc-file.c:353
 msgid "Export"
 msgstr "एिकोसपूट"
@@ -5339,7 +5339,7 @@ msgstr ""
 msgid "The numeric ID of the report."
 msgstr "नयूमरीक ID रीपूटुक"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1260
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1265
 #, c-format
 msgid ""
 "Update the current report's saved configuration. The report configuration "
@@ -5348,7 +5348,7 @@ msgstr ""
 "अपडेट कॊरिव मोजूद रिपोटॊच मोहफूज़ करनॊ आमॊच़ कनफिगरेशन.रिपोट यियि मोहफूज़ करनॊ फायिल "
 "%s अस मनज़."
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1263
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1268
 #, c-format
 msgid ""
 "Add the current report's configuration to the 'Reports->Saved Report "
@@ -5357,37 +5357,37 @@ msgstr ""
 "जमाह कॊरिव मोजूद रिपोटॊच कनफिगरेशन 'मोहफूज़ करनॊ आमच़ॊ रिपोट कनफिगरेशनॊ' मेनयूहस. "
 "रिपोट यियि मोहफूज़ करनॊ फायिल %s अस मनज़."
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1271
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1276
 #: gnucash/ui/gnc-plugin-page-report.ui:74
 #: gnucash/ui/gnc-plugin-page-report.ui:255
 msgid "Save _Report Configuration"
 msgstr "मोहफूज़ कॊरिव _रिपोट कनफिगरेशन"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1272
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1277
 #: gnucash/ui/gnc-plugin-page-report.ui:81
 #: gnucash/ui/gnc-plugin-page-report.ui:270
 msgid "Save Report Configuration As…"
 msgstr "मोहफूज़ कॊरिव _रिपोट कनफिगरेशन बतोर…"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1552
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1585
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1557
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1590
 msgid "HTML"
 msgstr "HTML"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1555
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1560
 msgid "Choose export format"
 msgstr "च़ॊरीव एिकोसपूट फारमिट"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1556
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1561
 msgid "Choose the export format for this report:"
 msgstr "यॊमी रीपूट बापत च़ॊरीव एिकोसपूट फारमिटः"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1596
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1601
 #, c-format
 msgid "Save %s To File"
 msgstr "%s कॊरीव मोहफूज़ फायलो मंज़"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1625
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1630
 #, c-format
 msgid ""
 "You cannot save to that filename.\n"
@@ -5398,40 +5398,40 @@ msgstr ""
 "\n"
 "%s"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1635
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1640
 msgid "You cannot save to that file."
 msgstr "तुहयो हयीकोव नॊ मोहफूज़ कॊरीथ तथ फायलो कुन."
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1644
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1649
 #: gnucash/gnome-utils/gnc-file.c:1363 gnucash/gnome-utils/gnc-file.c:1614
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:738
 #, c-format
 msgid "The file %s already exists. Are you sure you want to overwrite it?"
 msgstr "फायोल %s छॊ गुडय मूजूद. कयाह तुहयो छॊव पॊज़ पॊठ यो ऊवररायोट यछ़ान करॊन?"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1781
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1807
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1786
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1812
 #: gnucash/gnucash-commands.cpp:184 gnucash/gnucash-commands.cpp:214
 msgid ""
 "This report must be upgraded to return a document object with export-string "
 "or export-error."
 msgstr ""
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1818
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1823
 #, c-format
 msgid "Could not open the file %s. The error is: %s"
 msgstr "हयुक नॊ फायोल खूलीथ %s. एिरर छु: %s"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1863
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1868
 msgid "GnuCash-Report"
 msgstr "GNUCASH-रीपूट"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1912
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1917
 #: gnucash/report/reports/standard/invoice.scm:877
 msgid "Printable Invoice"
 msgstr "परीनटस लायक रीपूट"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1913
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1918
 #: gnucash/report/reports/standard/taxinvoice.scm:301
 #: gnucash/report/reports/standard/taxinvoice.scm:303
 #: gnucash/report/reports/standard/taxinvoice.scm:315
@@ -5439,12 +5439,12 @@ msgstr "परीनटस लायक रीपूट"
 msgid "Tax Invoice"
 msgstr "टिकोस ईनवायीस"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1914
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1919
 #: gnucash/report/reports/standard/invoice.scm:887
 msgid "Easy Invoice"
 msgstr "सहल ईनवायीस"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1915
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1920
 #: gnucash/report/reports/standard/invoice.scm:897
 msgid "Fancy Invoice"
 msgstr "फिनसी ईनवायीस"
@@ -5515,7 +5515,7 @@ msgstr "मयॊरी आडर"
 msgid "Date of Entry"
 msgstr "एिंटरी हुंद तॊरिख"
 
-#: gnucash/gnome/gnc-split-reg.c:660 gnucash/gnome/window-reconcile.cpp:2048
+#: gnucash/gnome/gnc-split-reg.c:660 gnucash/gnome/window-reconcile.cpp:2051
 #, fuzzy
 msgid "Statement Date"
 msgstr "सेटिटमींट तॊरिखः"
@@ -5838,7 +5838,7 @@ msgstr "फायनानॊस मनेजमेनट"
 
 #: gnucash/gnome/reconcile-view.c:431
 #: gnucash/register/ledger-core/split-register-layout.c:697
-#: gnucash/register/ledger-core/split-register-model.c:317
+#: gnucash/register/ledger-core/split-register-model.c:321
 #, fuzzy
 msgctxt "Column header for 'Reconciled'"
 msgid "R"
@@ -5955,8 +5955,8 @@ msgid "Payment Information"
 msgstr "पिमींट जानकॊरी"
 
 #: gnucash/gnome/window-reconcile.cpp:505
-#: gnucash/gtkbuilder/assistant-loan.glade:571
-#: gnucash/gtkbuilder/assistant-loan.glade:772
+#: gnucash/gtkbuilder/assistant-loan.glade:574
+#: gnucash/gtkbuilder/assistant-loan.glade:775
 msgid "Payment From"
 msgstr "पयॊठ पिमींट"
 
@@ -5966,7 +5966,7 @@ msgid "Reconcile Account"
 msgstr "मसलहत एिकावुंट"
 
 #: gnucash/gnome/window-reconcile.cpp:526
-#: gnucash/gtkbuilder/assistant-loan.glade:824
+#: gnucash/gtkbuilder/assistant-loan.glade:827
 msgid "Payment To"
 msgstr "कुन पिमींट"
 
@@ -5979,17 +5979,17 @@ msgstr "ईनटरसटो पिमींट कॊरीव दॊखील
 msgid "Enter _Interest Charge…"
 msgstr "ईनटरसटे चारीज कॊरीव दॊखील…"
 
-#: gnucash/gnome/window-reconcile.cpp:1395
+#: gnucash/gnome/window-reconcile.cpp:1398
 msgid "Are you sure you want to delete the selected transaction?"
 msgstr "कयाह तुहयो छॊव पॊज़ पॊठ डोलिट यछ़ान करुन च़ारनी आमुत टरांज़ीकशन?"
 
-#: gnucash/gnome/window-reconcile.cpp:1946
+#: gnucash/gnome/window-reconcile.cpp:1949
 msgid ""
 "WARNING! Account contains splits whose reconcile date is after statement "
 "date. Reconciliation may be difficult."
 msgstr ""
 
-#: gnucash/gnome/window-reconcile.cpp:1950
+#: gnucash/gnome/window-reconcile.cpp:1953
 msgid ""
 "This account has splits whose Reconciled Date is after this reconciliation "
 "statement date. These splits may make reconciliation difficult. If this is "
@@ -5997,37 +5997,37 @@ msgid ""
 "reconcile."
 msgstr ""
 
-#: gnucash/gnome/window-reconcile.cpp:2058
+#: gnucash/gnome/window-reconcile.cpp:2061
 #: gnucash/gtkbuilder/window-reconcile.glade:106
 #, fuzzy
 msgid "Starting Balance"
 msgstr "शरूआती बिलनसेः"
 
-#: gnucash/gnome/window-reconcile.cpp:2068
+#: gnucash/gnome/window-reconcile.cpp:2071
 msgid "Ending Balance"
 msgstr "खतमोच बिलोनेस"
 
-#: gnucash/gnome/window-reconcile.cpp:2078
+#: gnucash/gnome/window-reconcile.cpp:2081
 msgid "Reconciled Balance"
 msgstr "मसलहत करनी आमोच़ बिलोनेस"
 
-#: gnucash/gnome/window-reconcile.cpp:2088
+#: gnucash/gnome/window-reconcile.cpp:2091
 #: gnucash/report/reports/standard/cash-flow.scm:305
 msgid "Difference"
 msgstr "फरक"
 
-#: gnucash/gnome/window-reconcile.cpp:2201
+#: gnucash/gnome/window-reconcile.cpp:2204
 msgid ""
 "You have made changes to this reconcile window. Are you sure you want to "
 "cancel?"
 msgstr ""
 "तुहयो कॊरवी तबदिलयो यथ मसलहत वीनडू. कयाह तुहयो छॊव पॊज़ पॊठ यछ़ान कीनसल करुन?"
 
-#: gnucash/gnome/window-reconcile.cpp:2311
+#: gnucash/gnome/window-reconcile.cpp:2314
 msgid "The account is not balanced. Are you sure you want to finish?"
 msgstr "एिकावुंट छु नॊ मसॊवी. कयाह तुहयो छॊव पॊज़ पॊठ यछ़ान खतम करुन?"
 
-#: gnucash/gnome/window-reconcile.cpp:2371
+#: gnucash/gnome/window-reconcile.cpp:2374
 msgid "Do you want to postpone this reconciliation and finish it later?"
 msgstr "कयाह तुहयो छॊव यछ़ान पूसटफून करॊन यो मसलहत तॊ पतो यो खतम करीन यछ़ान?"
 
@@ -6434,7 +6434,7 @@ msgid "Parsing file…"
 msgstr "फायोल पारस करान…"
 
 #: gnucash/gnome-utils/assistant-xml-encoding.c:1124
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:423
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:431
 #: gnucash/import-export/csv-imp/gnc-tokenizer-csv.cpp:131
 msgid "There was an error parsing the file."
 msgstr "फायोल पारस करनस दूरान आव अख एिरर."
@@ -6541,7 +6541,7 @@ msgstr ""
 "डायलाग रोऊपोन करनुक."
 
 #: gnucash/gnome-utils/dialog-account.c:1745
-#: gnucash/gnome-utils/dialog-utils.c:836
+#: gnucash/gnome-utils/dialog-utils.c:838
 msgid "<No name>"
 msgstr "<नॊ नाव>"
 
@@ -6747,13 +6747,13 @@ msgstr ""
 msgid "Action/Number"
 msgstr "एकशन/ नमबरः"
 
-#: gnucash/gnome-utils/dialog-file-access.c:323
+#: gnucash/gnome-utils/dialog-file-access.c:326
 #, fuzzy
 #| msgid "Open"
 msgid "Open…"
 msgstr "खूलीव"
 
-#: gnucash/gnome-utils/dialog-file-access.c:324
+#: gnucash/gnome-utils/dialog-file-access.c:327
 #: gnucash/gnome-utils/gnc-file.c:90
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:103
 #: gnucash/gtkbuilder/dialog-customer-import-gui.glade:106
@@ -6763,32 +6763,32 @@ msgstr "खूलीव"
 msgid "_Open"
 msgstr "खूलीव"
 
-#: gnucash/gnome-utils/dialog-file-access.c:330
+#: gnucash/gnome-utils/dialog-file-access.c:333
 #, fuzzy
 msgid "Save As…"
 msgstr "मोहफूज़ कॊरीव बतूर…"
 
-#: gnucash/gnome-utils/dialog-file-access.c:331
-#: gnucash/gnome-utils/dialog-file-access.c:340
+#: gnucash/gnome-utils/dialog-file-access.c:334
+#: gnucash/gnome-utils/dialog-file-access.c:343
 #: gnucash/gtkbuilder/dialog-file-access.glade:40
 #, fuzzy
 msgid "_Save As"
 msgstr "मोहफूज़ कॊरीव बतूर…"
 
-#: gnucash/gnome-utils/dialog-file-access.c:359
+#: gnucash/gnome-utils/dialog-file-access.c:362
 #: gnucash/gnome-utils/gnc-file.c:149
 msgid "All files"
 msgstr "तमाम फायलो"
 
 #. Translators: *.gnucash and *.xac are file patterns and must not
 #. be translated
-#: gnucash/gnome-utils/dialog-file-access.c:366
+#: gnucash/gnome-utils/dialog-file-access.c:369
 msgid "Datafiles only (*.gnucash, *.xac)"
 msgstr ""
 
 #. Translators: *.gnucash.*.gnucash, *.xac.*.xac are file
 #. patterns and must not be translated
-#: gnucash/gnome-utils/dialog-file-access.c:376
+#: gnucash/gnome-utils/dialog-file-access.c:379
 msgid "Backups only (*.gnucash.*.gnucash, *.xac.*.xac)"
 msgstr ""
 
@@ -6845,22 +6845,22 @@ msgstr "पेज"
 #. names with other account names that are more suitable for your
 #. language - just keep in mind to have exactly two %s in your
 #. translation.
-#: gnucash/gnome-utils/dialog-preferences.c:171
+#: gnucash/gnome-utils/dialog-preferences.c:172
 #, c-format
 msgid "Income%sSalary%sTaxable"
 msgstr "ईनकम %s तनखाह %s टीकसस लायक"
 
-#: gnucash/gnome-utils/dialog-preferences.c:908
+#: gnucash/gnome-utils/dialog-preferences.c:909
 msgid "Path does not exist, "
 msgstr ""
 
-#: gnucash/gnome-utils/dialog-preferences.c:964
-#: gnucash/gnome-utils/dialog-preferences.c:1461
+#: gnucash/gnome-utils/dialog-preferences.c:965
+#: gnucash/gnome-utils/dialog-preferences.c:1462
 #, fuzzy
 msgid "Select a folder"
 msgstr "अख बजट च़ॊरीव"
 
-#: gnucash/gnome-utils/dialog-preferences.c:1464
+#: gnucash/gnome-utils/dialog-preferences.c:1465
 #: gnucash/gnome-utils/gnc-option-gtk-ui.cpp:1534
 #: gnucash/gtkbuilder/dialog-fincalc.glade:270
 #: gnucash/gtkbuilder/dialog-fincalc.glade:285
@@ -6961,7 +6961,7 @@ msgstr "तुहयो हयोकोव नॊ अकॊय एिकाव�
 
 #: gnucash/gnome-utils/dialog-transfer.cpp:1418
 #: gnucash/register/ledger-core/gncEntryLedger.c:85
-#: gnucash/register/ledger-core/split-register.c:1998
+#: gnucash/register/ledger-core/split-register.c:2000
 #, c-format
 msgid "The account %s does not allow transactions."
 msgstr "एिकावींट %s छु नॊ ईजाज़त दीवान टरांज़ीकशनन."
@@ -7919,7 +7919,7 @@ msgid "End of previous accounting period"
 msgstr "पॊतमो एिकावटींग पिरडुक अंद "
 
 #: gnucash/gnome-utils/gnc-plugin-menu-additions.c:424
-#: gnucash/report/report-core.scm:161
+#: gnucash/report/report-core.scm:163
 msgid "_Custom"
 msgstr "कसटम"
 
@@ -8220,7 +8220,7 @@ msgstr "पताह 4"
 #: gnucash/gtkbuilder/dialog-employee.glade:247
 #: gnucash/gtkbuilder/dialog-vendor.glade:265
 #: gnucash/import-export/customer-import/dialog-customer-import-gui.c:130
-#: gnucash/register/ledger-core/split-register.c:2573
+#: gnucash/register/ledger-core/split-register.c:2575
 #: gnucash/report/reports/support/taxinvoice.eguile.scm:175
 msgid "Phone"
 msgstr "फून"
@@ -8264,8 +8264,8 @@ msgstr "हीफाज़त"
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:390
 #: gnucash/import-export/bi-import/dialog-bi-import-gui.c:149
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:71
-#: gnucash/register/ledger-core/split-register.c:2646
-#: gnucash/register/ledger-core/split-register-model.c:407
+#: gnucash/register/ledger-core/split-register.c:2648
+#: gnucash/register/ledger-core/split-register-model.c:411
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1050
 #: gnucash/report/reports/standard/general-journal.scm:99
 #: gnucash/report/reports/standard/general-ledger.scm:79
@@ -8284,7 +8284,7 @@ msgstr "किमत"
 
 #: gnucash/gnome-utils/gnc-tree-view-sx-list.c:122
 #: gnucash/gtkbuilder/dialog-sx.glade:1088
-#: gnucash/report/html-utilities.scm:309
+#: gnucash/report/html-utilities.scm:312
 msgid "Enabled"
 msgstr "एिन एिबोल करनॊ आमुत"
 
@@ -8421,7 +8421,7 @@ msgstr ""
 msgid "Missing command or option"
 msgstr "यि छु अख रनग ऊपशन."
 
-#: gnucash/gnucash-commands.cpp:317 gnucash/gnucash-commands.cpp:363
+#: gnucash/gnucash-commands.cpp:317 gnucash/gnucash-commands.cpp:364
 #: gnucash/gnucash.cpp:179
 #, c++-format
 msgid "Found Finance::Quote version {1}."
@@ -8431,7 +8431,7 @@ msgstr ""
 msgid "Finance::Quote sources:\n"
 msgstr ""
 
-#: gnucash/gnucash-commands.cpp:372 gnucash/gnucash-commands.cpp:396
+#: gnucash/gnucash-commands.cpp:376 gnucash/gnucash-commands.cpp:400
 msgid "Price retrieval failed: "
 msgstr ""
 
@@ -11350,7 +11350,7 @@ msgid "Select _All"
 msgstr "तमाम च़ॊरीव"
 
 #: gnucash/gtkbuilder/assistant-csv-export.glade:412
-#: gnucash/gtkbuilder/assistant-loan.glade:1205
+#: gnucash/gtkbuilder/assistant-loan.glade:1208
 #: gnucash/report/reports/standard/new-owner-report.scm:1131
 msgid "Date Range"
 msgstr "डिट रिंज"
@@ -12000,7 +12000,7 @@ msgid "Whole Loan"
 msgstr "तमाम लोन"
 
 #: gnucash/gtkbuilder/assistant-loan.glade:46
-#: gnucash/gtkbuilder/assistant-loan.glade:152
+#: gnucash/gtkbuilder/assistant-loan.glade:155
 msgid "Interest Rate"
 msgstr "ईनटरसटॊ रेट"
 
@@ -12021,30 +12021,36 @@ msgid "APR (Compounded Quarterly)"
 msgstr "APR (कमपावुनड आव करनॊ काटरली)"
 
 #: gnucash/gtkbuilder/assistant-loan.glade:61
+#, fuzzy
+#| msgid "APR (Compounded Annually)"
+msgid "APR (Compounded Semi-annually)"
+msgstr "APR (कमपावुनड आव करनॊ वॊरी पॊठ)"
+
+#: gnucash/gtkbuilder/assistant-loan.glade:64
 msgid "APR (Compounded Annually)"
 msgstr "APR (कमपावुनड आव करनॊ वॊरी पॊठ)"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:72
+#: gnucash/gtkbuilder/assistant-loan.glade:75
 msgid "Fixed Rate"
 msgstr "फिकसॊड रेट"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:75
+#: gnucash/gtkbuilder/assistant-loan.glade:78
 msgid "3/1 Year ARM"
 msgstr "3/1 वॊरी ARM"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:78
+#: gnucash/gtkbuilder/assistant-loan.glade:81
 msgid "5/1 Year ARM"
 msgstr "5/1 वॊरी ARM"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:81
+#: gnucash/gtkbuilder/assistant-loan.glade:84
 msgid "7/1 Year ARM"
 msgstr "7/1 वॊरी ARM"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:84
+#: gnucash/gtkbuilder/assistant-loan.glade:87
 msgid "10/1 Year ARM"
 msgstr "10/1 वॊरी ARM"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:104
+#: gnucash/gtkbuilder/assistant-loan.glade:107
 msgid ""
 "This is a step-by-step method for creating a loan repayment within GnuCash. "
 "In this assistant, you can input the details of your loan and its repayment "
@@ -12061,19 +12067,19 @@ msgstr ""
 "अगर तोहयॊ गलता आसि गॊमिच़ या पतॊ येछ़िव तबदिली करॊन, तोहयॊ हेकिव सयेदि सयोद एडिट "
 "कॊरिथ बनावनॊ आमुत शडूलॊड टरानज़ेकशन."
 
-#: gnucash/gtkbuilder/assistant-loan.glade:111
+#: gnucash/gtkbuilder/assistant-loan.glade:114
 msgid "Loan / Mortgage Repayment Setup"
 msgstr "लोन /माटगेज रिपेमेनट सेटअप"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:127
+#: gnucash/gtkbuilder/assistant-loan.glade:130
 msgid ""
 "Enter the Loan Details, as a minimum enter a valid Loan Account and Amount.\n"
 msgstr ""
 "एनटर कॊरिव लोन तफसील, बतोर अख मिनिमम एनटर कॊरिव अख लायक वेलिड लोन एकावुनट तॊ "
 "रकम.\n"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:165
-#: gnucash/gtkbuilder/assistant-loan.glade:1173
+#: gnucash/gtkbuilder/assistant-loan.glade:168
+#: gnucash/gtkbuilder/assistant-loan.glade:1176
 #: gnucash/gtkbuilder/dialog-preferences.glade:378
 #: gnucash/gtkbuilder/dialog-sx.glade:259
 #: gnucash/gtkbuilder/gnc-frequency.glade:605
@@ -12098,48 +12104,48 @@ msgstr ""
 msgid "Start Date"
 msgstr "शरू तॊरिख"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:178
+#: gnucash/gtkbuilder/assistant-loan.glade:181
 #, fuzzy
 msgid "Length"
 msgstr "ज़ॊछरः"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:204
+#: gnucash/gtkbuilder/assistant-loan.glade:207
 #, fuzzy
 msgid "Loan Account"
 msgstr "लून एिकावुंटः"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:219
+#: gnucash/gtkbuilder/assistant-loan.glade:222
 msgid ""
 "Enter the number of months still to be paid off. This determines both the "
 "remaining principle and the duration of the scheduled transaction."
 msgstr ""
 
-#: gnucash/gtkbuilder/assistant-loan.glade:288
+#: gnucash/gtkbuilder/assistant-loan.glade:291
 #, fuzzy
 msgid "Months Remaining"
 msgstr "बाकीय रॊथः"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:340
+#: gnucash/gtkbuilder/assistant-loan.glade:343
 msgid ""
 "Enter the annual interest rate in percent. Accepts values from 0.001 - 100. "
 "The Mortgage Assistant does not support zero-interest loans."
 msgstr ""
 
-#: gnucash/gtkbuilder/assistant-loan.glade:359
+#: gnucash/gtkbuilder/assistant-loan.glade:362
 #: gnucash/register/ledger-core/gncEntryLedgerLoad.c:55
 #: gnucash/report/reports/standard/invoice.scm:107
 msgid "%"
 msgstr "%"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:390
+#: gnucash/gtkbuilder/assistant-loan.glade:393
 msgid "Interest Rate Change Frequency"
 msgstr "ईनटरसटो रिट फरीकवोनसी कॊरीव तबदिल"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:436
+#: gnucash/gtkbuilder/assistant-loan.glade:439
 msgid "Loan Details"
 msgstr "लोन तफसील"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:451
+#: gnucash/gtkbuilder/assistant-loan.glade:454
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -12150,21 +12156,21 @@ msgstr ""
 "कयाह तोहयॊ छॊव चलावन अख एसकरो एकावुनट, अगर यि आसॊ, तेलि तॊ छु अख एकावुनट ज़रूर "
 "मखसूस करुन..."
 
-#: gnucash/gtkbuilder/assistant-loan.glade:470
+#: gnucash/gtkbuilder/assistant-loan.glade:473
 #, fuzzy
 #| msgid "... utilize an escrow account for payments?"
 msgid "… utilize an escrow account for payments?"
 msgstr "...पिमींटन बापत कॊरवा ईसतिमाल अख एिसकरू एिकावुंट?"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:495
+#: gnucash/gtkbuilder/assistant-loan.glade:498
 msgid "Escrow Account"
 msgstr "एिसकरू एिकावुंट "
 
-#: gnucash/gtkbuilder/assistant-loan.glade:531
+#: gnucash/gtkbuilder/assistant-loan.glade:534
 msgid "Loan Repayment Options"
 msgstr "लोन रिपेमेनट ऊपशन"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:544
+#: gnucash/gtkbuilder/assistant-loan.glade:547
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -12174,25 +12180,25 @@ msgstr ""
 "\n"
 "तमाम एकावनटन गछ़न ज़रूर लायक एनटरी आसनॊ जॊरी थावनॊ बापत.\n"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:584
+#: gnucash/gtkbuilder/assistant-loan.glade:587
 #, fuzzy
 msgid "Principal To"
 msgstr "कुन असूलः"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:623
+#: gnucash/gtkbuilder/assistant-loan.glade:626
 #, fuzzy
 msgid "Interest To"
 msgstr "कुन नफाह"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:679
+#: gnucash/gtkbuilder/assistant-loan.glade:682
 msgid "Repayment Frequency"
 msgstr "रीपिमींट फरिकवीनसी"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:714
+#: gnucash/gtkbuilder/assistant-loan.glade:717
 msgid "Loan Repayment"
 msgstr "लोन रिपेमेनट"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:727
+#: gnucash/gtkbuilder/assistant-loan.glade:730
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -12202,43 +12208,43 @@ msgstr ""
 "\n"
 "तमाम एनेबलॊड ऊपशन पेजन मनज़ गछ़न ज़रूर शॊमिल आसनॊ लायक एनटरी जॊरी थावनॊ बापत.\n"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:798
+#: gnucash/gtkbuilder/assistant-loan.glade:801
 msgid "Payment To (Escrow)"
 msgstr "कुन पिमींट (एिसकरू)"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:811
+#: gnucash/gtkbuilder/assistant-loan.glade:814
 msgid "Payment From (Escrow)"
 msgstr "पयॊठ पिमींट (एिसकरू)"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:834
+#: gnucash/gtkbuilder/assistant-loan.glade:837
 msgid "Specify Source Account"
 msgstr "माखज़ एिकावुंट कॊरीव मखसूस"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:849
+#: gnucash/gtkbuilder/assistant-loan.glade:852
 msgid "Use Escrow Account"
 msgstr "एिसकरू खाती कॊरीव ईसतिमाल"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:940
+#: gnucash/gtkbuilder/assistant-loan.glade:943
 msgid "Part of Payment Transaction"
 msgstr "पिमींट टरांज़ीकशनुक हॊसी"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1006
+#: gnucash/gtkbuilder/assistant-loan.glade:1009
 msgid "Payment Frequency"
 msgstr "पिमींट फरीकवीनसी"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1032
+#: gnucash/gtkbuilder/assistant-loan.glade:1035
 msgid "Previous Option"
 msgstr "पॊतयिम ऊपशन"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1046
+#: gnucash/gtkbuilder/assistant-loan.glade:1049
 msgid "Next Option"
 msgstr "बयाख ऊपशन"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1068
+#: gnucash/gtkbuilder/assistant-loan.glade:1071
 msgid "Loan Payment"
 msgstr "लोन पेमेनट"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1081
+#: gnucash/gtkbuilder/assistant-loan.glade:1084
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -12252,12 +12258,12 @@ msgstr ""
 "रिविव कॊरिव तफसील बोनॊ कॊन तॊ अगर सही आसन परेस कॊरिव लागो कॊरिव शडूल बनावनॊ "
 "बापत."
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1108
+#: gnucash/gtkbuilder/assistant-loan.glade:1111
 #, fuzzy
 msgid "Range"
 msgstr "रिंजः"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1185
+#: gnucash/gtkbuilder/assistant-loan.glade:1188
 #: gnucash/gtkbuilder/dialog-preferences.glade:393
 #: gnucash/gtkbuilder/dialog-sx.glade:331
 #: gnucash/report/reports/example/average-balance.scm:41
@@ -12280,15 +12286,15 @@ msgstr "रिंजः"
 msgid "End Date"
 msgstr "खतम तॊरिख"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1244
+#: gnucash/gtkbuilder/assistant-loan.glade:1247
 msgid "Loan Review"
 msgstr "लोन रिविव"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1252
+#: gnucash/gtkbuilder/assistant-loan.glade:1255
 msgid "Schedule added successfully."
 msgstr "शडूल आव कामयॊबी सान जमाह करनॊ."
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1258
+#: gnucash/gtkbuilder/assistant-loan.glade:1261
 msgid "Loan Summary"
 msgstr "लोन समरी"
 
@@ -12829,9 +12835,9 @@ msgstr ""
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:279
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:463
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:576
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:703
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:816
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:575
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:701
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:813
 #: gnucash/import-export/aqb/dialog-ab.glade:1201
 #, fuzzy
 msgid "_Amount"
@@ -12840,9 +12846,9 @@ msgstr "रकमः"
 #: gnucash/gtkbuilder/assistant-stock-split.glade:293
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:365
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:477
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:590
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:717
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:830
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:589
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:715
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:827
 #: gnucash/gtkbuilder/dialog-import.glade:958
 #: gnucash/gtkbuilder/dialog-print-check.glade:1129
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:972
@@ -12959,22 +12965,22 @@ msgid ""
 "brokerage fees associated with this transaction."
 msgstr ""
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:493
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:538
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:492
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:537
 #: gnucash/register/ledger-core/gncEntryLedgerLoad.c:130
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:530
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:1090
-#: gnucash/report/report-utilities.scm:198 libgnucash/engine/Account.cpp:4289
+#: gnucash/report/report-utilities.scm:202 libgnucash/engine/Account.cpp:4289
 msgid "Cash"
 msgstr "किश"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:516
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:515
 #, fuzzy
 #| msgid "Raise Accounts"
 msgid "Cash Account"
 msgstr "एिकावुंट कॊरीव रिज़"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:555
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:554
 msgid ""
 "In this page, input any brokerage fees incurred in this transaction. The fee "
 "may be capitalized into the asset account, or expensed into a brokerage fees "
@@ -12983,54 +12989,54 @@ msgid ""
 "blank."
 msgstr ""
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:606
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:665
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:604
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:663
 msgid "Fees"
 msgstr ""
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:629
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:627
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1065
 msgid "Brokerage Fees"
 msgstr "बरूकरिज फिस"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:641
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:639
 msgid "Capitalize brokerage fees into stock account?"
 msgstr ""
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:682
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:680
 msgid "In this page, input any dividend income received in this transaction."
 msgstr ""
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:756
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:753
 #, fuzzy
 msgid "Dividend Account"
 msgstr "एकावुंट कॊरीव एडोट"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:795
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:792
 msgid ""
 "In this page, input any capital gains or losses incurred, and the associated "
 "income account. Capital gains are positive, and capital losses are negative."
 msgstr ""
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:846
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:842
 #, fuzzy
 #| msgid "Capital"
 msgid "Capital Gain"
 msgstr "किपटोल"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:869
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:865
 #, fuzzy
 #| msgid "Splits Account"
 msgid "Capital Gains Account"
 msgstr "एिकावुंट कॊरीव सुपलोट"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:891
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:887
 #, fuzzy
 #| msgid "Capital"
 msgid "Capital Gains"
 msgstr "किपटोल"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:908
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:904
 #, fuzzy
 msgid ""
 "A summary of splits is shown as follows. If the summary is correct, and "
@@ -13041,7 +13047,7 @@ msgstr ""
 "हयीकोव “बिक” तॊ परिस कॊरीथ पननॊ चुयसॊ रीवीव करनॊ बापत या “कीनसल” कॊरीव कुनो "
 "तबदिली बगॊर बंद करनॊ बापत."
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:956
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:952
 #, fuzzy
 #| msgid "_Finish"
 msgid "Finish"
@@ -13103,7 +13109,7 @@ msgstr "तरजीहात"
 #: gnucash/gtkbuilder/dialog-preferences.glade:1409
 #: gnucash/gtkbuilder/dialog-preferences.glade:2040
 #: gnucash/gtkbuilder/dialog-preferences.glade:2098
-#: gnucash/report/report-core.scm:162
+#: gnucash/report/report-core.scm:164
 #: gnucash/report/reports/standard/equity-statement.scm:101
 #: gnucash/report/reports/standard/register.scm:341
 #: gnucash/report/reports/standard/trial-balance.scm:175
@@ -13269,7 +13275,7 @@ msgstr "मुकाबलो बापत च़ॊरीव एिकावु
 
 #: gnucash/gtkbuilder/dialog-account.glade:200
 #: gnucash/gtkbuilder/dialog-account.glade:1329
-#: gnucash/report/html-style-sheet.scm:259 gnucash/report/report-core.scm:317
+#: gnucash/report/html-style-sheet.scm:259 gnucash/report/report-core.scm:319
 #: gnucash/report/stylesheets/plain.scm:218
 msgid "Default"
 msgstr "डीफालट"
@@ -14650,8 +14656,8 @@ msgid "Non-Bayesian"
 msgstr ""
 
 #: gnucash/gtkbuilder/dialog-imap-editor.glade:156
-#: gnucash/register/ledger-core/split-register.c:2574
-#: gnucash/register/ledger-core/split-register.c:2600
+#: gnucash/register/ledger-core/split-register.c:2576
+#: gnucash/register/ledger-core/split-register.c:2602
 msgid "Online"
 msgstr "आनलायोन"
 
@@ -16246,8 +16252,8 @@ msgid "S_ource"
 msgstr "माखज़ः"
 
 #: gnucash/gtkbuilder/dialog-price.glade:225
-#: gnucash/register/ledger-core/split-register.c:2117
-#: gnucash/register/ledger-core/split-register.c:2120
+#: gnucash/register/ledger-core/split-register.c:2119
+#: gnucash/register/ledger-core/split-register.c:2122
 #: gnucash/ui/gnc-plugin-page-invoice.ui:108
 msgid "_Price"
 msgstr "किमत"
@@ -17012,8 +17018,8 @@ msgid "<b>Tax Table Entry</b>"
 msgstr "<b>टोकीस जदूल एिंटरी</b>"
 
 #: gnucash/gtkbuilder/dialog-tax-table.glade:491
-#: gnucash/register/ledger-core/split-register.c:2124
-#: gnucash/register/ledger-core/split-register.c:2127
+#: gnucash/register/ledger-core/split-register.c:2126
+#: gnucash/register/ledger-core/split-register.c:2129
 msgid "_Value"
 msgstr "विलीव"
 
@@ -18887,7 +18893,7 @@ msgid "Unspecified"
 msgstr "छु नॊ मखसूस करनी आमुत"
 
 #: gnucash/import-export/aqb/gnc-ab-utils.c:478
-#: gnucash/report/report-utilities.scm:197 libgnucash/engine/Account.cpp:4288
+#: gnucash/report/report-utilities.scm:201 libgnucash/engine/Account.cpp:4288
 msgid "Bank"
 msgstr "बिंक"
 
@@ -19525,7 +19531,7 @@ msgid "File exported successfully!\n"
 msgstr "फायुल आयि कामयॊबी सान एकॊसपोट करनॊ!\n"
 
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:135
-#: gnucash/import-export/import-main-matcher.cpp:1893
+#: gnucash/import-export/import-main-matcher.cpp:1901
 #: gnucash/report/reports/standard/register.scm:217
 #: libgnucash/engine/Split.cpp:1612 libgnucash/engine/Split.cpp:1629
 msgid "-- Split Transaction --"
@@ -19822,7 +19828,7 @@ msgid "Comma: 123.456,78"
 msgstr "कामा: 123,456.78"
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:444
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:485
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:493
 #, fuzzy
 msgid "Please select a date column."
 msgstr "मोहरबिनी कॊरीथ च़ॊरीव अख फायोल लूड करनॊ बापत."
@@ -19858,21 +19864,21 @@ msgid "'Commodity From' can not be the same as 'Currency To'."
 msgstr ""
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:500
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:552
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:560
 msgid ""
 "No valid data found in the selected file. It may be empty or the selected "
 "encoding is wrong."
 msgstr ""
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:508
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:560
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:568
 msgid ""
 "No lines are selected for importing. Please reduce the number of lines to "
 "skip."
 msgstr ""
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:527
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:593
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:601
 msgid ""
 "Not all fields could be parsed. Please correct the issues reported for each "
 "line or adjust the lines to skip."
@@ -19891,58 +19897,58 @@ msgid ""
 "This should never happen. Please report this as a bug."
 msgstr ""
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:493
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:501
 #, fuzzy
 msgid "Please select an account column."
 msgstr "तुहयो छु ज़रूरी अख एिकावुंट टायोप च़ारुन."
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:495
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:503
 msgid ""
 "Please select an account column or set a base account in the Account field."
 msgstr ""
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:501
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:509
 #, fuzzy
 msgid "Please select a description column."
 msgstr "मोहरबिनी कॊरीथ च़ॊरीव अख फायोल लूड करनॊ बापत."
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:507
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:515
 #, fuzzy
 msgid "Please select a (negated) amount column."
 msgstr "मोहरबिनी कॊरीथ च़ॊरीव अख फायोल लूड करनॊ बापत."
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:524
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:532
 msgid ""
 "The current account selections will generate multi-currency transactions. "
 "Please select one of the following columns: price, (negated) value."
 msgstr ""
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:531
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:539
 msgid ""
 "The current account selections will generate multi-currency transactions. "
 "Please select one of the following columns: price, (negated) value, "
 "(negated) transfer amount."
 msgstr ""
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:670
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:678
 msgid ""
 "Current line still has parse errors.\n"
 "This should never happen. Please report this as a bug."
 msgstr ""
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:681
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:689
 msgid ""
 "No account column selected and no base account specified either.\n"
 "This should never happen. Please report this as a bug."
 msgstr ""
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:685
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:693
 #, fuzzy
 #| msgid "Error"
 msgid "Parse Error"
 msgstr "एिरर"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:701
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:709
 #, fuzzy
 #| msgid "Select matching existing transaction"
 msgid "Problem creating preliminary transaction"
@@ -20315,97 +20321,116 @@ msgstr "वज़ाहत /नोट/मेमो"
 msgid "_Reset all edits"
 msgstr "डोफालटे कॊरीव रीसीट"
 
-#: gnucash/import-export/import-main-matcher.cpp:1597
+#: gnucash/import-export/import-main-matcher.cpp:1602
 #, fuzzy
 #| msgid "A"
 msgctxt "Column header for 'Adding transaction'"
 msgid "A"
 msgstr "A"
 
-#: gnucash/import-export/import-main-matcher.cpp:1601
+#: gnucash/import-export/import-main-matcher.cpp:1605
+#, fuzzy
+#| msgid "Add _Reversing Transaction"
+msgid "Add as a new transaction"
+msgstr "रीवीरसोंग टरांज़ोकशन कॊरीव जमाह"
+
+#: gnucash/import-export/import-main-matcher.cpp:1607
 #, fuzzy
 msgctxt "Column header for 'Updating plus Clearing transaction'"
 msgid "U+C"
 msgstr "U+R"
 
-#: gnucash/import-export/import-main-matcher.cpp:1605
+#: gnucash/import-export/import-main-matcher.cpp:1610
+#, fuzzy
+msgid ""
+"Update + Clear Transaction\n"
+"Update existing transaction with the imported data and mark it as cleared"
+msgstr "च़ॊरीव \"U+R\" एिकीस मिचोंग टरांज़ीकशनस अपडिट तॊ मसलहत करनी बापत."
+
+#: gnucash/import-export/import-main-matcher.cpp:1612
 #, fuzzy
 #| msgid "C"
 msgctxt "Column header for 'Clearing transaction'"
 msgid "C"
 msgstr "C"
 
-#: gnucash/import-export/import-main-matcher.cpp:1612
+#: gnucash/import-export/import-main-matcher.cpp:1615
+msgid ""
+"Clear Transaction\n"
+"Mark existing transaction as cleared without changing its details"
+msgstr ""
+
+#: gnucash/import-export/import-main-matcher.cpp:1620
 msgid "Info"
 msgstr "ईनफू"
 
-#: gnucash/import-export/import-main-matcher.cpp:1619
+#: gnucash/import-export/import-main-matcher.cpp:1627
 #: gnucash/report/stylesheets/head-or-tail.scm:91
 #, fuzzy
 msgid "Additional Comments"
 msgstr "काडस अलावः"
 
-#: gnucash/import-export/import-main-matcher.cpp:2004
+#: gnucash/import-export/import-main-matcher.cpp:2012
 msgid "New, already balanced"
 msgstr "नॊव, गुडय बराबर कॊरीथ"
 
 #. Translators: %1$s is the amount to be transferred,
 #. %2$s the destination account.
-#: gnucash/import-export/import-main-matcher.cpp:2026
+#: gnucash/import-export/import-main-matcher.cpp:2034
 #, c-format
 msgid "New, transfer %s to (manual) \"%s\""
 msgstr "नॊव, %s कॊरीव टरानसफर \"%s\" कुन (मिनवल)"
 
 #. Translators: %1$s is the amount to be transferred,
 #. %2$s the destination account.
-#: gnucash/import-export/import-main-matcher.cpp:2034
+#: gnucash/import-export/import-main-matcher.cpp:2042
 #, c-format
 msgid "New, transfer %s to (auto) \"%s\""
 msgstr "नॊव, %s कॊरीव टरानसफर \"%s\" कुन (आटू)"
 
 #. Translators: %s is the amount to be transferred.
-#: gnucash/import-export/import-main-matcher.cpp:2047
+#: gnucash/import-export/import-main-matcher.cpp:2055
 #, fuzzy, c-format
 #| msgid "New, UNBALANCED (need acct to transfer %s)!"
 msgid "New, UNBALANCED (need price to transfer %s to acct %s)!"
 msgstr "नॊव, UNBALANCED (%s छॊ ज़रूरत टरानसफर करनोच) !"
 
 #. Translators: %s is the amount to be transferred.
-#: gnucash/import-export/import-main-matcher.cpp:2063
+#: gnucash/import-export/import-main-matcher.cpp:2071
 #, c-format
 msgid "New, UNBALANCED (need acct to transfer %s)!"
 msgstr "नॊव, UNBALANCED (%s छॊ ज़रूरत टरानसफर करनोच) !"
 
-#: gnucash/import-export/import-main-matcher.cpp:2081
+#: gnucash/import-export/import-main-matcher.cpp:2089
 #, fuzzy, c-format
 #| msgid "Reconcile (manual) match"
 msgid "Reconcile (manual) match to %s"
 msgstr "मसलहत (मिनवल) मिच"
 
-#: gnucash/import-export/import-main-matcher.cpp:2086
+#: gnucash/import-export/import-main-matcher.cpp:2094
 #, fuzzy, c-format
 #| msgid "Reconcile (auto) match"
 msgid "Reconcile (auto) match to %s"
 msgstr "मसलहत (आटू) मिच"
 
-#: gnucash/import-export/import-main-matcher.cpp:2095
-#: gnucash/import-export/import-main-matcher.cpp:2124
+#: gnucash/import-export/import-main-matcher.cpp:2103
+#: gnucash/import-export/import-main-matcher.cpp:2132
 msgid "Match missing!"
 msgstr "रॊवमीत रलॊयीव!"
 
-#: gnucash/import-export/import-main-matcher.cpp:2110
+#: gnucash/import-export/import-main-matcher.cpp:2118
 #, fuzzy, c-format
 #| msgid "Update and reconcile (manual) match"
 msgid "Update and reconcile (manual) match to %s"
 msgstr "अपडिट तॊ मसलहत(मिनवल) मिच"
 
-#: gnucash/import-export/import-main-matcher.cpp:2115
+#: gnucash/import-export/import-main-matcher.cpp:2123
 #, fuzzy, c-format
 #| msgid "Update and reconcile (auto) match"
 msgid "Update and reconcile (auto) match to %s"
 msgstr "अपडिट तॊ मसलहत(आटू) मिच"
 
-#: gnucash/import-export/import-main-matcher.cpp:2132
+#: gnucash/import-export/import-main-matcher.cpp:2140
 msgid "Do not import (no action selected)"
 msgstr "ईमपूट मॊ कॊरीव (कांह कॊम आयो नो च़ारनी)"
 
@@ -20756,9 +20781,9 @@ msgstr "किप. फॊयदी(छ़ुट)"
 
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:109
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:113
-#: gnucash/register/ledger-core/split-register.c:2639
+#: gnucash/register/ledger-core/split-register.c:2641
 #: gnucash/report/reports/standard/balance-sheet.scm:468
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1051
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1052
 #: gnucash/report/reports/standard/budget-balance-sheet.scm:685
 #: libgnucash/app-utils/gnc-ui-util.cpp:637 libgnucash/engine/Account.cpp:4298
 msgid "Equity"
@@ -20767,8 +20792,8 @@ msgstr "बराबरी"
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:110
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:114
 #: gnucash/report/reports/standard/balance-sheet.scm:475
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1060
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1075
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1061
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1076
 #: gnucash/report/reports/support/balsheet-eg.eguile.scm:189
 #: libgnucash/app-utils/gnc-ui-util.cpp:554
 msgid "Retained Earnings"
@@ -21009,7 +21034,7 @@ msgid "Welcome to GnuCash %s Shell"
 msgstr "खोशआमदीद GnuCash ~a हस कुन!"
 
 #: gnucash/register/ledger-core/gncEntryLedger.c:86
-#: gnucash/register/ledger-core/split-register.c:1999
+#: gnucash/register/ledger-core/split-register.c:2001
 #, c-format
 msgid "The account %s does not exist. Would you like to create it?"
 msgstr "एिकावींट %s छु नॊ मूजूद. कयाह तुहयो छॊव यछ़ान यो पिदी करुन?"
@@ -21199,7 +21224,7 @@ msgstr ">"
 #: gnucash/register/ledger-core/gncEntryLedgerLoad.c:133
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:532
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:1092
-#: gnucash/register/ledger-core/split-register.c:2566
+#: gnucash/register/ledger-core/split-register.c:2568
 #: libgnucash/engine/Account.cpp:158 libgnucash/engine/Account.cpp:172
 msgid "Charge"
 msgstr "चारीज"
@@ -21262,7 +21287,7 @@ msgstr "एिंटरी हुंद कोसोम कॊरीव दॊ�
 #. Translators: This is a date format, see i.e.
 #. https://www.gnu.org/software/libc/manual/html_node/Formatting-Calendar-Time.html
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:577
-#: gnucash/register/ledger-core/split-register-model.c:1002
+#: gnucash/register/ledger-core/split-register-model.c:1006
 msgid "%A %d %B %Y"
 msgstr "%A %d %B %Y"
 
@@ -21433,11 +21458,11 @@ msgstr ""
 "तुहयो छॊव अख मूजूद टरांज़ीकशन ऊवररायोट करनस तयार. कयाह तुहयो छॊव पॊज़ पॊठ तॊ करुन "
 "यछ़ान?"
 
-#: gnucash/register/ledger-core/split-register.c:2103
+#: gnucash/register/ledger-core/split-register.c:2105
 msgid "Recalculate Transaction"
 msgstr "टरांज़ीकशन कॊरीव दुबार शुमार."
 
-#: gnucash/register/ledger-core/split-register.c:2104
+#: gnucash/register/ledger-core/split-register.c:2106
 msgid ""
 "The values entered for this transaction are inconsistent. Which value would "
 "you like to have recalculated?"
@@ -21445,45 +21470,45 @@ msgstr ""
 "यॊमी टरांज़ीकशन बापत दॊखील करनॊ आमोत विलीव छॊ गॊरमसॊवी. कुस विलीव छुय तुहयो पसंद "
 "रीकलकुलिट करुन?"
 
-#: gnucash/register/ledger-core/split-register.c:2111
-#: gnucash/register/ledger-core/split-register.c:2118
-#: gnucash/register/ledger-core/split-register.c:2125
+#: gnucash/register/ledger-core/split-register.c:2113
+#: gnucash/register/ledger-core/split-register.c:2120
+#: gnucash/register/ledger-core/split-register.c:2127
 msgid "Changed"
 msgstr "तबदिल करनॊ आमुत"
 
-#: gnucash/register/ledger-core/split-register.c:2136
+#: gnucash/register/ledger-core/split-register.c:2138
 msgid "_Recalculate"
 msgstr "रीकलकुलिट"
 
-#: gnucash/register/ledger-core/split-register.c:2559
+#: gnucash/register/ledger-core/split-register.c:2561
 #, fuzzy
 msgctxt "Action Column"
 msgid "Deposit"
 msgstr "जमाह कॊरीव"
 
-#: gnucash/register/ledger-core/split-register.c:2560
+#: gnucash/register/ledger-core/split-register.c:2562
 msgid "Withdraw"
 msgstr "नॊयीव"
 
-#: gnucash/register/ledger-core/split-register.c:2561
+#: gnucash/register/ledger-core/split-register.c:2563
 msgid "Check"
 msgstr "जांच"
 
-#: gnucash/register/ledger-core/split-register.c:2563
-#: gnucash/register/ledger-core/split-register.c:2594
+#: gnucash/register/ledger-core/split-register.c:2565
+#: gnucash/register/ledger-core/split-register.c:2596
 msgid "ATM Deposit"
 msgstr "ATM डोपाज़ीट"
 
-#: gnucash/register/ledger-core/split-register.c:2564
-#: gnucash/register/ledger-core/split-register.c:2595
+#: gnucash/register/ledger-core/split-register.c:2566
+#: gnucash/register/ledger-core/split-register.c:2597
 msgid "ATM Draw"
 msgstr "ATM डरा"
 
-#: gnucash/register/ledger-core/split-register.c:2565
+#: gnucash/register/ledger-core/split-register.c:2567
 msgid "Teller"
 msgstr "टीलर"
 
-#: gnucash/register/ledger-core/split-register.c:2568
+#: gnucash/register/ledger-core/split-register.c:2570
 #: gnucash/report/reports/standard/receipt.scm:201
 #: gnucash/report/reports/standard/receipt.scm:203
 #: gnucash/report/reports/support/receipt.eguile.scm:276
@@ -21491,136 +21516,136 @@ msgstr "टीलर"
 msgid "Receipt"
 msgstr "रसिद"
 
-#: gnucash/register/ledger-core/split-register.c:2569
-#: gnucash/register/ledger-core/split-register.c:2583
-#: gnucash/register/ledger-core/split-register.c:2619
-#: gnucash/register/ledger-core/split-register.c:2630
-#: gnucash/register/ledger-core/split-register.c:2662
+#: gnucash/register/ledger-core/split-register.c:2571
+#: gnucash/register/ledger-core/split-register.c:2585
+#: gnucash/register/ledger-core/split-register.c:2621
+#: gnucash/register/ledger-core/split-register.c:2632
+#: gnucash/register/ledger-core/split-register.c:2664
 #: libgnucash/engine/Account.cpp:153 libgnucash/engine/Account.cpp:174
 #: libgnucash/engine/Account.cpp:182 libgnucash/engine/Account.cpp:183
 msgid "Increase"
 msgstr "बडियोव"
 
-#: gnucash/register/ledger-core/split-register.c:2570
-#: gnucash/register/ledger-core/split-register.c:2584
-#: gnucash/register/ledger-core/split-register.c:2620
-#: gnucash/register/ledger-core/split-register.c:2631
-#: gnucash/register/ledger-core/split-register.c:2663
+#: gnucash/register/ledger-core/split-register.c:2572
+#: gnucash/register/ledger-core/split-register.c:2586
+#: gnucash/register/ledger-core/split-register.c:2622
+#: gnucash/register/ledger-core/split-register.c:2633
+#: gnucash/register/ledger-core/split-register.c:2665
 #: libgnucash/engine/Account.cpp:154 libgnucash/engine/Account.cpp:162
 #: libgnucash/engine/Account.cpp:163 libgnucash/engine/Account.cpp:173
 msgid "Decrease"
 msgstr "गठॊयीव"
 
-#: gnucash/register/ledger-core/split-register.c:2572
+#: gnucash/register/ledger-core/split-register.c:2574
 msgid "POS"
 msgstr "POS"
 
-#: gnucash/register/ledger-core/split-register.c:2576
+#: gnucash/register/ledger-core/split-register.c:2578
 msgid "AutoDep"
 msgstr "आटूडोप"
 
-#: gnucash/register/ledger-core/split-register.c:2577
+#: gnucash/register/ledger-core/split-register.c:2579
 msgid "Wire"
 msgstr "वायर"
 
-#: gnucash/register/ledger-core/split-register.c:2579
+#: gnucash/register/ledger-core/split-register.c:2581
 msgid "Direct Debit"
 msgstr "डारीकटे डोबोट"
 
-#: gnucash/register/ledger-core/split-register.c:2591
-#: gnucash/register/ledger-core/split-register.c:2598
-#: gnucash/register/ledger-core/split-register.c:2647
+#: gnucash/register/ledger-core/split-register.c:2593
+#: gnucash/register/ledger-core/split-register.c:2600
+#: gnucash/register/ledger-core/split-register.c:2649
 msgid "Fee"
 msgstr "फीस"
 
-#: gnucash/register/ledger-core/split-register.c:2625
+#: gnucash/register/ledger-core/split-register.c:2627
 #: libgnucash/engine/Account.cpp:179
 msgid "Rebate"
 msgstr "रीबिट"
 
-#: gnucash/register/ledger-core/split-register.c:2626
+#: gnucash/register/ledger-core/split-register.c:2628
 msgid "Paycheck"
 msgstr "पिचक"
 
-#: gnucash/register/ledger-core/split-register.c:2652
+#: gnucash/register/ledger-core/split-register.c:2654
 msgid "LTCG"
 msgstr "LTCG"
 
-#: gnucash/register/ledger-core/split-register.c:2654
+#: gnucash/register/ledger-core/split-register.c:2656
 msgid "STCG"
 msgstr "STCG"
 
-#: gnucash/register/ledger-core/split-register.c:2657
+#: gnucash/register/ledger-core/split-register.c:2659
 msgid "Dist"
 msgstr "Dist"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:79
+#: gnucash/register/ledger-core/split-register-control.cpp:84
 msgid ""
 "This transaction cannot be balanced: The imbalance is a fraction smaller "
 "than the commodity allows."
 msgstr ""
 
-#: gnucash/register/ledger-core/split-register-control.cpp:93
+#: gnucash/register/ledger-core/split-register-control.cpp:98
 msgid "Rebalance Transaction"
 msgstr "रीबिलनोस टरांज़ीकशन"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:94
+#: gnucash/register/ledger-core/split-register-control.cpp:99
 msgid "The current transaction is not balanced."
 msgstr "मूजूद टरांज़ीकशन छु नॊ मसॊवी."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:176
+#: gnucash/register/ledger-core/split-register-control.cpp:181
 msgid "Balance it _manually"
 msgstr "बराबर कॊरीव यो मिनवली"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:178
+#: gnucash/register/ledger-core/split-register-control.cpp:183
 msgid "Let GnuCash _add an adjusting split"
 msgstr "GNUCASH अस दीयोव ईजाज़त अख बराबर करन वूल सुपलोट जमाह करनस."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:183
+#: gnucash/register/ledger-core/split-register-control.cpp:188
 msgid "Adjust current account _split total"
 msgstr "एिडजसटे कॊरीव मूजूद एिकावुंट सुपलोट टूटल."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:189
+#: gnucash/register/ledger-core/split-register-control.cpp:194
 msgid "Adjust _other account split total"
 msgstr "एिडजसटे कॊरीव बयाख एिकावुंट सुपलोट टूटल."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:199
+#: gnucash/register/ledger-core/split-register-control.cpp:204
 msgid "_Rebalance"
 msgstr "रीबिलनोस"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1347
-#: gnucash/register/ledger-core/split-register-control.cpp:1360
+#: gnucash/register/ledger-core/split-register-control.cpp:1357
+#: gnucash/register/ledger-core/split-register-control.cpp:1370
 msgid "This register does not support editing exchange rates."
 msgstr "यॊ रजसटर छु नॊ तावुन दोवान एिकोसचींज रिट एिडीट करनस दूरान."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1386
+#: gnucash/register/ledger-core/split-register-control.cpp:1396
 msgid "You need to select a split in order to modify its exchange rate."
 msgstr "तुहयो छु ज़रूरत अख सुपलोट च़ारनुक अमोच एिकोसचिंड रिट तबदिल करनो बापत."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1401
-#: gnucash/register/ledger-core/split-register-control.cpp:1476
+#: gnucash/register/ledger-core/split-register-control.cpp:1411
+#: gnucash/register/ledger-core/split-register-control.cpp:1486
 msgid ""
 "You need to expand the transaction in order to modify its exchange rates."
 msgstr "तुहयो छॊव ज़रूरत टरांज़ीकशन फिलावनुक अमोच एिकोसचिंड रिट तबदिल करनो बापत."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1413
+#: gnucash/register/ledger-core/split-register-control.cpp:1423
 msgid "The entered account could not be found."
 msgstr "दॊखील करनी आमुत एिकावुंट हयुक नॊ लॆबीथ."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1448
-#: gnucash/register/ledger-core/split-register-control.cpp:1461
+#: gnucash/register/ledger-core/split-register-control.cpp:1458
+#: gnucash/register/ledger-core/split-register-control.cpp:1471
 msgid "The two currencies involved equal each other."
 msgstr "ज़ॊ शिमोल करनसी छॊ बराबर एिकोस अख."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1513
+#: gnucash/register/ledger-core/split-register-control.cpp:1523
 msgid "The split's amount is zero, so no exchange rate is needed."
 msgstr "सुपलोटुक रकम छु ज़िरू, अमो मूजूब छॊ नॊ कांह तॊ एिकीसचिंज रिट ज़रूरत."
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1562
+#: gnucash/register/ledger-core/split-register-control.cpp:1572
 msgid "Save the changed transaction?"
 msgstr "मोहफूज़ कॆरवाह तबदिल करनो आमुत टरांज़ीकशन?"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1564
+#: gnucash/register/ledger-core/split-register-control.cpp:1574
 msgid ""
 "The current transaction has been changed. Would you like to record the "
 "changes before moving to a new transaction, discard the changes, or return "
@@ -21630,19 +21655,19 @@ msgstr ""
 "टरानज़ेकशनस कुन पकनॊ बरुनह, डिसकाड कॊरिव तबदीलयि, या पॊकिव वापस तबदील करनॊ आमतिस "
 "टरानज़ेकशनस कुन?"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1577
+#: gnucash/register/ledger-core/split-register-control.cpp:1587
 msgid "_Discard Changes"
 msgstr "तबदिलयो कॊरीव खतम"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1579
+#: gnucash/register/ledger-core/split-register-control.cpp:1589
 msgid "_Record Changes"
 msgstr "तबदिलयो कॊरीव रीकाड"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1867
+#: gnucash/register/ledger-core/split-register-control.cpp:1877
 msgid "Mark split as unreconciled?"
 msgstr "मारीक कॊरवाह सुपलीट बतूर अनरीकनसायलीड?"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1869
+#: gnucash/register/ledger-core/split-register-control.cpp:1879
 msgid ""
 "You are about to mark a reconciled split as unreconciled. Doing so might "
 "make future reconciliation difficult! Continue with this change?"
@@ -21650,7 +21675,7 @@ msgstr ""
 "तोहयॊ छॊव तयार मारॊक करनस अख रिकनसायलॊड सुपलिट बतोर अख अनरिकनसायलॊड. यि करनॊ "
 "सॊत हेकन गॊछ़िथ यिनॊ वाजनॊ रिकनसायलेशन मुशकिल! जॊरी थाववाह यॊ तबदिली?"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1886
+#: gnucash/register/ledger-core/split-register-control.cpp:1896
 msgid "_Unreconcile"
 msgstr "अनरीकनसायोल"
 
@@ -21681,7 +21706,7 @@ msgstr "सिमपोलः अको टरांज़ीकशनोच व
 
 #. Translators: 'L' is short for Linked Document
 #: gnucash/register/ledger-core/split-register-layout.c:705
-#: gnucash/register/ledger-core/split-register-model.c:339
+#: gnucash/register/ledger-core/split-register-model.c:343
 #: gnucash/report/reports/standard/new-owner-report.scm:209
 #: gnucash/report/reports/standard/new-owner-report.scm:800
 #: gnucash/report/reports/standard/new-owner-report.scm:840
@@ -21736,7 +21761,7 @@ msgctxt "sample"
 msgid "(x + 0.33 * y + (x+y) )"
 msgstr "सिमपोलः(x + 0.33 * y + (x+y) )"
 
-#: gnucash/register/ledger-core/split-register-load.c:298
+#: gnucash/register/ledger-core/split-register-load.c:301
 msgid ""
 "Could not determine the account currency. Using the default currency "
 "provided by your system."
@@ -21748,64 +21773,64 @@ msgstr ""
 #. * Accounts Receivable ledgers for the number of the invoice or bill
 #. * associated with the transaction.
 #.
-#: gnucash/register/ledger-core/split-register-model.c:258
+#: gnucash/register/ledger-core/split-register-model.c:262
 msgid "Ref"
 msgstr "Ref"
 
-#: gnucash/register/ledger-core/split-register-model.c:274
+#: gnucash/register/ledger-core/split-register-model.c:278
 msgid "T-Ref"
 msgstr "T-रेफ"
 
-#: gnucash/register/ledger-core/split-register-model.c:283
+#: gnucash/register/ledger-core/split-register-model.c:287
 #: gnucash/report/reports/standard/register.scm:133
 msgid "T-Num"
 msgstr "T-नम"
 
-#: gnucash/register/ledger-core/split-register-model.c:409
+#: gnucash/register/ledger-core/split-register-model.c:413
 #, fuzzy
 msgid "Exch. Rate"
 msgstr "एिकोसचिंज रिट:"
 
-#: gnucash/register/ledger-core/split-register-model.c:426
+#: gnucash/register/ledger-core/split-register-model.c:430
 msgid "Oth. Curr."
 msgstr ""
 
-#: gnucash/register/ledger-core/split-register-model.c:443
-#: gnucash/register/ledger-core/split-register-model.c:467
+#: gnucash/register/ledger-core/split-register-model.c:447
+#: gnucash/register/ledger-core/split-register-model.c:471
 #, c-format
 msgid "Tot %s"
 msgstr "Tot %s"
 
-#: gnucash/register/ledger-core/split-register-model.c:449
+#: gnucash/register/ledger-core/split-register-model.c:453
 msgid "Tot Credit"
 msgstr "Tot करीडीट"
 
-#: gnucash/register/ledger-core/split-register-model.c:473
+#: gnucash/register/ledger-core/split-register-model.c:477
 msgid "Tot Debit"
 msgstr "Tot डोबोट"
 
-#: gnucash/register/ledger-core/split-register-model.c:482
+#: gnucash/register/ledger-core/split-register-model.c:486
 msgid "Tot Shares"
 msgstr "Tot शीयर"
 
-#: gnucash/register/ledger-core/split-register-model.c:503
+#: gnucash/register/ledger-core/split-register-model.c:507
 msgid "Debit Formula"
 msgstr "डोबोट फारमूला"
 
-#: gnucash/register/ledger-core/split-register-model.c:510
+#: gnucash/register/ledger-core/split-register-model.c:514
 msgid "Credit Formula"
 msgstr "करीडीट फारमूला"
 
-#: gnucash/register/ledger-core/split-register-model.c:532
+#: gnucash/register/ledger-core/split-register-model.c:536
 #, fuzzy, c-format
 msgid "Reconciled on %s"
 msgstr "मसलहत कुरमुत"
 
-#: gnucash/register/ledger-core/split-register-model.c:1013
+#: gnucash/register/ledger-core/split-register-model.c:1017
 msgid "Scheduled"
 msgstr "शडूल करनी आमुत"
 
-#: gnucash/register/ledger-core/split-register-model.c:1062
+#: gnucash/register/ledger-core/split-register-model.c:1066
 msgid ""
 "Enter a reference, such as an invoice or check number, common to all entry "
 "lines (splits)"
@@ -21813,7 +21838,7 @@ msgstr ""
 "एनटर कॊरिव अख हवाल, मसलन अख ईनवायिस या चक नमबर, युस कामन छु तमाम एनटरी लायनन "
 "(सुपलिटन)"
 
-#: gnucash/register/ledger-core/split-register-model.c:1064
+#: gnucash/register/ledger-core/split-register-model.c:1068
 msgid ""
 "Enter a reference, such as an invoice or check number, unique to each entry "
 "line (split)"
@@ -21821,18 +21846,18 @@ msgstr ""
 "एनटर कॊरिव अख हवाल, मसलन अख ईनवायिस या चक नमबर, युस युनीक छु परॊथ एनटरी लायनॊ "
 "(सुपलिट)"
 
-#: gnucash/register/ledger-core/split-register-model.c:1069
+#: gnucash/register/ledger-core/split-register-model.c:1073
 msgid ""
 "Enter a reference, such as a check number, common to all entry lines (splits)"
 msgstr "एनटर कॊरिव अख हवाल, मसलन चक नमबर, युस कामन छु तमाम एनटरी लायनन (सुपलिटन)"
 
-#: gnucash/register/ledger-core/split-register-model.c:1071
+#: gnucash/register/ledger-core/split-register-model.c:1075
 msgid ""
 "Enter a reference, such as a check number, unique to each entry line (split)"
 msgstr ""
 "एनटर कॊरिव अख हवाल, मसलन अख चक नमबर, युस युनीक छु परॊथ एनटरी लायनॊ (सुपलिट)"
 
-#: gnucash/register/ledger-core/split-register-model.c:1092
+#: gnucash/register/ledger-core/split-register-model.c:1096
 msgid ""
 "Enter a transaction reference, such as an invoice or check number, common to "
 "all entry lines (splits)"
@@ -21840,71 +21865,71 @@ msgstr ""
 "एनटर कॊरिव अख टरानज़ेकशन हवाल, मसलन अख ईनवायिस या चक नमबर, युस कामन आसि तमाम "
 "एनटरी लायनन (सुपलिटन)"
 
-#: gnucash/register/ledger-core/split-register-model.c:1096
+#: gnucash/register/ledger-core/split-register-model.c:1100
 msgid ""
 "Enter a transaction reference that will be common to all entry lines (splits)"
 msgstr "एनटर कॊरिव अख टरानज़ेकशन हवाल युस कामन छु तमाम एनटरी लायनन (सुपलिटन)"
 
-#: gnucash/register/ledger-core/split-register-model.c:1132
+#: gnucash/register/ledger-core/split-register-model.c:1136
 msgid "Enter the name of the Customer"
 msgstr "कसटमर सुंद नाव कॊरीव दॊखील"
 
-#: gnucash/register/ledger-core/split-register-model.c:1135
+#: gnucash/register/ledger-core/split-register-model.c:1139
 msgid "Enter the name of the Vendor"
 msgstr "वीनडर सुंद नाव कॊरीव दॊखील"
 
-#: gnucash/register/ledger-core/split-register-model.c:1138
+#: gnucash/register/ledger-core/split-register-model.c:1142
 msgid "Enter a description of the transaction"
 msgstr "टरांज़ीकशनोच वज़ाहत कॊरीव दॊखील"
 
-#: gnucash/register/ledger-core/split-register-model.c:1169
+#: gnucash/register/ledger-core/split-register-model.c:1173
 msgid "Enter notes for the transaction"
 msgstr "टरांज़ीकशन बापत कॊरीव नूट दॊखील"
 
-#: gnucash/register/ledger-core/split-register-model.c:1202
+#: gnucash/register/ledger-core/split-register-model.c:1206
 msgid "Reason the transaction was voided"
 msgstr "टरांज़ीकशन वायीड करनुक वजाह"
 
-#: gnucash/register/ledger-core/split-register-model.c:1301
+#: gnucash/register/ledger-core/split-register-model.c:1305
 msgid "Enter an action type, or choose one from the list"
 msgstr "अख एकशन टायिप कॊरिव एनटर, या च़ॊरिव अख लिसटॊ पयॊठ"
 
-#: gnucash/register/ledger-core/split-register-model.c:1302
+#: gnucash/register/ledger-core/split-register-model.c:1306
 msgid ""
 "Enter a reference number, such as the next check number, or choose an action "
 "type from the list"
 msgstr ""
 "एनटर कॊरिव अख हवाल नमबर, मसलन अख ईनवायिस या च़ॊरिव अख एकशन टायिप लिसटॊ पयॊठ"
 
-#: gnucash/register/ledger-core/split-register-model.c:1330
+#: gnucash/register/ledger-core/split-register-model.c:1334
 msgid "Enter a description of the split"
 msgstr "अख वज़ाहत कॊरीव दॊखील सुपलोटोच"
 
-#: gnucash/register/ledger-core/split-register-model.c:1404
+#: gnucash/register/ledger-core/split-register-model.c:1408
 msgid "Enter the effective share price"
 msgstr "ईफिकटोव शीयर परायीस कॊरीव दॊखील"
 
-#: gnucash/register/ledger-core/split-register-model.c:1440
+#: gnucash/register/ledger-core/split-register-model.c:1444
 msgid "Enter the number of shares bought or sold"
 msgstr "दॊखील कॊरीव एिनमोतयन तॊ कीनमोतयन शीयरन हुंद नमबर"
 
-#: gnucash/register/ledger-core/split-register-model.c:1492
-#: gnucash/register/ledger-core/split-register-model.c:1559
+#: gnucash/register/ledger-core/split-register-model.c:1496
+#: gnucash/register/ledger-core/split-register-model.c:1563
 msgid "Enter the account to transfer from, or choose one from the list"
 msgstr "दॊखील कॊरीव एिकावुंट यॊमी पयॊठ टरानसफर करुन छु, या च़ॊरीव आख लीसटे पयॊठ"
 
-#: gnucash/register/ledger-core/split-register-model.c:1569
+#: gnucash/register/ledger-core/split-register-model.c:1573
 msgid ""
 "This transaction has multiple splits; press the Split button to see them all"
 msgstr ""
 "यथ टरांज़ीकशनस छॊ वारयाह सुपलोट, परीस कॊरीव सुपलोट बुटन तॊम तमाम वॊछनी बापत."
 
-#: gnucash/register/ledger-core/split-register-model.c:1572
+#: gnucash/register/ledger-core/split-register-model.c:1576
 msgid ""
 "This transaction is a stock split; press the Split button to see details"
 msgstr "यॊ टरांज़ीकशन छु अख सेटाक सुपलीट, परीस कॊरीव सुपलोट बुटन तफसिल वॊछनी बापत "
 
-#: gnucash/register/ledger-core/split-register-model.c:2090
+#: gnucash/register/ledger-core/split-register-model.c:2094
 #, c-format
 msgid ""
 "Cannot modify or delete this transaction. This transaction is marked read-"
@@ -21917,12 +21942,12 @@ msgstr ""
 "\n"
 "'%s'"
 
-#: gnucash/register/ledger-core/split-register-model.c:2203
+#: gnucash/register/ledger-core/split-register-model.c:2211
 #, fuzzy
 msgid "Change transaction containing a reconciled split?"
 msgstr "तबदील करवाह सुपलिट योस लिनक कॊरिथ छु एकिस रिकनसायलॊड सुपलिटस सॊत?"
 
-#: gnucash/register/ledger-core/split-register-model.c:2205
+#: gnucash/register/ledger-core/split-register-model.c:2213
 #, fuzzy, c-format
 msgid ""
 "The transaction you are about to change contains reconciled splits in the "
@@ -21935,11 +21960,11 @@ msgstr ""
 "सुपलिटस सॊत. यि करनॊ सॊत हेकन गॊछ़िथ यिनॊ वाजनॊ रिकनसायलेशन मुशकिल! जॊरी थाववाह "
 "यॊ तबदिली?"
 
-#: gnucash/register/ledger-core/split-register-model.c:2215
+#: gnucash/register/ledger-core/split-register-model.c:2223
 msgid "Change reconciled split?"
 msgstr "तबदिल करवाह मसलहत करनो आमुत सुपलोट? "
 
-#: gnucash/register/ledger-core/split-register-model.c:2217
+#: gnucash/register/ledger-core/split-register-model.c:2225
 #, fuzzy
 msgid ""
 "You are about to change a protected field of a reconciled split. If you "
@@ -21950,24 +21975,24 @@ msgstr ""
 "सुपलिटस सॊत. यि करनॊ सॊत हेकन गॊछ़िथ यिनॊ वाजनॊ रिकनसायलेशन मुशकिल! जॊरी थाववाह "
 "यॊ तबदिली?"
 
-#: gnucash/register/ledger-core/split-register-model.c:2239
+#: gnucash/register/ledger-core/split-register-model.c:2247
 msgid "Chan_ge Split"
 msgstr "सुपलोट कॊरीव तबदिल"
 
-#: gnucash/register/ledger-core/split-register-model.c:2242
+#: gnucash/register/ledger-core/split-register-model.c:2250
 #, fuzzy
 msgid "Chan_ge Transaction"
 msgstr "टरांज़ोकशन कॊरीव कीनसल"
 
-#: gnucash/register/ledger-core/split-register-model.c:2343
+#: gnucash/register/ledger-core/split-register-model.c:2351
 msgid "Enter debit formula for real transaction"
 msgstr "डोबीट फारमुला कॊरीव दॊखील रीयल टरांज़ीकशनन बापत"
 
-#: gnucash/register/ledger-core/split-register-model.c:2379
+#: gnucash/register/ledger-core/split-register-model.c:2387
 msgid "Enter credit formula for real transaction"
 msgstr "करीडीट फारमुला कॊरीव दॊखील रीयल टरांज़ीकशनन बापत"
 
-#: gnucash/register/register-gnome/completioncell-gnome.c:75
+#: gnucash/register/register-gnome/completioncell-gnome.c:76
 #, fuzzy
 #| msgid "Loading completed"
 msgid "Don't autocomplete"
@@ -21994,7 +22019,7 @@ msgstr "लीसटे"
 msgid "Template file \"~a\" can not be read"
 msgstr "टिमपलिट फायोल \"~a\" हयीकव नॊ पॊरीथ"
 
-#: gnucash/report/html-chart.scm:476
+#: gnucash/report/html-chart.scm:475
 msgid "Load"
 msgstr ""
 
@@ -22078,7 +22103,7 @@ msgstr "फानट ईनफो सेनटर करनॊ आमच़न �
 msgid "Can't save style sheet"
 msgstr "हयोकी नॊ मोहफूज़ कॊरीथ सेटायील शिट"
 
-#: gnucash/report/html-utilities.scm:263
+#: gnucash/report/html-utilities.scm:266
 #, fuzzy
 #| msgid "Exchange rate"
 msgid "Exchange rate"
@@ -22086,41 +22111,41 @@ msgid_plural "Exchange rates"
 msgstr[0] "एिकीसचिंज रिट"
 msgstr[1] "एिकीसचिंज रिट"
 
-#: gnucash/report/html-utilities.scm:276
+#: gnucash/report/html-utilities.scm:279
 msgid "No budgets exist. You must create at least one budget."
 msgstr "कानह बजट छु नॊ मोजूद. तोहयॊ छु कम अज़ कम बनावुन अख बजट."
 
-#: gnucash/report/html-utilities.scm:293
+#: gnucash/report/html-utilities.scm:296
 #: gnucash/ui/gnc-plugin-page-report.ui:242
 msgid "Edit report options"
 msgstr "एिडीट कॊरीव रीपूट ऊपशन"
 
-#: gnucash/report/html-utilities.scm:309
+#: gnucash/report/html-utilities.scm:312
 #: gnucash/report/reports/standard/balsheet-pnl.scm:143
 #: gnucash/report/reports/standard/new-owner-report.scm:925
 #, fuzzy
 msgid "Disabled"
 msgstr "एिन एिबोल करनॊ आमुत"
 
-#: gnucash/report/html-utilities.scm:361
+#: gnucash/report/html-utilities.scm:364
 msgid "This report requires you to specify certain report options."
 msgstr "यथ रीपूटस छु ज़रूरत तूहॊंदी दॊस मखसूस करुन कॊंह रीपूट ऊपशन."
 
-#: gnucash/report/html-utilities.scm:368
+#: gnucash/report/html-utilities.scm:371
 msgid "No accounts selected"
 msgstr "कांह एिकावुंट आव नॊ च़ारनी"
 
-#: gnucash/report/html-utilities.scm:369
+#: gnucash/report/html-utilities.scm:372
 #, fuzzy
 msgid "This report requires accounts to be selected in the report options."
 msgstr "यथ रीपूटस छु ज़रूरत एिकावुंट च़ारनुक."
 
-#: gnucash/report/html-utilities.scm:376
+#: gnucash/report/html-utilities.scm:379
 #: gnucash/report/reports/standard/price-scatter.scm:250
 msgid "No data"
 msgstr "डाटा छु नॊ"
 
-#: gnucash/report/html-utilities.scm:377
+#: gnucash/report/html-utilities.scm:380
 msgid ""
 "The selected accounts contain no data/transactions (or only zeroes) for the "
 "selected time period"
@@ -22362,38 +22387,38 @@ msgstr "कानह सबटोटल मॊ हॊयिव पेरनट �
 msgid "Show subtotals"
 msgstr "सबटूटल हॊयीव"
 
-#: gnucash/report/report-core.scm:154
+#: gnucash/report/report-core.scm:156
 msgid "_Assets & Liabilities"
 msgstr "एिसीट तॊ लायबीलटीयो"
 
-#: gnucash/report/report-core.scm:155
+#: gnucash/report/report-core.scm:157
 msgid "_Income & Expense"
 msgstr "ईनकम तॊ खरोच"
 
-#: gnucash/report/report-core.scm:156 gnucash/ui/gnc-plugin-budget.ui:6
+#: gnucash/report/report-core.scm:158 gnucash/ui/gnc-plugin-budget.ui:6
 msgid "B_udget"
 msgstr "बजट"
 
-#: gnucash/report/report-core.scm:157
+#: gnucash/report/report-core.scm:159
 msgid "_Taxes"
 msgstr "टिकोस"
 
-#: gnucash/report/report-core.scm:158
+#: gnucash/report/report-core.scm:160
 #, fuzzy
 msgid "E_xamples"
 msgstr "मीसालेः"
 
-#: gnucash/report/report-core.scm:159
+#: gnucash/report/report-core.scm:161
 #, fuzzy
 msgid "_Experimental"
 msgstr "एिकोसपूट"
 
-#: gnucash/report/report-core.scm:160
+#: gnucash/report/report-core.scm:162
 #, fuzzy
 msgid "_Multicolumn"
 msgstr "मलटीकालम वीव"
 
-#: gnucash/report/report-core.scm:164
+#: gnucash/report/report-core.scm:166
 #: gnucash/report/reports/standard/invoice.scm:446
 #: gnucash/report/reports/standard/invoice.scm:450
 #: gnucash/report/reports/standard/invoice.scm:454
@@ -22428,24 +22453,24 @@ msgstr "मलटीकालम वीव"
 msgid "Display"
 msgstr "डोसपेली कॊरीव"
 
-#: gnucash/report/report-core.scm:165
+#: gnucash/report/report-core.scm:167
 msgid "Report name"
 msgstr "रीपूट नाव"
 
-#: gnucash/report/report-core.scm:166
+#: gnucash/report/report-core.scm:168
 msgid "Stylesheet"
 msgstr "सेटायील शिट"
 
-#: gnucash/report/report-core.scm:167 gnucash/ui/gnc-main-window.ui:357
+#: gnucash/report/report-core.scm:169 gnucash/ui/gnc-main-window.ui:357
 #: gnucash/ui/gnc-plugin-business.ui:159
 msgid "_Business"
 msgstr "कारबार"
 
-#: gnucash/report/report-core.scm:168
+#: gnucash/report/report-core.scm:170
 msgid "Invoice Number"
 msgstr "ईनवायीस नमबर"
 
-#: gnucash/report/report-core.scm:216
+#: gnucash/report/report-core.scm:218
 msgid ""
 "One of your reports has a report-guid that is a duplicate. Please check the "
 "report system, especially your saved reports, for a report with this report-"
@@ -22455,20 +22480,20 @@ msgstr ""
 "रीपूट सीसटम, खास तूर पॊठ तुहॊंद मोहफूज़ करनॊ आमोत रीपूट, एिकीस रीपूटस बापत यथ यॊ "
 "रीपूट गायीड सॊत छुः"
 
-#: gnucash/report/report-core.scm:217
+#: gnucash/report/report-core.scm:219
 #, fuzzy
 msgid "Wrong report definition: "
 msgstr "लोड कॊरिव रिपोट कनफिगरेशन"
 
-#: gnucash/report/report-core.scm:218
+#: gnucash/report/report-core.scm:220
 msgid " Report is missing a GUID."
 msgstr ""
 
-#: gnucash/report/report-core.scm:309
+#: gnucash/report/report-core.scm:311
 msgid "Enter a descriptive name for this report."
 msgstr "अख वज़ाहती नाव कॊरिव एनटर येमि रिपोट बापत."
 
-#: gnucash/report/report-core.scm:316
+#: gnucash/report/report-core.scm:318
 msgid "Select a stylesheet for the report."
 msgstr "यॊमी रीपूट बापत च़ॊरीव अख सेटायील शिट."
 
@@ -22645,7 +22670,7 @@ msgid "Maximum"
 msgstr "ज़यादो खूतो ज़यादो"
 
 #: gnucash/report/reports/example/average-balance.scm:137
-#: gnucash/report/reports/standard/balance-forecast.scm:235
+#: gnucash/report/reports/standard/balance-forecast.scm:238
 msgid "Minimum"
 msgstr "कम खूतो कम"
 
@@ -23355,7 +23380,7 @@ msgstr "खरचो एिकावुंट"
 #: gnucash/report/reports/standard/budget-balance-sheet.scm:619
 #: gnucash/report/reports/standard/net-charts.scm:332
 #: gnucash/report/reports/standard/net-charts.scm:402
-#: gnucash/report/report-utilities.scm:200
+#: gnucash/report/report-utilities.scm:204
 msgid "Assets"
 msgstr "एिसीट"
 
@@ -23364,7 +23389,7 @@ msgstr "एिसीट"
 #: gnucash/report/reports/standard/budget-balance-sheet.scm:654
 #: gnucash/report/reports/standard/net-charts.scm:353
 #: gnucash/report/reports/standard/net-charts.scm:402
-#: gnucash/report/report-utilities.scm:201
+#: gnucash/report/report-utilities.scm:205
 msgid "Liabilities"
 msgstr "लायबोलटी"
 
@@ -23949,12 +23974,12 @@ msgid ""
 "balance including scheduled transactions."
 msgstr ""
 
-#: gnucash/report/reports/standard/balance-forecast.scm:254
+#: gnucash/report/reports/standard/balance-forecast.scm:257
 #, fuzzy
 msgid "Target"
 msgstr "चारीज"
 
-#: gnucash/report/reports/standard/balance-forecast.scm:264
+#: gnucash/report/reports/standard/balance-forecast.scm:267
 msgid "Reserve"
 msgstr ""
 
@@ -24094,8 +24119,8 @@ msgid "Trading Losses"
 msgstr "तोजारतीक नुखसान"
 
 #: gnucash/report/reports/standard/balance-sheet.scm:485
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1055
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1070
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1056
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1071
 #: gnucash/report/reports/standard/budget-balance-sheet.scm:725
 #: gnucash/report/reports/standard/trial-balance.scm:697
 msgid "Unrealized Gains"
@@ -24424,38 +24449,38 @@ msgstr ""
 msgid "Total For "
 msgstr "बापत टूटल"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1044
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1045
 #: libgnucash/engine/Account.cpp:4290
 msgid "Asset"
 msgstr "एिसीट"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1047
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1048
 #: libgnucash/engine/Account.cpp:4292
 msgid "Liability"
 msgstr "ज़ीमदॊरी"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1065
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1066
 #, fuzzy
 msgid "Liability and Equity"
 msgstr "लायिबीलटी/ ईकवोटी"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1083
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1226
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1084
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1227
 #, fuzzy
 msgid "Exchange Rates"
 msgstr "एिकोसचिंज रिट:"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1093
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1094
 #, fuzzy
 msgid "Barchart"
 msgstr "एिसीट बारचाट"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1156
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1157
 #, fuzzy
 msgid " to "
 msgstr "%s कुन%s"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1215
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1216
 #: gnucash/report/reports/standard/customer-summary.scm:110
 #: gnucash/report/reports/standard/customer-summary.scm:286
 #: gnucash/report/reports/standard/net-charts.scm:353
@@ -24465,17 +24490,17 @@ msgstr "%s कुन%s"
 msgid "Expense"
 msgstr "खरोच"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1219
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1220
 #: gnucash/report/reports/standard/trial-balance.scm:823
 msgid "Net Income"
 msgstr "नीट ईनकम"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1252
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1253
 #, fuzzy
 msgid "Balance Sheet (Multicolumn)"
 msgstr "बिलनोस शिट(eguile)"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1253
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1254
 #, fuzzy
 msgid "Income Statement (Multicolumn)"
 msgstr "ईनकम सेटिटमींट"
@@ -26927,7 +26952,7 @@ msgid "Sale"
 msgstr "सिलो"
 
 #: gnucash/report/reports/standard/new-owner-report.scm:56
-#: gnucash/report/report-utilities.scm:199
+#: gnucash/report/report-utilities.scm:203
 msgid "Credits"
 msgstr "करीडीट"
 
@@ -27981,7 +28006,7 @@ msgid "Equity Accounts"
 msgstr "ईकवीटी एिकावुंट"
 
 #: gnucash/report/reports/support/balsheet-eg.eguile.scm:182
-#: gnucash/report/report-utilities.scm:214
+#: gnucash/report/report-utilities.scm:218
 msgid "Trading Accounts"
 msgstr "टरिडींग एिकावुंट"
 
@@ -28030,57 +28055,57 @@ msgstr "वीबसायोट"
 msgid "Invoice Date"
 msgstr "ईनवायोस डिट"
 
-#: gnucash/report/report-utilities.scm:202
+#: gnucash/report/report-utilities.scm:206
 msgid "Stocks"
 msgstr "सीटाक"
 
-#: gnucash/report/report-utilities.scm:203
+#: gnucash/report/report-utilities.scm:207
 msgid "Mutual Funds"
 msgstr "मयूचवल दुसत"
 
-#: gnucash/report/report-utilities.scm:204
+#: gnucash/report/report-utilities.scm:208
 msgid "Currencies"
 msgstr "करनसी"
 
-#: gnucash/report/report-utilities.scm:207
+#: gnucash/report/report-utilities.scm:211
 msgid "Equities"
 msgstr "ईकवीटी"
 
-#: gnucash/report/report-utilities.scm:208
+#: gnucash/report/report-utilities.scm:212
 msgid "Checking"
 msgstr "जांच करान"
 
-#: gnucash/report/report-utilities.scm:209
+#: gnucash/report/report-utilities.scm:213
 msgid "Savings"
 msgstr "सिवींगॆ"
 
-#: gnucash/report/report-utilities.scm:210
+#: gnucash/report/report-utilities.scm:214
 msgid "Money Market"
 msgstr "मनी मारकीट"
 
-#: gnucash/report/report-utilities.scm:211
+#: gnucash/report/report-utilities.scm:215
 msgid "Accounts Receivable"
 msgstr "रटनस लायक एिकावुंट"
 
-#: gnucash/report/report-utilities.scm:212
+#: gnucash/report/report-utilities.scm:216
 msgid "Accounts Payable"
 msgstr "पियिबील एिकावुंट"
 
-#: gnucash/report/report-utilities.scm:213
+#: gnucash/report/report-utilities.scm:217
 msgid "Credit Lines"
 msgstr "करीडीट लायनो"
 
-#: gnucash/report/report-utilities.scm:639
+#: gnucash/report/report-utilities.scm:611
 #, scheme-format
 msgid "Building '~a' report …"
 msgstr "'~a' रीपूट बीलडो करान…"
 
-#: gnucash/report/report-utilities.scm:645
+#: gnucash/report/report-utilities.scm:617
 #, scheme-format
 msgid "Rendering '~a' report …"
 msgstr "'~a' रीपूट रीनडर करान…"
 
-#: gnucash/report/report-utilities.scm:647
+#: gnucash/report/report-utilities.scm:619
 #, fuzzy
 msgid "Untitled"
 msgstr "तुत तामः"
@@ -31164,108 +31189,108 @@ msgstr "मुरी नॊबर"
 msgid "Numeric error"
 msgstr "नमबरन मनज़ एीरर"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:165
+#: libgnucash/app-utils/gnc-quotes.cpp:186
 msgid "Failed to initialize Finance::Quote: "
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:172
+#: libgnucash/app-utils/gnc-quotes.cpp:193
 msgid "Finance::Quote check returned error "
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:180
+#: libgnucash/app-utils/gnc-quotes.cpp:201
 msgid "No Finance::Quote Version"
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:303
+#: libgnucash/app-utils/gnc-quotes.cpp:324
 msgid "GncQuotes::Fetch called with no book."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:321
+#: libgnucash/app-utils/gnc-quotes.cpp:342
 msgid "GncQuotes::Fetch called with no commodities."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:332
+#: libgnucash/app-utils/gnc-quotes.cpp:353
 msgid "GncQuotes::Report called with no source."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:338
+#: libgnucash/app-utils/gnc-quotes.cpp:359
 #, fuzzy
 #| msgid "There are no options for this report."
 msgid "There were no commodities for which to retrieve quotes."
 msgstr "यॊमी रीपूट खॊतरी छॊ नॊ ऊपशन."
 
-#: libgnucash/app-utils/gnc-quotes.cpp:353
+#: libgnucash/app-utils/gnc-quotes.cpp:374
 msgid "Finance::Quote retrieval failed with error "
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:371
-#: libgnucash/app-utils/gnc-quotes.cpp:856
+#: libgnucash/app-utils/gnc-quotes.cpp:392
+#: libgnucash/app-utils/gnc-quotes.cpp:877
 msgid "Finance::Quote returned no data and set no error."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:373
+#: libgnucash/app-utils/gnc-quotes.cpp:394
 msgid "Finance::Quote returned an error: "
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:377
+#: libgnucash/app-utils/gnc-quotes.cpp:398
 msgid "Finance::Quote reported failure set no error."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:379
+#: libgnucash/app-utils/gnc-quotes.cpp:400
 msgid "Finance::Quote reported failure with error: "
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:382
+#: libgnucash/app-utils/gnc-quotes.cpp:403
 msgid "Finance::Quote returned a quote with no currency."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:385
+#: libgnucash/app-utils/gnc-quotes.cpp:406
 msgid ""
 "Finance::Quote returned a quote with a currency GnuCash doesn't know about."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:388
+#: libgnucash/app-utils/gnc-quotes.cpp:409
 msgid "Finance::Quote returned a quote with no price element."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:391
+#: libgnucash/app-utils/gnc-quotes.cpp:412
 msgid ""
 "Finance::Quote returned a quote with a price that GnuCash was unable to "
 "covert to a number."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:395
+#: libgnucash/app-utils/gnc-quotes.cpp:416
 #, fuzzy
 #| msgid "There was an error accessing %s."
 msgid "The quote has no error set."
 msgstr "%s एिसीस करनस दूरान आव अख एिरर"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:404
+#: libgnucash/app-utils/gnc-quotes.cpp:425
 msgid "Quotes for the following commodities were unavailable or unusable:\n"
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:490
+#: libgnucash/app-utils/gnc-quotes.cpp:511
 msgid "Currency quotes requires at least two currencies"
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:758
-#: libgnucash/app-utils/gnc-quotes.cpp:768
+#: libgnucash/app-utils/gnc-quotes.cpp:779
+#: libgnucash/app-utils/gnc-quotes.cpp:789
 msgid "Failed to parse result returned by Finance::Quote."
 msgstr ""
 
 #. Translators: This labels the return value of a query to Finance::Quote written in an error.
-#: libgnucash/app-utils/gnc-quotes.cpp:761
-#: libgnucash/app-utils/gnc-quotes.cpp:776
+#: libgnucash/app-utils/gnc-quotes.cpp:782
+#: libgnucash/app-utils/gnc-quotes.cpp:797
 msgid "Result:"
 msgstr ""
 
 #. Translators: This is the error message reported by the Online Quotes processing code.
-#: libgnucash/app-utils/gnc-quotes.cpp:771
+#: libgnucash/app-utils/gnc-quotes.cpp:792
 msgid "Error message:"
 msgstr ""
 
 #. Translators: Means that the preceding element is required
-#: libgnucash/app-utils/gnc-quotes.cpp:816
+#: libgnucash/app-utils/gnc-quotes.cpp:837
 #, fuzzy
 #| msgid "Date required."
 msgctxt "Finance::Quote"
@@ -31273,14 +31298,14 @@ msgid "required"
 msgstr "तॊरिख ज़रूरत"
 
 #. Translators: Means that the quote will work best if the preceding element is provided
-#: libgnucash/app-utils/gnc-quotes.cpp:818
+#: libgnucash/app-utils/gnc-quotes.cpp:839
 #, fuzzy
 msgctxt "Finance::Quote"
 msgid "recommended"
 msgstr "गॊर मुसलहत करनो आमुत"
 
 #. Translators: Means that one of the indicated elements is required
-#: libgnucash/app-utils/gnc-quotes.cpp:820
+#: libgnucash/app-utils/gnc-quotes.cpp:841
 #, fuzzy
 #| msgid "End of this year"
 msgctxt "Finance::Quote"
@@ -31288,18 +31313,18 @@ msgid "one of these"
 msgstr "यॊमी वॊरयुक अंद"
 
 #. Translators: Means that a required element wasn't reported. The *s are for emphasis.
-#: libgnucash/app-utils/gnc-quotes.cpp:822
+#: libgnucash/app-utils/gnc-quotes.cpp:843
 #, fuzzy
 msgctxt "Finance::Quote"
 msgid "**missing**"
 msgstr "कमीशन"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:829
+#: libgnucash/app-utils/gnc-quotes.cpp:850
 msgid "Finance::Quote fields GnuCash uses:"
 msgstr ""
 
 #. Translators: The stock or Mutual Fund symbol, ISIN, CUSIP, etc.
-#: libgnucash/app-utils/gnc-quotes.cpp:831
+#: libgnucash/app-utils/gnc-quotes.cpp:852
 #, fuzzy
 #| msgid "Symbol"
 msgctxt "Finance::Quote"
@@ -31307,7 +31332,7 @@ msgid "symbol: "
 msgstr "अलामत"
 
 #. Translators: The date of the quote.
-#: libgnucash/app-utils/gnc-quotes.cpp:833
+#: libgnucash/app-utils/gnc-quotes.cpp:854
 #, fuzzy
 #| msgid "Date: "
 msgctxt "Finance::Quote"
@@ -31315,7 +31340,7 @@ msgid "date: "
 msgstr "तॊरिख:"
 
 #. Translators: The quote currency
-#: libgnucash/app-utils/gnc-quotes.cpp:835
+#: libgnucash/app-utils/gnc-quotes.cpp:856
 #, fuzzy
 #| msgid "Currency"
 msgctxt "Finance::Quote"
@@ -31323,7 +31348,7 @@ msgid "currency: "
 msgstr "करनसी"
 
 #. Translators: The quote is for the most recent trade on the exchange
-#: libgnucash/app-utils/gnc-quotes.cpp:841
+#: libgnucash/app-utils/gnc-quotes.cpp:862
 #, fuzzy
 #| msgid "last %s"
 msgctxt "Finance::Quote"
@@ -31331,39 +31356,39 @@ msgid "last: "
 msgstr "पतयोम %s"
 
 #. Translators: The quote is for an open-ended mutual fund and represents the net asset value of one unit of the fund at the previous close of trading.
-#: libgnucash/app-utils/gnc-quotes.cpp:843
+#: libgnucash/app-utils/gnc-quotes.cpp:864
 msgctxt "Finance::Quote"
 msgid "nav: "
 msgstr ""
 
 #. Translators: The quote is neither a last trade nor an NAV.
-#: libgnucash/app-utils/gnc-quotes.cpp:845
+#: libgnucash/app-utils/gnc-quotes.cpp:866
 #, fuzzy
 #| msgid "Price"
 msgctxt "Finance::Quote"
 msgid "price: "
 msgstr "किमत"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:865
+#: libgnucash/app-utils/gnc-quotes.cpp:886
 msgid "Finance::Quote reported a failure for symbol "
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:868
+#: libgnucash/app-utils/gnc-quotes.cpp:889
 msgid "Finance::Quote failed silently to retrieve a quote for symbol "
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:931
+#: libgnucash/app-utils/gnc-quotes.cpp:952
 msgid ""
 "GnuCash submitted invalid json to Finance::Quote. The details were logged."
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:937
+#: libgnucash/app-utils/gnc-quotes.cpp:958
 msgid ""
 "Perl is missing the following modules. Please see https://wiki.gnucash.org/"
 "wiki/Online_Quotes#Finance::Quote for detailed corrective action. "
 msgstr ""
 
-#: libgnucash/app-utils/gnc-quotes.cpp:943
+#: libgnucash/app-utils/gnc-quotes.cpp:964
 #, fuzzy
 #| msgid "Unrecognized or inconsistent format."
 msgid "Unrecognized Finance::Quote Error: "
@@ -31612,25 +31637,23 @@ msgid "Australian Stock Exchange, AU"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:196
-#, fuzzy
-#| msgid "Bill number"
-msgctxt "FQ Source"
-msgid "Bloomberg"
-msgstr "बोल नमबर"
-
-#: libgnucash/engine/gnc-commodity.cpp:197
 msgctxt "FQ Source"
 msgid "Italian Stock Exchange, IT"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:198
+#: libgnucash/engine/gnc-commodity.cpp:197
 msgctxt "FQ Source"
 msgid "BSE India, IN"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:199
+#: libgnucash/engine/gnc-commodity.cpp:198
 msgctxt "FQ Source"
 msgid "Bucharest Stock Exchange, RO"
+msgstr ""
+
+#: libgnucash/engine/gnc-commodity.cpp:199
+msgctxt "FQ Source"
+msgid "China Merchants Bank, CN"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:200
@@ -31657,266 +31680,191 @@ msgstr "ईनवीसटोमींट"
 
 #: libgnucash/engine/gnc-commodity.cpp:204
 msgctxt "FQ Source"
-msgid "DWS, DE"
+msgid "Financial Times Funds service, GB"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:205
 msgctxt "FQ Source"
-msgid "Financial Times Funds service, GB"
+msgid "Finanzpartner, DE"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:206
 msgctxt "FQ Source"
-msgid "Finanzpartner, DE"
+msgid "FondsWeb, DE"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:207
 msgctxt "FQ Source"
-msgid "FondsWeb, DE"
+msgid "GoldMoney precious metals"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:208
 msgctxt "FQ Source"
-msgid "GoldMoney precious metals"
+msgid "Google Web, US Stocks"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:209
 msgctxt "FQ Source"
-msgid "Google Web, US Stocks"
+msgid "Market Watch"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:210
 msgctxt "FQ Source"
-msgid "IEX (Investors Exchange), US"
+msgid "Morningstar, CH"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:211
 msgctxt "FQ Source"
-msgid "Market Watch"
+msgid "Morningstar, GB"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:212
 msgctxt "FQ Source"
-msgid "Morningstar, AU"
+msgid "Morningstar, JP"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:213
 msgctxt "FQ Source"
-msgid "Morningstar, CH"
+msgid "Motley Fool"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:214
 msgctxt "FQ Source"
-msgid "Morningstar, GB"
+msgid "New Zealand stock eXchange, NZ"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:215
 msgctxt "FQ Source"
-msgid "Morningstar, JP"
+msgid "NSE (National Stock Exchange), IN"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:216
 msgctxt "FQ Source"
-msgid "Motley Fool"
+msgid "OnVista, DE"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:217
 msgctxt "FQ Source"
-msgid "New Zealand stock eXchange, NZ"
+msgid "Paris Stock Exchange/Boursorama, FR"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:218
 msgctxt "FQ Source"
-msgid "NSE (National Stock Exchange), IN"
+msgid "S-Investor, DE"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:219
 msgctxt "FQ Source"
-msgid "OnVista, DE"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:220
-msgctxt "FQ Source"
-msgid "Paris Stock Exchange/Boursorama, FR"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:221
-msgctxt "FQ Source"
-msgid "S-Investor, DE"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:222
-msgctxt "FQ Source"
 msgid "Sharenet, ZA"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:223
+#: libgnucash/engine/gnc-commodity.cpp:220
 #, fuzzy
 #| msgid "Show Exchange Rates"
 msgctxt "FQ Source"
 msgid "SIX Swiss Exchange shares, CH"
 msgstr "एिकोसचिंज रिट हॊयीव"
 
-#: libgnucash/engine/gnc-commodity.cpp:224
-msgctxt "FQ Source"
-msgid "Skandinaviska Enskilda Banken, SE"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:225
+#: libgnucash/engine/gnc-commodity.cpp:221
 #, fuzzy
 #| msgid "Stock"
 msgctxt "FQ Source"
 msgid "StockData"
 msgstr "सीटाक"
 
-#: libgnucash/engine/gnc-commodity.cpp:226
+#: libgnucash/engine/gnc-commodity.cpp:222
 msgctxt "FQ Source"
 msgid "Stooq, PL"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:227
-msgctxt "FQ Source"
-msgid "T. Rowe Price, US"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:228
+#: libgnucash/engine/gnc-commodity.cpp:223
 msgctxt "FQ Source"
 msgid "Tesouro Direto bonds, BR"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:229
-msgctxt "FQ Source"
-msgid "TIAA-CREF, US"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:230
+#: libgnucash/engine/gnc-commodity.cpp:224
 msgctxt "FQ Source"
 msgid "Toronto Stock eXchange, CA"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:231
+#: libgnucash/engine/gnc-commodity.cpp:225
 msgctxt "FQ Source"
 msgid "Tradegate, DE"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:232
+#: libgnucash/engine/gnc-commodity.cpp:226
 msgctxt "FQ Source"
 msgid "Treasury Direct bonds, US"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:233
+#: libgnucash/engine/gnc-commodity.cpp:227
 msgctxt "FQ Source"
 msgid "Twelve Data"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:234
+#: libgnucash/engine/gnc-commodity.cpp:228
 #, fuzzy
 #| msgid "Investments"
 msgctxt "FQ Source"
 msgid "Union Investment, DE"
 msgstr "ईनवीसटोमींट"
 
-#: libgnucash/engine/gnc-commodity.cpp:235
+#: libgnucash/engine/gnc-commodity.cpp:229
 msgctxt "FQ Source"
 msgid "US Govt. Thrift Savings Plan"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:236
+#: libgnucash/engine/gnc-commodity.cpp:230
 msgctxt "FQ Source"
 msgid "XETRA, DE"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:237
+#: libgnucash/engine/gnc-commodity.cpp:231
 msgctxt "FQ Source"
 msgid "Yahoo as JSON"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:238
+#: libgnucash/engine/gnc-commodity.cpp:232
 msgctxt "FQ Source"
 msgid "Yahoo Web"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:239
+#: libgnucash/engine/gnc-commodity.cpp:233
 msgctxt "FQ Source"
 msgid "YH Finance (FinanceAPI)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:244
-msgctxt "FQ Source"
-msgid "Australia (ASX)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:245
-msgctxt "FQ Source"
-msgid "Australia Funds (MorningstarAU)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:246
+#: libgnucash/engine/gnc-commodity.cpp:239
 msgctxt "FQ Source"
 msgid "Canada (Alphavantage, TMX)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:247
-msgctxt "FQ Source"
-msgid "Dutch (AEX)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:248
+#: libgnucash/engine/gnc-commodity.cpp:240
 msgctxt "FQ Source"
 msgid "Europe (ASEGR, Bourso, …)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:249
-msgctxt "FQ Source"
-msgid "France (Bourso)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:250
-msgctxt "FQ Source"
-msgid "Greece (ASEGR)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:251
+#: libgnucash/engine/gnc-commodity.cpp:241
 msgctxt "FQ Source"
 msgid "India (BSEIndia, NSEIndia)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:252
-msgctxt "FQ Source"
-msgid "India Mutual (AMFI)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:253
+#: libgnucash/engine/gnc-commodity.cpp:242
 msgctxt "FQ Source"
 msgid "Nasdaq (Alphavantage, FinanceAPI, …)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:254
+#: libgnucash/engine/gnc-commodity.cpp:243
 msgctxt "FQ Source"
 msgid "NYSE (Alphavantage, FinanceAPI, …)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:255
-msgctxt "FQ Source"
-msgid "Poland (Stooq)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:256
-msgctxt "FQ Source"
-msgid "Romania (BVB)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:257
-msgctxt "FQ Source"
-msgid "South Africa (Sharenet)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:258
+#: libgnucash/engine/gnc-commodity.cpp:244
 msgctxt "FQ Source"
 msgid "U.K. Funds (FTfunds, MorningstarUK)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:259
+#: libgnucash/engine/gnc-commodity.cpp:245
 msgctxt "FQ Source"
 msgid "USA (Alphavantage, FinanceAPI, …)"
 msgstr ""
@@ -31934,12 +31882,12 @@ msgctxt "Commodity Type"
 msgid "Currencies"
 msgstr "करनसी"
 
-#: libgnucash/engine/gnc-date.cpp:76
+#: libgnucash/engine/gnc-date.cpp:75
 msgid "%B %#d, %Y"
 msgstr "%B %#d, %Y"
 
 #. Translators: call "man strftime" for possible values.
-#: libgnucash/engine/gnc-date.cpp:80
+#: libgnucash/engine/gnc-date.cpp:79
 msgid "%B %e, %Y"
 msgstr "%B %e, %Y"
 

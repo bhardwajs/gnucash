@@ -36,10 +36,10 @@
 # fliukka <weblate@fliukka.net>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: GnuCash 5.11\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
-"enter_bug.cgi?product=GnuCash&component=Translations\n"
-"POT-Creation-Date: 2025-03-23 15:35-0700\n"
+"Project-Id-Version: GnuCash 5.12\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
+"product=GnuCash&component=Translations\n"
+"POT-Creation-Date: 2025-06-22 12:27-0700\n"
 "PO-Revision-Date: 2025-05-30 18:05+0000\n"
 "Last-Translator: fliukka <weblate@fliukka.net>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -55,8 +55,8 @@ msgstr ""
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
 #: gnucash/report/reports/standard/account-piecharts.scm:514
-#: gnucash/report/reports/standard/balance-forecast.scm:274
-#: gnucash/report/reports/standard/balsheet-pnl.scm:862
+#: gnucash/report/reports/standard/balance-forecast.scm:277
+#: gnucash/report/reports/standard/balsheet-pnl.scm:863
 #: gnucash/report/reports/standard/budget.scm:468
 #: gnucash/report/reports/standard/cashflow-barchart.scm:259
 #: gnucash/report/reports/standard/cash-flow.scm:183
@@ -365,7 +365,7 @@ msgid "Western"
 msgstr "西欧语"
 
 #: borrowed/goffice/go-charmap-sel.c:84
-#: gnucash/gtkbuilder/assistant-loan.glade:964
+#: gnucash/gtkbuilder/assistant-loan.glade:967
 #: gnucash/gtkbuilder/dialog-account.glade:1029
 #: gnucash/report/reports/standard/account-piecharts.scm:457
 #: gnucash/report/reports/standard/category-barchart.scm:547
@@ -1039,8 +1039,8 @@ msgstr ""
 
 #: gnucash/gnome/assistant-acct-period.c:594
 #: gnucash/gtkbuilder/dialog-fincalc.glade:650
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1200
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1205
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1201
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1206
 #: gnucash/report/reports/standard/budget-flow.scm:44
 msgid "Period"
 msgstr "期间"
@@ -1119,7 +1119,7 @@ msgstr "请选择用于新科目的货币。"
 
 #: gnucash/gnome/assistant-hierarchy.cpp:1531
 #: gnucash/gnome/assistant-hierarchy.cpp:1550
-#: gnucash/gnome-utils/dialog-utils.c:804
+#: gnucash/gnome-utils/dialog-utils.c:806
 msgid "New Book Options"
 msgstr "新建账簿选项"
 
@@ -1158,27 +1158,27 @@ msgstr "杂项付款"
 
 #. Translators: %s is "Taxes",
 #. "Insurance", or similar.
-#: gnucash/gnome/assistant-loan.cpp:766
+#: gnucash/gnome/assistant-loan.cpp:764
 #, c-format
 msgid "… pay \"%s\"?"
 msgstr "支付“%s”"
 
-#: gnucash/gnome/assistant-loan.cpp:778
+#: gnucash/gnome/assistant-loan.cpp:776
 msgid "via Escrow account?"
 msgstr "通过托管科目"
 
-#: gnucash/gnome/assistant-loan.cpp:925
-#: gnucash/register/ledger-core/split-register.c:2606
+#: gnucash/gnome/assistant-loan.cpp:923
+#: gnucash/register/ledger-core/split-register.c:2608
 msgid "Loan"
 msgstr "贷款"
 
 #. Translators: %s is "Taxes", or "Insurance", or similar
-#: gnucash/gnome/assistant-loan.cpp:1475
+#: gnucash/gnome/assistant-loan.cpp:1483
 #, c-format
 msgid "Loan Repayment Option: \"%s\""
 msgstr "贷款偿还选项：“ %s”"
 
-#: gnucash/gnome/assistant-loan.cpp:1877 gnucash/gnome/dialog-lot-viewer.c:985
+#: gnucash/gnome/assistant-loan.cpp:1885 gnucash/gnome/dialog-lot-viewer.c:985
 #: gnucash/gnome/gnc-split-reg.c:654 gnucash/gnome/reconcile-view.c:453
 #: gnucash/gnome-utils/gnc-tree-view-price.c:398
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:67
@@ -1192,17 +1192,17 @@ msgstr "贷款偿还选项：“ %s”"
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:379
 #: gnucash/import-export/csv-imp/gnc-imp-props-price.cpp:52
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:59
-#: gnucash/import-export/import-main-matcher.cpp:1591
+#: gnucash/import-export/import-main-matcher.cpp:1596
 #: gnucash/import-export/import-match-picker.cpp:313
 #: gnucash/import-export/import-match-picker.cpp:353
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3823
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3874
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:62
-#: gnucash/register/ledger-core/split-register-model.c:233
+#: gnucash/register/ledger-core/split-register-model.c:237
 #: gnucash/report/reports/standard/account-summary.scm:77
 #: gnucash/report/reports/standard/advanced-portfolio.scm:68
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1033
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1038
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1034
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1039
 #: gnucash/report/reports/standard/cashflow-barchart.scm:319
 #: gnucash/report/reports/standard/category-barchart.scm:646
 #: gnucash/report/reports/standard/category-barchart.scm:666
@@ -1225,14 +1225,14 @@ msgstr "贷款偿还选项：“ %s”"
 msgid "Date"
 msgstr "日期"
 
-#: gnucash/gnome/assistant-loan.cpp:1883 gnucash/gnome/assistant-loan.cpp:2813
-#: gnucash/gnome/assistant-loan.cpp:2873 gnucash/gnome/assistant-loan.cpp:2885
+#: gnucash/gnome/assistant-loan.cpp:1891 gnucash/gnome/assistant-loan.cpp:2875
+#: gnucash/gnome/assistant-loan.cpp:2932 gnucash/gnome/assistant-loan.cpp:2944
 #: gnucash/gtkbuilder/dialog-payment.glade:445
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:132
-#: gnucash/register/ledger-core/split-register.c:2567
-#: gnucash/register/ledger-core/split-register.c:2608
-#: gnucash/register/ledger-core/split-register.c:2613
-#: gnucash/register/ledger-core/split-register.c:2624
+#: gnucash/register/ledger-core/split-register.c:2569
+#: gnucash/register/ledger-core/split-register.c:2610
+#: gnucash/register/ledger-core/split-register.c:2615
+#: gnucash/register/ledger-core/split-register.c:2626
 #: gnucash/report/reports/standard/new-owner-report.scm:282
 #: libgnucash/engine/Account.cpp:152 libgnucash/engine/Account.cpp:160
 #: libgnucash/engine/Account.cpp:181 libgnucash/engine/gncOwner.c:836
@@ -1240,27 +1240,27 @@ msgstr "日期"
 msgid "Payment"
 msgstr "支付"
 
-#: gnucash/gnome/assistant-loan.cpp:1889 gnucash/gnome/assistant-loan.cpp:2905
+#: gnucash/gnome/assistant-loan.cpp:1897 gnucash/gnome/assistant-loan.cpp:2960
 msgid "Principal"
 msgstr "本金"
 
-#: gnucash/gnome/assistant-loan.cpp:1895 gnucash/gnome/assistant-loan.cpp:2925
+#: gnucash/gnome/assistant-loan.cpp:1903 gnucash/gnome/assistant-loan.cpp:2976
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:77
-#: gnucash/register/ledger-core/split-register.c:2562
-#: gnucash/register/ledger-core/split-register.c:2599
-#: gnucash/register/ledger-core/split-register.c:2607
-#: gnucash/register/ledger-core/split-register.c:2614
-#: gnucash/register/ledger-core/split-register.c:2623
-#: gnucash/register/ledger-core/split-register.c:2650
+#: gnucash/register/ledger-core/split-register.c:2564
+#: gnucash/register/ledger-core/split-register.c:2601
+#: gnucash/register/ledger-core/split-register.c:2609
+#: gnucash/register/ledger-core/split-register.c:2616
+#: gnucash/register/ledger-core/split-register.c:2625
+#: gnucash/register/ledger-core/split-register.c:2652
 msgid "Interest"
 msgstr "利息"
 
-#: gnucash/gnome/assistant-loan.cpp:2814
+#: gnucash/gnome/assistant-loan.cpp:2876
 msgid "Escrow Payment"
 msgstr "托管付款"
 
 #: gnucash/gnome/assistant-stock-split.c:391
-#: gnucash/register/ledger-core/split-register.c:2658
+#: gnucash/register/ledger-core/split-register.c:2660
 msgctxt "Action Column"
 msgid "Split"
 msgstr "分录"
@@ -1275,10 +1275,10 @@ msgstr "添加价格时出错。"
 #: gnucash/import-export/aqb/gnc-ab-utils.c:476
 #: gnucash/import-export/bi-import/dialog-bi-import-gui.c:147
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:66
-#: gnucash/import-export/import-main-matcher.cpp:1592
+#: gnucash/import-export/import-main-matcher.cpp:1597
 #: gnucash/import-export/import-match-picker.cpp:312
 #: gnucash/import-export/qif-imp/dialog-account-picker.c:433
-#: gnucash/register/ledger-core/split-register-model.c:346
+#: gnucash/register/ledger-core/split-register-model.c:350
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1026
 #: gnucash/report/reports/standard/budget-flow.scm:41
 #: gnucash/report/reports/standard/budget.scm:49
@@ -1305,7 +1305,7 @@ msgstr "符号"
 #. Translators: The number of units of any kind of investment (shares, fonds, bonds, …)
 #: gnucash/gnome/assistant-stock-split.c:594
 #: gnucash/gnome/dialog-find-transactions.c:122
-#: gnucash/register/ledger-core/split-register-model.c:424
+#: gnucash/register/ledger-core/split-register-model.c:428
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1046
 #: gnucash/report/reports/standard/general-journal.scm:98
 #: gnucash/report/reports/standard/general-ledger.scm:78
@@ -1344,14 +1344,14 @@ msgstr "初始股票卖空。"
 #. Translators: this is a stock transaction describing
 #. new purchase of stock.
 #: gnucash/gnome/assistant-stock-transaction.cpp:186
-#: gnucash/register/ledger-core/split-register.c:2585
-#: gnucash/register/ledger-core/split-register.c:2589
-#: gnucash/register/ledger-core/split-register.c:2596
-#: gnucash/register/ledger-core/split-register.c:2604
-#: gnucash/register/ledger-core/split-register.c:2621
-#: gnucash/register/ledger-core/split-register.c:2632
-#: gnucash/register/ledger-core/split-register.c:2637
-#: gnucash/register/ledger-core/split-register.c:2664
+#: gnucash/register/ledger-core/split-register.c:2587
+#: gnucash/register/ledger-core/split-register.c:2591
+#: gnucash/register/ledger-core/split-register.c:2598
+#: gnucash/register/ledger-core/split-register.c:2606
+#: gnucash/register/ledger-core/split-register.c:2623
+#: gnucash/register/ledger-core/split-register.c:2634
+#: gnucash/register/ledger-core/split-register.c:2639
+#: gnucash/register/ledger-core/split-register.c:2666
 #: libgnucash/engine/Account.cpp:155 libgnucash/engine/Account.cpp:156
 #: libgnucash/engine/Account.cpp:157
 msgid "Buy"
@@ -1364,14 +1364,14 @@ msgstr "买入股票。"
 #. Translators: this is a stock transaction describing new
 #. sale of stock, and recording capital gain/loss
 #: gnucash/gnome/assistant-stock-transaction.cpp:197
-#: gnucash/register/ledger-core/split-register.c:2586
-#: gnucash/register/ledger-core/split-register.c:2590
-#: gnucash/register/ledger-core/split-register.c:2601
-#: gnucash/register/ledger-core/split-register.c:2605
-#: gnucash/register/ledger-core/split-register.c:2622
-#: gnucash/register/ledger-core/split-register.c:2633
-#: gnucash/register/ledger-core/split-register.c:2638
-#: gnucash/register/ledger-core/split-register.c:2665
+#: gnucash/register/ledger-core/split-register.c:2588
+#: gnucash/register/ledger-core/split-register.c:2592
+#: gnucash/register/ledger-core/split-register.c:2603
+#: gnucash/register/ledger-core/split-register.c:2607
+#: gnucash/register/ledger-core/split-register.c:2624
+#: gnucash/register/ledger-core/split-register.c:2635
+#: gnucash/register/ledger-core/split-register.c:2640
+#: gnucash/register/ledger-core/split-register.c:2667
 #: libgnucash/engine/Account.cpp:175 libgnucash/engine/Account.cpp:176
 #: libgnucash/engine/Account.cpp:177
 msgid "Sell"
@@ -1391,9 +1391,9 @@ msgstr ""
 #. Translators: this is a stock transaction describing
 #. dividends issued to holder
 #: gnucash/gnome/assistant-stock-transaction.cpp:210
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:733
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:778
-#: gnucash/register/ledger-core/split-register.c:2649
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:730
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:775
+#: gnucash/register/ledger-core/split-register.c:2651
 msgid "Dividend"
 msgstr "股利"
 
@@ -1656,7 +1656,7 @@ msgstr "存在以下警告："
 
 #: gnucash/gnome/assistant-stock-transaction.cpp:655
 #: gnucash/gnome/assistant-stock-transaction.cpp:716
-#: gnucash/report/reports/standard/balsheet-pnl.scm:799
+#: gnucash/report/reports/standard/balsheet-pnl.scm:800
 msgid "missing"
 msgstr "缺失"
 
@@ -1778,8 +1778,8 @@ msgstr "新余额(_W)"
 #: gnucash/gnome/assistant-stock-transaction.cpp:1922
 #: gnucash/gtkbuilder/assistant-stock-split.glade:129
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:234
-#: gnucash/register/ledger-core/split-register.c:2110
-#: gnucash/register/ledger-core/split-register.c:2113
+#: gnucash/register/ledger-core/split-register.c:2112
+#: gnucash/register/ledger-core/split-register.c:2115
 msgid "_Shares"
 msgstr "股份(_S)"
 
@@ -1808,10 +1808,10 @@ msgstr "输入在这次交易中赚到或亏损的股票数量。"
 #: gnucash/gtkbuilder/dialog-transfer.glade:205
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:387
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:72
-#: gnucash/import-export/import-main-matcher.cpp:1596
+#: gnucash/import-export/import-main-matcher.cpp:1601
 #: gnucash/import-export/import-match-picker.cpp:316
 #: gnucash/import-export/import-match-picker.cpp:356
-#: gnucash/register/ledger-core/split-register-model.c:360
+#: gnucash/register/ledger-core/split-register-model.c:364
 #: gnucash/report/reports/standard/general-ledger.scm:71
 #: gnucash/report/reports/standard/general-ledger.scm:91
 #: gnucash/report/reports/standard/register.scm:139
@@ -1825,7 +1825,7 @@ msgstr "备注"
 #: gnucash/gnome/assistant-stock-transaction.cpp:2339
 #: gnucash/gnome/gnc-plugin-page-register.cpp:3462
 #: gnucash/gtkbuilder/dialog-payment.glade:300
-#: gnucash/register/ledger-core/split-register.c:2460
+#: gnucash/register/ledger-core/split-register.c:2462
 #: gnucash/report/reports/standard/general-journal.scm:82
 #: gnucash/report/reports/standard/register.scm:336
 #: gnucash/report/reports/standard/trial-balance.scm:555
@@ -1837,10 +1837,10 @@ msgstr "借方"
 #: gnucash/gnome/assistant-stock-transaction.cpp:2346
 #: gnucash/gnome/gnc-plugin-page-register.cpp:3458
 #: gnucash/gtkbuilder/dialog-payment.glade:316
-#: gnucash/register/ledger-core/split-register.c:2483
-#: gnucash/register/ledger-core/split-register.c:2578
-#: gnucash/register/ledger-core/split-register.c:2597
-#: gnucash/register/ledger-core/split-register.c:2615
+#: gnucash/register/ledger-core/split-register.c:2485
+#: gnucash/register/ledger-core/split-register.c:2580
+#: gnucash/register/ledger-core/split-register.c:2599
+#: gnucash/register/ledger-core/split-register.c:2617
 #: gnucash/report/reports/standard/general-journal.scm:83
 #: gnucash/report/reports/standard/register.scm:338
 #: gnucash/report/reports/standard/trial-balance.scm:558
@@ -1890,14 +1890,14 @@ msgstr "凭证"
 #: gnucash/gnome/dialog-invoice.c:3767
 #: gnucash/gnome/gnc-plugin-page-invoice.cpp:397
 #: gnucash/gnome/gnc-plugin-page-register.cpp:407
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1920
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1925
 #: gnucash/gnome-search/dialog-search.c:1093
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:167
 #: gnucash/gtkbuilder/dialog-invoice.glade:8
 #: gnucash/gtkbuilder/dialog-invoice.glade:195
 #: gnucash/gtkbuilder/dialog-invoice.glade:935
 #: gnucash/gtkbuilder/dialog-invoice.glade:959
-#: gnucash/register/ledger-core/split-register.c:2612
+#: gnucash/register/ledger-core/split-register.c:2614
 #: gnucash/report/reports/standard/invoice.scm:765
 #: gnucash/report/reports/standard/invoice.scm:782
 #: gnucash/report/reports/standard/receipt.scm:112
@@ -2120,7 +2120,7 @@ msgstr "删除币种？"
 #: gnucash/import-export/csv-imp/assistant-csv-trans-import.cpp:2102
 #: gnucash/register/ledger-core/gncEntryLedger.c:921
 #: gnucash/register/ledger-core/gncEntryLedgerControl.c:896
-#: gnucash/register/ledger-core/split-register-control.cpp:1578
+#: gnucash/register/ledger-core/split-register-control.cpp:1588
 #: gnucash/ui/gnc-plugin-page-invoice.ui:141
 #: gnucash/ui/gnc-plugin-page-invoice.ui:230
 #: gnucash/ui/gnc-plugin-page-invoice.ui:422
@@ -2441,13 +2441,13 @@ msgstr "交易原始凭证"
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:382
 #: gnucash/import-export/csv-exp/csv-tree-export.cpp:61
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:61
-#: gnucash/import-export/import-main-matcher.cpp:1595
+#: gnucash/import-export/import-main-matcher.cpp:1600
 #: gnucash/import-export/import-match-picker.cpp:315
 #: gnucash/import-export/import-match-picker.cpp:355
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3833
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3884
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:67
-#: gnucash/register/ledger-core/split-register-model.c:300
+#: gnucash/register/ledger-core/split-register-model.c:304
 #: gnucash/report/reports/standard/account-summary.scm:380
 #: gnucash/report/reports/standard/general-journal.scm:96
 #: gnucash/report/reports/standard/general-ledger.scm:70
@@ -2526,8 +2526,8 @@ msgstr "用户名"
 #: gnucash/gnome-utils/gnc-tree-view-commodity.c:357
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:332
 #: gnucash/gnome-utils/gnc-tree-view-sx-list.c:117
-#: gnucash/gtkbuilder/assistant-loan.glade:597
-#: gnucash/gtkbuilder/assistant-loan.glade:785
+#: gnucash/gtkbuilder/assistant-loan.glade:600
+#: gnucash/gtkbuilder/assistant-loan.glade:788
 #: gnucash/gtkbuilder/dialog-customer.glade:237
 #: gnucash/gtkbuilder/dialog-customer.glade:744
 #: gnucash/gtkbuilder/dialog-employee.glade:221
@@ -2621,7 +2621,7 @@ msgstr "结转交易"
 
 #: gnucash/gnome/dialog-find-transactions.c:118
 #: gnucash/gnome/gnc-plugin-page-register.cpp:403
-#: gnucash/gnome/window-reconcile.cpp:1450
+#: gnucash/gnome/window-reconcile.cpp:1453
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:369
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:394
 msgid "Reconcile"
@@ -2684,7 +2684,7 @@ msgstr "编号/属性"
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:386
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:65
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:57
-#: gnucash/register/ledger-core/split-register-model.c:332
+#: gnucash/register/ledger-core/split-register-model.c:336
 #: gnucash/report/reports/standard/invoice.scm:91
 #: gnucash/report/reports/standard/invoice.scm:418
 msgid "Action"
@@ -2741,7 +2741,7 @@ msgstr "描述、说明或备注"
 #: gnucash/import-export/csv-exp/csv-tree-export.cpp:62
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:62
 #: gnucash/import-export/customer-import/dialog-customer-import-gui.c:133
-#: gnucash/register/ledger-core/split-register-model.c:496
+#: gnucash/register/ledger-core/split-register-model.c:500
 #: gnucash/report/reports/standard/account-summary.scm:408
 #: gnucash/report/reports/standard/balsheet-eg.scm:188
 #: gnucash/report/reports/standard/receipt.scm:38
@@ -2837,7 +2837,7 @@ msgstr "要么选择一个不同的报表模版，要么就会用可打印的发
 #: gnucash/gnome/dialog-invoice.c:1038 gnucash/gnome/dialog-invoice.c:3573
 #: gnucash/gnome/dialog-invoice.c:3607 gnucash/gnome/dialog-invoice.c:3641
 #: gnucash/import-export/bi-import/dialog-bi-import-gui.c:158
-#: gnucash/register/ledger-core/split-register-model.c:240
+#: gnucash/register/ledger-core/split-register-model.c:244
 #: gnucash/report/reports/standard/invoice.scm:251
 #: gnucash/report/reports/standard/invoice.scm:446
 #: gnucash/report/reports/standard/new-aging.scm:112
@@ -3109,7 +3109,7 @@ msgstr "报销说明"
 #: gnucash/gnome-utils/gnc-tree-view-account.c:794
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:383
 #: gnucash/gnome-utils/gnc-tree-view-price.c:410
-#: gnucash/gtkbuilder/assistant-loan.glade:275
+#: gnucash/gtkbuilder/assistant-loan.glade:278
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:148
 #: gnucash/gtkbuilder/dialog-doclink.glade:665
 #: gnucash/gtkbuilder/dialog-fincalc.glade:742
@@ -3119,7 +3119,7 @@ msgstr "报销说明"
 #: gnucash/gtkbuilder/dialog-tax-info.glade:129
 #: gnucash/import-export/csv-exp/csv-tree-export.cpp:60
 #: gnucash/import-export/csv-imp/csv-account-import.c:154
-#: gnucash/register/ledger-core/split-register-model.c:367
+#: gnucash/register/ledger-core/split-register-model.c:371
 #: gnucash/report/reports/standard/account-summary.scm:379
 #: gnucash/report/reports/standard/new-owner-report.scm:52
 #: gnucash/report/reports/standard/new-owner-report.scm:227
@@ -3127,7 +3127,7 @@ msgid "Type"
 msgstr "类型"
 
 #: gnucash/gnome/dialog-invoice.c:3659
-#: gnucash/register/ledger-core/split-register-model.c:314
+#: gnucash/register/ledger-core/split-register-model.c:318
 #: gnucash/report/reports/standard/new-owner-report.scm:808
 msgid "Paid"
 msgstr "已付款"
@@ -3151,8 +3151,8 @@ msgstr "已开票"
 #: gnucash/gnome/reconcile-view.c:449
 #: gnucash/gtkbuilder/dialog-payment.glade:482
 #: gnucash/gtkbuilder/dialog-transfer.glade:155
-#: gnucash/register/ledger-core/split-register-model.c:260
-#: gnucash/register/ledger-core/split-register-model.c:280
+#: gnucash/register/ledger-core/split-register-model.c:264
+#: gnucash/register/ledger-core/split-register-model.c:284
 #: gnucash/report/reports/standard/general-journal.scm:95
 #: gnucash/report/reports/standard/general-ledger.scm:89
 #: gnucash/report/reports/standard/register.scm:135
@@ -3182,14 +3182,14 @@ msgstr "查找发票"
 
 #: gnucash/gnome/dialog-invoice.c:3814 gnucash/gnome/dialog-lot-viewer.c:1015
 #: gnucash/gnome/gnc-split-reg.c:666 gnucash/gnome/reconcile-view.c:437
-#: gnucash/gtkbuilder/assistant-loan.glade:191
-#: gnucash/gtkbuilder/assistant-loan.glade:610
-#: gnucash/gtkbuilder/assistant-loan.glade:759
+#: gnucash/gtkbuilder/assistant-loan.glade:194
+#: gnucash/gtkbuilder/assistant-loan.glade:613
+#: gnucash/gtkbuilder/assistant-loan.glade:762
 #: gnucash/gtkbuilder/dialog-payment.glade:418
 #: gnucash/gtkbuilder/dialog-transfer.glade:102
 #: gnucash/import-export/csv-imp/gnc-imp-props-price.cpp:53
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:67
-#: gnucash/import-export/import-main-matcher.cpp:1594
+#: gnucash/import-export/import-main-matcher.cpp:1599
 #: gnucash/import-export/import-match-picker.cpp:314
 #: gnucash/import-export/import-match-picker.cpp:354
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:3844
@@ -3268,7 +3268,7 @@ msgstr "仅限活跃"
 
 #: gnucash/gnome/dialog-job.c:566 gnucash/gnome/dialog-job.c:579
 #: gnucash/gtkbuilder/dialog-job.glade:206
-#: gnucash/register/ledger-core/split-register-model.c:374
+#: gnucash/register/ledger-core/split-register-model.c:378
 msgid "Rate"
 msgstr "等级"
 
@@ -3312,10 +3312,10 @@ msgstr "标题"
 #: gnucash/gnome-utils/gnc-tree-view-account.c:837
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:439
 #: gnucash/gnome-utils/gnc-tree-view-owner.c:447
-#: gnucash/register/ledger-core/split-register-model.c:325
-#: gnucash/register/ledger-core/split-register-model.c:489
+#: gnucash/register/ledger-core/split-register-model.c:329
+#: gnucash/register/ledger-core/split-register-model.c:493
 #: gnucash/report/reports/standard/account-summary.scm:393
-#: gnucash/report/reports/standard/balance-forecast.scm:246
+#: gnucash/report/reports/standard/balance-forecast.scm:249
 #: gnucash/report/reports/standard/new-owner-report.scm:58
 #: gnucash/report/reports/standard/new-owner-report.scm:551
 #: gnucash/report/reports/standard/register.scm:163
@@ -3430,7 +3430,7 @@ msgstr "转出和入账科目币种不同，请设置汇率。"
 #: gnucash/gtkbuilder/dialog-invoice.glade:473
 #: gnucash/gtkbuilder/dialog-invoice.glade:1179
 #: gnucash/gtkbuilder/dialog-payment.glade:40
-#: gnucash/register/ledger-core/split-register-model.c:296
+#: gnucash/register/ledger-core/split-register-model.c:300
 #: gnucash/report/reports/standard/customer-summary.scm:248
 #: gnucash/report/reports/standard/customer-summary.scm:281
 #: gnucash/report/reports/standard/new-owner-report.scm:89
@@ -3443,7 +3443,7 @@ msgstr "客户"
 #: gnucash/gtkbuilder/dialog-customer-import-gui.glade:170
 #: gnucash/gtkbuilder/dialog-payment.glade:44
 #: gnucash/gtkbuilder/dialog-vendor.glade:469
-#: gnucash/register/ledger-core/split-register-model.c:298
+#: gnucash/register/ledger-core/split-register-model.c:302
 #: gnucash/report/reports/standard/new-owner-report.scm:104
 #: libgnucash/engine/gncOwner.c:220
 msgid "Vendor"
@@ -3956,12 +3956,12 @@ msgstr "查找供应商"
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:91
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:97
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:103
-#: gnucash/register/ledger-core/split-register.c:2655
+#: gnucash/register/ledger-core/split-register.c:2657
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1062
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1211
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1212
 #: gnucash/report/reports/standard/net-charts.scm:332
 #: gnucash/report/reports/standard/net-charts.scm:401
-#: gnucash/report/report-utilities.scm:205 libgnucash/engine/Account.cpp:178
+#: gnucash/report/report-utilities.scm:209 libgnucash/engine/Account.cpp:178
 #: libgnucash/engine/Account.cpp:4296
 msgid "Income"
 msgstr "收入"
@@ -3971,15 +3971,15 @@ msgstr "收入"
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:122
 #: gnucash/report/reports/standard/budget-income-statement.scm:492
 #: gnucash/report/reports/standard/income-statement.scm:469
-#: gnucash/report/report-utilities.scm:206
+#: gnucash/report/report-utilities.scm:210
 msgid "Expenses"
 msgstr "支出"
 
 #: gnucash/gnome/gnc-budget-view.c:506
 #: gnucash/gnome/gnc-plugin-page-register.cpp:392
-#: gnucash/register/ledger-core/split-register.c:2580
+#: gnucash/register/ledger-core/split-register.c:2582
 #: gnucash/register/ledger-core/split-register-layout.c:721
-#: gnucash/register/ledger-core/split-register-model.c:353
+#: gnucash/register/ledger-core/split-register-model.c:357
 #: gnucash/report/reports/standard/register.scm:143
 msgid "Transfer"
 msgstr "转账"
@@ -3988,7 +3988,7 @@ msgstr "转账"
 msgid "Remaining to Budget"
 msgstr "剩余"
 
-#: gnucash/gnome/gnc-budget-view.c:1598 gnucash/gnome/window-reconcile.cpp:1172
+#: gnucash/gnome/gnc-budget-view.c:1598 gnucash/gnome/window-reconcile.cpp:1175
 #: gnucash/gnome-utils/gnc-tree-view-account.c:906
 #: gnucash/report/html-acct-table.scm:789
 #: gnucash/report/reports/locale-specific/de_DE/taxtxf.scm:279
@@ -4068,7 +4068,7 @@ msgstr "“检查与修复”当前正在运行，您要中止它吗？"
 #: gnucash/gnome/gnc-plugin-page-account-tree.cpp:406
 #: gnucash/gtkbuilder/assistant-csv-export.glade:270
 #: gnucash/gtkbuilder/dialog-preferences.glade:1002
-#: gnucash/report/report-core.scm:163
+#: gnucash/report/report-core.scm:165
 #: gnucash/report/reports/example/average-balance.scm:85
 #: gnucash/report/reports/example/average-balance.scm:282
 #: gnucash/report/reports/example/daily-reports.scm:57
@@ -5085,7 +5085,7 @@ msgid "Print"
 msgstr "打印"
 
 #: gnucash/gnome/gnc-plugin-page-report.cpp:235
-#: gnucash/gnome-utils/dialog-file-access.c:339
+#: gnucash/gnome-utils/dialog-file-access.c:342
 #: gnucash/gnome-utils/gnc-file.c:111 gnucash/gnome-utils/gnc-file.c:353
 msgid "Export"
 msgstr "导出"
@@ -5111,51 +5111,51 @@ msgstr "导出为 PDF"
 msgid "The numeric ID of the report."
 msgstr "报表的数字编号。"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1260
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1265
 #, c-format
 msgid ""
 "Update the current report's saved configuration. The report configuration "
 "will be saved in the file %s."
 msgstr "更新当前报表的已保存配置。报表配置将保存在文件%s中。"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1263
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1268
 #, c-format
 msgid ""
 "Add the current report's configuration to the 'Reports->Saved Report "
 "Configurations' menu. The report configuration will be saved in the file %s."
 msgstr "添加当前报表配置到\"报表 -> 已存模板\"，配置将被保存在文件%s中。"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1271
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1276
 #: gnucash/ui/gnc-plugin-page-report.ui:74
 #: gnucash/ui/gnc-plugin-page-report.ui:255
 msgid "Save _Report Configuration"
 msgstr "保存模板(_R)"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1272
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1277
 #: gnucash/ui/gnc-plugin-page-report.ui:81
 #: gnucash/ui/gnc-plugin-page-report.ui:270
 msgid "Save Report Configuration As…"
 msgstr "另存模板…"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1552
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1585
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1557
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1590
 msgid "HTML"
 msgstr "HTML"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1555
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1560
 msgid "Choose export format"
 msgstr "格式"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1556
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1561
 msgid "Choose the export format for this report:"
 msgstr "格式"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1596
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1601
 #, c-format
 msgid "Save %s To File"
 msgstr "保存 %s 至文件"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1625
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1630
 #, c-format
 msgid ""
 "You cannot save to that filename.\n"
@@ -5166,19 +5166,19 @@ msgstr ""
 "\n"
 "%s"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1635
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1640
 msgid "You cannot save to that file."
 msgstr "您不能存到那个文件。"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1644
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1649
 #: gnucash/gnome-utils/gnc-file.c:1363 gnucash/gnome-utils/gnc-file.c:1614
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:738
 #, c-format
 msgid "The file %s already exists. Are you sure you want to overwrite it?"
 msgstr "文件 %s 已存在。您确定您要覆盖它吗？"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1781
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1807
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1786
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1812
 #: gnucash/gnucash-commands.cpp:184 gnucash/gnucash-commands.cpp:214
 msgid ""
 "This report must be upgraded to return a document object with export-string "
@@ -5186,21 +5186,21 @@ msgid ""
 msgstr ""
 "这个报告必须升级，以返回一个带有export-string或export-error的文件对象。"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1818
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1823
 #, c-format
 msgid "Could not open the file %s. The error is: %s"
 msgstr "无法打开文件 %s。错误是：%s"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1863
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1868
 msgid "GnuCash-Report"
 msgstr "GnuCash 选项"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1912
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1917
 #: gnucash/report/reports/standard/invoice.scm:877
 msgid "Printable Invoice"
 msgstr "可打印发票"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1913
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1918
 #: gnucash/report/reports/standard/taxinvoice.scm:301
 #: gnucash/report/reports/standard/taxinvoice.scm:303
 #: gnucash/report/reports/standard/taxinvoice.scm:315
@@ -5208,12 +5208,12 @@ msgstr "可打印发票"
 msgid "Tax Invoice"
 msgstr "税务发票"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1914
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1919
 #: gnucash/report/reports/standard/invoice.scm:887
 msgid "Easy Invoice"
 msgstr "简洁发票"
 
-#: gnucash/gnome/gnc-plugin-page-report.cpp:1915
+#: gnucash/gnome/gnc-plugin-page-report.cpp:1920
 #: gnucash/report/reports/standard/invoice.scm:897
 msgid "Fancy Invoice"
 msgstr "精美发票"
@@ -5276,7 +5276,7 @@ msgstr "标准"
 msgid "Date of Entry"
 msgstr "录入日期"
 
-#: gnucash/gnome/gnc-split-reg.c:660 gnucash/gnome/window-reconcile.cpp:2048
+#: gnucash/gnome/gnc-split-reg.c:660 gnucash/gnome/window-reconcile.cpp:2051
 msgid "Statement Date"
 msgstr "账单日期"
 
@@ -5587,7 +5587,7 @@ msgstr "财务管理"
 
 #: gnucash/gnome/reconcile-view.c:431
 #: gnucash/register/ledger-core/split-register-layout.c:697
-#: gnucash/register/ledger-core/split-register-model.c:317
+#: gnucash/register/ledger-core/split-register-model.c:321
 msgctxt "Column header for 'Reconciled'"
 msgid "R"
 msgstr "对"
@@ -5698,8 +5698,8 @@ msgid "Payment Information"
 msgstr "财务"
 
 #: gnucash/gnome/window-reconcile.cpp:505
-#: gnucash/gtkbuilder/assistant-loan.glade:571
-#: gnucash/gtkbuilder/assistant-loan.glade:772
+#: gnucash/gtkbuilder/assistant-loan.glade:574
+#: gnucash/gtkbuilder/assistant-loan.glade:775
 msgid "Payment From"
 msgstr "付款科目"
 
@@ -5709,7 +5709,7 @@ msgid "Reconcile Account"
 msgstr "对账科目"
 
 #: gnucash/gnome/window-reconcile.cpp:526
-#: gnucash/gtkbuilder/assistant-loan.glade:824
+#: gnucash/gtkbuilder/assistant-loan.glade:827
 msgid "Payment To"
 msgstr "付款至"
 
@@ -5722,17 +5722,17 @@ msgstr "记录利息收入(_I)…"
 msgid "Enter _Interest Charge…"
 msgstr "记录利息支出(_I)…"
 
-#: gnucash/gnome/window-reconcile.cpp:1395
+#: gnucash/gnome/window-reconcile.cpp:1398
 msgid "Are you sure you want to delete the selected transaction?"
 msgstr "您确实要删除选择的交易事项？"
 
-#: gnucash/gnome/window-reconcile.cpp:1946
+#: gnucash/gnome/window-reconcile.cpp:1949
 msgid ""
 "WARNING! Account contains splits whose reconcile date is after statement "
 "date. Reconciliation may be difficult."
 msgstr "警告！帐户包含其对帐日期在对帐单日期之后的拆分。和解可能很困难。"
 
-#: gnucash/gnome/window-reconcile.cpp:1950
+#: gnucash/gnome/window-reconcile.cpp:1953
 msgid ""
 "This account has splits whose Reconciled Date is after this reconciliation "
 "statement date. These splits may make reconciliation difficult. If this is "
@@ -5742,35 +5742,35 @@ msgstr ""
 "此帐户已拆分其对帐日期在此对帐对账单日期之后。这些分歧可能使和解变得困难。在"
 "这种情况下，您可以使用“查找事务”来查找，取消对帐并重新对帐。"
 
-#: gnucash/gnome/window-reconcile.cpp:2058
+#: gnucash/gnome/window-reconcile.cpp:2061
 #: gnucash/gtkbuilder/window-reconcile.glade:106
 msgid "Starting Balance"
 msgstr "期初余额"
 
-#: gnucash/gnome/window-reconcile.cpp:2068
+#: gnucash/gnome/window-reconcile.cpp:2071
 msgid "Ending Balance"
 msgstr "期末余额"
 
-#: gnucash/gnome/window-reconcile.cpp:2078
+#: gnucash/gnome/window-reconcile.cpp:2081
 msgid "Reconciled Balance"
 msgstr "已对账余额"
 
-#: gnucash/gnome/window-reconcile.cpp:2088
+#: gnucash/gnome/window-reconcile.cpp:2091
 #: gnucash/report/reports/standard/cash-flow.scm:305
 msgid "Difference"
 msgstr "差额"
 
-#: gnucash/gnome/window-reconcile.cpp:2201
+#: gnucash/gnome/window-reconcile.cpp:2204
 msgid ""
 "You have made changes to this reconcile window. Are you sure you want to "
 "cancel?"
 msgstr "您修改了这个对账窗口。您确定要取消么？"
 
-#: gnucash/gnome/window-reconcile.cpp:2311
+#: gnucash/gnome/window-reconcile.cpp:2314
 msgid "The account is not balanced. Are you sure you want to finish?"
 msgstr "此科目尚未结算。您确实要结束？"
 
-#: gnucash/gnome/window-reconcile.cpp:2371
+#: gnucash/gnome/window-reconcile.cpp:2374
 msgid "Do you want to postpone this reconciliation and finish it later?"
 msgstr "您想要推迟这次对账，以后再完成它吗？"
 
@@ -6161,7 +6161,7 @@ msgid "Parsing file…"
 msgstr "正在解析文件…"
 
 #: gnucash/gnome-utils/assistant-xml-encoding.c:1124
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:423
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:431
 #: gnucash/import-export/csv-imp/gnc-tokenizer-csv.cpp:131
 msgid "There was an error parsing the file."
 msgstr "解析文件时遇到错误。"
@@ -6260,7 +6260,7 @@ msgstr ""
 "不能更改此选项。"
 
 #: gnucash/gnome-utils/dialog-account.c:1745
-#: gnucash/gnome-utils/dialog-utils.c:836
+#: gnucash/gnome-utils/dialog-utils.c:838
 msgid "<No name>"
 msgstr "<无名称>"
 
@@ -6457,11 +6457,11 @@ msgstr "您可以输入“ +”或“-”来增加或减少数字。"
 msgid "Action/Number"
 msgstr "操作/编号"
 
-#: gnucash/gnome-utils/dialog-file-access.c:323
+#: gnucash/gnome-utils/dialog-file-access.c:326
 msgid "Open…"
 msgstr "打开…"
 
-#: gnucash/gnome-utils/dialog-file-access.c:324
+#: gnucash/gnome-utils/dialog-file-access.c:327
 #: gnucash/gnome-utils/gnc-file.c:90
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:103
 #: gnucash/gtkbuilder/dialog-customer-import-gui.glade:106
@@ -6470,30 +6470,30 @@ msgstr "打开…"
 msgid "_Open"
 msgstr "打开(_O)"
 
-#: gnucash/gnome-utils/dialog-file-access.c:330
+#: gnucash/gnome-utils/dialog-file-access.c:333
 msgid "Save As…"
 msgstr "另存为…"
 
-#: gnucash/gnome-utils/dialog-file-access.c:331
-#: gnucash/gnome-utils/dialog-file-access.c:340
+#: gnucash/gnome-utils/dialog-file-access.c:334
+#: gnucash/gnome-utils/dialog-file-access.c:343
 #: gnucash/gtkbuilder/dialog-file-access.glade:40
 msgid "_Save As"
 msgstr "另存为(_S)"
 
-#: gnucash/gnome-utils/dialog-file-access.c:359
+#: gnucash/gnome-utils/dialog-file-access.c:362
 #: gnucash/gnome-utils/gnc-file.c:149
 msgid "All files"
 msgstr "所有文件"
 
 #. Translators: *.gnucash and *.xac are file patterns and must not
 #. be translated
-#: gnucash/gnome-utils/dialog-file-access.c:366
+#: gnucash/gnome-utils/dialog-file-access.c:369
 msgid "Datafiles only (*.gnucash, *.xac)"
 msgstr "仅数据文件 (*.gnucash, *.xac)"
 
 #. Translators: *.gnucash.*.gnucash, *.xac.*.xac are file
 #. patterns and must not be translated
-#: gnucash/gnome-utils/dialog-file-access.c:376
+#: gnucash/gnome-utils/dialog-file-access.c:379
 msgid "Backups only (*.gnucash.*.gnucash, *.xac.*.xac)"
 msgstr "仅备份文件 (*.gnucash.*.gnucash, *.xac.*.xac)"
 
@@ -6550,21 +6550,21 @@ msgstr "页"
 #. names with other account names that are more suitable for your
 #. language - just keep in mind to have exactly two %s in your
 #. translation.
-#: gnucash/gnome-utils/dialog-preferences.c:171
+#: gnucash/gnome-utils/dialog-preferences.c:172
 #, c-format
 msgid "Income%sSalary%sTaxable"
 msgstr "收入%s工资%s应税"
 
-#: gnucash/gnome-utils/dialog-preferences.c:908
+#: gnucash/gnome-utils/dialog-preferences.c:909
 msgid "Path does not exist, "
 msgstr "路径不存在， "
 
-#: gnucash/gnome-utils/dialog-preferences.c:964
-#: gnucash/gnome-utils/dialog-preferences.c:1461
+#: gnucash/gnome-utils/dialog-preferences.c:965
+#: gnucash/gnome-utils/dialog-preferences.c:1462
 msgid "Select a folder"
 msgstr "选择一个文件夹"
 
-#: gnucash/gnome-utils/dialog-preferences.c:1464
+#: gnucash/gnome-utils/dialog-preferences.c:1465
 #: gnucash/gnome-utils/gnc-option-gtk-ui.cpp:1534
 #: gnucash/gtkbuilder/dialog-fincalc.glade:270
 #: gnucash/gtkbuilder/dialog-fincalc.glade:285
@@ -6657,7 +6657,7 @@ msgstr "您不能转入并转出到同一个科目！"
 
 #: gnucash/gnome-utils/dialog-transfer.cpp:1418
 #: gnucash/register/ledger-core/gncEntryLedger.c:85
-#: gnucash/register/ledger-core/split-register.c:1998
+#: gnucash/register/ledger-core/split-register.c:2000
 #, c-format
 msgid "The account %s does not allow transactions."
 msgstr "此科目 %s 不接受交易事项。"
@@ -7558,7 +7558,7 @@ msgid "End of previous accounting period"
 msgstr "上一会计期间的终点"
 
 #: gnucash/gnome-utils/gnc-plugin-menu-additions.c:424
-#: gnucash/report/report-core.scm:161
+#: gnucash/report/report-core.scm:163
 msgid "_Custom"
 msgstr "自定义(_C)"
 
@@ -7850,7 +7850,7 @@ msgstr "地址 4"
 #: gnucash/gtkbuilder/dialog-employee.glade:247
 #: gnucash/gtkbuilder/dialog-vendor.glade:265
 #: gnucash/import-export/customer-import/dialog-customer-import-gui.c:130
-#: gnucash/register/ledger-core/split-register.c:2573
+#: gnucash/register/ledger-core/split-register.c:2575
 #: gnucash/report/reports/support/taxinvoice.eguile.scm:175
 msgid "Phone"
 msgstr "电话"
@@ -7893,8 +7893,8 @@ msgstr "证券"
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:390
 #: gnucash/import-export/bi-import/dialog-bi-import-gui.c:149
 #: gnucash/import-export/csv-imp/gnc-imp-props-tx.cpp:71
-#: gnucash/register/ledger-core/split-register.c:2646
-#: gnucash/register/ledger-core/split-register-model.c:407
+#: gnucash/register/ledger-core/split-register.c:2648
+#: gnucash/register/ledger-core/split-register-model.c:411
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1050
 #: gnucash/report/reports/standard/general-journal.scm:99
 #: gnucash/report/reports/standard/general-ledger.scm:79
@@ -7913,7 +7913,7 @@ msgstr "价格"
 
 #: gnucash/gnome-utils/gnc-tree-view-sx-list.c:122
 #: gnucash/gtkbuilder/dialog-sx.glade:1088
-#: gnucash/report/html-utilities.scm:309
+#: gnucash/report/html-utilities.scm:312
 msgid "Enabled"
 msgstr "启用"
 
@@ -8055,7 +8055,7 @@ msgstr "未知的报表命令'{1}'"
 msgid "Missing command or option"
 msgstr "这是一个颜色选项"
 
-#: gnucash/gnucash-commands.cpp:317 gnucash/gnucash-commands.cpp:363
+#: gnucash/gnucash-commands.cpp:317 gnucash/gnucash-commands.cpp:364
 #: gnucash/gnucash.cpp:179
 #, c++-format
 msgid "Found Finance::Quote version {1}."
@@ -8065,7 +8065,7 @@ msgstr "已找到 Finance::Quote 版本 {1}。"
 msgid "Finance::Quote sources:\n"
 msgstr "Finance::Quote的源：\n"
 
-#: gnucash/gnucash-commands.cpp:372 gnucash/gnucash-commands.cpp:396
+#: gnucash/gnucash-commands.cpp:376 gnucash/gnucash-commands.cpp:400
 msgid "Price retrieval failed: "
 msgstr "获取价格失败： "
 
@@ -10732,7 +10732,7 @@ msgid "Select _All"
 msgstr "全选(_A)"
 
 #: gnucash/gtkbuilder/assistant-csv-export.glade:412
-#: gnucash/gtkbuilder/assistant-loan.glade:1205
+#: gnucash/gtkbuilder/assistant-loan.glade:1208
 #: gnucash/report/reports/standard/new-owner-report.scm:1131
 msgid "Date Range"
 msgstr "日期范围"
@@ -11412,7 +11412,7 @@ msgid "Whole Loan"
 msgstr "整个贷款"
 
 #: gnucash/gtkbuilder/assistant-loan.glade:46
-#: gnucash/gtkbuilder/assistant-loan.glade:152
+#: gnucash/gtkbuilder/assistant-loan.glade:155
 msgid "Interest Rate"
 msgstr "利率"
 
@@ -11433,30 +11433,36 @@ msgid "APR (Compounded Quarterly)"
 msgstr "APR（季复利）"
 
 #: gnucash/gtkbuilder/assistant-loan.glade:61
+#, fuzzy
+#| msgid "APR (Compounded Annually)"
+msgid "APR (Compounded Semi-annually)"
+msgstr "APR（年复利）"
+
+#: gnucash/gtkbuilder/assistant-loan.glade:64
 msgid "APR (Compounded Annually)"
 msgstr "APR（年复利）"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:72
+#: gnucash/gtkbuilder/assistant-loan.glade:75
 msgid "Fixed Rate"
 msgstr "固定利率"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:75
+#: gnucash/gtkbuilder/assistant-loan.glade:78
 msgid "3/1 Year ARM"
 msgstr "3/1 Year ARM"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:78
+#: gnucash/gtkbuilder/assistant-loan.glade:81
 msgid "5/1 Year ARM"
 msgstr "5/1 Year ARM"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:81
+#: gnucash/gtkbuilder/assistant-loan.glade:84
 msgid "7/1 Year ARM"
 msgstr "7/1 Year ARM"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:84
+#: gnucash/gtkbuilder/assistant-loan.glade:87
 msgid "10/1 Year ARM"
 msgstr "10/1 Year ARM"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:104
+#: gnucash/gtkbuilder/assistant-loan.glade:107
 msgid ""
 "This is a step-by-step method for creating a loan repayment within GnuCash. "
 "In this assistant, you can input the details of your loan and its repayment "
@@ -11471,17 +11477,17 @@ msgstr ""
 "\n"
 "若输入有误亦或修改，稍后直接编辑创建好的计划交易。"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:111
+#: gnucash/gtkbuilder/assistant-loan.glade:114
 msgid "Loan / Mortgage Repayment Setup"
 msgstr "贷款还款设置"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:127
+#: gnucash/gtkbuilder/assistant-loan.glade:130
 msgid ""
 "Enter the Loan Details, as a minimum enter a valid Loan Account and Amount.\n"
 msgstr "请输入贷款详情，至少得有一个有效的贷款科目和金额。\n"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:165
-#: gnucash/gtkbuilder/assistant-loan.glade:1173
+#: gnucash/gtkbuilder/assistant-loan.glade:168
+#: gnucash/gtkbuilder/assistant-loan.glade:1176
 #: gnucash/gtkbuilder/dialog-preferences.glade:378
 #: gnucash/gtkbuilder/dialog-sx.glade:259
 #: gnucash/gtkbuilder/gnc-frequency.glade:605
@@ -11506,131 +11512,131 @@ msgstr "请输入贷款详情，至少得有一个有效的贷款科目和金额
 msgid "Start Date"
 msgstr "开始日期"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:178
+#: gnucash/gtkbuilder/assistant-loan.glade:181
 msgid "Length"
 msgstr "跨度"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:204
+#: gnucash/gtkbuilder/assistant-loan.glade:207
 msgid "Loan Account"
 msgstr "贷款科目"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:219
+#: gnucash/gtkbuilder/assistant-loan.glade:222
 msgid ""
 "Enter the number of months still to be paid off. This determines both the "
 "remaining principle and the duration of the scheduled transaction."
 msgstr "输入离还清贷款的剩余月数。 这将决定剩余本金的数额和预定交易的期限。"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:288
+#: gnucash/gtkbuilder/assistant-loan.glade:291
 msgid "Months Remaining"
 msgstr "剩余月数"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:340
+#: gnucash/gtkbuilder/assistant-loan.glade:343
 msgid ""
 "Enter the annual interest rate in percent. Accepts values from 0.001 - 100. "
 "The Mortgage Assistant does not support zero-interest loans."
 msgstr "输入年利率（单位：百分比），范围0.001 - 100，不允许零利率贷款。"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:359
+#: gnucash/gtkbuilder/assistant-loan.glade:362
 #: gnucash/register/ledger-core/gncEntryLedgerLoad.c:55
 #: gnucash/report/reports/standard/invoice.scm:107
 msgid "%"
 msgstr "%"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:390
+#: gnucash/gtkbuilder/assistant-loan.glade:393
 msgid "Interest Rate Change Frequency"
 msgstr "利率变化频率"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:436
+#: gnucash/gtkbuilder/assistant-loan.glade:439
 msgid "Loan Details"
 msgstr "贷款详情"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:451
+#: gnucash/gtkbuilder/assistant-loan.glade:454
 msgid "Do you utilize an escrow account, if so an account must be specified…"
 msgstr "是否使用托管科目，如果是，必须指定一个科目……"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:470
+#: gnucash/gtkbuilder/assistant-loan.glade:473
 msgid "… utilize an escrow account for payments?"
 msgstr "…使用托管科目付款？"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:495
+#: gnucash/gtkbuilder/assistant-loan.glade:498
 msgid "Escrow Account"
 msgstr "托管账户"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:531
+#: gnucash/gtkbuilder/assistant-loan.glade:534
 msgid "Loan Repayment Options"
 msgstr "托管科目"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:544
+#: gnucash/gtkbuilder/assistant-loan.glade:547
 msgid "All accounts must have valid entries to continue."
 msgstr "所有科目必须正确设置才能继续。"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:584
+#: gnucash/gtkbuilder/assistant-loan.glade:587
 msgid "Principal To"
 msgstr "本金科目"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:623
+#: gnucash/gtkbuilder/assistant-loan.glade:626
 msgid "Interest To"
 msgstr "利息科目"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:679
+#: gnucash/gtkbuilder/assistant-loan.glade:682
 msgid "Repayment Frequency"
 msgstr "频率"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:714
+#: gnucash/gtkbuilder/assistant-loan.glade:717
 msgid "Loan Repayment"
 msgstr "还款选项"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:727
+#: gnucash/gtkbuilder/assistant-loan.glade:730
 msgid "All enabled option pages must contain valid entries to continue."
 msgstr "要继续，您需要在所有指定选项页面中输入有效值。"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:798
+#: gnucash/gtkbuilder/assistant-loan.glade:801
 msgid "Payment To (Escrow)"
 msgstr "付款到(托管)"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:811
+#: gnucash/gtkbuilder/assistant-loan.glade:814
 msgid "Payment From (Escrow)"
 msgstr "付款科目（托管）"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:834
+#: gnucash/gtkbuilder/assistant-loan.glade:837
 msgid "Specify Source Account"
 msgstr "指定来源科目"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:849
+#: gnucash/gtkbuilder/assistant-loan.glade:852
 msgid "Use Escrow Account"
 msgstr "使用托管账户"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:940
+#: gnucash/gtkbuilder/assistant-loan.glade:943
 msgid "Part of Payment Transaction"
 msgstr "付款交易的部份"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1006
+#: gnucash/gtkbuilder/assistant-loan.glade:1009
 msgid "Payment Frequency"
 msgstr "付款频率"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1032
+#: gnucash/gtkbuilder/assistant-loan.glade:1035
 msgid "Previous Option"
 msgstr "第一选项"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1046
+#: gnucash/gtkbuilder/assistant-loan.glade:1049
 msgid "Next Option"
 msgstr "数值选项"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1068
+#: gnucash/gtkbuilder/assistant-loan.glade:1071
 msgid "Loan Payment"
 msgstr "贷款支付"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1081
+#: gnucash/gtkbuilder/assistant-loan.glade:1084
 msgid ""
 "Review the details below and if correct press \"Apply\"\" to create the "
 "schedule."
 msgstr "检查下面的细节，如果它们是正确的，按 \"应用 \"\"创建计划交易。"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1108
+#: gnucash/gtkbuilder/assistant-loan.glade:1111
 msgid "Range"
 msgstr "范围"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1185
+#: gnucash/gtkbuilder/assistant-loan.glade:1188
 #: gnucash/gtkbuilder/dialog-preferences.glade:393
 #: gnucash/gtkbuilder/dialog-sx.glade:331
 #: gnucash/report/reports/example/average-balance.scm:41
@@ -11653,15 +11659,15 @@ msgstr "范围"
 msgid "End Date"
 msgstr "结束日期"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1244
+#: gnucash/gtkbuilder/assistant-loan.glade:1247
 msgid "Loan Review"
 msgstr "贷款审查"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1252
+#: gnucash/gtkbuilder/assistant-loan.glade:1255
 msgid "Schedule added successfully."
 msgstr "结账成功。"
 
-#: gnucash/gtkbuilder/assistant-loan.glade:1258
+#: gnucash/gtkbuilder/assistant-loan.glade:1261
 msgid "Loan Summary"
 msgstr "贷款汇总"
 
@@ -12135,9 +12141,9 @@ msgstr ""
 
 #: gnucash/gtkbuilder/assistant-stock-split.glade:279
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:463
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:576
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:703
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:816
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:575
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:701
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:813
 #: gnucash/import-export/aqb/dialog-ab.glade:1201
 msgid "_Amount"
 msgstr "金额(_A)"
@@ -12145,9 +12151,9 @@ msgstr "金额(_A)"
 #: gnucash/gtkbuilder/assistant-stock-split.glade:293
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:365
 #: gnucash/gtkbuilder/assistant-stock-transaction.glade:477
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:590
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:717
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:830
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:589
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:715
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:827
 #: gnucash/gtkbuilder/dialog-import.glade:958
 #: gnucash/gtkbuilder/dialog-print-check.glade:1129
 #: gnucash/gtkbuilder/gnc-plugin-page-register.glade:972
@@ -12256,20 +12262,20 @@ msgstr ""
 "在页面中，输入资产账号，并输入货币金额的收入/支出数量。如果在交易中产生经纪费"
 "用，那么这可能和上一页中的股票价值不同。"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:493
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:538
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:492
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:537
 #: gnucash/register/ledger-core/gncEntryLedgerLoad.c:130
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:530
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:1090
-#: gnucash/report/report-utilities.scm:198 libgnucash/engine/Account.cpp:4289
+#: gnucash/report/report-utilities.scm:202 libgnucash/engine/Account.cpp:4289
 msgid "Cash"
 msgstr "现金"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:516
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:515
 msgid "Cash Account"
 msgstr "现金科目"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:555
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:554
 msgid ""
 "In this page, input any brokerage fees incurred in this transaction. The fee "
 "may be capitalized into the asset account, or expensed into a brokerage fees "
@@ -12281,48 +12287,48 @@ msgstr ""
 "入经纪费账户。一般而言，买入的费用应该被资本化，卖出的费用应该被记入经纪费账"
 "户。如果本次交易不涉及费用，那么可以留空。"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:606
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:665
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:604
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:663
 msgid "Fees"
 msgstr "费用"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:629
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:627
 #: gnucash/report/reports/standard/advanced-portfolio.scm:1065
 msgid "Brokerage Fees"
 msgstr "经纪费"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:641
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:639
 msgid "Capitalize brokerage fees into stock account?"
 msgstr "将经纪费用计入股票账户中？"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:682
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:680
 msgid "In this page, input any dividend income received in this transaction."
 msgstr "在页面中，在本次交易中输入任意的股利收入。"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:756
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:753
 msgid "Dividend Account"
 msgstr "股利科目"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:795
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:792
 msgid ""
 "In this page, input any capital gains or losses incurred, and the associated "
 "income account. Capital gains are positive, and capital losses are negative."
 msgstr ""
 "在本页中，输入资本收益或亏损以及相关的科目。资本收益为正，资本亏损为负。"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:846
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:842
 msgid "Capital Gain"
 msgstr "资本收益"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:869
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:865
 msgid "Capital Gains Account"
 msgstr "资本收益科目"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:891
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:887
 msgid "Capital Gains"
 msgstr "资本收益"
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:908
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:904
 msgid ""
 "A summary of splits is shown as follows. If the summary is correct, and "
 "there are no errors, please press \"Apply\". You may also press \"Back\" to "
@@ -12331,7 +12337,7 @@ msgstr ""
 "以下是交易分录的概要。如果正确无误，请点击“应用”。您也可以通过按“后退”来检查"
 "您的选择，或是点击“取消”来退出并且不保存任何修改。 "
 
-#: gnucash/gtkbuilder/assistant-stock-transaction.glade:956
+#: gnucash/gtkbuilder/assistant-stock-transaction.glade:952
 msgid "Finish"
 msgstr "完成"
 
@@ -12391,7 +12397,7 @@ msgstr "首选项"
 #: gnucash/gtkbuilder/dialog-preferences.glade:1409
 #: gnucash/gtkbuilder/dialog-preferences.glade:2040
 #: gnucash/gtkbuilder/dialog-preferences.glade:2098
-#: gnucash/report/report-core.scm:162
+#: gnucash/report/report-core.scm:164
 #: gnucash/report/reports/standard/equity-statement.scm:101
 #: gnucash/report/reports/standard/register.scm:341
 #: gnucash/report/reports/standard/trial-balance.scm:175
@@ -12539,7 +12545,7 @@ msgstr "列表"
 
 #: gnucash/gtkbuilder/dialog-account.glade:200
 #: gnucash/gtkbuilder/dialog-account.glade:1329
-#: gnucash/report/html-style-sheet.scm:259 gnucash/report/report-core.scm:317
+#: gnucash/report/html-style-sheet.scm:259 gnucash/report/report-core.scm:319
 #: gnucash/report/stylesheets/plain.scm:218
 msgid "Default"
 msgstr "默认"
@@ -13801,8 +13807,8 @@ msgid "Non-Bayesian"
 msgstr "非贝叶斯"
 
 #: gnucash/gtkbuilder/dialog-imap-editor.glade:156
-#: gnucash/register/ledger-core/split-register.c:2574
-#: gnucash/register/ledger-core/split-register.c:2600
+#: gnucash/register/ledger-core/split-register.c:2576
+#: gnucash/register/ledger-core/split-register.c:2602
 msgid "Online"
 msgstr "在线"
 
@@ -15284,8 +15290,8 @@ msgid "S_ource"
 msgstr "来源(_O)"
 
 #: gnucash/gtkbuilder/dialog-price.glade:225
-#: gnucash/register/ledger-core/split-register.c:2117
-#: gnucash/register/ledger-core/split-register.c:2120
+#: gnucash/register/ledger-core/split-register.c:2119
+#: gnucash/register/ledger-core/split-register.c:2122
 #: gnucash/ui/gnc-plugin-page-invoice.ui:108
 msgid "_Price"
 msgstr "单价(_P)"
@@ -16006,8 +16012,8 @@ msgid "<b>Tax Table Entry</b>"
 msgstr "<b>定义</b>"
 
 #: gnucash/gtkbuilder/dialog-tax-table.glade:491
-#: gnucash/register/ledger-core/split-register.c:2124
-#: gnucash/register/ledger-core/split-register.c:2127
+#: gnucash/register/ledger-core/split-register.c:2126
+#: gnucash/register/ledger-core/split-register.c:2129
 msgid "_Value"
 msgstr "值(_V)"
 
@@ -17787,7 +17793,7 @@ msgid "Unspecified"
 msgstr "未指定"
 
 #: gnucash/import-export/aqb/gnc-ab-utils.c:478
-#: gnucash/report/report-utilities.scm:197 libgnucash/engine/Account.cpp:4288
+#: gnucash/report/report-utilities.scm:201 libgnucash/engine/Account.cpp:4288
 msgid "Bank"
 msgstr "银行"
 
@@ -18395,7 +18401,7 @@ msgid "File exported successfully!\n"
 msgstr "科目已成功导出！\n"
 
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:135
-#: gnucash/import-export/import-main-matcher.cpp:1893
+#: gnucash/import-export/import-main-matcher.cpp:1901
 #: gnucash/report/reports/standard/register.scm:217
 #: libgnucash/engine/Split.cpp:1612 libgnucash/engine/Split.cpp:1629
 msgid "-- Split Transaction --"
@@ -18686,7 +18692,7 @@ msgid "Comma: 123.456,78"
 msgstr "小数点为逗号：123.456,78"
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:444
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:485
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:493
 msgid "Please select a date column."
 msgstr "请选择日期列。"
 
@@ -18720,21 +18726,21 @@ msgid "'Commodity From' can not be the same as 'Currency To'."
 msgstr "'Exchange源产品'不能与“更换目的地货币”相同。"
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:500
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:552
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:560
 msgid ""
 "No valid data found in the selected file. It may be empty or the selected "
 "encoding is wrong."
 msgstr "所选文件没有有效数据。该文件为空，或者所选编码不正确。"
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:508
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:560
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:568
 msgid ""
 "No lines are selected for importing. Please reduce the number of lines to "
 "skip."
 msgstr "没有人可以进口。减少跳过的行数。"
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:527
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:593
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:601
 msgid ""
 "Not all fields could be parsed. Please correct the issues reported for each "
 "line or adjust the lines to skip."
@@ -18757,30 +18763,30 @@ msgstr ""
 "没有选择'交换源命名空间/交换源符号'列，也没有选择交换源产品。\n"
 "这是不应该发生的事情。 请报告这个错误。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:493
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:501
 msgid "Please select an account column."
 msgstr "请选择有效的贷款科目。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:495
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:503
 msgid ""
 "Please select an account column or set a base account in the Account field."
 msgstr "选择一列帐户或根据帐户字段设置帐户。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:501
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:509
 msgid "Please select a description column."
 msgstr "请选择一个描述栏。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:507
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:515
 msgid "Please select a (negated) amount column."
 msgstr "请选择一个（负的）科目列。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:524
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:532
 msgid ""
 "The current account selections will generate multi-currency transactions. "
 "Please select one of the following columns: price, (negated) value."
 msgstr "当前选择的科目将生成多币交易。请选择一列：价格、（负的）值。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:531
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:539
 msgid ""
 "The current account selections will generate multi-currency transactions. "
 "Please select one of the following columns: price, (negated) value, "
@@ -18788,7 +18794,7 @@ msgid ""
 msgstr ""
 "当前的科目将生成多币交易。请选择一列：价格、（负的）值、（负的）转账金额。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:670
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:678
 msgid ""
 "Current line still has parse errors.\n"
 "This should never happen. Please report this as a bug."
@@ -18796,7 +18802,7 @@ msgstr ""
 "当前行依然有解析错误。\n"
 "这不应该发生。请报告这个错误。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:681
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:689
 msgid ""
 "No account column selected and no base account specified either.\n"
 "This should never happen. Please report this as a bug."
@@ -18804,11 +18810,11 @@ msgstr ""
 "没有选择账户栏，也没有指定基本账户。\n"
 "这种情况不应该发生。请将此作为一个错误报告。"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:685
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:693
 msgid "Parse Error"
 msgstr "解析错误"
 
-#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:701
+#: gnucash/import-export/csv-imp/gnc-import-tx.cpp:709
 msgid "Problem creating preliminary transaction"
 msgstr "创建初步交易记录时出现问题"
 
@@ -19138,86 +19144,108 @@ msgstr "编辑描述、说明或备注(_E)"
 msgid "_Reset all edits"
 msgstr "重置所有编辑(_R)"
 
-#: gnucash/import-export/import-main-matcher.cpp:1597
+#: gnucash/import-export/import-main-matcher.cpp:1602
 msgctxt "Column header for 'Adding transaction'"
 msgid "A"
 msgstr "A"
 
-#: gnucash/import-export/import-main-matcher.cpp:1601
+#: gnucash/import-export/import-main-matcher.cpp:1605
+#, fuzzy
+#| msgid "Add a reversing transaction"
+msgid "Add as a new transaction"
+msgstr "增加一个对冲交易"
+
+#: gnucash/import-export/import-main-matcher.cpp:1607
 msgctxt "Column header for 'Updating plus Clearing transaction'"
 msgid "U+C"
 msgstr "U+C"
 
-#: gnucash/import-export/import-main-matcher.cpp:1605
+#: gnucash/import-export/import-main-matcher.cpp:1610
+#, fuzzy
+#| msgid ""
+#| "Select \"U+C\" to update a matching transaction and mark it as cleared "
+#| "(c)."
+msgid ""
+"Update + Clear Transaction\n"
+"Update existing transaction with the imported data and mark it as cleared"
+msgstr "选择“U+R”来更新并对账一笔匹配的交易事项。"
+
+#: gnucash/import-export/import-main-matcher.cpp:1612
 msgctxt "Column header for 'Clearing transaction'"
 msgid "C"
 msgstr "C"
 
-#: gnucash/import-export/import-main-matcher.cpp:1612
+#: gnucash/import-export/import-main-matcher.cpp:1615
+msgid ""
+"Clear Transaction\n"
+"Mark existing transaction as cleared without changing its details"
+msgstr ""
+
+#: gnucash/import-export/import-main-matcher.cpp:1620
 msgid "Info"
 msgstr "信息"
 
-#: gnucash/import-export/import-main-matcher.cpp:1619
+#: gnucash/import-export/import-main-matcher.cpp:1627
 #: gnucash/report/stylesheets/head-or-tail.scm:91
 msgid "Additional Comments"
 msgstr "额外注释"
 
-#: gnucash/import-export/import-main-matcher.cpp:2004
+#: gnucash/import-export/import-main-matcher.cpp:2012
 msgid "New, already balanced"
 msgstr "新的，已结算"
 
 #. Translators: %1$s is the amount to be transferred,
 #. %2$s the destination account.
-#: gnucash/import-export/import-main-matcher.cpp:2026
+#: gnucash/import-export/import-main-matcher.cpp:2034
 #, c-format
 msgid "New, transfer %s to (manual) \"%s\""
 msgstr "新的，将 %s 转账到(手动)“%s”"
 
 #. Translators: %1$s is the amount to be transferred,
 #. %2$s the destination account.
-#: gnucash/import-export/import-main-matcher.cpp:2034
+#: gnucash/import-export/import-main-matcher.cpp:2042
 #, c-format
 msgid "New, transfer %s to (auto) \"%s\""
 msgstr "新的，将 %s 转账到(自动)“%s”"
 
 #. Translators: %s is the amount to be transferred.
-#: gnucash/import-export/import-main-matcher.cpp:2047
+#: gnucash/import-export/import-main-matcher.cpp:2055
 #, c-format
 msgid "New, UNBALANCED (need price to transfer %s to acct %s)!"
 msgstr "新的，未结算(需要价格才能转账 %s到账号%s)！"
 
 #. Translators: %s is the amount to be transferred.
-#: gnucash/import-export/import-main-matcher.cpp:2063
+#: gnucash/import-export/import-main-matcher.cpp:2071
 #, c-format
 msgid "New, UNBALANCED (need acct to transfer %s)!"
 msgstr "新的，未结算(需要科目才能转账 %s)！"
 
-#: gnucash/import-export/import-main-matcher.cpp:2081
+#: gnucash/import-export/import-main-matcher.cpp:2089
 #, c-format
 msgid "Reconcile (manual) match to %s"
 msgstr "对账(手动)匹配 %s"
 
-#: gnucash/import-export/import-main-matcher.cpp:2086
+#: gnucash/import-export/import-main-matcher.cpp:2094
 #, c-format
 msgid "Reconcile (auto) match to %s"
 msgstr "对账(自动)匹配 %s"
 
-#: gnucash/import-export/import-main-matcher.cpp:2095
-#: gnucash/import-export/import-main-matcher.cpp:2124
+#: gnucash/import-export/import-main-matcher.cpp:2103
+#: gnucash/import-export/import-main-matcher.cpp:2132
 msgid "Match missing!"
 msgstr "匹配遗漏！"
 
-#: gnucash/import-export/import-main-matcher.cpp:2110
+#: gnucash/import-export/import-main-matcher.cpp:2118
 #, c-format
 msgid "Update and reconcile (manual) match to %s"
 msgstr "更新并对账(手动)匹配 %s"
 
-#: gnucash/import-export/import-main-matcher.cpp:2115
+#: gnucash/import-export/import-main-matcher.cpp:2123
 #, c-format
 msgid "Update and reconcile (auto) match to %s"
 msgstr "更新并对账(自动)匹配 %s"
 
-#: gnucash/import-export/import-main-matcher.cpp:2132
+#: gnucash/import-export/import-main-matcher.cpp:2140
 msgid "Do not import (no action selected)"
 msgstr "不要导入(未选定操作)"
 
@@ -19552,9 +19580,9 @@ msgstr "获益上限 (短期)"
 
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:109
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:113
-#: gnucash/register/ledger-core/split-register.c:2639
+#: gnucash/register/ledger-core/split-register.c:2641
 #: gnucash/report/reports/standard/balance-sheet.scm:468
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1051
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1052
 #: gnucash/report/reports/standard/budget-balance-sheet.scm:685
 #: libgnucash/app-utils/gnc-ui-util.cpp:637 libgnucash/engine/Account.cpp:4298
 msgid "Equity"
@@ -19563,8 +19591,8 @@ msgstr "所有者权益"
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:110
 #: gnucash/import-export/qif-imp/qif-dialog-utils.scm:114
 #: gnucash/report/reports/standard/balance-sheet.scm:475
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1060
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1075
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1061
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1076
 #: gnucash/report/reports/support/balsheet-eg.eguile.scm:189
 #: libgnucash/app-utils/gnc-ui-util.cpp:554
 msgid "Retained Earnings"
@@ -19796,7 +19824,7 @@ msgid "Welcome to GnuCash %s Shell"
 msgstr "欢迎使用 GnuCash %s Shell"
 
 #: gnucash/register/ledger-core/gncEntryLedger.c:86
-#: gnucash/register/ledger-core/split-register.c:1999
+#: gnucash/register/ledger-core/split-register.c:2001
 #, c-format
 msgid "The account %s does not exist. Would you like to create it?"
 msgstr "科目 %s 不存在。您想要创建它吗？"
@@ -19973,7 +20001,7 @@ msgstr ">"
 #: gnucash/register/ledger-core/gncEntryLedgerLoad.c:133
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:532
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:1092
-#: gnucash/register/ledger-core/split-register.c:2566
+#: gnucash/register/ledger-core/split-register.c:2568
 #: libgnucash/engine/Account.cpp:158 libgnucash/engine/Account.cpp:172
 msgid "Charge"
 msgstr "费用"
@@ -20036,7 +20064,7 @@ msgstr "输入交易类型"
 #. Translators: This is a date format, see i.e.
 #. https://www.gnu.org/software/libc/manual/html_node/Formatting-Calendar-Time.html
 #: gnucash/register/ledger-core/gncEntryLedgerModel.c:577
-#: gnucash/register/ledger-core/split-register-model.c:1002
+#: gnucash/register/ledger-core/split-register-model.c:1006
 msgid "%A %d %B %Y"
 msgstr "%Y年%b%d日 %a"
 
@@ -20196,54 +20224,54 @@ msgid ""
 "do that?"
 msgstr "您要覆盖一笔现有的交易事项。您确定要这么做么？"
 
-#: gnucash/register/ledger-core/split-register.c:2103
+#: gnucash/register/ledger-core/split-register.c:2105
 msgid "Recalculate Transaction"
 msgstr "重新计算交易事项"
 
-#: gnucash/register/ledger-core/split-register.c:2104
+#: gnucash/register/ledger-core/split-register.c:2106
 msgid ""
 "The values entered for this transaction are inconsistent. Which value would "
 "you like to have recalculated?"
 msgstr "为这笔交易事项输入的价格不一致。您想按照哪一个价格重新计算？"
 
-#: gnucash/register/ledger-core/split-register.c:2111
-#: gnucash/register/ledger-core/split-register.c:2118
-#: gnucash/register/ledger-core/split-register.c:2125
+#: gnucash/register/ledger-core/split-register.c:2113
+#: gnucash/register/ledger-core/split-register.c:2120
+#: gnucash/register/ledger-core/split-register.c:2127
 msgid "Changed"
 msgstr "修改了"
 
-#: gnucash/register/ledger-core/split-register.c:2136
+#: gnucash/register/ledger-core/split-register.c:2138
 msgid "_Recalculate"
 msgstr "重新计算(_R)"
 
-#: gnucash/register/ledger-core/split-register.c:2559
+#: gnucash/register/ledger-core/split-register.c:2561
 msgctxt "Action Column"
 msgid "Deposit"
 msgstr "存入"
 
-#: gnucash/register/ledger-core/split-register.c:2560
+#: gnucash/register/ledger-core/split-register.c:2562
 msgid "Withdraw"
 msgstr "取出"
 
-#: gnucash/register/ledger-core/split-register.c:2561
+#: gnucash/register/ledger-core/split-register.c:2563
 msgid "Check"
 msgstr "核对"
 
-#: gnucash/register/ledger-core/split-register.c:2563
-#: gnucash/register/ledger-core/split-register.c:2594
+#: gnucash/register/ledger-core/split-register.c:2565
+#: gnucash/register/ledger-core/split-register.c:2596
 msgid "ATM Deposit"
 msgstr "ATM 存款"
 
-#: gnucash/register/ledger-core/split-register.c:2564
-#: gnucash/register/ledger-core/split-register.c:2595
+#: gnucash/register/ledger-core/split-register.c:2566
+#: gnucash/register/ledger-core/split-register.c:2597
 msgid "ATM Draw"
 msgstr "ATM 取款"
 
-#: gnucash/register/ledger-core/split-register.c:2565
+#: gnucash/register/ledger-core/split-register.c:2567
 msgid "Teller"
 msgstr "出纳员"
 
-#: gnucash/register/ledger-core/split-register.c:2568
+#: gnucash/register/ledger-core/split-register.c:2570
 #: gnucash/report/reports/standard/receipt.scm:201
 #: gnucash/report/reports/standard/receipt.scm:203
 #: gnucash/report/reports/support/receipt.eguile.scm:276
@@ -20251,155 +20279,155 @@ msgstr "出纳员"
 msgid "Receipt"
 msgstr "收据"
 
-#: gnucash/register/ledger-core/split-register.c:2569
-#: gnucash/register/ledger-core/split-register.c:2583
-#: gnucash/register/ledger-core/split-register.c:2619
-#: gnucash/register/ledger-core/split-register.c:2630
-#: gnucash/register/ledger-core/split-register.c:2662
+#: gnucash/register/ledger-core/split-register.c:2571
+#: gnucash/register/ledger-core/split-register.c:2585
+#: gnucash/register/ledger-core/split-register.c:2621
+#: gnucash/register/ledger-core/split-register.c:2632
+#: gnucash/register/ledger-core/split-register.c:2664
 #: libgnucash/engine/Account.cpp:153 libgnucash/engine/Account.cpp:174
 #: libgnucash/engine/Account.cpp:182 libgnucash/engine/Account.cpp:183
 msgid "Increase"
 msgstr "增加"
 
-#: gnucash/register/ledger-core/split-register.c:2570
-#: gnucash/register/ledger-core/split-register.c:2584
-#: gnucash/register/ledger-core/split-register.c:2620
-#: gnucash/register/ledger-core/split-register.c:2631
-#: gnucash/register/ledger-core/split-register.c:2663
+#: gnucash/register/ledger-core/split-register.c:2572
+#: gnucash/register/ledger-core/split-register.c:2586
+#: gnucash/register/ledger-core/split-register.c:2622
+#: gnucash/register/ledger-core/split-register.c:2633
+#: gnucash/register/ledger-core/split-register.c:2665
 #: libgnucash/engine/Account.cpp:154 libgnucash/engine/Account.cpp:162
 #: libgnucash/engine/Account.cpp:163 libgnucash/engine/Account.cpp:173
 msgid "Decrease"
 msgstr "减少"
 
-#: gnucash/register/ledger-core/split-register.c:2572
+#: gnucash/register/ledger-core/split-register.c:2574
 msgid "POS"
 msgstr "POS"
 
-#: gnucash/register/ledger-core/split-register.c:2576
+#: gnucash/register/ledger-core/split-register.c:2578
 msgid "AutoDep"
 msgstr "自动存款"
 
-#: gnucash/register/ledger-core/split-register.c:2577
+#: gnucash/register/ledger-core/split-register.c:2579
 msgid "Wire"
 msgstr "电报"
 
-#: gnucash/register/ledger-core/split-register.c:2579
+#: gnucash/register/ledger-core/split-register.c:2581
 msgid "Direct Debit"
 msgstr "直接借记"
 
-#: gnucash/register/ledger-core/split-register.c:2591
-#: gnucash/register/ledger-core/split-register.c:2598
-#: gnucash/register/ledger-core/split-register.c:2647
+#: gnucash/register/ledger-core/split-register.c:2593
+#: gnucash/register/ledger-core/split-register.c:2600
+#: gnucash/register/ledger-core/split-register.c:2649
 msgid "Fee"
 msgstr "费用"
 
-#: gnucash/register/ledger-core/split-register.c:2625
+#: gnucash/register/ledger-core/split-register.c:2627
 #: libgnucash/engine/Account.cpp:179
 msgid "Rebate"
 msgstr "退回"
 
-#: gnucash/register/ledger-core/split-register.c:2626
+#: gnucash/register/ledger-core/split-register.c:2628
 msgid "Paycheck"
 msgstr "薪金"
 
-#: gnucash/register/ledger-core/split-register.c:2652
+#: gnucash/register/ledger-core/split-register.c:2654
 msgid "LTCG"
 msgstr "初始长期资本收益"
 
-#: gnucash/register/ledger-core/split-register.c:2654
+#: gnucash/register/ledger-core/split-register.c:2656
 msgid "STCG"
 msgstr "初始短期资本收益"
 
-#: gnucash/register/ledger-core/split-register.c:2657
+#: gnucash/register/ledger-core/split-register.c:2659
 msgid "Dist"
 msgstr "距离"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:79
+#: gnucash/register/ledger-core/split-register-control.cpp:84
 msgid ""
 "This transaction cannot be balanced: The imbalance is a fraction smaller "
 "than the commodity allows."
 msgstr "交易无法平衡：不平衡量小于币种允许的最小分量。"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:93
+#: gnucash/register/ledger-core/split-register-control.cpp:98
 msgid "Rebalance Transaction"
 msgstr "重新结算交易"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:94
+#: gnucash/register/ledger-core/split-register-control.cpp:99
 msgid "The current transaction is not balanced."
 msgstr "当前交易事项还未结算。"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:176
+#: gnucash/register/ledger-core/split-register-control.cpp:181
 msgid "Balance it _manually"
 msgstr "手动平衡(_M)"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:178
+#: gnucash/register/ledger-core/split-register-control.cpp:183
 msgid "Let GnuCash _add an adjusting split"
 msgstr "让程序添加一个调整分录 (_A)"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:183
+#: gnucash/register/ledger-core/split-register-control.cpp:188
 msgid "Adjust current account _split total"
 msgstr "调整当前科目分录合计(_S)"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:189
+#: gnucash/register/ledger-core/split-register-control.cpp:194
 msgid "Adjust _other account split total"
 msgstr "调整其它科目分录合计(_O)"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:199
+#: gnucash/register/ledger-core/split-register-control.cpp:204
 msgid "_Rebalance"
 msgstr "重建平衡(_R)"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1347
-#: gnucash/register/ledger-core/split-register-control.cpp:1360
+#: gnucash/register/ledger-core/split-register-control.cpp:1357
+#: gnucash/register/ledger-core/split-register-control.cpp:1370
 msgid "This register does not support editing exchange rates."
 msgstr "这个账簿不支持编辑汇率。"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1386
+#: gnucash/register/ledger-core/split-register-control.cpp:1396
 msgid "You need to select a split in order to modify its exchange rate."
 msgstr "要修改它的汇率，您需要选择一个分录。"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1401
-#: gnucash/register/ledger-core/split-register-control.cpp:1476
+#: gnucash/register/ledger-core/split-register-control.cpp:1411
+#: gnucash/register/ledger-core/split-register-control.cpp:1486
 msgid ""
 "You need to expand the transaction in order to modify its exchange rates."
 msgstr "您需要展开这笔交易事项才能修改它的汇率。"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1413
+#: gnucash/register/ledger-core/split-register-control.cpp:1423
 msgid "The entered account could not be found."
 msgstr "无法找到输入的科目。"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1448
-#: gnucash/register/ledger-core/split-register-control.cpp:1461
+#: gnucash/register/ledger-core/split-register-control.cpp:1458
+#: gnucash/register/ledger-core/split-register-control.cpp:1471
 msgid "The two currencies involved equal each other."
 msgstr "两个引入的货币彼此相等。"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1513
+#: gnucash/register/ledger-core/split-register-control.cpp:1523
 msgid "The split's amount is zero, so no exchange rate is needed."
 msgstr "分录的金额为0，所以不需要汇率。"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1562
+#: gnucash/register/ledger-core/split-register-control.cpp:1572
 msgid "Save the changed transaction?"
 msgstr "保存交易？"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1564
+#: gnucash/register/ledger-core/split-register-control.cpp:1574
 msgid ""
 "The current transaction has been changed. Would you like to record the "
 "changes before moving to a new transaction, discard the changes, or return "
 "to the changed transaction?"
 msgstr "当前交易已更改，保存更改、取消操作、放弃更改？"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1577
+#: gnucash/register/ledger-core/split-register-control.cpp:1587
 msgid "_Discard Changes"
 msgstr "放弃(_D)"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1579
+#: gnucash/register/ledger-core/split-register-control.cpp:1589
 msgid "_Record Changes"
 msgstr "保存(_R)"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1867
+#: gnucash/register/ledger-core/split-register-control.cpp:1877
 msgid "Mark split as unreconciled?"
 msgstr "标记分录为未对账？"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1869
+#: gnucash/register/ledger-core/split-register-control.cpp:1879
 msgid ""
 "You are about to mark a reconciled split as unreconciled. Doing so might "
 "make future reconciliation difficult! Continue with this change?"
@@ -20407,7 +20435,7 @@ msgstr ""
 "您要把标记为已对账的分录标为未对账。这么做会让将来的对账工作变得困难！您确定"
 "要这么做么？"
 
-#: gnucash/register/ledger-core/split-register-control.cpp:1886
+#: gnucash/register/ledger-core/split-register-control.cpp:1896
 msgid "_Unreconcile"
 msgstr "未对账(_U)"
 
@@ -20436,7 +20464,7 @@ msgstr "交易的描述"
 
 #. Translators: 'L' is short for Linked Document
 #: gnucash/register/ledger-core/split-register-layout.c:705
-#: gnucash/register/ledger-core/split-register-model.c:339
+#: gnucash/register/ledger-core/split-register-model.c:343
 #: gnucash/report/reports/standard/new-owner-report.scm:209
 #: gnucash/report/reports/standard/new-owner-report.scm:800
 #: gnucash/report/reports/standard/new-owner-report.scm:840
@@ -20485,7 +20513,7 @@ msgctxt "sample"
 msgid "(x + 0.33 * y + (x+y) )"
 msgstr "sample:(x + 0.33 * y + (x+y) )"
 
-#: gnucash/register/ledger-core/split-register-load.c:298
+#: gnucash/register/ledger-core/split-register-load.c:301
 msgid ""
 "Could not determine the account currency. Using the default currency "
 "provided by your system."
@@ -20495,153 +20523,153 @@ msgstr "无法确定科目货币，将使用系统默认选项。"
 #. * Accounts Receivable ledgers for the number of the invoice or bill
 #. * associated with the transaction.
 #.
-#: gnucash/register/ledger-core/split-register-model.c:258
+#: gnucash/register/ledger-core/split-register-model.c:262
 msgid "Ref"
 msgstr "参考"
 
-#: gnucash/register/ledger-core/split-register-model.c:274
+#: gnucash/register/ledger-core/split-register-model.c:278
 msgid "T-Ref"
 msgstr "T-Ref"
 
-#: gnucash/register/ledger-core/split-register-model.c:283
+#: gnucash/register/ledger-core/split-register-model.c:287
 #: gnucash/report/reports/standard/register.scm:133
 msgid "T-Num"
 msgstr "T-编号"
 
-#: gnucash/register/ledger-core/split-register-model.c:409
+#: gnucash/register/ledger-core/split-register-model.c:413
 msgid "Exch. Rate"
 msgstr "汇率"
 
-#: gnucash/register/ledger-core/split-register-model.c:426
+#: gnucash/register/ledger-core/split-register-model.c:430
 msgid "Oth. Curr."
 msgstr "其他.货币."
 
-#: gnucash/register/ledger-core/split-register-model.c:443
-#: gnucash/register/ledger-core/split-register-model.c:467
+#: gnucash/register/ledger-core/split-register-model.c:447
+#: gnucash/register/ledger-core/split-register-model.c:471
 #, c-format
 msgid "Tot %s"
 msgstr "%s总计"
 
-#: gnucash/register/ledger-core/split-register-model.c:449
+#: gnucash/register/ledger-core/split-register-model.c:453
 msgid "Tot Credit"
 msgstr "贷方总计"
 
-#: gnucash/register/ledger-core/split-register-model.c:473
+#: gnucash/register/ledger-core/split-register-model.c:477
 msgid "Tot Debit"
 msgstr "借方总计"
 
-#: gnucash/register/ledger-core/split-register-model.c:482
+#: gnucash/register/ledger-core/split-register-model.c:486
 msgid "Tot Shares"
 msgstr "股票总计"
 
-#: gnucash/register/ledger-core/split-register-model.c:503
+#: gnucash/register/ledger-core/split-register-model.c:507
 msgid "Debit Formula"
 msgstr "借方"
 
-#: gnucash/register/ledger-core/split-register-model.c:510
+#: gnucash/register/ledger-core/split-register-model.c:514
 msgid "Credit Formula"
 msgstr "贷方"
 
-#: gnucash/register/ledger-core/split-register-model.c:532
+#: gnucash/register/ledger-core/split-register-model.c:536
 #, c-format
 msgid "Reconciled on %s"
 msgstr "%s 已对账"
 
-#: gnucash/register/ledger-core/split-register-model.c:1013
+#: gnucash/register/ledger-core/split-register-model.c:1017
 msgid "Scheduled"
 msgstr "按计划"
 
-#: gnucash/register/ledger-core/split-register-model.c:1062
+#: gnucash/register/ledger-core/split-register-model.c:1066
 msgid ""
 "Enter a reference, such as an invoice or check number, common to all entry "
 "lines (splits)"
 msgstr "输入交易参照，像是发票或支票号码，所有分录都相同"
 
-#: gnucash/register/ledger-core/split-register-model.c:1064
+#: gnucash/register/ledger-core/split-register-model.c:1068
 msgid ""
 "Enter a reference, such as an invoice or check number, unique to each entry "
 "line (split)"
 msgstr "输入交易参照，像是发票或支票号码，每条分录都不同"
 
-#: gnucash/register/ledger-core/split-register-model.c:1069
+#: gnucash/register/ledger-core/split-register-model.c:1073
 msgid ""
 "Enter a reference, such as a check number, common to all entry lines (splits)"
 msgstr "输入交易参照，像是发票或支票号码，所有分录都相同"
 
-#: gnucash/register/ledger-core/split-register-model.c:1071
+#: gnucash/register/ledger-core/split-register-model.c:1075
 msgid ""
 "Enter a reference, such as a check number, unique to each entry line (split)"
 msgstr "输入一个参照物，如支票号码，对每个输入行来说都是独一无二的（分割）"
 
-#: gnucash/register/ledger-core/split-register-model.c:1092
+#: gnucash/register/ledger-core/split-register-model.c:1096
 msgid ""
 "Enter a transaction reference, such as an invoice or check number, common to "
 "all entry lines (splits)"
 msgstr "输入交易参照，像是发票或支票号码，所有分录都相同"
 
-#: gnucash/register/ledger-core/split-register-model.c:1096
+#: gnucash/register/ledger-core/split-register-model.c:1100
 msgid ""
 "Enter a transaction reference that will be common to all entry lines (splits)"
 msgstr "输入交易参考号，由所有分录行共用。"
 
-#: gnucash/register/ledger-core/split-register-model.c:1132
+#: gnucash/register/ledger-core/split-register-model.c:1136
 msgid "Enter the name of the Customer"
 msgstr "输入此客户的名称"
 
-#: gnucash/register/ledger-core/split-register-model.c:1135
+#: gnucash/register/ledger-core/split-register-model.c:1139
 msgid "Enter the name of the Vendor"
 msgstr "输入此供应商的名称"
 
-#: gnucash/register/ledger-core/split-register-model.c:1138
+#: gnucash/register/ledger-core/split-register-model.c:1142
 msgid "Enter a description of the transaction"
 msgstr "输入此交易的描述"
 
-#: gnucash/register/ledger-core/split-register-model.c:1169
+#: gnucash/register/ledger-core/split-register-model.c:1173
 msgid "Enter notes for the transaction"
 msgstr "输入此交易的说明"
 
-#: gnucash/register/ledger-core/split-register-model.c:1202
+#: gnucash/register/ledger-core/split-register-model.c:1206
 msgid "Reason the transaction was voided"
 msgstr "使交易事项无效的原因"
 
-#: gnucash/register/ledger-core/split-register-model.c:1301
+#: gnucash/register/ledger-core/split-register-model.c:1305
 msgid "Enter an action type, or choose one from the list"
 msgstr "输入交易的类型，或从列表中选择一个"
 
-#: gnucash/register/ledger-core/split-register-model.c:1302
+#: gnucash/register/ledger-core/split-register-model.c:1306
 msgid ""
 "Enter a reference number, such as the next check number, or choose an action "
 "type from the list"
 msgstr "输入此交易的收入/支出科目，或从列表中选择一个"
 
-#: gnucash/register/ledger-core/split-register-model.c:1330
+#: gnucash/register/ledger-core/split-register-model.c:1334
 msgid "Enter a description of the split"
 msgstr "输入此分录的描述"
 
-#: gnucash/register/ledger-core/split-register-model.c:1404
+#: gnucash/register/ledger-core/split-register-model.c:1408
 msgid "Enter the effective share price"
 msgstr "输入有效股份价格"
 
-#: gnucash/register/ledger-core/split-register-model.c:1440
+#: gnucash/register/ledger-core/split-register-model.c:1444
 msgid "Enter the number of shares bought or sold"
 msgstr "输入买或卖的股份数量"
 
-#: gnucash/register/ledger-core/split-register-model.c:1492
-#: gnucash/register/ledger-core/split-register-model.c:1559
+#: gnucash/register/ledger-core/split-register-model.c:1496
+#: gnucash/register/ledger-core/split-register-model.c:1563
 msgid "Enter the account to transfer from, or choose one from the list"
 msgstr "输入转账源科目，或从列表中选择一个"
 
-#: gnucash/register/ledger-core/split-register-model.c:1569
+#: gnucash/register/ledger-core/split-register-model.c:1573
 msgid ""
 "This transaction has multiple splits; press the Split button to see them all"
 msgstr "这个交易事项有多笔分录；按下分录按钮以查看全部的分录"
 
-#: gnucash/register/ledger-core/split-register-model.c:1572
+#: gnucash/register/ledger-core/split-register-model.c:1576
 msgid ""
 "This transaction is a stock split; press the Split button to see details"
 msgstr "这个交易事项是一个股票拆分；按下“分录”按钮以查看详情"
 
-#: gnucash/register/ledger-core/split-register-model.c:2090
+#: gnucash/register/ledger-core/split-register-model.c:2094
 #, c-format
 msgid ""
 "Cannot modify or delete this transaction. This transaction is marked read-"
@@ -20653,11 +20681,11 @@ msgstr ""
 "\n"
 "“%s”"
 
-#: gnucash/register/ledger-core/split-register-model.c:2203
+#: gnucash/register/ledger-core/split-register-model.c:2211
 msgid "Change transaction containing a reconciled split?"
 msgstr "修改已对账的分录的内容？"
 
-#: gnucash/register/ledger-core/split-register-model.c:2205
+#: gnucash/register/ledger-core/split-register-model.c:2213
 #, c-format
 msgid ""
 "The transaction you are about to change contains reconciled splits in the "
@@ -20671,11 +20699,11 @@ msgstr ""
 "\n"
 "这么做会让将来的对账工作变得困难！您确定要这么做么？"
 
-#: gnucash/register/ledger-core/split-register-model.c:2215
+#: gnucash/register/ledger-core/split-register-model.c:2223
 msgid "Change reconciled split?"
 msgstr "改变对账分录？"
 
-#: gnucash/register/ledger-core/split-register-model.c:2217
+#: gnucash/register/ledger-core/split-register-model.c:2225
 msgid ""
 "You are about to change a protected field of a reconciled split. If you "
 "continue editing this split it will be unreconciled. This might make future "
@@ -20683,23 +20711,23 @@ msgid ""
 msgstr ""
 "您要修改已对账的分录。这么做会使将来的对账变得困难！您确定要继续这个改变么？"
 
-#: gnucash/register/ledger-core/split-register-model.c:2239
+#: gnucash/register/ledger-core/split-register-model.c:2247
 msgid "Chan_ge Split"
 msgstr "修改分录(_G)"
 
-#: gnucash/register/ledger-core/split-register-model.c:2242
+#: gnucash/register/ledger-core/split-register-model.c:2250
 msgid "Chan_ge Transaction"
 msgstr "改变交易事项(_G)"
 
-#: gnucash/register/ledger-core/split-register-model.c:2343
+#: gnucash/register/ledger-core/split-register-model.c:2351
 msgid "Enter debit formula for real transaction"
 msgstr "输入实际交易的借方数值"
 
-#: gnucash/register/ledger-core/split-register-model.c:2379
+#: gnucash/register/ledger-core/split-register-model.c:2387
 msgid "Enter credit formula for real transaction"
 msgstr "输入实际交易的贷方数值"
 
-#: gnucash/register/register-gnome/completioncell-gnome.c:75
+#: gnucash/register/register-gnome/completioncell-gnome.c:76
 msgid "Don't autocomplete"
 msgstr "不要自动补全"
 
@@ -20722,7 +20750,7 @@ msgstr "列表"
 msgid "Template file \"~a\" can not be read"
 msgstr "无法读取模板\"~a\""
 
-#: gnucash/report/html-chart.scm:476
+#: gnucash/report/html-chart.scm:475
 msgid "Load"
 msgstr "加载"
 
@@ -20806,44 +20834,44 @@ msgstr "居中的标签单元的字体信息。"
 msgid "Can't save style sheet"
 msgstr "不能保存样式表"
 
-#: gnucash/report/html-utilities.scm:263
+#: gnucash/report/html-utilities.scm:266
 msgid "Exchange rate"
 msgid_plural "Exchange rates"
 msgstr[0] "汇率"
 
-#: gnucash/report/html-utilities.scm:276
+#: gnucash/report/html-utilities.scm:279
 msgid "No budgets exist. You must create at least one budget."
 msgstr "没有预算，请先创建一个。"
 
-#: gnucash/report/html-utilities.scm:293
+#: gnucash/report/html-utilities.scm:296
 #: gnucash/ui/gnc-plugin-page-report.ui:242
 msgid "Edit report options"
 msgstr "编辑报表选项"
 
-#: gnucash/report/html-utilities.scm:309
+#: gnucash/report/html-utilities.scm:312
 #: gnucash/report/reports/standard/balsheet-pnl.scm:143
 #: gnucash/report/reports/standard/new-owner-report.scm:925
 msgid "Disabled"
 msgstr "禁用"
 
-#: gnucash/report/html-utilities.scm:361
+#: gnucash/report/html-utilities.scm:364
 msgid "This report requires you to specify certain report options."
 msgstr "这个报表需要您指定特定的报表选项。"
 
-#: gnucash/report/html-utilities.scm:368
+#: gnucash/report/html-utilities.scm:371
 msgid "No accounts selected"
 msgstr "没有选定科目"
 
-#: gnucash/report/html-utilities.scm:369
+#: gnucash/report/html-utilities.scm:372
 msgid "This report requires accounts to be selected in the report options."
 msgstr "需要在报表选项中选择科目。"
 
-#: gnucash/report/html-utilities.scm:376
+#: gnucash/report/html-utilities.scm:379
 #: gnucash/report/reports/standard/price-scatter.scm:250
 msgid "No data"
 msgstr "无数据"
 
-#: gnucash/report/html-utilities.scm:377
+#: gnucash/report/html-utilities.scm:380
 msgid ""
 "The selected accounts contain no data/transactions (or only zeroes) for the "
 "selected time period"
@@ -21065,35 +21093,35 @@ msgstr "不显示父账户的任何小计。"
 msgid "Show subtotals"
 msgstr "显示"
 
-#: gnucash/report/report-core.scm:154
+#: gnucash/report/report-core.scm:156
 msgid "_Assets & Liabilities"
 msgstr "资产负债(_A)"
 
-#: gnucash/report/report-core.scm:155
+#: gnucash/report/report-core.scm:157
 msgid "_Income & Expense"
 msgstr "收入支出(_I)"
 
-#: gnucash/report/report-core.scm:156 gnucash/ui/gnc-plugin-budget.ui:6
+#: gnucash/report/report-core.scm:158 gnucash/ui/gnc-plugin-budget.ui:6
 msgid "B_udget"
 msgstr "预算(_U)"
 
-#: gnucash/report/report-core.scm:157
+#: gnucash/report/report-core.scm:159
 msgid "_Taxes"
 msgstr "税额(_U)"
 
-#: gnucash/report/report-core.scm:158
+#: gnucash/report/report-core.scm:160
 msgid "E_xamples"
 msgstr "示例(_X)"
 
-#: gnucash/report/report-core.scm:159
+#: gnucash/report/report-core.scm:161
 msgid "_Experimental"
 msgstr "测试(_E)"
 
-#: gnucash/report/report-core.scm:160
+#: gnucash/report/report-core.scm:162
 msgid "_Multicolumn"
 msgstr "多列报表(_M)"
 
-#: gnucash/report/report-core.scm:164
+#: gnucash/report/report-core.scm:166
 #: gnucash/report/reports/standard/invoice.scm:446
 #: gnucash/report/reports/standard/invoice.scm:450
 #: gnucash/report/reports/standard/invoice.scm:454
@@ -21128,24 +21156,24 @@ msgstr "多列报表(_M)"
 msgid "Display"
 msgstr "显示"
 
-#: gnucash/report/report-core.scm:165
+#: gnucash/report/report-core.scm:167
 msgid "Report name"
 msgstr "名称"
 
-#: gnucash/report/report-core.scm:166
+#: gnucash/report/report-core.scm:168
 msgid "Stylesheet"
 msgstr "风格"
 
-#: gnucash/report/report-core.scm:167 gnucash/ui/gnc-main-window.ui:357
+#: gnucash/report/report-core.scm:169 gnucash/ui/gnc-main-window.ui:357
 #: gnucash/ui/gnc-plugin-business.ui:159
 msgid "_Business"
 msgstr "企业(_B)"
 
-#: gnucash/report/report-core.scm:168
+#: gnucash/report/report-core.scm:170
 msgid "Invoice Number"
 msgstr "发票编号"
 
-#: gnucash/report/report-core.scm:216
+#: gnucash/report/report-core.scm:218
 msgid ""
 "One of your reports has a report-guid that is a duplicate. Please check the "
 "report system, especially your saved reports, for a report with this report-"
@@ -21154,19 +21182,19 @@ msgstr ""
 "其中一个您的科目有重复的报表GUID。请检查报表系统，特别是使用这个报表GUID的您"
 "的保存的报表: "
 
-#: gnucash/report/report-core.scm:217
+#: gnucash/report/report-core.scm:219
 msgid "Wrong report definition: "
 msgstr "设置配置路径: "
 
-#: gnucash/report/report-core.scm:218
+#: gnucash/report/report-core.scm:220
 msgid " Report is missing a GUID."
 msgstr " 表格中没有GUID。"
 
-#: gnucash/report/report-core.scm:309
+#: gnucash/report/report-core.scm:311
 msgid "Enter a descriptive name for this report."
 msgstr "为该报告输入一个描述性的名称。"
 
-#: gnucash/report/report-core.scm:316
+#: gnucash/report/report-core.scm:318
 msgid "Select a stylesheet for the report."
 msgstr "为报表选择一个样式表。"
 
@@ -21342,7 +21370,7 @@ msgid "Maximum"
 msgstr "最大"
 
 #: gnucash/report/reports/example/average-balance.scm:137
-#: gnucash/report/reports/standard/balance-forecast.scm:235
+#: gnucash/report/reports/standard/balance-forecast.scm:238
 msgid "Minimum"
 msgstr "最小"
 
@@ -22003,7 +22031,7 @@ msgstr "支出"
 #: gnucash/report/reports/standard/budget-balance-sheet.scm:619
 #: gnucash/report/reports/standard/net-charts.scm:332
 #: gnucash/report/reports/standard/net-charts.scm:402
-#: gnucash/report/report-utilities.scm:200
+#: gnucash/report/report-utilities.scm:204
 msgid "Assets"
 msgstr "资产"
 
@@ -22012,7 +22040,7 @@ msgstr "资产"
 #: gnucash/report/reports/standard/budget-balance-sheet.scm:654
 #: gnucash/report/reports/standard/net-charts.scm:353
 #: gnucash/report/reports/standard/net-charts.scm:402
-#: gnucash/report/report-utilities.scm:201
+#: gnucash/report/report-utilities.scm:205
 msgid "Liabilities"
 msgstr "负债"
 
@@ -22572,11 +22600,11 @@ msgid ""
 "balance including scheduled transactions."
 msgstr "最低余额最低余额显示每个日期包含计划交易的计划最低余额。"
 
-#: gnucash/report/reports/standard/balance-forecast.scm:254
+#: gnucash/report/reports/standard/balance-forecast.scm:257
 msgid "Target"
 msgstr "费用"
 
-#: gnucash/report/reports/standard/balance-forecast.scm:264
+#: gnucash/report/reports/standard/balance-forecast.scm:267
 msgid "Reserve"
 msgstr "准备"
 
@@ -22715,8 +22743,8 @@ msgid "Trading Losses"
 msgstr "交易亏损"
 
 #: gnucash/report/reports/standard/balance-sheet.scm:485
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1055
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1070
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1056
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1071
 #: gnucash/report/reports/standard/budget-balance-sheet.scm:725
 #: gnucash/report/reports/standard/trial-balance.scm:697
 msgid "Unrealized Gains"
@@ -23013,34 +23041,34 @@ msgstr "总是"
 msgid "Total For "
 msgstr "合计 "
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1044
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1045
 #: libgnucash/engine/Account.cpp:4290
 msgid "Asset"
 msgstr "资产"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1047
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1048
 #: libgnucash/engine/Account.cpp:4292
 msgid "Liability"
 msgstr "负债"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1065
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1066
 msgid "Liability and Equity"
 msgstr "负债/所有者权益"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1083
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1226
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1084
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1227
 msgid "Exchange Rates"
 msgstr "汇率"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1093
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1094
 msgid "Barchart"
 msgstr "柱状图"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1156
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1157
 msgid " to "
 msgstr " 到 "
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1215
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1216
 #: gnucash/report/reports/standard/customer-summary.scm:110
 #: gnucash/report/reports/standard/customer-summary.scm:286
 #: gnucash/report/reports/standard/net-charts.scm:353
@@ -23050,16 +23078,16 @@ msgstr " 到 "
 msgid "Expense"
 msgstr "费用"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1219
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1220
 #: gnucash/report/reports/standard/trial-balance.scm:823
 msgid "Net Income"
 msgstr "净收益"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1252
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1253
 msgid "Balance Sheet (Multicolumn)"
 msgstr "资产负债表（多列）"
 
-#: gnucash/report/reports/standard/balsheet-pnl.scm:1253
+#: gnucash/report/reports/standard/balsheet-pnl.scm:1254
 msgid "Income Statement (Multicolumn)"
 msgstr "收支表（多列）"
 
@@ -25309,7 +25337,7 @@ msgid "Sale"
 msgstr "收益"
 
 #: gnucash/report/reports/standard/new-owner-report.scm:56
-#: gnucash/report/report-utilities.scm:199
+#: gnucash/report/report-utilities.scm:203
 msgid "Credits"
 msgstr "贷方"
 
@@ -26282,7 +26310,7 @@ msgid "Equity Accounts"
 msgstr "所有者权益科目"
 
 #: gnucash/report/reports/support/balsheet-eg.eguile.scm:182
-#: gnucash/report/report-utilities.scm:214
+#: gnucash/report/report-utilities.scm:218
 msgid "Trading Accounts"
 msgstr "贸易科目"
 
@@ -26328,57 +26356,57 @@ msgstr "网站"
 msgid "Invoice Date"
 msgstr "发票日期"
 
-#: gnucash/report/report-utilities.scm:202
+#: gnucash/report/report-utilities.scm:206
 msgid "Stocks"
 msgstr "股票"
 
-#: gnucash/report/report-utilities.scm:203
+#: gnucash/report/report-utilities.scm:207
 msgid "Mutual Funds"
 msgstr "共同基金"
 
-#: gnucash/report/report-utilities.scm:204
+#: gnucash/report/report-utilities.scm:208
 msgid "Currencies"
 msgstr "现金"
 
-#: gnucash/report/report-utilities.scm:207
+#: gnucash/report/report-utilities.scm:211
 msgid "Equities"
 msgstr "权益"
 
-#: gnucash/report/report-utilities.scm:208
+#: gnucash/report/report-utilities.scm:212
 msgid "Checking"
 msgstr "检查"
 
-#: gnucash/report/report-utilities.scm:209
+#: gnucash/report/report-utilities.scm:213
 msgid "Savings"
 msgstr "储蓄"
 
-#: gnucash/report/report-utilities.scm:210
+#: gnucash/report/report-utilities.scm:214
 msgid "Money Market"
 msgstr "金融市场"
 
-#: gnucash/report/report-utilities.scm:211
+#: gnucash/report/report-utilities.scm:215
 msgid "Accounts Receivable"
 msgstr "应收账款"
 
-#: gnucash/report/report-utilities.scm:212
+#: gnucash/report/report-utilities.scm:216
 msgid "Accounts Payable"
 msgstr "应付账款"
 
-#: gnucash/report/report-utilities.scm:213
+#: gnucash/report/report-utilities.scm:217
 msgid "Credit Lines"
 msgstr "信用额度"
 
-#: gnucash/report/report-utilities.scm:639
+#: gnucash/report/report-utilities.scm:611
 #, scheme-format
 msgid "Building '~a' report …"
 msgstr "“~a”的报表创建中…"
 
-#: gnucash/report/report-utilities.scm:645
+#: gnucash/report/report-utilities.scm:617
 #, scheme-format
 msgid "Rendering '~a' report …"
 msgstr "“~a”的报表渲染中…"
 
-#: gnucash/report/report-utilities.scm:647
+#: gnucash/report/report-utilities.scm:619
 msgid "Untitled"
 msgstr "直到"
 
@@ -29207,182 +29235,182 @@ msgstr "内存不足"
 msgid "Numeric error"
 msgstr "数字错误"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:165
+#: libgnucash/app-utils/gnc-quotes.cpp:186
 msgid "Failed to initialize Finance::Quote: "
 msgstr "初始化Finance::Quote失败： "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:172
+#: libgnucash/app-utils/gnc-quotes.cpp:193
 msgid "Finance::Quote check returned error "
 msgstr "检查Finance::Quote出错 "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:180
+#: libgnucash/app-utils/gnc-quotes.cpp:201
 msgid "No Finance::Quote Version"
 msgstr "无Finance::Quote版本"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:303
+#: libgnucash/app-utils/gnc-quotes.cpp:324
 msgid "GncQuotes::Fetch called with no book."
 msgstr "调用GncQuotes::Fetch时无账簿。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:321
+#: libgnucash/app-utils/gnc-quotes.cpp:342
 msgid "GncQuotes::Fetch called with no commodities."
 msgstr "调用GncQuotes::Fetch时无大宗商品。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:332
+#: libgnucash/app-utils/gnc-quotes.cpp:353
 #, fuzzy
 #| msgid "GncQuotes::Fetch called with no book."
 msgid "GncQuotes::Report called with no source."
 msgstr "调用GncQuotes::Fetch时无账簿。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:338
+#: libgnucash/app-utils/gnc-quotes.cpp:359
 msgid "There were no commodities for which to retrieve quotes."
 msgstr "这个报表没有大宗商品。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:353
+#: libgnucash/app-utils/gnc-quotes.cpp:374
 msgid "Finance::Quote retrieval failed with error "
 msgstr "GncQuotes::Fetch接收出错 "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:371
-#: libgnucash/app-utils/gnc-quotes.cpp:856
+#: libgnucash/app-utils/gnc-quotes.cpp:392
+#: libgnucash/app-utils/gnc-quotes.cpp:877
 msgid "Finance::Quote returned no data and set no error."
 msgstr "Finance::Quote返回数据为空并且没有报错。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:373
+#: libgnucash/app-utils/gnc-quotes.cpp:394
 msgid "Finance::Quote returned an error: "
 msgstr "Finance::Quote返回错误： "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:377
+#: libgnucash/app-utils/gnc-quotes.cpp:398
 msgid "Finance::Quote reported failure set no error."
 msgstr "Finance::Quote报告了错误并且没有报错。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:379
+#: libgnucash/app-utils/gnc-quotes.cpp:400
 msgid "Finance::Quote reported failure with error: "
 msgstr "Finance::Quote报告错误如下： "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:382
+#: libgnucash/app-utils/gnc-quotes.cpp:403
 msgid "Finance::Quote returned a quote with no currency."
 msgstr "Finance::Quote返回了没有货币的报价。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:385
+#: libgnucash/app-utils/gnc-quotes.cpp:406
 msgid ""
 "Finance::Quote returned a quote with a currency GnuCash doesn't know about."
 msgstr "Finance::Quote返回了一个GnuCash不能解析的货币的报价。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:388
+#: libgnucash/app-utils/gnc-quotes.cpp:409
 msgid "Finance::Quote returned a quote with no price element."
 msgstr "Finance::Quote返回一个没有价格元素的报价。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:391
+#: libgnucash/app-utils/gnc-quotes.cpp:412
 msgid ""
 "Finance::Quote returned a quote with a price that GnuCash was unable to "
 "covert to a number."
 msgstr "Finance::Quote返回一个GnuCash不能转换为数字的报价。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:395
+#: libgnucash/app-utils/gnc-quotes.cpp:416
 msgid "The quote has no error set."
 msgstr "报价没有错误。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:404
+#: libgnucash/app-utils/gnc-quotes.cpp:425
 msgid "Quotes for the following commodities were unavailable or unusable:\n"
 msgstr "以下大宗商品的报价不可用或不能用：\n"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:490
+#: libgnucash/app-utils/gnc-quotes.cpp:511
 msgid "Currency quotes requires at least two currencies"
 msgstr "货币报价需要至少2个货币"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:758
-#: libgnucash/app-utils/gnc-quotes.cpp:768
+#: libgnucash/app-utils/gnc-quotes.cpp:779
+#: libgnucash/app-utils/gnc-quotes.cpp:789
 msgid "Failed to parse result returned by Finance::Quote."
 msgstr "解析由Finance::Quote返回的结果失败。"
 
 #. Translators: This labels the return value of a query to Finance::Quote written in an error.
-#: libgnucash/app-utils/gnc-quotes.cpp:761
-#: libgnucash/app-utils/gnc-quotes.cpp:776
+#: libgnucash/app-utils/gnc-quotes.cpp:782
+#: libgnucash/app-utils/gnc-quotes.cpp:797
 msgid "Result:"
 msgstr ""
 
 #. Translators: This is the error message reported by the Online Quotes processing code.
-#: libgnucash/app-utils/gnc-quotes.cpp:771
+#: libgnucash/app-utils/gnc-quotes.cpp:792
 msgid "Error message:"
 msgstr "错误消息："
 
 #. Translators: Means that the preceding element is required
-#: libgnucash/app-utils/gnc-quotes.cpp:816
+#: libgnucash/app-utils/gnc-quotes.cpp:837
 msgctxt "Finance::Quote"
 msgid "required"
 msgstr "需要"
 
 #. Translators: Means that the quote will work best if the preceding element is provided
-#: libgnucash/app-utils/gnc-quotes.cpp:818
+#: libgnucash/app-utils/gnc-quotes.cpp:839
 msgctxt "Finance::Quote"
 msgid "recommended"
 msgstr "推荐"
 
 #. Translators: Means that one of the indicated elements is required
-#: libgnucash/app-utils/gnc-quotes.cpp:820
+#: libgnucash/app-utils/gnc-quotes.cpp:841
 msgctxt "Finance::Quote"
 msgid "one of these"
 msgstr "其中的一个"
 
 #. Translators: Means that a required element wasn't reported. The *s are for emphasis.
-#: libgnucash/app-utils/gnc-quotes.cpp:822
+#: libgnucash/app-utils/gnc-quotes.cpp:843
 msgctxt "Finance::Quote"
 msgid "**missing**"
 msgstr "**丢失**"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:829
+#: libgnucash/app-utils/gnc-quotes.cpp:850
 msgid "Finance::Quote fields GnuCash uses:"
 msgstr "GnuCash使用以下Finance::Quote的字段："
 
 #. Translators: The stock or Mutual Fund symbol, ISIN, CUSIP, etc.
-#: libgnucash/app-utils/gnc-quotes.cpp:831
+#: libgnucash/app-utils/gnc-quotes.cpp:852
 msgctxt "Finance::Quote"
 msgid "symbol: "
 msgstr "符号： "
 
 #. Translators: The date of the quote.
-#: libgnucash/app-utils/gnc-quotes.cpp:833
+#: libgnucash/app-utils/gnc-quotes.cpp:854
 msgctxt "Finance::Quote"
 msgid "date: "
 msgstr "日期： "
 
 #. Translators: The quote currency
-#: libgnucash/app-utils/gnc-quotes.cpp:835
+#: libgnucash/app-utils/gnc-quotes.cpp:856
 msgctxt "Finance::Quote"
 msgid "currency: "
 msgstr "货币: "
 
 #. Translators: The quote is for the most recent trade on the exchange
-#: libgnucash/app-utils/gnc-quotes.cpp:841
+#: libgnucash/app-utils/gnc-quotes.cpp:862
 msgctxt "Finance::Quote"
 msgid "last: "
 msgstr "上： "
 
 #. Translators: The quote is for an open-ended mutual fund and represents the net asset value of one unit of the fund at the previous close of trading.
-#: libgnucash/app-utils/gnc-quotes.cpp:843
+#: libgnucash/app-utils/gnc-quotes.cpp:864
 msgctxt "Finance::Quote"
 msgid "nav: "
 msgstr "导航： "
 
 #. Translators: The quote is neither a last trade nor an NAV.
-#: libgnucash/app-utils/gnc-quotes.cpp:845
+#: libgnucash/app-utils/gnc-quotes.cpp:866
 msgctxt "Finance::Quote"
 msgid "price: "
 msgstr "价格： "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:865
+#: libgnucash/app-utils/gnc-quotes.cpp:886
 msgid "Finance::Quote reported a failure for symbol "
 msgstr "Finance::Quote报告了一个符号失败 "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:868
+#: libgnucash/app-utils/gnc-quotes.cpp:889
 msgid "Finance::Quote failed silently to retrieve a quote for symbol "
 msgstr "Finance::Quote因接收了符号报价而后台报错 "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:931
+#: libgnucash/app-utils/gnc-quotes.cpp:952
 msgid ""
 "GnuCash submitted invalid json to Finance::Quote. The details were logged."
 msgstr "GnuCash提交了无效的json到Finance::Quote。详情被记录到了log中。"
 
-#: libgnucash/app-utils/gnc-quotes.cpp:937
+#: libgnucash/app-utils/gnc-quotes.cpp:958
 msgid ""
 "Perl is missing the following modules. Please see https://wiki.gnucash.org/"
 "wiki/Online_Quotes#Finance::Quote for detailed corrective action. "
@@ -29390,7 +29418,7 @@ msgstr ""
 "Perl缺少以下模块。请参阅 https://wiki.gnucash.org/wiki/"
 "Online_Quotes#Finance::Quote ，了解详细的纠正措施。 "
 
-#: libgnucash/app-utils/gnc-quotes.cpp:943
+#: libgnucash/app-utils/gnc-quotes.cpp:964
 msgid "Unrecognized Finance::Quote Error: "
 msgstr "不能识别的Finance::Quote错误： "
 
@@ -29633,25 +29661,23 @@ msgid "Australian Stock Exchange, AU"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:196
-#, fuzzy
-#| msgid "Bill number"
-msgctxt "FQ Source"
-msgid "Bloomberg"
-msgstr "账单编号"
-
-#: libgnucash/engine/gnc-commodity.cpp:197
 msgctxt "FQ Source"
 msgid "Italian Stock Exchange, IT"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:198
+#: libgnucash/engine/gnc-commodity.cpp:197
 msgctxt "FQ Source"
 msgid "BSE India, IN"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:199
+#: libgnucash/engine/gnc-commodity.cpp:198
 msgctxt "FQ Source"
 msgid "Bucharest Stock Exchange, RO"
+msgstr ""
+
+#: libgnucash/engine/gnc-commodity.cpp:199
+msgctxt "FQ Source"
+msgid "China Merchants Bank, CN"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:200
@@ -29678,268 +29704,191 @@ msgstr "投资"
 
 #: libgnucash/engine/gnc-commodity.cpp:204
 msgctxt "FQ Source"
-msgid "DWS, DE"
+msgid "Financial Times Funds service, GB"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:205
 msgctxt "FQ Source"
-msgid "Financial Times Funds service, GB"
+msgid "Finanzpartner, DE"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:206
 msgctxt "FQ Source"
-msgid "Finanzpartner, DE"
+msgid "FondsWeb, DE"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:207
 msgctxt "FQ Source"
-msgid "FondsWeb, DE"
+msgid "GoldMoney precious metals"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:208
 msgctxt "FQ Source"
-msgid "GoldMoney precious metals"
+msgid "Google Web, US Stocks"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:209
 msgctxt "FQ Source"
-msgid "Google Web, US Stocks"
+msgid "Market Watch"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:210
 msgctxt "FQ Source"
-msgid "IEX (Investors Exchange), US"
+msgid "Morningstar, CH"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:211
 msgctxt "FQ Source"
-msgid "Market Watch"
+msgid "Morningstar, GB"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:212
 msgctxt "FQ Source"
-msgid "Morningstar, AU"
+msgid "Morningstar, JP"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:213
 msgctxt "FQ Source"
-msgid "Morningstar, CH"
+msgid "Motley Fool"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:214
 msgctxt "FQ Source"
-msgid "Morningstar, GB"
+msgid "New Zealand stock eXchange, NZ"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:215
 msgctxt "FQ Source"
-msgid "Morningstar, JP"
+msgid "NSE (National Stock Exchange), IN"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:216
 msgctxt "FQ Source"
-msgid "Motley Fool"
+msgid "OnVista, DE"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:217
 msgctxt "FQ Source"
-msgid "New Zealand stock eXchange, NZ"
+msgid "Paris Stock Exchange/Boursorama, FR"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:218
 msgctxt "FQ Source"
-msgid "NSE (National Stock Exchange), IN"
+msgid "S-Investor, DE"
 msgstr ""
 
 #: libgnucash/engine/gnc-commodity.cpp:219
 msgctxt "FQ Source"
-msgid "OnVista, DE"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:220
-msgctxt "FQ Source"
-msgid "Paris Stock Exchange/Boursorama, FR"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:221
-msgctxt "FQ Source"
-msgid "S-Investor, DE"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:222
-msgctxt "FQ Source"
 msgid "Sharenet, ZA"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:223
+#: libgnucash/engine/gnc-commodity.cpp:220
 #, fuzzy
 #| msgid "Show Exchange Rates"
 msgctxt "FQ Source"
 msgid "SIX Swiss Exchange shares, CH"
 msgstr "显示汇率"
 
-#: libgnucash/engine/gnc-commodity.cpp:224
-msgctxt "FQ Source"
-msgid "Skandinaviska Enskilda Banken, SE"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:225
+#: libgnucash/engine/gnc-commodity.cpp:221
 #, fuzzy
 #| msgid "Stock"
 msgctxt "FQ Source"
 msgid "StockData"
 msgstr "股票"
 
-#: libgnucash/engine/gnc-commodity.cpp:226
+#: libgnucash/engine/gnc-commodity.cpp:222
 msgctxt "FQ Source"
 msgid "Stooq, PL"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:227
-msgctxt "FQ Source"
-msgid "T. Rowe Price, US"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:228
+#: libgnucash/engine/gnc-commodity.cpp:223
 msgctxt "FQ Source"
 msgid "Tesouro Direto bonds, BR"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:229
-msgctxt "FQ Source"
-msgid "TIAA-CREF, US"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:230
+#: libgnucash/engine/gnc-commodity.cpp:224
 msgctxt "FQ Source"
 msgid "Toronto Stock eXchange, CA"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:231
+#: libgnucash/engine/gnc-commodity.cpp:225
 msgctxt "FQ Source"
 msgid "Tradegate, DE"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:232
+#: libgnucash/engine/gnc-commodity.cpp:226
 msgctxt "FQ Source"
 msgid "Treasury Direct bonds, US"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:233
+#: libgnucash/engine/gnc-commodity.cpp:227
 msgctxt "FQ Source"
 msgid "Twelve Data"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:234
+#: libgnucash/engine/gnc-commodity.cpp:228
 #, fuzzy
 #| msgid "Investments"
 msgctxt "FQ Source"
 msgid "Union Investment, DE"
 msgstr "投资"
 
-#: libgnucash/engine/gnc-commodity.cpp:235
+#: libgnucash/engine/gnc-commodity.cpp:229
 msgctxt "FQ Source"
 msgid "US Govt. Thrift Savings Plan"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:236
+#: libgnucash/engine/gnc-commodity.cpp:230
 msgctxt "FQ Source"
 msgid "XETRA, DE"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:237
+#: libgnucash/engine/gnc-commodity.cpp:231
 msgctxt "FQ Source"
 msgid "Yahoo as JSON"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:238
+#: libgnucash/engine/gnc-commodity.cpp:232
 msgctxt "FQ Source"
 msgid "Yahoo Web"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:239
+#: libgnucash/engine/gnc-commodity.cpp:233
 msgctxt "FQ Source"
 msgid "YH Finance (FinanceAPI)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:244
-#, fuzzy
-#| msgid "Australia BAS"
-msgctxt "FQ Source"
-msgid "Australia (ASX)"
-msgstr "澳大利亚BAS"
-
-#: libgnucash/engine/gnc-commodity.cpp:245
-msgctxt "FQ Source"
-msgid "Australia Funds (MorningstarAU)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:246
+#: libgnucash/engine/gnc-commodity.cpp:239
 msgctxt "FQ Source"
 msgid "Canada (Alphavantage, TMX)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:247
-msgctxt "FQ Source"
-msgid "Dutch (AEX)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:248
+#: libgnucash/engine/gnc-commodity.cpp:240
 msgctxt "FQ Source"
 msgid "Europe (ASEGR, Bourso, …)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:249
-msgctxt "FQ Source"
-msgid "France (Bourso)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:250
-msgctxt "FQ Source"
-msgid "Greece (ASEGR)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:251
+#: libgnucash/engine/gnc-commodity.cpp:241
 msgctxt "FQ Source"
 msgid "India (BSEIndia, NSEIndia)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:252
-msgctxt "FQ Source"
-msgid "India Mutual (AMFI)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:253
+#: libgnucash/engine/gnc-commodity.cpp:242
 msgctxt "FQ Source"
 msgid "Nasdaq (Alphavantage, FinanceAPI, …)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:254
+#: libgnucash/engine/gnc-commodity.cpp:243
 msgctxt "FQ Source"
 msgid "NYSE (Alphavantage, FinanceAPI, …)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:255
-msgctxt "FQ Source"
-msgid "Poland (Stooq)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:256
-msgctxt "FQ Source"
-msgid "Romania (BVB)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:257
-msgctxt "FQ Source"
-msgid "South Africa (Sharenet)"
-msgstr ""
-
-#: libgnucash/engine/gnc-commodity.cpp:258
+#: libgnucash/engine/gnc-commodity.cpp:244
 msgctxt "FQ Source"
 msgid "U.K. Funds (FTfunds, MorningstarUK)"
 msgstr ""
 
-#: libgnucash/engine/gnc-commodity.cpp:259
+#: libgnucash/engine/gnc-commodity.cpp:245
 msgctxt "FQ Source"
 msgid "USA (Alphavantage, FinanceAPI, …)"
 msgstr ""
@@ -29954,12 +29903,12 @@ msgctxt "Commodity Type"
 msgid "Currencies"
 msgstr "货币"
 
-#: libgnucash/engine/gnc-date.cpp:76
+#: libgnucash/engine/gnc-date.cpp:75
 msgid "%B %#d, %Y"
 msgstr "%B %#d, %Y"
 
 #. Translators: call "man strftime" for possible values.
-#: libgnucash/engine/gnc-date.cpp:80
+#: libgnucash/engine/gnc-date.cpp:79
 msgid "%B %e, %Y"
 msgstr "%Y年%b%e日"
 
