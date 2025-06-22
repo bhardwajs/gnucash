@@ -1551,7 +1551,7 @@ add_text_column (GtkTreeView *view, const gchar *title, int col_num, bool ellips
 
 static GtkTreeViewColumn *
 add_toggle_column (GtkTreeView *view, const gchar *title, int col_num,
-                   GCallback cb_fn, gpointer cb_arg)
+                   GCallback cb_fn, gpointer cb_arg, const gchar *tooltip_text)
 {
     GtkCellRenderer *renderer = gtk_cell_renderer_toggle_new ();
     GtkTreeViewColumn *column = gtk_tree_view_column_new_with_attributes (title, renderer,
@@ -1564,6 +1564,11 @@ add_toggle_column (GtkTreeView *view, const gchar *title, int col_num,
     g_object_set (G_OBJECT(column), "reorderable", true, NULL);
     g_signal_connect (renderer, "toggled", cb_fn, cb_arg);
     gtk_tree_view_append_column (view, column);
+
+    /* Set tooltip on the column header button */
+    if (tooltip_text)
+        gtk_widget_set_tooltip_text (gtk_tree_view_column_get_button (column), tooltip_text);
+
     return column;
 }
 
@@ -1596,15 +1601,18 @@ gnc_gen_trans_init_view (GNCImportMainMatcher *info,
     info->memo_column = add_text_column (view, _("Memo"), DOWNLOADED_COL_MEMO, true);
     add_toggle_column (view, C_("Column header for 'Adding transaction'", "A"),
                        DOWNLOADED_COL_ACTION_ADD,
-                       G_CALLBACK(gnc_gen_trans_add_toggled_cb), info);
+                       G_CALLBACK(gnc_gen_trans_add_toggled_cb), info,
+                       _("Add as a new transaction"));
     GtkTreeViewColumn *column = add_toggle_column (view,
                                 C_("Column header for 'Updating plus Clearing transaction'", "U+C"),
                                 DOWNLOADED_COL_ACTION_UPDATE,
-                                G_CALLBACK(gnc_gen_trans_update_toggled_cb), info);
+                                G_CALLBACK(gnc_gen_trans_update_toggled_cb), info,
+                                _("Update + Clear Transaction\nUpdate existing transaction with the imported data and mark it as cleared"));
     gtk_tree_view_column_set_visible (column, show_update);
     add_toggle_column (view, C_("Column header for 'Clearing transaction'", "C"),
                        DOWNLOADED_COL_ACTION_CLEAR,
-                       G_CALLBACK(gnc_gen_trans_clear_toggled_cb), info);
+                       G_CALLBACK(gnc_gen_trans_clear_toggled_cb), info,
+                       _("Clear Transaction\nMark existing transaction as cleared without changing its details"));
 
     /* The last column has multiple renderers */
     GtkCellRenderer *renderer = gtk_cell_renderer_pixbuf_new ();
