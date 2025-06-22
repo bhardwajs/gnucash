@@ -595,19 +595,12 @@ static Transaction *
 dupe_trans (const Transaction *from)
 {
     Transaction *to;
-    GList *node;
-
     to = GNC_TRANSACTION(g_object_new (GNC_TYPE_TRANSACTION, nullptr));
 
     CACHE_REPLACE (to->num, from->num);
     CACHE_REPLACE (to->description, from->description);
 
-    to->splits = g_list_copy (from->splits);
-    for (node = to->splits; node; node = node->next)
-    {
-        node->data = xaccDupeSplit (GNC_SPLIT(node->data));
-    }
-
+    to->splits = g_list_copy_deep (from->splits, (GCopyFunc)xaccDupeSplit, nullptr);
     to->date_entered = from->date_entered;
     to->date_posted = from->date_posted;
     qof_instance_copy_version(to, from);
