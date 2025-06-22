@@ -1873,6 +1873,24 @@ xaccTransOrder_num_action (const Transaction *ta, const char *actna,
 /********************************************************************\
 \********************************************************************/
 
+static void
+set_kvp_string_path (Transaction *txn, const Path& path, const char *value)
+{
+    g_return_if_fail (GNC_IS_TRANSACTION(txn));
+    xaccTransBeginEdit(txn);
+    auto val = value && *value ? std::make_optional<const char*>(g_strdup(value)) : std::nullopt;
+    qof_instance_set_path_kvp<const char*> (QOF_INSTANCE(txn), val, path);
+    qof_instance_set_dirty (QOF_INSTANCE(txn));
+    xaccTransCommitEdit(txn);
+}
+
+static const char*
+get_kvp_string_path (const Transaction *txn, const Path& path)
+{
+    auto rv{qof_instance_get_path_kvp<const char*> (QOF_INSTANCE(txn), path)};
+    return rv ? *rv : nullptr;
+}
+
 static inline void
 xaccTransSetDateInternal(Transaction *trans, time64 *dadate, time64 val)
 {
@@ -1985,32 +2003,12 @@ void
 xaccTransSetTxnType (Transaction *trans, char type)
 {
     char s[2] = {type, '\0'};
-    GValue v = G_VALUE_INIT;
-    g_return_if_fail(trans);
-    g_value_init (&v, G_TYPE_STRING);
-    qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, TRANS_TXN_TYPE_KVP);
-    if (!g_strcmp0 (s, g_value_get_string (&v)))
-    {
-        g_value_unset (&v);
-        return;
-    }
-    g_value_set_static_string (&v, s);
-    xaccTransBeginEdit(trans);
-    qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, TRANS_TXN_TYPE_KVP);
-    qof_instance_set_dirty(QOF_INSTANCE(trans));
-    g_value_unset (&v);
-    xaccTransCommitEdit(trans);
+    set_kvp_string_path (trans, {TRANS_TXN_TYPE_KVP}, s);
 }
 
 void xaccTransClearReadOnly (Transaction *trans)
 {
-    if (trans)
-    {
-        xaccTransBeginEdit(trans);
-        qof_instance_set_kvp (QOF_INSTANCE (trans), nullptr, 1, TRANS_READ_ONLY_REASON);
-        qof_instance_set_dirty(QOF_INSTANCE(trans));
-        xaccTransCommitEdit(trans);
-    }
+    set_kvp_string_path (trans, {TRANS_READ_ONLY_REASON}, nullptr);
 }
 
 void
@@ -2077,22 +2075,7 @@ void
 xaccTransSetDocLink (Transaction *trans, const char *doclink)
 {
     if (!trans || !doclink) return;
-
-    xaccTransBeginEdit(trans);
-    if (doclink[0] == '\0')
-    {
-        qof_instance_set_kvp (QOF_INSTANCE (trans), nullptr, 1, doclink_uri_str);
-    }
-    else
-    {
-        GValue v = G_VALUE_INIT;
-        g_value_init (&v, G_TYPE_STRING);
-        g_value_set_static_string (&v, doclink); //Gets copied at the other end
-        qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, doclink_uri_str);
-        g_value_unset (&v);
-    }
-    qof_instance_set_dirty(QOF_INSTANCE(trans));
-    xaccTransCommitEdit(trans);
+    set_kvp_string_path (trans, {doclink_uri_str}, doclink);
 }
 
 static void
@@ -2289,27 +2272,13 @@ xaccTransGetDescription (const Transaction *trans)
 const char *
 xaccTransGetDocLink (const Transaction *trans)
 {
-    g_return_val_if_fail (trans, nullptr);
-
-    GValue v = G_VALUE_INIT;
-    qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, doclink_uri_str);
-    const char* doclink = G_VALUE_HOLDS_STRING (&v) ? g_value_get_string (&v) : nullptr;
-    g_value_unset (&v);
-
-    return doclink;
+    return get_kvp_string_path (trans, {doclink_uri_str});
 }
 
 const char *
 xaccTransGetNotes (const Transaction *trans)
 {
-    g_return_val_if_fail (trans, nullptr);
-
-    GValue v = G_VALUE_INIT;
-    qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, trans_notes_str);
-    const char *notes = G_VALUE_HOLDS_STRING (&v) ? g_value_get_string (&v) : nullptr;
-    g_value_unset (&v);
-
-    return notes;
+    return get_kvp_string_path (trans, {trans_notes_str});
 }
 
 gboolean
@@ -2442,15 +2411,7 @@ xaccTransGetTxnType (Transaction *trans)
 const char *
 xaccTransGetReadOnly (Transaction *trans)
 {
-    if (!trans)
-        return nullptr;
-
-    GValue v = G_VALUE_INIT;
-    qof_instance_get_kvp (QOF_INSTANCE(trans), &v, 1, TRANS_READ_ONLY_REASON);
-    const char *readonly_reason = G_VALUE_HOLDS_STRING (&v) ?
-        g_value_get_string (&v) : nullptr;
-    g_value_unset (&v);
-    return readonly_reason;
+    return get_kvp_string_path (trans, {TRANS_READ_ONLY_REASON});
 }
 
 static gboolean
@@ -2608,9 +2569,6 @@ gnc_book_count_transactions(QofBook *book)
 void
 xaccTransVoid(Transaction *trans, const char *reason)
 {
-    GValue v = G_VALUE_INIT;
-    char iso8601_str[ISO_DATELENGTH + 1] = "";
-
     g_return_if_fail(trans && reason);
 
     /* Prevent voiding transactions that are already marked
@@ -2622,21 +2580,15 @@ xaccTransVoid(Transaction *trans, const char *reason)
         return;
     }
     xaccTransBeginEdit(trans);
-    qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, trans_notes_str);
-    if (G_VALUE_HOLDS_STRING (&v))
-        qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, void_former_notes_str);
-    else
-        g_value_init (&v, G_TYPE_STRING);
 
-    g_value_set_static_string (&v, _("Voided transaction"));
-    qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, trans_notes_str);
-    g_value_set_static_string (&v, reason);
-    qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, void_reason_str);
-
+    char iso8601_str[ISO_DATELENGTH + 1] = "";
     gnc_time64_to_iso8601_buff (gnc_time(nullptr), iso8601_str);
-    g_value_set_static_string (&v, iso8601_str);
-    qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, void_time_str);
-    g_value_unset (&v);
+
+    if (auto s = get_kvp_string_path (trans, {trans_notes_str}))
+        set_kvp_string_path (trans, {void_former_notes_str}, s);
+    set_kvp_string_path (trans, {trans_notes_str}, _("Voided transaction"));
+    set_kvp_string_path (trans, {void_reason_str}, reason);
+    set_kvp_string_path (trans, {void_time_str}, iso8601_str);
 
     FOR_EACH_SPLIT(trans, xaccSplitVoid(s));
 
@@ -2655,53 +2607,30 @@ xaccTransGetVoidStatus(const Transaction *trans)
 const char *
 xaccTransGetVoidReason(const Transaction *trans)
 {
-    g_return_val_if_fail (trans, nullptr);
-
-    GValue v = G_VALUE_INIT;
-    qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, void_reason_str);
-    const char *void_reason = G_VALUE_HOLDS_STRING (&v) ? g_value_get_string (&v) : nullptr;
-    g_value_unset (&v);
-
-    return void_reason;
+    return get_kvp_string_path (trans, {void_reason_str});
 }
 
 time64
 xaccTransGetVoidTime(const Transaction *tr)
 {
-    GValue v = G_VALUE_INIT;
-    const char *s = nullptr;
-    time64 void_time = 0;
-
-    g_return_val_if_fail(tr, void_time);
-    qof_instance_get_kvp (QOF_INSTANCE (tr), &v, 1, void_time_str);
-    if (G_VALUE_HOLDS_STRING (&v))
-    {
-        s = g_value_get_string (&v);
-        if (s)
-            void_time = gnc_iso8601_to_time64_gmt (s);
-    }
-    g_value_unset (&v);
-    return void_time;
+    auto void_str{get_kvp_string_path (tr, {void_time_str})};
+    return void_str ? gnc_iso8601_to_time64_gmt (void_str) : 0;
 }
 
 void
 xaccTransUnvoid (Transaction *trans)
 {
-    GValue v = G_VALUE_INIT;
-    const char *s = nullptr;
     g_return_if_fail(trans);
 
-    s = xaccTransGetVoidReason (trans);
-    if (s == nullptr) return; /* Transaction isn't voided. Bail. */
+    if (xaccTransGetVoidReason (trans) == nullptr)
+        return; /* Transaction isn't voided. Bail. */
+
     xaccTransBeginEdit(trans);
 
-    qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, void_former_notes_str);
-    if (G_VALUE_HOLDS_STRING (&v))
-        qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, trans_notes_str);
-    qof_instance_set_kvp (QOF_INSTANCE (trans), nullptr, 1, void_former_notes_str);
-    qof_instance_set_kvp (QOF_INSTANCE (trans), nullptr, 1, void_reason_str);
-    qof_instance_set_kvp (QOF_INSTANCE (trans), nullptr, 1, void_time_str);
-    g_value_unset (&v);
+    set_kvp_string_path (trans, {trans_notes_str}, get_kvp_string_path (trans, {void_former_notes_str}));
+    set_kvp_string_path (trans, {void_former_notes_str}, nullptr);
+    set_kvp_string_path (trans, {void_reason_str}, nullptr);
+    set_kvp_string_path (trans, {void_time_str}, nullptr);
 
     FOR_EACH_SPLIT(trans, xaccSplitUnvoid(s));
 
