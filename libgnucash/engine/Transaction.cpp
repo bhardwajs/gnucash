@@ -2015,16 +2015,7 @@ void
 xaccTransSetReadOnly (Transaction *trans, const char *reason)
 {
     if (trans && reason)
-    {
-        GValue v = G_VALUE_INIT;
-        g_value_init (&v, G_TYPE_STRING);
-        g_value_set_static_string (&v, reason);
-        xaccTransBeginEdit(trans);
-        qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, TRANS_READ_ONLY_REASON);
-        qof_instance_set_dirty(QOF_INSTANCE(trans));
-        g_value_unset (&v);
-        xaccTransCommitEdit(trans);
-    }
+        set_kvp_string_path (trans, {TRANS_READ_ONLY_REASON}, reason);
 }
 
 /********************************************************************\

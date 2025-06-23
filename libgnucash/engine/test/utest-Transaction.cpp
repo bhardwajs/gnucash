@@ -1764,8 +1764,8 @@ test_xaccTransGetReadOnly (Fixture *fixture, gconstpointer pData)
     g_assert_null (frame->get_slot({TRANS_READ_ONLY_REASON}));
 
     xaccTransSetReadOnly (txn, "");
-    g_assert_cmpstr (xaccTransGetReadOnly (txn), ==, "");
-    g_assert_cmpstr (frame->get_slot({TRANS_READ_ONLY_REASON})->get<const char*>(), ==, "");
+    g_assert_cmpstr (xaccTransGetReadOnly (txn), ==, nullptr);
+    g_assert_null (frame->get_slot({TRANS_READ_ONLY_REASON}));
 
     xaccTransClearReadOnly (txn);
     g_assert_null (frame->get_slot({TRANS_READ_ONLY_REASON}));
