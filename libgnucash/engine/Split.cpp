@@ -2115,64 +2115,43 @@ xaccSplitGetOtherSplit (const Split *split)
 gnc_numeric
 xaccSplitVoidFormerAmount(const Split *split)
 {
-    GValue v = G_VALUE_INIT;
-    gnc_numeric *num = nullptr;
-    gnc_numeric retval;
     g_return_val_if_fail(split, gnc_numeric_zero());
-    qof_instance_get_kvp (QOF_INSTANCE (split), &v, 1, void_former_amt_str);
-    if (G_VALUE_HOLDS_BOXED (&v))
-        num = (gnc_numeric*)g_value_get_boxed (&v);
-    retval = num ? *num : gnc_numeric_zero();
-    g_value_unset (&v);
-    return retval;
+    auto num{qof_instance_get_path_kvp<gnc_numeric> (QOF_INSTANCE(split), {void_former_amt_str})};
+    return num ? *num : gnc_numeric_zero();
 }
 
 gnc_numeric
 xaccSplitVoidFormerValue(const Split *split)
 {
-    GValue v = G_VALUE_INIT;
-    gnc_numeric *num = nullptr;
-    gnc_numeric retval;
     g_return_val_if_fail(split, gnc_numeric_zero());
-    qof_instance_get_kvp (QOF_INSTANCE (split), &v, 1, void_former_val_str);
-    if (G_VALUE_HOLDS_BOXED (&v))
-        num = (gnc_numeric*)g_value_get_boxed (&v);
-    retval = num ? *num : gnc_numeric_zero();
-    g_value_unset (&v);
-    return retval;
+    auto num{qof_instance_get_path_kvp<gnc_numeric> (QOF_INSTANCE(split), {void_former_val_str})};
+    return num ? *num : gnc_numeric_zero();
 }
 
 void
 xaccSplitVoid(Split *split)
 {
-    gnc_numeric zero = gnc_numeric_zero(), num;
-    GValue v = G_VALUE_INIT;
+    g_return_if_fail (GNC_IS_SPLIT(split));
+    qof_instance_set_path_kvp<gnc_numeric> (QOF_INSTANCE(split), xaccSplitGetAmount(split), {void_former_amt_str});
+    qof_instance_set_path_kvp<gnc_numeric> (QOF_INSTANCE(split), xaccSplitGetValue(split), {void_former_val_str});
+    qof_instance_set_dirty (QOF_INSTANCE(split));
 
-    g_value_init (&v, GNC_TYPE_NUMERIC);
-    num =  xaccSplitGetAmount(split);
-    g_value_set_boxed (&v, &num);
-    qof_instance_set_kvp (QOF_INSTANCE (split), &v, 1, void_former_amt_str);
-    g_value_reset (&v);
-    num =  xaccSplitGetValue(split);
-    g_value_set_boxed (&v, &num);
-    qof_instance_set_kvp (QOF_INSTANCE (split), &v, 1, void_former_val_str);
-
-    /* Marking dirty handled by SetAmount etc. */
+    static gnc_numeric zero = gnc_numeric_zero();
     xaccSplitSetAmount (split, zero);
     xaccSplitSetValue (split, zero);
     xaccSplitSetReconcile(split, VREC);
-    g_value_unset (&v);
 }
 
 void
 xaccSplitUnvoid(Split *split)
 {
+    g_return_if_fail (GNC_IS_SPLIT(split));
     xaccSplitSetAmount (split, xaccSplitVoidFormerAmount(split));
     xaccSplitSetValue (split, xaccSplitVoidFormerValue(split));
     xaccSplitSetReconcile(split, NREC);
-    qof_instance_set_kvp (QOF_INSTANCE (split), nullptr, 1, void_former_amt_str);
-    qof_instance_set_kvp (QOF_INSTANCE (split), nullptr, 1, void_former_val_str);
-    qof_instance_set_dirty (QOF_INSTANCE (split));
+    qof_instance_set_path_kvp<gnc_numeric> (QOF_INSTANCE(split), {}, {void_former_amt_str});
+    qof_instance_set_path_kvp<gnc_numeric> (QOF_INSTANCE(split), {}, {void_former_val_str});
+    qof_instance_set_dirty (QOF_INSTANCE(split));
 }
 
 /********************************************************************\
