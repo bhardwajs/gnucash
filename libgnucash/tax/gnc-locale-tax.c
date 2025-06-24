@@ -36,7 +36,7 @@
 #include <guile-mappings.h>
 #include <gnc-guile-utils.h>
 #include "gnc-locale-tax.h"
-
+#include <gnc-locale-utils.h>
 
 
 void
@@ -50,7 +50,7 @@ gnc_locale_tax_init(void)
     gboolean is_de_DE = (strncmp(thislocale, "de_DE", 5) == 0);
     g_free(thislocale);
 # else /* !G_OS_WIN32 */
-    const char *thislocale = setlocale(LC_ALL, NULL);
+    const char *thislocale = gnc_locale_name();
     gboolean is_de_DE = (strncmp(thislocale, "de_DE", 5) == 0);
 # endif /* G_OS_WIN32 */
     if (is_de_DE)

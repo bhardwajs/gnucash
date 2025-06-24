@@ -156,7 +156,7 @@ gchar *gnc_locale_name (void)
 # ifdef G_OS_WIN32
     return g_win32_getlocale();
 # else /* !G_OS_WIN32 */
-    return g_strdup (setlocale(LC_ALL, NULL));
+    return g_strdup (setlocale(LC_MONETARY, NULL));
 # endif /* G_OS_WIN32 */
 
 }

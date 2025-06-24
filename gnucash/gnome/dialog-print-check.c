@@ -2074,7 +2074,6 @@ draw_date_format(GtkPrintContext *context, const gchar *date_format,
     const gchar *c;
     GString *cdn_fmt;
 
-    setlocale(LC_ALL, NULL);
     if ( !data->print_date_format ) return;
 
     date_desc = pango_font_description_copy_static(default_desc);
