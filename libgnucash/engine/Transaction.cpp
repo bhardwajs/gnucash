@@ -2120,22 +2120,9 @@ xaccTransSetNotes (Transaction *trans, const char *notes)
 void
 xaccTransSetIsClosingTxn (Transaction *trans, gboolean is_closing)
 {
-    if (!trans) return;
     xaccTransBeginEdit(trans);
-
-    if (is_closing)
-    {
-        GValue v = G_VALUE_INIT;
-        g_value_init (&v, G_TYPE_INT64);
-        g_value_set_int64 (&v, 1);
-        qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, trans_is_closing_str);
-        g_value_unset (&v);
-    }
-    else
-    {
-        qof_instance_set_kvp (QOF_INSTANCE (trans), nullptr, 1, trans_is_closing_str);
-    }
-    qof_instance_set_dirty(QOF_INSTANCE(trans));
+    auto val = is_closing ? std::make_optional<int64_t>(1) : std::nullopt;
+    qof_instance_set_path_kvp<int64_t> (QOF_INSTANCE(trans), val, {trans_is_closing_str});
     xaccTransCommitEdit(trans);
 }
 
@@ -2328,18 +2315,8 @@ xaccTransGetNotes (const Transaction *trans)
 gboolean
 xaccTransGetIsClosingTxn (const Transaction *trans)
 {
-    if (!trans) return FALSE;
-
-    GValue v = G_VALUE_INIT;
-    gboolean rv;
-    qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, trans_is_closing_str);
-    if (G_VALUE_HOLDS_INT64 (&v))
-        rv = (g_value_get_int64 (&v) ? 1 : 0);
-    else
-        rv = 0;
-    g_value_unset (&v);
-
-    return rv;
+    auto rv{qof_instance_get_path_kvp<int64_t> (QOF_INSTANCE(trans), {trans_is_closing_str})};
+    return rv ? *rv != 0 : FALSE;
 }
 
 /********************************************************************\
