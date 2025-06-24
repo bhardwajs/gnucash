@@ -1945,16 +1945,13 @@ xaccTransSetDatePostedSecsNormalized (Transaction *trans, time64 time)
 void
 xaccTransSetDatePostedGDate (Transaction *trans, GDate date)
 {
-    GValue v = G_VALUE_INIT;
     if (!trans) return;
 
     /* We additionally save this date into a kvp frame to ensure in
      * the future a date which was set as *date* (without time) can
      * clearly be distinguished from the time64. */
-    g_value_init (&v, G_TYPE_DATE);
-    g_value_set_static_boxed (&v, &date);
-    qof_instance_set_kvp (QOF_INSTANCE(trans), &v, 1, TRANS_DATE_POSTED);
-    g_value_unset (&v);
+    qof_instance_set_path_kvp<GDate> (QOF_INSTANCE(trans), date, {TRANS_DATE_POSTED});
+    qof_instance_set_dirty (QOF_INSTANCE(trans));
     /* mark dirty and commit handled by SetDateInternal */
     xaccTransSetDateInternal(trans, &trans->date_posted,
                              gdate_to_time64(date));
@@ -2301,11 +2298,8 @@ xaccTransGetDatePostedGDate (const Transaction *trans)
         /* Can we look up this value in the kvp slot? If yes, use it
          * from there because it doesn't suffer from time zone
          * shifts. */
-        GValue v = G_VALUE_INIT;
-        qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, TRANS_DATE_POSTED);
-        if (G_VALUE_HOLDS_BOXED (&v))
-             result = *(GDate*)g_value_get_boxed (&v);
-        g_value_unset (&v);
+        if (auto res = qof_instance_get_path_kvp<GDate> (QOF_INSTANCE(trans), {TRANS_DATE_POSTED}))
+             result = *res;
         if (! g_date_valid (&result) || gdate_to_time64 (result) == INT64_MAX)
         {
              /* Well, this txn doesn't have a valid GDate saved in a slot.

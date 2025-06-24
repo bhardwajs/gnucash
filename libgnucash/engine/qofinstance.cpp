@@ -1081,12 +1081,14 @@ qof_instance_set_path_kvp (QofInstance* inst, std::optional<T> value, const Path
 }
 
 template std::optional<Time64> qof_instance_get_path_kvp <Time64> (QofInstance*, const Path&);
+template std::optional<GDate> qof_instance_get_path_kvp <GDate> (QofInstance*, const Path&);
 template std::optional<const char*> qof_instance_get_path_kvp <const char*> (QofInstance*, const Path&);
 template std::optional<gnc_numeric> qof_instance_get_path_kvp <gnc_numeric> (QofInstance*, const Path&);
 template std::optional<GncGUID*> qof_instance_get_path_kvp <GncGUID*> (QofInstance*, const Path&);
 template std::optional<int64_t> qof_instance_get_path_kvp <int64_t> (QofInstance*, const Path&);
 
 template void qof_instance_set_path_kvp <Time64> (QofInstance*, std::optional<Time64>, const Path& path);
+template void qof_instance_set_path_kvp <GDate> (QofInstance*, std::optional<GDate>, const Path& path);
 template void qof_instance_set_path_kvp <const char*> (QofInstance*, std::optional<const char*>, const Path& path);
 template void qof_instance_set_path_kvp <gnc_numeric> (QofInstance*, std::optional<gnc_numeric>, const Path& path);
 template void qof_instance_set_path_kvp <GncGUID*> (QofInstance*, std::optional<GncGUID*>, const Path& path);
