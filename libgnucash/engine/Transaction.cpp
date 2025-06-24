@@ -2714,7 +2714,6 @@ Transaction *
 xaccTransReverse (Transaction *orig)
 {
     Transaction *trans;
-    GValue v = G_VALUE_INIT;
     g_return_val_if_fail(orig, nullptr);
 
     /* First edit, dirty, and commit orig to ensure that any trading
@@ -2737,10 +2736,8 @@ xaccTransReverse (Transaction *orig)
     });
 
     /* Now update the original with a pointer to the new one */
-    g_value_init (&v, GNC_TYPE_GUID);
-    g_value_set_static_boxed (&v, xaccTransGetGUID(trans));
-    qof_instance_set_kvp (QOF_INSTANCE (orig), &v, 1, TRANS_REVERSED_BY);
-    g_value_unset (&v);
+    qof_instance_set_path_kvp<GncGUID*> (QOF_INSTANCE (orig), guid_copy(xaccTransGetGUID(trans)),
+                                         {TRANS_REVERSED_BY});
 
     /* Make sure the reverse transaction is not read-only */
     xaccTransClearReadOnly(trans);
@@ -2753,17 +2750,9 @@ xaccTransReverse (Transaction *orig)
 Transaction *
 xaccTransGetReversedBy(const Transaction *trans)
 {
-    GValue v = G_VALUE_INIT;
-    Transaction *retval = nullptr;
     g_return_val_if_fail(trans, nullptr);
-    qof_instance_get_kvp (QOF_INSTANCE(trans), &v, 1, TRANS_REVERSED_BY);
-    if (G_VALUE_HOLDS_BOXED (&v))
-    {
-        GncGUID* guid = static_cast<GncGUID*>(g_value_get_boxed (&v));
-        retval = xaccTransLookup(guid, qof_instance_get_book (trans));
-    }
-    g_value_unset (&v);
-    return retval;
+    auto g = qof_instance_get_path_kvp<GncGUID*> (QOF_INSTANCE(trans), {TRANS_REVERSED_BY});
+    return g ? xaccTransLookup (*g, qof_instance_get_book (trans)) : nullptr;
 }
 
 /* ============================================================== */
