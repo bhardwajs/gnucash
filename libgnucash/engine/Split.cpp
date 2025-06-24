@@ -1977,22 +1977,16 @@ xaccSplitGetType(const Split *s)
 {
     if (!s) return nullptr;
 
-    GValue v = G_VALUE_INIT;
-    const char* type;
-    qof_instance_get_kvp (QOF_INSTANCE (s), &v, 1, "split-type");
-    type = G_VALUE_HOLDS_STRING (&v) ? g_value_get_string (&v) : nullptr;
-    const char *rv;
-    if (!type || !g_strcmp0 (type, split_type_normal))
-        rv = split_type_normal;
-    else if (!g_strcmp0 (type, split_type_stock_split))
-        rv = split_type_stock_split;
-    else
-    {
-        PERR ("unexpected split-type %s, reset to normal.", type);
-        rv = split_type_normal;
-    }
-    g_value_unset (&v);
-    return rv;
+    auto type{qof_instance_get_path_kvp<const char*> (QOF_INSTANCE(s), {"split-type"})};
+
+    if (!type || !g_strcmp0 (*type, split_type_normal))
+        return split_type_normal;
+
+    if (!g_strcmp0 (*type, split_type_stock_split))
+        return split_type_stock_split;
+
+    PERR ("unexpected split-type %s, reset to normal.", *type);
+    return split_type_normal;
 }
 
 /* reconfigure a split to be a stock split - after this, you shouldn't
@@ -2000,18 +1994,15 @@ xaccSplitGetType(const Split *s)
 void
 xaccSplitMakeStockSplit(Split *s)
 {
-    GValue v = G_VALUE_INIT;
     xaccTransBeginEdit (s->parent);
 
     s->value = gnc_numeric_zero();
-    g_value_init (&v, G_TYPE_STRING);
-    g_value_set_static_string (&v, split_type_stock_split);
-    qof_instance_set_kvp (QOF_INSTANCE (s), &v, 1, "split-type");
+    qof_instance_set_path_kvp<const char*> (QOF_INSTANCE(s), g_strdup(split_type_stock_split),
+                                            {"split-type"});
     SET_GAINS_VDIRTY(s);
     mark_split(s);
     qof_instance_set_dirty(QOF_INSTANCE(s));
     xaccTransCommitEdit(s->parent);
-    g_value_unset (&v);
 }
 
 void
