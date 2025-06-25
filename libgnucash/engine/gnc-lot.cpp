@@ -446,12 +446,8 @@ gnc_lot_get_title (const GNCLot *lot)
 {
     if (!lot) return nullptr;
 
-    GValue v = G_VALUE_INIT;
-    qof_instance_get_kvp (QOF_INSTANCE (lot), &v, 1, "title");
-    const char *rv = G_VALUE_HOLDS_STRING (&v) ? g_value_get_string (&v) : nullptr;
-    g_value_unset (&v);
-
-    return rv;
+    auto str{qof_instance_get_path_kvp<const char*> (QOF_INSTANCE (lot), {"title"})};
+    return str ? *str : nullptr;
 }
 
 const char *
@@ -459,41 +455,30 @@ gnc_lot_get_notes (const GNCLot *lot)
 {
     if (!lot) return nullptr;
 
-    GValue v = G_VALUE_INIT;
-    qof_instance_get_kvp (QOF_INSTANCE (lot), &v, 1, "notes");
-    const char *rv = G_VALUE_HOLDS_STRING (&v) ? g_value_get_string (&v) : nullptr;
-    g_value_unset (&v);
-    return rv;
+    auto str{qof_instance_get_path_kvp<const char*> (QOF_INSTANCE (lot), {"notes"})};
+    return str ? *str : nullptr;
 }
 
 void
 gnc_lot_set_title (GNCLot *lot, const char *str)
 {
-    GValue v = G_VALUE_INIT;
     if (!lot) return;
 
     qof_begin_edit(QOF_INSTANCE(lot));
-    g_value_init (&v, G_TYPE_STRING);
-    g_value_set_static_string (&v, str);
-    qof_instance_set_kvp (QOF_INSTANCE (lot), &v, 1, "title");
+    qof_instance_set_path_kvp<const char*> (QOF_INSTANCE (lot), g_strdup(str), {"title"});
     qof_instance_set_dirty(QOF_INSTANCE(lot));
     gnc_lot_commit_edit(lot);
-    g_value_unset (&v);
 }
 
 void
 gnc_lot_set_notes (GNCLot *lot, const char *str)
 {
-    GValue v = G_VALUE_INIT;
     if (!lot) return;
 
     qof_begin_edit(QOF_INSTANCE(lot));
-    g_value_init (&v, G_TYPE_STRING);
-    g_value_set_static_string (&v, str);
-    qof_instance_set_kvp (QOF_INSTANCE (lot), &v, 1, "notes");
+    qof_instance_set_path_kvp<const char*> (QOF_INSTANCE (lot), g_strdup(str), {"notes"});
     qof_instance_set_dirty(QOF_INSTANCE(lot));
     gnc_lot_commit_edit(lot);
-    g_value_unset (&v);
 }
 
 /* ============================================================= */
