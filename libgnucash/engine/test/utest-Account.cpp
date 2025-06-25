@@ -1328,17 +1328,8 @@ set_kvp_string_path (Account *acc, std::vector<std::string> const & path,
                      const char *value)
 {
     xaccAccountBeginEdit(acc);
-    if (value)
-    {
-        GValue v = G_VALUE_INIT;
-        g_value_init (&v, G_TYPE_STRING);
-        g_value_set_string (&v, value);
-        qof_instance_set_path_kvp (QOF_INSTANCE (acc), &v, path);
-        g_value_unset (&v);
-    }
-    else
-        qof_instance_set_path_kvp (QOF_INSTANCE (acc), NULL, path);
-
+    auto val = value ? std::make_optional<const char*>(g_strdup(value)) : std::nullopt;
+    qof_instance_set_path_kvp<const char*> (QOF_INSTANCE (acc), val, path);
     xaccAccountCommitEdit(acc);
 }
 
