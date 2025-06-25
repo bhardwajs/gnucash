@@ -1090,7 +1090,6 @@ void
 xaccSplitDetermineGainStatus (Split *split)
 {
     Split *other;
-    GValue v = G_VALUE_INIT;
     GncGUID *guid = nullptr;
 
     if (GAINS_STATUS_UNKNOWN != split->gains) return;
@@ -1103,9 +1102,9 @@ xaccSplitDetermineGainStatus (Split *split)
         return;
     }
 
-    qof_instance_get_kvp (QOF_INSTANCE (split), &v, 1, "gains-source");
-    if (G_VALUE_HOLDS_BOXED (&v))
-        guid = (GncGUID*)g_value_get_boxed (&v);
+    if (auto v = qof_instance_get_path_kvp<GncGUID*> (QOF_INSTANCE (split), {"gains-source"}))
+        guid = const_cast<GncGUID*>(*v);
+
     if (!guid)
     {
         // CHECKME: We leave split->gains_split alone.  Is that correct?
@@ -1120,7 +1119,6 @@ xaccSplitDetermineGainStatus (Split *split)
         other = (Split *) qof_collection_lookup_entity (col, guid);
         split->gains_split = other;
     }
-    g_value_unset (&v);
 }
 
 /********************************************************************\
