@@ -1016,16 +1016,9 @@ gnc_commodity_get_fraction(const gnc_commodity * cm)
 gboolean
 gnc_commodity_get_auto_quote_control_flag(const gnc_commodity *cm)
 {
-    GValue v = G_VALUE_INIT;
-    gboolean retval = TRUE;
-
     if (!cm) return FALSE;
-    qof_instance_get_kvp (QOF_INSTANCE (cm), &v, 1, "auto_quote_control");
-    if (G_VALUE_HOLDS_STRING (&v) &&
-        strcmp(g_value_get_string (&v), "false") == 0)
-        retval = FALSE;
-    g_value_unset (&v);
-    return retval;
+    auto str{qof_instance_get_path_kvp<const char*> (QOF_INSTANCE (cm), {"auto_quote_control"})};
+    return !str || g_strcmp0 (*str, "false");
 }
 
 /********************************************************************
@@ -1083,11 +1076,8 @@ gnc_commodity_get_user_symbol(const gnc_commodity *cm)
 {
     g_return_val_if_fail (GNC_IS_COMMODITY (cm), nullptr);
 
-    GValue v = G_VALUE_INIT;
-    qof_instance_get_kvp (QOF_INSTANCE(cm), &v, 1, "user_symbol");
-    const char *rv = G_VALUE_HOLDS_STRING (&v) ? g_value_get_string (&v) : nullptr;
-    g_value_unset (&v);
-    return rv;
+    auto sym{qof_instance_get_path_kvp<const char*> (QOF_INSTANCE(cm), {"user_symbol"})};
+    return sym ? *sym : nullptr;
 }
 
 /********************************************************************
@@ -1245,7 +1235,6 @@ void
 gnc_commodity_set_auto_quote_control_flag(gnc_commodity *cm,
         const gboolean flag)
 {
-    GValue v = G_VALUE_INIT;
     ENTER ("(cm=%p, flag=%d)", cm, flag);
 
     if (!cm)
@@ -1254,15 +1243,8 @@ gnc_commodity_set_auto_quote_control_flag(gnc_commodity *cm,
         return;
     }
     gnc_commodity_begin_edit(cm);
-    if (flag)
-        qof_instance_set_kvp (QOF_INSTANCE (cm), nullptr, 1, "auto_quote_control");
-    else
-    {
-        g_value_init (&v, G_TYPE_STRING);
-        g_value_set_string (&v, "false");
-        qof_instance_set_kvp (QOF_INSTANCE (cm), &v, 1, "auto_quote_control");
-    }
-    g_value_unset (&v);
+    auto val = flag ? std::nullopt : std::make_optional<const char*>(g_strdup("false"));
+    qof_instance_set_path_kvp<const char*> (QOF_INSTANCE (cm), val, {"auto_quote_control"});
     mark_commodity_dirty(cm);
     gnc_commodity_commit_edit(cm);
     LEAVE("");
@@ -1393,18 +1375,8 @@ gnc_commodity_set_user_symbol(gnc_commodity * cm, const char * user_symbol)
 
     gnc_commodity_begin_edit (cm);
 
-    if (user_symbol)
-    {
-        GValue v = G_VALUE_INIT;
-        g_value_init (&v, G_TYPE_STRING);
-        g_value_set_static_string (&v, user_symbol);
-        qof_instance_set_kvp (QOF_INSTANCE(cm), &v, 1, "user_symbol");
-        g_value_unset (&v);
-    }
-    else
-    {
-        qof_instance_set_kvp (QOF_INSTANCE(cm), nullptr, 1, "user_symbol");
-    }
+    auto val = user_symbol ? std::make_optional<const char*>(g_strdup(user_symbol)) : std::nullopt;
+    qof_instance_set_path_kvp<const char*> (QOF_INSTANCE(cm), val, {"user_symbol"});
 
     mark_commodity_dirty(cm);
     gnc_commodity_commit_edit(cm);
