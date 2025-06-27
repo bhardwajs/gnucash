@@ -1828,6 +1828,26 @@ void
 xaccTransUnvoid (Transaction *trans)// C: 1  Local: 0:0:0
 */
 
+
+static void
+test_xaccTransSetNotes (Fixture *fixture, gconstpointer pData)
+{
+    auto trans = fixture->txn;
+
+    xaccTransSetNotes (trans, "set");
+    g_assert_cmpstr (xaccTransGetNotes (trans), ==, "set");
+
+    xaccTransSetNotes (trans, "");
+    g_assert_cmpstr (xaccTransGetNotes (trans), ==, "");
+
+    xaccTransSetNotes (trans, "reset");
+    g_assert_cmpstr (xaccTransGetNotes (trans), ==, "reset");
+
+    // calling xaccTransSetNotes with notes==null is currently NOP
+    xaccTransSetNotes (trans, NULL);
+    g_assert_cmpstr (xaccTransGetNotes (trans), ==, "reset");
+}
+
 static void
 test_xaccTransSetDocLink (Fixture *fixture, gconstpointer pData)
 {
@@ -2055,6 +2075,7 @@ test_suite_transaction (void)
     GNC_TEST_ADD (suitename, "xaccTransGetTxnType", Fixture, NULL, setup, test_xaccTransGetTxnType, teardown);
     GNC_TEST_ADD (suitename, "xaccTransGetreadOnly", Fixture, NULL, setup, test_xaccTransGetReadOnly, teardown);
     GNC_TEST_ADD (suitename, "xaccTransSetDocLink", Fixture, NULL, setup, test_xaccTransSetDocLink, teardown);
+    GNC_TEST_ADD (suitename, "xaccTransSetNotes", Fixture, NULL, setup, test_xaccTransSetNotes, teardown);
     GNC_TEST_ADD (suitename, "xaccTransVoid", Fixture, NULL, setup, test_xaccTransVoid, teardown);
     GNC_TEST_ADD (suitename, "xaccTransReverse", Fixture, NULL, setup, test_xaccTransReverse, teardown);
     GNC_TEST_ADD (suitename, "xaccTransScrubGainsDate_no_dirty", GainsFixture, NULL, setup_with_gains, test_xaccTransScrubGainsDate_no_dirty, teardown_with_gains);
