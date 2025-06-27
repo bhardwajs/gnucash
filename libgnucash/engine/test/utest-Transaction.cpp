@@ -1870,8 +1870,8 @@ test_xaccTransSetNotes (Fixture *fixture, gconstpointer pData)
     g_assert_cmpstr (frame->get_slot({trans_notes_str})->get<const char*>(), ==, "set");
 
     xaccTransSetNotes (trans, "");
-    g_assert_cmpstr (xaccTransGetNotes (trans), ==, "");
-    g_assert_cmpstr (frame->get_slot({trans_notes_str})->get<const char*>(), ==, "");
+    g_assert_cmpstr (xaccTransGetNotes (trans), ==, nullptr);
+    g_assert_null (frame->get_slot({trans_notes_str}));
 
     xaccTransSetNotes (trans, "reset");
     g_assert_cmpstr (xaccTransGetNotes (trans), ==, "reset");

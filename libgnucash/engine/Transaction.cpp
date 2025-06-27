@@ -2080,15 +2080,8 @@ qofTransSetNotes (Transaction *trans, const char *notes)
 void
 xaccTransSetNotes (Transaction *trans, const char *notes)
 {
-    GValue v = G_VALUE_INIT;
     if (!trans || !notes) return;
-    g_value_init (&v, G_TYPE_STRING);
-    g_value_set_static_string (&v, notes);
-    xaccTransBeginEdit(trans);
-    qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, trans_notes_str);
-    qof_instance_set_dirty(QOF_INSTANCE(trans));
-    g_value_unset (&v);
-    xaccTransCommitEdit(trans);
+    set_kvp_string_path (trans, {trans_notes_str}, notes);
 }
 
 void
