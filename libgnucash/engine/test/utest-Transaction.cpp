@@ -1844,8 +1844,12 @@ test_xaccTransSetDocLink (Fixture *fixture, gconstpointer pData)
     xaccTransSetDocLink (trans, "");
     g_assert_cmpstr (xaccTransGetDocLink (trans), ==, NULL);
 
+    xaccTransSetDocLink (trans, "reset");
+    g_assert_cmpstr (xaccTransGetDocLink (trans), ==, "reset");
+
+    // calling xaccTransSetDocLink with doclink==null is currently NOP
     xaccTransSetDocLink (trans, NULL);
-    g_assert_cmpstr (xaccTransGetDocLink (trans), ==, NULL);
+    g_assert_cmpstr (xaccTransGetDocLink (trans), ==, "reset");
 }
 
 static void
