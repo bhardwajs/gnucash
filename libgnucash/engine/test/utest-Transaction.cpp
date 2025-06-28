@@ -52,6 +52,7 @@ static const char *trans_notes_str = "notes";
 static const char *void_reason_str = "void-reason";
 static const char *void_time_str = "void-time";
 static const char *void_former_notes_str = "void-former-notes";
+static const char *doclink_uri_str = "assoc_uri";
 const char *trans_is_closing_str = "book_closing";
 #define TRANS_DATE_DUE_KVP       "trans-date-due"
 #define TRANS_TXN_TYPE_KVP       "trans-txn-type"
@@ -1745,21 +1746,29 @@ static void
 test_xaccTransGetReadOnly (Fixture *fixture, gconstpointer pData)
 {
     auto txn = fixture->txn;
+    auto frame = fixture->txn->inst.kvp_data;
+
     g_assert_cmpstr (xaccTransGetReadOnly (txn), ==, nullptr);
+    g_assert_null (frame->get_slot({TRANS_READ_ONLY_REASON}));
 
     xaccTransSetReadOnly (txn, "RO");
     g_assert_cmpstr (xaccTransGetReadOnly (txn), ==, "RO");
+    g_assert_cmpstr (frame->get_slot({TRANS_READ_ONLY_REASON})->get<const char*>(), ==, "RO");
 
     xaccTransSetReadOnly (txn, nullptr); // reason being nullptr is a NOP
     g_assert_cmpstr (xaccTransGetReadOnly (txn), ==, "RO");
+    g_assert_cmpstr (frame->get_slot({TRANS_READ_ONLY_REASON})->get<const char*>(), ==, "RO");
 
     xaccTransClearReadOnly (txn);
     g_assert_cmpstr (xaccTransGetReadOnly (txn), ==, nullptr);
+    g_assert_null (frame->get_slot({TRANS_READ_ONLY_REASON}));
 
     xaccTransSetReadOnly (txn, "");
     g_assert_cmpstr (xaccTransGetReadOnly (txn), ==, "");
+    g_assert_cmpstr (frame->get_slot({TRANS_READ_ONLY_REASON})->get<const char*>(), ==, "");
 
     xaccTransClearReadOnly (txn);
+    g_assert_null (frame->get_slot({TRANS_READ_ONLY_REASON}));
 }
 
 
@@ -1833,43 +1842,55 @@ static void
 test_xaccTransSetNotes (Fixture *fixture, gconstpointer pData)
 {
     auto trans = fixture->txn;
+    auto frame = fixture->txn->inst.kvp_data;
 
     xaccTransSetNotes (trans, "set");
     g_assert_cmpstr (xaccTransGetNotes (trans), ==, "set");
+    g_assert_cmpstr (frame->get_slot({trans_notes_str})->get<const char*>(), ==, "set");
 
     xaccTransSetNotes (trans, "");
     g_assert_cmpstr (xaccTransGetNotes (trans), ==, "");
+    g_assert_cmpstr (frame->get_slot({trans_notes_str})->get<const char*>(), ==, "");
 
     xaccTransSetNotes (trans, "reset");
     g_assert_cmpstr (xaccTransGetNotes (trans), ==, "reset");
+    g_assert_cmpstr (frame->get_slot({trans_notes_str})->get<const char*>(), ==, "reset");
 
     // calling xaccTransSetNotes with notes==null is currently NOP
     xaccTransSetNotes (trans, NULL);
     g_assert_cmpstr (xaccTransGetNotes (trans), ==, "reset");
+    g_assert_cmpstr (frame->get_slot({trans_notes_str})->get<const char*>(), ==, "reset");
 }
 
 static void
 test_xaccTransSetDocLink (Fixture *fixture, gconstpointer pData)
 {
     auto trans = fixture->txn;
+    auto frame = fixture->txn->inst.kvp_data;
 
     g_assert_cmpstr (xaccTransGetDocLink (trans), ==, NULL);
+    g_assert_null (frame->get_slot({doclink_uri_str}));
 
     xaccTransSetDocLink (trans, "doclink");
     g_assert_cmpstr (xaccTransGetDocLink (trans), ==, "doclink");
+    g_assert_cmpstr (frame->get_slot({doclink_uri_str})->get<const char*>(), ==, "doclink");
 
     xaccTransSetDocLink (trans, "unset");
     g_assert_cmpstr (xaccTransGetDocLink (trans), ==, "unset");
+    g_assert_cmpstr (frame->get_slot({doclink_uri_str})->get<const char*>(), ==, "unset");
 
     xaccTransSetDocLink (trans, "");
     g_assert_cmpstr (xaccTransGetDocLink (trans), ==, NULL);
+    g_assert_null (frame->get_slot({doclink_uri_str}));
 
     xaccTransSetDocLink (trans, "reset");
     g_assert_cmpstr (xaccTransGetDocLink (trans), ==, "reset");
+    g_assert_cmpstr (frame->get_slot({doclink_uri_str})->get<const char*>(), ==, "reset");
 
     // calling xaccTransSetDocLink with doclink==null is currently NOP
     xaccTransSetDocLink (trans, NULL);
     g_assert_cmpstr (xaccTransGetDocLink (trans), ==, "reset");
+    g_assert_cmpstr (frame->get_slot({doclink_uri_str})->get<const char*>(), ==, "reset");
 }
 
 static void
