@@ -17,6 +17,7 @@
 # gallegonovato <fran-carro@hotmail.es>, 2023, 2024.
 # Jaime Marquínez Ferrándiz <jaime.marquinez.ferrandiz@fastmail.net>, 2023, 2025.
 # Francisco <fhiegom@outlook.es>, 2023.
+# Deleted User <noreply+48943@weblate.org>, 2025.
 #
 #
 # ###############################################################################
@@ -87,7 +88,7 @@ msgstr ""
 "enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-06-22 12:27-0700\n"
 "PO-Revision-Date: 2025-06-24 20:07+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
+"Last-Translator: Deleted User <noreply+48943@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "es/>\n"
 "Language: es\n"
@@ -11730,12 +11731,12 @@ msgid ""
 "- No settings\n"
 "- Gnucash default export format"
 msgstr ""
-"Borrar opciones\n"
-"Borra las opciones guardadas bajo el nombre introducido en el campo de texto "
+"Borrar ajustes\n"
+"Borra los ajustes guardados con el nombre introducido en el campo de texto "
 "adyacente.\n"
-"Hay dos nombres reservados que no pueden ser borrados nunca:\n"
-"- No settings\n"
-"- Gnucash default export format"
+"Hay dos nombres reservados que no se pueden borrar nunca:\n"
+"- Ninguna configuración\n"
+"- Formato de exportación por defecto de Gnucash"
 
 #: gnucash/gtkbuilder/assistant-csv-price-import.glade:165
 #: gnucash/gtkbuilder/assistant-csv-trans-import.glade:156
