@@ -5,14 +5,15 @@
 # Pedro Albuquerque <pmra@gmx.com>, 2021, 2022, 2023.
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2022, 2023.
 # Henrique Oliveira <ho.henrique@proton.me>, 2024.
+# Pedro Albuquerque <pmra@protonmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.6\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug."
-"cgi?product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2024-06-22 06:24+0200\n"
-"PO-Revision-Date: 2024-09-14 23:09+0000\n"
-"Last-Translator: Henrique Oliveira <ho.henrique@proton.me>\n"
+"PO-Revision-Date: 2025-06-23 04:03+0000\n"
+"Last-Translator: Pedro Albuquerque <pmra@protonmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/gnucash/"
 "glossary/pt/>\n"
 "Language: pt\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. "English Definition (Dear translators: This file will never be visible to normal users! It should only serve as a tool for translators. E.g. matching terms from this file are displayed in Weblate's Translation pages of other GnuCash components like the program.)"
 msgid "Term"
@@ -56,7 +57,7 @@ msgstr "Activo"
 
 #. "in fact: 'Active & Passive', group aka 'Balance Sheet accounts'; complement of 'Profit & Loss'"
 msgid "account type: Assets & Liabilities"
-msgstr "Passivo"
+msgstr "Activo e Passivo"
 
 #. "(esp. US) (Brit = current account) a bank account from which money can be withdrawn without previous notice"
 msgid "account type: checking"
@@ -100,7 +101,7 @@ msgstr "Lucro & Perda"
 
 #. "1. (US) any type of account that earns interest 2. (Brit) any type of bank account that earns a higher level of interest than a current account or deposit account"
 msgid "account type: saving"
-msgstr "a prazo"
+msgstr "poupança"
 
 #. "-"
 msgid "account type: Stock"
@@ -120,11 +121,11 @@ msgstr "sub-conta"
 
 #. "-"
 msgid "account: top level account"
-msgstr "conta-mãe"
+msgstr "conta-raiz"
 
 #. "The process of doing something that caused a transaction to happen"
 msgid "Action (register)"
-msgstr "Acção"
+msgstr "Acção (registar)"
 
 #. "Automated teller machine"
 msgid "action: ATM"
@@ -156,7 +157,7 @@ msgstr "dividendo"
 
 #. "-"
 msgid "action: fee"
-msgstr "honorário"
+msgstr "comissão"
 
 #. "transaction comes from interest"
 msgid "action: int"
@@ -172,7 +173,7 @@ msgstr "pagamento"
 
 #. "Point of sale"
 msgid "action: POS"
-msgstr "Terminal de Pagamento Automático"
+msgstr "PDV"
 
 #. "-"
 msgid "action: rebate"
@@ -244,7 +245,7 @@ msgstr "factura de compra"
 
 #. "see invoice owner"
 msgid "bill owner"
-msgstr "empresa"
+msgstr "fornecedor"
 
 #. "Conditions on paying a bill. Both an invoice and a bill have billing terms. For example, you can have 'terms' of 'Net-30', where the bill is due in full in 30 days."
 msgid "billing terms"
@@ -268,7 +269,7 @@ msgstr "negócio"
 
 #. "as Menu Item: Headline for features that are related to small business accounting"
 msgid "business (noun)"
-msgstr "empresa"
+msgstr "negócio"
 
 #. "Profits made from the sale of investments or property"
 msgid "capital gains"
@@ -404,11 +405,11 @@ msgstr "empregado"
 
 #. "1. The money value of a property after all charges on it have been paid. Equity isn't debt, it's a representation of long-term capital (So combining it with liability isn't really very meaningful, except in the balance sheet. 2. (a) The value of the shares issued by  a company. (b) Ordinary stocks and shares that carry no fixed interest."
 msgid "equity"
-msgstr "1. capital próprio / 2.a) capital social b) acção ordinária"
+msgstr "capital próprio"
 
 #. "Report that ... FIXME: Add description."
 msgid "equity statement"
-msgstr "relatório de contas"
+msgstr "declaração de capital"
 
 #. "A trusted third party that holds a payment or deposit until a transaction is completed. In the US, many mortgage companies set up an escrow account when you get a mortgage.  You pay into the account every month and they disburse amounts out of the escrow to pay for hazard insurance and property taxes. So they are holding funds 'in escrow' to complete the transactions (paying insurance and taxes)."
 msgid "escrow (account)"
@@ -512,7 +513,7 @@ msgstr "marcador"
 
 #. "1. Some text annotation, but this meaning is rarely used inside gnucash. 2. In the Customer summary report: The ratio of profit vs. sales, i.e. the profit amount divided by the sales amount, shown in percent."
 msgid "markup"
-msgstr "marcador"
+msgstr "margem"
 
 #. "The way how more than one window is displayed in GnuCash at the same time. MDI = Multiple Document Interface."
 msgid "MDI modus"
@@ -588,7 +589,7 @@ msgstr "dono (de factura, vale, etc.)"
 
 #. "A secret phrase that one needs to know in order to get access to a user account "
 msgid "passphrase"
-msgstr "senha"
+msgstr "frase de acesso"
 
 #. "An amount that must be paid / An amount for which money has not yet been received"
 msgid "Payables/Receivables"
@@ -596,11 +597,11 @@ msgstr "A Pagar/A Receber"
 
 #. "A person to whom sth is paid"
 msgid "payee"
-msgstr "cobrador"
+msgstr "beneficiário"
 
 #. "A person who pays or who has to pay for sth"
 msgid "payer"
-msgstr "pagador/sacado"
+msgstr "pagador"
 
 #. "1. The action of paying sb/sth or of being paid. 2. A sum of money paid."
 msgid "payment"
@@ -616,7 +617,7 @@ msgstr "portefólio"
 
 #. "Register invoice, voucher in account register"
 msgid "post, to"
-msgstr "publicar, fechar"
+msgstr "publicar"
 
 #. "A menu choice in many graphical user interface applications that allows the user to specify how the application will act each time it is used. "
 msgid "preferences"
@@ -624,7 +625,7 @@ msgstr "preferências"
 
 #. "Loan repayment calculator: your payments are split in interests payment and principal payment"
 msgid "principal payment"
-msgstr "pagamento (de capital)"
+msgstr "pagamento de capital"
 
 #. "An amount of money for which sth may be bought or sold"
 msgid "price (in a split)"
@@ -632,11 +633,11 @@ msgstr "cotação (num split)"
 
 #. "An ask is an offer to sell, and the price you want to sell at."
 msgid "price type: ask"
-msgstr "venda (valor pedido)"
+msgstr "venda"
 
 #. "A bid is an offer to buy, and the price you want to buy at."
 msgid "price type: bid"
-msgstr "compra, oferta"
+msgstr "oferta"
 
 #. "online quotes (rather: quotation!?) A statement of the current price of stocks or commodities"
 msgid "price: quotes"
@@ -664,7 +665,7 @@ msgstr "reconciliar"
 
 #. "-"
 msgid "record keeping"
-msgstr "fazer a contabilidade"
+msgstr "manter registos"
 
 #. "A list of items; a book containing such a list"
 msgid "register"
@@ -672,7 +673,7 @@ msgstr "registo"
 
 #. "A transaction that is divided into two or more parts"
 msgid "register entry: split transaction"
-msgstr "transacção em parcelas"
+msgstr "transacção com parcelas"
 
 #. "-"
 msgid "register entry: stock split"
@@ -700,7 +701,7 @@ msgstr "recarregar"
 
 #. "aka 'two-sided form' is in Europe often used for the balance sheet. Complement: report form: Vertical Form"
 msgid "report form: T Account Form"
-msgstr "Formulário frente-e-verso"
+msgstr "Formulário de conta T"
 
 #. "aka 'running form' is in english speaking countries usually used for the balance sheet in one column. Complement: report form: T Account Form"
 msgid "report form: Vertical Form"
@@ -708,7 +709,7 @@ msgstr "Formulário vertical"
 
 #. "name of an equity account (?); to be distinguished from the opening balance."
 msgid "Retained Earnings"
-msgstr "Saldo de exercícios anteriores"
+msgstr "Ganhos retidos"
 
 #. "Create a new transaction that is the inverse of the old one.  When you add the two together they completely cancel out.  Accounts use this instead of voiding transactions, usually because the prior month has been closed and can no longer be changed, or the entire accounting system is 'write only'."
 msgid "reverse transaction, to (Action in the register)"
@@ -788,7 +789,7 @@ msgstr "imposto sobre vendas"
 
 #. "'Goods and Service Tax' is one form of sales tax."
 msgid "tax type: GST"
-msgstr "Imposto sobre bens e serviços"
+msgstr "IVA"
 
 #. "'Value Added Tax' is the other form of sales tax."
 msgid "tax type: VAT"
