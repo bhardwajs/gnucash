@@ -1816,6 +1816,27 @@ test_xaccTransGetTxnType (Fixture *fixture, gconstpointer pData)
     g_assert_cmpint (TXN_TYPE_NONE, ==, xaccTransGetTxnType(txn));
 }
 
+
+static void
+test_xaccTransGetDateDue (Fixture *fixture, gconstpointer pData)
+{
+    auto txn = fixture->txn;
+    auto frame = txn->inst.kvp_data;
+
+    // if there's no date_due kvp, return posted_date
+    g_assert_cmpint (xaccTransRetDateDue(txn), ==, xaccTransRetDatePosted(txn));
+    g_assert_null (frame->get_slot({TRANS_DATE_DUE_KVP}));
+
+    xaccTransSetDateDue (txn, 100);
+    g_assert_cmpint (xaccTransRetDateDue(txn), ==, 100);
+    g_assert_cmpint (frame->get_slot({TRANS_DATE_DUE_KVP})->get_ptr<Time64>()->t, ==, 100);
+
+    xaccTransSetDateDue (txn, 0);
+    g_assert_cmpint (frame->get_slot({TRANS_DATE_DUE_KVP})->get_ptr<Time64>()->t, ==, 0);
+    // the next line is arguably buggy; shouldn't it return 0 as per kvp value?
+    g_assert_cmpint (xaccTransRetDateDue(txn), ==, xaccTransRetDatePosted(txn));
+}
+
 /* xaccTransGetReadOnly C: 7 in 5  Local: 1:0:0
  * xaccTransIsReadonlyByPostedDate C: 2 in 2  Local: 0:0:0
  * xaccTransHasReconciledSplitsByAccount Local: 1:0:0
@@ -2094,6 +2115,7 @@ test_suite_transaction (void)
     GNC_TEST_ADD (suitename, "xaccTransRollbackEdit - Backend Errors", Fixture, NULL, setup, test_xaccTransRollbackEdit_BackendErrors, teardown);
     GNC_TEST_ADD (suitename, "xaccTransOrder_num_action", Fixture, NULL, setup, test_xaccTransOrder_num_action, teardown);
     GNC_TEST_ADD (suitename, "xaccTransGetTxnType", Fixture, NULL, setup, test_xaccTransGetTxnType, teardown);
+    GNC_TEST_ADD (suitename, "xaccTransGetDateDue", Fixture, NULL, setup, test_xaccTransGetDateDue, teardown);
     GNC_TEST_ADD (suitename, "xaccTransGetreadOnly", Fixture, NULL, setup, test_xaccTransGetReadOnly, teardown);
     GNC_TEST_ADD (suitename, "xaccTransSetDocLink", Fixture, NULL, setup, test_xaccTransSetDocLink, teardown);
     GNC_TEST_ADD (suitename, "xaccTransSetNotes", Fixture, NULL, setup, test_xaccTransSetNotes, teardown);
