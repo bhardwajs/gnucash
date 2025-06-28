@@ -1988,14 +1988,10 @@ xaccTransSetDate (Transaction *trans, int day, int mon, int year)
 void
 xaccTransSetDateDue (Transaction * trans, time64 time)
 {
-    GValue v = G_VALUE_INIT;
     if (!trans) return;
-    g_value_init (&v, GNC_TYPE_TIME64);
-    g_value_set_static_boxed (&v, &time);
     xaccTransBeginEdit(trans);
-    qof_instance_set_kvp (QOF_INSTANCE (trans), &v, 1, TRANS_DATE_DUE_KVP);
+    qof_instance_set_path_kvp<Time64> (QOF_INSTANCE (trans), Time64{time}, {TRANS_DATE_DUE_KVP});
     qof_instance_set_dirty(QOF_INSTANCE(trans));
-    g_value_unset (&v);
     xaccTransCommitEdit(trans);
 }
 
@@ -2339,18 +2335,9 @@ xaccTransRetDateEntered (const Transaction *trans)
 time64
 xaccTransRetDateDue(const Transaction *trans)
 {
-    time64 ret = 0;
-    GValue v = G_VALUE_INIT;
     if (!trans) return 0;
-    qof_instance_get_kvp (QOF_INSTANCE (trans), &v, 1, TRANS_DATE_DUE_KVP);
-    if (G_VALUE_HOLDS_BOXED (&v))
-    {
-        ret = ((Time64*)g_value_get_boxed (&v))->t;
-        g_value_unset (&v);
-    }
-    if (!ret)
-        return xaccTransRetDatePosted (trans);
-    return ret;
+    auto res = qof_instance_get_path_kvp<Time64> (QOF_INSTANCE (trans), {TRANS_DATE_DUE_KVP});
+    return res ? res->t : xaccTransRetDatePosted (trans);
 }
 
 char

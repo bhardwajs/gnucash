@@ -1833,8 +1833,7 @@ test_xaccTransGetDateDue (Fixture *fixture, gconstpointer pData)
 
     xaccTransSetDateDue (txn, 0);
     g_assert_cmpint (frame->get_slot({TRANS_DATE_DUE_KVP})->get_ptr<Time64>()->t, ==, 0);
-    // the next line is arguably buggy; shouldn't it return 0 as per kvp value?
-    g_assert_cmpint (xaccTransRetDateDue(txn), ==, xaccTransRetDatePosted(txn));
+    g_assert_cmpint (xaccTransRetDateDue(txn), ==, 0);
 }
 
 /* xaccTransGetReadOnly C: 7 in 5  Local: 1:0:0
