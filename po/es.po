@@ -83,10 +83,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GnuCash 5.12\n"
-"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
-"product=GnuCash&component=Translations\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/"
+"enter_bug.cgi?product=GnuCash&component=Translations\n"
 "POT-Creation-Date: 2025-06-22 12:27-0700\n"
-"PO-Revision-Date: 2025-05-10 23:01+0000\n"
+"PO-Revision-Date: 2025-06-24 20:07+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnucash/gnucash/"
 "es/>\n"
@@ -95,11 +95,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: <b>;</b>;<span weight=\"bold\" size=\"larger\">;</"
-"span>;<span size=\"larger\" weight=\"bold\">\n"
+"X-Poedit-KeywordsList: <b>;</b>;<span weight=\"bold\" size=\"larger\""
+">;</span>;<span size=\"larger\" weight=\"bold\">\n"
 
 #: bindings/guile/date-utilities.scm:173
 #: gnucash/report/reports/example/daily-reports.scm:260
@@ -866,7 +866,7 @@ msgid ""
 "follow the instructions provided."
 msgstr ""
 "Puede importar fácilmente su información financiera existente desde Quicken, "
-"MS Money u otros programas que exporten ficheros QIF o OFX. En el menú "
+"MS Money u otros programas que exporten archivo QIF o OFX. En el menú "
 "Archivo, pulse en la opción Importar y pulse en QIF o OFX, respectivamente. "
 "Después siga las instrucciones mostradas."
 
@@ -3877,16 +3877,16 @@ msgstr "Debe introducir una cantidad válida."
 
 #: gnucash/gnome/dialog-print-check.c:862
 msgid "Cannot save check format file."
-msgstr "No se puede guardar el formato del fichero comprobante."
+msgstr "No se puede guardar el formato del archivo comprobante."
 
 #: gnucash/gnome/dialog-print-check.c:864
 #, c-format
 msgid "Cannot open file %s"
-msgstr "No puede abrir el fichero %s"
+msgstr "No puede abrir el archivo %s"
 
 #: gnucash/gnome/dialog-print-check.c:1552
 msgid "There is a duplicate check format file."
-msgstr "Hay un fichero de formato de comprobación duplicado."
+msgstr "Hay un archivo de formato de comprobación duplicado."
 
 #. Translators:
 #. %1$s is the type of the first check format
@@ -3900,8 +3900,8 @@ msgid ""
 "The GUIDs in the %s check format file '%s' and the %s check format file '%s' "
 "match."
 msgstr ""
-"Los GUID del formato de comprobante %s del fichero «%s» y el formato del "
-"comprobante %s del fichero '%s' coincide."
+"Los GUID del formato de comprobante %s del archivo «%s» y el formato del "
+"comprobante %s del archivo '%s' coincide."
 
 #. Translators: This is a directory name. It may be presented to
 #. * the user to indicate that some data file was defined by the
@@ -5528,7 +5528,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"No se puede guardar a ese nombre de fichero.\n"
+"No se puede guardar a ese nombre de archivo.\n"
 "\n"
 "%s"
 
@@ -6426,17 +6426,17 @@ msgid ""
 "file.\n"
 msgstr ""
 "\n"
-"El fichero que está intentando cargar es de una versión más antigua de "
-"GnuCash. El formato de fichero en las versiones anteriores faltaba la "
+"El archivo que está intentando cargar es de una versión más antigua de "
+"GnuCash. El formato de archivo en las versiones anteriores faltaba la "
 "especificación detallada de la codificación de los caracteres usados. Esto "
-"significa que el texto en el fichero de datos se puede leer en múltiples "
+"significa que el texto en el archivo de datos se puede leer en múltiples "
 "formas ambiguas. Esta ambigüedad no puede ser resuelta automáticamente, pero "
-"el formato de fichero GnuCash 2.0.0 nuevo incluirá todas las "
+"el formato de archivo GnuCash 2.0.0 nuevo incluirá todas las "
 "especificaciones necesarias por lo que no tiene que pasar de nuevo por este "
 "paso otra vez.\n"
 "\n"
 "GnuCash tratará de adivinar la codificación correcta de caracteres para su "
-"fichero de datos. En el GnuCash siguiente página mostrará los textos "
+"archivo de datos. En el GnuCash siguiente página mostrará los textos "
 "resultantes al utilizar esta suposición. Tiene que marcar si las palabras "
 "aparezcan como se esperaba. O bien todo aparece correcto y puede simplemente "
 "pulsar «Siguiente», o bien las palabras contienen caracteres inesperados, en "
@@ -6445,7 +6445,7 @@ msgstr ""
 "codificados pulsando sobre el botón correspondiente.\n"
 "\n"
 "Pulse «Siguiente» ahora para seleccionar la codificación de caracteres "
-"correcta para su fichero de datos.\n"
+"correcta para su archivo de datos.\n"
 
 #: gnucash/gnome-utils/assistant-xml-encoding.c:198
 msgid "Ambiguous character encoding"
@@ -6459,8 +6459,8 @@ msgid ""
 "\n"
 "You can also go back and verify your selections by clicking on \"Back\"."
 msgstr ""
-"El fichero ha sido cargado correctamente. Si pulsa «Aplicar» será guardado y "
-"recargado a la aplicación principal. De esta manera tendrá un fichero que "
+"El archivo ha sido cargado correctamente. Si pulsa «Aplicar» será guardado y "
+"recargado a la aplicación principal. De esta manera tendrá un archivo que "
 "funciona como un respaldo en el mismo directorio.\n"
 "\n"
 "Además también puede volver y verificar sus selecciones pulsando «Atrás»."
@@ -6566,11 +6566,11 @@ msgstr "ISO-8859-1 KOI8-U"
 #: gnucash/gnome-utils/assistant-xml-encoding.c:1089
 #: gnucash/gnome-utils/assistant-xml-encoding.c:1109
 msgid "The file could not be reopened."
-msgstr "El fichero no pudo ser reabierto."
+msgstr "El archivo no pudo ser reabierto."
 
 #: gnucash/gnome-utils/assistant-xml-encoding.c:1094
 msgid "Reading file…"
-msgstr "Leyendo fichero…"
+msgstr "Leyendo archivo…"
 
 #: gnucash/gnome-utils/assistant-xml-encoding.c:1117
 msgid "Parsing file…"
@@ -6866,7 +6866,7 @@ msgstr ""
 
 #: gnucash/gnome-utils/dialog-doclink-utils.c:237
 msgid "Path head for files is,"
-msgstr "La cabecera de ruta para los ficheros está,"
+msgstr "La cabecera de ruta para los archivos está,"
 
 #: gnucash/gnome-utils/dialog-doclink-utils.c:239
 msgid "Path head does not exist,"
@@ -7187,7 +7187,7 @@ msgstr "_Ocultar cuentas contenedoras"
 
 #: gnucash/gnome-utils/gnc-account-sel.c:523
 msgid "Hide _Hidden Accounts"
-msgstr "Ocultar _cuentas"
+msgstr "Ocultar _cuentas ocultas"
 
 #: gnucash/gnome-utils/gnc-account-sel.c:700
 msgid "Set the visibility of placeholder and hidden accounts."
@@ -7242,7 +7242,7 @@ msgstr "La cantidad seleccionada no puede estar punteada."
 
 #: gnucash/gnome-utils/gnc-autosave.c:101
 msgid "Save file automatically?"
-msgstr "¿Guardo el fichero automáticamente?"
+msgstr "¿Guardo el archivo automáticamente?"
 
 #: gnucash/gnome-utils/gnc-autosave.c:108
 #, c-format
@@ -7265,25 +7265,25 @@ msgid_plural ""
 "\n"
 "Should your file be saved automatically?"
 msgstr[0] ""
-"Su fichero de datos necesita ser guardado en su disco duro para guardar sus "
-"cambios. GnuCash tiene una característica para guardar el fichero "
+"Su archivo de datos necesita ser guardado en su disco duro para guardar sus "
+"cambios. GnuCash tiene una característica para guardar el archivo "
 "automáticamente cada %d minuto, tan solo si ha pulsado el botón «Guardar» "
 "cada vez.\n"
 "\n"
 "Puede modificar el intervalo de tiempo o desactivar esta característica en "
 "Editar → Preferencias → General → Intervalo de tiempo de Auto-guardado.\n"
 "\n"
-"¿Quiere que su fichero deba guardarse automáticamente?"
+"¿Quiere que su archivo deba guardarse automáticamente?"
 msgstr[1] ""
-"Su fichero de datos necesita ser guardado en su disco duro para guardar sus "
-"cambios. GnuCash tiene una característica para guardar el fichero "
+"Su archivo de datos necesita ser guardado en su disco duro para guardar sus "
+"cambios. GnuCash tiene una característica para guardar el archivo "
 "automáticamente cada %d minutos, tan solo si ha pulsado el botón «Guardar» "
 "cada vez.\n"
 "\n"
 "Puede modificar el intervalo de tiempo o desactivar esta característica en "
 "Editar → Preferencias → General → Intervalo de tiempo de Autoguardar.\n"
 "\n"
-"¿Quiere que su fichero deba guardarse automáticamente?"
+"¿Quiere que su archivo deba guardarse automáticamente?"
 
 #: gnucash/gnome-utils/gnc-autosave.c:123
 msgid "_Yes, this time"
@@ -7487,7 +7487,7 @@ msgid ""
 "system, you may not have write permission for the directory or your anti-"
 "virus software is preventing this action."
 msgstr ""
-"GnuCash no pudo escribir a %s. Esa BdD quizá está en un sistema de fichero "
+"GnuCash no pudo escribir a %s. Esa BdD quizá está en un sistema de archivo "
 "de sólo lectura, o quizá tiene que no tiene permisos de escritura en el "
 "directorio o su software antivirus está impidiendo esta operación."
 
@@ -8520,7 +8520,7 @@ msgstr ""
 "instrucciones están admitidas.\n"
 "\n"
 "  list:\t- enumera los informes disponibles.\n"
-"  show: \t- describe las opciones modificadas en el informe. Un fichero de "
+"  show: \t- describe las opciones modificadas en el informe. Un archivo de "
 "datos puede ser especificado para describir algunas opciones guardadas.\n"
 "  run: \t- ejecuta el informe sobre el archivo GnuCash proporcionado.\n"
 
@@ -8534,7 +8534,7 @@ msgstr "Especificar el tipo de exportación\n"
 
 #: gnucash/gnucash-cli.cpp:123
 msgid "Output file for report\n"
-msgstr "Fichero de salida para el boletín\n"
+msgstr "Archivo de salida para el boletín\n"
 
 #: gnucash/gnucash-cli.cpp:147 gnucash/gnucash-cli.cpp:182
 msgid "Missing data file parameter"
@@ -8612,7 +8612,7 @@ msgstr "– GnuCash, para contabilidad financiera personal y pequeños negocios"
 #: gnucash/gnucash-core-app.cpp:208
 #, c++-format
 msgid "{1} [options] [datafile]"
-msgstr "{1} [opciones] [fichero de datos]"
+msgstr "{1} [opciones] [archivo de datos]"
 
 #: gnucash/gnucash-core-app.cpp:236
 msgid "GnuCash Paths"
@@ -8674,7 +8674,7 @@ msgid ""
 "File to log into; defaults to \"/tmp/gnucash.trace\"; can be \"stderr\" or "
 "\"stdout\"."
 msgstr ""
-"El fichero bitácora interno; por defecto a «/tmp/gnucash.trace»; puede ser "
+"El archivo bitácora interno; por defecto a «/tmp/gnucash.trace»; puede ser "
 "«stderr» o «stdout»."
 
 #: gnucash/gnucash-core-app.cpp:292
@@ -8683,7 +8683,7 @@ msgstr "Opciones ocultas"
 
 #: gnucash/gnucash-core-app.cpp:295
 msgid "[datafile]"
-msgstr "[fichero-dato]"
+msgstr "[archivo-dato]"
 
 #: gnucash/gnucash.cpp:176
 msgid "Checking Finance::Quote…"
@@ -8703,7 +8703,7 @@ msgstr "Opciones de la aplicación"
 
 #: gnucash/gnucash.cpp:260
 msgid "Do not load the last file opened"
-msgstr "No cargar el último fichero abierto"
+msgstr "No cargar el último archivo abierto"
 
 #. Translators: Do not translate $DISPLAY! It is an environment variable for X11
 #: gnucash/gnucash.cpp:298
@@ -9257,7 +9257,7 @@ msgid ""
 msgstr ""
 "El tipo de letra predeterminado para utilizar cuando escriba comprobaciones. "
 "Este valor será sobrescrito por cualquier tipo de letra especificada en un "
-"fichero de descripción de comprobación."
+"archivo de descripción de comprobación."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.checkprinting.gschema.xml.in:105
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.checkprinting.gschema.xml.in:106
@@ -9295,7 +9295,7 @@ msgid ""
 "as the initial filename/pathname the next time this window is opened."
 msgstr ""
 "Este campo contiene la última ruta usada por esta ventana. Se usará como el "
-"nombre de fichero/nombre de ruta inicial la próxima vez que se abra la "
+"nombre de archivo/nombre de ruta inicial la próxima vez que se abra la "
 "ventana."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.export.csv.gschema.xml.in:17
@@ -9339,7 +9339,7 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.gschema.xml.in:264
 msgid "New hierarchy window on \"New File\""
-msgstr "Nueva ventana de jerarquía en «Crear fichero»"
+msgstr "Nueva ventana de jerarquía en «Crear archivo»"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.gschema.xml.in:265
 msgid ""
@@ -9347,7 +9347,7 @@ msgid ""
 "File\" menu item is chosen. Otherwise it will not be shown."
 msgstr ""
 "Si se activa, la ventana de «Nueva jerarquía» se mostrará siempre que se "
-"elija el «Nuevo fichero» del menú. En otro caso, no se mostrará."
+"elija el «Nuevo archivo» del menú. En otro caso, no se mostrará."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.gschema.xml.in:272
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.gschema.xml.in:273
@@ -9452,9 +9452,9 @@ msgid ""
 "score) will be added to the GnuCash file by default."
 msgstr ""
 "Este campo especifica el umbral por debajo del cual una transacción cotejada "
-"será auto-agregado. Una transacción cuyo mejor cotejo está en la zona roja "
-"(superior a la puntuación mínima representada, pero inferior o igual a la "
-"puntuación Agregar cotejada) será agregado al fichero GnuCash de forma "
+"será auto-agregado. Una transacción cuyo mejor cotejo está en la zona roja ("
+"superior a la puntuación mínima representada, pero inferior o igual a la "
+"puntuación Agregar cotejada) será agregado al archivo GnuCash de forma "
 "predeterminada."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.import.generic.gschema.xml.in:40
@@ -9541,7 +9541,7 @@ msgstr "Nombre de cuenta QIF por omisión"
 msgid "Default status for QIF transaction when not specified in QIF file."
 msgstr ""
 "Estado predeterminado para transacción QIF cuando no se especificaron en el "
-"fichero QIF."
+"archivo QIF."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.import.qif.gschema.xml.in:15
 #: gnucash/gtkbuilder/dialog-account-picker.glade:59
@@ -9549,7 +9549,7 @@ msgid ""
 "When the status is not specified in a QIF file, the transactions are marked "
 "as reconciled."
 msgstr ""
-"Cuando el estado no sea especificado en un fichero QIF, las transacciones "
+"Cuando el estado no sea especificado en un archivo QIF, las transacciones "
 "están marcadas como conciliada."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.import.qif.gschema.xml.in:32
@@ -9621,7 +9621,7 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.sxs.gschema.xml.in:17
 msgid "Run \"since last run\" dialog when a file is opened."
-msgstr "Ejecute el diálogo «desde última ejecución» cuando se abra un fichero."
+msgstr "Ejecute el diálogo «desde última ejecución» cuando se abra un archivo."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.sxs.gschema.xml.in:18
 msgid ""
@@ -9630,9 +9630,9 @@ msgid ""
 "the initial opening of the data file when GnuCash starts. If this setting is "
 "active, run the \"since last run\" process, otherwise it is not run."
 msgstr ""
-"Este parámetro controla si las transacciones planificadas procesándose "
-"«desde la última ejecución» se ejecuta automáticamente cuando el fichero de "
-"datos se abre. Esto incluye la apertura inicial del fichero de datos cuando "
+"Este parámetro controla si las transacciones planificadas procesándose «"
+"desde la última ejecución» se ejecuta automáticamente cuando el archivo de "
+"datos se abre. Esto incluye la apertura inicial del archivo de datos cuando "
 "se inicia GnuCash. Si esta opción está activa, se ejecuta el proceso «desde "
 "última ejecución», en otro caso no se ejecuta."
 
@@ -9640,7 +9640,7 @@ msgstr ""
 msgid "Show \"since last run\" notification dialog when a file is opened."
 msgstr ""
 "Muestra el diálogo de notificación «desde la última ejecución» cuando se "
-"abre un fichero."
+"abre un archivo."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.dialogs.sxs.gschema.xml.in:23
 msgid ""
@@ -9854,7 +9854,7 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:25
 msgid "Transaction Linked Files head path"
-msgstr "Cabecera de ruta de transacción de Ficheros Enlazados"
+msgstr "Cabecera de ruta de transacción de Archivos Enlazados"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:26
 msgid ""
@@ -9980,7 +9980,7 @@ msgstr ""
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:75
 #: gnucash/gtkbuilder/dialog-preferences.glade:1743
 msgid "Do not create log/backup files."
-msgstr "No crear ficheros de bitácora/respaldo."
+msgstr "No crear archivos de bitácora/respaldo."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:76
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:81
@@ -9992,11 +9992,11 @@ msgid ""
 "keep old files for a number of days. How many days is defined in key 'retain-"
 "days'"
 msgstr ""
-"Este parámetro especifica que hacer con los ficheros antiguos de bitácora/"
-"respaldo. \"forever\" quiere decir conservar todos los ficheros antiguos. "
-"\"never\" significa no conservar los ficheros de bitácora/respaldo más "
-"antiguos. Cada vez que guarda, las versiones más antiguas del fichero se "
-"eliminan. \"days\" significa conservar los ficheros antiguos por un número "
+"Este parámetro especifica que hacer con los archivos antiguos de bitácora/"
+"respaldo. \"forever\" quiere decir conservar todos los archivos antiguos. "
+"\"never\" significa no conservar los archivos de bitácora/respaldo más "
+"antiguos. Cada vez que guarda, las versiones más antiguas del archivo se "
+"eliminan. \"days\" significa conservar los archivos antiguos por un número "
 "de días. Cuanta cantidad de días está especificado en la clave 'retain-days' "
 "(días de conservación)"
 
@@ -10055,7 +10055,7 @@ msgid ""
 "Sign reverse balances on the following: Credit Card, Payable, Liability, "
 "Equity, and Income."
 msgstr ""
-"Signo de balances inversos de lo siguiente: Tarjeta Crediticia, Acreedor, "
+"Signo revierte balances en lo siguiente: Tarjeta Crediticia, Acreedor, "
 "Pasivo, Patrimonio e Ingresos."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:105
@@ -10371,7 +10371,7 @@ msgid ""
 "Set book option on new files to use split \"action\" field for \"Num\" field "
 "on registers/reports"
 msgstr ""
-"Fija la opción del libro en ficheros nuevos para utilizar campos del "
+"Fija la opción del libro en archivos nuevos para utilizar campos del "
 "desglose “función” y “Núm” en los registros/boletines"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:231
@@ -10384,13 +10384,13 @@ msgid ""
 "is set so that the 'Num' cell on registers shows/updates the transaction "
 "'num' field."
 msgstr ""
-"Si se selecciona, la opción de libro por defecto para los nuevos ficheros se "
-"establece de forma que la celda 'Num' de los registros muestre/actualice el "
-"campo 'action' de la división y el campo 'num' de la transacción se muestre "
-"en la segunda línea en la vista de doble línea (y no sea visible si no se "
+"Si se selecciona, la opción de libro por defecto para los nuevos archivos se "
+"establece de forma que la celda 'Núm' de los registros muestre/actualice el "
+"campo 'accion' del desglose y el campo 'núm' de la transacción se muestre en "
+"la segunda línea en la vista de doble línea (y no sea visible si no se "
 "establece). De lo contrario, la opción de libro por defecto para los nuevos "
-"ficheros está configurada para que la celda 'Num' de los registros muestre/"
-"actualice el campo 'num' de transacción."
+"archivos está configurada para que la celda 'Núm' de los registros muestre/"
+"actualice el campo 'núm' de transacción."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:247
 msgid "Color the register using a gnucash specific color theme"
@@ -10404,12 +10404,12 @@ msgid ""
 "css file to be stored in the gnucash used config directory. More information "
 "can be found in the gnucash FAQ."
 msgstr ""
-"Cuando activó el registro empleará un tema de color especifico de GnuCash "
-"(verde/amarillo). En otro caso empleará el tema del color del sistema. A "
+"Cuando activó el registro empleará un tema de color especifico de GnuCash ("
+"verde/amarillo). En otro caso empleará el tema del color del sistema. A "
 "pesar de esta configuración el usuario puede siempre puede anular el tema "
-"del color por medio del fichero css específico para ser almacenado en el "
-"directorio de configuración de gnucash. Más información puede encontrarse en "
-"la P+F de gnucash."
+"del color por medio del archivo CSS específico para ser almacenado en el "
+"directorio de configuración de Gnucash. Más información puede encontrarse en "
+"la P+F de Gnucash."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:252
 msgid "\"Enter\" key moves to bottom of register"
@@ -10747,13 +10747,13 @@ msgid ""
 "not allowed in filenames, such as '/', will be replaced with underscores '_' "
 "in the resulting file name."
 msgstr ""
-"Este parámetro elige el nombre del fichero para exportar como PDF. Esto es "
+"Este parámetro elige el nombre del archivo para exportar como PDF. Esto es "
 "una cadena sprint(3) con tres argumentos: \"%1$s\" es el nombre del boletín "
-"como «Factura». «%2$s» es el número del boletín, al cual para un boletín "
+"como «Factura». «%2$s» es el número del boletín, al cual para un boletín de "
 "factura es el número de la cuenta. «%3$s» es la fecha del boletín, "
-"formateado de acuerdo a la opción de nombre-fichero-fecha-formato. Nota: "
-"cualquier carácter que sea no permitido en nombres de ficheros, como '/', "
-"serán remplazados con guiones bajos '_' en el nombre del fichero resultante."
+"formateado de acuerdo a la opción de nombre-archivo-fecha-formato. Nota: "
+"cualquier carácter que sea no permitido en nombres de archivos, como '/', "
+"serán remplazados con guiones bajos '_' en el nombre del archivo resultante."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:390
 msgid "PDF export file name date format choice"
@@ -10768,7 +10768,7 @@ msgid ""
 "United States style dates."
 msgstr ""
 "Este parámetro elige la forma en que se utilizan las fechas en el nombre del "
-"fichero de exportación PDF. Los valores posibles para estas opciones son "
+"archivo de exportación PDF. Los valores posibles para estas opciones son "
 "\"local\" para emplear el sistema local, \"ce\" para el estilo de datos de "
 "Europa Continental, \"iso\" para las fechas comunes ISO 8601, \"uk\" para el "
 "estilo de fechas del Reino Unido, y \"us\" para el estilo de fechas de "
@@ -10776,7 +10776,7 @@ msgstr ""
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:397
 msgid "Allow file incompatibility with older versions."
-msgstr "Permitir incompatibilidad de ficheros con versiones anteriores."
+msgstr "Permitir incompatibilidad de archivos con versiones anteriores."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.gschema.xml.in:398
 msgid ""
@@ -10786,14 +10786,14 @@ msgid ""
 "in formats that can be read by older versions as well."
 msgstr ""
 "Si se activa, se permite que GnuCash rompa de forma intencionada la "
-"compatibilidad de ficheros con versiones anteriores, de forma que los datos "
+"compatibilidad de archivos con versiones anteriores, de forma que los datos "
 "guardados con esta versión no se podrán abrir con las anteriores. En otro "
 "caso, GnuCash guardará los datos de forma que se puedan leen con versiones "
 "anteriores."
 
 #: gnucash/gschemas/org.gnucash.GnuCash.history.gschema.xml.in:5
 msgid "Number of files in history"
-msgstr "Número de ficheros dentro del historial"
+msgstr "Número de archivos dentro del historial"
 
 #: gnucash/gschemas/org.gnucash.GnuCash.history.gschema.xml.in:6
 msgid ""
@@ -10801,7 +10801,7 @@ msgid ""
 "Files menu. This value may be set to zero to disable the file history. This "
 "number has a maximum value of 10."
 msgstr ""
-"Este parámetro contiene el número de ficheros a mantener en el menú Archivos "
+"Este parámetro contiene el número de archivos a mantener en el menú Archivos "
 "abiertos recientemente. Este valor puede ser cero para desactivar el "
 "histórico de archivos. El valor máximo es 10."
 
@@ -11416,10 +11416,10 @@ msgid ""
 "Click on \"Next\" to proceed or \"Cancel\" to Abort Import.\n"
 msgstr ""
 "\n"
-"Este asistente le ayudará a importar Cuentas desde un fichero.\n"
+"Este asistente le ayudará a importar Cuentas desde un archivo.\n"
 "\n"
-"El fichero debe estar en el mismo formato que esa exportó como éste es un "
-"formato fijado de importación el cual puede ser visto buscando un fichero "
+"El archivo debe estar en el mismo formato que esa exportó como éste es un "
+"formato fijado de importación el cual puede ser visto buscando un archivo "
 "creado por medio de la opción del menú de exportación «Exportar Árbol de "
 "Cuentas a CVS».\n"
 "\n"
@@ -11437,12 +11437,11 @@ msgstr "Asistente de Importación de Cuentas"
 
 #: gnucash/gtkbuilder/assistant-csv-account-import.glade:66
 msgid "Enter file name and location for the Import…"
-msgstr ""
-"Introduzca el nombre del fichero y la localización para la Importación…"
+msgstr "Introduzca el nombre del archivo y la localización para la Importación…"
 
 #: gnucash/gtkbuilder/assistant-csv-account-import.glade:77
 msgid "Choose File to Import"
-msgstr "Escoja Fichero a Importar"
+msgstr "Escoja archivo para Importar"
 
 #: gnucash/gtkbuilder/assistant-csv-account-import.glade:97
 msgid "Number of rows for the Header"
@@ -11478,7 +11477,7 @@ msgstr "Dos puntos (:)"
 #: gnucash/gtkbuilder/assistant-csv-account-import.glade:217
 #: gnucash/gtkbuilder/assistant-csv-export.glade:214
 msgid "Select Separator Character"
-msgstr "Seleccionar el símbolo para el separador"
+msgstr "Seleccionar el carácter como separador"
 
 #: gnucash/gtkbuilder/assistant-csv-account-import.glade:255
 msgid "Preview"
@@ -11494,7 +11493,7 @@ msgid ""
 "Press Apply to create export file.\n"
 "Cancel to abort."
 msgstr ""
-"Pulse «Aplicar» para crear estos ficheros de exportación.\n"
+"Pulse «Aplicar» para crear estos archivos de exportación.\n"
 "Cancele para interrumpir."
 
 #: gnucash/gtkbuilder/assistant-csv-account-import.glade:283
@@ -11615,12 +11614,11 @@ msgstr "Selección de Cuenta"
 
 #: gnucash/gtkbuilder/assistant-csv-export.glade:673
 msgid "Enter file name and location for the Export…"
-msgstr ""
-"Introduzca el nombre del fichero y la localización para la Exportación…"
+msgstr "Introduzca el nombre del archivo y la localización para la Exportación…"
 
 #: gnucash/gtkbuilder/assistant-csv-export.glade:684
 msgid "Choose File Name for Export"
-msgstr "Escoja Nombre del Fichero a Exportar"
+msgstr "Escoja Nombre del Archivo a Exportar"
 
 #: gnucash/gtkbuilder/assistant-csv-export.glade:698
 msgid "Export Now…"
@@ -11670,7 +11668,7 @@ msgid ""
 "\n"
 "Click on \"Next\" to proceed or \"Cancel\" to Abort Import."
 msgstr ""
-"Este asistente le ayudará a importar Precios desde un fichero CSV.\n"
+"Este asistente le ayudará a importar Precios desde un archivo CSV.\n"
 "\n"
 "Hay un número mínimo de columnas que tiene que ser prefijadas para una "
 "importación correcta, estas son Fecha, Cantidad, Espacio de Nombres Origen, "
@@ -11683,8 +11681,8 @@ msgstr ""
 "distribución representada de filas para fijar una anchura de columna, "
 "después pulse el botón secundario para modificar si se requiere.\n"
 "\n"
-"Ejemplos son \"FTSE\", \"RR.L\", \"21/11/2016\", 5'345,\"GBP\" y MONEDA;"
-"USD;2016-11-21;1.56;GBP\n"
+"Ejemplos son \"FTSE\", \"RR.L\", \"21/11/2016\", 5'345,\"GBP\" y "
+"MONEDA;EUR;2016-11-21;1.56;GBP\n"
 "\n"
 "Hay una opción para especificar la fila de inicio, fila final y una opción "
 "para descartar filas alternativas empezando desde la fila de inicio la cual "
@@ -11714,13 +11712,13 @@ msgid ""
 "Select location and file name for the Import, then click \"Next\"…\n"
 msgstr ""
 "\n"
-"Seleccione localización y nombre del fichero para la Importación, después "
+"Seleccione localización y nombre del archivo para la Importación, después "
 "pulse «Siguiente»…\n"
 
 #: gnucash/gtkbuilder/assistant-csv-price-import.glade:100
 #: gnucash/gtkbuilder/assistant-csv-trans-import.glade:90
 msgid "Select File for Import"
-msgstr "Seleccione el fichero para Importar"
+msgstr "Seleccione el archivo para importar"
 
 #: gnucash/gtkbuilder/assistant-csv-price-import.glade:139
 #: gnucash/gtkbuilder/assistant-csv-trans-import.glade:127
@@ -12000,7 +11998,7 @@ msgid ""
 "information is empty or the same as the first transaction line the importer "
 "will consider this line part of the same transaction."
 msgstr ""
-"Normalmente el importador asumirá cada línea dentro del fichero de entrada "
+"Normalmente el importador asumirá cada línea dentro del archivo de entrada "
 "corresponderá a una transacción. Cada línea puede tener información para una "
 "transacción y una o dos desgloses.\n"
 "\n"
@@ -12100,17 +12098,17 @@ msgstr ""
 "En la siguiente página será capaz de asociar cada transacción a una "
 "categoría.\n"
 "\n"
-"Si ésta es su <i>importación inicial dentro de un fichero nuevo</i>, primero "
+"Si ésta es su <i>importación inicial dentro de un archivo nuevo</i>, primero "
 "verá un diálogo para configurar opciones del libro, por lo que estas pueden "
-"afectar cómo los datos importados son convertidos a asientos GnuCash. Si "
-"esto es un fichero existente, el diálogo no será mostrado.\n"
+"afectar cómo los datos importados son convertidos a transacciones GnuCash. "
+"Si esto es un archivo existente, el diálogo no será mostrado.\n"
 "\n"
 "Si este es la <i>importación por primera vez</i>, encontrará que todas las "
 "líneas tal vez requieran ser asociadas. En las importaciones subsiguientes, "
 "el importador intentará asociar las transacciones basadas en las anteriores "
 "importaciones.\n"
 "\n"
-"La confianza de una asociación correcta será desplegada como una barra "
+"La confianza de una asociación correcta será exhibida como una barra "
 "coloreada.\n"
 "\n"
 "Puede ser visualizada más información utilizando el botón de ayuda."
@@ -12259,7 +12257,7 @@ msgid ""
 "Press 'Cancel' to close this dialog without creating any new accounts."
 msgstr ""
 "Pulse «Aplicar» para crear sus cuentas nuevas. A continuación, podrá "
-"guardarlos en un fichero o base de datos.\n"
+"guardarlos en un archivo o base de datos.\n"
 "\n"
 "Pulse «Atrás» para revisar sus selecciones.\n"
 "\n"
@@ -12315,10 +12313,8 @@ msgid "APR (Compounded Quarterly)"
 msgstr "ARP (Comprobación Trimestral)"
 
 #: gnucash/gtkbuilder/assistant-loan.glade:61
-#, fuzzy
-#| msgid "APR (Compounded Annually)"
 msgid "APR (Compounded Semi-annually)"
-msgstr "ARP (Comprobación Anual)"
+msgstr "ARP (Comprobado Semi-Anualmente)"
 
 #: gnucash/gtkbuilder/assistant-loan.glade:64
 msgid "APR (Compounded Annually)"
@@ -12584,7 +12580,7 @@ msgid ""
 "Click \"Next\" to start loading your QIF data, or \"Cancel\" to abort the "
 "process."
 msgstr ""
-"GnuCash puede importar datos financieros desde ficheros QIF (Formato de "
+"GnuCash puede importar datos financieros desde archivos QIF (Formato de "
 "Intercambio de Quicken) generados por Quicken/QuickBooks, MS Money, "
 "Moneydance y muchos otros programas.\n"
 "\n"
@@ -12596,7 +12592,7 @@ msgstr ""
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:35
 msgid "Import QIF files"
-msgstr "Importa ficheros QIF"
+msgstr "Importa archivos QIF"
 
 #. Run the assistant in your language to see GTK's translation of the button labels.
 #: gnucash/gtkbuilder/assistant-qif-import.glade:50
@@ -12608,7 +12604,7 @@ msgid ""
 "You will have the opportunity to load as many files as you wish, so don't "
 "worry if your data is in multiple files.\n"
 msgstr ""
-"Seleccione un archivo para cargar. Cuando pulse «Siguiente», el fichero será "
+"Seleccione un archivo para cargar. Cuando pulse «Siguiente», el archivo será "
 "cargado y analizado. Puede que tenga que responder algunas preguntas sobre "
 "la(s) cuenta(s) en el archivo.\n"
 "\n"
@@ -12621,7 +12617,7 @@ msgstr "_Seleccionar…"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:109
 msgid "Select a QIF file to load"
-msgstr "Seleccione fichero QIF a cargar"
+msgstr "Seleccione archivo QIF a cargar"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:185
 msgid "_Start"
@@ -12629,7 +12625,7 @@ msgstr "_Iniciar"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:255
 msgid "Load QIF files"
-msgstr "Cargar ficheros QIF"
+msgstr "Cargar archivo QIF"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:269
 msgid ""
@@ -12643,25 +12639,25 @@ msgid ""
 "software are likely to be in \"d-m-y\" or day-month-year format, where US "
 "QIF files are likely to be \"m-d-y\" or month-day-year.\n"
 msgstr ""
-"El formato de fichero QIF no especifica cuáles operaciones del día, mes y "
+"El formato de archivo QIF no especifica cuáles operaciones del día, mes y "
 "año de una fecha compuesta están escritas. En la mayoría de los casos, es "
-"posible determinar automáticamente qué formato se usa en cada fichero. Sin "
-"embargo, en el fichero que está importando existe más de un formato posible "
+"posible determinar automáticamente qué formato se usa en cada archivo. Sin "
+"embargo, en el archivo que está importando existe más de un formato posible "
 "que se adecua a los datos.\n"
 "\n"
-"Selecciones un formato de fecha para el fichero. Los ficheros QIF creados "
-"por software europeo suelen estar en el formato \"d-m-a\" o día - mes - año, "
-"mientras que los ficheros QIF de los EE. UU. suelen tener el formato \"m-d-"
-"a\" o mes - día - año.\n"
+"Selecciones un formato de fecha para el archivo. Los archivos QIF creados "
+"por software europeo suelen estar en el formato \"d-m-a\" o \"día-mes-año\", "
+"mientras que los archivos QIF de los EUA suelen tener el formato \"m-d-a\" o "
+"\"mes-día-año\".\n"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:304
 #: gnucash/gtkbuilder/assistant-qif-import.glade:389
 msgid "Click \"Back\" to cancel the loading of this file and choose another."
-msgstr "Pulse «Atrás» para cancelar la carga de este fichero y elegir otro."
+msgstr "Pulse «Atrás» para cancelar la carga de este archivo y elegir otro."
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:317
 msgid "Set a date format for this QIF file"
-msgstr "Fijar un formato de fecha para este fichero QIF"
+msgstr "Fijar un formato de fecha para este archivo QIF"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:331
 msgid ""
@@ -12672,10 +12668,10 @@ msgid ""
 "accounting program, you should use the same account name that was used in "
 "that program.\n"
 msgstr ""
-"El fichero QIF que acaba de cargar parece contener transacciones para una "
+"El archivo QIF que acaba de cargar parece contener transacciones para una "
 "única cuenta, pero no especifica el nombre de la cuenta.\n"
 "\n"
-"Introduzca el nombre de la cuenta. Si el fichero ha sido exportado desde "
+"Introduzca el nombre de la cuenta. Si el archivo ha sido exportado desde "
 "otro programa de contabilidad, puede usar el mismo nombre de cuenta usado en "
 "ese programa.\n"
 
@@ -12731,7 +12727,7 @@ msgid ""
 "page so you can change them if you want to, but it is safe to leave them "
 "alone.\n"
 msgstr ""
-"En la página siguiente, las cuentas en sus ficheros QIF y cualquier albarán "
+"En la página siguiente, las cuentas en sus archivos QIF y cualquier albarán "
 "o fondos de inversión que posea serán cotejado con cuentas GnuCash. Si ya "
 "existe una cuenta GnuCash con el mismo nombre, o nombre similar y tipo "
 "compatible, esa cuenta se usara como cotejar; si no, GnuCash creará una "
@@ -12781,7 +12777,7 @@ msgid ""
 "safely within GnuCash."
 msgstr ""
 "GnuCash usa cuentas de Ingresos y Gastos separadas mejor que categorías para "
-"clasificar sus transacciones. Cada una de las categoría dentro de su fichero "
+"clasificar sus transacciones. Cada una de las categoría dentro de su archivo "
 "QIF será convertida a una cuenta GnuCash.\n"
 "\n"
 "En la siguiente página, tendrá una oportunidad para mirar en los cotejos "
@@ -12834,7 +12830,7 @@ msgid ""
 "The QIF importer cannot currently handle multi-currency QIF files. All the "
 "accounts you are importing must be denominated in the same currency.\n"
 msgstr ""
-"El importador de QIF no puede manejar ficheros QIF con múltiples monedas. "
+"El importador de QIF no puede manejar archivos QIF con múltiples monedas. "
 "Todas las cuentas que esta importando deben estar denominados en la misma "
 "moneda.\n"
 
@@ -12851,7 +12847,7 @@ msgid ""
 "setting book options will not be shown a second time when you go forward. "
 "You can access it directly from the menu via File->Properties."
 msgstr ""
-"Desde que se está creando un fichero nuevo, lo siguiente que habrá que hacer "
+"Desde que se está creando un archivo nuevo, lo siguiente que habrá que hacer "
 "es ver un diálogo para configurar opciones del libro. Estas pueden afectar "
 "cómo se importan las transacciones de GnuCash. Si vuelve a esta página sin "
 "cancelar e iniciando otra, el diálogo para ajustar las opciones de ejercicio "
@@ -12861,7 +12857,7 @@ msgstr ""
 #: gnucash/gtkbuilder/assistant-qif-import.glade:969
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:2776
 msgid "Choose the QIF file currency and select Book Options"
-msgstr "Escoja la moneda del fichero QIF y seleccione las Opciones del Libro"
+msgstr "Escoja la moneda del archivo QIF y seleccione las Opciones del Libro"
 
 #: gnucash/gtkbuilder/assistant-qif-import.glade:990
 msgid ""
@@ -12881,7 +12877,7 @@ msgid ""
 "appropriate, you can enter a new one."
 msgstr ""
 "Debajo se le preguntará para proporcionar información acerca de albaranes, "
-"fondos de inversión, y otras inversiones que aparecen en el/los fichero(s) "
+"fondos de inversión, y otras inversiones que aparecen en el/los archivo(s) "
 "QIF que está importando. GnuCash necesita algunos detalles adicionales "
 "acerca de estas inversiones que el formato QIF no proporciona.\n"
 "\n"
@@ -12937,7 +12933,7 @@ msgid ""
 "\n"
 "Click \"Next\" to review the possible matches."
 msgstr ""
-"Si está importando un fichero QIF desde un banco u otra institución "
+"Si está importando un archivo QIF desde un banco u otra institución "
 "financiera, algunas de las transacciones pueden existir ya en sus cuentas de "
 "GnuCash. Para evitar la duplicación, GnuCash ha intentado identificar las "
 "coincidencias y necesita su ayuda para revisarlas.\n"
@@ -12986,7 +12982,7 @@ msgstr ""
 "\n"
 "Pulse «Atrás» para revisar su cuenta y categoría cotejos, para modificar "
 "opciones de moneda y garantías para cuentas nuevas, o para añadir más "
-"ficheros al área de operaciones.\n"
+"archivos al área de operaciones.\n"
 "\n"
 "Pulse «Cancelar» para interrumpir el proceso de importación QIF."
 
@@ -13944,7 +13940,7 @@ msgstr "Importar transacciones desde el archivo de texto"
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:123
 #: gnucash/gtkbuilder/dialog-customer-import-gui.glade:126
 msgid "1. Choose the file to import"
-msgstr "1. Escoja el fichero para importar"
+msgstr "1. Escoja el archivo a importar"
 
 #: gnucash/gtkbuilder/dialog-bi-import-gui.glade:153
 msgid "Import bill CSV data"
@@ -14437,7 +14433,7 @@ msgstr "Dirección de envío"
 #. Title of dialog
 #: gnucash/gtkbuilder/dialog-customer-import-gui.glade:9
 msgid "Import customers or vendors from text file"
-msgstr "Importa clientes o proveedores desde un fichero de texto"
+msgstr "Importa clientes o proveedores desde un archivo de texto"
 
 #: gnucash/gtkbuilder/dialog-customer-import-gui.glade:157
 msgid "For importing customer lists."
@@ -14490,7 +14486,7 @@ msgid ""
 "Existing relative file path links will be converted to absolute ones by "
 "combining them with the existing path head unless box unticked."
 msgstr ""
-"Enlaces de ruta al fichero relativo existente será convertido a absolutos "
+"Enlaces de ruta al archivo relativo existente será convertido a absolutos "
 "combinándolos con la cabecera de ruta existente a no ser que la caja está "
 "desmarcada."
 
@@ -14499,7 +14495,7 @@ msgid ""
 "Existing absolute file path links will be converted to relative ones by "
 "comparing them to the new path head unless box unticked."
 msgstr ""
-"Enlaces de ruta de fichero absoluto existente será convertido a unos "
+"Enlaces de ruta de archivo absoluto existente será convertido a unos "
 "relativos por comparación de estas a la cabecera nueva de ruta a no ser que "
 "la caja no esté etiquetada."
 
@@ -15735,7 +15731,7 @@ msgstr "Números, Fecha, Hora"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:1421
 msgid "Perform account list _setup on new file"
-msgstr "Realizar una _configuración de plan contable al crear un fichero nuevo"
+msgstr "Realizar una _configuración de plan contable al crear un archivo nuevo"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:1427
 msgid "Present the new account list dialog when you choose File->New File."
@@ -15753,8 +15749,7 @@ msgstr "Exhibe consejos de uso de GnuCash al iniciar."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:1485
 msgid "How many days to keep old log/backup files."
-msgstr ""
-"Cuantos días para conservar los antiguos ficheros de bitácora/respaldo."
+msgstr "Cuantos días para conservar los antiguos archivos de bitácora/respaldo."
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:1504
 #: gnucash/gtkbuilder/dialog-sx.glade:615
@@ -15766,7 +15761,7 @@ msgstr "días"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:1523
 msgid "<b>_Retain log/backup files</b>"
-msgstr "<b>_Conservar ficheros de boletín/respaldo</b>"
+msgstr "<b>_Conservar archivos de boletín/respaldo</b>"
 
 #: gnucash/gtkbuilder/dialog-preferences.glade:1535
 msgid "Com_press files"
@@ -16982,7 +16977,7 @@ msgstr "<b>Predeterminaciones del Editor de Transacción</b>"
 
 #: gnucash/gtkbuilder/dialog-sx.glade:541
 msgid "_Run when data file opened"
-msgstr "Ejecuta_r cuando el fichero de datos esté abierto"
+msgstr "Ejecuta_r cuando el archivo de datos esté abierto"
 
 #: gnucash/gtkbuilder/dialog-sx.glade:545
 msgid "Run the \"since last run\" process when a file is opened."
@@ -16999,7 +16994,7 @@ msgid ""
 "is opened."
 msgstr ""
 "Muestra la ventana de notificación «desde la última ejecución» cuando se "
-"abre un fichero."
+"abre un archivo."
 
 #: gnucash/gtkbuilder/dialog-sx.glade:575
 msgid "_Auto-create new transactions"
@@ -18778,7 +18773,7 @@ msgid ""
 "too."
 msgstr ""
 "Algunos bancos sitúan parte de descripción transaccional como ‘texto "
-"transaccional’ dentro del fichero MT940. Normalmente GnuCash descarta este "
+"transaccional’ dentro del archivo MT940. Normalmente GnuCash descarta este "
 "texto. Sin embargo al activar esta opción, el texto de la transacción "
 "también se emplea para la descripción de la transacción."
 
@@ -19165,7 +19160,7 @@ msgstr "Asunto:"
 
 #: gnucash/import-export/aqb/gnc-file-aqb-import.c:78
 msgid "Select a file to import"
-msgstr "Seleccione el fichero a importar"
+msgstr "Seleccione el archivo a importar"
 
 #: gnucash/import-export/aqb/gnc-gwen-gui.c:1093
 #, c-format
@@ -19189,7 +19184,7 @@ msgstr "Importar usando AQBanking"
 
 #: gnucash/import-export/aqb/gnc-plugin-aqbanking.ui:8
 msgid "Import into GnuCash any file format supported by AQBanking"
-msgstr "Importa en GnuCash cualquier fichero soportado por AQBanking"
+msgstr "Importa en GnuCash cualquier archivo soportado por AQBanking"
 
 #: gnucash/import-export/aqb/gnc-plugin-aqbanking.ui:14
 msgid "_Online Actions"
@@ -19306,7 +19301,7 @@ msgid ""
 "AqBanking library offers various import formats (called \"profiles\") of "
 "which you can choose one here."
 msgstr ""
-"Este parámetro especifica el formato de datos al importar ficheros DTAUS. La "
+"Este parámetro especifica el formato de datos al importar archivos DTAUS. La "
 "biblioteca AqBanking ofrece varios formatos de importación (llamada "
 "«profiles») de los cuales aquí puede elegir uno."
 
@@ -19320,7 +19315,7 @@ msgid ""
 "AqBanking library offers various import formats (called \"profiles\") of "
 "which you can choose one here."
 msgstr ""
-"Este parámetro especifica el formato de datos al importar ficheros CSV. La "
+"Este parámetro especifica el formato de datos al importar archivos CSV. La "
 "biblioteca AqBanking ofrece varios formatos de importación (llamada "
 "«profiles») de los cuales aquí puede elegir uno."
 
@@ -19334,9 +19329,9 @@ msgid ""
 "AqBanking library offers various import formats (called \"profiles\") of "
 "which you can choose one here."
 msgstr ""
-"Este parámetro especifica el formato de datos al importar ficheros SWIFT "
-"MT940. La biblioteca AqBanking ofrece varios formatos de importación "
-"(llamada «profiles») de los cuales aquí puede elegir uno."
+"Este parámetro especifica el formato de datos al importar archivos SWIFT "
+"MT940. La biblioteca AqBanking ofrece varios formatos de importación ("
+"llamada «profiles») de los cuales aquí puede elegir uno."
 
 #: gnucash/import-export/aqb/gschemas/org.gnucash.GnuCash.dialogs.import.hbci.gschema.xml.in:50
 msgid "SWIFT MT942 import data format"
@@ -19348,9 +19343,9 @@ msgid ""
 "AqBanking library offers various import formats (called \"profiles\") of "
 "which you can choose one here."
 msgstr ""
-"Este parámetro especifica el formato de datos al importar ficheros SWIFT "
-"MT942. La biblioteca AqBanking ofrece varios formatos de importación "
-"(llamada «profiles») de los cuales aquí puede elegir uno."
+"Este parámetro especifica el formato de datos al importar archivos SWIFT "
+"MT942. La biblioteca AqBanking ofrece varios formatos de importación ("
+"llamada «profiles») de los cuales aquí puede elegir uno."
 
 #: gnucash/import-export/bi-import/dialog-bi-import.c:297
 #, c-format
@@ -19564,7 +19559,7 @@ msgstr "Estas líneas se han descartado durante la importación"
 #: gnucash/import-export/csv-imp/assistant-csv-account-import.c:392
 #: gnucash/import-export/customer-import/dialog-customer-import-gui.c:208
 msgid "The input file can not be opened."
-msgstr "El fichero de entrada no puede abrirse."
+msgstr "El archivo de entrada no puede abrirse."
 
 #: gnucash/import-export/bi-import/dialog-bi-import-gui.c:353
 #: gnucash/import-export/csv-imp/assistant-csv-account-import.c:302
@@ -19579,7 +19574,7 @@ msgid ""
 "This regular expression is used to parse the import file. Modify according "
 "to your needs.\n"
 msgstr ""
-"Esta expresión regular se utiliza para interpretar el fichero de "
+"Esta expresión regular se utiliza para interpretar el archivo de "
 "importación. Modifíquelo de acuerdo a sus necesidades.\n"
 
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:80
@@ -19590,10 +19585,10 @@ msgid ""
 "Select the settings you require for the file and then click \"Next\" to "
 "proceed or \"Cancel\" to abort the export.\n"
 msgstr ""
-"Este asistente le ayudará a exportar el Plan Contable a un fichero con el "
+"Este asistente le ayudará a exportar el Plan Contable a un archivo con el "
 "separador especificado debajo.\n"
 "\n"
-"Seleccione las opciones que requiera para el fichero y después pulse "
+"Seleccione las opciones que requiera para el archivo y después pulse "
 "«Siguiente» para continuar o «Cancelar» para interrumpir exportación.\n"
 
 #. Translators: %s is one of the following paragraphs about rows/transaction.
@@ -19615,7 +19610,7 @@ msgid ""
 "Select the settings you require for the file and then click \"Next\" to "
 "proceed or \"Cancel\" to abort the export.\n"
 msgstr ""
-"Este asistente le ayudará a exportar las Transacciones a un fichero con el "
+"Este asistente le ayudará a exportar las Transacciones a un archivo con el "
 "separador especificado debajo.\n"
 "\n"
 "%s\n"
@@ -19626,10 +19621,10 @@ msgstr ""
 "\n"
 "El formato de salida de Precio/Proporción está controlado por la "
 "precedencia\n"
-"«Números, Fecha, Hora» -&gt; «Forzar Precios para desplegar como "
-"decimales».\n"
+"«Números, Fecha, Hora» -&gt; «Forzar Precios para desplegar como decimales»."
 "\n"
-"Seleccione los parámetros que requiere para el fichero y después pulse "
+"\n"
+"Seleccione los parámetros que requiere para el archivo y después pulse "
 "«Siguiente» para proceder o «Cancelar» para interrumpir la exportación.\n"
 
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:99
@@ -19659,7 +19654,7 @@ msgid ""
 "You can also verify your selections by clicking on \"Back\" or \"Cancel\" to "
 "abort the export.\n"
 msgstr ""
-"El plan contable será exportado al fichero '%s' cuando pulse «Aplicar».\n"
+"El plan contable será exportado al archivo '%s' cuando pulse «Aplicar».\n"
 "\n"
 "Puede también verificar sus selecciones pulsando «Atrás» o «Cancelar» para "
 "interrumpir la exportación.\n"
@@ -19674,7 +19669,7 @@ msgid ""
 "You can also verify your selections by clicking on \"Back\" or \"Cancel\" to "
 "abort the export.\n"
 msgstr ""
-"Cuando pulse «Aplicar», las transacciones serán exportadas al fichero «%s» y "
+"Cuando pulse «Aplicar», las transacciones serán exportadas al archivo «%s» y "
 "el número de cuentas exportadas serán %u.\n"
 "\n"
 "También puede verificar sus selecciones pulsando en «Atrás» o «Cancelar» "
@@ -19690,7 +19685,7 @@ msgid ""
 "You can also verify your selections by clicking on \"Back\" or \"Cancel\" to "
 "abort the export.\n"
 msgstr ""
-"Cuando pulse «Aplicar», las transacciones serán exportadas al fichero «%s».\n"
+"Cuando pulse «Aplicar», las transacciones serán exportadas al archivo «%s».\n"
 "\n"
 "Además puede verificar sus selecciones pulsando en «Atrás» o «Cancelar» para "
 "interrumpir la exportación.\n"
@@ -19703,13 +19698,13 @@ msgid ""
 "You may need to enable debugging.\n"
 msgstr ""
 "Hubo un problema con la exportación, esto podría ser vencido a falta de "
-"espacio, permisos o imposible acceder a la carpeta. Compruebe que el fichero "
+"espacio, permisos o imposible acceder a la carpeta. Compruebe que el archivo "
 "de la traza para más detalles.\n"
 "Puede que necesite habilitar el depurador.\n"
 
 #: gnucash/import-export/csv-exp/assistant-csv-export.c:763
 msgid "File exported successfully!\n"
-msgstr "¡Fichero exportado correctamente!\n"
+msgstr "¡Archivo exportado correctamente!\n"
 
 #: gnucash/import-export/csv-exp/csv-transactions-export.cpp:135
 #: gnucash/import-export/import-main-matcher.cpp:1901
@@ -19779,7 +19774,7 @@ msgid ""
 "You can verify your selections by clicking on 'Back' or 'Cancel' to Abort "
 "Import.\n"
 msgstr ""
-"Las cuentas serán importadas desde el fichero '%s' cuando pulse 'Aplicar'.\n"
+"Las cuentas serán importadas desde el archivo '%s' cuando pulse 'Aplicar'.\n"
 "\n"
 "Puede verificar sus selecciones pulsando 'Atrás' o 'Cancelar' para "
 "Interrumpir Importación.\n"
@@ -19798,12 +19793,12 @@ msgid ""
 "Note: After import, you may need to use 'View / Filter By / Other' menu "
 "option and select to show unused Accounts.\n"
 msgstr ""
-"Las cuentas serán importadas desde el fichero '%s' cuando pulse 'Aplicar'.\n"
+"Las cuentas serán importadas desde el archivo '%s' cuando pulse 'Aplicar'.\n"
 "\n"
 "También puede retroceder y verificar sus selecciones pulsando 'Atrás' o "
 "'Cancelar' para Interrumpir Importación.\n"
 "\n"
-"Si esta es su importación inicial en un fichero nuevo, primero verá un "
+"Si esta es su importación inicial en un archivo nuevo, primero verá un "
 "diálogo para configurar las opciones del libro, ya que éstos pueden afectar "
 "cómo los datos importados son convertidos a transacciones de GnuCash.\n"
 "Nota: Tras importar, quizá necesita emplear una opción del menú 'Ver/Filtrar "
@@ -19929,7 +19924,7 @@ msgid ""
 "- %s\n"
 "- %s"
 msgstr ""
-"Los precios fueron importados desde el fichero «%s».\n"
+"Los precios fueron importados desde el archivo «%s».\n"
 "\n"
 "Resumen de importación:\n"
 "- %s\n"
@@ -19984,7 +19979,7 @@ msgstr ""
 #: gnucash/import-export/csv-imp/assistant-csv-trans-import.cpp:2216
 #, c++-format
 msgid "The transactions were imported from file '{1}'."
-msgstr "Las transacciones fueron importadas desde el fichero «{1}»."
+msgstr "Las transacciones fueron importadas desde el archivo «{1}»."
 
 #: gnucash/import-export/csv-imp/csv-account-import.c:253
 #, c-format
@@ -20059,7 +20054,7 @@ msgid ""
 "No valid data found in the selected file. It may be empty or the selected "
 "encoding is wrong."
 msgstr ""
-"Ningún dato válido encontrado en el fichero seleccionado. Puede estar vacío "
+"Ningún dato válido encontrado en el archivo seleccionado. Puede estar vacío "
 "o la codificación seleccionada está equivocada."
 
 #: gnucash/import-export/csv-imp/gnc-import-price.cpp:508
@@ -20514,10 +20509,8 @@ msgid "A"
 msgstr "A"
 
 #: gnucash/import-export/import-main-matcher.cpp:1605
-#, fuzzy
-#| msgid "Add a reversing transaction."
 msgid "Add as a new transaction"
-msgstr "Añadir una transacción de reversión."
+msgstr "Añadir como una transacción nueva"
 
 # Update And Reconcile
 #: gnucash/import-export/import-main-matcher.cpp:1607
@@ -20526,16 +20519,13 @@ msgid "U+C"
 msgstr "A+V"
 
 #: gnucash/import-export/import-main-matcher.cpp:1610
-#, fuzzy
-#| msgid ""
-#| "Select \"U+C\" to update a matching transaction and mark it as cleared "
-#| "(c)."
 msgid ""
 "Update + Clear Transaction\n"
 "Update existing transaction with the imported data and mark it as cleared"
 msgstr ""
-"Seleccione «A+C» para actualizar una transacción cotejada y márquela como "
-"conciliada (c)."
+"Actualizar + Conciliar Transacción\n"
+"Actualiza transacción existente con los datos importados y marcarlo como "
+"conciliada"
 
 #: gnucash/import-export/import-main-matcher.cpp:1612
 msgctxt "Column header for 'Clearing transaction'"
@@ -20547,6 +20537,8 @@ msgid ""
 "Clear Transaction\n"
 "Mark existing transaction as cleared without changing its details"
 msgstr ""
+"Conciliar Transacción\n"
+"Marca transacción existente como conciliado sin cambiar sus detalles"
 
 #: gnucash/import-export/import-main-matcher.cpp:1620
 msgid "Info"
@@ -20636,7 +20628,7 @@ msgstr "Auto"
 
 #: gnucash/import-export/log-replay/gnc-log-replay.cpp:573
 msgid "Select a .log file to replay"
-msgstr "Seleccione un fichero bitácora .log para reproducir"
+msgstr "Seleccione un archivo bitácora .log para reproducir"
 
 #. Translators: %s is the file name.
 #: gnucash/import-export/log-replay/gnc-log-replay.cpp:593
@@ -20647,18 +20639,18 @@ msgstr "No es posible abrir el bitácora efectiva: %s"
 #: gnucash/import-export/log-replay/gnc-log-replay.cpp:608
 #, c-format
 msgid "Failed to open log file: %s: %s"
-msgstr "Fallado al abrir el fichero bitácora: %s: %s"
+msgstr "Fallado al abrir el archivo bitácora: %s: %s"
 
 #: gnucash/import-export/log-replay/gnc-log-replay.cpp:618
 msgid "The log file you selected was empty."
-msgstr "El fichero bitácora que ha seleccionado estaba vacío."
+msgstr "El archivo bitácora que ha seleccionado estaba vacío."
 
 #: gnucash/import-export/log-replay/gnc-log-replay.cpp:627
 msgid ""
 "The log file you selected cannot be read. The file header was not recognized."
 msgstr ""
-"El fichero bitácora que ha seleccionado no se puede leer. El encabezado del "
-"fichero no se ha reconocido."
+"El archivo bitácora que ha seleccionado no se puede leer. El encabezado del "
+"archivo no se ha reconocido."
 
 #: gnucash/import-export/ofx/gnc-ofx-import.cpp:717
 #, c-format
@@ -20712,16 +20704,16 @@ msgid ""
 "While importing transactions from OFX file '%s' found %d previously imported "
 "transactions, no new transactions."
 msgstr ""
-"Mientras importa transacciones desde fichero «%s» OFX encontrado «%d» "
+"Mientras importa transacciones desde archivo «%s» OFX encontrado «%d» "
 "transacciones previamente importada, ninguna transacción creada."
 
 #: gnucash/import-export/ofx/gnc-ofx-import.cpp:1478
 msgid "Open/Quicken Financial Exchange file (*.ofx, *.qfx)"
-msgstr "Abrir fichero/Quicken Financial Exchange (*.ofx, *.qfx)"
+msgstr "Abrir archivo/Quicken Financial Exchange (*.ofx, *.qfx)"
 
 #: gnucash/import-export/ofx/gnc-ofx-import.cpp:1483
 msgid "Select one or multiple OFX/QFX file(s) to process"
-msgstr "Seleccione uno o múltiples ficheros OFX/QFX para procesar"
+msgstr "Seleccione uno o múltiples archivos OFX/QFX para procesar"
 
 #: gnucash/import-export/ofx/gnc-plugin-ofx.ui:6
 msgid "Import _OFX/QFX…"
@@ -20729,7 +20721,7 @@ msgstr "Importar _OFX/QFX…"
 
 #: gnucash/import-export/ofx/gnc-plugin-ofx.ui:8
 msgid "Process an OFX/QFX response file"
-msgstr "Procesa un fichero de respuesta OFX/QFX"
+msgstr "Procesa un archivo de respuesta OFX/QFX"
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:575
 msgid "GnuCash account name"
@@ -20781,20 +20773,20 @@ msgstr "¿Confirma que desea cancelar?"
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1710
 msgid "Please select a file to load."
-msgstr "Seleccione un fichero para cargar."
+msgstr "Seleccione un archivo para cargar."
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1713
 msgid "File not found or read permission denied. Please select another file."
 msgstr ""
-"Archivo no encontrado o permiso de lectura denegado. Elija otro fichero."
+"Archivo no encontrado o permiso de lectura denegado. Elija otro archivo."
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1724
 msgid "That QIF file is already loaded. Please select another file."
-msgstr "Ese fichero QIF ya está cargado. Seleccione otro fichero."
+msgstr "Ese archivo QIF ya está cargado. Seleccione otro archivo."
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1788
 msgid "Select QIF File"
-msgstr "Seleccione Fichero QIF"
+msgstr "Seleccionar Archivo QIF"
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1851
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1854
@@ -20812,7 +20804,7 @@ msgstr "Cancelado"
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1951
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1955
 msgid "An error occurred while loading the QIF file."
-msgstr "Ocurrió un error mientras se carga el fichero QIF."
+msgstr "Ocurrió un error mientras se carga el archivo QIF."
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1952
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:1970
@@ -20836,7 +20828,7 @@ msgstr "Vaciando"
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:2032
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:2036
 msgid "A bug was detected while parsing the QIF file."
-msgstr "Se ha encontrado un defecto mientras se analizaba el fichero QIF."
+msgstr "Se ha encontrado un defecto mientras se analizaba el archivo QIF."
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:2107
 msgid "Loading completed"
@@ -20848,13 +20840,13 @@ msgid ""
 "are no errors or warnings, you will automatically proceed to the next step. "
 "Otherwise, the details will be shown below for your review."
 msgstr ""
-"Cuando pulse el botón de Inicio, GnuCash cargará su fichero QIF. Si no hay "
+"Cuando pulse el botón de Inicio, GnuCash cargará su archivo QIF. Si no hay "
 "ningún error o aviso, automáticamente pasará el paso siguiente. En otro "
 "caso, los detalles se mostrarán debajo para su revisión."
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:2783
 msgid "Choose the QIF file currency"
-msgstr "Escoja la moneda del fichero QIF"
+msgstr "Escoja la moneda del archivo QIF"
 
 #: gnucash/import-export/qif-imp/assistant-qif-import.c:2997
 msgid "You must enter an existing national currency or enter a different type."
@@ -21041,7 +21033,7 @@ msgstr "No se ha podido analizar la línea de los precios"
 
 #: gnucash/import-export/qif-imp/qif-file.scm:540
 msgid "File does not appear to be in QIF format"
-msgstr "El fichero no parece estar en formato QIF"
+msgstr "El archivo no parece estar en formato QIF"
 
 #: gnucash/import-export/qif-imp/qif-file.scm:716
 msgid "Transaction date"
@@ -22186,7 +22178,7 @@ msgstr "Índice"
 #: gnucash/report/eguile.scm:150
 #, scheme-format
 msgid "Template file \"~a\" can not be read"
-msgstr "El fichero de la plantilla «~a» no puede leerse"
+msgstr "El archivo de la plantilla «~a» no puede leerse"
 
 #: gnucash/report/html-chart.scm:475
 msgid "Load"
@@ -23314,7 +23306,7 @@ msgstr "Boletín impositivo y exportación a XML"
 
 #: gnucash/report/reports/locale-specific/de_DE/taxtxf.scm:839
 msgid "Taxable Income / Deductible Expenses / Export to .XML file"
-msgstr "Ingresos imponibles / Gastos deducibles / Exportar a fichero .XML"
+msgstr "Ingresos imponibles / Gastos deducibles / Exportar a archivo .XML"
 
 #: gnucash/report/reports/locale-specific/de_DE/taxtxf.scm:843
 #: gnucash/report/reports/locale-specific/de_DE/taxtxf.scm:851
@@ -23427,7 +23419,7 @@ msgid ""
 "file"
 msgstr ""
 "Ingresos Imponibles/Gastos Deducibles con Detalle de Transacción/Exportación "
-"al fichero .TXF"
+"al archivo .TXF"
 
 #: gnucash/report/reports/locale-specific/us/taxtxf.scm:3316
 #: gnucash/report/reports/locale-specific/us/taxtxf.scm:3324
@@ -24334,7 +24326,7 @@ msgstr "Tamaño del tipograma en formato CSS (p.e. «medio» o «10pt»)."
 #: gnucash/report/reports/standard/receipt.scm:44
 #: gnucash/report/reports/standard/taxinvoice.scm:94
 msgid "Template file"
-msgstr "Fichero de plantilla"
+msgstr "Archivo de plantilla"
 
 #: gnucash/report/reports/standard/balsheet-eg.scm:171
 msgid ""
@@ -24342,8 +24334,8 @@ msgid ""
 "in your .gnucash directory, or else in its proper place within the GnuCash "
 "installation directories."
 msgstr ""
-"El nombre del fichero de la parte de la plantilla ‘eguile’ de este boletín. "
-"Este fichero debe estar en su directorio .gnucash, o en otro caso en su "
+"El nombre del archivo de la parte de la plantilla ‘eguile’ de este boletín. "
+"Este archivo debe estar en su directorio .gnucash, o en otro caso en su "
 "lugar apropiado dentro de los directorios de instalación de GnuCash."
 
 #: gnucash/report/reports/standard/balsheet-eg.scm:172
@@ -24358,9 +24350,9 @@ msgid ""
 "this file should be in your .gnucash directory, or else in its proper place "
 "within the GnuCash installation directories."
 msgstr ""
-"El nombre del fichero de la hoja de estilo CSS para emplear con este "
-"boletín. Si lo especificó, este fichero debería estar en su directorio ."
-"gnucash, o bien en su propio lugar dentro de los directorios de instalación "
+"El nombre del archivo de la hoja de estilo CSS para emplear con este "
+"boletín. Si lo especificó, este archivo debería estar en su directorio "
+".gnucash, o bien en su propio lugar dentro de los directorios de instalación "
 "de GnuCash."
 
 #: gnucash/report/reports/standard/balsheet-eg.scm:175
@@ -27322,7 +27314,7 @@ msgstr "Tipografía para texto"
 
 #: gnucash/report/reports/standard/receipt.scm:48
 msgid "Header logo filename"
-msgstr "Nombre del fichero de cabecera del logotipo"
+msgstr "Nombre del archivo de cabecera del logotipo"
 
 #: gnucash/report/reports/standard/receipt.scm:49
 msgid "Header logo width"
@@ -27330,7 +27322,7 @@ msgstr "Ancho de cabecera del logotipo"
 
 #: gnucash/report/reports/standard/receipt.scm:50
 msgid "Footer logo filename"
-msgstr "Nombre del fichero del pie del logotipo"
+msgstr "Nombre del archivo del pie del logotipo"
 
 #: gnucash/report/reports/standard/receipt.scm:51
 msgid "Footer logo width"
@@ -27387,8 +27379,8 @@ msgid ""
 "either be in your .gnucash directory, or else in its proper place within the "
 "GnuCash installation directories."
 msgstr ""
-"El nombre del fichero de la parte de la plantilla ‘eguile’ de este boletín. "
-"Este fichero debe estar o en su directorio .gnucash, o bien en su lugar "
+"El nombre del archivo de la parte de la plantilla ‘eguile’ de este boletín. "
+"Este archivo debe estar o en su directorio .gnucash, o bien en su lugar "
 "apropiado dentro de los directorios de instalación de GnuCash."
 
 #: gnucash/report/reports/standard/receipt.scm:81
@@ -27398,8 +27390,8 @@ msgid ""
 "should either be in your .gnucash directory, or else in its proper place "
 "within the GnuCash installation directories."
 msgstr ""
-"El nombre del fichero de la hoja de estilo CSS para emplear con este "
-"boletín. Este fichero o debe estar en su carpeta .gnucash, o bien en su "
+"El nombre del archivo de la hoja de estilo CSS para emplear con este "
+"boletín. Este archivo o debe estar en su carpeta .gnucash, o bien en su "
 "lugar apropiado dentro de las carpetas de instalación de GnuCash."
 
 #: gnucash/report/reports/standard/receipt.scm:85
@@ -27415,7 +27407,7 @@ msgstr "Tipografía para utilizar para lo demás."
 #: gnucash/report/reports/standard/receipt.scm:91
 msgid "Name of a file containing a logo to be used on the header of the report"
 msgstr ""
-"Nombre de un fichero conteniendo un logotipo para utilizarse en la cabecera "
+"Nombre de un archivo conteniendo un logotipo para utilizarse en la cabecera "
 "del boletín"
 
 #: gnucash/report/reports/standard/receipt.scm:94
@@ -27431,7 +27423,7 @@ msgstr ""
 #: gnucash/report/reports/standard/receipt.scm:97
 msgid "Name of a file containing a logo to be used on the footer of the report"
 msgstr ""
-"Nombre de un fichero conteniendo un logotipo para utilizarse al pie del "
+"Nombre de un archivo conteniendo un logotipo para utilizarse al pie del "
 "boletín"
 
 #: gnucash/report/reports/standard/receipt.scm:100
@@ -27684,7 +27676,7 @@ msgstr "CSS embebido"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:98
 msgid "Logo filename"
-msgstr "Nombre del fichero del logotipo"
+msgstr "Nombre del archivo del logotipo"
 
 #: gnucash/report/reports/standard/taxinvoice.scm:99
 msgid "Logo width"
@@ -27733,7 +27725,7 @@ msgstr "¿Mostrar precio neto?"
 #: gnucash/report/reports/standard/taxinvoice.scm:163
 msgid "Name of a file containing a logo to be used on the report."
 msgstr ""
-"Nombre de un fichero conteniendo un logotipo para utilizarse en el boletín."
+"Nombre de un archivo conteniendo un logotipo para utilizarse en el boletín."
 
 #: gnucash/report/reports/standard/taxinvoice.scm:166
 msgid ""
@@ -29326,7 +29318,7 @@ msgstr "Acerca de GnuCash"
 #: gnucash/ui/gnc-plugin-page-report.ui:107
 #: gnucash/ui/gnc-plugin-page-sx-list.ui:90
 msgid "Save the current file"
-msgstr "Guarda el fichero actual"
+msgstr "Guarda el archivo actual"
 
 #: gnucash/ui/gnc-main-window.ui:585 gnucash/ui/gnc-plugin-business.ui:26
 #: gnucash/ui/gnc-plugin-page-account-tree.ui:349
@@ -29366,11 +29358,11 @@ msgstr "Abre una página nueva de Plan Contable"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:6
 msgid "New _File"
-msgstr "Crear _fichero"
+msgstr "Crear _archivo"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:9
 msgid "Create a new file"
-msgstr "Crea un fichero nuevo"
+msgstr "Crea un archivo nuevo"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:12
 msgid "_Open…"
@@ -29378,7 +29370,7 @@ msgstr "_Abrir…"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:15
 msgid "Open an existing GnuCash file"
-msgstr "Abre un fichero GnuCash existente"
+msgstr "Abre un archivo GnuCash existente"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:27
 msgid "Save _As…"
@@ -29386,7 +29378,7 @@ msgstr "Guardar _como…"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:30
 msgid "Save this file with a different name"
-msgstr "Guarda este fichero con un nombre diferente"
+msgstr "Guarda este archivo con un nombre diferente"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:33
 msgid "Re_vert"
@@ -29412,7 +29404,7 @@ msgstr "Export_ar cuentas"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:53
 msgid "Export the account hierarchy to a new GnuCash datafile"
-msgstr "Exporta el plan de cuentas a un fichero de datos GnuCash nuevo"
+msgstr "Exporta el plan de cuentas a un archivo de datos GnuCash nuevo"
 
 #: gnucash/ui/gnc-plugin-basic-commands.ui:59
 #: gnucash/ui/gnc-plugin-page-account-tree.ui:67
@@ -29547,7 +29539,7 @@ msgstr "Importar Cargos y _Facturas…"
 
 #: gnucash/ui/gnc-plugin-bi-import.ui:8
 msgid "Import bills and invoices from a CSV text file"
-msgstr "Importar cargos y facturas desde un fichero de texto CSV"
+msgstr "Importar cargos y facturas desde un archivo de texto CSV"
 
 # Menú
 #: gnucash/ui/gnc-plugin-budget.ui:10
@@ -29802,7 +29794,7 @@ msgstr "Exportar _Plan Contable a CSV…"
 
 #: gnucash/ui/gnc-plugin-csv-export.ui:8
 msgid "Export the Account Tree to a CSV file"
-msgstr "Exporta el Plan Contable a un fichero CSV"
+msgstr "Exporta el Plan Contable a un archivo CSV"
 
 #: gnucash/ui/gnc-plugin-csv-export.ui:11
 msgid "Export _Transactions to CSV…"
@@ -29810,7 +29802,7 @@ msgstr "Exportar _transacciones a CSV…"
 
 #: gnucash/ui/gnc-plugin-csv-export.ui:13
 msgid "Export the Transactions to a CSV file"
-msgstr "Exporta las Transacciones a un fichero CSV"
+msgstr "Exporta las Transacciones a un archivo CSV"
 
 #: gnucash/ui/gnc-plugin-csv-export.ui:16
 msgid "Export A_ctive Register to CSV…"
@@ -29818,7 +29810,7 @@ msgstr "Exportar Registro Activo a _CSV…"
 
 #: gnucash/ui/gnc-plugin-csv-export.ui:18
 msgid "Export the Active Register to a CSV file"
-msgstr "Exporta el Registro Activo a un fichero CSV"
+msgstr "Exporta el Registro Activo a un archivo CSV"
 
 #: gnucash/ui/gnc-plugin-csv-import.ui:6
 msgid "Import _Accounts from CSV…"
@@ -29826,7 +29818,7 @@ msgstr "Importar cuent_as desde CSV…"
 
 #: gnucash/ui/gnc-plugin-csv-import.ui:8
 msgid "Import Accounts from a CSV file"
-msgstr "Importa Cuentas desde un fichero CSV"
+msgstr "Importa Cuentas desde un archivo CSV"
 
 #: gnucash/ui/gnc-plugin-csv-import.ui:11
 msgid "Import _Transactions from CSV…"
@@ -29834,7 +29826,7 @@ msgstr "Importar _transacciones desde CSV…"
 
 #: gnucash/ui/gnc-plugin-csv-import.ui:13
 msgid "Import Transactions from a CSV file"
-msgstr "Importa Transacciones desde un fichero CSV"
+msgstr "Importa Transacciones desde un archivo CSV"
 
 #: gnucash/ui/gnc-plugin-csv-import.ui:16
 msgid "Import _Prices from a CSV file…"
@@ -29842,7 +29834,7 @@ msgstr "Importar _Precios desde un archivo CSV…"
 
 #: gnucash/ui/gnc-plugin-csv-import.ui:18
 msgid "Import Prices from a CSV file"
-msgstr "Importa Precios desde un fichero CSV"
+msgstr "Importa Precios desde un archivo CSV"
 
 #: gnucash/ui/gnc-plugin-customer-import.ui:6
 msgid "Import _Customers & Vendors…"
@@ -29850,16 +29842,16 @@ msgstr "Importar _clientes y proveedores…"
 
 #: gnucash/ui/gnc-plugin-customer-import.ui:8
 msgid "Import Customers and Vendors from a CSV text file"
-msgstr "Importar clientes y proveedores desde un fichero de texto CSV"
+msgstr "Importar clientes y proveedores desde un archivo de texto CSV"
 
 #: gnucash/ui/gnc-plugin-log-replay.ui:6
 msgid "_Replay GnuCash .log file…"
-msgstr "_Reproducir un fichero bitácora .log GnuCash…"
+msgstr "_Reproducir un archivo bitácora .log GnuCash…"
 
 #: gnucash/ui/gnc-plugin-log-replay.ui:8
 msgid "Replay a GnuCash log file after a crash. This cannot be undone"
 msgstr ""
-"Reproducir un fichero bitácora de GnuCash después de una caída. Esto no se "
+"Reproducir un archivo de bitácora de GnuCash tras una caída. Esto no se "
 "puede deshacer"
 
 #: gnucash/ui/gnc-plugin-page-account-tree.ui:16
@@ -30735,7 +30727,7 @@ msgstr "Exportar _boletín…"
 #: gnucash/ui/gnc-plugin-page-report.ui:67
 #: gnucash/ui/gnc-plugin-page-report.ui:287
 msgid "Export HTML-formatted report to file"
-msgstr "Exportar boletín con formato *.html a fichero"
+msgstr "Exportar boletín con formato *.html al archivo"
 
 #: gnucash/ui/gnc-plugin-page-report.ui:77
 #: gnucash/ui/gnc-plugin-page-report.ui:257
@@ -30816,7 +30808,7 @@ msgstr "Importar _QIF…"
 
 #: gnucash/ui/gnc-plugin-qif-import.ui:8
 msgid "Import a Quicken QIF file"
-msgstr "Importa un fichero QIF de Quicken"
+msgstr "Importa un archivo QIF de Quicken"
 
 #: gnucash/ui/gnc-plugin-register.ui:6
 msgid "_General Journal"
@@ -31265,28 +31257,27 @@ msgstr "En adición:"
 #, c++-format
 msgid "The following file has been copied to {1} instead:"
 msgid_plural "The following files have been copied to {1} instead:"
-msgstr[0] "El siguiente fichero ha sido copiado a {1} en su lugar:"
-msgstr[1] "Los siguientes ficheros han sido copiados a {1} en su lugar:"
+msgstr[0] "El siguiente archivo ha sido copiado a {1} en su lugar:"
+msgstr[1] "Los siguientes archivos han sido copiados a {1} en su lugar:"
 
 #: libgnucash/core-utils/gnc-filepath-utils.cpp:701
 #, c++-format
 msgid "The following file in {1} has been renamed:"
-msgstr "El siguiente fichero en {1} ha sido renombrado:"
+msgstr "El siguiente archivo en {1} ha sido renombrado:"
 
 #: libgnucash/core-utils/gnc-filepath-utils.cpp:711
 msgid "The following file has become obsolete and will be ignored:"
 msgid_plural "The following files have become obsolete and will be ignored:"
-msgstr[0] ""
-"El siguiente fichero se ha convertido en obsoleto y será descartado:"
+msgstr[0] "El siguiente archivo se ha convertido en obsoleto y será descartado:"
 msgstr[1] ""
-"Los siguientes ficheros se han convertido en obsoletos y serán descartados:"
+"Los siguientes archivos se han convertido en obsoletos y serán descartados:"
 
 #: libgnucash/core-utils/gnc-filepath-utils.cpp:721
 #, c++-format
 msgid "The following file could not be moved to {1}:"
 msgid_plural "The following files could not be moved to {1}:"
-msgstr[0] "El fichero siguiente no se pudo ser trasladado a {1}:"
-msgstr[1] "Los ficheros siguientes no se pudieron ser trasladados a {1}:"
+msgstr[0] "El archivo siguiente no se pudo ser trasladado a {1}:"
+msgstr[1] "Los archivos siguientes no se pudieron ser trasladados a {1}:"
 
 #: libgnucash/engine/Account.cpp:150
 msgid "Deposit"
@@ -31408,7 +31399,7 @@ msgstr "Bucharest Stock Exchange, RO"
 #: libgnucash/engine/gnc-commodity.cpp:199
 msgctxt "FQ Source"
 msgid "China Merchants Bank, CN"
-msgstr ""
+msgstr "Banca Mercantil de China, CN"
 
 #: libgnucash/engine/gnc-commodity.cpp:200
 msgctxt "FQ Source"
@@ -31613,7 +31604,7 @@ msgstr "U.K. Funds (FTfunds, MorningstarUK)"
 #: libgnucash/engine/gnc-commodity.cpp:245
 msgctxt "FQ Source"
 msgid "USA (Alphavantage, FinanceAPI, …)"
-msgstr "USA (Alphavantage, FinanceAPI, …)"
+msgstr "EUA (Alphavantage, FinanceAPI, …)"
 
 #: libgnucash/engine/gnc-commodity.h:110
 msgctxt "Commodity Type"
