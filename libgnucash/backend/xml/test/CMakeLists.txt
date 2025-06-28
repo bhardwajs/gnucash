@@ -38,6 +38,7 @@ set_local_dist(test_backend_xml_DIST_local
   test-load-backend.cpp
   test-load-example-account.cpp
   gtest-load-save-files.cpp
+  gtest-xml-contents.cpp
   test-load-xml2.cpp
   test-real-data.sh
   test-save-in-lang.cpp
@@ -69,6 +70,10 @@ target_compile_options(test-load-example-account PRIVATE -DU_SHOW_CPLUSPLUS_API=
 add_xml_gtest(test-load-save-files gtest-load-save-files.cpp
   GNC_TEST_FILES=${CMAKE_CURRENT_SOURCE_DIR}/test-files/load-save
 )
+add_xml_gtest(test-xml-contents gtest-xml-contents.cpp
+  GNC_TEST_FILES=${CMAKE_CURRENT_SOURCE_DIR}/test-files/xml-contents
+)
+
 add_xml_test(test-string-converters "test-string-converters.cpp")
 add_xml_test(test-xml-account "test-xml-account.cpp;test-file-stuff.cpp")
 add_xml_test(test-xml-commodity "test-xml-commodity.cpp;test-file-stuff.cpp")
