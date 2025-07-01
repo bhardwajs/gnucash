@@ -319,6 +319,8 @@ gnc_commodity * gnc_commodity_clone(const gnc_commodity *src, QofBook *dest_book
 @{
 */
 
+gboolean gnc_commodity_get_auto_quote_control_flag (const gnc_commodity *cm);
+
 /** Retrieve the mnemonic for the specified commodity.  This will be a
  *  pointer to a null terminated string of the form "ACME", "QWER",
  *  etc.
@@ -491,6 +493,8 @@ const char*gnc_commodity_get_nice_symbol(const gnc_commodity *cm);
 /** @name Commodity Accessor Routines - Set
 @{
 */
+
+void gnc_commodity_set_auto_quote_control_flag (gnc_commodity *cm, const gboolean flag);
 
 /** Set the mnemonic for the specified commodity.  This should be a
  *  pointer to a null terminated string of the form "ACME", "QWER",

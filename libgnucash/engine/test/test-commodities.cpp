@@ -27,6 +27,7 @@
 
 #include <config.h>
 #include "gnc-commodity.h"
+#include "qofinstance-p.h"
 #include "qof.h"
 #include "test-engine-stuff.h"
 #include "test-stuff.h"
@@ -233,6 +234,30 @@ test_commodity(void)
 
 }
 
+static void
+test_auto_quote_control_flag ()
+{
+    auto book{qof_book_new ()};
+    auto com{gnc_commodity_new(book, NULL, NULL, NULL, NULL, 0)};
+    auto get_kvp = [com]()
+    { return qof_instance_get_path_kvp<const char*> (QOF_INSTANCE (com), {"auto_quote_control"}); };
+
+    g_assert_true (gnc_commodity_get_auto_quote_control_flag (com));
+    g_assert_false (get_kvp ().has_value());
+
+    gnc_commodity_set_auto_quote_control_flag (com, false);
+    g_assert_false (gnc_commodity_get_auto_quote_control_flag (com));
+    g_assert_true (get_kvp ().has_value());
+    g_assert_cmpstr (*get_kvp (), ==, "false");
+
+    gnc_commodity_set_auto_quote_control_flag (com, true);
+    g_assert_true (gnc_commodity_get_auto_quote_control_flag (com));
+    g_assert_false (get_kvp ().has_value());
+
+    gnc_commodity_destroy(com);
+    qof_book_destroy (book);
+}
+
 int
 main (int argc, char **argv)
 {
@@ -243,6 +268,7 @@ main (int argc, char **argv)
 
     test_commodity();
     test_quote_sources ();
+    test_auto_quote_control_flag ();
 
     print_test_results();
 

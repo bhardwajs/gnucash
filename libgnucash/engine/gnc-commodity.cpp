@@ -1013,7 +1013,7 @@ gnc_commodity_get_fraction(const gnc_commodity * cm)
  * gnc_commodity_get_auto_quote_control_flag
  ********************************************************************/
 
-static gboolean
+gboolean
 gnc_commodity_get_auto_quote_control_flag(const gnc_commodity *cm)
 {
     GValue v = G_VALUE_INIT;
@@ -1241,7 +1241,7 @@ gnc_commodity_set_fraction(gnc_commodity * cm, int fraction)
  * gnc_commodity_set_auto_quote_control_flag
  ********************************************************************/
 
-static void
+void
 gnc_commodity_set_auto_quote_control_flag(gnc_commodity *cm,
         const gboolean flag)
 {
