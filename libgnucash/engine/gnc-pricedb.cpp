@@ -1592,13 +1592,17 @@ gnc_pricedb_remove_old_prices (GNCPriceDB *db, GList *comm_list,
     // Check for a valid fiscal end of year date
     if (fiscal_end_date == nullptr)
     {
-        GDateYear year_now = g_date_get_year (gnc_g_date_new_today ());
+        GDate today;
+        gnc_gdate_set_today (&today);
+        GDateYear year_now = g_date_get_year (&today);
         fiscal_end_date = g_date_new ();
         g_date_set_dmy (fiscal_end_date, 31, GDateMonth(12), year_now);
     }
     else if (g_date_valid (fiscal_end_date) == FALSE)
     {
-        GDateYear year_now = g_date_get_year (gnc_g_date_new_today ());
+        GDate today;
+        gnc_gdate_set_today (&today);
+        GDateYear year_now = g_date_get_year (&today);
         g_date_clear (fiscal_end_date, 1);
         g_date_set_dmy (fiscal_end_date, 31, GDateMonth(12), year_now);
     }
