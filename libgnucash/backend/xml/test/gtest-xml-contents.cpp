@@ -107,6 +107,10 @@ TEST_F(LoadFile, LoadAndVerifyKVP)
     EXPECT_STREQ (xaccTransGetDocLink (bank_reg_txn), "https://www.gnucash.org/");
     EXPECT_TRUE (gnc_numeric_equal (xaccSplitGetAmount (bank_reg_split), gnc_numeric_create (200, 1)));
     EXPECT_TRUE (gnc_numeric_equal (xaccSplitGetValue (bank_reg_split), gnc_numeric_create (200, 1)));
+    auto gdate = xaccTransGetDatePostedGDate (bank_reg_txn);
+    EXPECT_EQ (g_date_get_day (&gdate), static_cast<unsigned>(1));
+    EXPECT_EQ (g_date_get_month (&gdate), static_cast<unsigned>(1));
+    EXPECT_EQ (g_date_get_year (&gdate), static_cast<unsigned>(2025));
     EXPECT_EQ (GncDateTime(xaccTransGetDate(bank_reg_txn)).format_iso8601(), "2025-01-01 10:59:00");
     EXPECT_EQ (xaccTransGetTxnType (bank_reg_txn), TXN_TYPE_NONE);
     EXPECT_FALSE (xaccTransGetIsClosingTxn (bank_reg_txn));
@@ -120,6 +124,10 @@ TEST_F(LoadFile, LoadAndVerifyKVP)
     EXPECT_STREQ (xaccTransGetNum (bank_pmt_txn), "pmt-num");
     EXPECT_STREQ (xaccTransGetDocLink (bank_pmt_txn), nullptr);
     EXPECT_EQ (GncDateTime(xaccTransGetDate(bank_pmt_txn)).format_iso8601(), "2025-02-12 10:59:00");
+    gdate = xaccTransGetDatePostedGDate (bank_pmt_txn);
+    EXPECT_EQ (g_date_get_day (&gdate), static_cast<unsigned>(12));
+    EXPECT_EQ (g_date_get_month (&gdate), static_cast<unsigned>(2));
+    EXPECT_EQ (g_date_get_year (&gdate), static_cast<unsigned>(2025));
     EXPECT_EQ (xaccTransGetTxnType (bank_pmt_txn), TXN_TYPE_PAYMENT);
     EXPECT_TRUE (gnc_numeric_equal (xaccSplitGetAmount (bank_pmt_split), gnc_numeric_create (194, 100)));
     EXPECT_TRUE (gnc_numeric_equal (xaccSplitGetValue (bank_pmt_split), gnc_numeric_create (194, 100)));
