@@ -61,6 +61,7 @@
 (export gnc:html-chart-set-axes-display!)
 (export gnc:html-chart-set-custom-y-axis-ticks?!)
 (export gnc:html-chart-clear-data-series!)
+(export gnc:html-chart-set-x-axis-type!)
 (export gnc:html-chart-set-x-axis-label!)
 (export gnc:html-chart-set-stacking?!)
 (export gnc:html-chart-set-grid?!)
@@ -285,6 +286,9 @@
 (define (gnc:html-chart-set-axes-display! chart display?)
   (gnc:html-chart-set! chart '(options scales xAxes (0) display) display?)
   (gnc:html-chart-set! chart '(options scales yAxes (0) display) display?))
+
+(define (gnc:html-chart-set-x-axis-type! chart type)
+  (gnc:html-chart-set! chart '(options scales xAxes (0) type) type))
 
 ;; e.g.:
 ;; (gnc:html-chart-add-data-series! chart "label" list-of-numbers color
