@@ -460,7 +460,7 @@ document.getElementById(chartid).onclick = function(evt) {
          ;; clashing on multi-column reports
          (id (symbol->string (gensym "chart"))))
 
-    (push (gnc:html-js-include "chartjs/Chart.bundle.min.js"))
+    (push (gnc:html-js-include "chartjs-2/Chart.bundle.min.js"))
 
     ;; the following hidden h3 is used to query style and copy onto chartjs
     (push "<h3 style='display:none'></h3>")
